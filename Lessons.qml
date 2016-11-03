@@ -49,7 +49,7 @@ HistoryPage {
 				title: "Globals";
 				text: "Using globals properties you can manipulate page features...";
 
-				ReadMore { url: "system"; }
+				ReadMore { url: "globals"; }
 			}
 
 			PageColumn {

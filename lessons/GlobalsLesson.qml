@@ -3,7 +3,7 @@ HistoryPage {
 	anchors.top: parent.top;
 	anchors.left: parent.left;
 	anchors.right: parent.right;
-	url: "anchors";
+	url: "globals";
 
 	LeftMenu { id: leftMenu; onIndexChoosed(idx): { content.focusItem(idx) } }
 
