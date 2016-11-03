@@ -1,0 +1,5 @@
+.app.*
+.cache
+*.swp
+*.swo
+*.swn
