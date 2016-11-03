@@ -34,6 +34,7 @@ Item {
 		SignalLesson { }
 		ViewAndModelsLesson { }
 		GlobalsLesson { }
+		InputsLesson { }
 
 		focusHistoryPage(state): {
 			var children = this.children

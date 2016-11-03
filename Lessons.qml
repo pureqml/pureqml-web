@@ -95,6 +95,13 @@ HistoryPage {
 			}
 
 			PageColumn {
+				title: "Inputs";
+				text: "\"Controls\" library provide simple in use interface for using html5 inputs";
+
+				ReadMore { url: "inputs"; }
+			}
+
+			PageColumn {
 				title: "Mixin";
 				text: "Mixins are very usefull and simple in use features for item extending.";
 
