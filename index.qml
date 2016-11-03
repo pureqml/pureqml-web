@@ -27,12 +27,13 @@ Item {
 		Docs { }
 
 		//Lessons
-		AnchorsPage { }
+		AnchorsLesson { }
 		LayoutsLesson { }
 		GamepadLesson { }
 		KeyboardLesson { }
 		SignalLesson { }
 		ViewAndModelsLesson { }
+		GlobalsLesson { }
 
 		focusHistoryPage(state): {
 			var children = this.children
