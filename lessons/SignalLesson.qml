@@ -61,7 +61,6 @@ HistoryPage {
 					exampleWidth: 200;
 					exampleHeight: 200;
 					sample: SignalHandling { }
-					sourceFile: "SignalHandling.qml";
 				}
 			}
 
@@ -84,7 +83,6 @@ HistoryPage {
 					exampleWidth: 200;
 					exampleHeight: 200;
 					sample: SignalArgsHandling { }
-					sourceFile: "SignalArgsHandling.qml";
 				}
 			}
 
@@ -97,7 +95,6 @@ HistoryPage {
 					exampleWidth: 200;
 					exampleHeight: 200;
 					sample: PropertyHandling { }
-					sourceFile: "SignalArgsHandling.qml";
 				}
 
 				DescriptionText { text: "Actualy you don't need to write \"this.clickCount\" to get its new value. You can use special alias which called \"value\". You can get it only inside property changed event handler scope. In short you can replace this code:"; }

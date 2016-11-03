@@ -82,7 +82,6 @@ HistoryPage {
 					exampleWidth: 200;
 					exampleHeight: 50;
 					sample: ListViewExample { }
-					sourceFile: "ListViewExample.qml";
 				}
 			}
 
@@ -106,7 +105,6 @@ HistoryPage {
 					exampleWidth: 330;
 					exampleHeight: 330;
 					sample: GridViewExample { }
-					sourceFile: "GridViewExample.qml";
 				}
 			}
 
@@ -141,7 +139,6 @@ HistoryPage {
 					exampleWidth: 300;
 					exampleHeight: 250;
 					sample: ProxyLessonExample { }
-					sourceFile: "ProxyLessonExample.qml";
 				}
 			}
 

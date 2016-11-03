@@ -47,7 +47,6 @@ HistoryPage {
 					exampleWidth: 200;
 					exampleHeight: 200;
 					sample: GamepadCodeLesson { }
-					sourceFile: "GamepadCodeLesson.qml";
 				}
 			}
 
@@ -73,7 +72,6 @@ HistoryPage {
 					exampleWidth: 400;
 					exampleHeight: 400;
 					sample: GamepadHandleLesson { }
-					sourceFile: "GamepadHandleLesson.qml";
 				}
 			}
 

@@ -38,7 +38,6 @@ HistoryPage {
 					exampleWidth: 200;
 					exampleHeight: 200;
 					sample: KeyPressLesson { }
-					sourceFile: "KeyPressLesson.qml";
 				}
 			}
 
@@ -52,7 +51,6 @@ HistoryPage {
 					exampleWidth: 200;
 					exampleHeight: 200;
 					sample: KeySelectLesson { }
-					sourceFile: "KeySelectLesson.qml";
 				}
 			}
 
