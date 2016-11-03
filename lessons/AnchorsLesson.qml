@@ -47,7 +47,7 @@ HistoryPage {
 					exampleWidth: 200;
 					exampleHeight: 200;
 					sample: Anchors1 { }
-					sourceFile: "code_samples/Anchors1.qml";
+					sourceFile: "Anchors1.qml";
 				}
 			}
 
@@ -71,7 +71,7 @@ HistoryPage {
 					exampleWidth: 350;
 					exampleHeight: 350;
 					sample: AnchorsCenter { }
-					sourceFile: "code_samples/AnchorsCenter.qml";
+					sourceFile: "AnchorsCenter.qml";
 				}
 			}
 
@@ -84,7 +84,7 @@ HistoryPage {
 					exampleWidth: 200;
 					exampleHeight: 200;
 					sample: AnchorsFill { }
-					sourceFile: "code_samples/AnchorsFill.qml";
+					sourceFile: "AnchorsFill.qml";
 				}
 			}
 
@@ -97,7 +97,7 @@ HistoryPage {
 					exampleWidth: 200;
 					exampleHeight: 200;
 					sample: AnchorsMargins { }
-					sourceFile: "code_samples/AnchorsMargins.qml";
+					sourceFile: "AnchorsMargins.qml";
 				}
 
 				DescriptionText { text: "If you need same margins for each side just set single \"margins\" value:"; }
@@ -107,7 +107,7 @@ HistoryPage {
 					exampleWidth: 200;
 					exampleHeight: 200;
 					sample: AnchorsMarginsFixed { }
-					sourceFile: "code_samples/AnchorsMarginsFixed.qml";
+					sourceFile: "AnchorsMarginsFixed.qml";
 				}
 			}
 

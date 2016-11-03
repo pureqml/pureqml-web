@@ -5,13 +5,10 @@ Item {
 	property int exampleWidth: 300;
 	property int exampleHeight: 300;
 	property Item sample;
-	property string sourceFile;
+	property string sourceFile: "";
 	height: codeContent.height;
 
-	Resource {
-		id: codeSource;
-		url: parent.sourceFile;
-	}
+	Resource { id: codeSource; }
 
 	Column {
 		id: codeContent;
@@ -44,4 +41,6 @@ Item {
 			code: codeSource.data;
 		}
 	}
+
+	onSourceFileChanged: { codeSource.url = "https://raw.githubusercontent.com/pureqml/pureqml-web/master/code_samples/" + value  }
 }

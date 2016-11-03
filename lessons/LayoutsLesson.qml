@@ -50,7 +50,7 @@ HistoryPage {
 					exampleWidth: 400;
 					exampleHeight: 200;
 					sample: LayoutRow { }
-					sourceFile: "code_samples/LayoutRow.qml";
+					sourceFile: "LayoutRow.qml";
 				}
 			}
 
@@ -65,7 +65,7 @@ HistoryPage {
 					exampleWidth: 200;
 					exampleHeight: 400;
 					sample: LayoutColumn { }
-					sourceFile: "code_samples/LayoutColumn.qml";
+					sourceFile: "LayoutColumn.qml";
 				}
 			}
 
@@ -80,7 +80,7 @@ HistoryPage {
 					exampleWidth: 250;
 					exampleHeight: 250;
 					sample: LayoutGrid { }
-					sourceFile: "code_samples/LayoutGrid.qml";
+					sourceFile: "LayoutGrid.qml";
 				}
 			}
 

@@ -82,7 +82,7 @@ HistoryPage {
 					exampleWidth: 200;
 					exampleHeight: 50;
 					sample: ListViewExample { }
-					sourceFile: "code_samples/ListViewExample.qml";
+					sourceFile: "ListViewExample.qml";
 				}
 			}
 
@@ -106,7 +106,7 @@ HistoryPage {
 					exampleWidth: 330;
 					exampleHeight: 330;
 					sample: GridViewExample { }
-					sourceFile: "code_samples/GridViewExample.qml";
+					sourceFile: "GridViewExample.qml";
 				}
 			}
 
@@ -141,7 +141,7 @@ HistoryPage {
 					exampleWidth: 300;
 					exampleHeight: 250;
 					sample: ProxyLessonExample { }
-					sourceFile: "code_samples/ProxyLessonExample.qml";
+					sourceFile: "ProxyLessonExample.qml";
 				}
 			}
 
@@ -151,7 +151,7 @@ HistoryPage {
 
 	Resource {
 		id: proxyModelsCode;
-		url: "code_samples/ProxyMessages.qml";
+		url: "ProxyMessages.qml";
 	}
 
 }

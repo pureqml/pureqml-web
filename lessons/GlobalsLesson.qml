@@ -67,16 +67,6 @@ HistoryPage {
 
 					}
 				}
-
-				//DescriptionText { text: "Simple example of using such alignment is below:"; }
-
-				//CodeExample {
-					//codeWidth: content.width - 20;
-					//exampleWidth: 200;
-					//exampleHeight: 200;
-					//sample: Anchors1 { }
-					//sourceFile: "code_samples/Anchors1.qml";
-				//}
 			}
 
 			PageColumn {
