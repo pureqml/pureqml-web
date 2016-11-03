@@ -1,0 +1,117 @@
+HistoryPage {
+	height: contentRect.height;
+	anchors.top: parent.top;
+	anchors.left: parent.left;
+	anchors.right: parent.right;
+	url: "anchors";
+
+	LeftMenu { id: leftMenu; onIndexChoosed(idx): { anchorsContent.focusItem(idx) } }
+
+	Rectangle {
+		id: contentRect;
+		height: anchorsContent.contentHeight + 30;
+		anchors.top: parent.top;
+		anchors.left: leftMenu.right;
+		anchors.right: parent.right;
+		anchors.leftMargin: 10;
+		color: colorTheme.panelColor;
+
+		ContentColumn {
+			id: anchorsContent;
+			anchors.top: parent.top;
+			anchors.left: parent.left;
+			anchors.right: parent.right;
+			anchors.margins: 10;
+			spacing: 30;
+
+			PageColumn {
+				title: "Anchors";
+				text: "Each item can can be positionated with anchors. The PureqQML anchors are simillar to the Qt anchors. But has one more value: \"centerIn\" for positionating at the center of correspoding item.";
+
+				DescriptionText { text: "First of all item can be aligned by one of it's own side:"; }
+
+				KeyValueView {
+					anchors.leftMargin: 20;
+					model: ListModel {
+						ListElement { key: "top"; value: ""; }
+						ListElement { key: "left"; value: ""; }
+						ListElement { key: "right"; value: ""; }
+						ListElement { key: "bottom"; value: ""; }
+					}
+				}
+
+				DescriptionText { text: "Simple example of using such alignment is below:"; }
+
+				CodeExample {
+					codeWidth: anchorsContent.width - 20;
+					exampleWidth: 200;
+					exampleHeight: 200;
+					sample: Anchors1 { }
+					sourceFile: "code_samples/Anchors1.qml";
+				}
+			}
+
+			PageColumn {
+				title: "Center";
+				text: "You also can attach item at center...";
+
+				KeyValueView {
+					anchors.leftMargin: 20;
+					model: ListModel {
+						ListElement { key: "centerIn"; value: ""; }
+						ListElement { key: "verticalCenter"; value: ""; }
+						ListElement { key: "horizontalCenter"; value: ""; }
+					}
+				}
+
+				DescriptionText { text: "Simple example of using such alignment is below:"; }
+
+				CodeExample {
+					codeWidth: anchorsContent.width - 20;
+					exampleWidth: 350;
+					exampleHeight: 350;
+					sample: AnchorsCenter { }
+					sourceFile: "code_samples/AnchorsCenter.qml";
+				}
+			}
+
+			PageColumn {
+				title: "Fill";
+				text: "Item can be fill to considered item. In example below red rectangle fill its parent.";
+
+				CodeExample {
+					codeWidth: anchorsContent.width - 20;
+					exampleWidth: 200;
+					exampleHeight: 200;
+					sample: AnchorsFill { }
+					sourceFile: "code_samples/AnchorsFill.qml";
+				}
+			}
+
+			PageColumn {
+				title: "Margins";
+				text: "Margins...";
+
+				CodeExample {
+					codeWidth: anchorsContent.width - 20;
+					exampleWidth: 200;
+					exampleHeight: 200;
+					sample: AnchorsMargins { }
+					sourceFile: "code_samples/AnchorsMargins.qml";
+				}
+
+				DescriptionText { text: "If you need same margins for each side just set single \"margins\" value:"; }
+
+				CodeExample {
+					codeWidth: anchorsContent.width - 20;
+					exampleWidth: 200;
+					exampleHeight: 200;
+					sample: AnchorsMarginsFixed { }
+					sourceFile: "code_samples/AnchorsMarginsFixed.qml";
+				}
+			}
+
+			onFillMenu(data): { leftMenu.fillModel(data) }
+		}
+	}
+}

@@ -1,0 +1,3 @@
+HistoryPage {
+	url: "docs";
+}
