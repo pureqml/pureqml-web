@@ -148,7 +148,7 @@ HistoryPage {
 
 	Resource {
 		id: proxyModelsCode;
-		url: "ProxyMessages.qml";
+		url: "https://raw.githubusercontent.com/pureqml/pureqml-web/master/code_samples/ProxyMessages.qml";
 	}
 
 }
