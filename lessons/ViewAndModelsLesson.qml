@@ -31,7 +31,6 @@ HistoryPage {
 				KeyValueView {
 					anchors.leftMargin: 20;
 					model: ListModel {
-
 						ListElement { key: "count"; value: "view elements count"; }
 						ListElement { key: "currentIndex"; value: "index of current focused element in view"; }
 						ListElement { key: "model"; value: "object which attached to model"; }
