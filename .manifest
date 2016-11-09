@@ -1,6 +1,6 @@
 {
 	"name": "pureqml",
-	"platforms": ["html5"],
+	"platforms": ["web"],
 	"apps": {"index": "index"},
 	"minify": true
 }
