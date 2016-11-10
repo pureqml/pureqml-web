@@ -21,6 +21,7 @@ Item {
 		anchors.leftMargin: 20;
 		anchors.rightMargin: 20;
 
+		Home {}
 		About { }
 		Download { }
 		Lessons { }
@@ -48,7 +49,12 @@ Item {
 		}
 	}
 
-	Head { id: head; onCountChanged: { head.focusIndex(pages.currentIndex) } }
+	Head {
+		id: head;
+
+		onCountChanged: { head.focusIndex(pages.currentIndex) }
+		onGoHome: { this._context.location.pushState("home", "home", "?page=home") }
+	}
 
 	getParameterByName(name, url): {
 		if (!url)

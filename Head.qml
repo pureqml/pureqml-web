@@ -1,4 +1,5 @@
 Rectangle {
+	signal goHome;
 	property alias count: menu.count;
 	height: 100;
 	anchors.top: parent.top;
@@ -11,24 +12,33 @@ Rectangle {
 	effects.shadow.color: "#0003";
 	effects.shadow.spread: 1;
 
-	Image {
-		id: logo;
-		width: height;
-		height: parent.height - 20;
-		anchors.left: parent.left;
-		anchors.leftMargin: 10;
-		anchors.verticalCenter: parent.verticalCenter;
-		fillMode: Image.PreserveAspectFit;
-		source: "res/logo.png";
-	}
+	Item {
+		property Mixin hoverMixin: HoverMixin {}
+		height: parent.height;
+		width: logo.width + headText.paintedWidth + 10;
 
-	Text {
-		anchors.left: logo.right;
-		anchors.verticalCenter: parent.verticalCenter;
-		anchors.leftMargin: 10;
-		font.pixelSize: 42;
-		color: colorTheme.primaryTextColor;
-		text: "PureQML";
+		Image {
+			id: logo;
+			width: height;
+			height: parent.height - 20;
+			anchors.left: parent.left;
+			anchors.leftMargin: 10;
+			anchors.verticalCenter: parent.verticalCenter;
+			fillMode: Image.PreserveAspectFit;
+			source: "res/logo.png";
+		}
+
+		Text {
+			id: headText;
+			anchors.left: logo.right;
+			anchors.verticalCenter: parent.verticalCenter;
+			anchors.leftMargin: 10;
+			font.pixelSize: 42;
+			color: colorTheme.primaryTextColor;
+			text: "PureQML";
+		}
+
+		onClicked: { this.parent.goHome() }
 	}
 
 	ListView {
