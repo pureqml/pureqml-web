@@ -84,18 +84,18 @@ HistoryPage {
 
 						Rectangle {
 							width: parent.hover ? 180 : 0;
-							height: parent.hover ? 50 : 0;
+							height: parent.hover ? 40 : 0;
+							anchors.top: parent.bottom;
 							anchors.left: parent.left;
-							anchors.bottom: parent.bottom;
 							color: "#424242ee";
 							z: parent.z + 1;
 							clip: true;
 
 							Text {
+								id: platformText;
 								anchors.top: parent.top;
 								anchors.left: parent.left;
-								anchors.topMargin: 12;
-								anchors.leftMargin: 10;
+								anchors.margins: 8;
 								color: "#eee";
 								text: model.text;
 								font.pixelSize: 18;

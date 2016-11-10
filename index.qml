@@ -35,6 +35,9 @@ Item {
 		ViewAndModelsLesson { }
 		GlobalsLesson { }
 		InputsLesson { }
+		BasicLesson { }
+		MixinLesson { }
+		EffectsLesson { }
 
 		focusHistoryPage(state): {
 			var children = this.children

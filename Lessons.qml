@@ -108,6 +108,20 @@ HistoryPage {
 				ReadMore { url: "mixin"; }
 			}
 
+			PageColumn {
+				title: "Effects";
+				text: "";
+
+				ReadMore { url: "effects"; }
+			}
+
+			PageColumn {
+				title: "Transforms";
+				text: "";
+
+				ReadMore { url: "effects"; }
+			}
+
 			onFillMenu(data): { leftMenu.fillModel(data) }
 		}
 	}
