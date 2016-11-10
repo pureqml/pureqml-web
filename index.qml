@@ -21,7 +21,6 @@ Item {
 		anchors.leftMargin: 20;
 		anchors.rightMargin: 20;
 
-		Home {}
 		About { }
 		Download { }
 		Lessons { }
