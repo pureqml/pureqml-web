@@ -5,7 +5,6 @@ Item {
 	Rectangle {
 		x: 50;
 		y: 50;
-		z: 2;
 		width: 100;
 		height: 100;
 		color: "red";
@@ -16,7 +15,6 @@ Item {
 	Rectangle {
 		x: 100;
 		y: 100;
-		z: 1;
 		width: 100;
 		height: 100;
 		radius: 10;
