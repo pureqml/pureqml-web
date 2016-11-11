@@ -4,7 +4,7 @@ Rectangle {
 	property string text;
 	width: 200;
 	height: 350;
-	color: "#eee";
+	color: colorTheme.panelColor;
 	radius: 3;
 	effects.shadow.color: "#ccc";
 	effects.shadow.x: 1;

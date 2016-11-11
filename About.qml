@@ -58,6 +58,7 @@ HistoryPage {
 
 			PageColumn {
 				title: "Supported platforms";
+				text: "You can write web-sites, applications for modern desktop and mobile browsers. You also can deploy your application for smart TV platforms:";
 
 				ListView {
 					width: contentWidth;
