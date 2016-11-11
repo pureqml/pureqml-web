@@ -39,13 +39,6 @@ HistoryPage {
 			}
 
 			PageColumn {
-				title: "Image";
-				text: "Using images";
-
-				ReadMore { url: "image"; }
-			}
-
-			PageColumn {
 				title: "Globals";
 				text: "Using globals properties you can manipulate page features...";
 
