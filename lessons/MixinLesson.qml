@@ -50,8 +50,10 @@ HistoryPage {
 				title: "HoverMixin";
 				text: "";
 
+				DescriptionText { text: "In example bellow Rectangle change its color when it's hovered and text appears in the middle on mouse clicked event."; }
+
 				CodeExample {
-					codeWidth: anchorsContent.width - 20;
+					codeWidth: parent.width - 20;
 					exampleWidth: 200;
 					exampleHeight: 200;
 					sample: ClickMixinExample { }
@@ -65,7 +67,21 @@ HistoryPage {
 
 			PageColumn {
 				title: "OverflowMixin";
-				text: "";
+				text: "This mixin contatins just one proeprty - \"value\" for setting overflow mode.";
+
+				KeyValueView {
+					anchors.leftMargin: 20;
+					model: ListModel {
+						ListElement { key: "value"; value: "enum property which set overflow behavour. Possible values: Visible, Hidden, Scroll, ScrollX, ScrollY"; }
+					}
+				}
+
+				CodeExample {
+					codeWidth: parent.width - 20;
+					exampleWidth: 200;
+					exampleHeight: 200;
+					sample: OverflowMixinExample { }
+				}
 			}
 
 			PageColumn {

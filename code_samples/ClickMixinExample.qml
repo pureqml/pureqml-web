@@ -13,6 +13,7 @@ Item {
 		Text {
 			id: innerText;
 			color: "#fff";
+			anchors.centerIn: parent;
 			font.pixelSize: 14;
 		}
 
