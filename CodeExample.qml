@@ -22,7 +22,7 @@ Item {
 			border.width: 1;
 			border.color: "#ccc";
 
-			content: Item { anchors.fill: parent; }
+			property Item content: Item { anchors.fill: parent; }
 
 			onCompleted: {
 				var item = codeExampleProto.sample
