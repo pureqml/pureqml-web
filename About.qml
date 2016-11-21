@@ -66,6 +66,7 @@ HistoryPage {
 					orientation: RollerView.Horizontal;
 					spacing: 50;
 					model: ListModel {
+						ListElement { icon: "res/platforms/android.png"; text: "Android"; }
 						ListElement { icon: "res/platforms/netcast.png"; text: "LG NetCast"; }
 						ListElement { icon: "res/platforms/opera.png"; text: "Opera TV"; }
 						ListElement { icon: "res/platforms/webos.png"; text: "LG WebOS"; }

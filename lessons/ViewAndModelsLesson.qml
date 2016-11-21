@@ -126,7 +126,6 @@ HistoryPage {
 				KeyValueView {
 					anchors.leftMargin: 20;
 					model: ListModel {
-
 						ListElement { key: "target"; value: "property for setting target model which data must be sorted or filtered"; }
 						ListElement { key: "setCompare"; value: "method which takes compare function with two arguments and which returns 1, -1 or 0"; }
 						ListElement { key: "setFilter"; value: "method which takes filter method and return bool value"; }
@@ -149,5 +148,4 @@ HistoryPage {
 		id: proxyModelsCode;
 		url: "https://raw.githubusercontent.com/pureqml/pureqml-web/master/code_samples/ProxyMessages.qml";
 	}
-
 }
