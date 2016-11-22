@@ -1,0 +1,237 @@
+{
+	"site_name": "QML Documentation",
+	"use_directory_urls": false,
+	"docs_dir": ".",
+	"site_dir": "../html",
+	"repo_url": "https://github.com/pureqml/qmlcore/",
+	"pages": {
+		"canvas": {
+			"file": "canvas.json",
+			"content": {
+				'Canvas': 'canvas/Canvas.json',
+				'CurveLine': 'canvas/CurveLine.json'
+			}
+		},
+		"code_samples": {
+			"file": "code_samples.json",
+			"content": {
+				'LayoutGrid': 'code_samples/LayoutGrid.json',
+				'PropertyHandling': 'code_samples/PropertyHandling.json',
+				'AnchorsFill': 'code_samples/AnchorsFill.json',
+				'LayoutRow': 'code_samples/LayoutRow.json',
+				'AnchorsMarginsFixed': 'code_samples/AnchorsMarginsFixed.json',
+				'TextExample': 'code_samples/TextExample.json',
+				'KeyLesson': 'code_samples/KeyLesson.json',
+				'RectanglesExample': 'code_samples/RectanglesExample.json',
+				'GamepadHandleLesson': 'code_samples/GamepadHandleLesson.json',
+				'SignalTestItem': 'code_samples/SignalTestItem.json',
+				'ClickMixinExample': 'code_samples/ClickMixinExample.json',
+				'LayoutColumn': 'code_samples/LayoutColumn.json',
+				'ProxyLessonExample': 'code_samples/ProxyLessonExample.json',
+				'ListViewExample': 'code_samples/ListViewExample.json',
+				'KeySelectLesson': 'code_samples/KeySelectLesson.json',
+				'GridViewExample': 'code_samples/GridViewExample.json',
+				'OverflowMixinExample': 'code_samples/OverflowMixinExample.json',
+				'KeyPressLesson': 'code_samples/KeyPressLesson.json',
+				'ProxyMessages': 'code_samples/ProxyMessages.json',
+				'AnchorsMargins': 'code_samples/AnchorsMargins.json',
+				'Anchors1': 'code_samples/Anchors1.json',
+				'AnchorsCenter': 'code_samples/AnchorsCenter.json',
+				'ImageExample': 'code_samples/ImageExample.json',
+				'SignalHandling': 'code_samples/SignalHandling.json',
+				'SignalArgsHandling': 'code_samples/SignalArgsHandling.json',
+				'GamepadCodeLesson': 'code_samples/GamepadCodeLesson.json'
+			}
+		},
+		"controls": {
+			"file": "controls.json",
+			"content": {
+				'WebItem': 'controls/WebItem.json',
+				'HlsPlayer': 'controls/HlsPlayer.json',
+				'FocusableImage': 'controls/FocusableImage.json',
+				'TextHover': 'controls/TextHover.json',
+				'CurrentDateText': 'controls/CurrentDateText.json',
+				'RollerView': 'controls/RollerView.json',
+				'TextButton': 'controls/TextButton.json',
+				'Chooser': 'controls/Chooser.json',
+				'CurrentTimeText': 'controls/CurrentTimeText.json',
+				'ProgressBar': 'controls/ProgressBar.json',
+				'TextEdit': 'controls/TextEdit.json',
+				'ResizableBox': 'controls/ResizableBox.json',
+				'FocusablePanel': 'controls/FocusablePanel.json',
+				'JWPlayer': 'controls/JWPlayer.json',
+				'DateText': 'controls/DateText.json',
+				'EllipsisText': 'controls/EllipsisText.json',
+				'RelativeSize': 'controls/RelativeSize.json'
+			}
+		},
+		"core": {
+			"file": "core.json",
+			"content": {
+				'MouseArea': 'core/MouseArea.json',
+				'Layout': 'core/Layout.json',
+				'SettingsStorage': 'core/SettingsStorage.json',
+				'Gradient': 'core/Gradient.json',
+				'System': 'core/System.json',
+				'Animation': 'core/Animation.json',
+				'Location': 'core/Location.json',
+				'BorderSide': 'core/BorderSide.json',
+				'GamepadManager': 'core/GamepadManager.json',
+				'SearchInput': 'core/SearchInput.json',
+				'Rectangle': 'core/Rectangle.json',
+				'BaseButton': 'core/BaseButton.json',
+				'Checkbox': 'core/Checkbox.json',
+				'GradientStop': 'core/GradientStop.json',
+				'Anchors': 'core/Anchors.json',
+				'TextArea': 'core/TextArea.json',
+				'EmailInput': 'core/EmailInput.json',
+				'Object': 'core/Object.json',
+				'DebugInfoItem': 'core/DebugInfoItem.json',
+				'Paddings': 'core/Paddings.json',
+				'Grid': 'core/Grid.json',
+				'Effects': 'core/Effects.json',
+				'NumberInput': 'core/NumberInput.json',
+				'Shadow': 'core/Shadow.json',
+				'ColorAnimation': 'core/ColorAnimation.json',
+				'TimeInput': 'core/TimeInput.json',
+				'ColorInput': 'core/ColorInput.json',
+				'TextInput': 'core/TextInput.json',
+				'BaseLayout': 'core/BaseLayout.json',
+				'GridView': 'core/GridView.json',
+				'Resource': 'core/Resource.json',
+				'Column': 'core/Column.json',
+				'Timer': 'core/Timer.json',
+				'Transform': 'core/Transform.json',
+				'BaseViewContent': 'core/BaseViewContent.json',
+				'Item': 'core/Item.json',
+				'AnchorLine': 'core/AnchorLine.json',
+				'LocalStorage': 'core/LocalStorage.json',
+				'EventEmitter': 'core/EventEmitter.json',
+				'Context': 'core/Context.json',
+				'Activity': 'core/Activity.json',
+				'Repeater': 'core/Repeater.json',
+				'Audio': 'core/Audio.json',
+				'ProxyModel': 'core/ProxyModel.json',
+				'BaseView': 'core/BaseView.json',
+				'InputBase': 'core/InputBase.json',
+				'ListView': 'core/ListView.json',
+				'Protocol': 'core/Protocol.json',
+				'Gamepad': 'core/Gamepad.json',
+				'DebugInfoPanel': 'core/DebugInfoPanel.json',
+				'Text': 'core/Text.json',
+				'Image': 'core/Image.json',
+				'ListModel': 'core/ListModel.json',
+				'DateInput': 'core/DateInput.json',
+				'PageStack': 'core/PageStack.json',
+				'Font': 'core/Font.json',
+				'Border': 'core/Border.json',
+				'UlView': 'core/UlView.json',
+				'Row': 'core/Row.json'
+			}
+		},
+		"lessons": {
+			"file": "lessons.json",
+			"content": {
+				'EffectsLesson': 'lessons/EffectsLesson.json',
+				'BasicLesson': 'lessons/BasicLesson.json',
+				'GamepadLesson': 'lessons/GamepadLesson.json',
+				'MixinLesson': 'lessons/MixinLesson.json',
+				'KeyboardLesson': 'lessons/KeyboardLesson.json',
+				'AnchorsLesson': 'lessons/AnchorsLesson.json',
+				'LayoutsLesson': 'lessons/LayoutsLesson.json',
+				'InputsLesson': 'lessons/InputsLesson.json',
+				'SignalLesson': 'lessons/SignalLesson.json',
+				'ViewAndModelsLesson': 'lessons/ViewAndModelsLesson.json',
+				'GlobalsLesson': 'lessons/GlobalsLesson.json',
+				'FocusLesson': 'lessons/FocusLesson.json'
+			}
+		},
+		"mixins": {
+			"file": "mixins.json",
+			"content": {
+				'ImageMixin': 'mixins/ImageMixin.json',
+				'OverflowMixin': 'mixins/OverflowMixin.json',
+				'HoverMixin': 'mixins/HoverMixin.json',
+				'CSSMixin': 'mixins/CSSMixin.json',
+				'DragMixin': 'mixins/DragMixin.json',
+				'TextMixin': 'mixins/TextMixin.json'
+			}
+		},
+		"pureqml-web": {
+			"file": "pureqml-web.json",
+			"content": {
+				'Lessons': 'pureqml-web/Lessons.json',
+				'ContentColumn': 'pureqml-web/ContentColumn.json',
+				'ColorTheme': 'pureqml-web/ColorTheme.json',
+				'KeyValueView': 'pureqml-web/KeyValueView.json',
+				'SectionHead': 'pureqml-web/SectionHead.json',
+				'ReadMore': 'pureqml-web/ReadMore.json',
+				'Docs': 'pureqml-web/Docs.json',
+				'LeftMenu': 'pureqml-web/LeftMenu.json',
+				'Head': 'pureqml-web/Head.json',
+				'MdReader': 'pureqml-web/MdReader.json',
+				'CodeExample': 'pureqml-web/CodeExample.json',
+				'PageColumn': 'pureqml-web/PageColumn.json',
+				'BigButton': 'pureqml-web/BigButton.json',
+				'DescriptionText': 'pureqml-web/DescriptionText.json',
+				'About': 'pureqml-web/About.json',
+				'DescriptionPanel': 'pureqml-web/DescriptionPanel.json',
+				'HistoryPage': 'pureqml-web/HistoryPage.json',
+				'Download': 'pureqml-web/Download.json',
+				'HistoryPageContent': 'pureqml-web/HistoryPageContent.json'
+			}
+		},
+		"svg": {
+			"file": "svg.json",
+			"content": {
+				'Path': 'svg/Path.json',
+				'Line': 'svg/Line.json',
+				'SvgContainer': 'svg/SvgContainer.json',
+				'ExternalPath': 'svg/ExternalPath.json',
+				'SvgBase': 'svg/SvgBase.json'
+			}
+		},
+		"vk": {
+			"file": "vk.json",
+			"content": {
+				'VkApiProtocol': 'vk/VkApiProtocol.json',
+				'VkWallModel': 'vk/VkWallModel.json'
+			}
+		},
+		"web": {
+			"file": "web.json",
+			"content": {
+				'FileInput': 'web/FileInput.json',
+				'WebLink': 'web/WebLink.json',
+				'Sharer': 'web/Sharer.json',
+				'Spinner': 'web/Spinner.json',
+				'CodeHighlighter': 'web/CodeHighlighter.json',
+				'GifSpinner': 'web/GifSpinner.json',
+				'TopMenu': 'web/TopMenu.json',
+				'MobileMenuButton': 'web/MobileMenuButton.json',
+				'LanguageSelector': 'web/LanguageSelector.json',
+				'NavigationMenuButton': 'web/NavigationMenuButton.json',
+				'Ho': 'web/Ho.json',
+				'Box': 'web/Box.json',
+				'Navbar': 'web/Navbar.json',
+				'Button': 'web/Button.json',
+				'Youtube': 'web/Youtube.json',
+				'LanguageSwitcher': 'web/LanguageSwitcher.json',
+				'SwipeMenu': 'web/SwipeMenu.json',
+				'H2': 'web/H2.json',
+				'H3': 'web/H3.json',
+				'H1': 'web/H1.json',
+				'VideoPlayer': 'web/VideoPlayer.json',
+				'H4': 'web/H4.json',
+				'H5': 'web/H5.json',
+				'NavbarItem': 'web/NavbarItem.json'
+			}
+		},
+		"yandex": {
+			"file": "yandex.json",
+			"content": {
+				'YandexMap': 'yandex/YandexMap.json'
+			}
+		}
+	}
+}
