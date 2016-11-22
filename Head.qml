@@ -77,7 +77,7 @@ Rectangle {
 
 			Rectangle {
 				height: 2;
-				width: parent.activeFocus ? menuItemText.width : 0;
+				width: parent.activeFocus || model.index == parent.parent.currentIndex ? menuItemText.width : 0;
 				anchors.top: menuItemText.bottom;
 				anchors.horizontalCenter: menuItemText.horizontalCenter;
 				anchors.topMargin: 5;
