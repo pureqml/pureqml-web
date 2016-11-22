@@ -131,7 +131,7 @@ HistoryPage {
 					model: ListModel {
 						ListElement { text: "Create project directory,"; code: "cd &lt;project-dir&gt;"; }
 						ListElement { text: "Clone qmlcore to it:"; code: "git clone git@github.com:pureqml/qmlcore.git"; }
-						ListElement { text: "Run"; code: "./qmlcore --boilerplate"; }
+						ListElement { text: "Run "; code: "./qmlcore --boilerplate"; }
 						ListElement { text: "Look into "; code: "app.qml"; }
 						ListElement { text: "Run"; code: "./qmlcore/build"; }
 						ListElement { text: "Please find resulting files in"; code: ".app.web/*";}
@@ -167,8 +167,7 @@ HistoryPage {
 							anchors.right: parent.right;
 							anchors.bottom: parent.bottom;
 							anchors.leftMargin: valueText.paintedWidth + 30;
-							font.weight: 400;
-							font.pixelSize: 21;
+							font.pixelSize: 22;
 							text: model.code;
 							visible: model.code;
 						}
