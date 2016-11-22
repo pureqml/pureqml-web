@@ -4,7 +4,7 @@ Rectangle {
 	width: 200;
 	height: menuContent.height + 20;
 	anchors.top: parent.top;
-	anchors.left: parent.left;
+	anchors.rightMargin: 10;
 	color: colorTheme.panelColor;
 
 	ListModel { id: menuModel; }

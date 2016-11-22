@@ -5,19 +5,14 @@ HistoryPage {
 	anchors.right: parent.right;
 	url: "layouts";
 
-	LeftMenu { id: leftMenu; onIndexChoosed(idx): { layoutsContent.focusItem(idx) } }
+	LeftMenu { id: leftMenu; anchors.right: contentRect.left; onIndexChoosed(idx): { content.focusItem(idx) } }
 
-	Rectangle {
+	HistoryPageContent {
 		id: contentRect;
-		height: layoutsContent.contentHeight + 30;
-		anchors.top: parent.top;
-		anchors.left: leftMenu.right;
-		anchors.right: parent.right;
-		anchors.leftMargin: 10;
-		color: colorTheme.panelColor;
+		height: content.contentHeight + 30;
 
 		ContentColumn {
-			id: layoutsContent;
+			id: content;
 			anchors.top: parent.top;
 			anchors.left: parent.left;
 			anchors.right: parent.right;
@@ -46,7 +41,7 @@ HistoryPage {
 
 				CodeExample {
 					anchors.left: parent.left;
-					codeWidth: layoutsContent.width - 20;
+					codeWidth: parent.width - 20;
 					exampleWidth: 400;
 					exampleHeight: 200;
 					sample: LayoutRow { }
@@ -60,7 +55,7 @@ HistoryPage {
 
 				CodeExample {
 					anchors.left: parent.left;
-					codeWidth: layoutsContent.width - 20;
+					codeWidth: parent.width - 20;
 					exampleWidth: 200;
 					exampleHeight: 400;
 					sample: LayoutColumn { }
@@ -74,7 +69,7 @@ HistoryPage {
 
 				CodeExample {
 					anchors.left: parent.left;
-					codeWidth: layoutsContent.width - 20;
+					codeWidth: parent.width - 20;
 					exampleWidth: 250;
 					exampleHeight: 250;
 					sample: LayoutGrid { }

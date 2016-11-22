@@ -5,19 +5,14 @@ HistoryPage {
 	anchors.right: parent.right;
 	url: "keyboard";
 
-	LeftMenu { id: leftMenu; onIndexChoosed(idx): { keyboardContent.focusItem(idx) } }
+	LeftMenu { id: leftMenu; anchors.right: contentRect.left; onIndexChoosed(idx): { content.focusItem(idx) } }
 
-	Rectangle {
+	HistoryPageContent {
 		id: contentRect;
-		height: keyboardContent.contentHeight + 30;
-		anchors.top: parent.top;
-		anchors.left: leftMenu.right;
-		anchors.right: parent.right;
-		anchors.leftMargin: 10;
-		color: colorTheme.panelColor;
+		height: content.contentHeight + 30;
 
 		ContentColumn {
-			id: keyboardContent;
+			id: content;
 			anchors.top: parent.top;
 			anchors.left: parent.left;
 			anchors.right: parent.right;

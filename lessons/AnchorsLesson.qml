@@ -5,19 +5,14 @@ HistoryPage {
 	anchors.right: parent.right;
 	url: "anchors";
 
-	LeftMenu { id: leftMenu; onIndexChoosed(idx): { anchorsContent.focusItem(idx) } }
+	LeftMenu { id: leftMenu; anchors.right: contentRect.left; onIndexChoosed(idx): { content.focusItem(idx) } }
 
-	Rectangle {
+	HistoryPageContent {
 		id: contentRect;
-		height: anchorsContent.contentHeight + 30;
-		anchors.top: parent.top;
-		anchors.left: leftMenu.right;
-		anchors.right: parent.right;
-		anchors.leftMargin: 10;
-		color: colorTheme.panelColor;
+		height: content.contentHeight + 30;
 
 		ContentColumn {
-			id: anchorsContent;
+			id: content;
 			anchors.top: parent.top;
 			anchors.left: parent.left;
 			anchors.right: parent.right;
@@ -43,7 +38,7 @@ HistoryPage {
 				DescriptionText { text: "Simple example of using such alignment is below:"; }
 
 				CodeExample {
-					codeWidth: anchorsContent.width - 20;
+					codeWidth: parent.width - 20;
 					exampleWidth: 200;
 					exampleHeight: 200;
 					sample: Anchors1 { }
@@ -66,7 +61,7 @@ HistoryPage {
 				DescriptionText { text: "Simple example of using such alignment is below:"; }
 
 				CodeExample {
-					codeWidth: anchorsContent.width - 20;
+					codeWidth: parent.width - 20;
 					exampleWidth: 350;
 					exampleHeight: 350;
 					sample: AnchorsCenter { }
@@ -78,7 +73,7 @@ HistoryPage {
 				text: "Item can be fill to considered item. In example below red rectangle fill its parent.";
 
 				CodeExample {
-					codeWidth: anchorsContent.width - 20;
+					codeWidth: parent.width - 20;
 					exampleWidth: 200;
 					exampleHeight: 200;
 					sample: AnchorsFill { }
@@ -90,7 +85,7 @@ HistoryPage {
 				text: "Margins...";
 
 				CodeExample {
-					codeWidth: anchorsContent.width - 20;
+					codeWidth: parent.width - 20;
 					exampleWidth: 200;
 					exampleHeight: 200;
 					sample: AnchorsMargins { }
@@ -99,7 +94,7 @@ HistoryPage {
 				DescriptionText { text: "If you need same margins for each side just set single \"margins\" value:"; }
 
 				CodeExample {
-					codeWidth: anchorsContent.width - 20;
+					codeWidth: parent.width - 20;
 					exampleWidth: 200;
 					exampleHeight: 200;
 					sample: AnchorsMarginsFixed { }

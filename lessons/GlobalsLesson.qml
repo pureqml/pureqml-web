@@ -5,16 +5,11 @@ HistoryPage {
 	anchors.right: parent.right;
 	url: "globals";
 
-	LeftMenu { id: leftMenu; onIndexChoosed(idx): { content.focusItem(idx) } }
+	LeftMenu { id: leftMenu; anchors.right: contentRect.left; onIndexChoosed(idx): { content.focusItem(idx) } }
 
-	Rectangle {
+	HistoryPageContent {
 		id: contentRect;
 		height: content.contentHeight + 30;
-		anchors.top: parent.top;
-		anchors.left: leftMenu.right;
-		anchors.right: parent.right;
-		anchors.leftMargin: 10;
-		color: colorTheme.panelColor;
 
 		ContentColumn {
 			id: content;

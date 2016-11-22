@@ -1,23 +1,18 @@
 HistoryPage {
-	height: lessonsRectContent.height;
+	height: contentRect.height;
 	anchors.top: parent.top;
 	anchors.left: parent.left;
 	anchors.right: parent.right;
 	url: "lessons";
 
-	LeftMenu { id: leftMenu; onIndexChoosed(idx): { lessonsContent.focusItem(idx) } }
+	LeftMenu { id: leftMenu; anchors.right: contentRect.left; onIndexChoosed(idx): { content.focusItem(idx) } }
 
-	Rectangle {
-		id: lessonsRectContent;
-		height: lessonsContent.contentHeight + 30;
-		anchors.top: parent.top;
-		anchors.left: leftMenu.right;
-		anchors.right: parent.right;
-		anchors.leftMargin: 10;
-		color: colorTheme.panelColor;
+	HistoryPageContent {
+		id: contentRect;
+		height: content.contentHeight + 30;
 
 		ContentColumn {
-			id: lessonsContent;
+			id: content;
 			anchors.top: parent.top;
 			anchors.left: parent.left;
 			anchors.right: parent.right;
