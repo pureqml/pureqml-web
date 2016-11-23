@@ -14,7 +14,7 @@ HistoryPage {
 			var row = this.getRow(idx)
 			if (!row || !row.path)
 				return
-			dataLoader.url = "https://raw.githubusercontent.com/pureqml/pureqml-web/master/doc/json/" + row.path
+			dataLoader.url = "https://raw.githubusercontent.com/pureqml/pureqml-web/master/doc/json/" + (row.path.file ? row.path.file : row.path)
 		}
 	}
 
@@ -57,4 +57,6 @@ HistoryPage {
 			content.fill(data)
 		}
 	}
+
+	onCompleted: { dataLoader.url = "https://raw.githubusercontent.com/pureqml/pureqml-web/master/doc/json/core/Item.json" }
 }

@@ -28,8 +28,11 @@ HistoryPage {
 				title: "Benifits";
 
 				Grid {
+					id: gridPlat;
 					width: parent.width > 300 ? 660 : 200;
+					height: contentHeight;
 					spacing: 20;
+					flow: Layout.FlowTopToBottom;
 
 					DescriptionPanel {
 						icon: "res/icons/speed.png";
