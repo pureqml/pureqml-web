@@ -46,7 +46,7 @@ ContentColumn {
 			log("Skip no content")
 			return
 		}
-
+		window.scrollTo(0, 0)
 		nameText.text = data.name
 
 		var properties = content["Properties"]
