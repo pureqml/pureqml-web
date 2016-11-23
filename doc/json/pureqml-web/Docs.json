@@ -2,5 +2,8 @@
 	"name": "pureqml-web.Docs",
 
 	"content": {
+		"Methods": {
+			"onCompleted": ""
+		}
 	}
 }

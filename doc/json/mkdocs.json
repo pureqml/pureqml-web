@@ -169,14 +169,15 @@
 				"Docs": "pureqml-web/Docs.json",
 				"LeftMenu": "pureqml-web/LeftMenu.json",
 				"Head": "pureqml-web/Head.json",
-				"MdReader": "pureqml-web/MdReader.json",
+				"About": "pureqml-web/About.json",
 				"CodeExample": "pureqml-web/CodeExample.json",
 				"PageColumn": "pureqml-web/PageColumn.json",
 				"BigButton": "pureqml-web/BigButton.json",
 				"DescriptionText": "pureqml-web/DescriptionText.json",
-				"About": "pureqml-web/About.json",
+				"DocViewer": "pureqml-web/DocViewer.json",
 				"DescriptionPanel": "pureqml-web/DescriptionPanel.json",
 				"HistoryPage": "pureqml-web/HistoryPage.json",
+				"DocKeyValueView": "pureqml-web/DocKeyValueView.json",
 				"Download": "pureqml-web/Download.json",
 				"HistoryPageContent": "pureqml-web/HistoryPageContent.json"
 			}
