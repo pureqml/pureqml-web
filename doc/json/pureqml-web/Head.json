@@ -1,0 +1,18 @@
+{
+	"name": "pureqml-web.Head",
+
+	"content": {
+		"Alias Properties": {
+			"count": ""
+		},
+
+		"Signals": {
+			"goHome": ""
+		},
+
+		"Methods": {
+			"focusIndex": "",
+			"onCompleted": ""
+		}
+	}
+}

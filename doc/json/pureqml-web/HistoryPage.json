@@ -1,0 +1,16 @@
+{
+	"name": "pureqml-web.HistoryPage",
+
+	"content": {
+		"Properties": {
+			"url": "",
+			"leftMenuWidth": "",
+			"contentWidth": "",
+			"bigScreen": ""
+		},
+
+		"Methods": {
+			"onRecursiveVisibleChanged": ""
+		}
+	}
+}

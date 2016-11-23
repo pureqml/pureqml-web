@@ -1,0 +1,20 @@
+{
+	"name": "core.Grid",
+
+	"content": {
+		"Properties": {
+			"horizontalSpacing": "horizontal spacing between rows, overrides regular spacing, pixels",
+			"verticalSpacing": "vertical spacing between columns, overrides regular spacing, pixels",
+			"rowsCount": "read-only property, represents number of row in a grid"
+		},
+
+		"Methods": {
+			"onWidthChanged": "",
+			"onHeightChanged": "",
+			"onFlowChanged": "",
+			"_layout": "",
+			"addChild": "",
+			"_update": ""
+		}
+	}
+}

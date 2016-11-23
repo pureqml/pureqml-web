@@ -1,0 +1,11 @@
+{
+	"name": "web.MobileMenuButton",
+
+	"content": {
+		"Properties": {
+			"back": "",
+			"barColor": ""
+		},
+
+	}
+}

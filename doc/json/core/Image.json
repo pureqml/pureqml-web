@@ -1,0 +1,19 @@
+{
+	"name": "core.Image",
+
+	"content": {
+		"Properties": {
+			"source": "image URL",
+			"paintedWidth": "real image width",
+			"paintedHeight": "real image height"
+		},
+
+		"Methods": {
+			"_init": "",
+			"_onError": "",
+			"_load": "",
+			"load": "",
+			"_update": ""
+		}
+	}
+}

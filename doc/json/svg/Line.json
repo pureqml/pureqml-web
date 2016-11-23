@@ -1,0 +1,19 @@
+{
+	"name": "svg.Line",
+
+	"content": {
+		"Properties": {
+			"x1": "",
+			"x2": "",
+			"y1": "",
+			"y2": "",
+			"color": "",
+			"width": ""
+		},
+
+		"Methods": {
+			"getTag": "returns tag for corresponding element",
+			"_update": "@internal"
+		}
+	}
+}

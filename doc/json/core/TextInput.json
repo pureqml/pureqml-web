@@ -1,0 +1,14 @@
+{
+	"name": "core.TextInput",
+
+	"content": {
+		"Properties": {
+			"text": "",
+			"passwordMode": ""
+		},
+
+		"Methods": {
+			"_update": ""
+		}
+	}
+}

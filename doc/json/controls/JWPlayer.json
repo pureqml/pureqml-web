@@ -1,0 +1,40 @@
+{
+	"name": "controls.JWPlayer",
+
+	"content": {
+		"Properties": {
+			"duration": "",
+			"progress": "",
+			"buffered": "",
+			"autoPlay": "",
+			"loop": "",
+			"ready": "",
+			"paused": "",
+			"muted": "",
+			"waiting": "",
+			"seeking": "",
+			"volume": "",
+			"source": "",
+			"provider": ""
+		},
+
+		"Signals": {
+			"finished": "",
+			"error": ""
+		},
+
+		"Methods": {
+			"_update": "",
+			"_updateSize": "",
+			"_setupPlayer": "",
+			"_player": "",
+			"play": "",
+			"pause": "",
+			"seek": "",
+			"seekTo": "",
+			"onSourceChanged": "",
+			"onReadyChanged": "",
+			"onCompleted": ""
+		}
+	}
+}

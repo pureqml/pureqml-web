@@ -1,0 +1,17 @@
+{
+	"name": "core.Rectangle",
+
+	"content": {
+		"Properties": {
+			"color": "rectangle background color",
+			"radius": "round corner radius",
+			"border": "object holding properties of the border",
+			"gradient": "if gradient object was set, it displays gradient instead of solid color"
+		},
+
+		"Methods": {
+			"_mapCSSAttribute": "",
+			"_update": ""
+		}
+	}
+}

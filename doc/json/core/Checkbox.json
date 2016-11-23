@@ -1,0 +1,17 @@
+{
+	"name": "core.Checkbox",
+
+	"content": {
+		"Properties": {
+			"checked": "",
+			"panelColor": "",
+			"checkedColor": "",
+			"uncheckedColor": ""
+		},
+
+		"Methods": {
+			"onHorizontalSwiped": "",
+			"onMouseMove": ""
+		}
+	}
+}

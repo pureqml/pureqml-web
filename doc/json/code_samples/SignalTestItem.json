@@ -1,0 +1,13 @@
+{
+	"name": "code_samples.SignalTestItem",
+
+	"content": {
+		"Signals": {
+			"mySignalOccured": ""
+		},
+
+		"Methods": {
+			"onClicked": ""
+		}
+	}
+}

@@ -1,0 +1,17 @@
+{
+	"name": "pureqml-web.CodeExample",
+
+	"content": {
+		"Properties": {
+			"codeWidth": "",
+			"codeHeight": "",
+			"exampleWidth": "",
+			"exampleHeight": "",
+			"sample": ""
+		},
+
+		"Methods": {
+			"onSampleChanged": ""
+		}
+	}
+}

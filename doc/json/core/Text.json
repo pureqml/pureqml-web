@@ -1,0 +1,26 @@
+{
+	"name": "core.Text",
+
+	"content": {
+		"Properties": {
+			"text": "text to be displayed",
+			"color": "color of the text",
+			"shadow": "",
+			"font": "",
+			"paintedWidth": "real width of the text without any layout applied",
+			"paintedHeight": "real height of this text without any layout applied"
+		},
+
+		"Methods": {
+			"_setText": "",
+			"onChanged": "",
+			"on": "",
+			"_updateStyle": "",
+			"_enableSizeUpdate": "",
+			"_updateSize": "",
+			"_reflectSize": "",
+			"_updateSizeImpl": "",
+			"_update": ""
+		}
+	}
+}

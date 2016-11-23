@@ -1,0 +1,17 @@
+{
+	"name": "yandex.YandexMap",
+
+	"content": {
+		"Properties": {
+			"centerLongitude": "",
+			"centerLatitude": "",
+			"zoom": ""
+		},
+
+		"Methods": {
+			"_update": "",
+			"_updateCenter": "",
+			"getUserLocation": ""
+		}
+	}
+}

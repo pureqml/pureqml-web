@@ -1,0 +1,11 @@
+{
+	"name": "controls.TextButton",
+
+	"content": {
+		"Properties": {
+			"text": "",
+			"textColor": ""
+		},
+
+	}
+}

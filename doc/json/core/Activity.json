@@ -1,0 +1,27 @@
+{
+	"name": "core.Activity",
+
+	"content": {
+		"Properties": {
+			"active": "",
+			"hasAnyActiveChild": "",
+			"currentActivity": "",
+			"name": ""
+		},
+
+		"Signals": {
+			"started": "",
+			"stopped": ""
+		},
+
+		"Methods": {
+			"isActivity": "",
+			"isAnyActiveInContext": "",
+			"closeAll": "",
+			"closeParentActivities": "",
+			"start": "",
+			"stop": "",
+			"onBackPressed": ""
+		}
+	}
+}

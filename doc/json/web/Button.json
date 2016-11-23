@@ -1,0 +1,17 @@
+{
+	"name": "web.Button",
+
+	"content": {
+		"Properties": {
+			"text": "",
+			"font": "",
+			"border": ""
+		},
+
+		"Methods": {
+			"_update": "",
+			"getTag": "returns tag for corresponding element",
+			"_updateSize": ""
+		}
+	}
+}

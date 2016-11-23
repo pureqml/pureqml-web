@@ -1,0 +1,11 @@
+{
+	"name": "svg.SvgContainer",
+
+	"content": {
+		"Methods": {
+			"getTag": "returns tag for corresponding element",
+			"createElement": "specialized implementation of element creation in a certain namespace.",
+			"_update": "@internal"
+		}
+	}
+}

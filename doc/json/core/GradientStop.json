@@ -1,0 +1,15 @@
+{
+	"name": "core.GradientStop",
+
+	"content": {
+		"Properties": {
+			"position": "",
+			"color": ""
+		},
+
+		"Methods": {
+			"_update": "",
+			"_getDeclaration": ""
+		}
+	}
+}

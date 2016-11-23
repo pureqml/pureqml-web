@@ -1,0 +1,20 @@
+{
+	"name": "web.SwipeMenu",
+
+	"content": {
+		"Properties": {
+			"innerArea": "",
+			"hideable": "",
+			"xDuration": "",
+			"openWidth": "",
+			"intPos": "",
+			"shiftX": ""
+		},
+
+		"Methods": {
+			"show": "",
+			"hide": "",
+			"onCompleted": ""
+		}
+	}
+}

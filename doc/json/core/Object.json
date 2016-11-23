@@ -1,0 +1,21 @@
+{
+	"name": "core.Object",
+
+	"content": {
+		"Methods": {
+			"discard": "",
+			"addChild": "adds child object to children",
+			"_setId": "@internal sets id",
+			"onChanged": "register callback on property's value changed",
+			"connectOnChanged": "",
+			"removeOnChanged": "removes 'on changed' callback",
+			"_removeUpdater": "@internal removes dynamic value updater",
+			"onPressed": "registers key handler",
+			"_update": "",
+			"_get": "gets object by id",
+			"setAnimation": "sets animation on given property",
+			"getAnimation": "gets animation on given property",
+			"_tryFocus": "called to test if the component can have focus, generic object cannot be focused, so return false, override it to implement default focus policy"
+		}
+	}
+}

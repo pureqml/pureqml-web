@@ -1,0 +1,36 @@
+{
+	"name": "core.ProxyModel",
+
+	"content": {
+		"Properties": {
+			"count": "",
+			"target": ""
+		},
+
+		"Signals": {
+			"reset": "",
+			"rowsInserted": "",
+			"rowsChanged": "",
+			"rowsRemoved": ""
+		},
+
+		"Methods": {
+			"setFilter": "",
+			"setCompare": "",
+			"_buildIndexMap": "",
+			"get": "",
+			"clear": "",
+			"append": "",
+			"insert": "",
+			"set": "",
+			"setProperty": "",
+			"remove": "",
+			"addChild": "",
+			"_onReset": "",
+			"_onRowsInserted": "",
+			"_onRowsChanged": "",
+			"_onRowsRemoved": "",
+			"onCompleted": ""
+		}
+	}
+}

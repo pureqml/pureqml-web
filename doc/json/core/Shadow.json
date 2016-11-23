@@ -1,0 +1,19 @@
+{
+	"name": "core.Shadow",
+
+	"content": {
+		"Properties": {
+			"x": "",
+			"y": "",
+			"color": "",
+			"blur": "",
+			"spread": ""
+		},
+
+		"Methods": {
+			"_update": "",
+			"_empty": "",
+			"_getFilterStyle": ""
+		}
+	}
+}

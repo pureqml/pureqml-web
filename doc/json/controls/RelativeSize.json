@@ -1,0 +1,19 @@
+{
+	"name": "controls.RelativeSize",
+
+	"content": {
+		"Properties": {
+			"xs": "",
+			"sm": "",
+			"md": "",
+			"lg": "",
+			"globalWidth": ""
+		},
+
+		"Methods": {
+			"_update": "",
+			"_calculate": "",
+			"onCompleted": ""
+		}
+	}
+}

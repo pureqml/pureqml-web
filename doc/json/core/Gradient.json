@@ -1,0 +1,16 @@
+{
+	"name": "core.Gradient",
+
+	"content": {
+		"Properties": {
+			"angle": ""
+		},
+
+		"Methods": {
+			"addChild": "",
+			"_update": "",
+			"_getDeclaration": "",
+			"onCompleted": ""
+		}
+	}
+}

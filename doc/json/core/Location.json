@@ -1,0 +1,22 @@
+{
+	"name": "core.Location",
+
+	"content": {
+		"Properties": {
+			"hash": "",
+			"host": "",
+			"href": "",
+			"port": "",
+			"origin": "",
+			"hostname": "",
+			"pathname": "",
+			"historyState": ""
+		},
+
+		"Methods": {
+			"updateActualValues": "",
+			"changeHref": "",
+			"pushState": ""
+		}
+	}
+}

@@ -1,0 +1,35 @@
+{
+	"name": "core.Anchors",
+
+	"content": {
+		"Properties": {
+			"bottom": "Anchors, generic class to handle auto-adjusting positioning, used in Item",
+			"verticalCenter": "",
+			"top": "",
+			"left": "",
+			"horizontalCenter": "",
+			"right": "",
+			"fill": "",
+			"centerIn": "",
+			"margins": "",
+			"bottomMargin": "",
+			"topMargin": "",
+			"leftMargin": "",
+			"rightMargin": ""
+		},
+
+		"Signals": {
+			"marginsUpdated": ""
+		},
+
+		"Methods": {
+			"_updateLeft": "@private",
+			"_updateRight": "@private",
+			"_updateTop": "@private",
+			"_updateBottom": "@private",
+			"_updateHCenter": "@private",
+			"_updateVCenter": "@private",
+			"_update": ""
+		}
+	}
+}

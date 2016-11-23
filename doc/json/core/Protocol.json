@@ -1,0 +1,16 @@
+{
+	"name": "core.Protocol",
+
+	"content": {
+		"Properties": {
+			"loading": "",
+			"baseUrl": "",
+			"url": ""
+		},
+
+		"Methods": {
+			"fetchRequest": "",
+			"requestXHR": ""
+		}
+	}
+}

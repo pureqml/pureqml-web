@@ -1,0 +1,17 @@
+{
+	"name": "pureqml-web.ColorTheme",
+
+	"content": {
+		"Properties": {
+			"textColor": "",
+			"backgroundColor": "",
+			"primaryTextColor": "",
+			"panelColor": "",
+			"accentColor": "",
+			"primaryColor": "",
+			"darkerPrimaryColor": "",
+			"lighterPrimaryColor": ""
+		},
+
+	}
+}

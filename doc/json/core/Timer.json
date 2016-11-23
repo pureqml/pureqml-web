@@ -1,0 +1,27 @@
+{
+	"name": "core.Timer",
+
+	"content": {
+		"Properties": {
+			"interval": "interval, ms",
+			"repeat": "makes this timer periodic",
+			"running": "current timer status, true - running, false - paused",
+			"triggeredOnStart": "fire timer's signal on start or activation"
+		},
+
+		"Signals": {
+			"triggered": "this signal triggered when timer fires"
+		},
+
+		"Methods": {
+			"restart": "restart timer, activate if stopped",
+			"stop": "stops timer",
+			"onTriggered": "",
+			"start": "starts timer",
+			"onRunningChanged": "",
+			"onCompleted": "",
+			"_update": "@private",
+			"_restart": ""
+		}
+	}
+}

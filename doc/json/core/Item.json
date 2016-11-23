@@ -1,0 +1,62 @@
+{
+	"name": "core.Item",
+
+	"content": {
+		"Properties": {
+			"x": "x coordinate",
+			"y": "y coordinate",
+			"z": "z coordinate",
+			"width": "width of visible area",
+			"height": "height of visible area",
+			"clip": "clip all children outside rectangular area defined by x, y, width, height",
+			"focus": "this item can be focused",
+			"focused": "this item is focused among its siblings",
+			"activeFocus": "this item can receive events and really focused at this moment",
+			"focusedChild": "current focused item (this item only)",
+			"visible": "this item and its children are visible",
+			"recursiveVisible": "this item is actually visible on screen (all parents are visible as well)",
+			"opacity": "opacity of the item",
+			"anchors": "",
+			"effects": "",
+			"transform": "",
+			"left": "",
+			"top": "",
+			"right": "",
+			"bottom": "",
+			"horizontalCenter": "",
+			"verticalCenter": "",
+			"viewX": "x position in view (if any)",
+			"viewY": "y position in view (if any)"
+		},
+
+		"Signals": {
+			"boxChanged": "emitted when position or size changed"
+		},
+
+		"Methods": {
+			"discard": "",
+			"getTag": "returns tag for corresponding element",
+			"createElement": "default implementation of element creation routine.",
+			"toScreen": "map relative component coordinates to absolute screen ones",
+			"_updateAnimation": "tries to set animation on name using css transitions, returns true on success",
+			"setAnimation": "sets animation on given property",
+			"style": "passes style (or styles { a:, b:, c: ... }) to underlying element",
+			"addChild": "adds child, focus it if child accepts focus",
+			"_mapCSSAttribute": "returns css rule by property name",
+			"_update": "@internal",
+			"_updateVisibility": "updates recursive visibility status",
+			"forceActiveFocus": "sets current global focus to component",
+			"_tryFocus": "tries to focus children or item itself",
+			"_propagateFocusToParents": "propagates focus to parent, if not set there",
+			"hasActiveFocus": "returns status of global focus",
+			"_focusTree": "@internal focus subtree of current focused child",
+			"_focusChild": "",
+			"focusChild": "",
+			"setTransition": "",
+			"_updateStyle": "",
+			"_processKey": "",
+			"onVisibleChanged": "",
+			"setFocus": ""
+		}
+	}
+}

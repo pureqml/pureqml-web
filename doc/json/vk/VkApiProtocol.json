@@ -1,0 +1,12 @@
+{
+	"name": "vk.VkApiProtocol",
+
+	"content": {
+		"Methods": {
+			"wallGet": "",
+			"wallSearch": "",
+			"wallGetComments": "",
+			"vkMethodRequest": ""
+		}
+	}
+}

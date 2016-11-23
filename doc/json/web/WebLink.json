@@ -1,0 +1,15 @@
+{
+	"name": "web.WebLink",
+
+	"content": {
+		"Properties": {
+			"href": "",
+			"target": ""
+		},
+
+		"Methods": {
+			"_update": "",
+			"getTag": ""
+		}
+	}
+}

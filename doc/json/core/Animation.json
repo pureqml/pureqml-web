@@ -1,0 +1,22 @@
+{
+	"name": "core.Animation",
+
+	"content": {
+		"Properties": {
+			"delay": "delay in ms",
+			"duration": "duration in ms",
+			"cssTransition": "use css transition if possible",
+			"running": "currently running",
+			"easing": "easing function"
+		},
+
+		"Methods": {
+			"disable": "disable animation.",
+			"enable": "enable animation.",
+			"enabled": "returns true if animation is enabled",
+			"_update": "@private",
+			"interpolate": "@internal",
+			"complete": "@internal"
+		}
+	}
+}

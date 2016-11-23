@@ -1,0 +1,48 @@
+{
+	"name": "web.VideoPlayer",
+
+	"content": {
+		"Properties": {
+			"source": "",
+			"backgroundColor": "",
+			"volume": "",
+			"loop": "",
+			"flash": "",
+			"ready": "",
+			"muted": "",
+			"paused": "",
+			"autoPlay": "",
+			"waiting": "",
+			"seeking": "",
+			"duration": "",
+			"progress": "",
+			"buffered": ""
+		},
+
+		"Signals": {
+			"finished": "",
+			"error": ""
+		},
+
+		"Methods": {
+			"_update": "",
+			"getFlashMovieObject": "",
+			"play": "",
+			"seek": "",
+			"seekTo": "",
+			"onAutoPlayChanged": "",
+			"applyVolume": "",
+			"pause": "",
+			"volumeUp": "",
+			"volumeDown": "",
+			"toggleMute": "",
+			"onVolumeChanged": "",
+			"onReadyChanged": "",
+			"onError": "",
+			"onSourceChanged": "",
+			"onWidthChanged": "",
+			"onHeightChanged": "",
+			"onCompleted": ""
+		}
+	}
+}

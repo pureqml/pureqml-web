@@ -1,0 +1,25 @@
+{
+	"name": "core.UlView",
+
+	"content": {
+		"Properties": {
+			"model": "",
+			"delegate": "",
+			"count": "",
+			"currentIndex": "",
+			"contentWidth": "",
+			"contentHeight": ""
+		},
+
+		"Methods": {
+			"_onReset": "",
+			"_onRowsChanged": "",
+			"_onRowsRemoved": "",
+			"_onRowsInserted": "",
+			"_createDelegate": "",
+			"_update": "",
+			"_attach": "",
+			"onCompleted": ""
+		}
+	}
+}

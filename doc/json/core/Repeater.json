@@ -1,0 +1,9 @@
+{
+	"name": "core.Repeater",
+
+	"content": {
+		"Methods": {
+			"_layout": "The simplest view implementation, creates elements without positioning"
+		}
+	}
+}

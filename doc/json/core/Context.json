@@ -1,0 +1,29 @@
+{
+	"name": "core.Context",
+
+	"content": {
+		"Properties": {
+			"fullscreen": "",
+			"scrollY": "",
+			"system": "",
+			"location": "",
+			"language": ""
+		},
+
+		"Methods": {
+			"getClass": "",
+			"createElement": "",
+			"init": "",
+			"_onCompleted": "",
+			"_update": "",
+			"_enterFullscreenMode": "",
+			"_exitFullscreenMode": "",
+			"_inFullscreenMode": "",
+			"_complete": "",
+			"start": "",
+			"_processActions": "",
+			"scheduleAction": "",
+			"qsTr": ""
+		}
+	}
+}

@@ -1,0 +1,11 @@
+{
+	"name": "core.Row",
+
+	"content": {
+		"Methods": {
+			"onKeyPressed": "",
+			"_layout": "",
+			"addChild": ""
+		}
+	}
+}

@@ -1,0 +1,23 @@
+{
+	"name": "controls.WebItem",
+
+	"content": {
+		"Properties": {
+			"hoverMixin": "",
+			"position": ""
+		},
+
+		"Alias Properties": {
+			"hover": "",
+			"clickable": "",
+			"hoverable": "",
+			"cursor": "",
+			"activeHover": "",
+			"activeHoverEnabled": ""
+		},
+
+		"Methods": {
+			"_update": ""
+		}
+	}
+}

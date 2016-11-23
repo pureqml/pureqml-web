@@ -1,0 +1,15 @@
+{
+	"name": "core.TimeInput",
+
+	"content": {
+		"Properties": {
+			"max": "",
+			"min": "",
+			"value": ""
+		},
+
+		"Methods": {
+			"_update": ""
+		}
+	}
+}

@@ -1,0 +1,17 @@
+{
+	"name": "core.BorderSide",
+
+	"content": {
+		"Properties": {
+			"name": "@internal
+Component aimed to adjust individual preferences of each border side",
+			"width": "",
+			"color": ""
+		},
+
+		"Methods": {
+			"_updateStyle": "",
+			"_update": ""
+		}
+	}
+}

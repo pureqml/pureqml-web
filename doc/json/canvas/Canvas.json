@@ -1,0 +1,11 @@
+{
+	"name": "canvas.Canvas",
+
+	"content": {
+		"Methods": {
+			"getTag": "",
+			"onWidthChanged": "",
+			"onHeightChanged": ""
+		}
+	}
+}

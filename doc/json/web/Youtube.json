@@ -1,0 +1,15 @@
+{
+	"name": "web.Youtube",
+
+	"content": {
+		"Properties": {
+			"source": "",
+			"allowFullScreen": ""
+		},
+
+		"Methods": {
+			"_update": "",
+			"_updateSize": ""
+		}
+	}
+}

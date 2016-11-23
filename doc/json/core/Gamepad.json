@@ -1,0 +1,24 @@
+{
+	"name": "core.Gamepad",
+
+	"content": {
+		"Properties": {
+			"index": "",
+			"buttonsCount": "",
+			"axesCount": "",
+			"connected": "",
+			"deviceInfo": ""
+		},
+
+		"Signals": {
+			"axes": "",
+			"button": ""
+		},
+
+		"Methods": {
+			"_set": "",
+			"get": "",
+			"poll": ""
+		}
+	}
+}

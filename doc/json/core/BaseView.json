@@ -1,0 +1,42 @@
+{
+	"name": "core.BaseView",
+
+	"content": {
+		"Properties": {
+			"model": "model object to attach to",
+			"delegate": "delegate - template object, filled with model row",
+			"contentX": "x offset to visible part of the content surface",
+			"contentY": "y offset to visible part of the content surface",
+			"scrollingStep": "scrolling step",
+			"contentFollowsCurrentItem": "auto-scroll content to current focused item",
+			"pageScrolling": "",
+			"rendered": "",
+			"trace": "",
+			"content": ""
+		},
+
+		"Methods": {
+			"itemAt": "returns index of item by x,y coordinates",
+			"focusCurrent": "@internal focuses current item",
+			"onFocusedChildChanged": "",
+			"onCurrentIndexChanged": "",
+			"_onReset": "@private",
+			"_onRowsInserted": "@private",
+			"_onRowsChanged": "@private",
+			"_onRowsRemoved": "@private",
+			"_attach": "@private",
+			"_update": "@private",
+			"_createDelegate": "@internal creates delegate in given item slot",
+			"_updateDelegate": "",
+			"_discardItem": "",
+			"_discardDelegate": "@internal creates delegate in given item slot",
+			"_updateItems": "",
+			"onContentXChanged": "",
+			"onContentYChanged": "",
+			"onRecursiveVisibleChanged": "",
+			"onWidthChanged": "",
+			"onHeightChanged": "",
+			"onCompleted": ""
+		}
+	}
+}

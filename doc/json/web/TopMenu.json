@@ -1,0 +1,20 @@
+{
+	"name": "web.TopMenu",
+
+	"content": {
+		"Properties": {
+			"icon": "",
+			"hasEnoughSpace": "",
+			"showMenu": "",
+			"content": "",
+			"panel": ""
+		},
+
+		"Methods": {
+			"toggleShow": "",
+			"onWidthChanged": "",
+			"_update": "",
+			"onCompleted": ""
+		}
+	}
+}

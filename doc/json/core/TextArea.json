@@ -1,0 +1,14 @@
+{
+	"name": "core.TextArea",
+
+	"content": {
+		"Properties": {
+			"text": ""
+		},
+
+		"Methods": {
+			"_update": "",
+			"getTag": "returns tag for corresponding element"
+		}
+	}
+}

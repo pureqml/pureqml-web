@@ -1,0 +1,9 @@
+{
+	"name": "core.ColorAnimation",
+
+	"content": {
+		"Methods": {
+			"interpolate": "Animation for color-typed properties"
+		}
+	}
+}

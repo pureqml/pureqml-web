@@ -1,0 +1,13 @@
+{
+	"name": "pureqml-web.ReadMore",
+
+	"content": {
+		"Properties": {
+			"url": ""
+		},
+
+		"Methods": {
+			"onClicked": ""
+		}
+	}
+}

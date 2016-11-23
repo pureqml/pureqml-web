@@ -1,0 +1,34 @@
+{
+	"name": "web.Ho",
+
+	"content": {
+		"Properties": {
+			"width": "",
+			"height": "",
+			"top": "",
+			"left": "",
+			"right": "",
+			"bottom": "",
+			"html": "",
+			"display": "",
+			"float": "",
+			"boxSizing": "",
+			"position": "",
+			"opacity": "",
+			"radius": "",
+			"rotate": "",
+			"clip": "",
+			"z": "",
+			"color": "",
+			"font": "",
+			"margin": "",
+			"padding": ""
+		},
+
+		"Methods": {
+			"style": "",
+			"_updateStyle": "@const",
+			"_update": ""
+		}
+	}
+}

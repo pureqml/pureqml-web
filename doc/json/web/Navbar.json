@@ -1,0 +1,19 @@
+{
+	"name": "web.Navbar",
+
+	"content": {
+		"Properties": {
+			"position": "",
+			"vertical": "",
+			"collapsed": ""
+		},
+
+		"Methods": {
+			"onPositionChanged": "",
+			"addChild": "",
+			"_layout": "",
+			"onSpacingChanged": "",
+			"onVerticalChanged": ""
+		}
+	}
+}

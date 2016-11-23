@@ -1,0 +1,23 @@
+{
+	"name": "web.LanguageSwitcher",
+
+	"content": {
+		"Properties": {
+			"languges": "",
+			"currentIndex": "",
+			"count": ""
+		},
+
+		"Signals": {
+			"languageChanged": ""
+		},
+
+		"Methods": {
+			"addLanguage": "",
+			"onCountChanged": "",
+			"onClicked": "",
+			"onCurrentIndexChanged": "",
+			"onCompleted": ""
+		}
+	}
+}

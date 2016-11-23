@@ -1,0 +1,19 @@
+{
+	"name": "core.Border",
+
+	"content": {
+		"Properties": {
+			"width": "width of the border",
+			"color": "color of the border",
+			"style": "style of the border",
+			"left": "",
+			"right": "",
+			"top": "",
+			"bottom": ""
+		},
+
+		"Methods": {
+			"_update": ""
+		}
+	}
+}

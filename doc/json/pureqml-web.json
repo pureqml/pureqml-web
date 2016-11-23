@@ -1,0 +1,23 @@
+{
+	"pureqml-web": {
+		"Lessons": "pureqml-web/Lessons.json",
+		"ContentColumn": "pureqml-web/ContentColumn.json",
+		"ColorTheme": "pureqml-web/ColorTheme.json",
+		"KeyValueView": "pureqml-web/KeyValueView.json",
+		"SectionHead": "pureqml-web/SectionHead.json",
+		"ReadMore": "pureqml-web/ReadMore.json",
+		"Docs": "pureqml-web/Docs.json",
+		"LeftMenu": "pureqml-web/LeftMenu.json",
+		"Head": "pureqml-web/Head.json",
+		"MdReader": "pureqml-web/MdReader.json",
+		"CodeExample": "pureqml-web/CodeExample.json",
+		"PageColumn": "pureqml-web/PageColumn.json",
+		"BigButton": "pureqml-web/BigButton.json",
+		"DescriptionText": "pureqml-web/DescriptionText.json",
+		"About": "pureqml-web/About.json",
+		"DescriptionPanel": "pureqml-web/DescriptionPanel.json",
+		"HistoryPage": "pureqml-web/HistoryPage.json",
+		"Download": "pureqml-web/Download.json",
+		"HistoryPageContent": "pureqml-web/HistoryPageContent.json"
+	}
+}

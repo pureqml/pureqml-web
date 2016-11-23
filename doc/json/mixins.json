@@ -1,0 +1,10 @@
+{
+	"mixins": {
+		"ImageMixin": "mixins/ImageMixin.json",
+		"OverflowMixin": "mixins/OverflowMixin.json",
+		"HoverMixin": "mixins/HoverMixin.json",
+		"CSSMixin": "mixins/CSSMixin.json",
+		"DragMixin": "mixins/DragMixin.json",
+		"TextMixin": "mixins/TextMixin.json"
+	}
+}

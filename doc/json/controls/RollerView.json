@@ -1,0 +1,19 @@
+{
+	"name": "controls.RollerView",
+
+	"content": {
+		"Properties": {
+			"cacheEnable": ""
+		},
+
+		"Methods": {
+			"positionViewAtIndex": "",
+			"_layout": "",
+			"focusCurrent": "@internal focuses current item",
+			"_createDelegate": "@internal creates delegate in given item slot",
+			"onKeyPressed": "",
+			"onOrientationChanged": "",
+			"onCurrentIndexChanged": ""
+		}
+	}
+}

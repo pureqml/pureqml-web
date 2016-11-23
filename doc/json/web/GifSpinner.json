@@ -1,0 +1,14 @@
+{
+	"name": "web.GifSpinner",
+
+	"content": {
+		"Properties": {
+			"running": ""
+		},
+
+		"Methods": {
+			"start": "",
+			"stop": ""
+		}
+	}
+}

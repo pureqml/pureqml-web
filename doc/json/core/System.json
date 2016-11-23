@@ -1,0 +1,28 @@
+{
+	"name": "core.System",
+
+	"content": {
+		"Properties": {
+			"userAgent": "",
+			"language": "",
+			"browser": "",
+			"vendor": "",
+			"os": "",
+			"webkit": "",
+			"support3dTransforms": "",
+			"supportTransforms": "",
+			"supportTransitions": "",
+			"portrait": "",
+			"landscape": "",
+			"pageActive": "",
+			"contextWidth": "",
+			"contextHeight": ""
+		},
+
+		"Methods": {
+			"onContextWidthChanged": "",
+			"onContextHeightChanged": "",
+			"_updateLayoutType": ""
+		}
+	}
+}

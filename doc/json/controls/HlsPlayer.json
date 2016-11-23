@@ -1,0 +1,46 @@
+{
+	"name": "controls.HlsPlayer",
+
+	"content": {
+		"Properties": {
+			"source": "",
+			"backgroundColor": "",
+			"volume": "",
+			"loop": "",
+			"ready": "",
+			"muted": "",
+			"paused": "",
+			"autoPlay": "",
+			"waiting": "",
+			"seeking": "",
+			"duration": "",
+			"progress": "",
+			"buffered": ""
+		},
+
+		"Signals": {
+			"finished": "",
+			"error": ""
+		},
+
+		"Methods": {
+			"getTag": "",
+			"initHls": "",
+			"deinit": "",
+			"errorHandling": "",
+			"manifestParsedHandler": "",
+			"play": "",
+			"stop": "",
+			"pause": "",
+			"seek": "",
+			"seekTo": "",
+			"volumeUp": "",
+			"volumeDown": "",
+			"toggleMute": "",
+			"onVolumeChanged": "",
+			"applyVolume": "",
+			"onSourceChanged": "",
+			"onCompleted": ""
+		}
+	}
+}

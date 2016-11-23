@@ -1,0 +1,20 @@
+{
+	"name": "controls.TextHover",
+
+	"content": {
+		"Properties": {
+			"hoverMixin": "",
+			"href": ""
+		},
+
+		"Alias Properties": {
+			"cursor": "",
+			"hover": ""
+		},
+
+		"Methods": {
+			"onHrefChanged": "",
+			"getTag": ""
+		}
+	}
+}

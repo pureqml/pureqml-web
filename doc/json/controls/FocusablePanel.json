@@ -1,0 +1,15 @@
+{
+	"name": "controls.FocusablePanel",
+
+	"content": {
+		"Properties": {
+			"color": "",
+			"radius": "",
+			"focusOnHover": ""
+		},
+
+		"Methods": {
+			"onEntered": ""
+		}
+	}
+}

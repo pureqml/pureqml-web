@@ -1,0 +1,14 @@
+{
+	"name": "web.FileInput",
+
+	"content": {
+		"Properties": {
+			"value": "",
+			"filter": ""
+		},
+
+		"Methods": {
+			"_update": ""
+		}
+	}
+}

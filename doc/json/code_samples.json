@@ -1,0 +1,30 @@
+{
+	"code_samples": {
+		"LayoutGrid": "code_samples/LayoutGrid.json",
+		"PropertyHandling": "code_samples/PropertyHandling.json",
+		"AnchorsFill": "code_samples/AnchorsFill.json",
+		"LayoutRow": "code_samples/LayoutRow.json",
+		"AnchorsMarginsFixed": "code_samples/AnchorsMarginsFixed.json",
+		"TextExample": "code_samples/TextExample.json",
+		"KeyLesson": "code_samples/KeyLesson.json",
+		"RectanglesExample": "code_samples/RectanglesExample.json",
+		"GamepadHandleLesson": "code_samples/GamepadHandleLesson.json",
+		"SignalTestItem": "code_samples/SignalTestItem.json",
+		"ClickMixinExample": "code_samples/ClickMixinExample.json",
+		"LayoutColumn": "code_samples/LayoutColumn.json",
+		"ProxyLessonExample": "code_samples/ProxyLessonExample.json",
+		"ListViewExample": "code_samples/ListViewExample.json",
+		"KeySelectLesson": "code_samples/KeySelectLesson.json",
+		"GridViewExample": "code_samples/GridViewExample.json",
+		"OverflowMixinExample": "code_samples/OverflowMixinExample.json",
+		"KeyPressLesson": "code_samples/KeyPressLesson.json",
+		"ProxyMessages": "code_samples/ProxyMessages.json",
+		"AnchorsMargins": "code_samples/AnchorsMargins.json",
+		"Anchors1": "code_samples/Anchors1.json",
+		"AnchorsCenter": "code_samples/AnchorsCenter.json",
+		"ImageExample": "code_samples/ImageExample.json",
+		"SignalHandling": "code_samples/SignalHandling.json",
+		"SignalArgsHandling": "code_samples/SignalArgsHandling.json",
+		"GamepadCodeLesson": "code_samples/GamepadCodeLesson.json"
+	}
+}

@@ -1,0 +1,17 @@
+{
+	"name": "core.PageStack",
+
+	"content": {
+		"Properties": {
+			"currentIndex": "",
+			"count": ""
+		},
+
+		"Methods": {
+			"onCurrentIndexChanged": "",
+			"onActiveFocusChanged": "",
+			"_layout": "",
+			"addChild": ""
+		}
+	}
+}

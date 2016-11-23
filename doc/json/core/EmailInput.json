@@ -1,0 +1,13 @@
+{
+	"name": "core.EmailInput",
+
+	"content": {
+		"Properties": {
+			"correct": ""
+		},
+
+		"Methods": {
+			"onTextChanged": ""
+		}
+	}
+}

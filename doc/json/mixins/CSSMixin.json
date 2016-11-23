@@ -1,0 +1,15 @@
+{
+	"name": "mixins.CSSMixin",
+
+	"content": {
+		"Properties": {
+			"hover": "",
+			"generic": "",
+			"focus": ""
+		},
+
+		"Methods": {
+			"onCompleted": ""
+		}
+	}
+}

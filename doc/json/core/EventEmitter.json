@@ -1,0 +1,15 @@
+{
+	"name": "core.EventEmitter",
+
+	"content": {
+		"Methods": {
+			"discard": "",
+			"on": "",
+			"connectOn": "",
+			"onListener": "",
+			"emit": "",
+			"removeAllListeners": "",
+			"removeListener": ""
+		}
+	}
+}

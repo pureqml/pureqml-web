@@ -1,0 +1,19 @@
+{
+	"name": "web.CodeHighlighter",
+
+	"content": {
+		"Properties": {
+			"contentWidth": "",
+			"contentHeight": "",
+			"code": "",
+			"language": "",
+			"font": ""
+		},
+
+		"Methods": {
+			"_update": "",
+			"getTag": "returns tag for corresponding element",
+			"_updateSize": ""
+		}
+	}
+}

@@ -1,0 +1,21 @@
+{
+	"name": "web.NavigationMenuButton",
+
+	"content": {
+		"Properties": {
+			"icon": "",
+			"scrollable": "",
+			"show": "",
+			"content": "",
+			"contentX": "",
+			"contentY": "",
+			"panel": ""
+		},
+
+		"Methods": {
+			"hide": "",
+			"toggleShow": "",
+			"onShowChanged": ""
+		}
+	}
+}

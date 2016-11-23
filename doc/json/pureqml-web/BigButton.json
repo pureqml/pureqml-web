@@ -1,0 +1,11 @@
+{
+	"name": "pureqml-web.BigButton",
+
+	"content": {
+		"Properties": {
+			"icon": "",
+			"text": ""
+		},
+
+	}
+}

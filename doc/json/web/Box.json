@@ -1,0 +1,17 @@
+{
+	"name": "web.Box",
+
+	"content": {
+		"Properties": {
+			"top": "",
+			"left": "",
+			"right": "",
+			"bottom": "",
+			"prefix": ""
+		},
+
+		"Methods": {
+			"_update": ""
+		}
+	}
+}

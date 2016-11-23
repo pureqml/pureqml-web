@@ -1,0 +1,19 @@
+{
+	"name": "core.BaseButton",
+
+	"content": {
+		"Properties": {
+			"blink": ""
+		},
+
+		"Signals": {
+			"triggered": ""
+		},
+
+		"Methods": {
+			"makeBlink": "",
+			"onSelectPressed": "",
+			"onClicked": ""
+		}
+	}
+}

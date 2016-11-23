@@ -1,0 +1,15 @@
+{
+	"name": "web.Sharer",
+
+	"content": {
+		"Properties": {
+			"url": ""
+		},
+
+		"Methods": {
+			"_update": "",
+			"open": "",
+			"redirect": ""
+		}
+	}
+}

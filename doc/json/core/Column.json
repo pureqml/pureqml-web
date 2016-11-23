@@ -1,0 +1,11 @@
+{
+	"name": "core.Column",
+
+	"content": {
+		"Methods": {
+			"onKeyPressed": "",
+			"_layout": "",
+			"addChild": ""
+		}
+	}
+}

@@ -1,0 +1,16 @@
+{
+	"name": "core.NumberInput",
+
+	"content": {
+		"Properties": {
+			"max": "",
+			"min": "",
+			"step": "",
+			"value": ""
+		},
+
+		"Methods": {
+			"_update": ""
+		}
+	}
+}

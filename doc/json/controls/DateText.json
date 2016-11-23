@@ -1,0 +1,13 @@
+{
+	"name": "controls.DateText",
+
+	"content": {
+		"Properties": {
+			"date": ""
+		},
+
+		"Methods": {
+			"onDateChanged": ""
+		}
+	}
+}

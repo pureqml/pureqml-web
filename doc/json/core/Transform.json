@@ -1,0 +1,24 @@
+{
+	"name": "core.Transform",
+
+	"content": {
+		"Properties": {
+			"perspective": "class controlling object transformation",
+			"translateX": "",
+			"translateY": "",
+			"translateZ": "",
+			"rotateX": "",
+			"rotateY": "",
+			"rotateZ": "",
+			"rotate": "",
+			"scaleX": "",
+			"scaleY": "",
+			"skewX": "",
+			"skewY": ""
+		},
+
+		"Methods": {
+			"_update": ""
+		}
+	}
+}

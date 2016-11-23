@@ -1,0 +1,15 @@
+{
+	"name": "core.DateInput",
+
+	"content": {
+		"Properties": {
+			"max": "",
+			"min": "",
+			"value": ""
+		},
+
+		"Methods": {
+			"_update": ""
+		}
+	}
+}

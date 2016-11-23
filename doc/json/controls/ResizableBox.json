@@ -1,0 +1,15 @@
+{
+	"name": "controls.ResizableBox",
+
+	"content": {
+		"Properties": {
+			"maxWidth": "",
+			"maxHeight": "",
+			"minHeight": "",
+			"minWidth": "",
+			"defaultWidth": "",
+			"defaultHeight": ""
+		},
+
+	}
+}

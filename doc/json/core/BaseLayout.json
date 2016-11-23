@@ -1,0 +1,20 @@
+{
+	"name": "core.BaseLayout",
+
+	"content": {
+		"Properties": {
+			"count": "number of children elements",
+			"spacing": "spacing between adjanced items, pixels",
+			"currentIndex": "index of current focused item",
+			"contentWidth": "content width",
+			"contentHeight": "content height",
+			"keyNavigationWraps": "key navigation wraps from first to last and vise versa",
+			"handleNavigationKeys": "handle navigation keys, move focus"
+		},
+
+		"Methods": {
+			"_updateItems": "",
+			"_update": ""
+		}
+	}
+}

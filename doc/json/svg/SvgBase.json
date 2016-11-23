@@ -1,0 +1,17 @@
+{
+	"name": "svg.SvgBase",
+
+	"content": {
+		"Properties": {
+			"target": ""
+		},
+
+		"Methods": {
+			"createElement": "specialized implementation of element creation in a certain namespace.",
+			"getTag": "returns tag for corresponding element",
+			"externalTarget": "",
+			"_update": "@internal",
+			"style": ""
+		}
+	}
+}

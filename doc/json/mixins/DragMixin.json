@@ -1,0 +1,22 @@
+{
+	"name": "mixins.DragMixin",
+
+	"content": {
+		"Properties": {
+			"pressed": "",
+			"enabled": "",
+			"x": "",
+			"y": "",
+			"limitx1": "",
+			"limitx2": "",
+			"limity1": "",
+			"limity2": ""
+		},
+
+		"Methods": {
+			"_bindPressed": "",
+			"onEnabledChanged": "",
+			"onCompleted": ""
+		}
+	}
+}

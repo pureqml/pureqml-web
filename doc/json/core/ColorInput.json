@@ -1,0 +1,13 @@
+{
+	"name": "core.ColorInput",
+
+	"content": {
+		"Properties": {
+			"value": ""
+		},
+
+		"Methods": {
+			"_update": ""
+		}
+	}
+}

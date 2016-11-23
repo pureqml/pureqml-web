@@ -1,0 +1,25 @@
+{
+	"name": "mixins.HoverMixin",
+
+	"content": {
+		"Properties": {
+			"enabled": "",
+			"clickable": "",
+			"activeHoverEnabled": "",
+			"value": "",
+			"activeHover": "",
+			"cursor": ""
+		},
+
+		"Methods": {
+			"onCursorChanged": "",
+			"_bindClick": "",
+			"_bindHover": "",
+			"_bindActiveHover": "",
+			"onEnabledChanged": "",
+			"onClickableChanged": "",
+			"onActiveHoverEnabledChanged": "",
+			"onCompleted": ""
+		}
+	}
+}

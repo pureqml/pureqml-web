@@ -1,0 +1,24 @@
+{
+	"name": "core.Effects",
+
+	"content": {
+		"Properties": {
+			"blur": "",
+			"grayscale": "",
+			"sepia": "",
+			"brightness": "",
+			"contrast": "",
+			"hueRotate": "",
+			"invert": "",
+			"saturate": "",
+			"shadow": ""
+		},
+
+		"Methods": {
+			"_addStyle": "",
+			"_getFilterStyle": "",
+			"_updateStyle": "",
+			"_update": ""
+		}
+	}
+}

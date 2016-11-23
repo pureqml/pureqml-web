@@ -1,0 +1,22 @@
+{
+	"name": "core.GridView",
+
+	"content": {
+		"Properties": {
+			"cellWidth": "",
+			"cellHeight": "",
+			"rows": "",
+			"columns": ""
+		},
+
+		"Methods": {
+			"move": "",
+			"onKeyPressed": "",
+			"getItemPosition": "",
+			"indexAt": "",
+			"positionViewAtIndex": "",
+			"_layout": "",
+			"onFlowChanged": ""
+		}
+	}
+}

@@ -1,0 +1,11 @@
+{
+	"name": "core.DebugInfoItem",
+
+	"content": {
+		"Properties": {
+			"label": "",
+			"value": ""
+		},
+
+	}
+}

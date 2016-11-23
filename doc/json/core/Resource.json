@@ -1,0 +1,13 @@
+{
+	"name": "core.Resource",
+
+	"content": {
+		"Properties": {
+			"data": ""
+		},
+
+		"Methods": {
+			"onUrlChanged": ""
+		}
+	}
+}

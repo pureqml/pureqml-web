@@ -1,0 +1,23 @@
+{
+	"name": "core.InputBase",
+
+	"content": {
+		"Properties": {
+			"paddings": "",
+			"color": "",
+			"backgroundColor": "",
+			"font": "",
+			"border": "",
+			"placeholder": "",
+			"type": ""
+		},
+
+		"Methods": {
+			"onActiveFocusChanged": "",
+			"onRecursiveVisibleChanged": "",
+			"_update": "",
+			"getTag": "returns tag for corresponding element",
+			"_updateSize": ""
+		}
+	}
+}

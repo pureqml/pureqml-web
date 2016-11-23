@@ -1,0 +1,26 @@
+{
+	"name": "core.GamepadManager",
+
+	"content": {
+		"Properties": {
+			"count": "",
+			"gamepadChildrensCount": "",
+			"_gamepads": "",
+			"gamepadPollingInterval": "",
+			"eventPollingInterval": ""
+		},
+
+		"Signals": {
+			"connected": "",
+			"disconnected": ""
+		},
+
+		"Methods": {
+			"pollGamepads": "",
+			"gpButtonCheckLoop": "",
+			"gamepadConnectedHandler": "",
+			"gamepadDisconnectedHandler": "",
+			"onCompleted": ""
+		}
+	}
+}

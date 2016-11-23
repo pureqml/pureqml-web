@@ -1,0 +1,21 @@
+{
+	"name": "svg.Path",
+
+	"content": {
+		"Properties": {
+			"x1": "",
+			"x2": "",
+			"y1": "",
+			"y2": "",
+			"color": "",
+			"fill": "",
+			"width": ""
+		},
+
+		"Methods": {
+			"getTag": "returns tag for corresponding element",
+			"_update": "@internal",
+			"buildPath": ""
+		}
+	}
+}

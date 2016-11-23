@@ -1,0 +1,9 @@
+{
+	"name": "controls.CurrentDateText",
+
+	"content": {
+		"Methods": {
+			"updateText": ""
+		}
+	}
+}

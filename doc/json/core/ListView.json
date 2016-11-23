@@ -1,0 +1,16 @@
+{
+	"name": "core.ListView",
+
+	"content": {
+		"Methods": {
+			"move": "",
+			"positionViewAtIndex": "",
+			"onKeyPressed": "",
+			"getItemPosition": "",
+			"indexAt": "",
+			"_layout": "",
+			"_createDelegate": "@internal creates delegate in given item slot",
+			"onOrientationChanged": ""
+		}
+	}
+}

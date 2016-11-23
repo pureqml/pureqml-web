@@ -1,0 +1,28 @@
+{
+	"name": "core.ListModel",
+
+	"content": {
+		"Properties": {
+			"count": ""
+		},
+
+		"Signals": {
+			"reset": "",
+			"rowsInserted": "",
+			"rowsChanged": "",
+			"rowsRemoved": ""
+		},
+
+		"Methods": {
+			"assign": "",
+			"clear": "",
+			"append": "",
+			"insert": "",
+			"set": "",
+			"get": "",
+			"setProperty": "",
+			"remove": "",
+			"addChild": ""
+		}
+	}
+}

@@ -1,0 +1,21 @@
+{
+	"name": "canvas.CurveLine",
+
+	"content": {
+		"Properties": {
+			"x1": "",
+			"y1": "",
+			"x2": "",
+			"y2": ""
+		},
+
+		"Methods": {
+			"onX1Changed": "",
+			"onX2Changed": "",
+			"onY1Changed": "",
+			"onY2Changed": "",
+			"onOrientationChanged": "",
+			"update": ""
+		}
+	}
+}

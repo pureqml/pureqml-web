@@ -1,0 +1,57 @@
+{
+	"name": "core.MouseArea",
+
+	"content": {
+		"Properties": {
+			"mouseX": "",
+			"mouseY": "",
+			"cursor": "",
+			"pressed": "",
+			"containsMouse": "",
+			"clickable": "",
+			"pressable": "",
+			"touchEnabled": "",
+			"hoverEnabled": "",
+			"wheelEnabled": ""
+		},
+
+		"Alias Properties": {
+			"hover": "",
+			"hoverable": ""
+		},
+
+		"Signals": {
+			"entered": "",
+			"exited": "",
+			"clicked": "",
+			"canceled": "",
+			"wheelEvent": "",
+			"verticalSwiped": "",
+			"horizontalSwiped": "",
+			"mouseMove": "",
+			"touchEnd": "",
+			"touchMove": "",
+			"touchStart": ""
+		},
+
+		"Methods": {
+			"onCursorChanged": "",
+			"_bindTouch": "",
+			"onTouchEnabledChanged": "",
+			"onRecursiveVisibleChanged": "",
+			"_bindClick": "",
+			"onClickableChanged": "",
+			"_bindWheel": "",
+			"onWheelEnabledChanged": "",
+			"_bindPressable": "",
+			"onPressableChanged": "",
+			"_bindHover": "",
+			"onHoverEnabledChanged": "",
+			"onContainsMouseChanged": "",
+			"updatePosition": "",
+			"onTouchStart": "",
+			"onTouchMove": "",
+			"onCompleted": ""
+		}
+	}
+}
