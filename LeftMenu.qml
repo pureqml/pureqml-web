@@ -37,6 +37,7 @@ Rectangle {
 				Text {
 					id: menuDelegateText;
 					anchors.left: parent.left;
+					anchors.leftMargin: model.depth * 20;
 					font.weight: 300;
 					font.pixelSize: 18;
 					color: parent.hover ? colorTheme.lighterPrimaryColor : colorTheme.textColor;
@@ -46,6 +47,14 @@ Rectangle {
 				onClicked: { leftMenuProto.indexChoosed(this._local.model.index) }
 			}
 		}
+	}
+
+	getRow(idx): {
+		if (idx < 0 || idx >= menuModel.count) {
+			log("Bad index", idx)
+			return
+		}
+		return menuModel.get(idx)
 	}
 
 	fillModel(data): {
