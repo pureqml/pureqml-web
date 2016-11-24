@@ -5,12 +5,40 @@ HistoryPage {
 	anchors.right: parent.right;
 	url: "docs";
 
+	SearchPanel {
+		id: search;
+		anchors.right: contentRect.left;
+
+		onSearch(text): {
+			var data = this.parent._data
+			if (!data) {
+				log("No data")
+				return
+			}
+
+			content.visible = false
+
+			var res = []
+			for (var p in data.pages) {
+				var pageContent = data.pages[p].content
+				for (var i in pageContent)
+					if (i.toLowerCase().indexOf(text) > -1)
+						res.push({ "text": i, "ref": pageContent[i] })
+			}
+
+			searchResults.fill(res)
+		}
+	}
+
 	LeftMenu {
 		id: leftMenu;
 		width: 300;
+		anchors.top: search.bottom;
 		anchors.right: contentRect.left;
+		anchors.topMargin: 10;
 
 		onIndexChoosed(idx): {
+			content.visible = true
 			var row = this.getRow(idx)
 			if (!row || !row.path)
 				return
@@ -21,10 +49,22 @@ HistoryPage {
 	HistoryPageContent {
 		id: contentRect;
 		leftMenuWidth: leftMenu.width;
-		height: content.contentHeight + 30;
+		height: (content.visible ? content.contentHeight : searchResults.contentHeight)+ 30;
 	
-		DocViewer {
-			id: content;
+		DocViewer { id: content; }
+
+		SearchResults {
+			id: searchResults;
+			visible: !content.visible;
+
+			onChoosed(ref): {
+				if (!ref) {
+					log("ref is undefined")
+					return
+				}
+				content.visible = true
+				dataLoader.url = "https://raw.githubusercontent.com/pureqml/pureqml-web/master/doc/json/" + ref
+			}
 		}
 	}
 
@@ -32,7 +72,8 @@ HistoryPage {
 		url: "https://raw.githubusercontent.com/pureqml/pureqml-web/master/doc/json/mkdocs.json";
 
 		onDataChanged: {
-			var docs = JSON.parse(value)
+			this.parent._data = JSON.parse(value)
+			var docs = this.parent._data
 			var pages = docs.pages
 			var data = []
 			for (var p in pages) {
