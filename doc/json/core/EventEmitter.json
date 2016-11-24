@@ -3,13 +3,13 @@
 
 	"content": {
 		"Methods": {
-			"discard": "",
-			"on": "",
-			"connectOn": "",
-			"onListener": "",
-			"emit": "",
-			"removeAllListeners": "",
-			"removeListener": ""
+			"discard": { "text": "", "internal": false },
+			"on": { "text": "", "internal": false },
+			"connectOn": { "text": "", "internal": false },
+			"onListener": { "text": "", "internal": false },
+			"emit": { "text": "", "internal": false },
+			"removeAllListeners": { "text": "", "internal": false },
+			"removeListener": { "text": "", "internal": false }
 		}
 	}
 }

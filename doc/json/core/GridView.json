@@ -3,20 +3,20 @@
 
 	"content": {
 		"Properties": {
-			"cellWidth": "",
-			"cellHeight": "",
-			"rows": "",
-			"columns": ""
+			"cellWidth": { "text": "", "internal": false },
+			"cellHeight": { "text": "", "internal": false },
+			"rows": { "text": "", "internal": false },
+			"columns": { "text": "", "internal": false }
 		},
 
 		"Methods": {
-			"move": "",
-			"onKeyPressed": "",
-			"getItemPosition": "",
-			"indexAt": "",
-			"positionViewAtIndex": "",
-			"_layout": "",
-			"onFlowChanged": ""
+			"move": { "text": "", "internal": false },
+			"onKeyPressed": { "text": "", "internal": false },
+			"getItemPosition": { "text": "", "internal": false },
+			"indexAt": { "text": "", "internal": false },
+			"positionViewAtIndex": { "text": "", "internal": false },
+			"_layout": { "text": "", "internal": false },
+			"onFlowChanged": { "text": "", "internal": false }
 		}
 	}
 }

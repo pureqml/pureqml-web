@@ -3,16 +3,16 @@
 
 	"content": {
 		"Properties": {
-			"autoPlay": "",
-			"source": ""
+			"autoPlay": { "text": "", "internal": false },
+			"source": { "text": "", "internal": false }
 		},
 
 		"Methods": {
-			"_update": "",
-			"play": "",
-			"pause": "",
-			"onAutoPlayChanged": "",
-			"getTag": "returns tag for corresponding element"
+			"_update": { "text": "", "internal": false },
+			"play": { "text": "", "internal": false },
+			"pause": { "text": "", "internal": false },
+			"onAutoPlayChanged": { "text": "", "internal": false },
+			"getTag": { "text": "returns tag for corresponding element", "internal": false }
 		}
 	}
 }

@@ -3,55 +3,55 @@
 
 	"content": {
 		"Properties": {
-			"mouseX": "",
-			"mouseY": "",
-			"cursor": "",
-			"pressed": "",
-			"containsMouse": "",
-			"clickable": "",
-			"pressable": "",
-			"touchEnabled": "",
-			"hoverEnabled": "",
-			"wheelEnabled": ""
+			"mouseX": { "text": "", "internal": false },
+			"mouseY": { "text": "", "internal": false },
+			"cursor": { "text": "", "internal": false },
+			"pressed": { "text": "", "internal": false },
+			"containsMouse": { "text": "", "internal": false },
+			"clickable": { "text": "", "internal": false },
+			"pressable": { "text": "", "internal": false },
+			"touchEnabled": { "text": "", "internal": false },
+			"hoverEnabled": { "text": "", "internal": false },
+			"wheelEnabled": { "text": "", "internal": false }
 		},
 
 		"Alias Properties": {
-			"hover": "",
-			"hoverable": ""
+			"hover": { "text": "", "internal": false },
+			"hoverable": { "text": "", "internal": false }
 		},
 
 		"Signals": {
-			"entered": "",
-			"exited": "",
-			"clicked": "",
-			"canceled": "",
-			"wheelEvent": "",
-			"verticalSwiped": "",
-			"horizontalSwiped": "",
-			"mouseMove": "",
-			"touchEnd": "",
-			"touchMove": "",
-			"touchStart": ""
+			"entered": { "text": "", "internal": false },
+			"exited": { "text": "", "internal": false },
+			"clicked": { "text": "", "internal": false },
+			"canceled": { "text": "", "internal": false },
+			"wheelEvent": { "text": "", "internal": false },
+			"verticalSwiped": { "text": "", "internal": false },
+			"horizontalSwiped": { "text": "", "internal": false },
+			"mouseMove": { "text": "", "internal": false },
+			"touchEnd": { "text": "", "internal": false },
+			"touchMove": { "text": "", "internal": false },
+			"touchStart": { "text": "", "internal": false }
 		},
 
 		"Methods": {
-			"onCursorChanged": "",
-			"_bindTouch": "",
-			"onTouchEnabledChanged": "",
-			"onRecursiveVisibleChanged": "",
-			"_bindClick": "",
-			"onClickableChanged": "",
-			"_bindWheel": "",
-			"onWheelEnabledChanged": "",
-			"_bindPressable": "",
-			"onPressableChanged": "",
-			"_bindHover": "",
-			"onHoverEnabledChanged": "",
-			"onContainsMouseChanged": "",
-			"updatePosition": "",
-			"onTouchStart": "",
-			"onTouchMove": "",
-			"onCompleted": ""
+			"onCursorChanged": { "text": "", "internal": false },
+			"_bindTouch": { "text": "", "internal": false },
+			"onTouchEnabledChanged": { "text": "", "internal": false },
+			"onRecursiveVisibleChanged": { "text": "", "internal": false },
+			"_bindClick": { "text": "", "internal": false },
+			"onClickableChanged": { "text": "", "internal": false },
+			"_bindWheel": { "text": "", "internal": false },
+			"onWheelEnabledChanged": { "text": "", "internal": false },
+			"_bindPressable": { "text": "", "internal": false },
+			"onPressableChanged": { "text": "", "internal": false },
+			"_bindHover": { "text": "", "internal": false },
+			"onHoverEnabledChanged": { "text": "", "internal": false },
+			"onContainsMouseChanged": { "text": "", "internal": false },
+			"updatePosition": { "text": "", "internal": false },
+			"onTouchStart": { "text": "", "internal": false },
+			"onTouchMove": { "text": "", "internal": false },
+			"onCompleted": { "text": "", "internal": false }
 		}
 	}
 }

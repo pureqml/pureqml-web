@@ -3,23 +3,23 @@
 
 	"content": {
 		"Properties": {
-			"model": "",
-			"delegate": "",
-			"count": "",
-			"currentIndex": "",
-			"contentWidth": "",
-			"contentHeight": ""
+			"model": { "text": "", "internal": false },
+			"delegate": { "text": "", "internal": false },
+			"count": { "text": "", "internal": false },
+			"currentIndex": { "text": "", "internal": false },
+			"contentWidth": { "text": "", "internal": false },
+			"contentHeight": { "text": "", "internal": false }
 		},
 
 		"Methods": {
-			"_onReset": "",
-			"_onRowsChanged": "",
-			"_onRowsRemoved": "",
-			"_onRowsInserted": "",
-			"_createDelegate": "",
-			"_update": "",
-			"_attach": "",
-			"onCompleted": ""
+			"_onReset": { "text": "", "internal": false },
+			"_onRowsChanged": { "text": "", "internal": false },
+			"_onRowsRemoved": { "text": "", "internal": false },
+			"_onRowsInserted": { "text": "", "internal": false },
+			"_createDelegate": { "text": "", "internal": false },
+			"_update": { "text": "", "internal": false },
+			"_attach": { "text": "", "internal": false },
+			"onCompleted": { "text": "", "internal": false }
 		}
 	}
 }

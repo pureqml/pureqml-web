@@ -3,21 +3,21 @@
 
 	"content": {
 		"Properties": {
-			"paddings": "",
-			"color": "",
-			"backgroundColor": "",
-			"font": "",
-			"border": "",
-			"placeholder": "",
-			"type": ""
+			"paddings": { "text": "", "internal": false },
+			"color": { "text": "", "internal": false },
+			"backgroundColor": { "text": "", "internal": false },
+			"font": { "text": "", "internal": false },
+			"border": { "text": "", "internal": false },
+			"placeholder": { "text": "", "internal": false },
+			"type": { "text": "", "internal": false }
 		},
 
 		"Methods": {
-			"onActiveFocusChanged": "",
-			"onRecursiveVisibleChanged": "",
-			"_update": "",
-			"getTag": "returns tag for corresponding element",
-			"_updateSize": ""
+			"onActiveFocusChanged": { "text": "", "internal": false },
+			"onRecursiveVisibleChanged": { "text": "", "internal": false },
+			"_update": { "text": "", "internal": false },
+			"getTag": { "text": "returns tag for corresponding element", "internal": false },
+			"_updateSize": { "text": "", "internal": false }
 		}
 	}
 }

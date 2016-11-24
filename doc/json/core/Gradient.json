@@ -3,14 +3,14 @@
 
 	"content": {
 		"Properties": {
-			"angle": ""
+			"angle": { "text": "", "internal": false }
 		},
 
 		"Methods": {
-			"addChild": "",
-			"_update": "",
-			"_getDeclaration": "",
-			"onCompleted": ""
+			"addChild": { "text": "", "internal": false },
+			"_update": { "text": "", "internal": false },
+			"_getDeclaration": { "text": "", "internal": false },
+			"onCompleted": { "text": "", "internal": false }
 		}
 	}
 }

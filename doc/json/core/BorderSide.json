@@ -3,15 +3,15 @@
 
 	"content": {
 		"Properties": {
-			"name": "@internal
-Component aimed to adjust individual preferences of each border side",
-			"width": "",
-			"color": ""
+			"name": { "text": "@internal
+Component aimed to adjust individual preferences of each border side", "internal": false },
+			"width": { "text": "", "internal": false },
+			"color": { "text": "", "internal": false }
 		},
 
 		"Methods": {
-			"_updateStyle": "",
-			"_update": ""
+			"_updateStyle": { "text": "", "internal": false },
+			"_update": { "text": "", "internal": false }
 		}
 	}
 }

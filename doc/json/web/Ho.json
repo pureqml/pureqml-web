@@ -3,32 +3,32 @@
 
 	"content": {
 		"Properties": {
-			"width": "",
-			"height": "",
-			"top": "",
-			"left": "",
-			"right": "",
-			"bottom": "",
-			"html": "",
-			"display": "",
-			"float": "",
-			"boxSizing": "",
-			"position": "",
-			"opacity": "",
-			"radius": "",
-			"rotate": "",
-			"clip": "",
-			"z": "",
-			"color": "",
-			"font": "",
-			"margin": "",
-			"padding": ""
+			"width": { "text": "", "internal": false },
+			"height": { "text": "", "internal": false },
+			"top": { "text": "", "internal": false },
+			"left": { "text": "", "internal": false },
+			"right": { "text": "", "internal": false },
+			"bottom": { "text": "", "internal": false },
+			"html": { "text": "", "internal": false },
+			"display": { "text": "", "internal": false },
+			"float": { "text": "", "internal": false },
+			"boxSizing": { "text": "", "internal": false },
+			"position": { "text": "", "internal": false },
+			"opacity": { "text": "", "internal": false },
+			"radius": { "text": "", "internal": false },
+			"rotate": { "text": "", "internal": false },
+			"clip": { "text": "", "internal": false },
+			"z": { "text": "", "internal": false },
+			"color": { "text": "", "internal": false },
+			"font": { "text": "", "internal": false },
+			"margin": { "text": "", "internal": false },
+			"padding": { "text": "", "internal": false }
 		},
 
 		"Methods": {
-			"style": "",
-			"_updateStyle": "@const",
-			"_update": ""
+			"style": { "text": "", "internal": false },
+			"_updateStyle": { "text": "@const", "internal": false },
+			"_update": { "text": "", "internal": false }
 		}
 	}
 }

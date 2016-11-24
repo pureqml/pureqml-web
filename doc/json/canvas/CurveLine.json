@@ -3,19 +3,19 @@
 
 	"content": {
 		"Properties": {
-			"x1": "",
-			"y1": "",
-			"x2": "",
-			"y2": ""
+			"x1": { "text": "", "internal": false },
+			"y1": { "text": "", "internal": false },
+			"x2": { "text": "", "internal": false },
+			"y2": { "text": "", "internal": false }
 		},
 
 		"Methods": {
-			"onX1Changed": "",
-			"onX2Changed": "",
-			"onY1Changed": "",
-			"onY2Changed": "",
-			"onOrientationChanged": "",
-			"update": ""
+			"onX1Changed": { "text": "", "internal": false },
+			"onX2Changed": { "text": "", "internal": false },
+			"onY1Changed": { "text": "", "internal": false },
+			"onY2Changed": { "text": "", "internal": false },
+			"onOrientationChanged": { "text": "", "internal": false },
+			"update": { "text": "", "internal": false }
 		}
 	}
 }

@@ -3,14 +3,14 @@
 
 	"content": {
 		"Methods": {
-			"move": "",
-			"positionViewAtIndex": "",
-			"onKeyPressed": "",
-			"getItemPosition": "",
-			"indexAt": "",
-			"_layout": "",
-			"_createDelegate": "@internal creates delegate in given item slot",
-			"onOrientationChanged": ""
+			"move": { "text": "", "internal": false },
+			"positionViewAtIndex": { "text": "", "internal": false },
+			"onKeyPressed": { "text": "", "internal": false },
+			"getItemPosition": { "text": "", "internal": false },
+			"indexAt": { "text": "", "internal": false },
+			"_layout": { "text": "", "internal": false },
+			"_createDelegate": { "text": "@internal creates delegate in given item slot", "internal": false },
+			"onOrientationChanged": { "text": "", "internal": false }
 		}
 	}
 }

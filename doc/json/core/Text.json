@@ -3,24 +3,24 @@
 
 	"content": {
 		"Properties": {
-			"text": "text to be displayed",
-			"color": "color of the text",
-			"shadow": "",
-			"font": "",
-			"paintedWidth": "real width of the text without any layout applied",
-			"paintedHeight": "real height of this text without any layout applied"
+			"text": { "text": "text to be displayed", "internal": false },
+			"color": { "text": "color of the text", "internal": false },
+			"shadow": { "text": "", "internal": false },
+			"font": { "text": "", "internal": false },
+			"paintedWidth": { "text": "real width of the text without any layout applied", "internal": false },
+			"paintedHeight": { "text": "real height of this text without any layout applied", "internal": false }
 		},
 
 		"Methods": {
-			"_setText": "",
-			"onChanged": "",
-			"on": "",
-			"_updateStyle": "",
-			"_enableSizeUpdate": "",
-			"_updateSize": "",
-			"_reflectSize": "",
-			"_updateSizeImpl": "",
-			"_update": ""
+			"_setText": { "text": "", "internal": false },
+			"onChanged": { "text": "", "internal": false },
+			"on": { "text": "", "internal": false },
+			"_updateStyle": { "text": "", "internal": false },
+			"_enableSizeUpdate": { "text": "", "internal": false },
+			"_updateSize": { "text": "", "internal": false },
+			"_reflectSize": { "text": "", "internal": false },
+			"_updateSizeImpl": { "text": "", "internal": false },
+			"_update": { "text": "", "internal": false }
 		}
 	}
 }

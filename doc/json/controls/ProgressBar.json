@@ -3,7 +3,7 @@
 
 	"content": {
 		"Properties": {
-			"progress": ""
+			"progress": { "text": "", "internal": false }
 		}
 	}
 }

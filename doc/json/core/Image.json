@@ -3,17 +3,17 @@
 
 	"content": {
 		"Properties": {
-			"source": "image URL",
-			"paintedWidth": "real image width",
-			"paintedHeight": "real image height"
+			"source": { "text": "image URL", "internal": false },
+			"paintedWidth": { "text": "real image width", "internal": false },
+			"paintedHeight": { "text": "real image height", "internal": false }
 		},
 
 		"Methods": {
-			"_init": "",
-			"_onError": "",
-			"_load": "",
-			"load": "",
-			"_update": ""
+			"_init": { "text": "", "internal": false },
+			"_onError": { "text": "", "internal": false },
+			"_load": { "text": "", "internal": false },
+			"load": { "text": "", "internal": false },
+			"_update": { "text": "", "internal": false }
 		}
 	}
 }

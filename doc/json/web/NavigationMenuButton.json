@@ -3,19 +3,19 @@
 
 	"content": {
 		"Properties": {
-			"icon": "",
-			"scrollable": "",
-			"show": "",
-			"content": "",
-			"contentX": "",
-			"contentY": "",
-			"panel": ""
+			"icon": { "text": "", "internal": false },
+			"scrollable": { "text": "", "internal": false },
+			"show": { "text": "", "internal": false },
+			"content": { "text": "", "internal": false },
+			"contentX": { "text": "", "internal": false },
+			"contentY": { "text": "", "internal": false },
+			"panel": { "text": "", "internal": false }
 		},
 
 		"Methods": {
-			"hide": "",
-			"toggleShow": "",
-			"onShowChanged": ""
+			"hide": { "text": "", "internal": false },
+			"toggleShow": { "text": "", "internal": false },
+			"onShowChanged": { "text": "", "internal": false }
 		}
 	}
 }

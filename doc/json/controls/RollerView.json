@@ -3,17 +3,17 @@
 
 	"content": {
 		"Properties": {
-			"cacheEnable": ""
+			"cacheEnable": { "text": "", "internal": false }
 		},
 
 		"Methods": {
-			"positionViewAtIndex": "",
-			"_layout": "",
-			"focusCurrent": "@internal focuses current item",
-			"_createDelegate": "@internal creates delegate in given item slot",
-			"onKeyPressed": "",
-			"onOrientationChanged": "",
-			"onCurrentIndexChanged": ""
+			"positionViewAtIndex": { "text": "", "internal": false },
+			"_layout": { "text": "", "internal": false },
+			"focusCurrent": { "text": "@internal focuses current item", "internal": false },
+			"_createDelegate": { "text": "@internal creates delegate in given item slot", "internal": false },
+			"onKeyPressed": { "text": "", "internal": false },
+			"onOrientationChanged": { "text": "", "internal": false },
+			"onCurrentIndexChanged": { "text": "", "internal": false }
 		}
 	}
 }

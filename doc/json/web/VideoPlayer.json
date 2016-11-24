@@ -3,46 +3,46 @@
 
 	"content": {
 		"Properties": {
-			"source": "",
-			"backgroundColor": "",
-			"volume": "",
-			"loop": "",
-			"flash": "",
-			"ready": "",
-			"muted": "",
-			"paused": "",
-			"autoPlay": "",
-			"waiting": "",
-			"seeking": "",
-			"duration": "",
-			"progress": "",
-			"buffered": ""
+			"source": { "text": "", "internal": false },
+			"backgroundColor": { "text": "", "internal": false },
+			"volume": { "text": "", "internal": false },
+			"loop": { "text": "", "internal": false },
+			"flash": { "text": "", "internal": false },
+			"ready": { "text": "", "internal": false },
+			"muted": { "text": "", "internal": false },
+			"paused": { "text": "", "internal": false },
+			"autoPlay": { "text": "", "internal": false },
+			"waiting": { "text": "", "internal": false },
+			"seeking": { "text": "", "internal": false },
+			"duration": { "text": "", "internal": false },
+			"progress": { "text": "", "internal": false },
+			"buffered": { "text": "", "internal": false }
 		},
 
 		"Signals": {
-			"finished": "",
-			"error": ""
+			"finished": { "text": "", "internal": false },
+			"error": { "text": "", "internal": false }
 		},
 
 		"Methods": {
-			"_update": "",
-			"getFlashMovieObject": "",
-			"play": "",
-			"seek": "",
-			"seekTo": "",
-			"onAutoPlayChanged": "",
-			"applyVolume": "",
-			"pause": "",
-			"volumeUp": "",
-			"volumeDown": "",
-			"toggleMute": "",
-			"onVolumeChanged": "",
-			"onReadyChanged": "",
-			"onError": "",
-			"onSourceChanged": "",
-			"onWidthChanged": "",
-			"onHeightChanged": "",
-			"onCompleted": ""
+			"_update": { "text": "", "internal": false },
+			"getFlashMovieObject": { "text": "", "internal": false },
+			"play": { "text": "", "internal": false },
+			"seek": { "text": "", "internal": false },
+			"seekTo": { "text": "", "internal": false },
+			"onAutoPlayChanged": { "text": "", "internal": false },
+			"applyVolume": { "text": "", "internal": false },
+			"pause": { "text": "", "internal": false },
+			"volumeUp": { "text": "", "internal": false },
+			"volumeDown": { "text": "", "internal": false },
+			"toggleMute": { "text": "", "internal": false },
+			"onVolumeChanged": { "text": "", "internal": false },
+			"onReadyChanged": { "text": "", "internal": false },
+			"onError": { "text": "", "internal": false },
+			"onSourceChanged": { "text": "", "internal": false },
+			"onWidthChanged": { "text": "", "internal": false },
+			"onHeightChanged": { "text": "", "internal": false },
+			"onCompleted": { "text": "", "internal": false }
 		}
 	}
 }

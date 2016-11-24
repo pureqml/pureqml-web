@@ -3,17 +3,17 @@
 
 	"content": {
 		"Properties": {
-			"blink": ""
+			"blink": { "text": "", "internal": false }
 		},
 
 		"Signals": {
-			"triggered": ""
+			"triggered": { "text": "", "internal": false }
 		},
 
 		"Methods": {
-			"makeBlink": "",
-			"onSelectPressed": "",
-			"onClicked": ""
+			"makeBlink": { "text": "", "internal": false },
+			"onSelectPressed": { "text": "", "internal": false },
+			"onClicked": { "text": "", "internal": false }
 		}
 	}
 }

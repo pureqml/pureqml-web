@@ -3,21 +3,21 @@
 
 	"content": {
 		"Properties": {
-			"languges": "",
-			"currentIndex": "",
-			"count": ""
+			"languges": { "text": "", "internal": false },
+			"currentIndex": { "text": "", "internal": false },
+			"count": { "text": "", "internal": false }
 		},
 
 		"Signals": {
-			"languageChanged": ""
+			"languageChanged": { "text": "", "internal": false }
 		},
 
 		"Methods": {
-			"addLanguage": "",
-			"onCountChanged": "",
-			"onClicked": "",
-			"onCurrentIndexChanged": "",
-			"onCompleted": ""
+			"addLanguage": { "text": "", "internal": false },
+			"onCountChanged": { "text": "", "internal": false },
+			"onClicked": { "text": "", "internal": false },
+			"onCurrentIndexChanged": { "text": "", "internal": false },
+			"onCompleted": { "text": "", "internal": false }
 		}
 	}
 }

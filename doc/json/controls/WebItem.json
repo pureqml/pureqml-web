@@ -3,21 +3,21 @@
 
 	"content": {
 		"Properties": {
-			"hoverMixin": "",
-			"position": ""
+			"hoverMixin": { "text": "", "internal": false },
+			"position": { "text": "", "internal": false }
 		},
 
 		"Alias Properties": {
-			"hover": "",
-			"clickable": "",
-			"hoverable": "",
-			"cursor": "",
-			"activeHover": "",
-			"activeHoverEnabled": ""
+			"hover": { "text": "", "internal": false },
+			"clickable": { "text": "", "internal": false },
+			"hoverable": { "text": "", "internal": false },
+			"cursor": { "text": "", "internal": false },
+			"activeHover": { "text": "", "internal": false },
+			"activeHoverEnabled": { "text": "", "internal": false }
 		},
 
 		"Methods": {
-			"_update": ""
+			"_update": { "text": "", "internal": false }
 		}
 	}
 }

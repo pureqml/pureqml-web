@@ -3,8 +3,8 @@
 
 	"content": {
 		"Properties": {
-			"text": "",
-			"textColor": ""
+			"text": { "text": "", "internal": false },
+			"textColor": { "text": "", "internal": false }
 		}
 	}
 }

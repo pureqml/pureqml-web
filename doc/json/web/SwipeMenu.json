@@ -3,18 +3,18 @@
 
 	"content": {
 		"Properties": {
-			"innerArea": "",
-			"hideable": "",
-			"xDuration": "",
-			"openWidth": "",
-			"intPos": "",
-			"shiftX": ""
+			"innerArea": { "text": "", "internal": false },
+			"hideable": { "text": "", "internal": false },
+			"xDuration": { "text": "", "internal": false },
+			"openWidth": { "text": "", "internal": false },
+			"intPos": { "text": "", "internal": false },
+			"shiftX": { "text": "", "internal": false }
 		},
 
 		"Methods": {
-			"show": "",
-			"hide": "",
-			"onCompleted": ""
+			"show": { "text": "", "internal": false },
+			"hide": { "text": "", "internal": false },
+			"onCompleted": { "text": "", "internal": false }
 		}
 	}
 }

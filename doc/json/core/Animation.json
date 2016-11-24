@@ -3,20 +3,20 @@
 
 	"content": {
 		"Properties": {
-			"delay": "delay in ms",
-			"duration": "duration in ms",
-			"cssTransition": "use css transition if possible",
-			"running": "currently running",
-			"easing": "easing function"
+			"delay": { "text": "delay in ms", "internal": false },
+			"duration": { "text": "duration in ms", "internal": false },
+			"cssTransition": { "text": "use css transition if possible", "internal": false },
+			"running": { "text": "currently running", "internal": false },
+			"easing": { "text": "easing function", "internal": false }
 		},
 
 		"Methods": {
-			"disable": "disable animation.",
-			"enable": "enable animation.",
-			"enabled": "returns true if animation is enabled",
-			"_update": "@private",
-			"interpolate": "@internal",
-			"complete": "@internal"
+			"disable": { "text": "disable animation.", "internal": false },
+			"enable": { "text": "enable animation.", "internal": false },
+			"enabled": { "text": "returns true if animation is enabled", "internal": false },
+			"_update": { "text": "@private", "internal": true },
+			"interpolate": { "text": "@internal", "internal": false },
+			"complete": { "text": "@internal", "internal": false }
 		}
 	}
 }

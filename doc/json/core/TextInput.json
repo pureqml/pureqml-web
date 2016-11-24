@@ -3,12 +3,12 @@
 
 	"content": {
 		"Properties": {
-			"text": "",
-			"passwordMode": ""
+			"text": { "text": "", "internal": false },
+			"passwordMode": { "text": "", "internal": false }
 		},
 
 		"Methods": {
-			"_update": ""
+			"_update": { "text": "", "internal": false }
 		}
 	}
 }

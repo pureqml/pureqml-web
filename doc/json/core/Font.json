@@ -3,18 +3,18 @@
 
 	"content": {
 		"Properties": {
-			"family": "",
-			"italic": "",
-			"bold": "",
-			"underline": "",
-			"pixelSize": "",
-			"pointSize": "",
-			"lineHeight": "",
-			"weight": ""
+			"family": { "text": "", "internal": false },
+			"italic": { "text": "", "internal": false },
+			"bold": { "text": "", "internal": false },
+			"underline": { "text": "", "internal": false },
+			"pixelSize": { "text": "", "internal": false },
+			"pointSize": { "text": "", "internal": false },
+			"lineHeight": { "text": "", "internal": false },
+			"weight": { "text": "", "internal": false }
 		},
 
 		"Methods": {
-			"_update": ""
+			"_update": { "text": "", "internal": false }
 		}
 	}
 }

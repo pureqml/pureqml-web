@@ -3,20 +3,20 @@
 
 	"content": {
 		"Properties": {
-			"hash": "",
-			"host": "",
-			"href": "",
-			"port": "",
-			"origin": "",
-			"hostname": "",
-			"pathname": "",
-			"historyState": ""
+			"hash": { "text": "", "internal": false },
+			"host": { "text": "", "internal": false },
+			"href": { "text": "", "internal": false },
+			"port": { "text": "", "internal": false },
+			"origin": { "text": "", "internal": false },
+			"hostname": { "text": "", "internal": false },
+			"pathname": { "text": "", "internal": false },
+			"historyState": { "text": "", "internal": false }
 		},
 
 		"Methods": {
-			"updateActualValues": "",
-			"changeHref": "",
-			"pushState": ""
+			"updateActualValues": { "text": "", "internal": false },
+			"changeHref": { "text": "", "internal": false },
+			"pushState": { "text": "", "internal": false }
 		}
 	}
 }

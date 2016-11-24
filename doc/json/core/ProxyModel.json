@@ -3,34 +3,34 @@
 
 	"content": {
 		"Properties": {
-			"count": "",
-			"target": ""
+			"count": { "text": "", "internal": false },
+			"target": { "text": "", "internal": false }
 		},
 
 		"Signals": {
-			"reset": "",
-			"rowsInserted": "",
-			"rowsChanged": "",
-			"rowsRemoved": ""
+			"reset": { "text": "", "internal": false },
+			"rowsInserted": { "text": "", "internal": false },
+			"rowsChanged": { "text": "", "internal": false },
+			"rowsRemoved": { "text": "", "internal": false }
 		},
 
 		"Methods": {
-			"setFilter": "",
-			"setCompare": "",
-			"_buildIndexMap": "",
-			"get": "",
-			"clear": "",
-			"append": "",
-			"insert": "",
-			"set": "",
-			"setProperty": "",
-			"remove": "",
-			"addChild": "",
-			"_onReset": "",
-			"_onRowsInserted": "",
-			"_onRowsChanged": "",
-			"_onRowsRemoved": "",
-			"onCompleted": ""
+			"setFilter": { "text": "", "internal": false },
+			"setCompare": { "text": "", "internal": false },
+			"_buildIndexMap": { "text": "", "internal": false },
+			"get": { "text": "", "internal": false },
+			"clear": { "text": "", "internal": false },
+			"append": { "text": "", "internal": false },
+			"insert": { "text": "", "internal": false },
+			"set": { "text": "", "internal": false },
+			"setProperty": { "text": "", "internal": false },
+			"remove": { "text": "", "internal": false },
+			"addChild": { "text": "", "internal": false },
+			"_onReset": { "text": "", "internal": false },
+			"_onRowsInserted": { "text": "", "internal": false },
+			"_onRowsChanged": { "text": "", "internal": false },
+			"_onRowsRemoved": { "text": "", "internal": false },
+			"onCompleted": { "text": "", "internal": false }
 		}
 	}
 }

@@ -3,11 +3,11 @@
 
 	"content": {
 		"Properties": {
-			"text": ""
+			"text": { "text": "", "internal": false }
 		},
 
 		"Methods": {
-			"_update": ""
+			"_update": { "text": "", "internal": false }
 		}
 	}
 }

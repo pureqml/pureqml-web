@@ -3,15 +3,15 @@
 
 	"content": {
 		"Properties": {
-			"centerLongitude": "",
-			"centerLatitude": "",
-			"zoom": ""
+			"centerLongitude": { "text": "", "internal": false },
+			"centerLatitude": { "text": "", "internal": false },
+			"zoom": { "text": "", "internal": false }
 		},
 
 		"Methods": {
-			"_update": "",
-			"_updateCenter": "",
-			"getUserLocation": ""
+			"_update": { "text": "", "internal": false },
+			"_updateCenter": { "text": "", "internal": false },
+			"getUserLocation": { "text": "", "internal": false }
 		}
 	}
 }

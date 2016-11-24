@@ -3,17 +3,17 @@
 
 	"content": {
 		"Properties": {
-			"xs": "",
-			"sm": "",
-			"md": "",
-			"lg": "",
-			"globalWidth": ""
+			"xs": { "text": "", "internal": false },
+			"sm": { "text": "", "internal": false },
+			"md": { "text": "", "internal": false },
+			"lg": { "text": "", "internal": false },
+			"globalWidth": { "text": "", "internal": false }
 		},
 
 		"Methods": {
-			"_update": "",
-			"_calculate": "",
-			"onCompleted": ""
+			"_update": { "text": "", "internal": false },
+			"_calculate": { "text": "", "internal": false },
+			"onCompleted": { "text": "", "internal": false }
 		}
 	}
 }

@@ -3,20 +3,20 @@
 
 	"content": {
 		"Properties": {
-			"pressed": "",
-			"enabled": "",
-			"x": "",
-			"y": "",
-			"limitx1": "",
-			"limitx2": "",
-			"limity1": "",
-			"limity2": ""
+			"pressed": { "text": "", "internal": false },
+			"enabled": { "text": "", "internal": false },
+			"x": { "text": "", "internal": false },
+			"y": { "text": "", "internal": false },
+			"limitx1": { "text": "", "internal": false },
+			"limitx2": { "text": "", "internal": false },
+			"limity1": { "text": "", "internal": false },
+			"limity2": { "text": "", "internal": false }
 		},
 
 		"Methods": {
-			"_bindPressed": "",
-			"onEnabledChanged": "",
-			"onCompleted": ""
+			"_bindPressed": { "text": "", "internal": false },
+			"onEnabledChanged": { "text": "", "internal": false },
+			"onCompleted": { "text": "", "internal": false }
 		}
 	}
 }

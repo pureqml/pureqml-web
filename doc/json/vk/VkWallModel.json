@@ -3,8 +3,8 @@
 
 	"content": {
 		"Methods": {
-			"_fillImpl": "",
-			"fill": ""
+			"_fillImpl": { "text": "", "internal": false },
+			"fill": { "text": "", "internal": false }
 		}
 	}
 }

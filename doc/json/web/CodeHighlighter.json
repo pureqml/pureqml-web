@@ -3,17 +3,17 @@
 
 	"content": {
 		"Properties": {
-			"contentWidth": "",
-			"contentHeight": "",
-			"code": "",
-			"language": "",
-			"font": ""
+			"contentWidth": { "text": "", "internal": false },
+			"contentHeight": { "text": "", "internal": false },
+			"code": { "text": "", "internal": false },
+			"language": { "text": "", "internal": false },
+			"font": { "text": "", "internal": false }
 		},
 
 		"Methods": {
-			"_update": "",
-			"getTag": "returns tag for corresponding element",
-			"_updateSize": ""
+			"_update": { "text": "", "internal": false },
+			"getTag": { "text": "returns tag for corresponding element", "internal": false },
+			"_updateSize": { "text": "", "internal": false }
 		}
 	}
 }

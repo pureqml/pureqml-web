@@ -3,13 +3,13 @@
 
 	"content": {
 		"Properties": {
-			"href": "",
-			"target": ""
+			"href": { "text": "", "internal": false },
+			"target": { "text": "", "internal": false }
 		},
 
 		"Methods": {
-			"_update": "",
-			"getTag": ""
+			"_update": { "text": "", "internal": false },
+			"getTag": { "text": "", "internal": false }
 		}
 	}
 }

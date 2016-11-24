@@ -3,7 +3,7 @@
 
 	"content": {
 		"Methods": {
-			"updateText": ""
+			"updateText": { "text": "", "internal": false }
 		}
 	}
 }

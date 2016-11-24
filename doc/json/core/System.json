@@ -3,26 +3,26 @@
 
 	"content": {
 		"Properties": {
-			"userAgent": "",
-			"language": "",
-			"browser": "",
-			"vendor": "",
-			"os": "",
-			"webkit": "",
-			"support3dTransforms": "",
-			"supportTransforms": "",
-			"supportTransitions": "",
-			"portrait": "",
-			"landscape": "",
-			"pageActive": "",
-			"contextWidth": "",
-			"contextHeight": ""
+			"userAgent": { "text": "", "internal": false },
+			"language": { "text": "", "internal": false },
+			"browser": { "text": "", "internal": false },
+			"vendor": { "text": "", "internal": false },
+			"os": { "text": "", "internal": false },
+			"webkit": { "text": "", "internal": false },
+			"support3dTransforms": { "text": "", "internal": false },
+			"supportTransforms": { "text": "", "internal": false },
+			"supportTransitions": { "text": "", "internal": false },
+			"portrait": { "text": "", "internal": false },
+			"landscape": { "text": "", "internal": false },
+			"pageActive": { "text": "", "internal": false },
+			"contextWidth": { "text": "", "internal": false },
+			"contextHeight": { "text": "", "internal": false }
 		},
 
 		"Methods": {
-			"onContextWidthChanged": "",
-			"onContextHeightChanged": "",
-			"_updateLayoutType": ""
+			"onContextWidthChanged": { "text": "", "internal": false },
+			"onContextHeightChanged": { "text": "", "internal": false },
+			"_updateLayoutType": { "text": "", "internal": false }
 		}
 	}
 }

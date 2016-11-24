@@ -3,24 +3,24 @@
 
 	"content": {
 		"Properties": {
-			"count": "",
-			"gamepadChildrensCount": "",
-			"_gamepads": "",
-			"gamepadPollingInterval": "",
-			"eventPollingInterval": ""
+			"count": { "text": "", "internal": false },
+			"gamepadChildrensCount": { "text": "", "internal": false },
+			"_gamepads": { "text": "", "internal": false },
+			"gamepadPollingInterval": { "text": "", "internal": false },
+			"eventPollingInterval": { "text": "", "internal": false }
 		},
 
 		"Signals": {
-			"connected": "",
-			"disconnected": ""
+			"connected": { "text": "", "internal": false },
+			"disconnected": { "text": "", "internal": false }
 		},
 
 		"Methods": {
-			"pollGamepads": "",
-			"gpButtonCheckLoop": "",
-			"gamepadConnectedHandler": "",
-			"gamepadDisconnectedHandler": "",
-			"onCompleted": ""
+			"pollGamepads": { "text": "", "internal": false },
+			"gpButtonCheckLoop": { "text": "", "internal": false },
+			"gamepadConnectedHandler": { "text": "", "internal": false },
+			"gamepadDisconnectedHandler": { "text": "", "internal": false },
+			"onCompleted": { "text": "", "internal": false }
 		}
 	}
 }

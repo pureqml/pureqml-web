@@ -3,15 +3,15 @@
 
 	"content": {
 		"Properties": {
-			"checked": "",
-			"panelColor": "",
-			"checkedColor": "",
-			"uncheckedColor": ""
+			"checked": { "text": "", "internal": false },
+			"panelColor": { "text": "", "internal": false },
+			"checkedColor": { "text": "", "internal": false },
+			"uncheckedColor": { "text": "", "internal": false }
 		},
 
 		"Methods": {
-			"onHorizontalSwiped": "",
-			"onMouseMove": ""
+			"onHorizontalSwiped": { "text": "", "internal": false },
+			"onMouseMove": { "text": "", "internal": false }
 		}
 	}
 }

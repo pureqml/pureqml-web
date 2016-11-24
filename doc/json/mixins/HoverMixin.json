@@ -3,23 +3,23 @@
 
 	"content": {
 		"Properties": {
-			"enabled": "",
-			"clickable": "",
-			"activeHoverEnabled": "",
-			"value": "",
-			"activeHover": "",
-			"cursor": ""
+			"enabled": { "text": "", "internal": false },
+			"clickable": { "text": "", "internal": false },
+			"activeHoverEnabled": { "text": "", "internal": false },
+			"value": { "text": "", "internal": false },
+			"activeHover": { "text": "", "internal": false },
+			"cursor": { "text": "", "internal": false }
 		},
 
 		"Methods": {
-			"onCursorChanged": "",
-			"_bindClick": "",
-			"_bindHover": "",
-			"_bindActiveHover": "",
-			"onEnabledChanged": "",
-			"onClickableChanged": "",
-			"onActiveHoverEnabledChanged": "",
-			"onCompleted": ""
+			"onCursorChanged": { "text": "", "internal": false },
+			"_bindClick": { "text": "", "internal": false },
+			"_bindHover": { "text": "", "internal": false },
+			"_bindActiveHover": { "text": "", "internal": false },
+			"onEnabledChanged": { "text": "", "internal": false },
+			"onClickableChanged": { "text": "", "internal": false },
+			"onActiveHoverEnabledChanged": { "text": "", "internal": false },
+			"onCompleted": { "text": "", "internal": false }
 		}
 	}
 }

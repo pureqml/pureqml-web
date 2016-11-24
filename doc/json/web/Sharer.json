@@ -3,13 +3,13 @@
 
 	"content": {
 		"Properties": {
-			"url": ""
+			"url": { "text": "", "internal": false }
 		},
 
 		"Methods": {
-			"_update": "",
-			"open": "",
-			"redirect": ""
+			"_update": { "text": "", "internal": false },
+			"open": { "text": "", "internal": false },
+			"redirect": { "text": "", "internal": false }
 		}
 	}
 }

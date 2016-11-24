@@ -3,14 +3,14 @@
 
 	"content": {
 		"Properties": {
-			"running": "",
-			"squize": ""
+			"running": { "text": "", "internal": false },
+			"squize": { "text": "", "internal": false }
 		},
 
 		"Methods": {
-			"start": "",
-			"stop": "",
-			"onRunningChanged": ""
+			"start": { "text": "", "internal": false },
+			"stop": { "text": "", "internal": false },
+			"onRunningChanged": { "text": "", "internal": false }
 		}
 	}
 }

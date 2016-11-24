@@ -3,9 +3,9 @@
 
 	"content": {
 		"Methods": {
-			"focusNextChild": "",
-			"focusPrevChild": "",
-			"onCompleted": ""
+			"focusNextChild": { "text": "", "internal": false },
+			"focusPrevChild": { "text": "", "internal": false },
+			"onCompleted": { "text": "", "internal": false }
 		}
 	}
 }

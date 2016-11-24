@@ -3,15 +3,14 @@
 
 	"content": {
 		"Properties": {
-			"color": "rectangle background color",
-			"radius": "round corner radius",
-			"border": "object holding properties of the border",
-			"gradient": "if gradient object was set, it displays gradient instead of solid color"
+			"color": { "text": "rectangle background color", "internal": false },
+			"border": { "text": "object holding properties of the border", "internal": false },
+			"gradient": { "text": "if gradient object was set, it displays gradient instead of solid color", "internal": false }
 		},
 
 		"Methods": {
-			"_mapCSSAttribute": "",
-			"_update": ""
+			"_mapCSSAttribute": { "text": "", "internal": false },
+			"_update": { "text": "", "internal": false }
 		}
 	}
 }

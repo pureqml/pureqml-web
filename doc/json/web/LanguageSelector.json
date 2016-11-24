@@ -3,14 +3,14 @@
 
 	"content": {
 		"Properties": {
-			"delegateColor": "",
-			"delegateTextColor": "",
-			"currentLangCode": ""
+			"delegateColor": { "text": "", "internal": false },
+			"delegateTextColor": { "text": "", "internal": false },
+			"currentLangCode": { "text": "", "internal": false }
 		},
 
 		"Methods": {
-			"addLanguage": "",
-			"setLanguageByIndex": ""
+			"addLanguage": { "text": "", "internal": false },
+			"setLanguageByIndex": { "text": "", "internal": false }
 		}
 	}
 }

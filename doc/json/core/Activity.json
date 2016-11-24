@@ -3,25 +3,25 @@
 
 	"content": {
 		"Properties": {
-			"active": "",
-			"hasAnyActiveChild": "",
-			"currentActivity": "",
-			"name": ""
+			"active": { "text": "", "internal": false },
+			"hasAnyActiveChild": { "text": "", "internal": false },
+			"currentActivity": { "text": "", "internal": false },
+			"name": { "text": "", "internal": false }
 		},
 
 		"Signals": {
-			"started": "",
-			"stopped": ""
+			"started": { "text": "", "internal": false },
+			"stopped": { "text": "", "internal": false }
 		},
 
 		"Methods": {
-			"isActivity": "",
-			"isAnyActiveInContext": "",
-			"closeAll": "",
-			"closeParentActivities": "",
-			"start": "",
-			"stop": "",
-			"onBackPressed": ""
+			"isActivity": { "text": "", "internal": false },
+			"isAnyActiveInContext": { "text": "", "internal": false },
+			"closeAll": { "text": "", "internal": false },
+			"closeParentActivities": { "text": "", "internal": false },
+			"start": { "text": "", "internal": false },
+			"stop": { "text": "", "internal": false },
+			"onBackPressed": { "text": "", "internal": false }
 		}
 	}
 }

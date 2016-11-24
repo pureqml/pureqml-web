@@ -3,17 +3,17 @@
 
 	"content": {
 		"Properties": {
-			"x1": "",
-			"x2": "",
-			"y1": "",
-			"y2": "",
-			"color": "",
-			"width": ""
+			"x1": { "text": "", "internal": false },
+			"x2": { "text": "", "internal": false },
+			"y1": { "text": "", "internal": false },
+			"y2": { "text": "", "internal": false },
+			"color": { "text": "", "internal": false },
+			"width": { "text": "", "internal": false }
 		},
 
 		"Methods": {
-			"getTag": "returns tag for corresponding element",
-			"_update": "@internal"
+			"getTag": { "text": "returns tag for corresponding element", "internal": false },
+			"_update": { "text": "@internal", "internal": false }
 		}
 	}
 }

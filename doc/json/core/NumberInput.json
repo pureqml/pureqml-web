@@ -3,14 +3,14 @@
 
 	"content": {
 		"Properties": {
-			"max": "",
-			"min": "",
-			"step": "",
-			"value": ""
+			"max": { "text": "", "internal": false },
+			"min": { "text": "", "internal": false },
+			"step": { "text": "", "internal": false },
+			"value": { "text": "", "internal": false }
 		},
 
 		"Methods": {
-			"_update": ""
+			"_update": { "text": "", "internal": false }
 		}
 	}
 }

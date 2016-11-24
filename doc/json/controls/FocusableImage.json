@@ -3,16 +3,16 @@
 
 	"content": {
 		"Properties": {
-			"focusedSource": "",
-			"baseSource": ""
+			"focusedSource": { "text": "", "internal": false },
+			"baseSource": { "text": "", "internal": false }
 		},
 
 		"Signals": {
-			"triggered": ""
+			"triggered": { "text": "", "internal": false }
 		},
 
 		"Methods": {
-			"onClicked": ""
+			"onClicked": { "text": "", "internal": false }
 		}
 	}
 }

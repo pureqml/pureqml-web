@@ -3,14 +3,14 @@
 
 	"content": {
 		"Properties": {
-			"left": "left padding",
-			"right": "right padding",
-			"top": "top padding",
-			"bottom": "bottom padding"
+			"left": { "text": "left padding", "internal": false },
+			"right": { "text": "right padding", "internal": false },
+			"top": { "text": "top padding", "internal": false },
+			"bottom": { "text": "bottom padding", "internal": false }
 		},
 
 		"Methods": {
-			"_update": ""
+			"_update": { "text": "", "internal": false }
 		}
 	}
 }

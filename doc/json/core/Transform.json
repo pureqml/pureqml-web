@@ -3,22 +3,22 @@
 
 	"content": {
 		"Properties": {
-			"perspective": "class controlling object transformation",
-			"translateX": "",
-			"translateY": "",
-			"translateZ": "",
-			"rotateX": "",
-			"rotateY": "",
-			"rotateZ": "",
-			"rotate": "",
-			"scaleX": "",
-			"scaleY": "",
-			"skewX": "",
-			"skewY": ""
+			"perspective": { "text": "class controlling object transformation", "internal": false },
+			"translateX": { "text": "", "internal": false },
+			"translateY": { "text": "", "internal": false },
+			"translateZ": { "text": "", "internal": false },
+			"rotateX": { "text": "", "internal": false },
+			"rotateY": { "text": "", "internal": false },
+			"rotateZ": { "text": "", "internal": false },
+			"rotate": { "text": "", "internal": false },
+			"scaleX": { "text": "", "internal": false },
+			"scaleY": { "text": "", "internal": false },
+			"skewX": { "text": "", "internal": false },
+			"skewY": { "text": "", "internal": false }
 		},
 
 		"Methods": {
-			"_update": ""
+			"_update": { "text": "", "internal": false }
 		}
 	}
 }

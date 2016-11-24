@@ -3,18 +3,18 @@
 
 	"content": {
 		"Properties": {
-			"count": "number of children elements",
-			"spacing": "spacing between adjanced items, pixels",
-			"currentIndex": "index of current focused item",
-			"contentWidth": "content width",
-			"contentHeight": "content height",
-			"keyNavigationWraps": "key navigation wraps from first to last and vise versa",
-			"handleNavigationKeys": "handle navigation keys, move focus"
+			"count": { "text": "number of children elements", "internal": false },
+			"spacing": { "text": "spacing between adjanced items, pixels", "internal": false },
+			"currentIndex": { "text": "index of current focused item", "internal": false },
+			"contentWidth": { "text": "content width", "internal": false },
+			"contentHeight": { "text": "content height", "internal": false },
+			"keyNavigationWraps": { "text": "key navigation wraps from first to last and vise versa", "internal": false },
+			"handleNavigationKeys": { "text": "handle navigation keys, move focus", "internal": false }
 		},
 
 		"Methods": {
-			"_updateItems": "",
-			"_update": ""
+			"_updateItems": { "text": "", "internal": false },
+			"_update": { "text": "", "internal": false }
 		}
 	}
 }

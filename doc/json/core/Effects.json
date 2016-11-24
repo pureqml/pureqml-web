@@ -3,22 +3,22 @@
 
 	"content": {
 		"Properties": {
-			"blur": "",
-			"grayscale": "",
-			"sepia": "",
-			"brightness": "",
-			"contrast": "",
-			"hueRotate": "",
-			"invert": "",
-			"saturate": "",
-			"shadow": ""
+			"blur": { "text": "", "internal": false },
+			"grayscale": { "text": "", "internal": false },
+			"sepia": { "text": "", "internal": false },
+			"brightness": { "text": "", "internal": false },
+			"contrast": { "text": "", "internal": false },
+			"hueRotate": { "text": "", "internal": false },
+			"invert": { "text": "", "internal": false },
+			"saturate": { "text": "", "internal": false },
+			"shadow": { "text": "", "internal": false }
 		},
 
 		"Methods": {
-			"_addStyle": "",
-			"_getFilterStyle": "",
-			"_updateStyle": "",
-			"_update": ""
+			"_addStyle": { "text": "", "internal": false },
+			"_getFilterStyle": { "text": "", "internal": false },
+			"_updateStyle": { "text": "", "internal": false },
+			"_update": { "text": "", "internal": false }
 		}
 	}
 }

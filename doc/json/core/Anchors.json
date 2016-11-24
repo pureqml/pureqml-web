@@ -3,33 +3,33 @@
 
 	"content": {
 		"Properties": {
-			"bottom": "Anchors, generic class to handle auto-adjusting positioning, used in Item",
-			"verticalCenter": "",
-			"top": "",
-			"left": "",
-			"horizontalCenter": "",
-			"right": "",
-			"fill": "",
-			"centerIn": "",
-			"margins": "",
-			"bottomMargin": "",
-			"topMargin": "",
-			"leftMargin": "",
-			"rightMargin": ""
+			"bottom": { "text": "Anchors, generic class to handle auto-adjusting positioning, used in Item", "internal": false },
+			"verticalCenter": { "text": "", "internal": false },
+			"top": { "text": "", "internal": false },
+			"left": { "text": "", "internal": false },
+			"horizontalCenter": { "text": "", "internal": false },
+			"right": { "text": "", "internal": false },
+			"fill": { "text": "", "internal": false },
+			"centerIn": { "text": "", "internal": false },
+			"margins": { "text": "", "internal": false },
+			"bottomMargin": { "text": "", "internal": false },
+			"topMargin": { "text": "", "internal": false },
+			"leftMargin": { "text": "", "internal": false },
+			"rightMargin": { "text": "", "internal": false }
 		},
 
 		"Signals": {
-			"marginsUpdated": ""
+			"marginsUpdated": { "text": "", "internal": false }
 		},
 
 		"Methods": {
-			"_updateLeft": "@private",
-			"_updateRight": "@private",
-			"_updateTop": "@private",
-			"_updateBottom": "@private",
-			"_updateHCenter": "@private",
-			"_updateVCenter": "@private",
-			"_update": ""
+			"_updateLeft": { "text": "@private", "internal": true },
+			"_updateRight": { "text": "@private", "internal": true },
+			"_updateTop": { "text": "@private", "internal": true },
+			"_updateBottom": { "text": "@private", "internal": true },
+			"_updateHCenter": { "text": "@private", "internal": true },
+			"_updateVCenter": { "text": "@private", "internal": true },
+			"_update": { "text": "", "internal": false }
 		}
 	}
 }

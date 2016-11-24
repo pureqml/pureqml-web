@@ -3,13 +3,13 @@
 
 	"content": {
 		"Properties": {
-			"max": "",
-			"min": "",
-			"value": ""
+			"max": { "text": "", "internal": false },
+			"min": { "text": "", "internal": false },
+			"value": { "text": "", "internal": false }
 		},
 
 		"Methods": {
-			"_update": ""
+			"_update": { "text": "", "internal": false }
 		}
 	}
 }

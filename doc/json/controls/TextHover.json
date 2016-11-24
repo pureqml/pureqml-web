@@ -3,18 +3,18 @@
 
 	"content": {
 		"Properties": {
-			"hoverMixin": "",
-			"href": ""
+			"hoverMixin": { "text": "", "internal": false },
+			"href": { "text": "", "internal": false }
 		},
 
 		"Alias Properties": {
-			"cursor": "",
-			"hover": ""
+			"cursor": { "text": "", "internal": false },
+			"hover": { "text": "", "internal": false }
 		},
 
 		"Methods": {
-			"onHrefChanged": "",
-			"getTag": ""
+			"onHrefChanged": { "text": "", "internal": false },
+			"getTag": { "text": "", "internal": false }
 		}
 	}
 }

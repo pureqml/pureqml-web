@@ -3,8 +3,8 @@
 
 	"content": {
 		"Properties": {
-			"back": "",
-			"barColor": ""
+			"back": { "text": "", "internal": false },
+			"barColor": { "text": "", "internal": false }
 		}
 	}
 }

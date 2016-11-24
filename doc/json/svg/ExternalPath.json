@@ -3,7 +3,7 @@
 
 	"content": {
 		"Methods": {
-			"externalTarget": ""
+			"externalTarget": { "text": "", "internal": false }
 		}
 	}
 }

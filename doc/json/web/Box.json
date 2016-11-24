@@ -3,15 +3,15 @@
 
 	"content": {
 		"Properties": {
-			"top": "",
-			"left": "",
-			"right": "",
-			"bottom": "",
-			"prefix": ""
+			"top": { "text": "", "internal": false },
+			"left": { "text": "", "internal": false },
+			"right": { "text": "", "internal": false },
+			"bottom": { "text": "", "internal": false },
+			"prefix": { "text": "", "internal": false }
 		},
 
 		"Methods": {
-			"_update": ""
+			"_update": { "text": "", "internal": false }
 		}
 	}
 }

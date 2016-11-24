@@ -3,15 +3,15 @@
 
 	"content": {
 		"Properties": {
-			"target": ""
+			"target": { "text": "", "internal": false }
 		},
 
 		"Methods": {
-			"createElement": "specialized implementation of element creation in a certain namespace.",
-			"getTag": "returns tag for corresponding element",
-			"externalTarget": "",
-			"_update": "@internal",
-			"style": ""
+			"createElement": { "text": "specialized implementation of element creation in a certain namespace.", "internal": false },
+			"getTag": { "text": "returns tag for corresponding element", "internal": false },
+			"externalTarget": { "text": "", "internal": false },
+			"_update": { "text": "@internal", "internal": false },
+			"style": { "text": "", "internal": false }
 		}
 	}
 }

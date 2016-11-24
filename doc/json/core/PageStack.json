@@ -3,15 +3,15 @@
 
 	"content": {
 		"Properties": {
-			"currentIndex": "",
-			"count": ""
+			"currentIndex": { "text": "", "internal": false },
+			"count": { "text": "", "internal": false }
 		},
 
 		"Methods": {
-			"onCurrentIndexChanged": "",
-			"onActiveFocusChanged": "",
-			"_layout": "",
-			"addChild": ""
+			"onCurrentIndexChanged": { "text": "", "internal": false },
+			"onActiveFocusChanged": { "text": "", "internal": false },
+			"_layout": { "text": "", "internal": false },
+			"addChild": { "text": "", "internal": false }
 		}
 	}
 }

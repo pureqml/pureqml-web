@@ -3,27 +3,27 @@
 
 	"content": {
 		"Properties": {
-			"fullscreen": "",
-			"scrollY": "",
-			"system": "",
-			"location": "",
-			"language": ""
+			"fullscreen": { "text": "", "internal": false },
+			"scrollY": { "text": "", "internal": false },
+			"system": { "text": "", "internal": false },
+			"location": { "text": "", "internal": false },
+			"language": { "text": "", "internal": false }
 		},
 
 		"Methods": {
-			"getClass": "",
-			"createElement": "",
-			"init": "",
-			"_onCompleted": "",
-			"_update": "",
-			"_enterFullscreenMode": "",
-			"_exitFullscreenMode": "",
-			"_inFullscreenMode": "",
-			"_complete": "",
-			"start": "",
-			"_processActions": "",
-			"scheduleAction": "",
-			"qsTr": ""
+			"getClass": { "text": "", "internal": false },
+			"createElement": { "text": "", "internal": false },
+			"init": { "text": "", "internal": false },
+			"_onCompleted": { "text": "", "internal": false },
+			"_update": { "text": "", "internal": false },
+			"_enterFullscreenMode": { "text": "", "internal": false },
+			"_exitFullscreenMode": { "text": "", "internal": false },
+			"_inFullscreenMode": { "text": "", "internal": false },
+			"_complete": { "text": "", "internal": false },
+			"start": { "text": "", "internal": false },
+			"_processActions": { "text": "", "internal": false },
+			"scheduleAction": { "text": "", "internal": false },
+			"qsTr": { "text": "", "internal": false }
 		}
 	}
 }

@@ -3,11 +3,11 @@
 
 	"content": {
 		"Properties": {
-			"date": ""
+			"date": { "text": "", "internal": false }
 		},
 
 		"Methods": {
-			"onDateChanged": ""
+			"onDateChanged": { "text": "", "internal": false }
 		}
 	}
 }

@@ -3,12 +3,12 @@
 
 	"content": {
 		"Properties": {
-			"text": ""
+			"text": { "text": "", "internal": false }
 		},
 
 		"Methods": {
-			"_update": "",
-			"getTag": "returns tag for corresponding element"
+			"_update": { "text": "", "internal": false },
+			"getTag": { "text": "returns tag for corresponding element", "internal": false }
 		}
 	}
 }

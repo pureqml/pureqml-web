@@ -3,17 +3,17 @@
 
 	"content": {
 		"Properties": {
-			"x": "",
-			"y": "",
-			"color": "",
-			"blur": "",
-			"spread": ""
+			"x": { "text": "", "internal": false },
+			"y": { "text": "", "internal": false },
+			"color": { "text": "", "internal": false },
+			"blur": { "text": "", "internal": false },
+			"spread": { "text": "", "internal": false }
 		},
 
 		"Methods": {
-			"_update": "",
-			"_empty": "",
-			"_getFilterStyle": ""
+			"_update": { "text": "", "internal": false },
+			"_empty": { "text": "", "internal": false },
+			"_getFilterStyle": { "text": "", "internal": false }
 		}
 	}
 }

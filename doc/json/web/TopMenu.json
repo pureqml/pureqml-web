@@ -3,18 +3,18 @@
 
 	"content": {
 		"Properties": {
-			"icon": "",
-			"hasEnoughSpace": "",
-			"showMenu": "",
-			"content": "",
-			"panel": ""
+			"icon": { "text": "", "internal": false },
+			"hasEnoughSpace": { "text": "", "internal": false },
+			"showMenu": { "text": "", "internal": false },
+			"content": { "text": "", "internal": false },
+			"panel": { "text": "", "internal": false }
 		},
 
 		"Methods": {
-			"toggleShow": "",
-			"onWidthChanged": "",
-			"_update": "",
-			"onCompleted": ""
+			"toggleShow": { "text": "", "internal": false },
+			"onWidthChanged": { "text": "", "internal": false },
+			"_update": { "text": "", "internal": false },
+			"onCompleted": { "text": "", "internal": false }
 		}
 	}
 }

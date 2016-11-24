@@ -3,16 +3,16 @@
 
 	"content": {
 		"Signals": {
-			"saved": "",
-			"loaded": "",
-			"optionUpdated": ""
+			"saved": { "text": "", "internal": false },
+			"loaded": { "text": "", "internal": false },
+			"optionUpdated": { "text": "", "internal": false }
 		},
 
 		"Methods": {
-			"load": "",
-			"getValue": "",
-			"setValue": "",
-			"onCompleted": ""
+			"load": { "text": "", "internal": false },
+			"getValue": { "text": "", "internal": false },
+			"setValue": { "text": "", "internal": false },
+			"onCompleted": { "text": "", "internal": false }
 		}
 	}
 }

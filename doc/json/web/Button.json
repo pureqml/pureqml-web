@@ -3,15 +3,15 @@
 
 	"content": {
 		"Properties": {
-			"text": "",
-			"font": "",
-			"border": ""
+			"text": { "text": "", "internal": false },
+			"font": { "text": "", "internal": false },
+			"border": { "text": "", "internal": false }
 		},
 
 		"Methods": {
-			"_update": "",
-			"getTag": "returns tag for corresponding element",
-			"_updateSize": ""
+			"_update": { "text": "", "internal": false },
+			"getTag": { "text": "returns tag for corresponding element", "internal": false },
+			"_updateSize": { "text": "", "internal": false }
 		}
 	}
 }

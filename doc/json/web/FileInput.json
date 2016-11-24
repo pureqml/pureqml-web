@@ -3,12 +3,12 @@
 
 	"content": {
 		"Properties": {
-			"value": "",
-			"filter": ""
+			"value": { "text": "", "internal": false },
+			"filter": { "text": "", "internal": false }
 		},
 
 		"Methods": {
-			"_update": ""
+			"_update": { "text": "", "internal": false }
 		}
 	}
 }

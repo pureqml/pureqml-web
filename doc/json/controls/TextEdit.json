@@ -3,18 +3,18 @@
 
 	"content": {
 		"Properties": {
-			"color": "",
-			"cursorVisible": "",
-			"font": ""
+			"color": { "text": "", "internal": false },
+			"cursorVisible": { "text": "", "internal": false },
+			"font": { "text": "", "internal": false }
 		},
 
 		"Alias Properties": {
-			"text": ""
+			"text": { "text": "", "internal": false }
 		},
 
 		"Methods": {
-			"removeChar": "",
-			"onTextChanged": ""
+			"removeChar": { "text": "", "internal": false },
+			"onTextChanged": { "text": "", "internal": false }
 		}
 	}
 }

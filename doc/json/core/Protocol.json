@@ -3,14 +3,14 @@
 
 	"content": {
 		"Properties": {
-			"loading": "",
-			"baseUrl": "",
-			"url": ""
+			"loading": { "text": "", "internal": false },
+			"baseUrl": { "text": "", "internal": false },
+			"url": { "text": "", "internal": false }
 		},
 
 		"Methods": {
-			"fetchRequest": "",
-			"requestXHR": ""
+			"fetchRequest": { "text": "", "internal": false },
+			"requestXHR": { "text": "", "internal": false }
 		}
 	}
 }

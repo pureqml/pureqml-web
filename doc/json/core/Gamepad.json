@@ -3,22 +3,22 @@
 
 	"content": {
 		"Properties": {
-			"index": "",
-			"buttonsCount": "",
-			"axesCount": "",
-			"connected": "",
-			"deviceInfo": ""
+			"index": { "text": "", "internal": false },
+			"buttonsCount": { "text": "", "internal": false },
+			"axesCount": { "text": "", "internal": false },
+			"connected": { "text": "", "internal": false },
+			"deviceInfo": { "text": "", "internal": false }
 		},
 
 		"Signals": {
-			"axes": "",
-			"button": ""
+			"axes": { "text": "", "internal": false },
+			"button": { "text": "", "internal": false }
 		},
 
 		"Methods": {
-			"_set": "",
-			"get": "",
-			"poll": ""
+			"_set": { "text": "", "internal": false },
+			"get": { "text": "", "internal": false },
+			"poll": { "text": "", "internal": false }
 		}
 	}
 }

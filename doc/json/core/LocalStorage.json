@@ -3,16 +3,16 @@
 
 	"content": {
 		"Properties": {
-			"name": "",
-			"value": ""
+			"name": { "text": "", "internal": false },
+			"value": { "text": "", "internal": false }
 		},
 
 		"Methods": {
-			"onNameChanged": "",
-			"onValueChanged": "",
-			"read": "",
-			"init": "",
-			"onCompleted": ""
+			"onNameChanged": { "text": "", "internal": false },
+			"onValueChanged": { "text": "", "internal": false },
+			"read": { "text": "", "internal": false },
+			"init": { "text": "", "internal": false },
+			"onCompleted": { "text": "", "internal": false }
 		}
 	}
 }
