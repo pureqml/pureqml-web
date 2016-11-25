@@ -3,9 +3,9 @@
 
 	"content": {
 		"Methods": {
-			"onKeyPressed": { "text": "", "internal": false },
-			"_layout": { "text": "", "internal": false },
-			"addChild": { "text": "", "internal": false }
+			"onKeyPressed": { "text": "", "internal": false, "type": "" },
+			"_layout": { "text": "", "internal": false, "type": "" },
+			"addChild": { "text": "", "internal": false, "type": "" }
 		}
 	}
 }

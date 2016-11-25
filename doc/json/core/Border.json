@@ -3,17 +3,17 @@
 
 	"content": {
 		"Properties": {
-			"width": { "text": "width of the border", "internal": false },
-			"color": { "text": "color of the border", "internal": false },
-			"style": { "text": "style of the border", "internal": false },
-			"left": { "text": "", "internal": false },
-			"right": { "text": "", "internal": false },
-			"top": { "text": "", "internal": false },
-			"bottom": { "text": "", "internal": false }
+			"width": { "text": "width of the border", "internal": false, "type": "int" },
+			"color": { "text": "color of the border", "internal": false, "type": "color" },
+			"style": { "text": "style of the border", "internal": false, "type": "string" },
+			"left": { "text": "", "internal": false, "type": "BorderSide" },
+			"right": { "text": "", "internal": false, "type": "BorderSide" },
+			"top": { "text": "", "internal": false, "type": "BorderSide" },
+			"bottom": { "text": "", "internal": false, "type": "BorderSide" }
 		},
 
 		"Methods": {
-			"_update": { "text": "", "internal": false }
+			"_update": { "text": "", "internal": false, "type": "" }
 		}
 	}
 }

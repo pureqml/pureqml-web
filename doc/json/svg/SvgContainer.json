@@ -3,9 +3,9 @@
 
 	"content": {
 		"Methods": {
-			"getTag": { "text": "returns tag for corresponding element", "internal": false },
-			"createElement": { "text": "specialized implementation of element creation in a certain namespace.", "internal": false },
-			"_update": { "text": "@internal", "internal": false }
+			"getTag": { "text": "returns tag for corresponding element", "internal": false, "type": "" },
+			"createElement": { "text": "specialized implementation of element creation in a certain namespace.", "internal": false, "type": "" },
+			"_update": { "text": "@internal", "internal": false, "type": "" }
 		}
 	}
 }

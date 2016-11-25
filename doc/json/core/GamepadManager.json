@@ -3,24 +3,24 @@
 
 	"content": {
 		"Properties": {
-			"count": { "text": "", "internal": false },
-			"gamepadChildrensCount": { "text": "", "internal": false },
-			"_gamepads": { "text": "", "internal": false },
-			"gamepadPollingInterval": { "text": "", "internal": false },
-			"eventPollingInterval": { "text": "", "internal": false }
+			"count": { "text": "", "internal": false, "type": "int" },
+			"gamepadChildrensCount": { "text": "", "internal": false, "type": "bool" },
+			"_gamepads": { "text": "", "internal": false, "type": "variant" },
+			"gamepadPollingInterval": { "text": "", "internal": false, "type": "int" },
+			"eventPollingInterval": { "text": "", "internal": false, "type": "int" }
 		},
 
 		"Signals": {
-			"connected": { "text": "", "internal": false },
-			"disconnected": { "text": "", "internal": false }
+			"connected": { "text": "", "internal": false, "type": "" },
+			"disconnected": { "text": "", "internal": false, "type": "" }
 		},
 
 		"Methods": {
-			"pollGamepads": { "text": "", "internal": false },
-			"gpButtonCheckLoop": { "text": "", "internal": false },
-			"gamepadConnectedHandler": { "text": "", "internal": false },
-			"gamepadDisconnectedHandler": { "text": "", "internal": false },
-			"onCompleted": { "text": "", "internal": false }
+			"pollGamepads": { "text": "", "internal": false, "type": "" },
+			"gpButtonCheckLoop": { "text": "", "internal": false, "type": "" },
+			"gamepadConnectedHandler": { "text": "", "internal": false, "type": "" },
+			"gamepadDisconnectedHandler": { "text": "", "internal": false, "type": "" },
+			"onCompleted": { "text": "", "internal": false, "type": "" }
 		}
 	}
 }

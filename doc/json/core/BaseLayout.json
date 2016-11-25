@@ -3,18 +3,18 @@
 
 	"content": {
 		"Properties": {
-			"count": { "text": "number of children elements", "internal": false },
-			"spacing": { "text": "spacing between adjanced items, pixels", "internal": false },
-			"currentIndex": { "text": "index of current focused item", "internal": false },
-			"contentWidth": { "text": "content width", "internal": false },
-			"contentHeight": { "text": "content height", "internal": false },
-			"keyNavigationWraps": { "text": "key navigation wraps from first to last and vise versa", "internal": false },
-			"handleNavigationKeys": { "text": "handle navigation keys, move focus", "internal": false }
+			"count": { "text": "number of children elements", "internal": false, "type": "int" },
+			"spacing": { "text": "spacing between adjanced items, pixels", "internal": false, "type": "int" },
+			"currentIndex": { "text": "index of current focused item", "internal": false, "type": "int" },
+			"contentWidth": { "text": "content width", "internal": false, "type": "int" },
+			"contentHeight": { "text": "content height", "internal": false, "type": "int" },
+			"keyNavigationWraps": { "text": "key navigation wraps from first to last and vise versa", "internal": false, "type": "bool" },
+			"handleNavigationKeys": { "text": "handle navigation keys, move focus", "internal": false, "type": "bool" }
 		},
 
 		"Methods": {
-			"_updateItems": { "text": "", "internal": false },
-			"_update": { "text": "", "internal": false }
+			"_updateItems": { "text": "", "internal": false, "type": "" },
+			"_update": { "text": "", "internal": false, "type": "" }
 		}
 	}
 }

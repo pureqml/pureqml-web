@@ -3,20 +3,20 @@
 
 	"content": {
 		"Properties": {
-			"cellWidth": { "text": "", "internal": false },
-			"cellHeight": { "text": "", "internal": false },
-			"rows": { "text": "", "internal": false },
-			"columns": { "text": "", "internal": false }
+			"cellWidth": { "text": "", "internal": false, "type": "int" },
+			"cellHeight": { "text": "", "internal": false, "type": "int" },
+			"rows": { "text": "", "internal": false, "type": "int" },
+			"columns": { "text": "", "internal": false, "type": "int" }
 		},
 
 		"Methods": {
-			"move": { "text": "", "internal": false },
-			"onKeyPressed": { "text": "", "internal": false },
-			"getItemPosition": { "text": "", "internal": false },
-			"indexAt": { "text": "", "internal": false },
-			"positionViewAtIndex": { "text": "", "internal": false },
-			"_layout": { "text": "", "internal": false },
-			"onFlowChanged": { "text": "", "internal": false }
+			"move": { "text": "", "internal": false, "type": "" },
+			"onKeyPressed": { "text": "", "internal": false, "type": "" },
+			"getItemPosition": { "text": "", "internal": false, "type": "" },
+			"indexAt": { "text": "", "internal": false, "type": "" },
+			"positionViewAtIndex": { "text": "", "internal": false, "type": "" },
+			"_layout": { "text": "", "internal": false, "type": "" },
+			"onFlowChanged": { "text": "", "internal": false, "type": "" }
 		}
 	}
 }

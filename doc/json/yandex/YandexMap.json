@@ -3,15 +3,15 @@
 
 	"content": {
 		"Properties": {
-			"centerLongitude": { "text": "", "internal": false },
-			"centerLatitude": { "text": "", "internal": false },
-			"zoom": { "text": "", "internal": false }
+			"centerLongitude": { "text": "", "internal": false, "type": "real" },
+			"centerLatitude": { "text": "", "internal": false, "type": "real" },
+			"zoom": { "text": "", "internal": false, "type": "int" }
 		},
 
 		"Methods": {
-			"_update": { "text": "", "internal": false },
-			"_updateCenter": { "text": "", "internal": false },
-			"getUserLocation": { "text": "", "internal": false }
+			"_update": { "text": "", "internal": false, "type": "" },
+			"_updateCenter": { "text": "", "internal": false, "type": "" },
+			"getUserLocation": { "text": "", "internal": false, "type": "" }
 		}
 	}
 }

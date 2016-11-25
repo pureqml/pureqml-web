@@ -3,13 +3,13 @@
 
 	"content": {
 		"Properties": {
-			"hover": { "text": "", "internal": false },
-			"generic": { "text": "", "internal": false },
-			"focus": { "text": "", "internal": false }
+			"hover": { "text": "", "internal": false, "type": "string" },
+			"generic": { "text": "", "internal": false, "type": "string" },
+			"focus": { "text": "", "internal": false, "type": "string" }
 		},
 
 		"Methods": {
-			"onCompleted": { "text": "", "internal": false }
+			"onCompleted": { "text": "", "internal": false, "type": "" }
 		}
 	}
 }

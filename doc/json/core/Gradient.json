@@ -3,14 +3,14 @@
 
 	"content": {
 		"Properties": {
-			"angle": { "text": "", "internal": false }
+			"angle": { "text": "", "internal": false, "type": "real" }
 		},
 
 		"Methods": {
-			"addChild": { "text": "", "internal": false },
-			"_update": { "text": "", "internal": false },
-			"_getDeclaration": { "text": "", "internal": false },
-			"onCompleted": { "text": "", "internal": false }
+			"addChild": { "text": "", "internal": false, "type": "" },
+			"_update": { "text": "", "internal": false, "type": "" },
+			"_getDeclaration": { "text": "", "internal": false, "type": "" },
+			"onCompleted": { "text": "", "internal": false, "type": "" }
 		}
 	}
 }

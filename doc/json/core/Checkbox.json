@@ -3,15 +3,15 @@
 
 	"content": {
 		"Properties": {
-			"checked": { "text": "", "internal": false },
-			"panelColor": { "text": "", "internal": false },
-			"checkedColor": { "text": "", "internal": false },
-			"uncheckedColor": { "text": "", "internal": false }
+			"checked": { "text": "", "internal": false, "type": "bool" },
+			"panelColor": { "text": "", "internal": false, "type": "color" },
+			"checkedColor": { "text": "", "internal": false, "type": "color" },
+			"uncheckedColor": { "text": "", "internal": false, "type": "color" }
 		},
 
 		"Methods": {
-			"onHorizontalSwiped": { "text": "", "internal": false },
-			"onMouseMove": { "text": "", "internal": false }
+			"onHorizontalSwiped": { "text": "", "internal": false, "type": "" },
+			"onMouseMove": { "text": "", "internal": false, "type": "" }
 		}
 	}
 }

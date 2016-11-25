@@ -3,17 +3,17 @@
 
 	"content": {
 		"Properties": {
-			"blink": { "text": "", "internal": false }
+			"blink": { "text": "", "internal": false, "type": "bool" }
 		},
 
 		"Signals": {
-			"triggered": { "text": "", "internal": false }
+			"triggered": { "text": "", "internal": false, "type": "" }
 		},
 
 		"Methods": {
-			"makeBlink": { "text": "", "internal": false },
-			"onSelectPressed": { "text": "", "internal": false },
-			"onClicked": { "text": "", "internal": false }
+			"makeBlink": { "text": "", "internal": false, "type": "" },
+			"onSelectPressed": { "text": "", "internal": false, "type": "" },
+			"onClicked": { "text": "", "internal": false, "type": "" }
 		}
 	}
 }

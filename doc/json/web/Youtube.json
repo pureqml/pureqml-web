@@ -3,13 +3,13 @@
 
 	"content": {
 		"Properties": {
-			"source": { "text": "", "internal": false },
-			"allowFullScreen": { "text": "", "internal": false }
+			"source": { "text": "", "internal": false, "type": "string" },
+			"allowFullScreen": { "text": "", "internal": false, "type": "bool" }
 		},
 
 		"Methods": {
-			"_update": { "text": "", "internal": false },
-			"_updateSize": { "text": "", "internal": false }
+			"_update": { "text": "", "internal": false, "type": "" },
+			"_updateSize": { "text": "", "internal": false, "type": "" }
 		}
 	}
 }

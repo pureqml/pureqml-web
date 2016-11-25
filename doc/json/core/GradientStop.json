@@ -3,13 +3,13 @@
 
 	"content": {
 		"Properties": {
-			"position": { "text": "", "internal": false },
-			"color": { "text": "", "internal": false }
+			"position": { "text": "", "internal": false, "type": "real" },
+			"color": { "text": "", "internal": false, "type": "Color" }
 		},
 
 		"Methods": {
-			"_update": { "text": "", "internal": false },
-			"_getDeclaration": { "text": "", "internal": false }
+			"_update": { "text": "", "internal": false, "type": "" },
+			"_getDeclaration": { "text": "", "internal": false, "type": "" }
 		}
 	}
 }

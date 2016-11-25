@@ -3,13 +3,13 @@
 
 	"content": {
 		"Properties": {
-			"color": { "text": "", "internal": false },
-			"radius": { "text": "", "internal": false },
-			"focusOnHover": { "text": "", "internal": false }
+			"color": { "text": "", "internal": false, "type": "Color" },
+			"radius": { "text": "", "internal": false, "type": "real" },
+			"focusOnHover": { "text": "", "internal": false, "type": "bool" }
 		},
 
 		"Methods": {
-			"onEntered": { "text": "", "internal": false }
+			"onEntered": { "text": "", "internal": false, "type": "" }
 		}
 	}
 }

@@ -3,11 +3,11 @@
 
 	"content": {
 		"Properties": {
-			"boxIndex": { "text": "@internal Anchor's vertical or horizontal line (left, right, center)", "internal": false }
+			"boxIndex": { "text": "@internal Anchor's vertical or horizontal line (left, right, center)", "internal": false, "type": "int" }
 		},
 
 		"Methods": {
-			"toScreen": { "text": "", "internal": false }
+			"toScreen": { "text": "", "internal": false, "type": "" }
 		}
 	}
 }

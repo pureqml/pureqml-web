@@ -3,12 +3,12 @@
 
 	"content": {
 		"Properties": {
-			"maxWidth": { "text": "", "internal": false },
-			"maxHeight": { "text": "", "internal": false },
-			"minHeight": { "text": "", "internal": false },
-			"minWidth": { "text": "", "internal": false },
-			"defaultWidth": { "text": "", "internal": false },
-			"defaultHeight": { "text": "", "internal": false }
+			"maxWidth": { "text": "", "internal": false, "type": "int" },
+			"maxHeight": { "text": "", "internal": false, "type": "int" },
+			"minHeight": { "text": "", "internal": false, "type": "int" },
+			"minWidth": { "text": "", "internal": false, "type": "int" },
+			"defaultWidth": { "text": "", "internal": false, "type": "int" },
+			"defaultHeight": { "text": "", "internal": false, "type": "int" }
 		}
 	}
 }

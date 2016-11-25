@@ -3,23 +3,23 @@
 
 	"content": {
 		"Properties": {
-			"enabled": { "text": "", "internal": false },
-			"clickable": { "text": "", "internal": false },
-			"activeHoverEnabled": { "text": "", "internal": false },
-			"value": { "text": "", "internal": false },
-			"activeHover": { "text": "", "internal": false },
-			"cursor": { "text": "", "internal": false }
+			"enabled": { "text": "", "internal": false, "type": "bool" },
+			"clickable": { "text": "", "internal": false, "type": "bool" },
+			"activeHoverEnabled": { "text": "", "internal": false, "type": "bool" },
+			"value": { "text": "", "internal": false, "type": "bool" },
+			"activeHover": { "text": "", "internal": false, "type": "bool" },
+			"cursor": { "text": "", "internal": false, "type": "string" }
 		},
 
 		"Methods": {
-			"onCursorChanged": { "text": "", "internal": false },
-			"_bindClick": { "text": "", "internal": false },
-			"_bindHover": { "text": "", "internal": false },
-			"_bindActiveHover": { "text": "", "internal": false },
-			"onEnabledChanged": { "text": "", "internal": false },
-			"onClickableChanged": { "text": "", "internal": false },
-			"onActiveHoverEnabledChanged": { "text": "", "internal": false },
-			"onCompleted": { "text": "", "internal": false }
+			"onCursorChanged": { "text": "", "internal": false, "type": "" },
+			"_bindClick": { "text": "", "internal": false, "type": "" },
+			"_bindHover": { "text": "", "internal": false, "type": "" },
+			"_bindActiveHover": { "text": "", "internal": false, "type": "" },
+			"onEnabledChanged": { "text": "", "internal": false, "type": "" },
+			"onClickableChanged": { "text": "", "internal": false, "type": "" },
+			"onActiveHoverEnabledChanged": { "text": "", "internal": false, "type": "" },
+			"onCompleted": { "text": "", "internal": false, "type": "" }
 		}
 	}
 }

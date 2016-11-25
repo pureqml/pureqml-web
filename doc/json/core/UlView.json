@@ -3,23 +3,23 @@
 
 	"content": {
 		"Properties": {
-			"model": { "text": "", "internal": false },
-			"delegate": { "text": "", "internal": false },
-			"count": { "text": "", "internal": false },
-			"currentIndex": { "text": "", "internal": false },
-			"contentWidth": { "text": "", "internal": false },
-			"contentHeight": { "text": "", "internal": false }
+			"model": { "text": "", "internal": false, "type": "Object" },
+			"delegate": { "text": "", "internal": false, "type": "Item" },
+			"count": { "text": "", "internal": false, "type": "int" },
+			"currentIndex": { "text": "", "internal": false, "type": "int" },
+			"contentWidth": { "text": "", "internal": false, "type": "int" },
+			"contentHeight": { "text": "", "internal": false, "type": "int" }
 		},
 
 		"Methods": {
-			"_onReset": { "text": "", "internal": false },
-			"_onRowsChanged": { "text": "", "internal": false },
-			"_onRowsRemoved": { "text": "", "internal": false },
-			"_onRowsInserted": { "text": "", "internal": false },
-			"_createDelegate": { "text": "", "internal": false },
-			"_update": { "text": "", "internal": false },
-			"_attach": { "text": "", "internal": false },
-			"onCompleted": { "text": "", "internal": false }
+			"_onReset": { "text": "", "internal": false, "type": "" },
+			"_onRowsChanged": { "text": "", "internal": false, "type": "" },
+			"_onRowsRemoved": { "text": "", "internal": false, "type": "" },
+			"_onRowsInserted": { "text": "", "internal": false, "type": "" },
+			"_createDelegate": { "text": "", "internal": false, "type": "" },
+			"_update": { "text": "", "internal": false, "type": "" },
+			"_attach": { "text": "", "internal": false, "type": "" },
+			"onCompleted": { "text": "", "internal": false, "type": "" }
 		}
 	}
 }

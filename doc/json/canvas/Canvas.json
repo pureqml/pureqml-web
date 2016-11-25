@@ -3,9 +3,9 @@
 
 	"content": {
 		"Methods": {
-			"getTag": { "text": "", "internal": false },
-			"onWidthChanged": { "text": "", "internal": false },
-			"onHeightChanged": { "text": "", "internal": false }
+			"getTag": { "text": "", "internal": false, "type": "" },
+			"onWidthChanged": { "text": "", "internal": false, "type": "" },
+			"onHeightChanged": { "text": "", "internal": false, "type": "" }
 		}
 	}
 }

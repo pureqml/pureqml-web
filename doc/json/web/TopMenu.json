@@ -3,18 +3,18 @@
 
 	"content": {
 		"Properties": {
-			"icon": { "text": "", "internal": false },
-			"hasEnoughSpace": { "text": "", "internal": false },
-			"showMenu": { "text": "", "internal": false },
-			"content": { "text": "", "internal": false },
-			"panel": { "text": "", "internal": false }
+			"icon": { "text": "", "internal": false, "type": "string" },
+			"hasEnoughSpace": { "text": "", "internal": false, "type": "bool" },
+			"showMenu": { "text": "", "internal": false, "type": "bool" },
+			"content": { "text": "", "internal": false, "type": "Item" },
+			"panel": { "text": "", "internal": false, "type": "Rectangle" }
 		},
 
 		"Methods": {
-			"toggleShow": { "text": "", "internal": false },
-			"onWidthChanged": { "text": "", "internal": false },
-			"_update": { "text": "", "internal": false },
-			"onCompleted": { "text": "", "internal": false }
+			"toggleShow": { "text": "", "internal": false, "type": "" },
+			"onWidthChanged": { "text": "", "internal": false, "type": "" },
+			"_update": { "text": "", "internal": false, "type": "" },
+			"onCompleted": { "text": "", "internal": false, "type": "" }
 		}
 	}
 }

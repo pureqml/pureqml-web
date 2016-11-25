@@ -3,15 +3,15 @@
 
 	"content": {
 		"Properties": {
-			"currentIndex": { "text": "", "internal": false },
-			"count": { "text": "", "internal": false }
+			"currentIndex": { "text": "", "internal": false, "type": "int" },
+			"count": { "text": "", "internal": false, "type": "int" }
 		},
 
 		"Methods": {
-			"onCurrentIndexChanged": { "text": "", "internal": false },
-			"onActiveFocusChanged": { "text": "", "internal": false },
-			"_layout": { "text": "", "internal": false },
-			"addChild": { "text": "", "internal": false }
+			"onCurrentIndexChanged": { "text": "", "internal": false, "type": "" },
+			"onActiveFocusChanged": { "text": "", "internal": false, "type": "" },
+			"_layout": { "text": "", "internal": false, "type": "" },
+			"addChild": { "text": "", "internal": false, "type": "" }
 		}
 	}
 }

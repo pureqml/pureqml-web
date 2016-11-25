@@ -3,14 +3,14 @@
 
 	"content": {
 		"Properties": {
-			"max": { "text": "", "internal": false },
-			"min": { "text": "", "internal": false },
-			"step": { "text": "", "internal": false },
-			"value": { "text": "", "internal": false }
+			"max": { "text": "", "internal": false, "type": "float" },
+			"min": { "text": "", "internal": false, "type": "float" },
+			"step": { "text": "", "internal": false, "type": "float" },
+			"value": { "text": "", "internal": false, "type": "float" }
 		},
 
 		"Methods": {
-			"_update": { "text": "", "internal": false }
+			"_update": { "text": "", "internal": false, "type": "" }
 		}
 	}
 }

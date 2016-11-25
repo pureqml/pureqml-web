@@ -3,38 +3,38 @@
 
 	"content": {
 		"Properties": {
-			"duration": { "text": "", "internal": false },
-			"progress": { "text": "", "internal": false },
-			"buffered": { "text": "", "internal": false },
-			"autoPlay": { "text": "", "internal": false },
-			"loop": { "text": "", "internal": false },
-			"ready": { "text": "", "internal": false },
-			"paused": { "text": "", "internal": false },
-			"muted": { "text": "", "internal": false },
-			"waiting": { "text": "", "internal": false },
-			"seeking": { "text": "", "internal": false },
-			"volume": { "text": "", "internal": false },
-			"source": { "text": "", "internal": false },
-			"provider": { "text": "", "internal": false }
+			"duration": { "text": "", "internal": false, "type": "int" },
+			"progress": { "text": "", "internal": false, "type": "int" },
+			"buffered": { "text": "", "internal": false, "type": "int" },
+			"autoPlay": { "text": "", "internal": false, "type": "bool" },
+			"loop": { "text": "", "internal": false, "type": "bool" },
+			"ready": { "text": "", "internal": false, "type": "bool" },
+			"paused": { "text": "", "internal": false, "type": "bool" },
+			"muted": { "text": "", "internal": false, "type": "bool" },
+			"waiting": { "text": "", "internal": false, "type": "bool" },
+			"seeking": { "text": "", "internal": false, "type": "bool" },
+			"volume": { "text": "", "internal": false, "type": "float" },
+			"source": { "text": "", "internal": false, "type": "string" },
+			"provider": { "text": "", "internal": false, "type": "string" }
 		},
 
 		"Signals": {
-			"finished": { "text": "", "internal": false },
-			"error": { "text": "", "internal": false }
+			"finished": { "text": "", "internal": false, "type": "" },
+			"error": { "text": "", "internal": false, "type": "" }
 		},
 
 		"Methods": {
-			"_update": { "text": "", "internal": false },
-			"_updateSize": { "text": "", "internal": false },
-			"_setupPlayer": { "text": "", "internal": false },
-			"_player": { "text": "", "internal": false },
-			"play": { "text": "", "internal": false },
-			"pause": { "text": "", "internal": false },
-			"seek": { "text": "", "internal": false },
-			"seekTo": { "text": "", "internal": false },
-			"onSourceChanged": { "text": "", "internal": false },
-			"onReadyChanged": { "text": "", "internal": false },
-			"onCompleted": { "text": "", "internal": false }
+			"_update": { "text": "", "internal": false, "type": "" },
+			"_updateSize": { "text": "", "internal": false, "type": "" },
+			"_setupPlayer": { "text": "", "internal": false, "type": "" },
+			"_player": { "text": "", "internal": false, "type": "" },
+			"play": { "text": "", "internal": false, "type": "" },
+			"pause": { "text": "", "internal": false, "type": "" },
+			"seek": { "text": "", "internal": false, "type": "" },
+			"seekTo": { "text": "", "internal": false, "type": "" },
+			"onSourceChanged": { "text": "", "internal": false, "type": "" },
+			"onReadyChanged": { "text": "", "internal": false, "type": "" },
+			"onCompleted": { "text": "", "internal": false, "type": "" }
 		}
 	}
 }

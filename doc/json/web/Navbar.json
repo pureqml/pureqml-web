@@ -3,17 +3,17 @@
 
 	"content": {
 		"Properties": {
-			"position": { "text": "", "internal": false },
-			"vertical": { "text": "", "internal": false },
-			"collapsed": { "text": "", "internal": false }
+			"position": { "text": "", "internal": false, "type": "string" },
+			"vertical": { "text": "", "internal": false, "type": "bool" },
+			"collapsed": { "text": "", "internal": false, "type": "bool" }
 		},
 
 		"Methods": {
-			"onPositionChanged": { "text": "", "internal": false },
-			"addChild": { "text": "", "internal": false },
-			"_layout": { "text": "", "internal": false },
-			"onSpacingChanged": { "text": "", "internal": false },
-			"onVerticalChanged": { "text": "", "internal": false }
+			"onPositionChanged": { "text": "", "internal": false, "type": "" },
+			"addChild": { "text": "", "internal": false, "type": "" },
+			"_layout": { "text": "", "internal": false, "type": "" },
+			"onSpacingChanged": { "text": "", "internal": false, "type": "" },
+			"onVerticalChanged": { "text": "", "internal": false, "type": "" }
 		}
 	}
 }

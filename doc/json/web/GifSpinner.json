@@ -3,12 +3,12 @@
 
 	"content": {
 		"Properties": {
-			"running": { "text": "", "internal": false }
+			"running": { "text": "", "internal": false, "type": "bool" }
 		},
 
 		"Methods": {
-			"start": { "text": "", "internal": false },
-			"stop": { "text": "", "internal": false }
+			"start": { "text": "", "internal": false, "type": "" },
+			"stop": { "text": "", "internal": false, "type": "" }
 		}
 	}
 }

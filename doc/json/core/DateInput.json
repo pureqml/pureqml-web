@@ -3,13 +3,13 @@
 
 	"content": {
 		"Properties": {
-			"max": { "text": "", "internal": false },
-			"min": { "text": "", "internal": false },
-			"value": { "text": "", "internal": false }
+			"max": { "text": "", "internal": false, "type": "string" },
+			"min": { "text": "", "internal": false, "type": "string" },
+			"value": { "text": "", "internal": false, "type": "string" }
 		},
 
 		"Methods": {
-			"_update": { "text": "", "internal": false }
+			"_update": { "text": "", "internal": false, "type": "" }
 		}
 	}
 }

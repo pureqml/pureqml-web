@@ -3,18 +3,18 @@
 
 	"content": {
 		"Properties": {
-			"horizontalSpacing": { "text": "horizontal spacing between rows, overrides regular spacing, pixels", "internal": false },
-			"verticalSpacing": { "text": "vertical spacing between columns, overrides regular spacing, pixels", "internal": false },
-			"rowsCount": { "text": "read-only property, represents number of row in a grid", "internal": false }
+			"horizontalSpacing": { "text": "horizontal spacing between rows, overrides regular spacing, pixels", "internal": false, "type": "int" },
+			"verticalSpacing": { "text": "vertical spacing between columns, overrides regular spacing, pixels", "internal": false, "type": "int" },
+			"rowsCount": { "text": "read-only property, represents number of row in a grid", "internal": false, "type": "int" }
 		},
 
 		"Methods": {
-			"onWidthChanged": { "text": "", "internal": false },
-			"onHeightChanged": { "text": "", "internal": false },
-			"onFlowChanged": { "text": "", "internal": false },
-			"_layout": { "text": "", "internal": false },
-			"addChild": { "text": "", "internal": false },
-			"_update": { "text": "", "internal": false }
+			"onWidthChanged": { "text": "", "internal": false, "type": "" },
+			"onHeightChanged": { "text": "", "internal": false, "type": "" },
+			"onFlowChanged": { "text": "", "internal": false, "type": "" },
+			"_layout": { "text": "", "internal": false, "type": "" },
+			"addChild": { "text": "", "internal": false, "type": "" },
+			"_update": { "text": "", "internal": false, "type": "" }
 		}
 	}
 }

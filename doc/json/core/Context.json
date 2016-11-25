@@ -3,27 +3,27 @@
 
 	"content": {
 		"Properties": {
-			"fullscreen": { "text": "", "internal": false },
-			"scrollY": { "text": "", "internal": false },
-			"system": { "text": "", "internal": false },
-			"location": { "text": "", "internal": false },
-			"language": { "text": "", "internal": false }
+			"fullscreen": { "text": "", "internal": false, "type": "bool" },
+			"scrollY": { "text": "", "internal": false, "type": "int" },
+			"system": { "text": "", "internal": false, "type": "System" },
+			"location": { "text": "", "internal": false, "type": "Location" },
+			"language": { "text": "", "internal": false, "type": "string" }
 		},
 
 		"Methods": {
-			"getClass": { "text": "", "internal": false },
-			"createElement": { "text": "", "internal": false },
-			"init": { "text": "", "internal": false },
-			"_onCompleted": { "text": "", "internal": false },
-			"_update": { "text": "", "internal": false },
-			"_enterFullscreenMode": { "text": "", "internal": false },
-			"_exitFullscreenMode": { "text": "", "internal": false },
-			"_inFullscreenMode": { "text": "", "internal": false },
-			"_complete": { "text": "", "internal": false },
-			"start": { "text": "", "internal": false },
-			"_processActions": { "text": "", "internal": false },
-			"scheduleAction": { "text": "", "internal": false },
-			"qsTr": { "text": "", "internal": false }
+			"getClass": { "text": "", "internal": false, "type": "" },
+			"createElement": { "text": "", "internal": false, "type": "" },
+			"init": { "text": "", "internal": false, "type": "" },
+			"_onCompleted": { "text": "", "internal": false, "type": "" },
+			"_update": { "text": "", "internal": false, "type": "" },
+			"_enterFullscreenMode": { "text": "", "internal": false, "type": "" },
+			"_exitFullscreenMode": { "text": "", "internal": false, "type": "" },
+			"_inFullscreenMode": { "text": "", "internal": false, "type": "" },
+			"_complete": { "text": "", "internal": false, "type": "" },
+			"start": { "text": "", "internal": false, "type": "" },
+			"_processActions": { "text": "", "internal": false, "type": "" },
+			"scheduleAction": { "text": "", "internal": false, "type": "" },
+			"qsTr": { "text": "", "internal": false, "type": "" }
 		}
 	}
 }

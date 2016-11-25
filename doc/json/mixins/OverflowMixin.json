@@ -3,7 +3,7 @@
 
 	"content": {
 		"Methods": {
-			"onValueChanged": { "text": "", "internal": false }
+			"onValueChanged": { "text": "", "internal": false, "type": "" }
 		}
 	}
 }

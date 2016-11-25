@@ -3,16 +3,16 @@
 
 	"content": {
 		"Properties": {
-			"autoPlay": { "text": "", "internal": false },
-			"source": { "text": "", "internal": false }
+			"autoPlay": { "text": "", "internal": false, "type": "bool" },
+			"source": { "text": "", "internal": false, "type": "string" }
 		},
 
 		"Methods": {
-			"_update": { "text": "", "internal": false },
-			"play": { "text": "", "internal": false },
-			"pause": { "text": "", "internal": false },
-			"onAutoPlayChanged": { "text": "", "internal": false },
-			"getTag": { "text": "returns tag for corresponding element", "internal": false }
+			"_update": { "text": "", "internal": false, "type": "" },
+			"play": { "text": "", "internal": false, "type": "" },
+			"pause": { "text": "", "internal": false, "type": "" },
+			"onAutoPlayChanged": { "text": "", "internal": false, "type": "" },
+			"getTag": { "text": "returns tag for corresponding element", "internal": false, "type": "" }
 		}
 	}
 }

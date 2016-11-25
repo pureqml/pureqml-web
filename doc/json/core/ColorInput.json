@@ -3,11 +3,11 @@
 
 	"content": {
 		"Properties": {
-			"value": { "text": "", "internal": false }
+			"value": { "text": "", "internal": false, "type": "Color" }
 		},
 
 		"Methods": {
-			"_update": { "text": "", "internal": false }
+			"_update": { "text": "", "internal": false, "type": "" }
 		}
 	}
 }

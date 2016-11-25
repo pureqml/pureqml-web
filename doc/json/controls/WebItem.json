@@ -3,21 +3,21 @@
 
 	"content": {
 		"Properties": {
-			"hoverMixin": { "text": "", "internal": false },
-			"position": { "text": "", "internal": false }
+			"hoverMixin": { "text": "", "internal": false, "type": "Mixin" },
+			"position": { "text": "", "internal": false, "type": "string" }
 		},
 
 		"Alias Properties": {
-			"hover": { "text": "", "internal": false },
-			"clickable": { "text": "", "internal": false },
-			"hoverable": { "text": "", "internal": false },
-			"cursor": { "text": "", "internal": false },
-			"activeHover": { "text": "", "internal": false },
-			"activeHoverEnabled": { "text": "", "internal": false }
+			"hover": { "text": "", "internal": false, "type": "" },
+			"clickable": { "text": "", "internal": false, "type": "" },
+			"hoverable": { "text": "", "internal": false, "type": "" },
+			"cursor": { "text": "", "internal": false, "type": "" },
+			"activeHover": { "text": "", "internal": false, "type": "" },
+			"activeHoverEnabled": { "text": "", "internal": false, "type": "" }
 		},
 
 		"Methods": {
-			"_update": { "text": "", "internal": false }
+			"_update": { "text": "", "internal": false, "type": "" }
 		}
 	}
 }

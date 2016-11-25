@@ -3,25 +3,25 @@
 
 	"content": {
 		"Properties": {
-			"interval": { "text": "interval, ms", "internal": false },
-			"repeat": { "text": "makes this timer periodic", "internal": false },
-			"running": { "text": "current timer status, true - running, false - paused", "internal": false },
-			"triggeredOnStart": { "text": "fire timer's signal on start or activation", "internal": false }
+			"interval": { "text": "interval, ms", "internal": false, "type": "int" },
+			"repeat": { "text": "makes this timer periodic", "internal": false, "type": "bool" },
+			"running": { "text": "current timer status, true - running, false - paused", "internal": false, "type": "bool" },
+			"triggeredOnStart": { "text": "fire timer's signal on start or activation", "internal": false, "type": "bool" }
 		},
 
 		"Signals": {
-			"triggered": { "text": "this signal triggered when timer fires", "internal": false }
+			"triggered": { "text": "this signal triggered when timer fires", "internal": false, "type": "" }
 		},
 
 		"Methods": {
-			"restart": { "text": "restart timer, activate if stopped", "internal": false },
-			"stop": { "text": "stops timer", "internal": false },
-			"onTriggered": { "text": "", "internal": false },
-			"start": { "text": "starts timer", "internal": false },
-			"onRunningChanged": { "text": "", "internal": false },
-			"onCompleted": { "text": "", "internal": false },
-			"_update": { "text": "@private", "internal": true },
-			"_restart": { "text": "", "internal": false }
+			"restart": { "text": "restart timer, activate if stopped", "internal": false, "type": "" },
+			"stop": { "text": "stops timer", "internal": false, "type": "" },
+			"onTriggered": { "text": "", "internal": false, "type": "" },
+			"start": { "text": "starts timer", "internal": false, "type": "" },
+			"onRunningChanged": { "text": "", "internal": false, "type": "" },
+			"onCompleted": { "text": "", "internal": false, "type": "" },
+			"_update": { "text": "@private", "internal": true, "type": "" },
+			"_restart": { "text": "", "internal": false, "type": "" }
 		}
 	}
 }

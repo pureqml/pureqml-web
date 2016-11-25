@@ -3,7 +3,7 @@
 
 	"content": {
 		"Methods": {
-			"_layout": { "text": "The simplest view implementation, creates elements without positioning", "internal": false }
+			"_layout": { "text": "The simplest view implementation, creates elements without positioning", "internal": false, "type": "" }
 		}
 	}
 }

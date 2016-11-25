@@ -3,11 +3,11 @@
 
 	"content": {
 		"Properties": {
-			"data": { "text": "", "internal": false }
+			"data": { "text": "", "internal": false, "type": "string" }
 		},
 
 		"Methods": {
-			"onUrlChanged": { "text": "", "internal": false }
+			"onUrlChanged": { "text": "", "internal": false, "type": "" }
 		}
 	}
 }

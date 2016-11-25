@@ -3,11 +3,11 @@
 
 	"content": {
 		"Properties": {
-			"correct": { "text": "", "internal": false }
+			"correct": { "text": "", "internal": false, "type": "bool" }
 		},
 
 		"Methods": {
-			"onTextChanged": { "text": "", "internal": false }
+			"onTextChanged": { "text": "", "internal": false, "type": "" }
 		}
 	}
 }

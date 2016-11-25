@@ -3,19 +3,19 @@
 
 	"content": {
 		"Properties": {
-			"icon": { "text": "", "internal": false },
-			"scrollable": { "text": "", "internal": false },
-			"show": { "text": "", "internal": false },
-			"content": { "text": "", "internal": false },
-			"contentX": { "text": "", "internal": false },
-			"contentY": { "text": "", "internal": false },
-			"panel": { "text": "", "internal": false }
+			"icon": { "text": "", "internal": false, "type": "string" },
+			"scrollable": { "text": "", "internal": false, "type": "bool" },
+			"show": { "text": "", "internal": false, "type": "bool" },
+			"content": { "text": "", "internal": false, "type": "Item" },
+			"contentX": { "text": "", "internal": false, "type": "int" },
+			"contentY": { "text": "", "internal": false, "type": "int" },
+			"panel": { "text": "", "internal": false, "type": "Rectangle" }
 		},
 
 		"Methods": {
-			"hide": { "text": "", "internal": false },
-			"toggleShow": { "text": "", "internal": false },
-			"onShowChanged": { "text": "", "internal": false }
+			"hide": { "text": "", "internal": false, "type": "" },
+			"toggleShow": { "text": "", "internal": false, "type": "" },
+			"onShowChanged": { "text": "", "internal": false, "type": "" }
 		}
 	}
 }

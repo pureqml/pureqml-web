@@ -3,32 +3,32 @@
 
 	"content": {
 		"Properties": {
-			"width": { "text": "", "internal": false },
-			"height": { "text": "", "internal": false },
-			"top": { "text": "", "internal": false },
-			"left": { "text": "", "internal": false },
-			"right": { "text": "", "internal": false },
-			"bottom": { "text": "", "internal": false },
-			"html": { "text": "", "internal": false },
-			"display": { "text": "", "internal": false },
-			"float": { "text": "", "internal": false },
-			"boxSizing": { "text": "", "internal": false },
-			"position": { "text": "", "internal": false },
-			"opacity": { "text": "", "internal": false },
-			"radius": { "text": "", "internal": false },
-			"rotate": { "text": "", "internal": false },
-			"clip": { "text": "", "internal": false },
-			"z": { "text": "", "internal": false },
-			"color": { "text": "", "internal": false },
-			"font": { "text": "", "internal": false },
-			"margin": { "text": "", "internal": false },
-			"padding": { "text": "", "internal": false }
+			"width": { "text": "", "internal": false, "type": "string" },
+			"height": { "text": "", "internal": false, "type": "string" },
+			"top": { "text": "", "internal": false, "type": "string" },
+			"left": { "text": "", "internal": false, "type": "string" },
+			"right": { "text": "", "internal": false, "type": "string" },
+			"bottom": { "text": "", "internal": false, "type": "string" },
+			"html": { "text": "", "internal": false, "type": "string" },
+			"display": { "text": "", "internal": false, "type": "string" },
+			"float": { "text": "", "internal": false, "type": "string" },
+			"boxSizing": { "text": "", "internal": false, "type": "string" },
+			"position": { "text": "", "internal": false, "type": "string" },
+			"opacity": { "text": "", "internal": false, "type": "real" },
+			"radius": { "text": "", "internal": false, "type": "real" },
+			"rotate": { "text": "", "internal": false, "type": "real" },
+			"clip": { "text": "", "internal": false, "type": "bool" },
+			"z": { "text": "", "internal": false, "type": "int" },
+			"color": { "text": "", "internal": false, "type": "color" },
+			"font": { "text": "", "internal": false, "type": "Font" },
+			"margin": { "text": "", "internal": false, "type": "Box" },
+			"padding": { "text": "", "internal": false, "type": "Box" }
 		},
 
 		"Methods": {
-			"style": { "text": "", "internal": false },
-			"_updateStyle": { "text": "@const", "internal": false },
-			"_update": { "text": "", "internal": false }
+			"style": { "text": "", "internal": false, "type": "" },
+			"_updateStyle": { "text": "@const", "internal": false, "type": "" },
+			"_update": { "text": "", "internal": false, "type": "" }
 		}
 	}
 }

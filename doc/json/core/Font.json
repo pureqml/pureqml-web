@@ -3,18 +3,18 @@
 
 	"content": {
 		"Properties": {
-			"family": { "text": "", "internal": false },
-			"italic": { "text": "", "internal": false },
-			"bold": { "text": "", "internal": false },
-			"underline": { "text": "", "internal": false },
-			"pixelSize": { "text": "", "internal": false },
-			"pointSize": { "text": "", "internal": false },
-			"lineHeight": { "text": "", "internal": false },
-			"weight": { "text": "", "internal": false }
+			"family": { "text": "", "internal": false, "type": "string" },
+			"italic": { "text": "", "internal": false, "type": "bool" },
+			"bold": { "text": "", "internal": false, "type": "bool" },
+			"underline": { "text": "", "internal": false, "type": "bool" },
+			"pixelSize": { "text": "", "internal": false, "type": "int" },
+			"pointSize": { "text": "", "internal": false, "type": "int" },
+			"lineHeight": { "text": "", "internal": false, "type": "int" },
+			"weight": { "text": "", "internal": false, "type": "int" }
 		},
 
 		"Methods": {
-			"_update": { "text": "", "internal": false }
+			"_update": { "text": "", "internal": false, "type": "" }
 		}
 	}
 }
