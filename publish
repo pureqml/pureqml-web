@@ -1,0 +1,9 @@
+#!/bin/sh
+
+./qmlcore/build -m -r
+git checkout gh-pages
+git pull
+cp .app.web/* .
+git commit -a -m "updated site"
+git checkout master
+git push --all
