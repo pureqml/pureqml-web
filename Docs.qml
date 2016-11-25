@@ -19,10 +19,11 @@ HistoryPage {
 			content.visible = false
 
 			var res = []
+			var txt = text.toLowerCase()
 			for (var p in data.pages) {
 				var pageContent = data.pages[p].content
 				for (var i in pageContent)
-					if (i.toLowerCase().indexOf(text) > -1)
+					if (i.toLowerCase().indexOf(txt) > -1)
 						res.push({ "text": i, "ref": pageContent[i] })
 			}
 

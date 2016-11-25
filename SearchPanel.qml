@@ -17,6 +17,8 @@ Rectangle {
 		font.weight: 300;
 		font.family: "Roboto Slab";
 		focus: true;
+
+		onTextChanged: { searchTimer.restart() }
 	}
 
 	Image {
@@ -30,12 +32,6 @@ Rectangle {
 		fillMode: Image.PreserveAspectFit;
 	}
 
-	WebItem {
-		anchors.fill: searchIcon;
-
-		onClicked: { this.parent.searchCall() }
-	}
-
 	Rectangle {
 		height: 1;
 		anchors.top: searchText.bottom;
@@ -44,10 +40,15 @@ Rectangle {
 		color: colorTheme.primaryColor;
 	}
 
+	Timer {
+		id: searchTimer;
+		interval: 300;
+
+		onTriggered: { this.parent.searchCall() }
+	}
+
 	searchCall: {
 		if (searchText.text)
 			this.search(searchText.text)
 	}
-
-	onSelectPressed: { this.searchCall() }
 }
