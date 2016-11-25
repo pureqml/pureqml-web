@@ -30,8 +30,8 @@ HistoryPage {
 				Grid {
 					id: gridPlat;
 					width: parent.width > 300 ? 660 : 200;
-					height: contentHeight;
-					spacing: 20;
+					verticalSpacing: 20;
+					horizontalSpacing: 20;
 
 					DescriptionPanel {
 						icon: "res/icons/speed.png";
