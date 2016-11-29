@@ -41,7 +41,10 @@ Item {
 		}
 	}
 
-	onSampleChanged: {
+	onRecursiveVisibleChanged: {
+		if (!value)
+			return
+
 		var codeFile = this.sample.componentName.replace(".", "/") + ".qml"
 		codeSource.url = "https://raw.githubusercontent.com/pureqml/pureqml-web/master/" + codeFile
 	}
