@@ -1,12 +1,10 @@
 Rectangle {
 	signal goHome;
-	property alias count: menu.count;
-	height: 100;
+	height: menu.wide ? 100 : 70;
 	anchors.top: parent.top;
 	anchors.left: parent.left;
 	anchors.right: parent.right;
 	color: colorTheme.primaryColor;
-
 	effects.shadow.y: 1;
 	effects.shadow.blur: 1;
 	effects.shadow.color: "#0003";
@@ -41,70 +39,61 @@ Rectangle {
 		onClicked: { this.parent.goHome() }
 	}
 
-	ListView {
+	Rectangle {
+		anchors.top: menu.top;
+		anchors.left: menu.left;
+		anchors.right: parent.right;
+		anchors.bottom: menu.bottom;
+		color: colorTheme.primaryColor;
+		visible: !menu.wide;
+
+		Behavior on x, width { Animation { duration: 300; } }
+	}
+
+	Grid {
 		id: menu;
-		width: contentWidth;
-		height: parent.height;
+		property bool wide: context.width > 800;
+		property bool show: false;
+		width: wide ? 450 : 10;
+		anchors.top: parent.top;
+		anchors.right: parent.right;
+		anchors.topMargin: wide ? 0 : parent.height;
+		anchors.rightMargin: wide ? 0 : (show ? contentWidth : -contentWidth);
+
+		navigate(text): {
+			if (text && window.location.hostname) {
+				this._context.location.pushState(text, text, "?page=" + text)
+			}
+		}
+
+		MenuItem { horizontal: menu.wide; text: "About"; onClicked: { this.parent.navigate(this.text.toLowerCase()) } }
+		MenuItem { horizontal: menu.wide; text: "Download"; onClicked: { this.parent.navigate(this.text.toLowerCase()) } }
+		MenuItem { horizontal: menu.wide; text: "Lessons"; onClicked: { this.parent.navigate(this.text.toLowerCase()) } }
+		MenuItem { horizontal: menu.wide; text: "Docs"; onClicked: { this.parent.navigate(this.text.toLowerCase()) } }
+
+		Behavior on x { Animation { duration: 300; } }
+	}
+
+	WebItem {
+		width: height;
+		anchors.top: parent.top;
 		anchors.right: parent.right;
 		anchors.bottom: parent.bottom;
-		contentFollowsCurrentItem: false;
-		orientation: ListView.Horizontal;
-		focus: true;
-		model: ListModel {
-			ListElement { text: "About"; url: "about"; }
-			ListElement { text: "Download"; url: "download"; }
-			ListElement { text: "Lessons"; url: "lessons"; }
-			ListElement { text: "Docs"; url: "docs"; }
-		}
-		delegate: WebItem {
-			property int index: model.index;
-			width: menuItemText.paintedWidth + 40;
-			height: parent.height;
-			color: hover ? "#0003" : "#0000";
-			z: parent.z + 1;
+		visible: !menu.wide;
 
-			Text {
-				id: menuItemText;
-				anchors.centerIn: parent;
-				horizontalAlignment: Text.AlignHCenter;
-				text: model.text;
-				font.pointSize: 15;
-				color: colorTheme.primaryTextColor;
-				opacity: parent.hover || parent.activeFocus ? 1.0 : 0.8;
-
-				Behavior on opacity { Animation { duration: 300; } }
-			}
-
-			Rectangle {
-				height: 2;
-				width: parent.activeFocus || model.index == parent.parent.currentIndex ? menuItemText.width : 0;
-				anchors.top: menuItemText.bottom;
-				anchors.horizontalCenter: menuItemText.horizontalCenter;
-				anchors.topMargin: 5;
-				color: colorTheme.primaryTextColor;
-				opacity: menuItemText.opacity;
-
-				Behavior on x, width, opacity { Animation { duration: 300; } }
-			}
-
-			onClicked: { this.parent.currentIndex = this.index }
-
-			Behavior on color { ColorAnimation { duration: 300; } }
+		Image {
+			anchors.centerIn: parent;
+			source: "res/menuIcon.png";
 		}
 
-		onCurrentIndexChanged: {
-			var url = this.model.get(value).url
-			if (url && window.location.hostname) {
-				this._context.location.pushState(url, url, "?page=" + url)
-			}
-		}
+		onClicked: { menu.show = !menu.show }
 	}
 
 	focusIndex(idx): {
-		if (idx < 0 || idx >= menu.count)
-			return
+		//if (idx < 0 || idx >= menu.count)
+			//return
 
-		menu.currentIndex = idx
+		//menu.currentIndex = idx
 	}
 
 	onCompleted: { this.style('position', 'fixed') }

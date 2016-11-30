@@ -1,5 +1,7 @@
 Item {
 	property string state: context.location.historyState;
+	property int w: context.system.screenWidth;
+	property int h: context.system.screenHeight;
 	anchors.fill: context;
 
 	Rectangle {
@@ -54,7 +56,7 @@ Item {
 	Head {
 		id: head;
 
-		onCountChanged: { head.focusIndex(pages.currentIndex) }
+		//onCountChanged: { head.focusIndex(pages.currentIndex) }
 		onGoHome: { this._context.location.pushState("home", "home", "?page=home") }
 	}
 
