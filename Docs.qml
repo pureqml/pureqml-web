@@ -20,13 +20,11 @@ HistoryPage {
 
 			var res = []
 			var txt = text.toLowerCase()
-			for (var p in data.pages) {
-				var pageContent = data.pages[p].content
-				for (var i in pageContent)
-					if (i.toLowerCase().indexOf(txt) > -1)
-						res.push({ "text": i, "ref": pageContent[i] })
+			for (var i in data) {
+				var item = data[i]
+				if (item.text.toLowerCase().indexOf(txt) > -1)
+					res.push({ "text": item.text, "ref": item.path })
 			}
-
 			searchResults.fill(res)
 		}
 	}
@@ -73,8 +71,7 @@ HistoryPage {
 		url: "https://raw.githubusercontent.com/pureqml/pureqml-web/master/doc/json/mkdocs.json";
 
 		onDataChanged: {
-			this.parent._data = JSON.parse(value)
-			var docs = this.parent._data
+			var docs = JSON.parse(value)
 			var pages = docs.pages
 			var data = []
 			for (var p in pages) {
@@ -86,6 +83,7 @@ HistoryPage {
 					data.push({"text": c, "depth": 1, "path": content[c]})
 				}
 			}
+			this.parent._data = data
 
 			leftMenu.fillModel(data)
 		}
