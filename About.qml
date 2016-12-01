@@ -38,7 +38,7 @@ HistoryPage {
 
 				Grid {
 					id: gridPlat;
-					width: parent.width > 300 ? 660 : 200;
+					width: parent.width;
 					verticalSpacing: 20;
 					horizontalSpacing: 20;
 
@@ -66,52 +66,17 @@ HistoryPage {
 				title: "Supported platforms";
 				text: "You can write web-sites, applications for modern desktop and mobile browsers. You also can deploy your application for smart TV platforms:";
 
-				ListView {
-					width: contentWidth;
-					height: 100;
-					orientation: RollerView.Horizontal;
-					spacing: 50;
-					model: ListModel {
-						ListElement { icon: "res/platforms/android.png"; text: "Android"; }
-						ListElement { icon: "res/platforms/netcast.png"; text: "LG NetCast"; }
-						ListElement { icon: "res/platforms/opera.png"; text: "Opera TV"; }
-						ListElement { icon: "res/platforms/webos.png"; text: "LG WebOS"; }
-						ListElement { icon: "res/platforms/smarttv.png"; text: "Samsung SmartTV"; }
-						ListElement { icon: "res/platforms/tizen.png"; text: "Samsung Tizen"; }
-					}
-					delegate: Item {
-						property Mixin hoverMixin: HoverMixin {}
-						property alias hover: hoverMixin.value;
-						width: 100;
-						height: 100;
+				Grid {
+					width: parent.width;
+					verticalSpacing: 50;
+					horizontalSpacing: 50;
 
-						Image {
-							anchors.fill: parent;
-							source: model.icon;
-						}
-
-						Rectangle {
-							width: parent.hover ? 180 : 0;
-							height: parent.hover ? 40 : 0;
-							anchors.top: parent.bottom;
-							anchors.left: parent.left;
-							color: "#424242ee";
-							z: parent.z + 1;
-							clip: true;
-
-							Text {
-								id: platformText;
-								anchors.top: parent.top;
-								anchors.left: parent.left;
-								anchors.margins: 8;
-								color: "#eee";
-								text: model.text;
-								font.pixelSize: 18;
-							}
-
-							Behavior on y, height, width { Animation { duration: 300; } }
-						}
-					}
+					PlatformItem { icon: "res/platforms/android.png"; text: "Android"; }
+					PlatformItem { icon: "res/platforms/netcast.png"; text: "LG NetCast"; }
+					PlatformItem { icon: "res/platforms/opera.png"; text: "Opera TV"; }
+					PlatformItem { icon: "res/platforms/webos.png"; text: "LG WebOS"; }
+					PlatformItem { icon: "res/platforms/smarttv.png"; text: "Samsung SmartTV"; }
+					PlatformItem { icon: "res/platforms/tizen.png"; text: "Samsung Tizen"; }
 				}
 			}
 
