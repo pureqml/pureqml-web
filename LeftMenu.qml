@@ -1,8 +1,9 @@
 Rectangle {
 	id: leftMenuProto;
 	signal indexChoosed;
+	property int minWidth: 200;
 	property bool wide;
-	width: wide ? parent.width : 200;
+	width: wide ? parent.width : minWidth;
 	height: moreButton.show ? menuContent.height + 20 : 50;
 	anchors.top: parent.top;
 	anchors.left: parent.left;
