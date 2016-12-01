@@ -1,11 +1,13 @@
 Rectangle {
 	id: leftMenuProto;
 	signal indexChoosed;
-	width: 200;
-	height: menuContent.height + 20;
+	property bool wide;
+	width: wide ? parent.width : 200;
+	height: moreButton.show ? menuContent.height + 20 : 50;
 	anchors.top: parent.top;
-	anchors.rightMargin: 10;
+	anchors.left: parent.left;
 	color: colorTheme.panelColor;
+	clip: true;
 
 	ListModel { id: menuModel; }
 
@@ -18,10 +20,38 @@ Rectangle {
 		anchors.topMargin: 10;
 		spacing: 10;
 
-		Text {
-			text: "Contents";
-			font.pixelSize: 24;
-			color: colorTheme.primaryColor;
+		Item {
+			height: contentsLabel.height;
+			anchors.left: parent.left;
+			anchors.right: parent.right;
+
+			Text {
+				id: contentsLabel;
+				text: "Contents";
+				font.pixelSize: 24;
+				color: colorTheme.primaryColor;
+			}
+
+			WebItem {
+				id: moreButton;
+				property bool show: !leftMenuProto.wide;
+				width: height;
+				anchors.top: parent.top;
+				anchors.right: parent.right;
+				anchors.bottom: parent.bottom;
+				visible: leftMenuProto.wide;
+
+				Image {
+					id: moreIcon;
+					transform.rotate: parent.show ? 0 : 180;
+					anchors.centerIn: parent;
+					source: "res/up.png";
+
+					Behavior on transform { Animation { duration: 300; } }
+				}
+
+				onClicked: { this.show = !this.show }
+			}
 		}
 
 		ListView {
@@ -61,4 +91,6 @@ Rectangle {
 		menuModel.clear()
 		menuModel.append(data)
 	}
+
+	Behavior on height { Animation { duration: 300; } }
 }

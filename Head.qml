@@ -31,7 +31,7 @@ Rectangle {
 			anchors.left: logo.right;
 			anchors.verticalCenter: parent.verticalCenter;
 			anchors.leftMargin: 10;
-			font.pixelSize: 42;
+			font.pixelSize: menu.wide ? 42 : 24;
 			color: colorTheme.primaryTextColor;
 			text: "PureQML";
 		}
@@ -48,6 +48,7 @@ Rectangle {
 		visible: !menu.wide;
 
 		Behavior on x, width { Animation { duration: 300; } }
+
 	}
 
 	Grid {
@@ -71,7 +72,7 @@ Rectangle {
 		MenuItem { horizontal: menu.wide; text: "Lessons"; onClicked: { this.parent.navigate(this.text.toLowerCase()) } }
 		MenuItem { horizontal: menu.wide; text: "Docs"; onClicked: { this.parent.navigate(this.text.toLowerCase()) } }
 
-		Behavior on x { Animation { duration: 300; } }
+		Behavior on x { Animation { duration: menu.count ? 300 : 0; } }
 	}
 
 	WebItem {
