@@ -5,16 +5,20 @@ HistoryPage {
 	anchors.right: parent.right;
 	url: "focus";
 
-	LeftMenu { id: leftMenu; onIndexChoosed(idx): { focusLessonContent.focusItem(idx) } }
+	LeftMenu {
+		id: leftMenu;
+		wide: !contentRect.wide;
+		anchors.left: parent.left;
+		anchors.leftMargin: !parent.bigScreen ? (parent.width - width - contentRect.width) / 2 - 10 : 0;
 
-	Rectangle {
+		onIndexChoosed(idx): { content.focusItem(idx) }
+	}
+
+	HistoryPageContent {
 		id: contentRect;
-		height: focusLessonContent.contentHeight + 30;
-		anchors.top: parent.top;
-		anchors.left: leftMenu.right;
-		anchors.right: parent.right;
-		anchors.leftMargin: 10;
-		color: colorTheme.panelColor;
+		anchors.top: leftMenu.top;
+		anchors.topMargin: !wide ? leftMenu.height + 10 : 0;
+		height: content.contentHeight + 30;
 
 		ContentColumn {
 			id: focusLessonContent;
