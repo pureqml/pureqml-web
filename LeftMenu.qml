@@ -43,7 +43,7 @@ Rectangle {
 
 				Image {
 					id: moreIcon;
-					transform.rotate: parent.show ? 0 : 180;
+					transform.rotate: parent.show ? 180 : 0;
 					anchors.centerIn: parent;
 					source: "res/up.png";
 

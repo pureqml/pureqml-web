@@ -1,10 +1,17 @@
-TextHover {
+WebItem {
 	property string url;
 	anchors.left: parent.left;
-	font.weight: 300;
-	font.pixelSize: 23;
-	color: colorTheme.primaryColor;
-	text: "read more »";
+	height: innerText.height;
+
+	Text {
+		id: innerText;
+		font.weight: 300;
+		font.pixelSize: 23;
+		color: parent.hover ? colorTheme.darkerPrimaryColor : colorTheme.primaryColor;
+		text: "read more »";
+
+		Behavior on color { ColorAnimation { duration: 300; } }
+	}
 
 	onClicked: {
 		var url = this.url
