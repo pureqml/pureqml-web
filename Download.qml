@@ -13,13 +13,14 @@ HistoryPage {
 		anchors.right: parent.right;
 		color: colorTheme.panelColor;
 
-		Row {
+		Grid {
 			id: buttonsRow;
+			width: parent.width;
 			anchors.top: parent.top;
-			anchors.horizontalCenter: parent.horizontalCenter;
+			horizontalAlignment: Grid.AlignHCenter;
 			anchors.topMargin: 15;
-			height: 100;
-			spacing: 20;
+			verticalSpacing: 20;
+			horizontalSpacing: 20;
 
 			BigButton {
 				icon: "github.png";
