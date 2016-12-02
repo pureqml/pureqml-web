@@ -102,7 +102,7 @@ HistoryPage {
 					height: contentHeight;
 					anchors.left: parent.left;
 					anchors.right: parent.right;
-					anchors.leftMargin: 20;
+					anchors.leftMargin: context.width > 500 ? 20 : 0;
 					spacing: 5;
 					model: ListModel {
 						ListElement { text: "Create project directory,"; code: "cd &lt;project-dir&gt;"; }
@@ -113,13 +113,14 @@ HistoryPage {
 						ListElement { text: "Please find resulting files in"; code: ".app.web/*";}
 					}
 					delegate: Item {
+						property bool wide: context.width > 500;
 						width: parent.width;
-						height: valueText.height;
+						height: wide ? valueText.height : (valueText.height + codeText.height + 20);
 
 						Rectangle {
 							width: height;
 							height: 10;
-							anchors.verticalCenter: parent.verticalCenter;
+							anchors.verticalCenter: valueText.verticalCenter;
 							radius: width / 2;
 							color: colorTheme.primaryColor;
 						}
@@ -128,22 +129,22 @@ HistoryPage {
 							id: valueText;
 							width: model.code ? paintedWidth : (parent.width - 40);
 							anchors.left: parent.left;
-							anchors.bottom: parent.bottom;
+							anchors.top: parent.top;
 							anchors.leftMargin: 20;
 							font.pixelSize: 21;
 							font.weight: 300;
-							wrapMode: model.code ? Text.NoWrap : Text.WordWrap;
 							color: colorTheme.textColor;
 							text: model.text;
 						}
 
 						Text {
-							height: parent.height;
+							id: codeText;
+							anchors.top: parent.top;
 							anchors.left: parent.left;
 							anchors.right: parent.right;
-							anchors.bottom: parent.bottom;
-							anchors.leftMargin: valueText.paintedWidth + 30;
-							font.pixelSize: 22;
+							anchors.topMargin: parent.wide ? 0 : (valueText.height + 10);
+							anchors.leftMargin: parent.wide ? valueText.paintedWidth + 30 : 20;
+							font.pixelSize: 21;
 							text: model.code;
 							visible: model.code;
 						}

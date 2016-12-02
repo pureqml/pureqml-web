@@ -25,11 +25,13 @@ Rectangle {
 			height: contentsLabel.height;
 			anchors.left: parent.left;
 			anchors.right: parent.right;
+			anchors.leftMargin: 10;
 
 			Text {
 				id: contentsLabel;
 				text: "Contents";
 				font.pixelSize: 24;
+				font.weight: 300;
 				color: colorTheme.primaryColor;
 			}
 
@@ -59,6 +61,7 @@ Rectangle {
 			height: contentHeight;
 			anchors.left: parent.left;
 			anchors.right: parent.right;
+			anchors.leftMargin: 10;
 			spacing: 10;
 			model: menuModel; 
 			delegate: WebItem {
