@@ -1,14 +1,16 @@
 ListView {
 	property int shift: 400;
+	property bool wide: context.width > 800;
 	height: contentHeight;
 	anchors.left: parent.left;
 	anchors.right: parent.right;
-	anchors.leftMargin: 20;
+	anchors.leftMargin: wide ? 20 : 0;
 	spacing: 30;
 	model: ListModel { } 
 	delegate: Item {
+		property bool wide: parent.wide;
 		width: parent.width;
-		height: Math.max(valueText.height, keyText.height);
+		height: wide ? Math.max(valueText.height, keyText.height) : (valueText.height + keyText.height + 20);
 
 		Text {
 			id: keyText;
@@ -33,9 +35,10 @@ ListView {
 
 		DescriptionText {
 			id: valueText;
-			anchors.right: parent.right;
-			anchors.bottom: parent.bottom;
-			anchors.leftMargin: parent.parent.shift;
+			anchors.top: parent.top;
+			anchors.left: parent.left;
+			anchors.topMargin: parent.wide ? 0 : (keyText.height + 10);
+			anchors.leftMargin: parent.wide ? parent.parent.shift : 10;
 			anchors.rightMargin: 10;
 			font.pixelSize: 21;
 			text: model.value;
