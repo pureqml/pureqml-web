@@ -100,7 +100,10 @@ HistoryPage {
 
 		onDataChanged: {
 			var data = JSON.parse(value)
-			content.fill(data)
+			var name = data.name.replace(/\./g, '_');
+			if (name && window.location.hostname)
+				this._context.location.pushState(text, text, "?page=" + name)
+			content.fill(name)
 		}
 	}
 
