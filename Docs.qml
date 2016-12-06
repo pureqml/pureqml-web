@@ -1,4 +1,5 @@
 HistoryPage {
+	property string state: context.location.historyState;
 	minWidth: 270;
 	height: Math.max(leftMenu.height, contentRect.height) + 20;
 	anchors.top: parent.top;
@@ -104,6 +105,30 @@ HistoryPage {
 			if (name && window.location.hostname)
 				this._context.location.pushState(name, name, "?page=" + name)
 			content.fill(data)
+		}
+	}
+
+	getParameterByName(name, url): {
+		if (!url)
+			url = window.location.href
+		name = name.replace(/[\[\]]/g, "\\$&");
+		var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+			results = regex.exec(url)
+		if (!results) return null
+		if (!results[2]) return ''
+		return decodeURIComponent(results[2].replace(/\+/g, " "))
+	}
+
+	onStateChanged: {
+		var state = value
+		if (!state)
+			state = this.getParameterByName("page")
+
+		if (state == this.url) {
+			dataLoader.url = "https://raw.githubusercontent.com/pureqml/pureqml-web/master/doc/json/core/Item.json"
+		} else {
+			state = state.replace(/_/g, "/");
+			dataLoader.url = "https://raw.githubusercontent.com/pureqml/pureqml-web/master/doc/json/" + state + ".json"
 		}
 	}
 
