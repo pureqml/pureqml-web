@@ -1,6 +1,11 @@
 Item {
-	property string state: context.location.historyState;
 	anchors.fill: context;
+
+	LocationState {
+		id: locationState;
+
+		onStateChanged: { this.parent.focusHistoryPage() }
+	}
 
 	Rectangle {
 		anchors.fill: context;
@@ -58,24 +63,12 @@ Item {
 		onGoHome: { this._context.location.pushState("home", "home", "?page=home") }
 	}
 
-	getParameterByName(name, url): {
-		if (!url)
-			url = window.location.href;
-		name = name.replace(/[\[\]]/g, "\\$&");
-		var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
-			results = regex.exec(url);
-		if (!results) return null;
-		if (!results[2]) return '';
-		return decodeURIComponent(results[2].replace(/\+/g, " "));
-	}
-
 	focusHistoryPage: {
 		var state = window.history.state
 		if (!state)
-			state = this.getParameterByName("page")
+			state = locationState.getParameterByName("page")
 		pages.focusHistoryPage(state)
 	}
 
-	onStateChanged: { this.focusHistoryPage() }
 	onCompleted: { this.focusHistoryPage() }
 }
