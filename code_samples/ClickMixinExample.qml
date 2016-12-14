@@ -3,20 +3,20 @@ Item {
 	height: 200;
 
 	Rectangle {
-		property Mixin hoverMixin: HoverMixin { }
-		property alias hover: hoverMixin.value;
+		property Mixin hover: HoverMixin {
+			onValueChanged: { if (!value) this.parent.myText.text = ""; } 
+		}
 		width: 100;
 		height: 100;
 		anchors.centerIn: parent;
-		color: hover ? "red" : "blue";
+		color: hover.value ? "red" : "blue";
 
-		Text {
-			id: innerText;
+		TextMixin {
+			id: myText;
 			color: "#fff";
-			anchors.centerIn: parent;
 			font.pixelSize: 14;
 		}
 
-		onClicked: { innerText.text = "Clicked" }
+		onClicked: { myText.text = "Clicked" }
 	}
 }
