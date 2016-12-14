@@ -3,13 +3,12 @@ Item {
 	height: 200;
 
 	Item {
-		property Mixin overflow: OverflowMixin { }
-		property alias overflowMode: overflow.value;
 		width: 150;
 		height: 120;
 		anchors.centerIn: parent;
-		overflowMode: OverflowMixin.ScrollX;
-
+		
+		OverflowMixin { value: OverflowMixin.ScrollX; }
+		
 		Row {
 			height: 100;
 			spacing: 10;
