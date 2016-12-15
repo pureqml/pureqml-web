@@ -1,11 +1,11 @@
 Item {
 	anchors.fill: context;
 
-	//LocationState {
-		//id: locationState;
+	LocationState {
+		id: locationState;
 
-		//onStateChanged: { this.parent.focusHistoryPage() }
-	//}
+		onStateChanged: { this.parent.focusHistoryPage() }
+	}
 
 	Rectangle {
 		anchors.fill: context;
