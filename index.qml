@@ -64,13 +64,17 @@ Item {
 		onGoHome: { this._context.location.pushState("home", "home", "index.html") }
 	}
 
-	focusHistoryPage: {
-		var state = window.history.state
-		//if (!state)
-			//state = locationState.getParameterByName("page")
+	focusHistoryPage(page): {
+		var state
+		if (!page)
+			state = window.history.state
+		else
+			state = page
+
 		log("State", state)
-		pages.focusHistoryPage(state)
+		if (state)
+			pages.focusHistoryPage(state)
 	}
 
-	onCompleted: { this.focusHistoryPage() }
+	onCompleted: { this.focusHistoryPage(window.location.pathname.replace("/", "")) }
 }
