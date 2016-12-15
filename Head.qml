@@ -69,10 +69,10 @@ Rectangle {
 				log("How about NO?")
 		}
 
-		MenuItem { horizontal: menu.wide; text: "About"; onClicked: { this.parent.navigate(this.text.toLowerCase()) } }
-		MenuItem { horizontal: menu.wide; text: "Download"; onClicked: { this.parent.navigate(this.text.toLowerCase()) } }
-		MenuItem { horizontal: menu.wide; text: "Lessons"; onClicked: { this.parent.navigate(this.text.toLowerCase()) } }
-		MenuItem { horizontal: menu.wide; text: "Docs"; onClicked: { this.parent.navigate(this.text.toLowerCase()) } }
+		MenuItem { horizontal: menu.wide; text: "About"; href: "about"; }
+		MenuItem { horizontal: menu.wide; text: "Download"; href: "download"; }
+		MenuItem { horizontal: menu.wide; text: "Lessons"; href: "lessons"; }
+		MenuItem { horizontal: menu.wide; text: "Docs"; href: "docs"; }
 
 		Behavior on x { Animation { duration: menu.count ? 300 : 0; } }
 	}
