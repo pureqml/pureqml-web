@@ -60,13 +60,13 @@ Item {
 		id: head;
 
 		//onCountChanged: { head.focusIndex(pages.currentIndex) }
-		onGoHome: { this._context.location.pushState("home", "home", "?page=home") }
+		onGoHome: { this._context.location.pushState("home", "home", "index.html") }
 	}
 
 	focusHistoryPage: {
 		var state = window.history.state
-		if (!state)
-			state = locationState.getParameterByName("page")
+		//if (!state)
+			//state = locationState.getParameterByName("page")
 		pages.focusHistoryPage(state)
 	}
 

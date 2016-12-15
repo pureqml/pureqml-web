@@ -14,8 +14,6 @@ HistoryPage {
 				return
 
 			var state = value
-			if (!state)
-				state = this.getParameterByName("page")
 
 			if (state == this.parent.url) {
 				dataLoader.url = "https://raw.githubusercontent.com/pureqml/pureqml-web/master/doc/json/core/Item.json"
@@ -122,10 +120,13 @@ HistoryPage {
 			var data = JSON.parse(value)
 			var name = data.name.replace(/\./g, '_');
 			if (name && window.location.hostname)
-				this._context.location.pushState(name, name, "?page=" + name)
+				this._context.location.pushState(name, name, name)
 			content.fill(data)
 		}
 	}
 
-	onCompleted: { dataLoader.url = "https://raw.githubusercontent.com/pureqml/pureqml-web/master/doc/json/core/Item.json" }
+	onVisibleChanged: {
+		if (value)
+			dataLoader.url = "https://raw.githubusercontent.com/pureqml/pureqml-web/master/doc/json/core/Item.json"
+	}
 }

@@ -63,9 +63,10 @@ Rectangle {
 
 		navigate(text): {
 			menu.show = false
-			//if (text && window.location.hostname)
-			if (text)
-				this._context.location.pushState(text, text, "?page=" + text)
+			if (text && window.location.hostname)
+				this._context.location.pushState(text, text, text)
+			else
+				log("How about NO?")
 		}
 
 		MenuItem { horizontal: menu.wide; text: "About"; onClicked: { this.parent.navigate(this.text.toLowerCase()) } }
