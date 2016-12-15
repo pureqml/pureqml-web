@@ -63,7 +63,8 @@ Rectangle {
 
 		navigate(text): {
 			menu.show = false
-			if (text && window.location.hostname)
+			//if (text && window.location.hostname)
+			if (text)
 				this._context.location.pushState(text, text, "?page=" + text)
 		}
 
