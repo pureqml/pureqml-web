@@ -1,11 +1,11 @@
 Item {
 	anchors.fill: context;
 
-	LocationState {
-		id: locationState;
+	//LocationState {
+		//id: locationState;
 
-		onStateChanged: { this.parent.focusHistoryPage() }
-	}
+		//onStateChanged: { this.parent.focusHistoryPage() }
+	//}
 
 	Rectangle {
 		anchors.fill: context;
@@ -46,6 +46,7 @@ Item {
 
 		focusHistoryPage(state): {
 			var children = this.children
+			log("focusHistoryPage", state, "pages", children)
 			for (var i in children) {
 				if (children[i].url == state) {
 					this.currentIndex = i
@@ -67,6 +68,7 @@ Item {
 		var state = window.history.state
 		//if (!state)
 			//state = locationState.getParameterByName("page")
+		log("State", state)
 		pages.focusHistoryPage(state)
 	}
 
