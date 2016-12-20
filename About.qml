@@ -10,8 +10,6 @@ HistoryPage {
 		wide: !contentRect.wide;
 		anchors.left: parent.left;
 		anchors.leftMargin: !parent.bigScreen ? (parent.width - width - contentRect.width) / 2 - 10 : 0;
-
-		onIndexChoosed(idx): { content.focusItem(idx) }
 	}
 
 	HistoryPageContent {

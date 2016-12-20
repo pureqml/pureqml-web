@@ -78,7 +78,7 @@ Rectangle {
 					color: parent.hover ? colorTheme.lighterPrimaryColor : colorTheme.textColor;
 					text: model.text;
 				}
-//				onClicked: { leftMenuProto.indexChoosed(this._local.model.index) }
+				onClicked: { leftMenuProto.indexChoosed(this._local.model.index) }
 			}
 		}
 	}

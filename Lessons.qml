@@ -10,8 +10,6 @@ HistoryPage {
 		wide: !contentRect.wide;
 		anchors.left: parent.left;
 		anchors.leftMargin: !parent.bigScreen ? (parent.width - width - contentRect.width) / 2 - 10 : 0;
-
-		onIndexChoosed(idx): { content.focusItem(idx) }
 	}
 
 	HistoryPageContent {
@@ -29,13 +27,15 @@ HistoryPage {
 			spacing: 30;
 
 			PageColumn {
-				title: "Basic";
+				hash: "basics";
+				title: "Basics";
 				text: "Basic rules for pureqml developing";
 
 				ReadMore { url: "basic"; }
 			}
 
 			PageColumn {
+				hash: "anchors";
 				title: "Anchors";
 				text: "Each item can can be positionated with anchors. The PureqQML anchors are simillar to the Qt anchors. But has one more value...";
 
@@ -43,6 +43,7 @@ HistoryPage {
 			}
 
 			PageColumn {
+				hash: "globals";
 				title: "Globals";
 				text: "Using globals properties you can manipulate page features...";
 
@@ -50,6 +51,7 @@ HistoryPage {
 			}
 
 			PageColumn {
+				hash: "layouts";
 				title: "Layouts";
 				text: "Usefull controls for content positioning.";
 
@@ -57,6 +59,7 @@ HistoryPage {
 			}
 
 			PageColumn {
+				hash: "signals";
 				title: "Signals";
 				text: "";
 
@@ -64,6 +67,7 @@ HistoryPage {
 			}
 
 			PageColumn {
+				hash: "views";
 				title: "Views and Models";
 				text: "";
 
@@ -71,6 +75,7 @@ HistoryPage {
 			}
 
 			PageColumn {
+				hash: "focus";
 				title: "Focus";
 				text: "The biggest discrepancy with original QML is focus implementation. We're aiming to have \"always-consistent\" focus everywhere...";
 
@@ -78,6 +83,7 @@ HistoryPage {
 			}
 
 			PageColumn {
+				hash: "keyboard";
 				title: "Keyboard";
 				text: "Keyboard pressing events handling...";
 
@@ -85,6 +91,7 @@ HistoryPage {
 			}
 
 			PageColumn {
+				hash: "gamepad";
 				title: "Gamepad";
 				text: "PureQML support gamepad events handling. Specaial controls were designed to work with gamepads declrative way.";
 
@@ -92,6 +99,7 @@ HistoryPage {
 			}
 
 			PageColumn {
+				hash: "inputs";
 				title: "Inputs";
 				text: "\"Controls\" library provide simple in use interface for using html5 inputs";
 
@@ -99,13 +107,15 @@ HistoryPage {
 			}
 
 			PageColumn {
-				title: "Mixin";
+				hash: "mixins";
+				title: "Mixins";
 				text: "Mixins are very usefull and simple in use features for item extending.";
 
 				ReadMore { url: "mixin"; }
 			}
 
 			PageColumn {
+				hash: "effects";
 				title: "Effects";
 				text: "";
 
@@ -113,6 +123,7 @@ HistoryPage {
 			}
 
 			PageColumn {
+				hash: "transforms";
 				title: "Transforms";
 				text: "";
 
