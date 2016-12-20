@@ -45,7 +45,7 @@ Item {
 		if (!value)
 			return
 
-		var codeFile = this.sample.componentName.replace(".", "/").replace("pureqml_web/", "") + ".qml"
+		var codeFile = this.sample.componentName.replace(/\./g, "/").replace("pureqml_web/", "") + ".qml"
 		codeSource.url = "https://raw.githubusercontent.com/pureqml/pureqml-web/master/" + codeFile
 	}
 }
