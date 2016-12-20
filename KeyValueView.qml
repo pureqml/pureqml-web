@@ -12,20 +12,18 @@ ListView {
 		Text {
 			id: keyText;
 			anchors.left: parent.left;
-			font.pixelSize: 21;
 			font.weight: 300;
 			color: colorTheme.primaryColor;
 			text: model.key;
 		}
 
-		DescriptionText {
+		Text {
 			id: valueText;
-			anchors.top: parent.top;
-			anchors.left: parent.left;
-			anchors.topMargin: parent.wide ? 0 : (keyText.height + 10);
-			anchors.leftMargin: parent.wide ? parent.parent.shift : 10;
-			anchors.rightMargin: 10;
-			font.pixelSize: 21;
+			wrapMode: Text.WordWrap;
+			width: 100% - (parent.wide ? parent.parent.shift : 20);
+			x: parent.wide ? parent.parent.shift : 10;
+			y: parent.wide ? 0 : keyText.height + 10;
+			font.weight: 100;
 			text: model.value;
 		}
 	}

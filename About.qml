@@ -29,12 +29,14 @@ HistoryPage {
 			spacing: 30;
 
 			PageColumn {
+				hash: "whatispure";
 				title: "What is PureQML?";
 				text: "Whole industry have struggled for many years with UI development. Many solutions were proposed, most of them failed. Complex UI development was dreadful till Qt came out with QML. Declarative, maintainable, quick and exquisite QML became very popular language in many areas. The only problem is Qt. Huge, complicated, inefficient in some aspects. We love Qt, it’s been a gamechanger in the cross-platform development. But one size doesn’t fit all. Sometimes there is no way to get Qt on the platform (e.g. Web browsers, Smart TV, resource critical embedded platforms). That’s how PureQML idea came up.";
 			}
 
 			PageColumn {
-				title: "Benifits";
+				hash: "benefits";
+				title: "Benefits";
 
 				Grid {
 					id: gridPlat;
@@ -63,6 +65,7 @@ HistoryPage {
 			}
 
 			PageColumn {
+				hash: "platforms";
 				title: "Supported platforms";
 				text: "You can write web-sites, applications for modern desktop and mobile browsers. You also can deploy your application for smart TV platforms:";
 
@@ -81,83 +84,49 @@ HistoryPage {
 			}
 
 			PageColumn {
+				hash: "qmlcore";
 				title: "QMLCore";
 				text: "QMLCore - QML to JS translator. QMLCore is simple tool we (small team of QML advocates) used for years, simplifying building of html5 UI for both mobile and desktop targets. It was designed with original QML in mind, but it's not 100% compatible and better in some aspects. The main concepts are the same though, so if you're familiar with original QML, you could start right away.";
 			}
 
 			PageColumn {
+				hash: "usage";
 				title: "Usage";
 				text: "QMLCore provides a set of tools written in python2 (sorry about that, lol) Usually you don't need to use them directly. build provides convenient wrapper around them all.";
 			}
 
 			PageColumn {
+				hash: "prerequisites";
 				title: "Prerequisites";
 				text: "Any modern python 2.x will go well. Jinja2 is better option for templating in case you want more than qml loader in your html file, but it's not required for small apps.";
 			}
 
 			PageColumn {
+				hash: "howto";
 				title: "Simple how-to";
 
-				ListView {
+				Column {
 					height: contentHeight;
-					anchors.left: parent.left;
-					anchors.right: parent.right;
-					anchors.leftMargin: context.width > 500 ? 20 : 0;
+					width: parent.width - 40;
+					x: 20;
 					spacing: 5;
-					model: ListModel {
-						ListElement { text: "Create project directory,"; code: "cd &lt;project-dir&gt;"; }
-						ListElement { text: "Clone qmlcore to it:"; code: "git clone git@github.com:pureqml/qmlcore.git"; }
-						ListElement { text: "Run "; code: "./qmlcore --boilerplate"; }
-						ListElement { text: "Look into "; code: "app.qml"; }
-						ListElement { text: "Run"; code: "./qmlcore/build"; }
-						ListElement { text: "Please find resulting files in"; code: ".app.web/*";}
-					}
-					delegate: Item {
-						property bool wide: context.width > 500;
-						width: parent.width;
-						height: wide ? valueText.height : (valueText.height + codeText.height + 20);
-
-						Rectangle {
-							width: height;
-							height: 10;
-							anchors.verticalCenter: valueText.verticalCenter;
-							radius: width / 2;
-							color: colorTheme.primaryColor;
-						}
-
-						Text {
-							id: valueText;
-							width: model.code ? paintedWidth : (parent.width - 40);
-							anchors.left: parent.left;
-							anchors.top: parent.top;
-							anchors.leftMargin: 20;
-							font.pixelSize: 21;
-							font.weight: 300;
-							color: colorTheme.textColor;
-							text: model.text;
-						}
-
-						Text {
-							id: codeText;
-							anchors.top: parent.top;
-							anchors.left: parent.left;
-							anchors.right: parent.right;
-							anchors.topMargin: parent.wide ? 0 : (valueText.height + 10);
-							anchors.leftMargin: parent.wide ? valueText.paintedWidth + 30 : 20;
-							font.pixelSize: 21;
-							text: model.code;
-							visible: model.code;
-						}
-					}
+					HowtoText { text: "Create project directory"; code: "cd &lt;project-dir&gt;"; }
+					HowtoText { text: "Clone qmlcore to it"; code: "git clone git@github.com:pureqml/qmlcore.git"; }
+					HowtoText { text: "Run"; code: "./qmlcore --boilerplate"; }
+					HowtoText { text: "Look into"; code: "app.qml"; }
+					HowtoText { text: "Run"; code: "./qmlcore/build"; }
+					HowtoText { text: "Find resulting files in"; code: ".app.web/*";}
 				}
 			}
 
 			PageColumn {
+				hash: "howitworks";
 				title: "How it works";
 				text: "Qml compiler scans source directories for qml file and parses each one. Filename starting with uppercase letter considered component, lowercase instantiated. Project-wide options stored in .manifest file. Result of the compilation is single javascript file with minimum dependencies (modernizr only), ready to use in mobile and desktop environment, accompanied by sample .html launcher and flash video player.";
 			}
 
 			PageColumn {
+				hash: "manifest";
 				title: "Manifest options";
 				text: "Manifest is a collection of project-wide hacks we used to botch various projects. Some of them may or may not be useful.";
 
@@ -173,7 +142,7 @@ HistoryPage {
 					}
 				}
 
-				DescriptionText { text: "build tool command line options"; }
+				H3 { text: "build tool command line options"; }
 
 				KeyValueView {
 					shift: 270;
@@ -190,30 +159,30 @@ HistoryPage {
 			}
 
 			PageColumn {
+				hash: "localisation";
 				title: "Localisation";
 				text: "QmlCore uses Qt-approach to localisation. You write code in your default language, then generate/update (build -u) .ts translation files, translate them with qt linguist, and compile project. QmlCore recognizes tr, qsTr, qsTranslate function, as well as QT_TR_NOOP/QT_TRANSLATE_NOOP macros.";
 			}
 
 			PageColumn {
+				hash: "controls";
 				title: "Controls library";
-				text: "QmlCore contains bare minimum of platform controls: images, texts, rectangles and model-view-delegate classes. Various controls that might be useful are in separate repository. Just clone it git clone git@github.com:pureqml/controls.git in your project and that's it!";
+				text: "QmlCore contains bare minimum of platform controls: images, texts, rectangles and model-view-delegate classes. Various controls that might be useful are in separate repository. Just clone it <code><b>git clone git@github.com:pureqml/controls.git</code></b> in your project and that's it!";
 			}
 
 			PageColumn {
+				hash: "qmldifference";
 				title: "QML differences";
 				text: "";
 
-				Text {
-					anchors.left: parent.left;
+				H3 {
 					color: colorTheme.primaryColor;
-					font.weight: 300;
-					font.pixelSize: 25;
 					text: "Grammar"; 
 				}
 
-				DescriptionText { text: "We require semicolon after each statement. This may be changed in future."; }
+				MainText { text: "Semicolon is required after each statement. This might be a subject to change."; }
 
-				Text {
+				H3 {
 					anchors.left: parent.left;
 					color: colorTheme.primaryColor;
 					font.weight: 300;
@@ -221,7 +190,9 @@ HistoryPage {
 					text: "Focus"; 
 				}
 
-				DescriptionText { text: "The biggest discrepancy with original QML is focus implementation. We're aiming to have \"always-consistent\" focus everywhere. You have to mark every focus-able component with focus: true; property, and the rest should work without tweaking. We provide several convenient properties to handle focus with ease:"; }
+				MainText {
+					text: "The biggest discrepancy with original QML is focus implementation. We're aiming to have \"always-consistent\" focus everywhere. You have to mark every focus-able component with focus: true; property, and the rest should work without tweaking. We provide several convenient properties to handle focus with ease:";
+				}
 
 				KeyValueView {
 					anchors.leftMargin: 20;
@@ -231,7 +202,7 @@ HistoryPage {
 					}
 				}
 
-				Text {
+				H3 {
 					anchors.left: parent.left;
 					color: colorTheme.primaryColor;
 					font.weight: 300;
@@ -239,7 +210,7 @@ HistoryPage {
 					text: "Adding modernizr features"; 
 				}
 
-				DescriptionText { text: "Please use the following command to get the custom modernizr build page: head -n2 dist/modernizr-custom.js | tail -n1 or just second line of modernizr-custom.js file"; }
+				MainText { text: "Please use the following command to get the custom modernizr build page: head -n2 dist/modernizr-custom.js | tail -n1 or just second line of modernizr-custom.js file"; }
 			}
 
 			onFillMenu(data): { leftMenu.fillModel(data) }

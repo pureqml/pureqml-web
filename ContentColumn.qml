@@ -15,7 +15,7 @@ Column {
 		var children = this.children
 		for (var i in children) {
 			if (children[i] && children[i].title)
-				data.push({"text": children[i].title})
+				data.push({"text": children[i].title, "hash": children[i].hash})
 		}
 
 		this.fillMenu(data)

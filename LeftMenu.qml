@@ -64,9 +64,10 @@ Rectangle {
 			anchors.leftMargin: 10;
 			spacing: 10;
 			model: menuModel; 
-			delegate: WebItem {
+			delegate: WebLink {
 				width: parent.width;
 				height: menuDelegateText.height;
+				href: "#" + model.hash;
 
 				Text {
 					id: menuDelegateText;
@@ -77,8 +78,7 @@ Rectangle {
 					color: parent.hover ? colorTheme.lighterPrimaryColor : colorTheme.textColor;
 					text: model.text;
 				}
-
-				onClicked: { leftMenuProto.indexChoosed(this._local.model.index) }
+//				onClicked: { leftMenuProto.indexChoosed(this._local.model.index) }
 			}
 		}
 	}
