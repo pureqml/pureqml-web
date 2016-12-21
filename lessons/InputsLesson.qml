@@ -40,6 +40,8 @@ HistoryPage {
 						ListElement { key: "border"; value: "object property for border customizing"; }
 						ListElement { key: "color"; value: "color property for font color setting"; }
 						ListElement { key: "backgroundColor"; value: "color property for background color setting"; }
+						ListElement { key: "paddings"; value: "paddings mixin object adjusts text paddings inside the input"; }
+						ListElement { key: "placeholder"; value: "inner text placeholder"; }
 					}
 				}
 			}
@@ -56,6 +58,13 @@ HistoryPage {
 						ListElement { key: "passwordMode"; value: "bool property for setting password mode (to hide input charachters)"; }
 					}
 				}
+
+				CodeExample {
+					codeWidth: parent.width - 20;
+					exampleWidth: 200;
+					exampleHeight: 200;
+					sample: TextInputExample { }
+				}
 			}
 
 			PageColumn {
@@ -71,6 +80,13 @@ HistoryPage {
 						ListElement { key: "value"; value: "integer property wich stores current number value"; }
 					}
 				}
+
+				CodeExample {
+					codeWidth: parent.width - 20;
+					exampleWidth: 100;
+					exampleHeight: 100;
+					sample: NumberInputExample { }
+				}
 			}
 
 			PageColumn {
@@ -80,8 +96,15 @@ HistoryPage {
 				KeyValueView {
 					anchors.leftMargin: 20;
 					model: ListModel {
-						ListElement { key: "correct"; value: "bool property wich is false then input is not correct e-mail address and true otherwise"; }
+						ListElement { key: "correct"; value: "bool property wich is false then input is not the correct e-mail address and true otherwise"; }
 					}
+				}
+
+				CodeExample {
+					codeWidth: parent.width - 20;
+					exampleWidth: 200;
+					exampleHeight: 200;
+					sample: EmailInputExample { }
 				}
 			}
 
@@ -92,10 +115,17 @@ HistoryPage {
 				KeyValueView {
 					anchors.leftMargin: 20;
 					model: ListModel {
-						ListElement { key: "max"; value: "string property wich set maximum date value"; }
-						ListElement { key: "min"; value: "string property wich set minimum date value"; }
+						ListElement { key: "max"; value: "string property wich set maximal date value"; }
+						ListElement { key: "min"; value: "string property wich set minimal date value"; }
 						ListElement { key: "value"; value: "string property wich stores current date value"; }
 					}
+				}
+
+				CodeExample {
+					codeWidth: parent.width - 20;
+					exampleWidth: 200;
+					exampleHeight: 200;
+					sample: DateInputExample { }
 				}
 			}
 
@@ -111,6 +141,13 @@ HistoryPage {
 						ListElement { key: "value"; value: "string property wich stores current time value"; }
 					}
 				}
+
+				CodeExample {
+					codeWidth: parent.width - 20;
+					exampleWidth: 200;
+					exampleHeight: 200;
+					sample: TimeInputExample { }
+				}
 			}
 
 			PageColumn {
@@ -123,6 +160,13 @@ HistoryPage {
 						ListElement { key: "value"; value: "string property wich stores current search input value"; }
 					}
 				}
+
+				CodeExample {
+					codeWidth: parent.width - 20;
+					exampleWidth: 200;
+					exampleHeight: 200;
+					sample: SearchInputExample { }
+				}
 			}
 
 			PageColumn {
@@ -134,6 +178,35 @@ HistoryPage {
 					model: ListModel {
 						ListElement { key: "value"; value: "color property wich stores selected color value"; }
 					}
+				}
+
+				CodeExample {
+					codeWidth: parent.width - 20;
+					exampleWidth: 200;
+					exampleHeight: 200;
+					sample: ColorInputExample { }
+				}
+			}
+
+			PageColumn {
+				title: "RangeInput";
+				text: "Range input item.";
+
+				KeyValueView {
+					anchors.leftMargin: 20;
+					model: ListModel {
+						ListElement { key: "max"; value: "integer property wich set maximum range value"; }
+						ListElement { key: "min"; value: "integer property wich set minimum range value"; }
+						ListElement { key: "step"; value: "adjusts value changing step"; }
+						ListElement { key: "value"; value: "integer property wich stores current range value"; }
+					}
+				}
+
+				CodeExample {
+					codeWidth: parent.width - 20;
+					exampleWidth: 200;
+					exampleHeight: 200;
+					sample: RangeInputExample { }
 				}
 			}
 
