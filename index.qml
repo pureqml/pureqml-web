@@ -26,19 +26,19 @@ Item {
 		anchors.leftMargin: 20;
 		anchors.rightMargin: 20;
 
-		//About { }
-		//Download { }
-		//Lessons { }
-		//Docs { }
+		About { }
+		Download { }
+		Lessons { }
+		Docs { }
 
 		//Lessons
-		//AnchorsLesson { }
-		//LayoutsLesson { }
-		//GamepadLesson { }
-		//KeyboardLesson { }
-		//SignalLesson { }
-		//ViewAndModelsLesson { }
-		//GlobalsLesson { }
+		AnchorsLesson { }
+		LayoutsLesson { }
+		GamepadLesson { }
+		KeyboardLesson { }
+		SignalLesson { }
+		ViewAndModelsLesson { }
+		GlobalsLesson { }
 		InputsLesson { }
 		BasicLesson { }
 		MixinLesson { }
