@@ -199,6 +199,7 @@ HistoryPage {
 						ListElement { key: "min"; value: "integer property wich set minimum range value"; }
 						ListElement { key: "step"; value: "adjusts value changing step"; }
 						ListElement { key: "value"; value: "integer property wich stores current range value"; }
+						ListElement { key: "orientation"; value: "enum value for setting orientation can be 'Horizontal' or 'Vertical'"; }
 					}
 				}
 

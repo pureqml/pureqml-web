@@ -71,11 +71,40 @@ HistoryPage {
 
 					}
 				}
+
+				DescriptionText {
+					text: "If you need to specify logic for concrete platform use 'System' properties. Examples text (look below) depends on user envoirement.";
+				}
+
+				CodeExample {
+					codeWidth: parent.width - 20;
+					exampleWidth: 200;
+					exampleHeight: 200;
+					sample: SystemExample { }
+				}
 			}
 
 			PageColumn {
 				title: "Location";
-				text: "";
+				text: "Represents page location object properties and methods";
+
+				KeyValueView {
+					shift: 350;
+					anchors.leftMargin: 20;
+					model: ListModel {
+						ListElement { key: "hash"; value: "contains current hash value (after '#' charachter)"; }
+						ListElement { key: "host"; value: "current host with port number"; }
+						ListElement { key: "href"; value: "whole current URL"; }
+						ListElement { key: "port"; value: "current port number"; }
+						ListElement { key: "origin"; value: "current protocol, hostname and port number of a URL"; }
+						ListElement { key: "hostname"; value: "current host name"; }
+						ListElement { key: "pathname"; value: "path name of the current URL"; }
+						ListElement { key: "historyState"; value: "current history state"; }
+						ListElement { key: "changeHref(href)"; value: "change current href value method, argument is new href value"; }
+						ListElement { key: "pushState(state, title, url)"; value: "push new state to the history"; }
+
+					}
+				}
 			}
 
 			onFillMenu(data): { leftMenu.fillModel(data) }
