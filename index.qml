@@ -1,6 +1,12 @@
 Item {
 	anchors.fill: context;
 
+	LocationManager {
+		onPathUpdated: {
+			log("Path", this.getPath())
+		}
+	}
+
 	LocationState {
 		id: locationState;
 
