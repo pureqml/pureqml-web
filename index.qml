@@ -3,7 +3,18 @@ Item {
 
 	LocationManager {
 		onPathUpdated: {
-			log("Path", this.getPath())
+			var path = this.getPath()
+			if (path.length <= 0)
+				return
+			var first = path[0].toLowerCase()
+			log("Path", path)
+			switch (first) {
+			case "docs":
+				break
+			default:
+				pages.focusHistoryPage(first)
+				break
+			}
 		}
 	}
 
