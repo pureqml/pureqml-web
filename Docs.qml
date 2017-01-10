@@ -6,24 +6,6 @@ HistoryPage {
 	anchors.right: parent.right;
 	url: "docs";
 
-	LocationState {
-		id: locationState;
-
-		onStateChanged: {
-			if (!this.parent.recursiveVisible)
-				return
-
-			var state = value
-
-			if (state == this.parent.url) {
-				dataLoader.url = "https://raw.githubusercontent.com/pureqml/pureqml-web/master/doc/json/core/Item.json"
-			} else {
-				state = state.replace(/_/g, "/");
-				dataLoader.url = "https://raw.githubusercontent.com/pureqml/pureqml-web/master/doc/json/" + state + ".json"
-			}
-		}
-	}
-
 	SearchPanel {
 		id: search;
 		anchors.left: leftMenu.left;

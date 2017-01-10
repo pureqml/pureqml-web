@@ -61,14 +61,6 @@ Rectangle {
 		anchors.topMargin: wide ? 0 : parent.height;
 		anchors.rightMargin: wide ? 0 : (show ? contentWidth : -contentWidth);
 
-		navigate(text): {
-			menu.show = false
-			if (text)
-				this._context.location.pushState("text", text, text)
-			else
-				log("How about NO?")
-		}
-
 		MenuItem { horizontal: menu.wide; text: "About"; href: "about"; }
 		MenuItem { horizontal: menu.wide; text: "Download"; href: "download"; }
 		MenuItem { horizontal: menu.wide; text: "Lessons"; href: "lessons"; }

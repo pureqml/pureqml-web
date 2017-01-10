@@ -1,33 +1,13 @@
 Item {
 	anchors.fill: context;
-	property string path1;
+	property Object state: context.location.state;
 
-	LocationManager {
-		onPathUpdated: {
-			// if (this.path.length > 0)
-			// 	this.parent.path1 = this.path[0]
-			// if (this.path.length > 1)
-			// 	this.parent.path2 = this.path[1]
-//			var path = this.getPath()
-			if (this.path.length <= 0)
-				return
-			var first = this.path[0].toLowerCase()
-			log("Path", this.path)
-			switch (first) {
-			case "docs":
-				break
-			default:
-				pages.focusHistoryPage(first)
-				break
-			}
-		}
+	onStateChanged: {
+		if (value.section)
+			pages.pageName = value.section;
+		else
+			pages.pageName = 'about';
 	}
-
-	// LocationState {
-	// 	id: locationState;
-
-	// 	onStateChanged: { this.parent.focusHistoryPage() }
-	// }
 
 	Rectangle {
 		anchors.fill: context;
@@ -41,12 +21,9 @@ Item {
 	PageStack {
 		id: pages;
 		height: contentHeight + 20;
-		anchors.top: parent.top;
-		anchors.left: parent.left;
-		anchors.right: parent.right;
-		anchors.topMargin: head.height + 20;
-		anchors.leftMargin: 20;
-		anchors.rightMargin: 20;
+		y: head.height + 20;
+		width: parent.width;
+		property string pageName;
 
 		About { }
 		Download { }
@@ -66,11 +43,11 @@ Item {
 		MixinLesson { }
 		EffectsLesson { }
 
-		focusHistoryPage(state): {
+		onPageNameChanged: {
 			var children = this.children
-			log("focusHistoryPage", state, "pages", children)
+			log("onPageNameChanged", value, "pages", children)
 			for (var i in children) {
-				if (children[i].url == state) {
+				if (children[i].url == value) {
 					this.currentIndex = i
 					head.focusIndex(i)
 					return
@@ -85,18 +62,4 @@ Item {
 		//onCountChanged: { head.focusIndex(pages.currentIndex) }
 		onGoHome: { this._context.location.pushState("home", "home", "index.html") }
 	}
-
-	focusHistoryPage(page): {
-		var state
-		if (!page)
-			state = window.history.state
-		else
-			state = page
-
-		log("State", state)
-		if (state)
-			pages.focusHistoryPage(state)
-	}
-
-	onCompleted: { this.focusHistoryPage(window.location.pathname.replace("/", "")) }
 }
