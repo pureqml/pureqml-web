@@ -1,13 +1,18 @@
 Item {
 	anchors.fill: context;
+	property string path1;
 
 	LocationManager {
 		onPathUpdated: {
-			var path = this.getPath()
-			if (path.length <= 0)
+			// if (this.path.length > 0)
+			// 	this.parent.path1 = this.path[0]
+			// if (this.path.length > 1)
+			// 	this.parent.path2 = this.path[1]
+//			var path = this.getPath()
+			if (this.path.length <= 0)
 				return
-			var first = path[0].toLowerCase()
-			log("Path", path)
+			var first = this.path[0].toLowerCase()
+			log("Path", this.path)
 			switch (first) {
 			case "docs":
 				break
@@ -18,11 +23,11 @@ Item {
 		}
 	}
 
-	LocationState {
-		id: locationState;
+	// LocationState {
+	// 	id: locationState;
 
-		onStateChanged: { this.parent.focusHistoryPage() }
-	}
+	// 	onStateChanged: { this.parent.focusHistoryPage() }
+	// }
 
 	Rectangle {
 		anchors.fill: context;

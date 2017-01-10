@@ -63,8 +63,8 @@ Rectangle {
 
 		navigate(text): {
 			menu.show = false
-			if (text && window.location.hostname)
-				this._context.location.pushState(text, text, text)
+			if (text)
+				this._context.location.pushState("text", text, text)
 			else
 				log("How about NO?")
 		}
