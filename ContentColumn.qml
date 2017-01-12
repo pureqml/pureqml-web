@@ -9,6 +9,8 @@ Column {
 			GradientStop { position: 1; color: "#BFB";}
 	}
 
+	Behavior on y { Animation { duration: 300; } }
+
 	onCompleted: {
 		var data = []
 		var children = this.children

@@ -1,56 +1,44 @@
 Rectangle {
 	id: leftMenuProto;
 	property bool collapsed;
-	width: parent.width < 840 ? parent.width : 200;
-	height: menuContent.height + 20;
+	width: parent.width < 840 ? 100% : 200;
+	height: collapsed ? 40 : menuContent.height + 50;
 	color: "#FDD";// colorTheme.panelColor;
 	clip: true;
 
+	Behavior on height { Animation { duration: 300; } }
+
 	ListModel { id: menuModel; }
+
+	WebItem {
+		width: 100%;
+		height: 40;
+		color: hover ? "#DFF" : "#DDF";
+		Behavior on background { Animation {}}
+
+		onClicked: { leftMenuProto.collapsed = !leftMenuProto.collapsed; }
+
+		MaterialIcon {
+			width: 100%; height: 100%;
+			verticalAlignment: Text.AlignVCenter;
+			horizontalAlignment: Text.AlignHCenter;
+			icon: "keyboard_arrow_down";
+			size: 32;
+			transform.rotateX: leftMenuProto.collapsed ? 0 : 180;
+			Behavior on transform { Animation { duration: 300; } }
+		}
+	}
 
 	Column {
 		id: menuContent;
-		width: parent.width - 20;
-		x: 10; y: 10;
-		spacing: 10;
-
-		Item {
-			height: contentsLabel.height;
-			width: parent.width;
-
-			Text {
-				id: contentsLabel;
-				text: "Contents";
-				font.pixelSize: 24;
-				font.weight: 300;
-				color: colorTheme.primaryColor;
-			}
-
-			WebItem {
-				id: moreButton;
-				width: height;
-				anchors.top: parent.top;
-				anchors.right: parent.right;
-				anchors.bottom: parent.bottom;
-
-				Image {
-					id: moreIcon;
-					transform.rotate: leftMenuProto.collapsed ? 0 : 180;
-					anchors.centerIn: parent;
-					source: "res/up.png";
-
-					Behavior on transform { Animation { duration: 300; } }
-				}
-
-				onClicked: { leftMenuProto.collapsed = !leftMenuProto.collapsed }
-			}
-		}
+		width: 100%;
+		y: 40;
 
 		ListView {
+			anchors.topMargin: 10;
 			height: contentHeight;
 			width: parent.width - 20;
 			x: 10;
-			visible: !leftMenuProto.collapsed;
 			spacing: 10;
 			model: menuModel; 
 			delegate: WebLink {
@@ -65,6 +53,7 @@ Rectangle {
 					font.weight: 300;
 					font.pixelSize: 18;
 					color: parent.hover ? colorTheme.lighterPrimaryColor : colorTheme.textColor;
+					font.underline: parent.hover;
 					text: model.text;
 				}
 			}
@@ -75,6 +64,4 @@ Rectangle {
 		menuModel.clear()
 		menuModel.append(data)
 	}
-
-	Behavior on height { Animation { duration: 300; } }
 }

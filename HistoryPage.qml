@@ -1,5 +1,5 @@
 Grid {
 	property string url;
-	width: Math.min(parent.width, 1240) - 40;
+	width: Math.min(100%, 1200);
 	x: (parent.width - width) / 2;
 }

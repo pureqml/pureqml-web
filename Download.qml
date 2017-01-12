@@ -1,9 +1,9 @@
 HistoryPage {
 	url: "download";
 	horizontalAlignment: Grid.AlignHCenter;
-	spacing: 30;
 
 	BigButton {
+		anchors.margins: 30;
 		icon: "github.png";
 		text: "View on github";
 
@@ -11,6 +11,7 @@ HistoryPage {
 	}
 
 	BigButton {
+		anchors.margins: 30;
 		icon: "download.png";
 		text: "Download";
 
