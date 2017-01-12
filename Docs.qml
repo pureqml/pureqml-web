@@ -1,15 +1,9 @@
 HistoryPage {
-	minWidth: 270;
-	height: Math.max(leftMenu.height, contentRect.height) + 20;
-	anchors.top: parent.top;
-	anchors.left: parent.left;
-	anchors.right: parent.right;
 	url: "docs";
 
 	SearchPanel {
 		id: search;
-		anchors.left: leftMenu.left;
-		anchors.right: leftMenu.right;
+		width: parent.width;
 
 		onSearch(text): {
 			var data = this.parent._data
@@ -33,13 +27,7 @@ HistoryPage {
 
 	LeftMenu {
 		id: leftMenu;
-		minWidth: parent.minWidth;
-		anchors.top: search.bottom;
-		anchors.left: parent.left;
-		anchors.topMargin: 10;
-		anchors.leftMargin: !parent.bigScreen ? (parent.width - width - contentRect.width) / 2 - 10 : 0;
-		wide: !contentRect.wide;
-
+	
 		onIndexChoosed(idx): {
 			content.visible = true
 			var row = this.getRow(idx)
@@ -49,12 +37,9 @@ HistoryPage {
 		}
 	}
 
-	HistoryPageContent {
+	Item {
 		id: contentRect;
-		anchors.top: search.top;
-		anchors.topMargin: !wide ? leftMenu.height + search.height + 20 : 0;
-		minWidth: parent.minWidth;
-		height: (content.visible ? content.contentHeight : searchResults.contentHeight) + 30;
+		width: parent.width < 840 ? parent.width : parent.width - 200;
 	
 		DocViewer { id: content; }
 

@@ -9,5 +9,4 @@ Object {
 	property color primaryColor:		"#43A047";
 	property color darkerPrimaryColor:	"#1B5E20";
 	property color lighterPrimaryColor:	"#388E3C";
-
 }

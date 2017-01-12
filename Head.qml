@@ -48,7 +48,6 @@ Rectangle {
 		visible: !menu.wide;
 
 		Behavior on x, width { Animation { duration: 300; } }
-
 	}
 
 	Grid {

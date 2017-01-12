@@ -1,40 +1,19 @@
 HistoryPage {
-	height: downloadRectContent.height;
-	anchors.top: parent.top;
-	anchors.left: parent.left;
-	anchors.right: parent.right;
 	url: "download";
+	horizontalAlignment: Grid.AlignHCenter;
+	spacing: 30;
 
-	Rectangle {
-		id: downloadRectContent;
-		height: buttonsRow.contentHeight + 30;
-		anchors.top: parent.top;
-		anchors.left: parent.left;
-		anchors.right: parent.right;
-		color: colorTheme.panelColor;
+	BigButton {
+		icon: "github.png";
+		text: "View on github";
 
-		Grid {
-			id: buttonsRow;
-			width: parent.width;
-			anchors.top: parent.top;
-			horizontalAlignment: Grid.AlignHCenter;
-			anchors.topMargin: 15;
-			verticalSpacing: 20;
-			horizontalSpacing: 20;
+		onClicked: { window.location = "https://github.com/pureqml/qml2js" }
+	}
 
-			BigButton {
-				icon: "github.png";
-				text: "View on github";
+	BigButton {
+		icon: "download.png";
+		text: "Download";
 
-				onClicked: { window.location = "https://github.com/pureqml/qml2js" }
-			}
-
-			BigButton {
-				icon: "download.png";
-				text: "Download";
-
-				onClicked: { window.location = "https://github.com/pureqml/qml2js/archive/master.zip" }
-			}
-		}
+		onClicked: { window.location = "https://github.com/pureqml/qml2js/archive/master.zip" }
 	}
 }

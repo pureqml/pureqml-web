@@ -1,21 +1,21 @@
 Column {
+	width: parent.width < 840 ? parent.width : parent.width - 200;
 	signal fillMenu;
-
-	focusItem(idx): {
-		var children = this.children
-		if (idx < 0 || idx >= children.length) {
-			log("Bad index")
-			return
-		}
-		window.scrollTo(0, children[idx].viewY)
+	clip: true;
+	property Gradient gradient: Gradient {
+			orientation: Gradient.Custom;
+			angle: 120;
+			GradientStop { position: 0; color: "#BBF";}
+			GradientStop { position: 1; color: "#BFB";}
 	}
 
 	onCompleted: {
 		var data = []
 		var children = this.children
 		for (var i in children) {
-			if (children[i] && children[i].title)
-				data.push({"text": children[i].title, "hash": children[i].hash})
+			var child = children[i]
+			if (child && child.title)
+				data.push({"text": child.title, "hash": child.hash, "link": child.link})
 		}
 
 		this.fillMenu(data)

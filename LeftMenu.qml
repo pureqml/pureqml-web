@@ -1,31 +1,22 @@
 Rectangle {
 	id: leftMenuProto;
-	signal indexChoosed;
-	property int minWidth: 200;
-	property bool wide;
-	width: wide ? parent.width : minWidth;
-	height: moreButton.show ? menuContent.height + 20 : 50;
-	anchors.top: parent.top;
-	anchors.left: parent.left;
-	color: colorTheme.panelColor;
+	property bool collapsed;
+	width: parent.width < 840 ? parent.width : 200;
+	height: menuContent.height + 20;
+	color: "#FDD";// colorTheme.panelColor;
 	clip: true;
 
 	ListModel { id: menuModel; }
 
 	Column {
 		id: menuContent;
-		anchors.top: parent.top;
-		anchors.left: parent.left;
-		anchors.right: parent.right;
-		anchors.margins: 10;
-		anchors.topMargin: 10;
+		width: parent.width - 20;
+		x: 10; y: 10;
 		spacing: 10;
 
 		Item {
 			height: contentsLabel.height;
-			anchors.left: parent.left;
-			anchors.right: parent.right;
-			anchors.leftMargin: 10;
+			width: parent.width;
 
 			Text {
 				id: contentsLabel;
@@ -37,37 +28,35 @@ Rectangle {
 
 			WebItem {
 				id: moreButton;
-				property bool show: !leftMenuProto.wide;
 				width: height;
 				anchors.top: parent.top;
 				anchors.right: parent.right;
 				anchors.bottom: parent.bottom;
-				visible: leftMenuProto.wide;
 
 				Image {
 					id: moreIcon;
-					transform.rotate: parent.show ? 180 : 0;
+					transform.rotate: leftMenuProto.collapsed ? 0 : 180;
 					anchors.centerIn: parent;
 					source: "res/up.png";
 
 					Behavior on transform { Animation { duration: 300; } }
 				}
 
-				onClicked: { this.show = !this.show }
+				onClicked: { leftMenuProto.collapsed = !leftMenuProto.collapsed }
 			}
 		}
 
 		ListView {
 			height: contentHeight;
-			anchors.left: parent.left;
-			anchors.right: parent.right;
-			anchors.leftMargin: 10;
+			width: parent.width - 20;
+			x: 10;
+			visible: !leftMenuProto.collapsed;
 			spacing: 10;
 			model: menuModel; 
 			delegate: WebLink {
 				width: parent.width;
 				height: menuDelegateText.height;
-				href: "#" + model.hash;
+				href: model.hash ? "#" + model.hash : model.link;
 
 				Text {
 					id: menuDelegateText;
@@ -78,17 +67,8 @@ Rectangle {
 					color: parent.hover ? colorTheme.lighterPrimaryColor : colorTheme.textColor;
 					text: model.text;
 				}
-				onClicked: { leftMenuProto.indexChoosed(this._local.model.index) }
 			}
 		}
-	}
-
-	getRow(idx): {
-		if (idx < 0 || idx >= menuModel.count) {
-			log("Bad index", idx)
-			return
-		}
-		return menuModel.get(idx)
 	}
 
 	fillModel(data): {

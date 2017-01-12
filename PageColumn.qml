@@ -2,6 +2,7 @@ Column {
 	property string text;
 	property string title;
 	property string hash;
+	property string link;
 	width: parent.width - 20;
 	x: 10;
 	anchors.margins: 10;
