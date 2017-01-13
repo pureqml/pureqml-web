@@ -45,7 +45,8 @@ Rectangle {
 				width: parent.width;
 				height: menuDelegateText.height;
 				property bool hash: model.hash;
-				href: hash ? "#" + model.hash : model.text;
+				property string text: model.text;
+				href: hash ? "#" + model.hash : text;
 
 				Text {
 					id: menuDelegateText;
@@ -55,7 +56,7 @@ Rectangle {
 					font.pixelSize: 18;
 					color: parent.hover ? colorTheme.lighterPrimaryColor : colorTheme.textColor;
 					font.underline: parent.hover;
-					text: model.text;
+					text: parent.text;
 				}
 
 				onClicked(e): {
