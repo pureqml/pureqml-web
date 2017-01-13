@@ -1,5 +1,6 @@
 HistoryPage {
 	url: "docs";
+	clip: true;
 
 	SearchPanel {
 		id: search;
@@ -28,19 +29,17 @@ HistoryPage {
 	LeftMenu {
 		id: leftMenu;
 	
-		onIndexChoosed(idx): {
-			content.visible = true
-			var row = this.getRow(idx)
-			if (!row || !row.path)
-				return
-			dataLoader.url = "https://raw.githubusercontent.com/pureqml/pureqml-web/master/doc/json/" + (row.path.file ? row.path.file : row.path)
-		}
+		// onIndexChoosed(idx): {
+		// 	content.visible = true
+		// 	var row = this.getRow(idx)
+		// 	if (!row || !row.path)
+		// 		return
+		// 	log ("dataLoader", row.path, row.path.file)
+		// 	dataLoader.url = "https://raw.githubusercontent.com/pureqml/pureqml-web/master/doc/json/" + (row.path.file ? row.path.file : row.path)
+		// }
 	}
 
-	Item {
-		id: contentRect;
-		width: parent.width < 840 ? parent.width : parent.width - 200;
-	
+	ContentColumn {
 		DocViewer { id: content; }
 
 		SearchResults {
@@ -53,6 +52,7 @@ HistoryPage {
 					return
 				}
 				content.visible = true
+				log("onChoosed", ref)
 				dataLoader.url = "https://raw.githubusercontent.com/pureqml/pureqml-web/master/doc/json/" + ref
 			}
 		}

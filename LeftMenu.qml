@@ -44,7 +44,8 @@ Rectangle {
 			delegate: WebLink {
 				width: parent.width;
 				height: menuDelegateText.height;
-				href: model.hash ? "#" + model.hash : model.link;
+				property bool hash: model.hash;
+				href: hash ? "#" + model.hash : model.text;
 
 				Text {
 					id: menuDelegateText;
@@ -56,6 +57,13 @@ Rectangle {
 					font.underline: parent.hover;
 					text: model.text;
 				}
+
+				onClicked(e): {
+					if (this.hash)
+						return
+					e.preventDefault();
+					this._context.location.pushState({ section: this.href }, this.href, this.href) 
+				} 
 			}
 		}
 	}

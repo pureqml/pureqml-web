@@ -1,8 +1,4 @@
 ContentColumn {
-	anchors.top: parent.top;
-	anchors.left: parent.left;
-	anchors.right: parent.right;
-	anchors.margins: 10;
 	spacing: 30;
 
 	H2 {
