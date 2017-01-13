@@ -14,7 +14,7 @@ Item {
 			return
 		
 		var path = window.location.pathname.split("/")
-		var state
+		var state = {}
 		if (path[0])
 			state.page = path[0]
 		if (path[1])
