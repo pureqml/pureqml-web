@@ -2,6 +2,20 @@ HistoryPage {
 	url: "docs";
 	clip: true;
 
+	property Object state: context.location.state;
+
+	onStateChanged: {
+		log("Docs onStateChanged", value)
+		if (value && value.page === "docs"){
+			if (value.section)
+				dataLoader.url = "https://raw.githubusercontent.com/pureqml/pureqml-web/master/doc/json/" + (value.element ? value.section + "/" + value.element : value.section) + ".json"
+			else
+				dataLoader.url = "https://raw.githubusercontent.com/pureqml/pureqml-web/master/doc/json/core/Item.json"
+
+			log("new url", dataLoader.url)
+		}
+	}
+
 	SearchPanel {
 		id: search;
 		width: parent.width;
@@ -28,18 +42,9 @@ HistoryPage {
 
 	LeftMenu {
 		id: leftMenu;
-	
-		// onIndexChoosed(idx): {
-		// 	content.visible = true
-		// 	var row = this.getRow(idx)
-		// 	if (!row || !row.path)
-		// 		return
-		// 	log ("dataLoader", row.path, row.path.file)
-		// 	dataLoader.url = "https://raw.githubusercontent.com/pureqml/pureqml-web/master/doc/json/" + (row.path.file ? row.path.file : row.path)
-		// }
 	}
 
-	ContentColumn {
+	Column {
 		DocViewer { id: content; }
 
 		SearchResults {
@@ -68,10 +73,10 @@ HistoryPage {
 			for (var p in pages) {
 				if (p == "code_samples" || p == "lessons" || p == "pureqml-web")
 					continue
-				data.push({"text": p, "depth": 0, "path": pages[p]})
+				data.push({"text": p, "depth": 0, "path": "docs/" + p})
 				var content = pages[p].content
 				for (var c in content) {
-					data.push({"text": c, "depth": 1, "path": content[c]})
+					data.push({"text": c, "depth": 1, "path": "docs/" + p + "/" + c})
 				}
 			}
 			this.parent._data = data
@@ -85,15 +90,8 @@ HistoryPage {
 
 		onDataChanged: {
 			var data = JSON.parse(value)
-			var name = "docs/" + data.name.replace(/\./g, '/');
-			if (name && window.location.hostname)
-				this._context.location.pushState(name, name, name)
+			log("onDataChanged", data)
 			content.fill(data)
 		}
-	}
-
-	onVisibleChanged: {
-		if (value)
-			dataLoader.url = "https://raw.githubusercontent.com/pureqml/pureqml-web/master/doc/json/core/Item.json"
 	}
 }

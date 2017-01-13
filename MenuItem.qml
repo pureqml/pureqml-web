@@ -7,7 +7,7 @@ WebLink {
 
 	onClicked(e): {
 		e.preventDefault();
-		this._context.location.pushState({ section: this.href }, this.href, this.href) 
+		this._context.location.pushState({ page: this.href }, this.href, this.href) 
 	} 
 
 	Text {

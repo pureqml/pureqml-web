@@ -45,8 +45,8 @@ Rectangle {
 				width: parent.width;
 				height: menuDelegateText.height;
 				property bool hash: model.hash;
-				property string text: model.text;
-				href: hash ? "#" + model.hash : text;
+				property string path: model.path;
+				href: hash ? model.hash : path;
 
 				Text {
 					id: menuDelegateText;
@@ -56,14 +56,24 @@ Rectangle {
 					font.pixelSize: 18;
 					color: parent.hover ? colorTheme.lighterPrimaryColor : colorTheme.textColor;
 					font.underline: parent.hover;
-					text: parent.text;
+					text: model.text;
 				}
 
 				onClicked(e): {
 					if (this.hash)
 						return
 					e.preventDefault();
-					this._context.location.pushState({ section: this.href }, this.href, this.href) 
+					var a = this.path.split("/");
+					var state = {}
+					if (a[0])
+						state.page = a[0]
+					if (a[1])
+						state.section = a[1]
+					if (a[2])
+						state.element = a[2]
+
+					log("onClicked", this.path, a, state)
+					this._context.location.pushState(state, this.href, this.href) 
 				} 
 			}
 		}
