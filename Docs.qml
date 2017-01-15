@@ -45,6 +45,8 @@ HistoryPage {
 	}
 
 	Column {
+		width: parent.width < 840 ? parent.width : parent.width - 200;
+
 		DocViewer { id: content; }
 
 		SearchResults {
