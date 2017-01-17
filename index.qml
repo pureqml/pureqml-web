@@ -55,7 +55,6 @@ Item {
 
 		onPageNameChanged: {
 			var children = this.children
-			log("onPageNameChanged", value, "pages", children)
 			for (var i in children) {
 				if (children[i].url == value) {
 					this.currentIndex = i

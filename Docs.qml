@@ -5,14 +5,12 @@ HistoryPage {
 	property Object state: context.location.state;
 
 	onStateChanged: {
-		log("Docs onStateChanged", value)
 		if (value && value.page === "docs"){
+			content.visible = true
 			if (value.section)
 				dataLoader.url = "https://raw.githubusercontent.com/pureqml/pureqml-web/master/doc/json/" + (value.element ? value.section + "/" + value.element : value.section) + ".json"
 			else
 				dataLoader.url = "https://raw.githubusercontent.com/pureqml/pureqml-web/master/doc/json/core/Item.json"
-
-			log("new url", dataLoader.url)
 		}
 	}
 
@@ -33,8 +31,10 @@ HistoryPage {
 			var txt = text.toLowerCase()
 			for (var i in data) {
 				var item = data[i]
-				if (item.text.toLowerCase().indexOf(txt) > -1)
-					res.push({ "text": item.text, "ref": item.path })
+				if (item.text.toLowerCase().indexOf(txt) > -1) {
+					log("Found", item)
+					res.push({ "text": item.text, "path": item.path })
+				}
 			}
 			searchResults.fill(res)
 		}
@@ -52,16 +52,6 @@ HistoryPage {
 		SearchResults {
 			id: searchResults;
 			visible: !content.visible;
-
-			onChoosed(ref): {
-				if (!ref) {
-					log("ref is undefined")
-					return
-				}
-				content.visible = true
-				log("onChoosed", ref)
-				dataLoader.url = "https://raw.githubusercontent.com/pureqml/pureqml-web/master/doc/json/" + ref
-			}
 		}
 	}
 
@@ -92,7 +82,6 @@ HistoryPage {
 
 		onDataChanged: {
 			var data = JSON.parse(value)
-			log("onDataChanged", data)
 			content.fill(data)
 		}
 	}

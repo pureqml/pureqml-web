@@ -3,7 +3,7 @@ Rectangle {
 	property bool collapsed;
 	width: parent.width < 840 ? 100% : 200;
 	height: collapsed ? 40 : menuContent.height + 50;
-	color: "#FDD";// colorTheme.panelColor;
+	color: "#ECEFF1";// colorTheme.panelColor;
 	clip: true;
 
 	Behavior on height { Animation { duration: 300; } }
@@ -13,8 +13,8 @@ Rectangle {
 	WebItem {
 		width: 100%;
 		height: 40;
-		color: hover ? "#DFF" : "#DDF";
-		Behavior on background { Animation {}}
+		color: hover ? "#90A4AE" : "#ECEFF1";
+		Behavior on background { Animation { duration: 400; }}
 
 		onClicked: { leftMenuProto.collapsed = !leftMenuProto.collapsed; }
 
@@ -72,7 +72,6 @@ Rectangle {
 					if (a[2])
 						state.element = a[2]
 
-					log("onClicked", this.path, a, state)
 					this._context.location.pushState(state, this.href, this.href) 
 				} 
 			}

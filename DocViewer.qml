@@ -3,62 +3,44 @@ ContentColumn {
 
 	H2 {
 		id: nameText;
-		anchors.left: parent.left;
-		anchors.leftMargin: 10;
+		width: 100% - 40;
+		x: 20;
 		color: colorTheme.primaryColor;
 	}
 
-	PageColumn {
-		id: propertiesColumn;
-		title: "Properties";
-
-		DocKeyValueView { id: propertiesView; }
-	}
-
-	PageColumn {
-		id: aliasesColumn;
-		title: "Alias Properties";
-
-		DocKeyValueView { id: aliasesView; }
-	}
-
-	PageColumn {
-		id: signalsColumn;
-		title: "Signals";
-
-		DocKeyValueView { id: signalsView; }
-	}
-
-	PageColumn {
-		id: methodsColumn;
-		title: "Methods";
-
-		DocKeyValueView { id: methodsView; }
+	Text {
+		id: docText;
+		width: 100% - 40;
+		x: 20;
 	}
 
 	fill(data): {
 		var content = data.content
+		var output = ""
+
+		nameText.text = data.name
+		
 		if (!content) {
 			log("Skip no content")
+			for (var a in data) {
+				output = "<p>" + a + "<br>"
+				for (var b in data[a])
+					output += b + "<br>"
+				output += "</p>"
+			}
+			docText.text = output;
 			return
 		}
-		window.scrollTo(0, 0)
-		nameText.text = data.name
 
-		var properties = content["Properties"]
-		propertiesColumn.visible = properties 
-		propertiesView.fill(properties)
-
-		var aliases = content["Alias Properties"]
-		aliasesColumn.visible = aliases 
-		aliasesView.fill(aliases)
-
-		var signals = content["Signals"]
-		signalsColumn.visible = signals
-		signalsView.fill(signals)
-
-		var methods = content["Methods"]
-		methodsColumn.visible = methods
-		methodsView.fill(methods)
+		for (var a in content) {
+			output += '<h3 style="color:#43A047">' + a + '</h2><br>'
+			var p = content[a]
+			for (var b in p) {
+				var c = p[b]
+				output += '<p style="color:#424242">' + b + ' : <span style="color:#00897B">' + c.type + '</span><br>' + '<span style="color:#757575">' + c.text + '</span><br></p>'
+			}
+		}
+		docText.text = output;
+		return
 	}
 }

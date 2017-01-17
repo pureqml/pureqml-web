@@ -14,9 +14,10 @@ ContentColumn {
 		anchors.left: parent.left;
 		anchors.right: parent.right;
 		model: ListModel { }
-		delegate: WebItem {
+		delegate: WebLink {
 			width: parent.width;
 			height: 70;
+			href: model.path;
 
 			Text {
 				anchors.left: parent.left;
@@ -28,7 +29,19 @@ ContentColumn {
 				font.weight: 300;
 			}
 
-			onClicked: { searchResultsProto.choosed(this._local.model.ref) }
+			onClicked(e): {
+				e.preventDefault();
+				var a = this.href.split("/");
+				var state = {}
+				if (a[0])
+					state.page = a[0]
+				if (a[1])
+					state.section = a[1]
+				if (a[2])
+					state.element = a[2]
+
+				this._context.location.pushState(state, this.href, this.href) 
+			}
 		}
 	}
 
