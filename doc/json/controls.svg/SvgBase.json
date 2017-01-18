@@ -13,7 +13,6 @@
 			"externalTarget": { "text": "", "internal": false, "type": "" },
 			"_update": { "text": "@internal", "internal": false, "type": "" },
 			"style": { "text": "", "internal": false, "type": "" }
-		},
-
+		}
 	}
 }

@@ -23,7 +23,6 @@
 			"setProperty": { "text": "", "internal": false, "type": "" },
 			"remove": { "text": "", "internal": false, "type": "" },
 			"addChild": { "text": "", "internal": false, "type": "" }
-		},
-
+		}
 	}
 }

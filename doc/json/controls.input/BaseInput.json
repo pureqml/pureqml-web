@@ -19,7 +19,6 @@
 			"getTag": { "text": "returns tag for corresponding element", "internal": false, "type": "" },
 			"registerStyle": { "text": "", "internal": false, "type": "" },
 			"_updateSize": { "text": "@private", "internal": true, "type": "" }
-		},
-
+		}
 	}
 }

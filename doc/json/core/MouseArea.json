@@ -51,7 +51,6 @@
 			"updatePosition": { "text": "@private", "internal": true, "type": "" },
 			"onTouchStart": { "text": "@private", "internal": true, "type": "" },
 			"onTouchMove": { "text": "@private", "internal": true, "type": "" }
-		},
-
+		}
 	}
 }

@@ -4,7 +4,6 @@
 	"content": {
 		"Properties": {
 			"checked": { "text": "", "internal": false, "type": "bool" }
-		},
-
+		}
 	}
 }

@@ -19,7 +19,6 @@
 			"onEnabledChanged": { "text": "", "internal": false, "type": "" },
 			"onClickableChanged": { "text": "", "internal": false, "type": "" },
 			"onActiveHoverEnabledChanged": { "text": "", "internal": false, "type": "" }
-		},
-
+		}
 	}
 }

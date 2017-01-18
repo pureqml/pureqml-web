@@ -15,7 +15,6 @@
 		"Methods": {
 			"_processUpdates": { "text": "", "internal": false, "type": "" },
 			"_update": { "text": "", "internal": false, "type": "" }
-		},
-
+		}
 	}
 }

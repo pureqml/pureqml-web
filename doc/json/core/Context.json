@@ -23,7 +23,6 @@
 			"_processActions": { "text": "", "internal": false, "type": "" },
 			"scheduleAction": { "text": "", "internal": false, "type": "" },
 			"qsTr": { "text": "", "internal": false, "type": "" }
-		},
-
+		}
 	}
 }

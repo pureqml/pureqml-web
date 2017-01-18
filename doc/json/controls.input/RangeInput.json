@@ -12,7 +12,6 @@
 		"Methods": {
 			"_update": { "text": "@private", "internal": true, "type": "" },
 			"getTag": { "text": "returns tag for corresponding element", "internal": false, "type": "" }
-		},
-
+		}
 	}
 }

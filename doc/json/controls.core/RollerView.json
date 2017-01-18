@@ -15,7 +15,6 @@
 			"onKeyPressed": { "text": "", "internal": false, "type": "" },
 			"onOrientationChanged": { "text": "", "internal": false, "type": "" },
 			"onCurrentIndexChanged": { "text": "", "internal": false, "type": "" }
-		},
-
+		}
 	}
 }

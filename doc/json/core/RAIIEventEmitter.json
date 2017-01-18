@@ -7,7 +7,6 @@
 			"on": { "text": "", "internal": false, "type": "" },
 			"onListener": { "text": "", "internal": false, "type": "" },
 			"removeAllListeners": { "text": "", "internal": false, "type": "" }
-		},
-
+		}
 	}
 }

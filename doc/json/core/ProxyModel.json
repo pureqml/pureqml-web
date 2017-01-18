@@ -31,7 +31,6 @@
 			"_onRowsChanged": { "text": "@private", "internal": true, "type": "" },
 			"_onRowsRemoved": { "text": "@private", "internal": true, "type": "" },
 			"onCompleted": { "text": "@private", "internal": true, "type": "" }
-		},
-
+		}
 	}
 }

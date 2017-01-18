@@ -12,7 +12,6 @@
 			"_update": { "text": "", "internal": false, "type": "" },
 			"_updateCenter": { "text": "", "internal": false, "type": "" },
 			"getUserLocation": { "text": "", "internal": false, "type": "" }
-		},
-
+		}
 	}
 }

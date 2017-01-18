@@ -23,7 +23,6 @@
 			"get": { "text": "@private", "internal": true, "type": "" },
 			"poll": { "text": "@private", "internal": true, "type": "" },
 			"onStandartMappingChanged": { "text": "", "internal": false, "type": "" }
-		},
-
+		}
 	}
 }

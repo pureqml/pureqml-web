@@ -17,7 +17,6 @@
 			"_update": { "text": "@private", "internal": true, "type": "" },
 			"interpolate": { "text": "@private", "internal": true, "type": "" },
 			"complete": { "text": "@private", "internal": true, "type": "" }
-		},
-
+		}
 	}
 }

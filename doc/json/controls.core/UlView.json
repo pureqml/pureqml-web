@@ -20,7 +20,6 @@
 			"_update": { "text": "", "internal": false, "type": "" },
 			"_attach": { "text": "", "internal": false, "type": "" },
 			"onCompleted": { "text": "", "internal": false, "type": "" }
-		},
-
+		}
 	}
 }
