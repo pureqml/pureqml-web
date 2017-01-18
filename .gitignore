@@ -3,9 +3,9 @@
 *.swp
 *.swo
 *.swn
-doc/json/code_samples.json
 doc/json/pureqml-web.json
-doc/json/lessons.json
-doc/json/code_samples/*
 doc/json/pureqml-web/*
-doc/json/lessons/*
+doc/json/pureqml-web.code_samples.json
+doc/json/pureqml-web.code_samples/
+doc/json/pureqml-web.lessons.json
+doc/json/pureqml-web.lessons/
