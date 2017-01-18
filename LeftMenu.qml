@@ -1,10 +1,16 @@
 Rectangle {
 	id: leftMenuProto;
+	property bool hidable: parent.width < 840;
 	property bool collapsed;
-	width: parent.width < 840 ? 100% : 200;
-	height: collapsed ? 40 : menuContent.height + 50;
-	color: "#ECEFF1";// colorTheme.panelColor;
-	clip: true;
+	width: 256;
+	height: context.height;
+	color: colorTheme.panelColor;
+	border.width: 1;
+	border.color: "#999";
+	z: 1;
+
+	PositionMixin { value: PositionMixin.Fixed; }
+	OverflowMixin {	value: parent.recursiveVisible ? OverflowMixin.ScrollY : OverflowMixin.Hidden; }
 
 	Behavior on height { Animation { duration: 300; } }
 

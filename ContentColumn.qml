@@ -1,5 +1,5 @@
 Column {
-	width: parent.width < 840 ? parent.width : parent.width - 200;
+	width: parent.width < 840 ? 100% : 100% - 256;
 	signal fillMenu;
 	clip: true;
 

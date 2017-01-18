@@ -2,7 +2,7 @@ Rectangle {
 	signal search;
 	height: 50;
 	anchors.top: parent.top;
-	color: "#FAFAFA";// colorTheme.panelColor;
+	color: colorTheme.panelColor;
 
 	MaterialIcon {
 		anchors.verticalCenter: parent.verticalCenter;
@@ -20,8 +20,6 @@ Rectangle {
 		anchors.verticalCenter: parent.verticalCenter;
 		font.pixelSize: 18;
 		font.weight: 300;
-//		font.family: "Roboto Slab";
-		backgroundColor: "#FAFAFA";
 		placeholder: "Search";
 
 		onTextChanged: {
@@ -29,14 +27,6 @@ Rectangle {
 				searchTimer.restart() 
 		}
 	}
-
-	// Rectangle {
-	// 	height: 1;
-	// 	width: searchText.width;
-	// 	x: searchText.x;
-	// 	anchors.top: searchText.bottom;
-	// 	color: colorTheme.primaryColor;
-	// }
 
 	Timer {
 		id: searchTimer;

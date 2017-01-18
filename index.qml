@@ -32,7 +32,7 @@ Item {
 	PageStack {
 		id: pages;
 		y: 100;
-		width: parent.width;
+		width: 100%;
 		property string pageName;
 
 		About { }
