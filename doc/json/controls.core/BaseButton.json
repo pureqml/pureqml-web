@@ -7,13 +7,13 @@
 		},
 
 		"Signals": {
-			"triggered": { "text": "", "internal": false, "type": "" }
+			"triggered": { "text": "", "internal": false }
 		},
 
 		"Methods": {
-			"makeBlink": { "text": "", "internal": false, "type": "" },
-			"onSelectPressed": { "text": "", "internal": false, "type": "" },
-			"onClicked": { "text": "", "internal": false, "type": "" }
+			"makeBlink": { "text": "", "internal": false },
+			"onSelectPressed": { "text": "", "internal": false },
+			"onClicked": { "text": "", "internal": false }
 		}
 	}
 }

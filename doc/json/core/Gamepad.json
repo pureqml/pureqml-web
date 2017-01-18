@@ -14,15 +14,15 @@
 		},
 
 		"Signals": {
-			"axes": { "text": "emitted when one of the axes is changed", "internal": false, "type": "" },
-			"button": { "text": "emitted when any button is pressed", "internal": false, "type": "" }
+			"axes": { "text": "emitted when one of the axes is changed", "internal": false },
+			"button": { "text": "emitted when any button is pressed", "internal": false }
 		},
 
 		"Methods": {
-			"_set": { "text": "@private", "internal": true, "type": "" },
-			"get": { "text": "@private", "internal": true, "type": "" },
-			"poll": { "text": "@private", "internal": true, "type": "" },
-			"onStandartMappingChanged": { "text": "", "internal": false, "type": "" }
+			"_set": { "text": "@private", "internal": true },
+			"get": { "text": "@private", "internal": true },
+			"poll": { "text": "@private", "internal": true },
+			"onStandartMappingChanged": { "text": "", "internal": false }
 		}
 	}
 }

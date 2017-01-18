@@ -5,21 +5,21 @@
 		"Properties": {
 			"text": { "text": "text to be displayed", "internal": false, "type": "string" },
 			"color": { "text": "color of the text", "internal": false, "type": "color" },
-			"shadow": { "text": "", "internal": false, "type": "Shadow" },
-			"font": { "text": "", "internal": false, "type": "Font" },
+			"shadow": { "text": "", "ref": "core.Shadow", "internal": false, "type": "Shadow" },
+			"font": { "text": "", "ref": "core.Font", "internal": false, "type": "Font" },
 			"paintedWidth": { "text": "real width of the text without any layout applied", "internal": false, "type": "int" },
 			"paintedHeight": { "text": "real height of this text without any layout applied", "internal": false, "type": "int" }
 		},
 
 		"Methods": {
-			"_setText": { "text": "", "internal": false, "type": "" },
-			"onChanged": { "text": "", "internal": false, "type": "" },
-			"on": { "text": "", "internal": false, "type": "" },
-			"_updateStyle": { "text": "", "internal": false, "type": "" },
-			"_enableSizeUpdate": { "text": "", "internal": false, "type": "" },
-			"_updateSize": { "text": "", "internal": false, "type": "" },
-			"_updateSizeImpl": { "text": "", "internal": false, "type": "" },
-			"_update": { "text": "", "internal": false, "type": "" }
+			"_setText": { "text": "", "internal": false },
+			"onChanged": { "text": "", "internal": false },
+			"on": { "text": "", "internal": false },
+			"_updateStyle": { "text": "", "internal": false },
+			"_enableSizeUpdate": { "text": "", "internal": false },
+			"_updateSize": { "text": "", "internal": false },
+			"_updateSizeImpl": { "text": "", "internal": false },
+			"_update": { "text": "", "internal": false }
 		}
 	}
 }

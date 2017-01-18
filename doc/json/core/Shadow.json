@@ -11,9 +11,9 @@
 		},
 
 		"Methods": {
-			"_update": { "text": "@private", "internal": true, "type": "" },
-			"_empty": { "text": "@private", "internal": true, "type": "" },
-			"_getFilterStyle": { "text": "@private", "internal": true, "type": "" }
+			"_update": { "text": "@private", "internal": true },
+			"_empty": { "text": "@private", "internal": true },
+			"_getFilterStyle": { "text": "@private", "internal": true }
 		}
 	}
 }

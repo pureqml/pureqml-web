@@ -15,10 +15,10 @@
 		},
 
 		"Methods": {
-			"_moveHandler": { "text": "", "internal": false, "type": "" },
-			"_downHandler": { "text": "", "internal": false, "type": "" },
-			"_bindPressed": { "text": "", "internal": false, "type": "" },
-			"onEnabledChanged": { "text": "", "internal": false, "type": "" }
+			"_moveHandler": { "text": "", "internal": false },
+			"_downHandler": { "text": "", "internal": false },
+			"_bindPressed": { "text": "", "internal": false },
+			"onEnabledChanged": { "text": "", "internal": false }
 		}
 	}
 }

@@ -3,16 +3,16 @@
 
 	"content": {
 		"Signals": {
-			"saved": { "text": "", "internal": false, "type": "" },
-			"loaded": { "text": "", "internal": false, "type": "" },
-			"optionUpdated": { "text": "", "internal": false, "type": "" }
+			"saved": { "text": "", "internal": false },
+			"loaded": { "text": "", "internal": false },
+			"optionUpdated": { "text": "", "internal": false }
 		},
 
 		"Methods": {
-			"load": { "text": "", "internal": false, "type": "" },
-			"getValue": { "text": "", "internal": false, "type": "" },
-			"setValue": { "text": "", "internal": false, "type": "" },
-			"onCompleted": { "text": "", "internal": false, "type": "" }
+			"load": { "text": "", "internal": false },
+			"getValue": { "text": "", "internal": false },
+			"setValue": { "text": "", "internal": false },
+			"onCompleted": { "text": "", "internal": false }
 		}
 	}
 }

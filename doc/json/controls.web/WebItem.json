@@ -3,22 +3,22 @@
 
 	"content": {
 		"Properties": {
-			"hoverMixin": { "text": "hover mixin object proveds common API for mouse properties", "internal": false, "type": "Mixin" },
+			"hoverMixin": { "text": "hover mixin object proveds common API for mouse properties", "ref": "controls.web.Mixin", "internal": false, "type": "Mixin" },
 			"position": { "text": "position mode property", "internal": false, "type": "string" },
 			"title": { "text": "title attribute property", "internal": false, "type": "string" }
 		},
 
 		"Alias Properties": {
-			"hover": { "text": "mouse hovered flag", "internal": false, "type": "" },
-			"clickable": { "text": "flag which enables or disables mouse click event handling", "internal": false, "type": "" },
-			"hoverable": { "text": "flag which enables or disables mouse hover event handling", "internal": false, "type": "" },
-			"cursor": { "text": "mouse cursor property", "internal": false, "type": "" },
-			"activeHover": { "text": "flag which becames 'true' on 'mouseover' event and becames 'false' on 'mouseout' event", "internal": false, "type": "" },
-			"activeHoverEnabled": { "text": "flag which enables or disables 'mouseover' and 'mouseout' event handling", "internal": false, "type": "" }
+			"hover": { "text": "mouse hovered flag", "internal": false },
+			"clickable": { "text": "flag which enables or disables mouse click event handling", "internal": false },
+			"hoverable": { "text": "flag which enables or disables mouse hover event handling", "internal": false },
+			"cursor": { "text": "mouse cursor property", "internal": false },
+			"activeHover": { "text": "flag which becames 'true' on 'mouseover' event and becames 'false' on 'mouseout' event", "internal": false },
+			"activeHoverEnabled": { "text": "flag which enables or disables 'mouseover' and 'mouseout' event handling", "internal": false }
 		},
 
 		"Methods": {
-			"_update": { "text": "@private", "internal": true, "type": "" }
+			"_update": { "text": "@private", "internal": true }
 		}
 	}
 }

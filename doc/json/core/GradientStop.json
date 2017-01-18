@@ -8,8 +8,8 @@
 		},
 
 		"Methods": {
-			"_update": { "text": "", "internal": false, "type": "" },
-			"_getDeclaration": { "text": "", "internal": false, "type": "" }
+			"_update": { "text": "", "internal": false },
+			"_getDeclaration": { "text": "", "internal": false }
 		}
 	}
 }

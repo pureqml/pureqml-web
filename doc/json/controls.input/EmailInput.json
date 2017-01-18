@@ -7,7 +7,7 @@
 		},
 
 		"Methods": {
-			"onTextChanged": { "text": "", "internal": false, "type": "" }
+			"onTextChanged": { "text": "", "internal": false }
 		}
 	}
 }

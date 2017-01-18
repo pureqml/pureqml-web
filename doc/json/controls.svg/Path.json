@@ -13,9 +13,9 @@
 		},
 
 		"Methods": {
-			"getTag": { "text": "returns tag for corresponding element", "internal": false, "type": "" },
-			"_update": { "text": "@internal", "internal": false, "type": "" },
-			"buildPath": { "text": "", "internal": false, "type": "" }
+			"getTag": { "text": "returns tag for corresponding element", "internal": false },
+			"_update": { "text": "@internal", "internal": false },
+			"buildPath": { "text": "", "internal": false }
 		}
 	}
 }

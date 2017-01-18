@@ -11,14 +11,14 @@
 			"hueRotate": { "text": "applies a hue rotation on the image. The value defines the number of degrees around the color circle the image samples will be adjusted", "internal": false, "type": "real" },
 			"invert": { "text": "inverts the samples in the image", "internal": false, "type": "real" },
 			"saturate": { "text": "saturates the image", "internal": false, "type": "real" },
-			"shadow": { "text": "object property for the shadow adjusting", "internal": false, "type": "Shadow" }
+			"shadow": { "text": "object property for the shadow adjusting", "ref": "core.Shadow", "internal": false, "type": "Shadow" }
 		},
 
 		"Methods": {
-			"_addStyle": { "text": "@private", "internal": true, "type": "" },
-			"_getFilterStyle": { "text": "@private", "internal": true, "type": "" },
-			"_updateStyle": { "text": "@private", "internal": true, "type": "" },
-			"_update": { "text": "@private", "internal": true, "type": "" }
+			"_addStyle": { "text": "@private", "internal": true },
+			"_getFilterStyle": { "text": "@private", "internal": true },
+			"_updateStyle": { "text": "@private", "internal": true },
+			"_update": { "text": "@private", "internal": true }
 		}
 	}
 }

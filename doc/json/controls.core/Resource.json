@@ -8,7 +8,7 @@
 		},
 
 		"Methods": {
-			"onUrlChanged": { "text": "", "internal": false, "type": "" }
+			"onUrlChanged": { "text": "", "internal": false }
 		}
 	}
 }

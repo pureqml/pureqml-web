@@ -8,9 +8,9 @@
 		},
 
 		"Methods": {
-			"_update": { "text": "", "internal": false, "type": "" },
-			"getTag": { "text": "", "internal": false, "type": "" },
-			"registerStyle": { "text": "", "internal": false, "type": "" }
+			"_update": { "text": "", "internal": false },
+			"getTag": { "text": "", "internal": false },
+			"registerStyle": { "text": "", "internal": false }
 		}
 	}
 }

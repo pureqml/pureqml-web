@@ -3,8 +3,8 @@
 
 	"content": {
 		"Methods": {
-			"init": { "text": "", "internal": false, "type": "" },
-			"registerStyle": { "text": "", "internal": false, "type": "" }
+			"init": { "text": "", "internal": false },
+			"registerStyle": { "text": "", "internal": false }
 		}
 	}
 }

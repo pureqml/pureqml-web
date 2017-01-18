@@ -10,12 +10,12 @@
 		},
 
 		"Methods": {
-			"onX1Changed": { "text": "", "internal": false, "type": "" },
-			"onX2Changed": { "text": "", "internal": false, "type": "" },
-			"onY1Changed": { "text": "", "internal": false, "type": "" },
-			"onY2Changed": { "text": "", "internal": false, "type": "" },
-			"onOrientationChanged": { "text": "", "internal": false, "type": "" },
-			"update": { "text": "", "internal": false, "type": "" }
+			"onX1Changed": { "text": "", "internal": false },
+			"onX2Changed": { "text": "", "internal": false },
+			"onY1Changed": { "text": "", "internal": false },
+			"onY2Changed": { "text": "", "internal": false },
+			"onOrientationChanged": { "text": "", "internal": false },
+			"update": { "text": "", "internal": false }
 		}
 	}
 }

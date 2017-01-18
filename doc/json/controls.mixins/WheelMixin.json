@@ -7,12 +7,12 @@
 		},
 
 		"Signals": {
-			"wheel": { "text": "", "internal": false, "type": "" }
+			"wheel": { "text": "", "internal": false }
 		},
 
 		"Methods": {
-			"_bindWheel": { "text": "", "internal": false, "type": "" },
-			"onEnabledChanged": { "text": "", "internal": false, "type": "" }
+			"_bindWheel": { "text": "", "internal": false },
+			"onEnabledChanged": { "text": "", "internal": false }
 		}
 	}
 }

@@ -9,9 +9,9 @@
 		},
 
 		"Methods": {
-			"_update": { "text": "", "internal": false, "type": "" },
-			"_updateCenter": { "text": "", "internal": false, "type": "" },
-			"getUserLocation": { "text": "", "internal": false, "type": "" }
+			"_update": { "text": "", "internal": false },
+			"_updateCenter": { "text": "", "internal": false },
+			"getUserLocation": { "text": "", "internal": false }
 		}
 	}
 }

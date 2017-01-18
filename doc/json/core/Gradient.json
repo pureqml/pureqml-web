@@ -7,10 +7,10 @@
 		},
 
 		"Methods": {
-			"addChild": { "text": "", "internal": false, "type": "" },
-			"_update": { "text": "", "internal": false, "type": "" },
-			"_getDeclaration": { "text": "", "internal": false, "type": "" },
-			"onCompleted": { "text": "", "internal": false, "type": "" }
+			"addChild": { "text": "", "internal": false },
+			"_update": { "text": "", "internal": false },
+			"_getDeclaration": { "text": "", "internal": false },
+			"onCompleted": { "text": "", "internal": false }
 		}
 	}
 }

@@ -3,10 +3,10 @@
 
 	"content": {
 		"Methods": {
-			"wallGet": { "text": "", "internal": false, "type": "" },
-			"wallSearch": { "text": "", "internal": false, "type": "" },
-			"wallGetComments": { "text": "", "internal": false, "type": "" },
-			"vkMethodRequest": { "text": "", "internal": false, "type": "" }
+			"wallGet": { "text": "", "internal": false },
+			"wallSearch": { "text": "", "internal": false },
+			"wallGetComments": { "text": "", "internal": false },
+			"vkMethodRequest": { "text": "", "internal": false }
 		}
 	}
 }

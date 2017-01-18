@@ -20,15 +20,15 @@
 			"clip": { "text": "", "internal": false, "type": "bool" },
 			"z": { "text": "", "internal": false, "type": "int" },
 			"color": { "text": "", "internal": false, "type": "color" },
-			"font": { "text": "", "internal": false, "type": "Font" },
-			"margin": { "text": "", "internal": false, "type": "Box" },
-			"padding": { "text": "", "internal": false, "type": "Box" }
+			"font": { "text": "", "ref": "controls.web.Font", "internal": false, "type": "Font" },
+			"margin": { "text": "", "ref": "controls.web.Box", "internal": false, "type": "Box" },
+			"padding": { "text": "", "ref": "controls.web.Box", "internal": false, "type": "Box" }
 		},
 
 		"Methods": {
-			"style": { "text": "", "internal": false, "type": "" },
-			"_updateStyle": { "text": "@const", "internal": false, "type": "" },
-			"_update": { "text": "", "internal": false, "type": "" }
+			"style": { "text": "", "internal": false },
+			"_updateStyle": { "text": "@const", "internal": false },
+			"_update": { "text": "", "internal": false }
 		}
 	}
 }

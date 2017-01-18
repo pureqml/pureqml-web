@@ -10,13 +10,13 @@
 		},
 
 		"Methods": {
-			"move": { "text": "", "internal": false, "type": "" },
-			"onKeyPressed": { "text": "", "internal": false, "type": "" },
-			"getItemPosition": { "text": "", "internal": false, "type": "" },
-			"indexAt": { "text": "", "internal": false, "type": "" },
-			"positionViewAtIndex": { "text": "", "internal": false, "type": "" },
-			"_layout": { "text": "", "internal": false, "type": "" },
-			"onFlowChanged": { "text": "", "internal": false, "type": "" }
+			"move": { "text": "", "internal": false },
+			"onKeyPressed": { "text": "", "internal": false },
+			"getItemPosition": { "text": "", "internal": false },
+			"indexAt": { "text": "", "internal": false },
+			"positionViewAtIndex": { "text": "", "internal": false },
+			"_layout": { "text": "", "internal": false },
+			"onFlowChanged": { "text": "", "internal": false }
 		}
 	}
 }

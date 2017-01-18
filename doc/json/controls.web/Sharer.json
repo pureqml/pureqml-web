@@ -7,9 +7,9 @@
 		},
 
 		"Methods": {
-			"_update": { "text": "", "internal": false, "type": "" },
-			"open": { "text": "", "internal": false, "type": "" },
-			"redirect": { "text": "", "internal": false, "type": "" }
+			"_update": { "text": "", "internal": false },
+			"open": { "text": "", "internal": false },
+			"redirect": { "text": "", "internal": false }
 		}
 	}
 }

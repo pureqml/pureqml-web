@@ -3,10 +3,10 @@
 
 	"content": {
 		"Methods": {
-			"discard": { "text": "", "internal": false, "type": "" },
-			"on": { "text": "", "internal": false, "type": "" },
-			"onListener": { "text": "", "internal": false, "type": "" },
-			"removeAllListeners": { "text": "", "internal": false, "type": "" }
+			"discard": { "text": "", "internal": false },
+			"on": { "text": "", "internal": false },
+			"onListener": { "text": "", "internal": false },
+			"removeAllListeners": { "text": "", "internal": false }
 		}
 	}
 }

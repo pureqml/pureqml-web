@@ -8,10 +8,10 @@
 		},
 
 		"Methods": {
-			"onCurrentIndexChanged": { "text": "@private", "internal": true, "type": "" },
-			"onActiveFocusChanged": { "text": "@private", "internal": true, "type": "" },
-			"_layout": { "text": "@private", "internal": true, "type": "" },
-			"addChild": { "text": "@private", "internal": true, "type": "" }
+			"onCurrentIndexChanged": { "text": "@private", "internal": true },
+			"onActiveFocusChanged": { "text": "@private", "internal": true },
+			"_layout": { "text": "@private", "internal": true },
+			"addChild": { "text": "@private", "internal": true }
 		}
 	}
 }

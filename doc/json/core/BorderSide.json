@@ -10,8 +10,8 @@ Component aimed to adjust individual preferences of each border side", "internal
 		},
 
 		"Methods": {
-			"_updateStyle": { "text": "", "internal": false, "type": "" },
-			"_update": { "text": "", "internal": false, "type": "" }
+			"_updateStyle": { "text": "", "internal": false },
+			"_update": { "text": "", "internal": false }
 		}
 	}
 }

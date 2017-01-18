@@ -7,7 +7,7 @@
 		},
 
 		"Methods": {
-			"toScreen": { "text": "", "internal": false, "type": "" }
+			"toScreen": { "text": "", "internal": false }
 		}
 	}
 }

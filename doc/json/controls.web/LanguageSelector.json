@@ -9,8 +9,8 @@
 		},
 
 		"Methods": {
-			"addLanguage": { "text": "", "internal": false, "type": "" },
-			"setLanguageByIndex": { "text": "", "internal": false, "type": "" }
+			"addLanguage": { "text": "", "internal": false },
+			"setLanguageByIndex": { "text": "", "internal": false }
 		}
 	}
 }

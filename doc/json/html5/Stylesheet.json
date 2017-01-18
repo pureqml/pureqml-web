@@ -3,9 +3,9 @@
 
 	"content": {
 		"Methods": {
-			"mangleSelector": { "text": "", "internal": false, "type": "" },
-			"mangleRule": { "text": "", "internal": false, "type": "" },
-			"addRule": { "text": "", "internal": false, "type": "" }
+			"mangleSelector": { "text": "", "internal": false },
+			"mangleRule": { "text": "", "internal": false },
+			"addRule": { "text": "", "internal": false }
 		}
 	}
 }

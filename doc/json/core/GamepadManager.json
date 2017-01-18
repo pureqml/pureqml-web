@@ -11,16 +11,16 @@
 		},
 
 		"Signals": {
-			"connected": { "text": "emitted when any gamepad is connected", "internal": false, "type": "" },
-			"disconnected": { "text": "emitted when gamepad is disconnected", "internal": false, "type": "" }
+			"connected": { "text": "emitted when any gamepad is connected", "internal": false },
+			"disconnected": { "text": "emitted when gamepad is disconnected", "internal": false }
 		},
 
 		"Methods": {
-			"pollGamepads": { "text": "@private", "internal": true, "type": "" },
-			"gpButtonCheckLoop": { "text": "@private", "internal": true, "type": "" },
-			"gamepadConnectedHandler": { "text": "@private", "internal": true, "type": "" },
-			"gamepadDisconnectedHandler": { "text": "@private", "internal": true, "type": "" },
-			"onCompleted": { "text": "@private", "internal": true, "type": "" }
+			"pollGamepads": { "text": "@private", "internal": true },
+			"gpButtonCheckLoop": { "text": "@private", "internal": true },
+			"gamepadConnectedHandler": { "text": "@private", "internal": true },
+			"gamepadDisconnectedHandler": { "text": "@private", "internal": true },
+			"onCompleted": { "text": "@private", "internal": true }
 		}
 	}
 }

@@ -14,7 +14,7 @@
 		},
 
 		"Methods": {
-			"_update": { "text": "@private", "internal": true, "type": "" }
+			"_update": { "text": "@private", "internal": true }
 		}
 	}
 }

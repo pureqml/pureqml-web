@@ -3,8 +3,8 @@
 
 	"content": {
 		"Methods": {
-			"createElement": { "text": "", "internal": false, "type": "" },
-			"_init": { "text": "", "internal": false, "type": "" }
+			"createElement": { "text": "", "internal": false },
+			"_init": { "text": "", "internal": false }
 		}
 	}
 }

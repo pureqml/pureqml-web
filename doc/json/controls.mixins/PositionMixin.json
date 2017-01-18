@@ -3,7 +3,7 @@
 
 	"content": {
 		"Methods": {
-			"_update": { "text": "@internal", "internal": false, "type": "" }
+			"_update": { "text": "@internal", "internal": false }
 		}
 	}
 }

@@ -3,12 +3,12 @@
 
 	"content": {
 		"Methods": {
-			"discard": { "text": "", "internal": false, "type": "" },
-			"on": { "text": "", "internal": false, "type": "" },
-			"connectOn": { "text": "", "internal": false, "type": "" },
-			"emit": { "text": "", "internal": false, "type": "" },
-			"removeAllListeners": { "text": "", "internal": false, "type": "" },
-			"removeListener": { "text": "", "internal": false, "type": "" }
+			"discard": { "text": "", "internal": false },
+			"on": { "text": "", "internal": false },
+			"connectOn": { "text": "", "internal": false },
+			"emit": { "text": "", "internal": false },
+			"removeAllListeners": { "text": "", "internal": false },
+			"removeListener": { "text": "", "internal": false }
 		}
 	}
 }

@@ -7,22 +7,22 @@
 		},
 
 		"Signals": {
-			"reset": { "text": "", "internal": false, "type": "" },
-			"rowsInserted": { "text": "", "internal": false, "type": "" },
-			"rowsChanged": { "text": "", "internal": false, "type": "" },
-			"rowsRemoved": { "text": "", "internal": false, "type": "" }
+			"reset": { "text": "", "internal": false },
+			"rowsInserted": { "text": "", "internal": false },
+			"rowsChanged": { "text": "", "internal": false },
+			"rowsRemoved": { "text": "", "internal": false }
 		},
 
 		"Methods": {
-			"assign": { "text": "", "internal": false, "type": "" },
-			"clear": { "text": "", "internal": false, "type": "" },
-			"append": { "text": "", "internal": false, "type": "" },
-			"insert": { "text": "", "internal": false, "type": "" },
-			"set": { "text": "", "internal": false, "type": "" },
-			"get": { "text": "", "internal": false, "type": "" },
-			"setProperty": { "text": "", "internal": false, "type": "" },
-			"remove": { "text": "", "internal": false, "type": "" },
-			"addChild": { "text": "", "internal": false, "type": "" }
+			"assign": { "text": "", "internal": false },
+			"clear": { "text": "", "internal": false },
+			"append": { "text": "", "internal": false },
+			"insert": { "text": "", "internal": false },
+			"set": { "text": "", "internal": false },
+			"get": { "text": "", "internal": false },
+			"setProperty": { "text": "", "internal": false },
+			"remove": { "text": "", "internal": false },
+			"addChild": { "text": "", "internal": false }
 		}
 	}
 }

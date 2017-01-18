@@ -9,11 +9,11 @@
 		},
 
 		"Methods": {
-			"onPositionChanged": { "text": "", "internal": false, "type": "" },
-			"addChild": { "text": "", "internal": false, "type": "" },
-			"_layout": { "text": "", "internal": false, "type": "" },
-			"onSpacingChanged": { "text": "", "internal": false, "type": "" },
-			"onVerticalChanged": { "text": "", "internal": false, "type": "" }
+			"onPositionChanged": { "text": "", "internal": false },
+			"addChild": { "text": "", "internal": false },
+			"_layout": { "text": "", "internal": false },
+			"onSpacingChanged": { "text": "", "internal": false },
+			"onVerticalChanged": { "text": "", "internal": false }
 		}
 	}
 }

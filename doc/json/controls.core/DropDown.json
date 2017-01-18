@@ -3,7 +3,7 @@
 
 	"content": {
 		"Properties": {
-			"font": { "text": "", "internal": false, "type": "Font" },
+			"font": { "text": "", "ref": "controls.core.Font", "internal": false, "type": "Font" },
 			"color": { "text": "", "internal": false, "type": "Color" },
 			"currentIndex": { "text": "", "internal": false, "type": "int" },
 			"count": { "text": "", "internal": false, "type": "int" },
@@ -12,14 +12,14 @@
 		},
 
 		"Methods": {
-			"_update": { "text": "@private", "internal": true, "type": "" },
-			"getTag": { "text": "@private", "internal": true, "type": "" },
-			"registerStyle": { "text": "@private", "internal": true, "type": "" },
-			"_updateSize": { "text": "@private", "internal": true, "type": "" },
-			"append": { "text": "add option into select", "internal": false, "type": "" },
-			"clear": { "text": "", "internal": false, "type": "" },
-			"onCountChanged": { "text": "", "internal": false, "type": "" },
-			"remove": { "text": "", "internal": false, "type": "" }
+			"_update": { "text": "@private", "internal": true },
+			"getTag": { "text": "@private", "internal": true },
+			"registerStyle": { "text": "@private", "internal": true },
+			"_updateSize": { "text": "@private", "internal": true },
+			"append": { "text": "add option into select", "internal": false },
+			"clear": { "text": "", "internal": false },
+			"onCountChanged": { "text": "", "internal": false },
+			"remove": { "text": "", "internal": false }
 		}
 	}
 }

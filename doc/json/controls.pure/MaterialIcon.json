@@ -3,8 +3,8 @@
 
 	"content": {
 		"Alias Properties": {
-			"icon": { "text": "", "internal": false, "type": "" },
-			"size": { "text": "", "internal": false, "type": "" }
+			"icon": { "text": "", "internal": false },
+			"size": { "text": "", "internal": false }
 		}
 	}
 }

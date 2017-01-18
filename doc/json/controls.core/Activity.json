@@ -10,18 +10,18 @@
 		},
 
 		"Signals": {
-			"started": { "text": "", "internal": false, "type": "" },
-			"stopped": { "text": "", "internal": false, "type": "" }
+			"started": { "text": "", "internal": false },
+			"stopped": { "text": "", "internal": false }
 		},
 
 		"Methods": {
-			"isActivity": { "text": "", "internal": false, "type": "" },
-			"isAnyActiveInContext": { "text": "", "internal": false, "type": "" },
-			"closeAll": { "text": "", "internal": false, "type": "" },
-			"closeParentActivities": { "text": "", "internal": false, "type": "" },
-			"start": { "text": "", "internal": false, "type": "" },
-			"stop": { "text": "", "internal": false, "type": "" },
-			"onBackPressed": { "text": "", "internal": false, "type": "" }
+			"isActivity": { "text": "", "internal": false },
+			"isAnyActiveInContext": { "text": "", "internal": false },
+			"closeAll": { "text": "", "internal": false },
+			"closeParentActivities": { "text": "", "internal": false },
+			"start": { "text": "", "internal": false },
+			"stop": { "text": "", "internal": false },
+			"onBackPressed": { "text": "", "internal": false }
 		}
 	}
 }

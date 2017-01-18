@@ -9,12 +9,12 @@
 		},
 
 		"Methods": {
-			"onWidthChanged": { "text": "", "internal": false, "type": "" },
-			"onHeightChanged": { "text": "", "internal": false, "type": "" },
-			"onFlowChanged": { "text": "", "internal": false, "type": "" },
-			"_layout": { "text": "", "internal": false, "type": "" },
-			"addChild": { "text": "", "internal": false, "type": "" },
-			"_update": { "text": "", "internal": false, "type": "" }
+			"onWidthChanged": { "text": "", "internal": false },
+			"onHeightChanged": { "text": "", "internal": false },
+			"onFlowChanged": { "text": "", "internal": false },
+			"_layout": { "text": "", "internal": false },
+			"addChild": { "text": "", "internal": false },
+			"_update": { "text": "", "internal": false }
 		}
 	}
 }

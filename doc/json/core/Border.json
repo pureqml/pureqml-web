@@ -6,14 +6,14 @@
 			"width": { "text": "width of the border", "internal": false, "type": "int" },
 			"color": { "text": "color of the border", "internal": false, "type": "color" },
 			"style": { "text": "style of the border", "internal": false, "type": "string" },
-			"left": { "text": "", "internal": false, "type": "BorderSide" },
-			"right": { "text": "", "internal": false, "type": "BorderSide" },
-			"top": { "text": "", "internal": false, "type": "BorderSide" },
-			"bottom": { "text": "", "internal": false, "type": "BorderSide" }
+			"left": { "text": "", "ref": "core.BorderSide", "internal": false, "type": "BorderSide" },
+			"right": { "text": "", "ref": "core.BorderSide", "internal": false, "type": "BorderSide" },
+			"top": { "text": "", "ref": "core.BorderSide", "internal": false, "type": "BorderSide" },
+			"bottom": { "text": "", "ref": "core.BorderSide", "internal": false, "type": "BorderSide" }
 		},
 
 		"Methods": {
-			"_update": { "text": "", "internal": false, "type": "" }
+			"_update": { "text": "", "internal": false }
 		}
 	}
 }

@@ -10,8 +10,8 @@
 		},
 
 		"Methods": {
-			"onHorizontalSwiped": { "text": "", "internal": false, "type": "" },
-			"onMouseMove": { "text": "", "internal": false, "type": "" }
+			"onHorizontalSwiped": { "text": "", "internal": false },
+			"onMouseMove": { "text": "", "internal": false }
 		}
 	}
 }

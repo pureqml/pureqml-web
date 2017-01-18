@@ -9,10 +9,10 @@
 		},
 
 		"Methods": {
-			"_onError": { "text": "", "internal": false, "type": "" },
-			"_load": { "text": "", "internal": false, "type": "" },
-			"load": { "text": "", "internal": false, "type": "" },
-			"_update": { "text": "", "internal": false, "type": "" }
+			"_onError": { "text": "", "internal": false },
+			"_load": { "text": "", "internal": false },
+			"load": { "text": "", "internal": false },
+			"_update": { "text": "", "internal": false }
 		}
 	}
 }

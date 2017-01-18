@@ -3,7 +3,7 @@
 
 	"content": {
 		"Methods": {
-			"createElement": { "text": "", "internal": false, "type": "" }
+			"createElement": { "text": "", "internal": false }
 		}
 	}
 }

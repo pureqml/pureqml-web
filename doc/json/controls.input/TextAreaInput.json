@@ -7,9 +7,9 @@
 		},
 
 		"Methods": {
-			"_update": { "text": "", "internal": false, "type": "" },
-			"getTag": { "text": "returns tag for corresponding element", "internal": false, "type": "" },
-			"registerStyle": { "text": "", "internal": false, "type": "" }
+			"_update": { "text": "", "internal": false },
+			"getTag": { "text": "returns tag for corresponding element", "internal": false },
+			"registerStyle": { "text": "", "internal": false }
 		}
 	}
 }

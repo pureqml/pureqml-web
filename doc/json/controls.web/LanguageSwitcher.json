@@ -9,15 +9,15 @@
 		},
 
 		"Signals": {
-			"languageChanged": { "text": "", "internal": false, "type": "" }
+			"languageChanged": { "text": "", "internal": false }
 		},
 
 		"Methods": {
-			"addLanguage": { "text": "", "internal": false, "type": "" },
-			"onCountChanged": { "text": "", "internal": false, "type": "" },
-			"onClicked": { "text": "", "internal": false, "type": "" },
-			"onCurrentIndexChanged": { "text": "", "internal": false, "type": "" },
-			"onCompleted": { "text": "", "internal": false, "type": "" }
+			"addLanguage": { "text": "", "internal": false },
+			"onCountChanged": { "text": "", "internal": false },
+			"onClicked": { "text": "", "internal": false },
+			"onCurrentIndexChanged": { "text": "", "internal": false },
+			"onCompleted": { "text": "", "internal": false }
 		}
 	}
 }

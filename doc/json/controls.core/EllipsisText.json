@@ -3,7 +3,7 @@
 
 	"content": {
 		"Methods": {
-			"onPaintedWidthChanged": { "text": "", "internal": false, "type": "" }
+			"onPaintedWidthChanged": { "text": "", "internal": false }
 		}
 	}
 }
