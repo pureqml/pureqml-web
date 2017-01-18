@@ -1,0 +1,15 @@
+{
+	"name": "controls.mixins.HoverMixin",
+
+	"content": {
+		"Methods": {
+			"onCursorChanged": { "text": "", "internal": false, "type": "" },
+			"_bindClick": { "text": "", "internal": false, "type": "" },
+			"_bindHover": { "text": "", "internal": false, "type": "" },
+			"_bindActiveHover": { "text": "", "internal": false, "type": "" },
+			"onEnabledChanged": { "text": "", "internal": false, "type": "" },
+			"onClickableChanged": { "text": "", "internal": false, "type": "" },
+			"onActiveHoverEnabledChanged": { "text": "", "internal": false, "type": "" }
+		}
+	}
+}

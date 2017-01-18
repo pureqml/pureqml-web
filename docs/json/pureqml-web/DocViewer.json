@@ -1,0 +1,9 @@
+{
+	"name": "pureqml-web.DocViewer",
+
+	"content": {
+		"Methods": {
+			"fill": { "text": "", "internal": false, "type": "" }
+		}
+	}
+}

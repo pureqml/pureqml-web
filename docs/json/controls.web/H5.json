@@ -1,0 +1,10 @@
+{
+	"name": "controls.web.H5",
+
+	"content": {
+		"Methods": {
+			"getTag": { "text": "returns tag for corresponding element", "internal": false, "type": "" },
+			"registerStyle": { "text": "", "internal": false, "type": "" }
+		}
+	}
+}

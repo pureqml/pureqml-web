@@ -1,6 +1,0 @@
-{
-	"canvas": {
-		"Canvas": "canvas/Canvas.json",
-		"CurveLine": "canvas/CurveLine.json"
-	}
-}

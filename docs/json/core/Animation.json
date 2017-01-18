@@ -1,0 +1,14 @@
+{
+	"name": "core.Animation",
+
+	"content": {
+		"Methods": {
+			"disable": { "text": "disable animation.", "internal": false, "type": "" },
+			"enable": { "text": "enable animation.", "internal": false, "type": "" },
+			"enabled": { "text": "returns true if animation is enabled", "internal": false, "type": "" },
+			"_update": { "text": "@private", "internal": true, "type": "" },
+			"interpolate": { "text": "@private", "internal": true, "type": "" },
+			"complete": { "text": "@private", "internal": true, "type": "" }
+		}
+	}
+}

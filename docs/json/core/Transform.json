@@ -1,0 +1,9 @@
+{
+	"name": "core.Transform",
+
+	"content": {
+		"Methods": {
+			"_update": { "text": "", "internal": false, "type": "" }
+		}
+	}
+}

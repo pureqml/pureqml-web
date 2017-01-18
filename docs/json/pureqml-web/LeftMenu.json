@@ -1,0 +1,9 @@
+{
+	"name": "pureqml-web.LeftMenu",
+
+	"content": {
+		"Methods": {
+			"fillModel": { "text": "", "internal": false, "type": "" }
+		}
+	}
+}

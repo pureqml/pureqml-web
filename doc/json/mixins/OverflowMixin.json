@@ -1,9 +1,0 @@
-{
-	"name": "mixins.OverflowMixin",
-
-	"content": {
-		"Methods": {
-			"onValueChanged": { "text": "", "internal": false, "type": "" }
-		}
-	}
-}

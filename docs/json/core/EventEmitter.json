@@ -1,0 +1,14 @@
+{
+	"name": "core.EventEmitter",
+
+	"content": {
+		"Methods": {
+			"discard": { "text": "", "internal": false, "type": "" },
+			"on": { "text": "", "internal": false, "type": "" },
+			"connectOn": { "text": "", "internal": false, "type": "" },
+			"emit": { "text": "", "internal": false, "type": "" },
+			"removeAllListeners": { "text": "", "internal": false, "type": "" },
+			"removeListener": { "text": "", "internal": false, "type": "" }
+		}
+	}
+}

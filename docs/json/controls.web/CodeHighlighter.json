@@ -1,0 +1,12 @@
+{
+	"name": "controls.web.CodeHighlighter",
+
+	"content": {
+		"Methods": {
+			"_update": { "text": "@private", "internal": true, "type": "" },
+			"getTag": { "text": "@private returns tag for corresponding element", "internal": true, "type": "" },
+			"registerStyle": { "text": "@private", "internal": true, "type": "" },
+			"_updateSize": { "text": "@private", "internal": true, "type": "" }
+		}
+	}
+}

@@ -1,0 +1,19 @@
+{
+	"name": "core.Anchors",
+
+	"content": {
+		"Signals": {
+			"marginsUpdated": { "text": "", "internal": false, "type": "" }
+		},
+
+		"Methods": {
+			"_updateLeft": { "text": "@private", "internal": true, "type": "" },
+			"_updateRight": { "text": "@private", "internal": true, "type": "" },
+			"_updateTop": { "text": "@private", "internal": true, "type": "" },
+			"_updateBottom": { "text": "@private", "internal": true, "type": "" },
+			"_updateHCenter": { "text": "@private", "internal": true, "type": "" },
+			"_updateVCenter": { "text": "@private", "internal": true, "type": "" },
+			"_update": { "text": "", "internal": false, "type": "" }
+		}
+	}
+}

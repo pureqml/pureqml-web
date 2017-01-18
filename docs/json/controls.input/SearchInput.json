@@ -1,0 +1,9 @@
+{
+	"name": "controls.input.SearchInput",
+
+	"content": {
+		"Methods": {
+			"_update": { "text": "", "internal": false, "type": "" }
+		}
+	}
+}

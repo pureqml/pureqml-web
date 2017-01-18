@@ -1,0 +1,29 @@
+{
+	"pureqml-web": {
+		"Lessons": "pureqml-web/Lessons.json",
+		"LeftMenu": "pureqml-web/LeftMenu.json",
+		"MenuItem": "pureqml-web/MenuItem.json",
+		"Head": "pureqml-web/Head.json",
+		"KeyValueView": "pureqml-web/KeyValueView.json",
+		"Docs": "pureqml-web/Docs.json",
+		"DocKeyValueView": "pureqml-web/DocKeyValueView.json",
+		"DocViewer": "pureqml-web/DocViewer.json",
+		"PlatformItem": "pureqml-web/PlatformItem.json",
+		"HistoryPage": "pureqml-web/HistoryPage.json",
+		"HowtoText": "pureqml-web/HowtoText.json",
+		"About": "pureqml-web/About.json",
+		"SearchPanel": "pureqml-web/SearchPanel.json",
+		"SearchResults": "pureqml-web/SearchResults.json",
+		"CodeExample": "pureqml-web/CodeExample.json",
+		"PageColumn": "pureqml-web/PageColumn.json",
+		"DescriptionPanel": "pureqml-web/DescriptionPanel.json",
+		"ContentColumn": "pureqml-web/ContentColumn.json",
+		"ColorTheme": "pureqml-web/ColorTheme.json",
+		"SectionHead": "pureqml-web/SectionHead.json",
+		"ReadMore": "pureqml-web/ReadMore.json",
+		"BigButton": "pureqml-web/BigButton.json",
+		"DescriptionText": "pureqml-web/DescriptionText.json",
+		"Download": "pureqml-web/Download.json",
+		"MainText": "pureqml-web/MainText.json"
+	}
+}

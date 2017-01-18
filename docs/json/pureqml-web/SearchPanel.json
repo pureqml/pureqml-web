@@ -1,0 +1,13 @@
+{
+	"name": "pureqml-web.SearchPanel",
+
+	"content": {
+		"Signals": {
+			"search": { "text": "", "internal": false, "type": "" }
+		},
+
+		"Methods": {
+			"searchCall": { "text": "", "internal": false, "type": "" }
+		}
+	}
+}

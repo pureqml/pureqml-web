@@ -1,0 +1,9 @@
+{
+	"name": "pureqml-web.Docs",
+
+	"content": {
+		"Methods": {
+			"onStateChanged": { "text": "", "internal": false, "type": "" }
+		}
+	}
+}

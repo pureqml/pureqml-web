@@ -1,0 +1,12 @@
+{
+	"name": "core.Effects",
+
+	"content": {
+		"Methods": {
+			"_addStyle": { "text": "@private", "internal": true, "type": "" },
+			"_getFilterStyle": { "text": "@private", "internal": true, "type": "" },
+			"_updateStyle": { "text": "@private", "internal": true, "type": "" },
+			"_update": { "text": "@private", "internal": true, "type": "" }
+		}
+	}
+}

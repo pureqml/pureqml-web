@@ -1,0 +1,10 @@
+{
+	"name": "core.BorderSide",
+
+	"content": {
+		"Methods": {
+			"_updateStyle": { "text": "", "internal": false, "type": "" },
+			"_update": { "text": "", "internal": false, "type": "" }
+		}
+	}
+}

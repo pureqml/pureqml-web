@@ -1,0 +1,15 @@
+{
+	"name": "core.GridView",
+
+	"content": {
+		"Methods": {
+			"move": { "text": "", "internal": false, "type": "" },
+			"onKeyPressed": { "text": "", "internal": false, "type": "" },
+			"getItemPosition": { "text": "", "internal": false, "type": "" },
+			"indexAt": { "text": "", "internal": false, "type": "" },
+			"positionViewAtIndex": { "text": "", "internal": false, "type": "" },
+			"_layout": { "text": "", "internal": false, "type": "" },
+			"onFlowChanged": { "text": "", "internal": false, "type": "" }
+		}
+	}
+}

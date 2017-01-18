@@ -1,0 +1,15 @@
+{
+	"name": "controls.core.BaseButton",
+
+	"content": {
+		"Signals": {
+			"triggered": { "text": "", "internal": false, "type": "" }
+		},
+
+		"Methods": {
+			"makeBlink": { "text": "", "internal": false, "type": "" },
+			"onSelectPressed": { "text": "", "internal": false, "type": "" },
+			"onClicked": { "text": "", "internal": false, "type": "" }
+		}
+	}
+}

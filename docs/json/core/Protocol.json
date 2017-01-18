@@ -1,0 +1,10 @@
+{
+	"name": "core.Protocol",
+
+	"content": {
+		"Methods": {
+			"fetchRequest": { "text": "send request using 'fetch' method", "internal": false, "type": "" },
+			"requestXHR": { "text": "send request using 'XMLHttpRequest' object", "internal": false, "type": "" }
+		}
+	}
+}

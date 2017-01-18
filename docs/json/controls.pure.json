@@ -1,0 +1,8 @@
+{
+	"controls.pure": {
+		"MaterialIcon": "controls.pure/MaterialIcon.json",
+		"TextEdit": "controls.pure/TextEdit.json",
+		"TextButton": "controls.pure/TextButton.json",
+		"ProgressBar": "controls.pure/ProgressBar.json"
+	}
+}

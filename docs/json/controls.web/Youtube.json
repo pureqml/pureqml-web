@@ -1,0 +1,10 @@
+{
+	"name": "controls.web.Youtube",
+
+	"content": {
+		"Methods": {
+			"_update": { "text": "", "internal": false, "type": "" },
+			"_updateSize": { "text": "", "internal": false, "type": "" }
+		}
+	}
+}

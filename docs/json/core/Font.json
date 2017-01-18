@@ -1,0 +1,9 @@
+{
+	"name": "core.Font",
+
+	"content": {
+		"Methods": {
+			"_update": { "text": "@private", "internal": true, "type": "" }
+		}
+	}
+}

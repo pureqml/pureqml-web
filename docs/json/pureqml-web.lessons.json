@@ -1,0 +1,16 @@
+{
+	"pureqml-web.lessons": {
+		"EffectsLesson": "pureqml-web.lessons/EffectsLesson.json",
+		"BasicLesson": "pureqml-web.lessons/BasicLesson.json",
+		"GamepadLesson": "pureqml-web.lessons/GamepadLesson.json",
+		"MixinLesson": "pureqml-web.lessons/MixinLesson.json",
+		"KeyboardLesson": "pureqml-web.lessons/KeyboardLesson.json",
+		"AnchorsLesson": "pureqml-web.lessons/AnchorsLesson.json",
+		"LayoutsLesson": "pureqml-web.lessons/LayoutsLesson.json",
+		"InputsLesson": "pureqml-web.lessons/InputsLesson.json",
+		"SignalLesson": "pureqml-web.lessons/SignalLesson.json",
+		"ViewAndModelsLesson": "pureqml-web.lessons/ViewAndModelsLesson.json",
+		"GlobalsLesson": "pureqml-web.lessons/GlobalsLesson.json",
+		"FocusLesson": "pureqml-web.lessons/FocusLesson.json"
+	}
+}

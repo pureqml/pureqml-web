@@ -1,0 +1,14 @@
+{
+	"name": "controls.mixins.WheelMixin",
+
+	"content": {
+		"Signals": {
+			"wheel": { "text": "", "internal": false, "type": "" }
+		},
+
+		"Methods": {
+			"_bindWheel": { "text": "", "internal": false, "type": "" },
+			"onEnabledChanged": { "text": "", "internal": false, "type": "" }
+		}
+	}
+}

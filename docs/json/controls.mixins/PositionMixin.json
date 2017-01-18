@@ -1,0 +1,9 @@
+{
+	"name": "controls.mixins.PositionMixin",
+
+	"content": {
+		"Methods": {
+			"_update": { "text": "@internal", "internal": false, "type": "" }
+		}
+	}
+}

@@ -1,0 +1,13 @@
+{
+	"name": "controls.web.Navbar",
+
+	"content": {
+		"Methods": {
+			"onPositionChanged": { "text": "", "internal": false, "type": "" },
+			"addChild": { "text": "", "internal": false, "type": "" },
+			"_layout": { "text": "", "internal": false, "type": "" },
+			"onSpacingChanged": { "text": "", "internal": false, "type": "" },
+			"onVerticalChanged": { "text": "", "internal": false, "type": "" }
+		}
+	}
+}

@@ -1,0 +1,9 @@
+{
+	"name": "pureqml-web.ReadMore",
+
+	"content": {
+		"Methods": {
+			"onClicked": { "text": "", "internal": false, "type": "" }
+		}
+	}
+}

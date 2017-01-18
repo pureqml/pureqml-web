@@ -1,0 +1,36 @@
+{
+	"name": "core.Item",
+
+	"content": {
+		"Signals": {
+			"boxChanged": { "text": "emitted when position or size changed", "internal": false, "type": "" }
+		},
+
+		"Methods": {
+			"discard": { "text": "", "internal": false, "type": "" },
+			"getTag": { "text": "returns tag for corresponding element", "internal": false, "type": "" },
+			"registerStyle": { "text": "", "internal": false, "type": "" },
+			"createElement": { "text": "default implementation of element creation routine.", "internal": false, "type": "" },
+			"toScreen": { "text": "map relative component coordinates to absolute screen ones", "internal": false, "type": "" },
+			"_updateAnimation": { "text": "tries to set animation on name using css transitions, returns true on success", "internal": false, "type": "" },
+			"setAnimation": { "text": "sets animation on given property", "internal": false, "type": "" },
+			"style": { "text": "passes style (or styles { a:, b:, c: ... }) to underlying element", "internal": false, "type": "" },
+			"addChild": { "text": "adds child, focus it if child accepts focus", "internal": false, "type": "" },
+			"_mapCSSAttribute": { "text": "returns css rule by property name", "internal": false, "type": "" },
+			"_update": { "text": "@private", "internal": true, "type": "" },
+			"_updateVisibility": { "text": "updates recursive visibility status", "internal": false, "type": "" },
+			"forceActiveFocus": { "text": "sets current global focus to component", "internal": false, "type": "" },
+			"_tryFocus": { "text": "tries to focus children or item itself", "internal": false, "type": "" },
+			"_propagateFocusToParents": { "text": "propagates focus to parent, if not set there", "internal": false, "type": "" },
+			"hasActiveFocus": { "text": "returns status of global focus", "internal": false, "type": "" },
+			"_focusTree": { "text": "@private focus subtree of current focused child", "internal": true, "type": "" },
+			"_focusChild": { "text": "", "internal": false, "type": "" },
+			"focusChild": { "text": "", "internal": false, "type": "" },
+			"setTransition": { "text": "", "internal": false, "type": "" },
+			"_updateStyle": { "text": "", "internal": false, "type": "" },
+			"_processKey": { "text": "", "internal": false, "type": "" },
+			"onVisibleChanged": { "text": "", "internal": false, "type": "" },
+			"setFocus": { "text": "", "internal": false, "type": "" }
+		}
+	}
+}

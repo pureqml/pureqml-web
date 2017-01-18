@@ -1,0 +1,11 @@
+{
+	"name": "controls.web.Ho",
+
+	"content": {
+		"Methods": {
+			"style": { "text": "", "internal": false, "type": "" },
+			"_updateStyle": { "text": "@const", "internal": false, "type": "" },
+			"_update": { "text": "", "internal": false, "type": "" }
+		}
+	}
+}

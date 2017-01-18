@@ -1,0 +1,12 @@
+{
+	"name": "core.Image",
+
+	"content": {
+		"Methods": {
+			"_onError": { "text": "", "internal": false, "type": "" },
+			"_load": { "text": "", "internal": false, "type": "" },
+			"load": { "text": "", "internal": false, "type": "" },
+			"_update": { "text": "", "internal": false, "type": "" }
+		}
+	}
+}

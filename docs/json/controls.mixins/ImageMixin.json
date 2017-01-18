@@ -1,0 +1,10 @@
+{
+	"name": "controls.mixins.ImageMixin",
+
+	"content": {
+		"Methods": {
+			"createElement": { "text": "", "internal": false, "type": "" },
+			"_init": { "text": "", "internal": false, "type": "" }
+		}
+	}
+}

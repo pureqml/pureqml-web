@@ -1,0 +1,5 @@
+{
+	"controls": {
+		"HlsPlayer": "controls/HlsPlayer.json"
+	}
+}

@@ -1,0 +1,11 @@
+{
+	"name": "controls.web.Sharer",
+
+	"content": {
+		"Methods": {
+			"_update": { "text": "", "internal": false, "type": "" },
+			"open": { "text": "", "internal": false, "type": "" },
+			"redirect": { "text": "", "internal": false, "type": "" }
+		}
+	}
+}

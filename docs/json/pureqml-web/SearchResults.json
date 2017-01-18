@@ -1,0 +1,13 @@
+{
+	"name": "pureqml-web.SearchResults",
+
+	"content": {
+		"Signals": {
+			"choosed": { "text": "", "internal": false, "type": "" }
+		},
+
+		"Methods": {
+			"fill": { "text": "", "internal": false, "type": "" }
+		}
+	}
+}

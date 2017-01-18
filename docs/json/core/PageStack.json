@@ -1,0 +1,12 @@
+{
+	"name": "core.PageStack",
+
+	"content": {
+		"Methods": {
+			"onCurrentIndexChanged": { "text": "@private", "internal": true, "type": "" },
+			"onActiveFocusChanged": { "text": "@private", "internal": true, "type": "" },
+			"_layout": { "text": "@private", "internal": true, "type": "" },
+			"addChild": { "text": "@private", "internal": true, "type": "" }
+		}
+	}
+}

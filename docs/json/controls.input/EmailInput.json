@@ -1,0 +1,9 @@
+{
+	"name": "controls.input.EmailInput",
+
+	"content": {
+		"Methods": {
+			"onTextChanged": { "text": "", "internal": false, "type": "" }
+		}
+	}
+}

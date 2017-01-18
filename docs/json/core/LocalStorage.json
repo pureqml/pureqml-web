@@ -1,0 +1,13 @@
+{
+	"name": "core.LocalStorage",
+
+	"content": {
+		"Methods": {
+			"onNameChanged": { "text": "", "internal": false, "type": "" },
+			"onValueChanged": { "text": "", "internal": false, "type": "" },
+			"read": { "text": "", "internal": false, "type": "" },
+			"init": { "text": "", "internal": false, "type": "" },
+			"onCompleted": { "text": "", "internal": false, "type": "" }
+		}
+	}
+}

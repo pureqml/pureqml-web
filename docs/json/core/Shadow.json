@@ -1,0 +1,11 @@
+{
+	"name": "core.Shadow",
+
+	"content": {
+		"Methods": {
+			"_update": { "text": "@private", "internal": true, "type": "" },
+			"_empty": { "text": "@private", "internal": true, "type": "" },
+			"_getFilterStyle": { "text": "@private", "internal": true, "type": "" }
+		}
+	}
+}

@@ -1,0 +1,9 @@
+{
+	"name": "controls.core.Paddings",
+
+	"content": {
+		"Methods": {
+			"_update": { "text": "", "internal": false, "type": "" }
+		}
+	}
+}

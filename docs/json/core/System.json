@@ -1,0 +1,11 @@
+{
+	"name": "core.System",
+
+	"content": {
+		"Methods": {
+			"onContextWidthChanged": { "text": "@private", "internal": true, "type": "" },
+			"onContextHeightChanged": { "text": "@private", "internal": true, "type": "" },
+			"_updateLayoutType": { "text": "@private", "internal": true, "type": "" }
+		}
+	}
+}

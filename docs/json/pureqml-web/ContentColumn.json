@@ -1,0 +1,13 @@
+{
+	"name": "pureqml-web.ContentColumn",
+
+	"content": {
+		"Signals": {
+			"fillMenu": { "text": "", "internal": false, "type": "" }
+		},
+
+		"Methods": {
+			"onCompleted": { "text": "", "internal": false, "type": "" }
+		}
+	}
+}

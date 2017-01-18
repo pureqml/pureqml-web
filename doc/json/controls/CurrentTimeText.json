@@ -1,9 +1,0 @@
-{
-	"name": "controls.CurrentTimeText",
-
-	"content": {
-		"Methods": {
-			"updateText": { "text": "", "internal": false, "type": "" }
-		}
-	}
-}

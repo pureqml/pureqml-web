@@ -1,0 +1,10 @@
+{
+	"name": "core.GradientStop",
+
+	"content": {
+		"Methods": {
+			"_update": { "text": "", "internal": false, "type": "" },
+			"_getDeclaration": { "text": "", "internal": false, "type": "" }
+		}
+	}
+}

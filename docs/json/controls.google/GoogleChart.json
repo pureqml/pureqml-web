@@ -1,0 +1,10 @@
+{
+	"name": "controls.google.GoogleChart",
+
+	"content": {
+		"Methods": {
+			"init": { "text": "", "internal": false, "type": "" },
+			"registerStyle": { "text": "", "internal": false, "type": "" }
+		}
+	}
+}

@@ -1,0 +1,16 @@
+{
+	"name": "controls.core.UlView",
+
+	"content": {
+		"Methods": {
+			"_onReset": { "text": "", "internal": false, "type": "" },
+			"_onRowsChanged": { "text": "", "internal": false, "type": "" },
+			"_onRowsRemoved": { "text": "", "internal": false, "type": "" },
+			"_onRowsInserted": { "text": "", "internal": false, "type": "" },
+			"_createDelegate": { "text": "", "internal": false, "type": "" },
+			"_update": { "text": "", "internal": false, "type": "" },
+			"_attach": { "text": "", "internal": false, "type": "" },
+			"onCompleted": { "text": "", "internal": false, "type": "" }
+		}
+	}
+}

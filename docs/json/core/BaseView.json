@@ -1,0 +1,32 @@
+{
+	"name": "core.BaseView",
+
+	"content": {
+		"Methods": {
+			"itemAt": { "text": "returns index of item by x,y coordinates", "internal": false, "type": "" },
+			"focusCurrent": { "text": "@private focuses current item", "internal": true, "type": "" },
+			"onFocusedChildChanged": { "text": "", "internal": false, "type": "" },
+			"onCurrentIndexChanged": { "text": "", "internal": false, "type": "" },
+			"_onReset": { "text": "@private", "internal": true, "type": "" },
+			"_onRowsInserted": { "text": "@private", "internal": true, "type": "" },
+			"_onRowsChanged": { "text": "@private", "internal": true, "type": "" },
+			"_onRowsRemoved": { "text": "@private", "internal": true, "type": "" },
+			"_attach": { "text": "@private", "internal": true, "type": "" },
+			"_update": { "text": "@private", "internal": true, "type": "" },
+			"_createDelegate": { "text": "@private creates delegate in given item slot", "internal": true, "type": "" },
+			"_updateDelegate": { "text": "", "internal": false, "type": "" },
+			"_updateDelegateIndex": { "text": "", "internal": false, "type": "" },
+			"_discardItem": { "text": "", "internal": false, "type": "" },
+			"_insertItems": { "text": "", "internal": false, "type": "" },
+			"_removeItems": { "text": "", "internal": false, "type": "" },
+			"_updateItems": { "text": "", "internal": false, "type": "" },
+			"_processUpdates": { "text": "", "internal": false, "type": "" },
+			"onContentXChanged": { "text": "", "internal": false, "type": "" },
+			"onContentYChanged": { "text": "", "internal": false, "type": "" },
+			"onRecursiveVisibleChanged": { "text": "", "internal": false, "type": "" },
+			"onWidthChanged": { "text": "", "internal": false, "type": "" },
+			"onHeightChanged": { "text": "", "internal": false, "type": "" },
+			"onCompleted": { "text": "", "internal": false, "type": "" }
+		}
+	}
+}
