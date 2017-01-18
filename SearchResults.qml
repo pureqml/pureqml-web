@@ -1,18 +1,13 @@
 ContentColumn {
 	id: searchResultsProto;
 	signal choosed;
-	anchors.top: parent.top;
-	anchors.left: parent.left;
-	anchors.right: parent.right;
-	anchors.margins: 10;
-	spacing: 30;
+	width: 100%;
 
 	ListView {
 		id: searchView;
 		height: contentHeight;
-		anchors.top: parent.top;
-		anchors.left: parent.left;
-		anchors.right: parent.right;
+		width: 100% - 40;
+		x: 20;
 		model: ListModel { }
 		delegate: WebLink {
 			width: parent.width;
@@ -23,7 +18,8 @@ ContentColumn {
 				anchors.left: parent.left;
 				anchors.verticalCenter: parent.verticalCenter;
 				anchors.leftMargin: 10;
-				color: parent.hover ? colorTheme.darkerPrimaryColor : colorTheme.lighterPrimaryColor;
+				color: parent.hover ? colorTheme.darkerPrimaryColor : "#616161";
+				font.underline: parent.hover;
 				text: model.text;
 				font.pixelSize: 32;
 				font.weight: 300;

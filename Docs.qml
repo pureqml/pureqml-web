@@ -14,38 +14,39 @@ HistoryPage {
 		}
 	}
 
-	SearchPanel {
-		id: search;
-		width: parent.width;
-
-		onSearch(text): {
-			var data = this.parent._data
-			if (!data) {
-				log("No data")
-				return
-			}
-
-			content.visible = false
-
-			var res = []
-			var txt = text.toLowerCase()
-			for (var i in data) {
-				var item = data[i]
-				if (item.text.toLowerCase().indexOf(txt) > -1) {
-					log("Found", item)
-					res.push({ "text": item.text, "path": item.path })
-				}
-			}
-			searchResults.fill(res)
-		}
-	}
-
 	LeftMenu {
 		id: leftMenu;
 	}
 
 	Column {
 		width: parent.width < 840 ? parent.width : parent.width - 200;
+
+		SearchPanel {
+			width: 100%;
+
+			onSearch(text): {
+				var data = this.parent.parent._data
+				if (!data) {
+					log("No data")
+					return
+				}
+
+				content.visible = false
+
+				var res = []
+				var txt = text.toLowerCase()
+				for (var i in data) {
+					var item = data[i]
+					var idx = item.text.toLowerCase().indexOf(txt) 
+					if (idx > -1) {
+						var it = item.text
+						var formatted = it.substr(0, idx) + '<b style="color:#43A047">' + it.substr(idx, text.length) + '</b>' + it.substr(idx + text.length)
+						res.push({ "text": formatted, "path": item.path })
+					}
+				}
+				searchResults.fill(res)
+			}
+		}
 
 		DocViewer { id: content; }
 
@@ -67,8 +68,9 @@ HistoryPage {
 					continue
 				data.push({"text": p, "depth": 0, "path": "docs/" + p})
 				var content = pages[p].content
-				for (var c in content) {
-					data.push({"text": c, "depth": 1, "path": "docs/" + p + "/" + c})
+				var sorted = Object.keys(content).sort()
+				for (var c in sorted) {
+					data.push({"text": sorted[c], "depth": 1, "path": "docs/" + p + "/" + sorted[c]})
 				}
 			}
 			this.parent._data = data

@@ -2,46 +2,45 @@ Rectangle {
 	signal search;
 	height: 50;
 	anchors.top: parent.top;
-	color: colorTheme.panelColor;
+	color: "#FAFAFA";// colorTheme.panelColor;
 
-	TextInput {
+	MaterialIcon {
+		anchors.verticalCenter: parent.verticalCenter;
+		x: (parent.height - height) / 2;
+		icon: "search";
+		color: "#929292";
+		size: 30;
+	}
+
+	SearchInput {
 		id: searchText;
 		height: 30;
-		anchors.left: parent.left;
-		anchors.right: searchIcon.left;
+		width: 100% - 60;
+		x: 50;
 		anchors.verticalCenter: parent.verticalCenter;
-		anchors.leftMargin: 20;
-		anchors.rightMargin: 10;
 		font.pixelSize: 18;
 		font.weight: 300;
-		font.family: "Roboto Slab";
-		focus: true;
+//		font.family: "Roboto Slab";
+		backgroundColor: "#FAFAFA";
+		placeholder: "Search";
 
-		onTextChanged: { searchTimer.restart() }
+		onTextChanged: {
+			if (value.length > 1)
+				searchTimer.restart() 
+		}
 	}
 
-	Image {
-		id: searchIcon;
-		width: height;
-		height: parent.height - 10;
-		anchors.right: parent.right;
-		anchors.verticalCenter: parent.verticalCenter;
-		anchors.rightMargin: 5;
-		source: "res/search.png";
-		fillMode: Image.PreserveAspectFit;
-	}
-
-	Rectangle {
-		height: 1;
-		anchors.top: searchText.bottom;
-		anchors.left: searchText.left;
-		anchors.right: searchText.right;
-		color: colorTheme.primaryColor;
-	}
+	// Rectangle {
+	// 	height: 1;
+	// 	width: searchText.width;
+	// 	x: searchText.x;
+	// 	anchors.top: searchText.bottom;
+	// 	color: colorTheme.primaryColor;
+	// }
 
 	Timer {
 		id: searchTimer;
-		interval: 300;
+		interval: 500;
 
 		onTriggered: { this.parent.searchCall() }
 	}
