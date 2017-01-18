@@ -63,7 +63,7 @@ HistoryPage {
 			var pages = docs.pages
 			var data = []
 			for (var p in pages) {
-				if (p == "code_samples" || p == "lessons" || p == "pureqml-web")
+				if (p == "pureqml-web.code_samples" || p == "pureqml-web.lessons" || p == "pureqml-web")
 					continue
 				data.push({"text": p, "depth": 0, "path": "docs/" + p})
 				var content = pages[p].content
