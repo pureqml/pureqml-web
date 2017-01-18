@@ -1,0 +1,16 @@
+{
+	"name": "web.LanguageSelector",
+
+	"content": {
+		"Properties": {
+			"delegateColor": { "text": "", "internal": false, "type": "color" },
+			"delegateTextColor": { "text": "", "internal": false, "type": "color" },
+			"currentLangCode": { "text": "", "internal": false, "type": "string" }
+		},
+
+		"Methods": {
+			"addLanguage": { "text": "", "internal": false, "type": "" },
+			"setLanguageByIndex": { "text": "", "internal": false, "type": "" }
+		}
+	}
+}

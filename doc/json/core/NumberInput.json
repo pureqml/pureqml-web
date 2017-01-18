@@ -1,0 +1,16 @@
+{
+	"name": "core.NumberInput",
+
+	"content": {
+		"Properties": {
+			"max": { "text": "", "internal": false, "type": "float" },
+			"min": { "text": "", "internal": false, "type": "float" },
+			"step": { "text": "", "internal": false, "type": "float" },
+			"value": { "text": "", "internal": false, "type": "float" }
+		},
+
+		"Methods": {
+			"_update": { "text": "", "internal": false, "type": "" }
+		}
+	}
+}

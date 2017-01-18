@@ -1,9 +1,0 @@
-{
-	"name": "controls.mixins.CSSMixin",
-
-	"content": {
-		"Methods": {
-			"onCompleted": { "text": "", "internal": false, "type": "" }
-		}
-	}
-}

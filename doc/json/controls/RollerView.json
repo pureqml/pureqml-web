@@ -1,0 +1,19 @@
+{
+	"name": "controls.RollerView",
+
+	"content": {
+		"Properties": {
+			"cacheEnable": { "text": "", "internal": false, "type": "bool" }
+		},
+
+		"Methods": {
+			"positionViewAtIndex": { "text": "", "internal": false, "type": "" },
+			"_layout": { "text": "", "internal": false, "type": "" },
+			"focusCurrent": { "text": "@internal focuses current item", "internal": false, "type": "" },
+			"_createDelegate": { "text": "@internal creates delegate in given item slot", "internal": false, "type": "" },
+			"onKeyPressed": { "text": "", "internal": false, "type": "" },
+			"onOrientationChanged": { "text": "", "internal": false, "type": "" },
+			"onCurrentIndexChanged": { "text": "", "internal": false, "type": "" }
+		}
+	}
+}

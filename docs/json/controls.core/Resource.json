@@ -1,9 +1,0 @@
-{
-	"name": "controls.core.Resource",
-
-	"content": {
-		"Methods": {
-			"onUrlChanged": { "text": "", "internal": false, "type": "" }
-		}
-	}
-}

@@ -1,0 +1,19 @@
+{
+	"name": "core.Border",
+
+	"content": {
+		"Properties": {
+			"width": { "text": "width of the border", "internal": false, "type": "int" },
+			"color": { "text": "color of the border", "internal": false, "type": "color" },
+			"style": { "text": "style of the border", "internal": false, "type": "string" },
+			"left": { "text": "", "internal": false, "type": "BorderSide" },
+			"right": { "text": "", "internal": false, "type": "BorderSide" },
+			"top": { "text": "", "internal": false, "type": "BorderSide" },
+			"bottom": { "text": "", "internal": false, "type": "BorderSide" }
+		},
+
+		"Methods": {
+			"_update": { "text": "", "internal": false, "type": "" }
+		}
+	}
+}

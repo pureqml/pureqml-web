@@ -1,0 +1,9 @@
+{
+	"name": "controls.ProgressBar",
+
+	"content": {
+		"Properties": {
+			"progress": { "text": "", "internal": false, "type": "real" }
+		}
+	}
+}

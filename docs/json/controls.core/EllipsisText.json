@@ -1,9 +1,0 @@
-{
-	"name": "controls.core.EllipsisText",
-
-	"content": {
-		"Methods": {
-			"onPaintedWidthChanged": { "text": "", "internal": false, "type": "" }
-		}
-	}
-}

@@ -1,9 +1,0 @@
-{
-	"name": "pureqml-web.PlatformItem",
-
-	"content": {
-		"Alias Properties": {
-			"hover": { "text": "", "internal": false, "type": "" }
-		}
-	}
-}

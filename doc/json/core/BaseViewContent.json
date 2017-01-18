@@ -1,0 +1,10 @@
+{
+	"name": "core.BaseViewContent",
+
+	"content": {
+		"Methods": {
+			"onXChanged": { "text": "@internal content for base view scrolling area", "internal": false, "type": "" },
+			"onYChanged": { "text": "", "internal": false, "type": "" }
+		}
+	}
+}

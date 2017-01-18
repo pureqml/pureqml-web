@@ -1,0 +1,15 @@
+{
+	"name": "controls.FocusablePanel",
+
+	"content": {
+		"Properties": {
+			"color": { "text": "", "internal": false, "type": "Color" },
+			"radius": { "text": "", "internal": false, "type": "real" },
+			"focusOnHover": { "text": "", "internal": false, "type": "bool" }
+		},
+
+		"Methods": {
+			"onEntered": { "text": "", "internal": false, "type": "" }
+		}
+	}
+}

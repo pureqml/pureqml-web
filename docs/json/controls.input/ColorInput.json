@@ -1,9 +1,0 @@
-{
-	"name": "controls.input.ColorInput",
-
-	"content": {
-		"Methods": {
-			"_update": { "text": "", "internal": false, "type": "" }
-		}
-	}
-}

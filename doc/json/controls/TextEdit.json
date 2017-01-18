@@ -1,0 +1,20 @@
+{
+	"name": "controls.TextEdit",
+
+	"content": {
+		"Properties": {
+			"color": { "text": "", "internal": false, "type": "Color" },
+			"cursorVisible": { "text": "", "internal": false, "type": "bool" },
+			"font": { "text": "", "internal": false, "type": "Font" }
+		},
+
+		"Alias Properties": {
+			"text": { "text": "", "internal": false, "type": "" }
+		},
+
+		"Methods": {
+			"removeChar": { "text": "", "internal": false, "type": "" },
+			"onTextChanged": { "text": "", "internal": false, "type": "" }
+		}
+	}
+}

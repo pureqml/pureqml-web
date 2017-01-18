@@ -1,9 +1,0 @@
-{
-	"name": "pureqml-web.MenuItem",
-
-	"content": {
-		"Methods": {
-			"onClicked": { "text": "", "internal": false, "type": "" }
-		}
-	}
-}

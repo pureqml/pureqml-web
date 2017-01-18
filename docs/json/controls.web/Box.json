@@ -1,9 +1,0 @@
-{
-	"name": "controls.web.Box",
-
-	"content": {
-		"Methods": {
-			"_update": { "text": "", "internal": false, "type": "" }
-		}
-	}
-}

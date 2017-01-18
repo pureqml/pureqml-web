@@ -1,9 +1,0 @@
-{
-	"name": "controls.input.DateInput",
-
-	"content": {
-		"Methods": {
-			"_update": { "text": "", "internal": false, "type": "" }
-		}
-	}
-}

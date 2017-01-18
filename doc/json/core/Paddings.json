@@ -1,0 +1,16 @@
+{
+	"name": "core.Paddings",
+
+	"content": {
+		"Properties": {
+			"left": { "text": "left padding", "internal": false, "type": "int" },
+			"right": { "text": "right padding", "internal": false, "type": "int" },
+			"top": { "text": "top padding", "internal": false, "type": "int" },
+			"bottom": { "text": "bottom padding", "internal": false, "type": "int" }
+		},
+
+		"Methods": {
+			"_update": { "text": "", "internal": false, "type": "" }
+		}
+	}
+}

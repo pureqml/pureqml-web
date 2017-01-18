@@ -1,0 +1,21 @@
+{
+	"name": "core.Object",
+
+	"content": {
+		"Methods": {
+			"discard": { "text": "", "internal": false, "type": "" },
+			"addChild": { "text": "adds child object to children", "internal": false, "type": "" },
+			"_setId": { "text": "@internal sets id", "internal": false, "type": "" },
+			"onChanged": { "text": "register callback on property's value changed", "internal": false, "type": "" },
+			"connectOnChanged": { "text": "", "internal": false, "type": "" },
+			"removeOnChanged": { "text": "removes 'on changed' callback", "internal": false, "type": "" },
+			"_removeUpdater": { "text": "@internal removes dynamic value updater", "internal": false, "type": "" },
+			"onPressed": { "text": "registers key handler", "internal": false, "type": "" },
+			"_update": { "text": "", "internal": false, "type": "" },
+			"_get": { "text": "gets object by id", "internal": false, "type": "" },
+			"setAnimation": { "text": "sets animation on given property", "internal": false, "type": "" },
+			"getAnimation": { "text": "gets animation on given property", "internal": false, "type": "" },
+			"_tryFocus": { "text": "called to test if the component can have focus, generic object cannot be focused, so return false, override it to implement default focus policy", "internal": false, "type": "" }
+		}
+	}
+}

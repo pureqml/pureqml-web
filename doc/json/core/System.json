@@ -1,0 +1,28 @@
+{
+	"name": "core.System",
+
+	"content": {
+		"Properties": {
+			"userAgent": { "text": "", "internal": false, "type": "string" },
+			"language": { "text": "", "internal": false, "type": "string" },
+			"browser": { "text": "", "internal": false, "type": "string" },
+			"vendor": { "text": "", "internal": false, "type": "string" },
+			"os": { "text": "", "internal": false, "type": "string" },
+			"webkit": { "text": "", "internal": false, "type": "bool" },
+			"support3dTransforms": { "text": "", "internal": false, "type": "bool" },
+			"supportTransforms": { "text": "", "internal": false, "type": "bool" },
+			"supportTransitions": { "text": "", "internal": false, "type": "bool" },
+			"portrait": { "text": "", "internal": false, "type": "bool" },
+			"landscape": { "text": "", "internal": false, "type": "bool" },
+			"pageActive": { "text": "", "internal": false, "type": "bool" },
+			"contextWidth": { "text": "", "internal": false, "type": "int" },
+			"contextHeight": { "text": "", "internal": false, "type": "int" }
+		},
+
+		"Methods": {
+			"onContextWidthChanged": { "text": "", "internal": false, "type": "" },
+			"onContextHeightChanged": { "text": "", "internal": false, "type": "" },
+			"_updateLayoutType": { "text": "", "internal": false, "type": "" }
+		}
+	}
+}

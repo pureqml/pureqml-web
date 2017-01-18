@@ -1,9 +1,0 @@
-{
-	"name": "pureqml-web.DocKeyValueView",
-
-	"content": {
-		"Methods": {
-			"fill": { "text": "", "internal": false, "type": "" }
-		}
-	}
-}

@@ -1,0 +1,13 @@
+{
+	"name": "core.SearchInput",
+
+	"content": {
+		"Properties": {
+			"text": { "text": "", "internal": false, "type": "string" }
+		},
+
+		"Methods": {
+			"_update": { "text": "", "internal": false, "type": "" }
+		}
+	}
+}

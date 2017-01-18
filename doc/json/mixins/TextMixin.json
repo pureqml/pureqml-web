@@ -1,0 +1,9 @@
+{
+	"name": "mixins.TextMixin",
+
+	"content": {
+		"Methods": {
+			"createElement": { "text": "", "internal": false, "type": "" }
+		}
+	}
+}

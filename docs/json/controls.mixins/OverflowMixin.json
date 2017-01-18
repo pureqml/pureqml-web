@@ -1,9 +1,0 @@
-{
-	"name": "controls.mixins.OverflowMixin",
-
-	"content": {
-		"Methods": {
-			"_update": { "text": "@internal", "internal": false, "type": "" }
-		}
-	}
-}

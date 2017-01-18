@@ -1,9 +1,0 @@
-{
-	"name": "controls.mixins.StyleMixin",
-
-	"content": {
-		"Methods": {
-			"_update": { "text": "@internal", "internal": false, "type": "" }
-		}
-	}
-}

@@ -1,9 +1,0 @@
-{
-	"name": "core.Border",
-
-	"content": {
-		"Methods": {
-			"_update": { "text": "", "internal": false, "type": "" }
-		}
-	}
-}

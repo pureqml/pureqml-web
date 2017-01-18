@@ -1,0 +1,10 @@
+{
+	"name": "vk.VkWallModel",
+
+	"content": {
+		"Methods": {
+			"_fillImpl": { "text": "", "internal": false, "type": "" },
+			"fill": { "text": "", "internal": false, "type": "" }
+		}
+	}
+}

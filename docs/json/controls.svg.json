@@ -1,9 +1,0 @@
-{
-	"controls.svg": {
-		"Path": "controls.svg/Path.json",
-		"Line": "controls.svg/Line.json",
-		"SvgContainer": "controls.svg/SvgContainer.json",
-		"ExternalPath": "controls.svg/ExternalPath.json",
-		"SvgBase": "controls.svg/SvgBase.json"
-	}
-}

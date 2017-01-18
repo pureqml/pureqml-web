@@ -1,0 +1,21 @@
+{
+	"name": "canvas.CurveLine",
+
+	"content": {
+		"Properties": {
+			"x1": { "text": "", "internal": false, "type": "int" },
+			"y1": { "text": "", "internal": false, "type": "int" },
+			"x2": { "text": "", "internal": false, "type": "int" },
+			"y2": { "text": "", "internal": false, "type": "int" }
+		},
+
+		"Methods": {
+			"onX1Changed": { "text": "", "internal": false, "type": "" },
+			"onX2Changed": { "text": "", "internal": false, "type": "" },
+			"onY1Changed": { "text": "", "internal": false, "type": "" },
+			"onY2Changed": { "text": "", "internal": false, "type": "" },
+			"onOrientationChanged": { "text": "", "internal": false, "type": "" },
+			"update": { "text": "", "internal": false, "type": "" }
+		}
+	}
+}

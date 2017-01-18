@@ -1,0 +1,9 @@
+{
+	"name": "svg.ExternalPath",
+
+	"content": {
+		"Methods": {
+			"externalTarget": { "text": "", "internal": false, "type": "" }
+		}
+	}
+}

@@ -1,9 +1,0 @@
-{
-	"name": "pureqml-web.PageColumn",
-
-	"content": {
-		"Methods": {
-			"onHashChanged": { "text": "", "internal": false, "type": "" }
-		}
-	}
-}

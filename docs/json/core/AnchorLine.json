@@ -1,9 +1,0 @@
-{
-	"name": "core.AnchorLine",
-
-	"content": {
-		"Methods": {
-			"toScreen": { "text": "", "internal": false, "type": "" }
-		}
-	}
-}

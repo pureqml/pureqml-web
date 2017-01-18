@@ -1,0 +1,19 @@
+{
+	"name": "core.Image",
+
+	"content": {
+		"Properties": {
+			"source": { "text": "image URL", "internal": false, "type": "string" },
+			"paintedWidth": { "text": "real image width", "internal": false, "type": "int" },
+			"paintedHeight": { "text": "real image height", "internal": false, "type": "int" }
+		},
+
+		"Methods": {
+			"_init": { "text": "", "internal": false, "type": "" },
+			"_onError": { "text": "", "internal": false, "type": "" },
+			"_load": { "text": "", "internal": false, "type": "" },
+			"load": { "text": "", "internal": false, "type": "" },
+			"_update": { "text": "", "internal": false, "type": "" }
+		}
+	}
+}

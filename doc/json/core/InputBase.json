@@ -1,0 +1,23 @@
+{
+	"name": "core.InputBase",
+
+	"content": {
+		"Properties": {
+			"paddings": { "text": "", "internal": false, "type": "Paddings" },
+			"color": { "text": "", "internal": false, "type": "Color" },
+			"backgroundColor": { "text": "", "internal": false, "type": "Color" },
+			"font": { "text": "", "internal": false, "type": "Font" },
+			"border": { "text": "", "internal": false, "type": "Border" },
+			"placeholder": { "text": "", "internal": false, "type": "string" },
+			"type": { "text": "", "internal": false, "type": "string" }
+		},
+
+		"Methods": {
+			"onActiveFocusChanged": { "text": "", "internal": false, "type": "" },
+			"onRecursiveVisibleChanged": { "text": "", "internal": false, "type": "" },
+			"_update": { "text": "", "internal": false, "type": "" },
+			"getTag": { "text": "returns tag for corresponding element", "internal": false, "type": "" },
+			"_updateSize": { "text": "", "internal": false, "type": "" }
+		}
+	}
+}
