@@ -1,0 +1,11 @@
+{
+	"name": "html5.Stylesheet",
+
+	"content": {
+		"Methods": {
+			"mangleSelector": { "text": "", "internal": false, "type": "" },
+			"mangleRule": { "text": "", "internal": false, "type": "" },
+			"addRule": { "text": "", "internal": false, "type": "" }
+		}
+	}
+}

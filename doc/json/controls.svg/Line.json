@@ -1,0 +1,10 @@
+{
+	"name": "controls.svg.Line",
+
+	"content": {
+		"Methods": {
+			"getTag": { "text": "returns tag for corresponding element", "internal": false, "type": "" },
+			"_update": { "text": "@internal", "internal": false, "type": "" }
+		}
+	}
+}

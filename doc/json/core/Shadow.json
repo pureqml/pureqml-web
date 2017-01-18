@@ -2,18 +2,10 @@
 	"name": "core.Shadow",
 
 	"content": {
-		"Properties": {
-			"x": { "text": "", "internal": false, "type": "real" },
-			"y": { "text": "", "internal": false, "type": "real" },
-			"color": { "text": "", "internal": false, "type": "Color" },
-			"blur": { "text": "", "internal": false, "type": "real" },
-			"spread": { "text": "", "internal": false, "type": "real" }
-		},
-
 		"Methods": {
-			"_update": { "text": "", "internal": false, "type": "" },
-			"_empty": { "text": "", "internal": false, "type": "" },
-			"_getFilterStyle": { "text": "", "internal": false, "type": "" }
+			"_update": { "text": "@private", "internal": true, "type": "" },
+			"_empty": { "text": "@private", "internal": true, "type": "" },
+			"_getFilterStyle": { "text": "@private", "internal": true, "type": "" }
 		}
 	}
 }

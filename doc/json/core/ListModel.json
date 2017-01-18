@@ -2,10 +2,6 @@
 	"name": "core.ListModel",
 
 	"content": {
-		"Properties": {
-			"count": { "text": "", "internal": false, "type": "int" }
-		},
-
 		"Signals": {
 			"reset": { "text": "", "internal": false, "type": "" },
 			"rowsInserted": { "text": "", "internal": false, "type": "" },

@@ -1,0 +1,13 @@
+{
+	"name": "controls.core.Audio",
+
+	"content": {
+		"Methods": {
+			"_update": { "text": "", "internal": false, "type": "" },
+			"play": { "text": "", "internal": false, "type": "" },
+			"pause": { "text": "", "internal": false, "type": "" },
+			"onAutoPlayChanged": { "text": "", "internal": false, "type": "" },
+			"getTag": { "text": "returns tag for corresponding element", "internal": false, "type": "" }
+		}
+	}
+}

@@ -1,0 +1,6 @@
+{
+	"controls.vk": {
+		"VkApiProtocol": "controls.vk/VkApiProtocol.json",
+		"VkWallModel": "controls.vk/VkWallModel.json"
+	}
+}

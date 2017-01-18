@@ -1,0 +1,11 @@
+{
+	"name": "controls.web.WebLink",
+
+	"content": {
+		"Methods": {
+			"_update": { "text": "", "internal": false, "type": "" },
+			"getTag": { "text": "", "internal": false, "type": "" },
+			"registerStyle": { "text": "", "internal": false, "type": "" }
+		}
+	}
+}

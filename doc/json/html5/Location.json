@@ -1,0 +1,11 @@
+{
+	"name": "html5.Location",
+
+	"content": {
+		"Methods": {
+			"updateActualValues": { "text": "@private", "internal": true, "type": "" },
+			"changeHref": { "text": "change current href value method, argument is new href value", "internal": false, "type": "" },
+			"pushState": { "text": "push new state to the history", "internal": false, "type": "" }
+		}
+	}
+}

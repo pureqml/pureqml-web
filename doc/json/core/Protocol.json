@@ -2,15 +2,9 @@
 	"name": "core.Protocol",
 
 	"content": {
-		"Properties": {
-			"loading": { "text": "", "internal": false, "type": "bool" },
-			"baseUrl": { "text": "", "internal": false, "type": "string" },
-			"url": { "text": "", "internal": false, "type": "string" }
-		},
-
 		"Methods": {
-			"fetchRequest": { "text": "", "internal": false, "type": "" },
-			"requestXHR": { "text": "", "internal": false, "type": "" }
+			"fetchRequest": { "text": "send request using 'fetch' method", "internal": false, "type": "" },
+			"requestXHR": { "text": "send request using 'XMLHttpRequest' object", "internal": false, "type": "" }
 		}
 	}
 }

@@ -1,0 +1,10 @@
+{
+	"name": "controls.pure.MaterialIcon",
+
+	"content": {
+		"Alias Properties": {
+			"icon": { "text": "", "internal": false, "type": "" },
+			"size": { "text": "", "internal": false, "type": "" }
+		}
+	}
+}

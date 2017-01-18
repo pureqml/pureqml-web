@@ -2,56 +2,42 @@
 	"name": "core.MouseArea",
 
 	"content": {
-		"Properties": {
-			"mouseX": { "text": "", "internal": false, "type": "real" },
-			"mouseY": { "text": "", "internal": false, "type": "real" },
-			"cursor": { "text": "", "internal": false, "type": "string" },
-			"pressed": { "text": "", "internal": false, "type": "bool" },
-			"containsMouse": { "text": "", "internal": false, "type": "bool" },
-			"clickable": { "text": "", "internal": false, "type": "bool" },
-			"pressable": { "text": "", "internal": false, "type": "bool" },
-			"touchEnabled": { "text": "", "internal": false, "type": "bool" },
-			"hoverEnabled": { "text": "", "internal": false, "type": "bool" },
-			"wheelEnabled": { "text": "", "internal": false, "type": "bool" }
-		},
-
 		"Alias Properties": {
-			"hover": { "text": "", "internal": false, "type": "" },
-			"hoverable": { "text": "", "internal": false, "type": "" }
+			"hover": { "text": "containsMouse property alias", "internal": false, "type": "" },
+			"hoverable": { "text": "hoverEnabled property alias", "internal": false, "type": "" }
 		},
 
 		"Signals": {
-			"entered": { "text": "", "internal": false, "type": "" },
-			"exited": { "text": "", "internal": false, "type": "" },
-			"clicked": { "text": "", "internal": false, "type": "" },
-			"canceled": { "text": "", "internal": false, "type": "" },
-			"wheelEvent": { "text": "", "internal": false, "type": "" },
-			"verticalSwiped": { "text": "", "internal": false, "type": "" },
-			"horizontalSwiped": { "text": "", "internal": false, "type": "" },
-			"mouseMove": { "text": "", "internal": false, "type": "" },
-			"touchEnd": { "text": "", "internal": false, "type": "" },
-			"touchMove": { "text": "", "internal": false, "type": "" },
-			"touchStart": { "text": "", "internal": false, "type": "" }
+			"entered": { "text": "emitted when mouse entered the item's area", "internal": false, "type": "" },
+			"exited": { "text": "emitted when mouse leaved the item's area", "internal": false, "type": "" },
+			"clicked": { "text": "emitted on mouse click", "internal": false, "type": "" },
+			"canceled": { "text": "emitted when mouse leaved the item's area while mouse button was pressed", "internal": false, "type": "" },
+			"wheelEvent": { "text": "emitted when mouse wheel scrolling", "internal": false, "type": "" },
+			"verticalSwiped": { "text": "emitted on vertical swipe", "internal": false, "type": "" },
+			"horizontalSwiped": { "text": "emitted on horizontal swipe", "internal": false, "type": "" },
+			"mouseMove": { "text": "emitted on mouse moved inside the item's area", "internal": false, "type": "" },
+			"touchEnd": { "text": "emitted on touch event end", "internal": false, "type": "" },
+			"touchMove": { "text": "emitted on mouse move while touching", "internal": false, "type": "" },
+			"touchStart": { "text": "emitted on touch event start", "internal": false, "type": "" }
 		},
 
 		"Methods": {
-			"onCursorChanged": { "text": "", "internal": false, "type": "" },
-			"_bindTouch": { "text": "", "internal": false, "type": "" },
-			"onTouchEnabledChanged": { "text": "", "internal": false, "type": "" },
-			"onRecursiveVisibleChanged": { "text": "", "internal": false, "type": "" },
-			"_bindClick": { "text": "", "internal": false, "type": "" },
-			"onClickableChanged": { "text": "", "internal": false, "type": "" },
-			"_bindWheel": { "text": "", "internal": false, "type": "" },
-			"onWheelEnabledChanged": { "text": "", "internal": false, "type": "" },
-			"_bindPressable": { "text": "", "internal": false, "type": "" },
-			"onPressableChanged": { "text": "", "internal": false, "type": "" },
-			"_bindHover": { "text": "", "internal": false, "type": "" },
-			"onHoverEnabledChanged": { "text": "", "internal": false, "type": "" },
-			"onContainsMouseChanged": { "text": "", "internal": false, "type": "" },
-			"updatePosition": { "text": "", "internal": false, "type": "" },
-			"onTouchStart": { "text": "", "internal": false, "type": "" },
-			"onTouchMove": { "text": "", "internal": false, "type": "" },
-			"onCompleted": { "text": "", "internal": false, "type": "" }
+			"onCursorChanged": { "text": "@private", "internal": true, "type": "" },
+			"_bindTouch": { "text": "@private", "internal": true, "type": "" },
+			"onTouchEnabledChanged": { "text": "@private", "internal": true, "type": "" },
+			"onRecursiveVisibleChanged": { "text": "@private", "internal": true, "type": "" },
+			"_bindClick": { "text": "@private", "internal": true, "type": "" },
+			"onClickableChanged": { "text": "@private", "internal": true, "type": "" },
+			"_bindWheel": { "text": "@private", "internal": true, "type": "" },
+			"onWheelEnabledChanged": { "text": "@private", "internal": true, "type": "" },
+			"_bindPressable": { "text": "@private", "internal": true, "type": "" },
+			"onPressableChanged": { "text": "@private", "internal": true, "type": "" },
+			"_bindHover": { "text": "@private", "internal": true, "type": "" },
+			"onHoverEnabledChanged": { "text": "@private", "internal": true, "type": "" },
+			"onContainsMouseChanged": { "text": "@private", "internal": true, "type": "" },
+			"updatePosition": { "text": "@private", "internal": true, "type": "" },
+			"onTouchStart": { "text": "@private", "internal": true, "type": "" },
+			"onTouchMove": { "text": "@private", "internal": true, "type": "" }
 		}
 	}
 }

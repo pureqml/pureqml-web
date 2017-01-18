@@ -1,9 +1,0 @@
-{
-	"name": "mixins.ImageMixin",
-
-	"content": {
-		"Methods": {
-			"createElement": { "text": "", "internal": false, "type": "" }
-		}
-	}
-}

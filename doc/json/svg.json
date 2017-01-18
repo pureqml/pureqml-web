@@ -1,9 +1,0 @@
-{
-	"svg": {
-		"Path": "svg/Path.json",
-		"Line": "svg/Line.json",
-		"SvgContainer": "svg/SvgContainer.json",
-		"ExternalPath": "svg/ExternalPath.json",
-		"SvgBase": "svg/SvgBase.json"
-	}
-}

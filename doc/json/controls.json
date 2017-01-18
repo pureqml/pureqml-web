@@ -1,21 +1,5 @@
 {
 	"controls": {
-		"WebItem": "controls/WebItem.json",
-		"HlsPlayer": "controls/HlsPlayer.json",
-		"FocusableImage": "controls/FocusableImage.json",
-		"TextHover": "controls/TextHover.json",
-		"CurrentDateText": "controls/CurrentDateText.json",
-		"RollerView": "controls/RollerView.json",
-		"TextButton": "controls/TextButton.json",
-		"Chooser": "controls/Chooser.json",
-		"CurrentTimeText": "controls/CurrentTimeText.json",
-		"ProgressBar": "controls/ProgressBar.json",
-		"TextEdit": "controls/TextEdit.json",
-		"ResizableBox": "controls/ResizableBox.json",
-		"FocusablePanel": "controls/FocusablePanel.json",
-		"JWPlayer": "controls/JWPlayer.json",
-		"DateText": "controls/DateText.json",
-		"EllipsisText": "controls/EllipsisText.json",
-		"RelativeSize": "controls/RelativeSize.json"
+		"HlsPlayer": "controls/HlsPlayer.json"
 	}
 }

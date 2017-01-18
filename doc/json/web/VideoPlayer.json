@@ -2,23 +2,6 @@
 	"name": "web.VideoPlayer",
 
 	"content": {
-		"Properties": {
-			"source": { "text": "", "internal": false, "type": "string" },
-			"backgroundColor": { "text": "", "internal": false, "type": "Color" },
-			"volume": { "text": "", "internal": false, "type": "float" },
-			"loop": { "text": "", "internal": false, "type": "bool" },
-			"flash": { "text": "", "internal": false, "type": "bool" },
-			"ready": { "text": "", "internal": false, "type": "bool" },
-			"muted": { "text": "", "internal": false, "type": "bool" },
-			"paused": { "text": "", "internal": false, "type": "bool" },
-			"autoPlay": { "text": "", "internal": false, "type": "bool" },
-			"waiting": { "text": "", "internal": false, "type": "bool" },
-			"seeking": { "text": "", "internal": false, "type": "bool" },
-			"duration": { "text": "", "internal": false, "type": "int" },
-			"progress": { "text": "", "internal": false, "type": "int" },
-			"buffered": { "text": "", "internal": false, "type": "int" }
-		},
-
 		"Signals": {
 			"finished": { "text": "", "internal": false, "type": "" },
 			"error": { "text": "", "internal": false, "type": "" }

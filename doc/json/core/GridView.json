@@ -2,13 +2,6 @@
 	"name": "core.GridView",
 
 	"content": {
-		"Properties": {
-			"cellWidth": { "text": "", "internal": false, "type": "int" },
-			"cellHeight": { "text": "", "internal": false, "type": "int" },
-			"rows": { "text": "", "internal": false, "type": "int" },
-			"columns": { "text": "", "internal": false, "type": "int" }
-		},
-
 		"Methods": {
 			"move": { "text": "", "internal": false, "type": "" },
 			"onKeyPressed": { "text": "", "internal": false, "type": "" },

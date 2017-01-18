@@ -2,22 +2,6 @@
 	"name": "core.Anchors",
 
 	"content": {
-		"Properties": {
-			"bottom": { "text": "Anchors, generic class to handle auto-adjusting positioning, used in Item", "internal": false, "type": "AnchorLine" },
-			"verticalCenter": { "text": "", "internal": false, "type": "AnchorLine" },
-			"top": { "text": "", "internal": false, "type": "AnchorLine" },
-			"left": { "text": "", "internal": false, "type": "AnchorLine" },
-			"horizontalCenter": { "text": "", "internal": false, "type": "AnchorLine" },
-			"right": { "text": "", "internal": false, "type": "AnchorLine" },
-			"fill": { "text": "", "internal": false, "type": "Item" },
-			"centerIn": { "text": "", "internal": false, "type": "Item" },
-			"margins": { "text": "", "internal": false, "type": "int" },
-			"bottomMargin": { "text": "", "internal": false, "type": "int" },
-			"topMargin": { "text": "", "internal": false, "type": "int" },
-			"leftMargin": { "text": "", "internal": false, "type": "int" },
-			"rightMargin": { "text": "", "internal": false, "type": "int" }
-		},
-
 		"Signals": {
 			"marginsUpdated": { "text": "", "internal": false, "type": "" }
 		},

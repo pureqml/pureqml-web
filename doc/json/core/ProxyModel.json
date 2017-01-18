@@ -2,35 +2,30 @@
 	"name": "core.ProxyModel",
 
 	"content": {
-		"Properties": {
-			"count": { "text": "", "internal": false, "type": "int" },
-			"target": { "text": "", "internal": false, "type": "Object" }
-		},
-
 		"Signals": {
-			"reset": { "text": "", "internal": false, "type": "" },
-			"rowsInserted": { "text": "", "internal": false, "type": "" },
-			"rowsChanged": { "text": "", "internal": false, "type": "" },
-			"rowsRemoved": { "text": "", "internal": false, "type": "" }
+			"reset": { "text": "emitted when model is reset", "internal": false, "type": "" },
+			"rowsInserted": { "text": "emitted when row is inserted", "internal": false, "type": "" },
+			"rowsChanged": { "text": "emitted when row is changed", "internal": false, "type": "" },
+			"rowsRemoved": { "text": "emitted when row is removed", "internal": false, "type": "" }
 		},
 
 		"Methods": {
-			"setFilter": { "text": "", "internal": false, "type": "" },
-			"setCompare": { "text": "", "internal": false, "type": "" },
-			"_buildIndexMap": { "text": "", "internal": false, "type": "" },
-			"get": { "text": "", "internal": false, "type": "" },
-			"clear": { "text": "", "internal": false, "type": "" },
-			"append": { "text": "", "internal": false, "type": "" },
-			"insert": { "text": "", "internal": false, "type": "" },
-			"set": { "text": "", "internal": false, "type": "" },
-			"setProperty": { "text": "", "internal": false, "type": "" },
-			"remove": { "text": "", "internal": false, "type": "" },
-			"addChild": { "text": "", "internal": false, "type": "" },
-			"_onReset": { "text": "", "internal": false, "type": "" },
-			"_onRowsInserted": { "text": "", "internal": false, "type": "" },
-			"_onRowsChanged": { "text": "", "internal": false, "type": "" },
-			"_onRowsRemoved": { "text": "", "internal": false, "type": "" },
-			"onCompleted": { "text": "", "internal": false, "type": "" }
+			"setFilter": { "text": "this method set target model rows filter function, 'filter' function must return boolean value, 'true' - when row must be displayed, 'false' otherwise", "internal": false, "type": "" },
+			"setCompare": { "text": "this method set a comparison function, target model rows are sorted in ascending order according to a comparison function 'cmp'", "internal": false, "type": "" },
+			"_buildIndexMap": { "text": "@private", "internal": true, "type": "" },
+			"get": { "text": "returns a model's row by index, throw exception if index is out of range or if requested row is non-object", "internal": false, "type": "" },
+			"clear": { "text": "remove all rows", "internal": false, "type": "" },
+			"append": { "text": "append row to the model", "internal": false, "type": "" },
+			"insert": { "text": "place row at requested index, throws exception when index is out of range", "internal": false, "type": "" },
+			"set": { "text": "replace row at 'idx' position by 'row' argument, throws exception if index is out of range or if 'row' isn't Object", "internal": false, "type": "" },
+			"setProperty": { "text": "replace a row's property, throws exception if index is out of range or if 'row' isn't Object", "internal": false, "type": "" },
+			"remove": { "text": "remove rows from model from 'idx' to 'idx' + 'n' position", "internal": false, "type": "" },
+			"addChild": { "text": "this method is alias for 'append' method", "internal": false, "type": "" },
+			"_onReset": { "text": "@private", "internal": true, "type": "" },
+			"_onRowsInserted": { "text": "@private", "internal": true, "type": "" },
+			"_onRowsChanged": { "text": "@private", "internal": true, "type": "" },
+			"_onRowsRemoved": { "text": "@private", "internal": true, "type": "" },
+			"onCompleted": { "text": "@private", "internal": true, "type": "" }
 		}
 	}
 }

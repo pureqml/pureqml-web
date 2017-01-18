@@ -1,0 +1,9 @@
+{
+	"name": "controls.input.NumberInput",
+
+	"content": {
+		"Methods": {
+			"_update": { "text": "", "internal": false, "type": "" }
+		}
+	}
+}

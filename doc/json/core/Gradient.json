@@ -2,10 +2,6 @@
 	"name": "core.Gradient",
 
 	"content": {
-		"Properties": {
-			"angle": { "text": "", "internal": false, "type": "real" }
-		},
-
 		"Methods": {
 			"addChild": { "text": "", "internal": false, "type": "" },
 			"_update": { "text": "", "internal": false, "type": "" },

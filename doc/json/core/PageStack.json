@@ -2,16 +2,11 @@
 	"name": "core.PageStack",
 
 	"content": {
-		"Properties": {
-			"currentIndex": { "text": "", "internal": false, "type": "int" },
-			"count": { "text": "", "internal": false, "type": "int" }
-		},
-
 		"Methods": {
-			"onCurrentIndexChanged": { "text": "", "internal": false, "type": "" },
-			"onActiveFocusChanged": { "text": "", "internal": false, "type": "" },
-			"_layout": { "text": "", "internal": false, "type": "" },
-			"addChild": { "text": "", "internal": false, "type": "" }
+			"onCurrentIndexChanged": { "text": "@private", "internal": true, "type": "" },
+			"onActiveFocusChanged": { "text": "@private", "internal": true, "type": "" },
+			"_layout": { "text": "@private", "internal": true, "type": "" },
+			"addChild": { "text": "@private", "internal": true, "type": "" }
 		}
 	}
 }

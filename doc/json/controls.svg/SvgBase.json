@@ -1,0 +1,14 @@
+{
+	"name": "controls.svg.SvgBase",
+
+	"content": {
+		"Methods": {
+			"createElement": { "text": "specialized implementation of element creation in a certain namespace.", "internal": false, "type": "" },
+			"getTag": { "text": "returns tag for corresponding element", "internal": false, "type": "" },
+			"registerStyle": { "text": "", "internal": false, "type": "" },
+			"externalTarget": { "text": "", "internal": false, "type": "" },
+			"_update": { "text": "@internal", "internal": false, "type": "" },
+			"style": { "text": "", "internal": false, "type": "" }
+		}
+	}
+}

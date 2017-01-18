@@ -1,0 +1,11 @@
+{
+	"name": "controls.web.NavigationMenuButton",
+
+	"content": {
+		"Methods": {
+			"hide": { "text": "", "internal": false, "type": "" },
+			"toggleShow": { "text": "", "internal": false, "type": "" },
+			"onShowChanged": { "text": "", "internal": false, "type": "" }
+		}
+	}
+}

@@ -1,0 +1,12 @@
+{
+	"name": "core.RAIIEventEmitter",
+
+	"content": {
+		"Methods": {
+			"discard": { "text": "", "internal": false, "type": "" },
+			"on": { "text": "", "internal": false, "type": "" },
+			"onListener": { "text": "", "internal": false, "type": "" },
+			"removeAllListeners": { "text": "", "internal": false, "type": "" }
+		}
+	}
+}

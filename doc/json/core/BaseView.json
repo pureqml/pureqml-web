@@ -2,23 +2,9 @@
 	"name": "core.BaseView",
 
 	"content": {
-		"Properties": {
-			"model": { "text": "model object to attach to", "internal": false, "type": "Object" },
-			"delegate": { "text": "delegate - template object, filled with model row", "internal": false, "type": "Item" },
-			"contentX": { "text": "x offset to visible part of the content surface", "internal": false, "type": "int" },
-			"contentY": { "text": "y offset to visible part of the content surface", "internal": false, "type": "int" },
-			"scrollingStep": { "text": "scrolling step", "internal": false, "type": "int" },
-			"animationDuration": { "text": "", "internal": false, "type": "int" },
-			"contentFollowsCurrentItem": { "text": "auto-scroll content to current focused item", "internal": false, "type": "bool" },
-			"pageScrolling": { "text": "", "internal": false, "type": "bool" },
-			"rendered": { "text": "", "internal": false, "type": "bool" },
-			"trace": { "text": "", "internal": false, "type": "bool" },
-			"content": { "text": "", "internal": false, "type": "BaseViewContent" }
-		},
-
 		"Methods": {
 			"itemAt": { "text": "returns index of item by x,y coordinates", "internal": false, "type": "" },
-			"focusCurrent": { "text": "@internal focuses current item", "internal": false, "type": "" },
+			"focusCurrent": { "text": "@private focuses current item", "internal": true, "type": "" },
 			"onFocusedChildChanged": { "text": "", "internal": false, "type": "" },
 			"onCurrentIndexChanged": { "text": "", "internal": false, "type": "" },
 			"_onReset": { "text": "@private", "internal": true, "type": "" },
@@ -27,11 +13,14 @@
 			"_onRowsRemoved": { "text": "@private", "internal": true, "type": "" },
 			"_attach": { "text": "@private", "internal": true, "type": "" },
 			"_update": { "text": "@private", "internal": true, "type": "" },
-			"_createDelegate": { "text": "@internal creates delegate in given item slot", "internal": false, "type": "" },
+			"_createDelegate": { "text": "@private creates delegate in given item slot", "internal": true, "type": "" },
 			"_updateDelegate": { "text": "", "internal": false, "type": "" },
+			"_updateDelegateIndex": { "text": "", "internal": false, "type": "" },
 			"_discardItem": { "text": "", "internal": false, "type": "" },
-			"_discardDelegate": { "text": "@internal creates delegate in given item slot", "internal": false, "type": "" },
+			"_insertItems": { "text": "", "internal": false, "type": "" },
+			"_removeItems": { "text": "", "internal": false, "type": "" },
 			"_updateItems": { "text": "", "internal": false, "type": "" },
+			"_processUpdates": { "text": "", "internal": false, "type": "" },
 			"onContentXChanged": { "text": "", "internal": false, "type": "" },
 			"onContentYChanged": { "text": "", "internal": false, "type": "" },
 			"onRecursiveVisibleChanged": { "text": "", "internal": false, "type": "" },

@@ -1,0 +1,9 @@
+{
+	"name": "controls.input.FileInput",
+
+	"content": {
+		"Methods": {
+			"_update": { "text": "", "internal": false, "type": "" }
+		}
+	}
+}

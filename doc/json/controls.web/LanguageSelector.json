@@ -1,0 +1,10 @@
+{
+	"name": "controls.web.LanguageSelector",
+
+	"content": {
+		"Methods": {
+			"addLanguage": { "text": "", "internal": false, "type": "" },
+			"setLanguageByIndex": { "text": "", "internal": false, "type": "" }
+		}
+	}
+}
