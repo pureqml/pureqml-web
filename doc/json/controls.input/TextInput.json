@@ -2,8 +2,14 @@
 	"name": "controls.input.TextInput",
 
 	"content": {
+		"Properties": {
+			"text": { "text": "", "internal": false, "type": "string" },
+			"passwordMode": { "text": "", "internal": false, "type": "bool" }
+		},
+
 		"Methods": {
 			"_update": { "text": "", "internal": false, "type": "" }
-		}
+		},
+
 	}
 }

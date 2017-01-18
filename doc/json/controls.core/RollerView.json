@@ -2,6 +2,10 @@
 	"name": "controls.core.RollerView",
 
 	"content": {
+		"Properties": {
+			"cacheEnable": { "text": "", "internal": false, "type": "bool" }
+		},
+
 		"Methods": {
 			"positionViewAtIndex": { "text": "", "internal": false, "type": "" },
 			"_processUpdates": { "text": "", "internal": false, "type": "" },
@@ -11,6 +15,7 @@
 			"onKeyPressed": { "text": "", "internal": false, "type": "" },
 			"onOrientationChanged": { "text": "", "internal": false, "type": "" },
 			"onCurrentIndexChanged": { "text": "", "internal": false, "type": "" }
-		}
+		},
+
 	}
 }

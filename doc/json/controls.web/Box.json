@@ -2,6 +2,14 @@
 	"name": "controls.web.Box",
 
 	"content": {
+		"Properties": {
+			"top": { "text": "", "internal": false, "type": "string" },
+			"left": { "text": "", "internal": false, "type": "string" },
+			"right": { "text": "", "internal": false, "type": "string" },
+			"bottom": { "text": "", "internal": false, "type": "string" },
+			"prefix": { "text": "", "internal": false, "type": "string" }
+		},
+
 		"Methods": {
 			"_update": { "text": "", "internal": false, "type": "" }
 		}

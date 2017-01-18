@@ -2,11 +2,24 @@
 	"name": "controls.mixins.DragMixin",
 
 	"content": {
+		"Properties": {
+			"pressed": { "text": "", "internal": false, "type": "bool" },
+			"moved": { "text": "", "internal": false, "type": "bool" },
+			"enabled": { "text": "", "internal": false, "type": "bool" },
+			"x": { "text": "", "internal": false, "type": "int" },
+			"y": { "text": "", "internal": false, "type": "int" },
+			"limitx1": { "text": "", "internal": false, "type": "int" },
+			"limitx2": { "text": "", "internal": false, "type": "int" },
+			"limity1": { "text": "", "internal": false, "type": "int" },
+			"limity2": { "text": "", "internal": false, "type": "int" }
+		},
+
 		"Methods": {
 			"_moveHandler": { "text": "", "internal": false, "type": "" },
 			"_downHandler": { "text": "", "internal": false, "type": "" },
 			"_bindPressed": { "text": "", "internal": false, "type": "" },
 			"onEnabledChanged": { "text": "", "internal": false, "type": "" }
-		}
+		},
+
 	}
 }

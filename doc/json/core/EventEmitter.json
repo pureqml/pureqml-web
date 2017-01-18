@@ -9,6 +9,7 @@
 			"emit": { "text": "", "internal": false, "type": "" },
 			"removeAllListeners": { "text": "", "internal": false, "type": "" },
 			"removeListener": { "text": "", "internal": false, "type": "" }
-		}
+		},
+
 	}
 }

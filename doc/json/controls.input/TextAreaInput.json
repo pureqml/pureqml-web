@@ -2,10 +2,15 @@
 	"name": "controls.input.TextAreaInput",
 
 	"content": {
+		"Properties": {
+			"text": { "text": "", "internal": false, "type": "string" }
+		},
+
 		"Methods": {
 			"_update": { "text": "", "internal": false, "type": "" },
 			"getTag": { "text": "returns tag for corresponding element", "internal": false, "type": "" },
 			"registerStyle": { "text": "", "internal": false, "type": "" }
-		}
+		},
+
 	}
 }

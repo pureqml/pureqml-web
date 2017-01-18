@@ -2,10 +2,24 @@
 	"name": "html5.Location",
 
 	"content": {
+		"Properties": {
+			"hash": { "text": "contains current hash value (after '#' charachter)", "internal": false, "type": "string" },
+			"host": { "text": "current host with port number", "internal": false, "type": "string" },
+			"href": { "text": "whole current URL", "internal": false, "type": "string" },
+			"port": { "text": "current port number", "internal": false, "type": "string" },
+			"origin": { "text": "current protocol, hostname and port number of a URL", "internal": false, "type": "string" },
+			"hostname": { "text": "current host name", "internal": false, "type": "string" },
+			"pathname": { "text": "path name of the current URL", "internal": false, "type": "string" },
+			"protocol": { "text": "current protocol", "internal": false, "type": "string" },
+			"search": { "text": "query string of the URL", "internal": false, "type": "string" },
+			"state": { "text": "current history state", "internal": false, "type": "Object" }
+		},
+
 		"Methods": {
 			"updateActualValues": { "text": "@private", "internal": true, "type": "" },
 			"changeHref": { "text": "change current href value method, argument is new href value", "internal": false, "type": "" },
 			"pushState": { "text": "push new state to the history", "internal": false, "type": "" }
-		}
+		},
+
 	}
 }

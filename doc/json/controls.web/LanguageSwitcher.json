@@ -2,6 +2,12 @@
 	"name": "controls.web.LanguageSwitcher",
 
 	"content": {
+		"Properties": {
+			"languges": { "text": "", "internal": false, "type": "variant" },
+			"currentIndex": { "text": "", "internal": false, "type": "int" },
+			"count": { "text": "", "internal": false, "type": "int" }
+		},
+
 		"Signals": {
 			"languageChanged": { "text": "", "internal": false, "type": "" }
 		},

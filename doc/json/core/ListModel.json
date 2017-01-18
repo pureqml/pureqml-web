@@ -2,6 +2,10 @@
 	"name": "core.ListModel",
 
 	"content": {
+		"Properties": {
+			"count": { "text": "", "internal": false, "type": "int" }
+		},
+
 		"Signals": {
 			"reset": { "text": "", "internal": false, "type": "" },
 			"rowsInserted": { "text": "", "internal": false, "type": "" },
@@ -19,6 +23,7 @@
 			"setProperty": { "text": "", "internal": false, "type": "" },
 			"remove": { "text": "", "internal": false, "type": "" },
 			"addChild": { "text": "", "internal": false, "type": "" }
-		}
+		},
+
 	}
 }

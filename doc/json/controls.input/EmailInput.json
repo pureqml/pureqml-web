@@ -2,6 +2,10 @@
 	"name": "controls.input.EmailInput",
 
 	"content": {
+		"Properties": {
+			"correct": { "text": "", "internal": false, "type": "bool" }
+		},
+
 		"Methods": {
 			"onTextChanged": { "text": "", "internal": false, "type": "" }
 		}

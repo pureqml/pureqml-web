@@ -2,6 +2,14 @@
 	"name": "controls.web.TopMenu",
 
 	"content": {
+		"Properties": {
+			"icon": { "text": "", "internal": false, "type": "string" },
+			"hasEnoughSpace": { "text": "", "internal": false, "type": "bool" },
+			"showMenu": { "text": "", "internal": false, "type": "bool" },
+			"content": { "text": "", "internal": false, "type": "Item" },
+			"panel": { "text": "", "internal": false, "type": "Rectangle" }
+		},
+
 		"Methods": {
 			"toggleShow": { "text": "", "internal": false, "type": "" },
 			"onWidthChanged": { "text": "", "internal": false, "type": "" },

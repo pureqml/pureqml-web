@@ -2,6 +2,10 @@
 	"name": "controls.web.Sharer",
 
 	"content": {
+		"Properties": {
+			"url": { "text": "", "internal": false, "type": "string" }
+		},
+
 		"Methods": {
 			"_update": { "text": "", "internal": false, "type": "" },
 			"open": { "text": "", "internal": false, "type": "" },

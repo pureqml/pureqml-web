@@ -2,6 +2,13 @@
 	"name": "controls.canvas.CurveLine",
 
 	"content": {
+		"Properties": {
+			"x1": { "text": "", "internal": false, "type": "int" },
+			"y1": { "text": "", "internal": false, "type": "int" },
+			"x2": { "text": "", "internal": false, "type": "int" },
+			"y2": { "text": "", "internal": false, "type": "int" }
+		},
+
 		"Methods": {
 			"onX1Changed": { "text": "", "internal": false, "type": "" },
 			"onX2Changed": { "text": "", "internal": false, "type": "" },

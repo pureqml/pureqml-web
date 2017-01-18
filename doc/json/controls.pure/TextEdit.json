@@ -2,6 +2,12 @@
 	"name": "controls.pure.TextEdit",
 
 	"content": {
+		"Properties": {
+			"paddings": { "text": "", "internal": false, "type": "Paddings" },
+			"placeholder": { "text": "", "internal": false, "type": "string" },
+			"cursorVisible": { "text": "", "internal": false, "type": "bool" }
+		},
+
 		"Alias Properties": {
 			"horizontalAlignment": { "text": "", "internal": false, "type": "" },
 			"backgroundColor": { "text": "", "internal": false, "type": "" },

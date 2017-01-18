@@ -2,6 +2,10 @@
 	"name": "core.Protocol",
 
 	"content": {
+		"Properties": {
+			"loading": { "text": "loading flag, is true when request was send and false when answer was recieved or error occured", "internal": false, "type": "bool" }
+		},
+
 		"Methods": {
 			"fetchRequest": { "text": "send request using 'fetch' method", "internal": false, "type": "" },
 			"requestXHR": { "text": "send request using 'XMLHttpRequest' object", "internal": false, "type": "" }

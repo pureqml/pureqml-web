@@ -2,6 +2,13 @@
 	"name": "core.Timer",
 
 	"content": {
+		"Properties": {
+			"interval": { "text": "interval, ms", "internal": false, "type": "int" },
+			"repeat": { "text": "makes this timer periodic", "internal": false, "type": "bool" },
+			"running": { "text": "current timer status, true - running, false - paused", "internal": false, "type": "bool" },
+			"triggeredOnStart": { "text": "fire timer's signal on start or activation", "internal": false, "type": "bool" }
+		},
+
 		"Signals": {
 			"triggered": { "text": "this signal triggered when timer fires", "internal": false, "type": "" }
 		},

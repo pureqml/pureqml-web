@@ -1,9 +1,0 @@
-{
-	"name": "pureqml-web.code_samples.KeyLesson",
-
-	"content": {
-		"Methods": {
-			"onKeyPressed": { "text": "", "internal": false, "type": "" }
-		}
-	}
-}

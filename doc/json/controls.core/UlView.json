@@ -2,6 +2,15 @@
 	"name": "controls.core.UlView",
 
 	"content": {
+		"Properties": {
+			"model": { "text": "", "internal": false, "type": "Object" },
+			"delegate": { "text": "", "internal": false, "type": "Item" },
+			"count": { "text": "", "internal": false, "type": "int" },
+			"currentIndex": { "text": "", "internal": false, "type": "int" },
+			"contentWidth": { "text": "", "internal": false, "type": "int" },
+			"contentHeight": { "text": "", "internal": false, "type": "int" }
+		},
+
 		"Methods": {
 			"_onReset": { "text": "", "internal": false, "type": "" },
 			"_onRowsChanged": { "text": "", "internal": false, "type": "" },
@@ -11,6 +20,7 @@
 			"_update": { "text": "", "internal": false, "type": "" },
 			"_attach": { "text": "", "internal": false, "type": "" },
 			"onCompleted": { "text": "", "internal": false, "type": "" }
-		}
+		},
+
 	}
 }

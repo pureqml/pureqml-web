@@ -16,6 +16,7 @@
 			"setAnimation": { "text": "sets animation on given property", "internal": false, "type": "" },
 			"getAnimation": { "text": "gets animation on given property", "internal": false, "type": "" },
 			"_tryFocus": { "text": "called to test if the component can have focus, generic object cannot be focused, so return false, override it to implement default focus policy", "internal": false, "type": "" }
-		}
+		},
+
 	}
 }

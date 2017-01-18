@@ -2,6 +2,14 @@
 	"name": "core.GamepadManager",
 
 	"content": {
+		"Properties": {
+			"_gamepads": { "text": "@private", "internal": true, "type": "variant" },
+			"count": { "text": "count of the all connected gamepad devices", "internal": false, "type": "int" },
+			"gamepadChildrensCount": { "text": "count of Gamepad instances inside scope", "internal": false, "type": "int" },
+			"gamepadPollingInterval": { "text": "startup delay before gamepads polling because there is no gamepad events", "internal": false, "type": "int" },
+			"eventPollingInterval": { "text": "gamepad event polling timer interval default value is 8ms (for 120fps) because there is no gamepad events", "internal": false, "type": "int" }
+		},
+
 		"Signals": {
 			"connected": { "text": "emitted when any gamepad is connected", "internal": false, "type": "" },
 			"disconnected": { "text": "emitted when gamepad is disconnected", "internal": false, "type": "" }

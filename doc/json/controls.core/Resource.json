@@ -2,6 +2,11 @@
 	"name": "controls.core.Resource",
 
 	"content": {
+		"Properties": {
+			"url": { "text": "", "internal": false, "type": "string" },
+			"data": { "text": "", "internal": false, "type": "string" }
+		},
+
 		"Methods": {
 			"onUrlChanged": { "text": "", "internal": false, "type": "" }
 		}

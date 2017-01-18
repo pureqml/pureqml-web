@@ -2,6 +2,17 @@
 	"name": "core.Gamepad",
 
 	"content": {
+		"Properties": {
+			"index": { "text": "gamepad index in order of appearance", "internal": false, "type": "int" },
+			"buttonsCount": { "text": "supported buttons count", "internal": false, "type": "int" },
+			"axesCount": { "text": "supported axes count", "internal": false, "type": "int" },
+			"vendorId": { "text": "vendor ID", "internal": false, "type": "int" },
+			"productId": { "text": "product ID", "internal": false, "type": "int" },
+			"connected": { "text": "is gamepad connected or not", "internal": false, "type": "bool" },
+			"standartMapping": { "text": "gamepad use standart buttons and axes mapping", "internal": false, "type": "bool" },
+			"deviceInfo": { "text": "gamepad device info string", "internal": false, "type": "string" }
+		},
+
 		"Signals": {
 			"axes": { "text": "emitted when one of the axes is changed", "internal": false, "type": "" },
 			"button": { "text": "emitted when any button is pressed", "internal": false, "type": "" }
@@ -12,6 +23,7 @@
 			"get": { "text": "@private", "internal": true, "type": "" },
 			"poll": { "text": "@private", "internal": true, "type": "" },
 			"onStandartMappingChanged": { "text": "", "internal": false, "type": "" }
-		}
+		},
+
 	}
 }

@@ -2,6 +2,19 @@
 	"name": "core.MouseArea",
 
 	"content": {
+		"Properties": {
+			"mouseX": { "text": "mouse x coordinate", "internal": false, "type": "real" },
+			"mouseY": { "text": "mouse y coordinate", "internal": false, "type": "real" },
+			"cursor": { "text": "mouse cursor inside the item's area", "internal": false, "type": "string" },
+			"pressed": { "text": "mouse pressed flag", "internal": false, "type": "bool" },
+			"containsMouse": { "text": "mouse inside item's area flag", "internal": false, "type": "bool" },
+			"clickable": { "text": "enable mouse click event handling flag", "internal": false, "type": "bool" },
+			"pressable": { "text": "enable mouse click event handling flag", "internal": false, "type": "bool" },
+			"touchEnabled": { "text": "enable touch events handling flag", "internal": false, "type": "bool" },
+			"hoverEnabled": { "text": "enable mouse hover event handling flag", "internal": false, "type": "bool" },
+			"wheelEnabled": { "text": "enable mouse click event handling flag", "internal": false, "type": "bool" }
+		},
+
 		"Alias Properties": {
 			"hover": { "text": "containsMouse property alias", "internal": false, "type": "" },
 			"hoverable": { "text": "hoverEnabled property alias", "internal": false, "type": "" }
@@ -38,6 +51,7 @@
 			"updatePosition": { "text": "@private", "internal": true, "type": "" },
 			"onTouchStart": { "text": "@private", "internal": true, "type": "" },
 			"onTouchMove": { "text": "@private", "internal": true, "type": "" }
-		}
+		},
+
 	}
 }

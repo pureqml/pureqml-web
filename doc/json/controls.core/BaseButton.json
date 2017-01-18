@@ -2,6 +2,10 @@
 	"name": "controls.core.BaseButton",
 
 	"content": {
+		"Properties": {
+			"blink": { "text": "", "internal": false, "type": "bool" }
+		},
+
 		"Signals": {
 			"triggered": { "text": "", "internal": false, "type": "" }
 		},

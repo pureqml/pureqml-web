@@ -2,11 +2,20 @@
 	"name": "controls.web.CodeHighlighter",
 
 	"content": {
+		"Properties": {
+			"contentWidth": { "text": "content width", "internal": false, "type": "int" },
+			"contentHeight": { "text": "content height", "internal": false, "type": "int" },
+			"code": { "text": "code string", "internal": false, "type": "string" },
+			"language": { "text": "programming language", "internal": false, "type": "string" },
+			"font": { "text": "code text font", "internal": false, "type": "Font" }
+		},
+
 		"Methods": {
 			"_update": { "text": "@private", "internal": true, "type": "" },
 			"getTag": { "text": "@private returns tag for corresponding element", "internal": true, "type": "" },
 			"registerStyle": { "text": "@private", "internal": true, "type": "" },
 			"_updateSize": { "text": "@private", "internal": true, "type": "" }
-		}
+		},
+
 	}
 }

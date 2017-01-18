@@ -2,8 +2,14 @@
 	"name": "controls.input.FileInput",
 
 	"content": {
+		"Properties": {
+			"value": { "text": "", "internal": false, "type": "string" },
+			"filter": { "text": "", "internal": false, "type": "string" }
+		},
+
 		"Methods": {
 			"_update": { "text": "", "internal": false, "type": "" }
-		}
+		},
+
 	}
 }

@@ -2,5 +2,9 @@
 	"name": "controls.pure.TextButton",
 
 	"content": {
+		"Properties": {
+			"text": { "text": "", "internal": false, "type": "string" },
+			"textColor": { "text": "", "internal": false, "type": "color" }
+		}
 	}
 }

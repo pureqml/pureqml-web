@@ -2,8 +2,13 @@
 	"name": "controls.input.ColorInput",
 
 	"content": {
+		"Properties": {
+			"value": { "text": "", "internal": false, "type": "Color" }
+		},
+
 		"Methods": {
 			"_update": { "text": "", "internal": false, "type": "" }
-		}
+		},
+
 	}
 }

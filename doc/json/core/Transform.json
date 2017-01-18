@@ -2,8 +2,24 @@
 	"name": "core.Transform",
 
 	"content": {
+		"Properties": {
+			"perspective": { "text": "class controlling object transformation", "internal": false, "type": "int" },
+			"translateX": { "text": "", "internal": false, "type": "int" },
+			"translateY": { "text": "", "internal": false, "type": "int" },
+			"translateZ": { "text": "", "internal": false, "type": "int" },
+			"rotateX": { "text": "", "internal": false, "type": "real" },
+			"rotateY": { "text": "", "internal": false, "type": "real" },
+			"rotateZ": { "text": "", "internal": false, "type": "real" },
+			"rotate": { "text": "", "internal": false, "type": "real" },
+			"scaleX": { "text": "", "internal": false, "type": "real" },
+			"scaleY": { "text": "", "internal": false, "type": "real" },
+			"skewX": { "text": "", "internal": false, "type": "real" },
+			"skewY": { "text": "", "internal": false, "type": "real" }
+		},
+
 		"Methods": {
 			"_update": { "text": "", "internal": false, "type": "" }
-		}
+		},
+
 	}
 }

@@ -2,9 +2,17 @@
 	"name": "controls.input.RangeInput",
 
 	"content": {
+		"Properties": {
+			"value": { "text": "", "internal": false, "type": "int" },
+			"min": { "text": "", "internal": false, "type": "int" },
+			"max": { "text": "", "internal": false, "type": "int" },
+			"step": { "text": "", "internal": false, "type": "int" }
+		},
+
 		"Methods": {
 			"_update": { "text": "@private", "internal": true, "type": "" },
 			"getTag": { "text": "returns tag for corresponding element", "internal": false, "type": "" }
-		}
+		},
+
 	}
 }

@@ -2,6 +2,11 @@
 	"name": "core.ProxyModel",
 
 	"content": {
+		"Properties": {
+			"count": { "text": "rows count property", "internal": false, "type": "int" },
+			"target": { "text": "target model object", "internal": false, "type": "Object" }
+		},
+
 		"Signals": {
 			"reset": { "text": "emitted when model is reset", "internal": false, "type": "" },
 			"rowsInserted": { "text": "emitted when row is inserted", "internal": false, "type": "" },
@@ -26,6 +31,7 @@
 			"_onRowsChanged": { "text": "@private", "internal": true, "type": "" },
 			"_onRowsRemoved": { "text": "@private", "internal": true, "type": "" },
 			"onCompleted": { "text": "@private", "internal": true, "type": "" }
-		}
+		},
+
 	}
 }

@@ -2,6 +2,11 @@
 	"name": "core.PageStack",
 
 	"content": {
+		"Properties": {
+			"currentIndex": { "text": "index of displaying child", "internal": false, "type": "int" },
+			"count": { "text": "childrens count", "internal": false, "type": "int" }
+		},
+
 		"Methods": {
 			"onCurrentIndexChanged": { "text": "@private", "internal": true, "type": "" },
 			"onActiveFocusChanged": { "text": "@private", "internal": true, "type": "" },

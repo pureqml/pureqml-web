@@ -2,6 +2,10 @@
 	"name": "controls.mixins.WheelMixin",
 
 	"content": {
+		"Properties": {
+			"enabled": { "text": "", "internal": false, "type": "bool" }
+		},
+
 		"Signals": {
 			"wheel": { "text": "", "internal": false, "type": "" }
 		},
@@ -9,6 +13,7 @@
 		"Methods": {
 			"_bindWheel": { "text": "", "internal": false, "type": "" },
 			"onEnabledChanged": { "text": "", "internal": false, "type": "" }
-		}
+		},
+
 	}
 }

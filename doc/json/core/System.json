@@ -2,10 +2,28 @@
 	"name": "core.System",
 
 	"content": {
+		"Properties": {
+			"userAgent": { "text": "browser userAgent value", "internal": false, "type": "string" },
+			"language": { "text": "platform language", "internal": false, "type": "string" },
+			"browser": { "text": "browser name", "internal": false, "type": "string" },
+			"vendor": { "text": "current vendor name", "internal": false, "type": "string" },
+			"os": { "text": "operation system name", "internal": false, "type": "string" },
+			"webkit": { "text": "webkit supported flag", "internal": false, "type": "bool" },
+			"support3dTransforms": { "text": "CSS transforms3d supported flag", "internal": false, "type": "bool" },
+			"supportTransforms": { "text": "CSS transforms supported flag", "internal": false, "type": "bool" },
+			"supportTransitions": { "text": "CSS transitions supported flag", "internal": false, "type": "bool" },
+			"portrait": { "text": "portrait oriented screen flag", "internal": false, "type": "bool" },
+			"landscape": { "text": "landscape oriented screen flag", "internal": false, "type": "bool" },
+			"pageActive": { "text": "page active flag", "internal": false, "type": "bool" },
+			"screenWidth": { "text": "device screen width value", "internal": false, "type": "int" },
+			"screenHeight": { "text": "device screen height value", "internal": false, "type": "int" }
+		},
+
 		"Methods": {
 			"onContextWidthChanged": { "text": "@private", "internal": true, "type": "" },
 			"onContextHeightChanged": { "text": "@private", "internal": true, "type": "" },
 			"_updateLayoutType": { "text": "@private", "internal": true, "type": "" }
-		}
+		},
+
 	}
 }

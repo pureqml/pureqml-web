@@ -2,6 +2,18 @@
 	"name": "core.Effects",
 
 	"content": {
+		"Properties": {
+			"blur": { "text": "applies a blur effect to the image", "internal": false, "type": "real" },
+			"grayscale": { "text": "converts the image to grayscale", "internal": false, "type": "real" },
+			"sepia": { "text": "converts the image to sepia", "internal": false, "type": "real" },
+			"brightness": { "text": "adjusts the brightness of the image", "internal": false, "type": "real" },
+			"contrast": { "text": "adjusts the contrast of the image", "internal": false, "type": "real" },
+			"hueRotate": { "text": "applies a hue rotation on the image. The value defines the number of degrees around the color circle the image samples will be adjusted", "internal": false, "type": "real" },
+			"invert": { "text": "inverts the samples in the image", "internal": false, "type": "real" },
+			"saturate": { "text": "saturates the image", "internal": false, "type": "real" },
+			"shadow": { "text": "object property for the shadow adjusting", "internal": false, "type": "Shadow" }
+		},
+
 		"Methods": {
 			"_addStyle": { "text": "@private", "internal": true, "type": "" },
 			"_getFilterStyle": { "text": "@private", "internal": true, "type": "" },

@@ -2,6 +2,12 @@
 	"name": "core.Grid",
 
 	"content": {
+		"Properties": {
+			"horizontalSpacing": { "text": "horizontal spacing between rows, overrides regular spacing, pixels", "internal": false, "type": "int" },
+			"verticalSpacing": { "text": "vertical spacing between columns, overrides regular spacing, pixels", "internal": false, "type": "int" },
+			"rowsCount": { "text": "read-only property, represents number of row in a grid", "internal": false, "type": "int" }
+		},
+
 		"Methods": {
 			"onWidthChanged": { "text": "", "internal": false, "type": "" },
 			"onHeightChanged": { "text": "", "internal": false, "type": "" },

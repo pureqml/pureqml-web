@@ -2,5 +2,9 @@
 	"name": "controls.web.MobileMenuButton",
 
 	"content": {
+		"Properties": {
+			"back": { "text": "", "internal": false, "type": "bool" },
+			"barColor": { "text": "", "internal": false, "type": "color" }
+		}
 	}
 }
