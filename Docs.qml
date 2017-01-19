@@ -69,11 +69,11 @@ HistoryPage {
 			for (var p in pages) {
 				if (p == "pureqml-web.code_samples" || p == "pureqml-web.lessons" || p == "pureqml-web")
 					continue
-				data.push({"text": p, "depth": 0, "path": "docs/" + p})
+				data.push({"text": '<b>' + p + '</b>', "depth": 0, "path": "docs/" + p})
 				var content = pages[p].content
 				var sorted = Object.keys(content).sort()
 				for (var c in sorted) {
-					data.push({"text": sorted[c], "depth": 1, "path": "docs/" + p + "/" + sorted[c]})
+					data.push({"text": sorted[c], "depth": 0, "path": "docs/" + p + "/" + sorted[c]})
 				}
 			}
 			this.parent._data = data
