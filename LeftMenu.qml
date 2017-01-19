@@ -4,7 +4,7 @@ Rectangle {
 	property bool collapsed;
 	width: 256;
 	height: context.height - 100;
-	color: colorTheme.panelColor;
+	color: "#FAFAFA";//colorTheme.panelColor;
 	border.width: 1;
 	border.color: "#999";
 	z: 1;
