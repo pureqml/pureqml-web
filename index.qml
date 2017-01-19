@@ -25,7 +25,7 @@ Item {
 		this._context.location.pushState(state, window.location.pathname, window.location.pathname) 
 	}
 
-	Head { z: 1; }
+	Head { z: 2; }
 
 	ColorTheme { id: colorTheme; }
 

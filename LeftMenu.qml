@@ -3,11 +3,12 @@ Rectangle {
 	property bool hidable: parent.width < 840;
 	property bool collapsed;
 	width: 256;
-	height: context.height;
+	height: context.height - 100;
 	color: colorTheme.panelColor;
 	border.width: 1;
 	border.color: "#999";
 	z: 1;
+	y: 100;
 
 	PositionMixin { value: PositionMixin.Fixed; }
 	OverflowMixin {	value: parent.recursiveVisible ? OverflowMixin.ScrollY : OverflowMixin.Hidden; }
@@ -19,6 +20,7 @@ Rectangle {
 	WebItem {
 		width: 100%;
 		height: 40;
+		visible: parent.hidable;
 		color: hover ? "#90A4AE" : "#ECEFF1";
 		Behavior on background { Animation { duration: 400; }}
 
@@ -38,7 +40,7 @@ Rectangle {
 	Column {
 		id: menuContent;
 		width: 100%;
-		y: 40;
+		y: parent.hidable ? 40 : 0;
 
 		ListView {
 			anchors.topMargin: 10;

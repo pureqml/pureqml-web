@@ -37,7 +37,7 @@ ContentColumn {
 			var p = content[a]
 			for (var b in p) {
 				var c = p[b]
-				output += '<p style="color:#424242">' + b + ' : <span style="color:#00897B">' + c.type + '</span><br>' + '<span style="color:#757575">' + c.text + '</span><br></p>'
+				output += '<p style="color:#424242">' + b + ' : <a style="color:#00897B; position:static;">' + c.type + '</a><br>' + '<span style="color:#757575">' + c.text + '</span><br></p>'
 			}
 		}
 		docText.text = output;

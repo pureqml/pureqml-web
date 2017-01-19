@@ -3,6 +3,10 @@ Rectangle {
 	height: 50;
 	anchors.top: parent.top;
 	color: colorTheme.panelColor;
+	effects.shadow.y: 1;
+	effects.shadow.blur: 8;
+	effects.shadow.color: "#0004";
+	effects.shadow.spread: 1;
 
 	MaterialIcon {
 		anchors.verticalCenter: parent.verticalCenter;

@@ -1,4 +1,5 @@
 HistoryPage {
+	height: contentCol.contentHeight;
 	url: "docs";
 	clip: true;
 
@@ -19,6 +20,8 @@ HistoryPage {
 	}
 
 	Column {
+		id: contentCol;
+		x: leftMenu.width;
 		width: parent.width < 840 ? 100% : 100% - 256;
 
 		SearchPanel {

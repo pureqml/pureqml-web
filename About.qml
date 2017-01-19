@@ -1,5 +1,6 @@
 HistoryPage {
 	url: "about";
+	height: contentCol.contentHeight;
 
 	LeftMenu {
 		id: leftMenu;
@@ -7,7 +8,9 @@ HistoryPage {
 	}
 
 	ContentColumn {
+		id: contentCol;
 		spacing: 30;
+		x: leftMenu.width;
 
 		PageColumn {
 			hash: "whatispure";

@@ -1,5 +1,6 @@
 HistoryPage {
 	url: "lessons";
+	height: content.height;
 
 	LeftMenu {
 		id: leftMenu;
@@ -7,6 +8,7 @@ HistoryPage {
 
 	ContentColumn {
 		id: content;
+		x: leftMenu.width;
 		spacing: 30;
 
 		PageColumn {
