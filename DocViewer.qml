@@ -19,7 +19,7 @@ ContentColumn {
 		var output = ""
 
 		nameText.text = data.name
-		
+
 		if (!content) {
 			log("Skip no content")
 			for (var a in data) {
@@ -37,7 +37,9 @@ ContentColumn {
 			var p = content[a]
 			for (var b in p) {
 				var c = p[b]
-				output += '<p style="color:#424242">' + b + ' : <a style="color:#00897B; position:static;">' + c.type + '</a><br>' + '<span style="color:#757575">' + c.text + '</span><br></p>'
+
+				var ref = c.ref ? 'href="http://pureqml.com/docs/' + c.ref.replace(/\./g, "/") + '"' : ""
+				output += '<p style="color:#424242">' + b + ' : <a ' + ref + ' style="color:#00897B; position:static;">' + (c.type ? c.type : "") + '</a><br>' + '<span style="color:#757575">' + c.text + '</span><br></p>'
 			}
 		}
 		docText.text = output;
