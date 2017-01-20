@@ -5,9 +5,9 @@
 		"Properties": {
 			"fullscreen": { "text": "", "internal": false, "type": "bool" },
 			"scrollY": { "text": "", "internal": false, "type": "int" },
-			"stylesheet": { "text": "", "ref": "core.Stylesheet", "internal": false, "type": "Stylesheet" },
-			"system": { "text": "", "ref": "core.System", "internal": false, "type": "System" },
-			"location": { "text": "", "ref": "core.Location", "internal": false, "type": "Location" },
+			"stylesheet": { "text": "", "ref": "core/Stylesheet", "internal": false, "type": "Stylesheet" },
+			"system": { "text": "", "ref": "core/System", "internal": false, "type": "System" },
+			"location": { "text": "", "ref": "core/Location", "internal": false, "type": "Location" },
 			"language": { "text": "", "internal": false, "type": "string" }
 		},
 

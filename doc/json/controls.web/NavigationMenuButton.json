@@ -9,7 +9,7 @@
 			"content": { "text": "", "internal": false, "type": "Item" },
 			"contentX": { "text": "", "internal": false, "type": "int" },
 			"contentY": { "text": "", "internal": false, "type": "int" },
-			"panel": { "text": "", "ref": "controls.web.Rectangle", "internal": false, "type": "Rectangle" }
+			"panel": { "text": "", "ref": "controls.web/Rectangle", "internal": false, "type": "Rectangle" }
 		},
 
 		"Methods": {

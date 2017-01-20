@@ -18,15 +18,15 @@
 			"visibleInView": { "text": "this item is visible inside view content area", "internal": false, "type": "bool" },
 			"recursiveVisible": { "text": "this item is actually visible on screen (all parents are visible as well)", "internal": false, "type": "bool" },
 			"opacity": { "text": "opacity of the item", "internal": false, "type": "real" },
-			"anchors": { "text": "", "ref": "core.Anchors", "internal": false, "type": "Anchors" },
-			"effects": { "text": "", "ref": "core.Effects", "internal": false, "type": "Effects" },
-			"transform": { "text": "", "ref": "core.Transform", "internal": false, "type": "Transform" },
-			"left": { "text": "", "ref": "core.AnchorLine", "internal": false, "type": "AnchorLine" },
-			"top": { "text": "", "ref": "core.AnchorLine", "internal": false, "type": "AnchorLine" },
-			"right": { "text": "", "ref": "core.AnchorLine", "internal": false, "type": "AnchorLine" },
-			"bottom": { "text": "", "ref": "core.AnchorLine", "internal": false, "type": "AnchorLine" },
-			"horizontalCenter": { "text": "", "ref": "core.AnchorLine", "internal": false, "type": "AnchorLine" },
-			"verticalCenter": { "text": "", "ref": "core.AnchorLine", "internal": false, "type": "AnchorLine" },
+			"anchors": { "text": "", "ref": "core/Anchors", "internal": false, "type": "Anchors" },
+			"effects": { "text": "", "ref": "core/Effects", "internal": false, "type": "Effects" },
+			"transform": { "text": "", "ref": "core/Transform", "internal": false, "type": "Transform" },
+			"left": { "text": "", "ref": "core/AnchorLine", "internal": false, "type": "AnchorLine" },
+			"top": { "text": "", "ref": "core/AnchorLine", "internal": false, "type": "AnchorLine" },
+			"right": { "text": "", "ref": "core/AnchorLine", "internal": false, "type": "AnchorLine" },
+			"bottom": { "text": "", "ref": "core/AnchorLine", "internal": false, "type": "AnchorLine" },
+			"horizontalCenter": { "text": "", "ref": "core/AnchorLine", "internal": false, "type": "AnchorLine" },
+			"verticalCenter": { "text": "", "ref": "core/AnchorLine", "internal": false, "type": "AnchorLine" },
 			"viewX": { "text": "x position in view (if any)", "internal": false, "type": "int" },
 			"viewY": { "text": "y position in view (if any)", "internal": false, "type": "int" }
 		},
@@ -59,6 +59,7 @@
 			"_updateStyle": { "text": "", "internal": false },
 			"_processKey": { "text": "", "internal": false },
 			"onVisibleChanged": { "text": "", "internal": false },
+			"onVisibleInViewChanged": { "text": "", "internal": false },
 			"setFocus": { "text": "", "internal": false }
 		}
 	}

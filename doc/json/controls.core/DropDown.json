@@ -3,7 +3,7 @@
 
 	"content": {
 		"Properties": {
-			"font": { "text": "", "ref": "controls.core.Font", "internal": false, "type": "Font" },
+			"font": { "text": "", "ref": "controls.core/Font", "internal": false, "type": "Font" },
 			"color": { "text": "", "internal": false, "type": "Color" },
 			"currentIndex": { "text": "", "internal": false, "type": "int" },
 			"count": { "text": "", "internal": false, "type": "int" },

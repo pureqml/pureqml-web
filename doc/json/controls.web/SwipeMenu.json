@@ -3,7 +3,7 @@
 
 	"content": {
 		"Properties": {
-			"innerArea": { "text": "", "ref": "controls.web.Item", "internal": false, "type": "Item" },
+			"innerArea": { "text": "", "ref": "controls.web/Item", "internal": false, "type": "Item" },
 			"hideable": { "text": "", "internal": false, "type": "bool" },
 			"xDuration": { "text": "", "internal": false, "type": "int" },
 			"openWidth": { "text": "", "internal": false, "type": "int" },

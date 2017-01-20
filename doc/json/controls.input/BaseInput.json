@@ -3,11 +3,11 @@
 
 	"content": {
 		"Properties": {
-			"paddings": { "text": "inner text paddings", "ref": "controls.input.Paddings", "internal": false, "type": "Paddings" },
+			"paddings": { "text": "inner text paddings", "ref": "controls.input/Paddings", "internal": false, "type": "Paddings" },
 			"color": { "text": "text color", "internal": false, "type": "Color" },
 			"backgroundColor": { "text": "background color", "internal": false, "type": "Color" },
-			"font": { "text": "object holding properties of text font", "ref": "controls.input.Font", "internal": false, "type": "Font" },
-			"border": { "text": "object holding properties of the border", "ref": "controls.input.Border", "internal": false, "type": "Border" },
+			"font": { "text": "object holding properties of text font", "ref": "controls.input/Font", "internal": false, "type": "Font" },
+			"border": { "text": "object holding properties of the border", "ref": "controls.input/Border", "internal": false, "type": "Border" },
 			"placeholder": { "text": "inner text placeholder", "internal": false, "type": "string" },
 			"type": { "text": "input type value, must overrie in inheritor", "internal": false, "type": "string" }
 		},

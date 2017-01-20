@@ -13,7 +13,7 @@
 			"pageScrolling": { "text": "", "internal": false, "type": "bool" },
 			"rendered": { "text": "", "internal": false, "type": "bool" },
 			"trace": { "text": "", "internal": false, "type": "bool" },
-			"content": { "text": "", "ref": "core.BaseViewContent", "internal": false, "type": "BaseViewContent" }
+			"content": { "text": "", "ref": "core/BaseViewContent", "internal": false, "type": "BaseViewContent" }
 		},
 
 		"Methods": {

@@ -4,7 +4,7 @@
 	"content": {
 		"Properties": {
 			"color": { "text": "rectangle background color", "internal": false, "type": "color" },
-			"border": { "text": "object holding properties of the border", "ref": "core.Border", "internal": false, "type": "Border" },
+			"border": { "text": "object holding properties of the border", "ref": "core/Border", "internal": false, "type": "Border" },
 			"gradient": { "text": "if gradient object was set, it displays gradient instead of solid color", "internal": false, "type": "Gradient" }
 		},
 

@@ -3,7 +3,7 @@
 
 	"content": {
 		"Properties": {
-			"paddings": { "text": "", "ref": "controls.pure.Paddings", "internal": false, "type": "Paddings" },
+			"paddings": { "text": "", "ref": "controls.pure/Paddings", "internal": false, "type": "Paddings" },
 			"placeholder": { "text": "", "internal": false, "type": "string" },
 			"cursorVisible": { "text": "", "internal": false, "type": "bool" }
 		},

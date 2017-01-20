@@ -7,7 +7,7 @@
 			"contentHeight": { "text": "content height", "internal": false, "type": "int" },
 			"code": { "text": "code string", "internal": false, "type": "string" },
 			"language": { "text": "programming language", "internal": false, "type": "string" },
-			"font": { "text": "code text font", "ref": "controls.web.Font", "internal": false, "type": "Font" }
+			"font": { "text": "code text font", "ref": "controls.web/Font", "internal": false, "type": "Font" }
 		},
 
 		"Methods": {

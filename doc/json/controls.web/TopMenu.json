@@ -7,7 +7,7 @@
 			"hasEnoughSpace": { "text": "", "internal": false, "type": "bool" },
 			"showMenu": { "text": "", "internal": false, "type": "bool" },
 			"content": { "text": "", "internal": false, "type": "Item" },
-			"panel": { "text": "", "ref": "controls.web.Rectangle", "internal": false, "type": "Rectangle" }
+			"panel": { "text": "", "ref": "controls.web/Rectangle", "internal": false, "type": "Rectangle" }
 		},
 
 		"Methods": {
