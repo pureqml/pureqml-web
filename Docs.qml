@@ -8,8 +8,10 @@ HistoryPage {
 	onStateChanged: {
 		if (value && value.page === "docs"){
 			content.visible = true
-			if (value.section)
-				dataLoader.url = "https://raw.githubusercontent.com/pureqml/pureqml-web/master/doc/json/" + (value.element ? value.section + "/" + value.element : value.section) + ".json"
+			if (value.section) {
+				dataLoader.url = "https://raw.githubusercontent.com/pureqml/pureqml-web/master/doc/json/"
+								+ value.section.replace(/\./g, '/')  + ".json"
+			}
 			else
 				dataLoader.url = "https://raw.githubusercontent.com/pureqml/pureqml-web/master/doc/json/core/Item.json"
 		}
@@ -73,7 +75,7 @@ HistoryPage {
 				var content = pages[p].content
 				var sorted = Object.keys(content).sort()
 				for (var c in sorted) {
-					data.push({"text": sorted[c], "depth": 0, "path": "docs/" + p + "/" + sorted[c]})
+					data.push({"text": sorted[c], "depth": 1, "path": "docs/" + p + "." + sorted[c] + "/"})
 				}
 			}
 			this.parent._data = data
