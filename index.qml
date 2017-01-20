@@ -15,14 +15,13 @@ Item {
 		
 		var path = window.location.pathname.split("/")
 		var state = {}
-		if (path[0])
-			state.page = path[0]
 		if (path[1])
-			state.section = path[1]
+			state.page = path[1]
 		if (path[2])
-			state.element = path[2]
+			state.section = path[2]
+		if (path[3])
+			state.element = path[3]
 
-		log("pushState", state, window.location.pathname, window.location.pathname)
 		this._context.location.pushState(state, window.location.pathname, window.location.pathname) 
 	}
 
