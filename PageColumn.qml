@@ -3,9 +3,7 @@ Column {
 	property string title;
 	property string hash;
 	property string link;
-	width: parent.width - 20;
-	x: 10;
-	anchors.margins: 10;
+	width: 100%;
 	spacing: 10;
 
 	onHashChanged: { this.element.setAttribute('id', value) }

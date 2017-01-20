@@ -9,6 +9,7 @@ Column {
 		width: 90%;
 		x: 5%;
 		font.pixelSize: 38;
+		font.weight: 100;
 		color: colorTheme.primaryColor;
 	}
 	
@@ -50,7 +51,7 @@ Column {
 				var c = p[b]
 
 				var ref = c.ref ? 'href="http://pureqml.com/docs/' + c.ref + '"' : ""
-				output += '<div style="color:#616161; border-bottom-style:solid; border-bottom-width:2px; border-bottom-color:#F5F5F5; font-family:Roboto Slab; font-size:26px;">' + b + ' : <a ' + ref + ' style="color:#00897B; position:static;">' + (c.type ? c.type : "") + '</a></div><p style="color:#757575;white-space:normal">' + c.text + '</p><br>'
+				output += '<div style="color:#616161; padding-bottom:8px; border-bottom-style:solid; border-bottom-width:2px; border-bottom-color:#F5F5F5; font-family:Roboto Slab; font-size:26px;">' + b + ' : <a ' + ref + ' style="color:#00897B; position:static;">' + (c.type ? c.type : "") + '</a></div><p style="color:#757575;white-space:normal">' + c.text + '</p><br>'
 			}
 		}
 		docText.text = output;

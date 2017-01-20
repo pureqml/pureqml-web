@@ -1,12 +1,12 @@
 Rectangle {
 	id: leftMenuProto;
-	property bool hidable: parent.width < 840;
+	property bool hidable: parent.width < 860;
 	property bool collapsed;
 	width: 256;
 	height: context.height - 100;
 	color: "#FAFAFA";//colorTheme.panelColor;
 	z: 1;
-	y: 100;
+	y: 70;
 
 	PositionMixin { value: PositionMixin.Fixed; }
 	OverflowMixin {	value: parent.recursiveVisible ? OverflowMixin.ScrollY : OverflowMixin.Hidden; }

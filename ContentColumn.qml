@@ -1,7 +1,8 @@
 Column {
-	width: parent.width < 840 ? 100% : 100% - 256;
-	signal fillMenu;
+	width: parent.width < 860 ? 100% : Math.min(100% - 256, 860);
+	x: parent.width < 860 ? 0 : (100% - 256 - width) / 3 + 256;
 	clip: true;
+	signal fillMenu;
 
 	Behavior on y { Animation { duration: 300; } }
 

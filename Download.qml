@@ -1,6 +1,6 @@
 HistoryPage {
 	url: "download";
-	height: contentGrid.height;
+	height: contentGrid.height + Math.max((context.height - contentGrid.height - 240 - 70), 0);
 	
 	Grid {
 		id: contentGrid;

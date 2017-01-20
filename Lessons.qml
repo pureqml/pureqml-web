@@ -8,7 +8,6 @@ HistoryPage {
 
 	ContentColumn {
 		id: content;
-		x: leftMenu.width;
 		spacing: 30;
 
 		PageColumn {
