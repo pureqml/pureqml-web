@@ -22,6 +22,7 @@ Item {
 		if (path[2])
 			state.element = path[2]
 
+		log("pushState", state, window.location.pathname, window.location.pathname)
 		this._context.location.pushState(state, window.location.pathname, window.location.pathname) 
 	}
 
