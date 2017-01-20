@@ -3,10 +3,10 @@ Item {
 	property Object state: context.location.state;
 
 	onStateChanged: {
-		if (value && value.page)
+		if (value && value.page && value.page !== "../")
 			pages.pageName = value.page;
 		else
-			pages.pageName = 'about';
+			pages.pageName = 'main';
 	}
 
 	onCompleted: {
@@ -31,10 +31,11 @@ Item {
 
 	PageStack {
 		id: pages;
-		y: 100;
+		y: 70;
 		width: 100%;
 		property string pageName;
 
+		Main { }
 		About { }
 		Download { }
 		Lessons { }
@@ -61,6 +62,18 @@ Item {
 					return
 				}
 			}
+		}
+	}
+
+	Item {
+		anchors.top: pages.bottom;
+		width: 100%;
+		height: 240;
+
+		Rectangle {
+			y: 100;
+			width: 100%; height: 140;
+			color: "#EDEDED";
 		}
 	}
 }
