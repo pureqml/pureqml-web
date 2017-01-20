@@ -25,13 +25,13 @@ Item {
 		this._context.location.pushState(state, window.location.pathname, window.location.pathname) 
 	}
 
-	Head { z: 2; }
+	Head { id: nav; z: 2; }
 
 	ColorTheme { id: colorTheme; }
 
 	PageStack {
 		id: pages;
-		y: 70;
+		y: 150;
 		width: 100%;
 		property string pageName;
 

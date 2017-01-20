@@ -1,14 +1,7 @@
 Rectangle {
-	signal goHome;
-	height: 70;
-	anchors.top: parent.top;
-	anchors.left: parent.left;
-	anchors.right: parent.right;
+	height: context.scrollY > 80 ? 70 : 150 - context.scrollY;
+	width: 100%;
 	color: colorTheme.primaryColor;
-	effects.shadow.y: 1;
-	effects.shadow.blur: 1;
-	effects.shadow.color: "#0003";
-	effects.shadow.spread: 1;
 
 	Rectangle {
 		anchors.top: menu.top;
@@ -25,15 +18,19 @@ Rectangle {
 		id: menu;
 		property bool wide: context.width > 800;
 		property bool show: false;
-		height: 100%;
-		anchors.right: parent.right;
-		anchors.rightMargin: 40;
+		height: 70;
+		y: 100% - 70;
+		x: 40;
 
 		MenuItem { text: "PureQML"; href: "../"; }
 		MenuItem { text: "About"; href: "about"; }
 		MenuItem { text: "Download"; href: "download"; }
 		MenuItem { text: "Lessons"; href: "lessons"; }
 		MenuItem { text: "Docs"; href: "docs"; }
+
+		SearchPanel {
+			width: 240;
+		}
 
 		Behavior on x { Animation { duration: menu.count ? 300 : 0; } }
 	}

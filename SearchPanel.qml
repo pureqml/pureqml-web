@@ -1,35 +1,72 @@
-Rectangle {
+Item {
 	signal search;
-	height: 50;
-	anchors.top: parent.top;
-	color: colorTheme.panelColor;
-	effects.shadow.y: 1;
-	effects.shadow.blur: 8;
-	effects.shadow.color: "#0004";
-	effects.shadow.spread: 1;
+	height: 100%;
+	z: 4;
+	property Mixin hover: HoverMixin {}
 
 	MaterialIcon {
 		anchors.verticalCenter: parent.verticalCenter;
-		x: (parent.height - height) / 2;
 		icon: "search";
-		color: "#929292";
-		size: 30;
+		color: "#F5F5F5";
+		size: 24;
 	}
 
 	SearchInput {
 		id: searchText;
-		height: 30;
-		width: 100% - 60;
-		x: 50;
+		height: 28;
+		width: 90%;
+		x: 40;
 		anchors.verticalCenter: parent.verticalCenter;
 		font.pixelSize: 18;
 		font.weight: 300;
+		color: "#F5F5F5";
+		backgroundColor: "transparent";
 		placeholder: "Search";
 
 		onTextChanged: {
-			if (value.length > 1)
-				searchTimer.restart() 
+			searchTimer.restart() 
 		}
+	}
+
+	Rectangle {
+		anchors.top: searchText.bottom;
+		width: searchText.activeFocus ? searchText.width : 56;
+		height: 1;
+		x: 40;
+		color: searchText.activeFocus ? "#F5F5F5" : "#999999";
+		Behavior on width { Animation { duration: 400; }}
+	}
+
+	SearchResults {
+		id: searchResults;
+		anchors.top: searchText.bottom;
+		x: 40;
+		width: 90%;
+		active: searchText.activeFocus || parent.hover.value;
+		onClear: {
+			searchText.text = "";
+		}
+	}
+
+	onSearch(text): {
+		var data = _globals._searchData
+		if (!data) {
+			log("No data")
+			return
+		}
+
+		var res = []
+		var txt = text.toLowerCase()
+		for (var i in data) {
+			var item = data[i]
+			var idx = item.text.toLowerCase().indexOf(txt) 
+			if (idx > -1) {
+				var it = item.text
+				var formatted = it.substr(0, idx) + '<b style="color:#43A047">' + it.substr(idx, text.length) + '</b>' + it.substr(idx + text.length)
+				res.push({ "text": formatted, "path": item.path })
+			}
+		}
+		searchResults.fill(res)
 	}
 
 	Timer {
@@ -42,5 +79,7 @@ Rectangle {
 	searchCall: {
 		if (searchText.text)
 			this.search(searchText.text)
+		else
+			searchResults.fill()
 	}
 }

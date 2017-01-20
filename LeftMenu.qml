@@ -3,10 +3,10 @@ Rectangle {
 	property bool hidable: parent.width < 860;
 	property bool collapsed;
 	width: 256;
-	height: context.height - 100;
-	color: "#FAFAFA";//colorTheme.panelColor;
+	height: context.height - y;
+	color: "#FAFAFA";
 	z: 1;
-	y: 70;
+	y: context.scrollY > 80 ? 70 : 150 - context.scrollY;
 
 	PositionMixin { value: PositionMixin.Fixed; }
 	OverflowMixin {	value: parent.recursiveVisible ? OverflowMixin.ScrollY : OverflowMixin.Hidden; }

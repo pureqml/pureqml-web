@@ -1,5 +1,5 @@
 HistoryPage {
-	height: contentCol.contentHeight;
+	height: content.contentHeight;
 	url: "docs";
 	clip: true;
 
@@ -7,7 +7,6 @@ HistoryPage {
 
 	onStateChanged: {
 		if (value && value.page === "docs"){
-			content.visible = true
 			if (value.section)
 				dataLoader.url = "https://raw.githubusercontent.com/pureqml/pureqml-web/master/doc/json/" + (value.element ? value.section + "/" + value.element : value.section) + ".json"
 			else
@@ -19,44 +18,10 @@ HistoryPage {
 		id: leftMenu;
 	}
 
-	Column {
-		id: contentCol;
-		x: parent.width < 860 ? 0 : (100% - 256 - width) / 3 + 256;
+	DocViewer { 
+		id: content;
+		x: parent.width < 860 ? 0 : 256;// (100% - 256 - width) / 3 + 256;
 		width: parent.width < 860 ? 100% : Math.min(100% - 256, 860);
-
-		SearchPanel {
-			width: 100%;
-
-			onSearch(text): {
-				var data = this.parent.parent._data
-				if (!data) {
-					log("No data")
-					return
-				}
-
-				content.visible = false
-
-				var res = []
-				var txt = text.toLowerCase()
-				for (var i in data) {
-					var item = data[i]
-					var idx = item.text.toLowerCase().indexOf(txt) 
-					if (idx > -1) {
-						var it = item.text
-						var formatted = it.substr(0, idx) + '<b style="color:#43A047">' + it.substr(idx, text.length) + '</b>' + it.substr(idx + text.length)
-						res.push({ "text": formatted, "path": item.path })
-					}
-				}
-				searchResults.fill(res)
-			}
-		}
-
-		DocViewer { id: content; }
-
-		SearchResults {
-			id: searchResults;
-			visible: !content.visible;
-		}
 	}
 
 	Resource {
@@ -76,7 +41,7 @@ HistoryPage {
 					data.push({"text": sorted[c], "depth": 1, "path": "docs/" + p + "/" + sorted[c]})
 				}
 			}
-			this.parent._data = data
+			_globals._searchData = data
 
 			leftMenu.fillModel(data)
 		}

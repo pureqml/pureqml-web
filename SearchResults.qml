@@ -1,27 +1,34 @@
-ContentColumn {
-	id: searchResultsProto;
-	signal choosed;
+Rectangle {
+	signal clear;
 	width: 100%;
+	height: searchView.height > 200 ? 200 : searchView.height;
+	color: "white";
+	effects.shadow.y: 2;
+	effects.shadow.blur: 2;
+	effects.shadow.color: "#0004";
+	effects.shadow.spread: 1;
+	property bool active;
+	visible: active && (searchView.count > 0);
+
+	OverflowMixin {	value: parent.recursiveVisible ? OverflowMixin.ScrollY : OverflowMixin.Hidden; }
 
 	ListView {
 		id: searchView;
 		height: contentHeight;
-		width: 100% - 40;
-		x: 20;
+		width: 100% - 24;
+		x: 12;
 		model: ListModel { }
 		delegate: WebLink {
 			width: parent.width;
-			height: 70;
+			height: 30;
 			href: model.path;
 
 			Text {
-				anchors.left: parent.left;
-				anchors.verticalCenter: parent.verticalCenter;
-				anchors.leftMargin: 10;
+				x: 10; y: 5;
 				color: parent.hover ? colorTheme.darkerPrimaryColor : "#616161";
 				font.underline: parent.hover;
 				text: model.text;
-				font.pixelSize: 32;
+				font.pixelSize: 18;
 				font.weight: 300;
 			}
 
@@ -36,13 +43,15 @@ ContentColumn {
 				if (a[2])
 					state.element = a[2]
 
-				this._context.location.pushState(state, this.href, this.href) 
+				this._context.location.pushState(state, this.href, this.href)
+				this.parent.parent.clear()
 			}
 		}
 	}
 
 	fill(data): {
 		searchView.model.clear()
-		searchView.model.append(data)
+		if (data)
+			searchView.model.append(data)
 	}
 }
