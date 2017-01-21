@@ -12,7 +12,7 @@ Column {
 		for (var i in children) {
 			var child = children[i]
 			if (child && child.title)
-				data.push({"text": child.title, "path": "#" + child.hash, "link": child.link})
+				data.push({"text": child.title, "path": child.path, "hash": "#" + child.hash, "link": child.link})
 		}
 
 		this.fillMenu(data)

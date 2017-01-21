@@ -47,7 +47,8 @@ Rectangle {
 			color: hover ? "#AED581" : "transparent";
 			property bool hash: model.hash;
 			property string path: model.path;
-			href: hash ? model.hash : path;
+			href: hash ? model.hash : model.path;
+
 			Behavior on background { Animation { duration: 300;}}
 
 			Text {
@@ -60,10 +61,12 @@ Rectangle {
 			}
 
 			onClicked(e): {
-				if (this.hash)
+				if (this.hash) {
+					// this._context.location.pushState(state, this.hash, this.href) 
 					return
+				}
 				e.preventDefault();
-				var a = this.path.split("/");
+				var a = this.href.split("/");
 				var state = {}
 				if (a[0])
 					state.page = a[0]

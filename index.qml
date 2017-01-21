@@ -3,10 +3,12 @@ Item {
 	property Object state: context.location.state;
 
 	onStateChanged: {
-		if (value && value.page && value.page !== "../")
-			pages.pageName = value.page;
-		else
-			pages.pageName = 'main';
+		if (value && value.page) {
+			if (value.page !== "../")
+				pages.pageName = value.page;
+			else 
+				pages.pageName = 'main';
+		}
 	}
 
 	onCompleted: {
@@ -36,7 +38,7 @@ Item {
 		property string pageName;
 
 		Main { }
-		About { }
+		GettingStarted { }
 		Download { }
 		Lessons { }
 		Docs { }
