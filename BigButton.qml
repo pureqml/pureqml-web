@@ -5,10 +5,10 @@ WebItem {
 	height: 100;
 	radius: 10;
 	color: hover ? colorTheme.primaryColor : colorTheme.panelColor;
-	border.width: 3;
+	border.width: 1;
 	border.color: !hover ? colorTheme.primaryColor : colorTheme.panelColor;
 	effects.shadow.y: hover ? 2 : 0;
-	effects.shadow.blur: 4;
+	effects.shadow.blur: hover ? 8 : 4;
 	effects.shadow.color: "#cccc";
 	effects.shadow.spread: 2;
 

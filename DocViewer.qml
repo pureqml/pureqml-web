@@ -45,7 +45,7 @@ Column {
 		nameText.text = data.name
 
 		for (var a in content) {
-			output += '<h3 style="color:#999999;font-size:30px;">' + a + '</h3><br>'
+			output += '<h3 style="color:#999999;font-size:28px;font-weight:300;">' + a + '</h3><br>'
 			var p = content[a]
 			for (var b in p) {
 				var c = p[b]

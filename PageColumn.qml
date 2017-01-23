@@ -11,7 +11,8 @@ Column {
 	H2 {
 		width: parent.width;
 		text: parent.title;
-		color: colorTheme.primaryColor; 
+		color: colorTheme.primaryColor;
+		anchors.topMargin: 70;
 	}
 
 	Text { 

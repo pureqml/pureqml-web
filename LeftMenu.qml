@@ -6,7 +6,7 @@ Rectangle {
 	height: context.height - y;
 	color: "#FAFAFA";
 	z: 1;
-	y: context.scrollY > 80 ? 70 : 150 - context.scrollY;
+	y: 70;
 
 	PositionMixin { value: PositionMixin.Fixed; }
 	OverflowMixin {	value: parent.recursiveVisible ? OverflowMixin.ScrollY : OverflowMixin.Hidden; }

@@ -1,5 +1,5 @@
 HistoryPage {
-	url: "about";
+	url: "gettingstarted";
 	height: contentCol.contentHeight;
 
 	LeftMenu {

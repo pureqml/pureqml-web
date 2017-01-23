@@ -2,7 +2,8 @@ WebLink {
 	property string text;
 	width: menuItemText.paintedWidth + 40;
 	height: 100%;
-	color: hover ? colorTheme.darkerPrimaryColor : colorTheme.primaryColor;
+	radius: 12;
+	color: hover ? colorTheme.darkerPrimaryColor : colorTheme.panelColor;
 
 	onClicked(e): {
 		e.preventDefault();
@@ -15,9 +16,9 @@ WebLink {
 		horizontalAlignment: Text.AlignHCenter;
 		text: parent.text;
 		font.pointSize: 15;
-		color: colorTheme.primaryTextColor;
+		color: parent.hover ? "#424242" : colorTheme.primaryTextColor;
 
-		Behavior on opacity { Animation { duration: 300; } }
+		Behavior on color { Animation { duration: 300; } }
 	}
 
 	Behavior on background { Animation { duration: 300; } }

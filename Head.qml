@@ -1,7 +1,11 @@
 Rectangle {
-	height: context.scrollY > 80 ? 70 : 150 - context.scrollY;
+	height: 70;// context.scrollY > 80 ? 70 : 150 - context.scrollY;
 	width: 100%;
-	color: colorTheme.primaryColor;
+	color: colorTheme.panelColor;
+	effects.shadow.y: 1; 
+	effects.shadow.color: "#0004"; 
+	effects.shadow.blur: 1; 
+	effects.shadow.spread: 0;
 
 	Rectangle {
 		anchors.top: menu.top;
@@ -19,11 +23,11 @@ Rectangle {
 		property bool wide: context.width > 800;
 		property bool show: false;
 		height: 70;
-		y: 100% - 70;
+//		y: 100% - 70;
 		x: 40;
 
 		MenuItem { text: "PureQML"; href: "../"; }
-		MenuItem { text: "About"; href: "about"; }
+		MenuItem { text: "Getting started"; href: "gettingstarted"; }
 		MenuItem { text: "Download"; href: "download"; }
 		MenuItem { text: "Lessons"; href: "lessons"; }
 		MenuItem { text: "Docs"; href: "docs"; }

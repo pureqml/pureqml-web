@@ -25,7 +25,7 @@ Rectangle {
 
 			Text {
 				x: 10; y: 5;
-				color: parent.hover ? colorTheme.darkerPrimaryColor : "#616161";
+				color: parent.hover ? colorTheme.textColor : "#616161";
 				font.underline: parent.hover;
 				text: model.text;
 				font.pixelSize: 18;
