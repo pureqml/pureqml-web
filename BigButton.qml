@@ -18,7 +18,7 @@ WebItem {
 		anchors.left: parent.left;
 		anchors.verticalCenter: parent.verticalCenter;
 		anchors.leftMargin: 10;
-		source: "res/colored_icons/" + parent.icon;
+		source: "../res/colored_icons/" + parent.icon;
 		opacity: parent.hover ? 0.0 : 1.0;
 
 		Behavior on opacity { Animation { duration: 300; } }
@@ -30,7 +30,7 @@ WebItem {
 		anchors.left: parent.left;
 		anchors.verticalCenter: parent.verticalCenter;
 		anchors.leftMargin: 10;
-		source: "res/icons/" + parent.icon;
+		source: "../res/icons/" + parent.icon;
 		opacity: parent.hover ? 1.0 : 0.0;
 
 		Behavior on opacity { Animation { duration: 300; } }
