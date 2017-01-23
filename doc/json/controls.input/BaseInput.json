@@ -3,22 +3,23 @@
 
 	"content": {
 		"Properties": {
-			"paddings": { "text": "inner text paddings", "ref": "controls.input/Paddings", "internal": false, "type": "Paddings" },
-			"color": { "text": "text color", "internal": false, "type": "Color" },
-			"backgroundColor": { "text": "background color", "internal": false, "type": "Color" },
-			"font": { "text": "object holding properties of text font", "ref": "controls.input/Font", "internal": false, "type": "Font" },
-			"border": { "text": "object holding properties of the border", "ref": "controls.input/Border", "internal": false, "type": "Border" },
-			"placeholder": { "text": "inner text placeholder", "internal": false, "type": "string" },
-			"type": { "text": "input type value, must overrie in inheritor", "internal": false, "type": "string" }
+			"paddings": { "text": "inner text paddings", "ref": "controls.input/Paddings", "internal": false, "type": "Paddings", "defaultValue": "Paddings" },
+			"color": { "text": "text color", "internal": false, "type": "Color", "defaultValue": "#000" },
+			"backgroundColor": { "text": "background color", "internal": false, "type": "Color", "defaultValue": "#fff" },
+			"placeholderColor": { "text": "placeholder color", "internal": false, "type": "Color", "defaultValue": "#ccc" },
+			"font": { "text": "object holding properties of text font", "ref": "controls.input/Font", "internal": false, "type": "Font", "defaultValue": "Font" },
+			"border": { "text": "object holding properties of the border", "ref": "controls.input/Border", "internal": false, "type": "Border", "defaultValue": "Border" },
+			"placeholder": { "text": "inner text placeholder", "internal": false, "type": "string", "defaultValue": "" },
+			"type": { "text": "input type value, must overrie in inheritor", "internal": false, "type": "string", "defaultValue": "text" }
 		},
 
 		"Methods": {
-			"onActiveFocusChanged": { "text": "@private", "internal": true },
-			"onRecursiveVisibleChanged": { "text": "@private", "internal": true },
-			"_update": { "text": "@private", "internal": true },
-			"getTag": { "text": "returns tag for corresponding element", "internal": false },
+			"onActiveFocusChanged": { "text": "@private", "params": [], "internal": true },
+			"onRecursiveVisibleChanged": { "text": "@private", "params": [], "internal": true },
+			"_update": { "text": "@private", "params": [], "internal": true },
+			"getTag": { "text": "returns tag for corresponding element", "params": [], "internal": false },
 			"registerStyle": { "text": "", "internal": false },
-			"_updateSize": { "text": "@private", "internal": true }
+			"_updateSize": { "text": "@private", "params": [], "internal": true }
 		}
 	}
 }

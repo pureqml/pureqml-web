@@ -3,7 +3,7 @@
 
 	"content": {
 		"Properties": {
-			"count": { "text": "", "internal": false, "type": "int" }
+			"count": { "text": "", "internal": false, "type": "int", "defaultValue": "" }
 		},
 
 		"Signals": {

@@ -3,10 +3,10 @@
 
 	"content": {
 		"Properties": {
-			"interval": { "text": "interval, ms", "internal": false, "type": "int" },
-			"repeat": { "text": "makes this timer periodic", "internal": false, "type": "bool" },
-			"running": { "text": "current timer status, true - running, false - paused", "internal": false, "type": "bool" },
-			"triggeredOnStart": { "text": "fire timer's signal on start or activation", "internal": false, "type": "bool" }
+			"interval": { "text": "interval, ms", "internal": false, "type": "int", "defaultValue": "1000" },
+			"repeat": { "text": "makes this timer periodic", "internal": false, "type": "bool", "defaultValue": "" },
+			"running": { "text": "current timer status, true - running, false - paused", "internal": false, "type": "bool", "defaultValue": "" },
+			"triggeredOnStart": { "text": "fire timer's signal on start or activation", "internal": false, "type": "bool", "defaultValue": "" }
 		},
 
 		"Signals": {
@@ -14,13 +14,13 @@
 		},
 
 		"Methods": {
-			"restart": { "text": "restart timer, activate if stopped", "internal": false },
-			"stop": { "text": "stops timer", "internal": false },
+			"restart": { "text": "restart timer, activate if stopped", "params": [], "internal": false },
+			"stop": { "text": "stops timer", "params": [], "internal": false },
 			"onTriggered": { "text": "", "internal": false },
-			"start": { "text": "starts timer", "internal": false },
+			"start": { "text": "starts timer", "params": [], "internal": false },
 			"onRunningChanged": { "text": "", "internal": false },
 			"onCompleted": { "text": "", "internal": false },
-			"_update": { "text": "@private", "internal": true },
+			"_update": { "text": "@private", "params": [], "internal": true },
 			"_restart": { "text": "", "internal": false }
 		}
 	}

@@ -3,12 +3,12 @@
 
 	"content": {
 		"Properties": {
-			"loading": { "text": "loading flag, is true when request was send and false when answer was recieved or error occured", "internal": false, "type": "bool" }
+			"loading": { "text": "loading flag, is true when request was send and false when answer was recieved or error occured", "internal": false, "type": "bool", "defaultValue": "false" }
 		},
 
 		"Methods": {
-			"fetchRequest": { "text": "send request using 'fetch' method", "internal": false },
-			"requestXHR": { "text": "send request using 'XMLHttpRequest' object", "internal": false }
+			"fetchRequest": { "text": "send request using 'fetch' method", "params": [], "internal": false },
+			"requestXHR": { "text": "send request using 'XMLHttpRequest' object", "params": [], "internal": false }
 		}
 	}
 }

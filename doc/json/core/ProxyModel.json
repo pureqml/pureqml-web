@@ -3,8 +3,8 @@
 
 	"content": {
 		"Properties": {
-			"count": { "text": "rows count property", "internal": false, "type": "int" },
-			"target": { "text": "target model object", "internal": false, "type": "Object" }
+			"count": { "text": "rows count property", "internal": false, "type": "int", "defaultValue": "" },
+			"target": { "text": "target model object", "internal": false, "type": "Object", "defaultValue": "" }
 		},
 
 		"Signals": {
@@ -15,22 +15,22 @@
 		},
 
 		"Methods": {
-			"setFilter": { "text": "this method set target model rows filter function, 'filter' function must return boolean value, 'true' - when row must be displayed, 'false' otherwise", "internal": false },
-			"setCompare": { "text": "this method set a comparison function, target model rows are sorted in ascending order according to a comparison function 'cmp'", "internal": false },
-			"_buildIndexMap": { "text": "@private", "internal": true },
-			"get": { "text": "returns a model's row by index, throw exception if index is out of range or if requested row is non-object", "internal": false },
-			"clear": { "text": "remove all rows", "internal": false },
-			"append": { "text": "append row to the model", "internal": false },
-			"insert": { "text": "place row at requested index, throws exception when index is out of range", "internal": false },
-			"set": { "text": "replace row at 'idx' position by 'row' argument, throws exception if index is out of range or if 'row' isn't Object", "internal": false },
-			"setProperty": { "text": "replace a row's property, throws exception if index is out of range or if 'row' isn't Object", "internal": false },
-			"remove": { "text": "remove rows from model from 'idx' to 'idx' + 'n' position", "internal": false },
-			"addChild": { "text": "this method is alias for 'append' method", "internal": false },
-			"_onReset": { "text": "@private", "internal": true },
-			"_onRowsInserted": { "text": "@private", "internal": true },
-			"_onRowsChanged": { "text": "@private", "internal": true },
-			"_onRowsRemoved": { "text": "@private", "internal": true },
-			"onCompleted": { "text": "@private", "internal": true }
+			"setFilter": { "text": "this method set target model rows filter function, 'filter' function must return boolean value, 'true' - when row must be displayed, 'false' otherwise", "params": [], "internal": false },
+			"setCompare": { "text": "this method set a comparison function, target model rows are sorted in ascending order according to a comparison function 'cmp'", "params": [], "internal": false },
+			"_buildIndexMap": { "text": "@private", "params": [], "internal": true },
+			"get": { "text": "returns a model's row by index, throw exception if index is out of range or if requested row is non-object", "params": [], "internal": false },
+			"clear": { "text": "remove all rows", "params": [], "internal": false },
+			"append": { "text": "append row to the model", "params": [], "internal": false },
+			"insert": { "text": "place row at requested index, throws exception when index is out of range", "params": [], "internal": false },
+			"set": { "text": "replace row at 'idx' position by 'row' argument, throws exception if index is out of range or if 'row' isn't Object", "params": [], "internal": false },
+			"setProperty": { "text": "replace a row's property, throws exception if index is out of range or if 'row' isn't Object", "params": [], "internal": false },
+			"remove": { "text": "remove rows from model from 'idx' to 'idx' + 'n' position", "params": [], "internal": false },
+			"addChild": { "text": "this method is alias for 'append' method", "params": [], "internal": false },
+			"_onReset": { "text": "@private", "params": [], "internal": true },
+			"_onRowsInserted": { "text": "@private", "params": [], "internal": true },
+			"_onRowsChanged": { "text": "@private", "params": [], "internal": true },
+			"_onRowsRemoved": { "text": "@private", "params": [], "internal": true },
+			"onCompleted": { "text": "@private", "params": [], "internal": true }
 		}
 	}
 }

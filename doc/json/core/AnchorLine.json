@@ -3,7 +3,7 @@
 
 	"content": {
 		"Properties": {
-			"boxIndex": { "text": "@private Anchor's vertical or horizontal line (left, right, center)", "internal": true, "type": "int" }
+			"boxIndex": { "text": "@private Anchor's vertical or horizontal line (left, right, center)", "internal": true, "type": "int", "defaultValue": "" }
 		},
 
 		"Methods": {

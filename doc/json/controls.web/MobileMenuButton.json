@@ -3,8 +3,8 @@
 
 	"content": {
 		"Properties": {
-			"back": { "text": "", "internal": false, "type": "bool" },
-			"barColor": { "text": "", "internal": false, "type": "color" }
+			"back": { "text": "", "internal": false, "type": "bool", "defaultValue": "" },
+			"barColor": { "text": "", "internal": false, "type": "color", "defaultValue": "white" }
 		}
 	}
 }

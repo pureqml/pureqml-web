@@ -3,8 +3,8 @@
 
 	"content": {
 		"Properties": {
-			"label": { "text": "", "internal": false, "type": "string" },
-			"value": { "text": "", "internal": false, "type": "string" }
+			"label": { "text": "", "internal": false, "type": "string", "defaultValue": "" },
+			"value": { "text": "", "internal": false, "type": "string", "defaultValue": "" }
 		}
 	}
 }

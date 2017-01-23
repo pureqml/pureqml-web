@@ -3,7 +3,7 @@
 
 	"content": {
 		"Properties": {
-			"angle": { "text": "", "internal": false, "type": "real" }
+			"angle": { "text": "", "internal": false, "type": "real", "defaultValue": "" }
 		},
 
 		"Methods": {

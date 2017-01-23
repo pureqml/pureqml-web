@@ -3,20 +3,20 @@
 
 	"content": {
 		"Properties": {
-			"delay": { "text": "delay in ms", "internal": false, "type": "int" },
-			"duration": { "text": "duration in ms", "internal": false, "type": "int" },
-			"cssTransition": { "text": "use css transition if possible", "internal": false, "type": "bool" },
-			"running": { "text": "currently running", "internal": false, "type": "bool" },
-			"easing": { "text": "easing function", "internal": false, "type": "string" }
+			"delay": { "text": "delay in ms", "internal": false, "type": "int", "defaultValue": "0" },
+			"duration": { "text": "duration in ms", "internal": false, "type": "int", "defaultValue": "200" },
+			"cssTransition": { "text": "use css transition if possible", "internal": false, "type": "bool", "defaultValue": "true" },
+			"running": { "text": "currently running", "internal": false, "type": "bool", "defaultValue": "false" },
+			"easing": { "text": "easing function", "internal": false, "type": "string", "defaultValue": "ease" }
 		},
 
 		"Methods": {
-			"disable": { "text": "disable animation.", "internal": false },
-			"enable": { "text": "enable animation.", "internal": false },
-			"enabled": { "text": "returns true if animation is enabled", "internal": false },
-			"_update": { "text": "@private", "internal": true },
-			"interpolate": { "text": "@private", "internal": true },
-			"complete": { "text": "@private", "internal": true }
+			"disable": { "text": "disable animation.", "params": [], "internal": false },
+			"enable": { "text": "enable animation.", "params": [], "internal": false },
+			"enabled": { "text": "returns true if animation is enabled", "params": [], "internal": false },
+			"_update": { "text": "@private", "params": [], "internal": true },
+			"interpolate": { "text": "@private", "params": [], "internal": true },
+			"complete": { "text": "@private", "params": [], "internal": true }
 		}
 	}
 }

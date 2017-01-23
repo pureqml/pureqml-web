@@ -3,8 +3,8 @@
 
 	"content": {
 		"Properties": {
-			"text": { "text": "", "internal": false, "type": "string" },
-			"passwordMode": { "text": "", "internal": false, "type": "bool" }
+			"text": { "text": "", "internal": false, "type": "string", "defaultValue": "" },
+			"passwordMode": { "text": "", "internal": false, "type": "bool", "defaultValue": "false" }
 		},
 
 		"Methods": {

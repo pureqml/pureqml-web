@@ -3,7 +3,7 @@
 
 	"content": {
 		"Properties": {
-			"blink": { "text": "", "internal": false, "type": "bool" }
+			"blink": { "text": "", "internal": false, "type": "bool", "defaultValue": "false" }
 		},
 
 		"Signals": {

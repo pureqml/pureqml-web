@@ -3,11 +3,11 @@
 
 	"content": {
 		"Properties": {
-			"xs": { "text": "", "internal": false, "type": "real" },
-			"sm": { "text": "", "internal": false, "type": "real" },
-			"md": { "text": "", "internal": false, "type": "real" },
-			"lg": { "text": "", "internal": false, "type": "real" },
-			"globalWidth": { "text": "", "internal": false, "type": "int" }
+			"xs": { "text": "", "internal": false, "type": "real", "defaultValue": "100" },
+			"sm": { "text": "", "internal": false, "type": "real", "defaultValue": "0" },
+			"md": { "text": "", "internal": false, "type": "real", "defaultValue": "0" },
+			"lg": { "text": "", "internal": false, "type": "real", "defaultValue": "0" },
+			"globalWidth": { "text": "", "internal": false, "type": "int", "defaultValue": "this._get('context')._get('width')" }
 		},
 
 		"Methods": {

@@ -3,8 +3,8 @@
 
 	"content": {
 		"Properties": {
-			"href": { "text": "", "internal": false, "type": "string" },
-			"target": { "text": "", "internal": false, "type": "string" }
+			"href": { "text": "", "internal": false, "type": "string", "defaultValue": "" },
+			"target": { "text": "", "internal": false, "type": "string", "defaultValue": "" }
 		},
 
 		"Methods": {

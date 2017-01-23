@@ -3,9 +3,9 @@
 
 	"content": {
 		"Properties": {
-			"hoverMixin": { "text": "hover mixin object proveds common API for mouse properties", "ref": "controls.web/Mixin", "internal": false, "type": "Mixin" },
-			"position": { "text": "position mode property", "internal": false, "type": "string" },
-			"title": { "text": "title attribute property", "internal": false, "type": "string" }
+			"hoverMixin": { "text": "hover mixin object proveds common API for mouse properties", "ref": "controls.web/Mixin", "internal": false, "type": "Mixin", "defaultValue": "HoverMixin" },
+			"position": { "text": "position mode property", "internal": false, "type": "string", "defaultValue": "" },
+			"title": { "text": "title attribute property", "internal": false, "type": "string", "defaultValue": "" }
 		},
 
 		"Alias Properties": {
@@ -18,7 +18,7 @@
 		},
 
 		"Methods": {
-			"_update": { "text": "@private", "internal": true }
+			"_update": { "text": "@private", "params": [], "internal": true }
 		}
 	}
 }

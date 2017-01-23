@@ -3,14 +3,14 @@
 
 	"content": {
 		"Properties": {
-			"text": { "text": "", "internal": false, "type": "string" },
-			"font": { "text": "", "ref": "controls.web/Font", "internal": false, "type": "Font" },
-			"border": { "text": "", "ref": "controls.web/Border", "internal": false, "type": "Border" }
+			"text": { "text": "", "internal": false, "type": "string", "defaultValue": "" },
+			"font": { "text": "", "ref": "controls.web/Font", "internal": false, "type": "Font", "defaultValue": "Font" },
+			"border": { "text": "", "ref": "controls.web/Border", "internal": false, "type": "Border", "defaultValue": "Border" }
 		},
 
 		"Methods": {
 			"_update": { "text": "", "internal": false },
-			"getTag": { "text": "returns tag for corresponding element", "internal": false },
+			"getTag": { "text": "returns tag for corresponding element", "params": [], "internal": false },
 			"registerStyle": { "text": "", "internal": false },
 			"_updateSize": { "text": "", "internal": false }
 		}

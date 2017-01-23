@@ -3,7 +3,7 @@
 
 	"content": {
 		"Properties": {
-			"correct": { "text": "", "internal": false, "type": "bool" }
+			"correct": { "text": "", "internal": false, "type": "bool", "defaultValue": "" }
 		},
 
 		"Methods": {

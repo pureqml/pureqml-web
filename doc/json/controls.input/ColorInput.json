@@ -3,7 +3,7 @@
 
 	"content": {
 		"Properties": {
-			"value": { "text": "", "internal": false, "type": "Color" }
+			"value": { "text": "", "internal": false, "type": "Color", "defaultValue": "" }
 		},
 
 		"Methods": {

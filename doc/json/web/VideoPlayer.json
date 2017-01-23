@@ -3,20 +3,20 @@
 
 	"content": {
 		"Properties": {
-			"source": { "text": "", "internal": false, "type": "string" },
-			"backgroundColor": { "text": "", "internal": false, "type": "Color" },
-			"volume": { "text": "", "internal": false, "type": "float" },
-			"loop": { "text": "", "internal": false, "type": "bool" },
-			"flash": { "text": "", "internal": false, "type": "bool" },
-			"ready": { "text": "", "internal": false, "type": "bool" },
-			"muted": { "text": "", "internal": false, "type": "bool" },
-			"paused": { "text": "", "internal": false, "type": "bool" },
-			"autoPlay": { "text": "", "internal": false, "type": "bool" },
-			"waiting": { "text": "", "internal": false, "type": "bool" },
-			"seeking": { "text": "", "internal": false, "type": "bool" },
-			"duration": { "text": "", "internal": false, "type": "int" },
-			"progress": { "text": "", "internal": false, "type": "int" },
-			"buffered": { "text": "", "internal": false, "type": "int" }
+			"source": { "text": "", "internal": false, "type": "string", "defaultValue": "" },
+			"backgroundColor": { "text": "", "internal": false, "type": "Color", "defaultValue": "#000" },
+			"volume": { "text": "", "internal": false, "type": "float", "defaultValue": "1.0" },
+			"loop": { "text": "", "internal": false, "type": "bool", "defaultValue": "false" },
+			"flash": { "text": "", "internal": false, "type": "bool", "defaultValue": "true" },
+			"ready": { "text": "", "internal": false, "type": "bool", "defaultValue": "false" },
+			"muted": { "text": "", "internal": false, "type": "bool", "defaultValue": "false" },
+			"paused": { "text": "", "internal": false, "type": "bool", "defaultValue": "false" },
+			"autoPlay": { "text": "", "internal": false, "type": "bool", "defaultValue": "false" },
+			"waiting": { "text": "", "internal": false, "type": "bool", "defaultValue": "false" },
+			"seeking": { "text": "", "internal": false, "type": "bool", "defaultValue": "false" },
+			"duration": { "text": "", "internal": false, "type": "int", "defaultValue": "" },
+			"progress": { "text": "", "internal": false, "type": "int", "defaultValue": "" },
+			"buffered": { "text": "", "internal": false, "type": "int", "defaultValue": "" }
 		},
 
 		"Signals": {

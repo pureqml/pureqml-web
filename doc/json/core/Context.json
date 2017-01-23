@@ -3,12 +3,12 @@
 
 	"content": {
 		"Properties": {
-			"fullscreen": { "text": "", "internal": false, "type": "bool" },
-			"scrollY": { "text": "", "internal": false, "type": "int" },
-			"stylesheet": { "text": "", "ref": "core/Stylesheet", "internal": false, "type": "Stylesheet" },
-			"system": { "text": "", "ref": "core/System", "internal": false, "type": "System" },
-			"location": { "text": "", "ref": "core/Location", "internal": false, "type": "Location" },
-			"language": { "text": "", "internal": false, "type": "string" }
+			"fullscreen": { "text": "", "internal": false, "type": "bool", "defaultValue": "" },
+			"scrollY": { "text": "", "internal": false, "type": "int", "defaultValue": "" },
+			"stylesheet": { "text": "", "ref": "core/Stylesheet", "internal": false, "type": "Stylesheet", "defaultValue": "Stylesheet" },
+			"system": { "text": "", "ref": "core/System", "internal": false, "type": "System", "defaultValue": "System" },
+			"location": { "text": "", "ref": "core/Location", "internal": false, "type": "Location", "defaultValue": "Location" },
+			"language": { "text": "", "internal": false, "type": "string", "defaultValue": "" }
 		},
 
 		"Methods": {

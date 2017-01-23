@@ -3,9 +3,9 @@
 
 	"content": {
 		"Properties": {
-			"hover": { "text": "", "internal": false, "type": "string" },
-			"generic": { "text": "", "internal": false, "type": "string" },
-			"focus": { "text": "", "internal": false, "type": "string" }
+			"hover": { "text": "", "internal": false, "type": "string", "defaultValue": "" },
+			"generic": { "text": "", "internal": false, "type": "string", "defaultValue": "" },
+			"focus": { "text": "", "internal": false, "type": "string", "defaultValue": "" }
 		},
 
 		"Methods": {

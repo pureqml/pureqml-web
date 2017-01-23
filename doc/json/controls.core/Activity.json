@@ -3,10 +3,10 @@
 
 	"content": {
 		"Properties": {
-			"active": { "text": "", "internal": false, "type": "bool" },
-			"hasAnyActiveChild": { "text": "", "internal": false, "type": "bool" },
-			"currentActivity": { "text": "", "internal": false, "type": "string" },
-			"name": { "text": "", "internal": false, "type": "string" }
+			"active": { "text": "", "internal": false, "type": "bool", "defaultValue": "" },
+			"hasAnyActiveChild": { "text": "", "internal": false, "type": "bool", "defaultValue": "false" },
+			"currentActivity": { "text": "", "internal": false, "type": "string", "defaultValue": "" },
+			"name": { "text": "", "internal": false, "type": "string", "defaultValue": "" }
 		},
 
 		"Signals": {

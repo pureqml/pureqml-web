@@ -3,7 +3,7 @@
 
 	"content": {
 		"Properties": {
-			"source": { "text": "source to load script from", "internal": false, "type": "string" }
+			"source": { "text": "source to load script from", "internal": false, "type": "string", "defaultValue": "" }
 		},
 
 		"Methods": {

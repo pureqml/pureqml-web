@@ -3,9 +3,9 @@
 
 	"content": {
 		"Properties": {
-			"languges": { "text": "", "internal": false, "type": "variant" },
-			"currentIndex": { "text": "", "internal": false, "type": "int" },
-			"count": { "text": "", "internal": false, "type": "int" }
+			"languges": { "text": "", "internal": false, "type": "variant", "defaultValue": "" },
+			"currentIndex": { "text": "", "internal": false, "type": "int", "defaultValue": "" },
+			"count": { "text": "", "internal": false, "type": "int", "defaultValue": "" }
 		},
 
 		"Signals": {

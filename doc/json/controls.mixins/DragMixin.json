@@ -3,15 +3,15 @@
 
 	"content": {
 		"Properties": {
-			"pressed": { "text": "", "internal": false, "type": "bool" },
-			"moved": { "text": "", "internal": false, "type": "bool" },
-			"enabled": { "text": "", "internal": false, "type": "bool" },
-			"x": { "text": "", "internal": false, "type": "int" },
-			"y": { "text": "", "internal": false, "type": "int" },
-			"limitx1": { "text": "", "internal": false, "type": "int" },
-			"limitx2": { "text": "", "internal": false, "type": "int" },
-			"limity1": { "text": "", "internal": false, "type": "int" },
-			"limity2": { "text": "", "internal": false, "type": "int" }
+			"pressed": { "text": "", "internal": false, "type": "bool", "defaultValue": "" },
+			"moved": { "text": "", "internal": false, "type": "bool", "defaultValue": "" },
+			"enabled": { "text": "", "internal": false, "type": "bool", "defaultValue": "true" },
+			"x": { "text": "", "internal": false, "type": "int", "defaultValue": "" },
+			"y": { "text": "", "internal": false, "type": "int", "defaultValue": "" },
+			"limitx1": { "text": "", "internal": false, "type": "int", "defaultValue": "" },
+			"limitx2": { "text": "", "internal": false, "type": "int", "defaultValue": "" },
+			"limity1": { "text": "", "internal": false, "type": "int", "defaultValue": "" },
+			"limity2": { "text": "", "internal": false, "type": "int", "defaultValue": "" }
 		},
 
 		"Methods": {

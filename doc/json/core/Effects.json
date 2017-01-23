@@ -3,22 +3,22 @@
 
 	"content": {
 		"Properties": {
-			"blur": { "text": "applies a blur effect to the image", "internal": false, "type": "real" },
-			"grayscale": { "text": "converts the image to grayscale", "internal": false, "type": "real" },
-			"sepia": { "text": "converts the image to sepia", "internal": false, "type": "real" },
-			"brightness": { "text": "adjusts the brightness of the image", "internal": false, "type": "real" },
-			"contrast": { "text": "adjusts the contrast of the image", "internal": false, "type": "real" },
-			"hueRotate": { "text": "applies a hue rotation on the image. The value defines the number of degrees around the color circle the image samples will be adjusted", "internal": false, "type": "real" },
-			"invert": { "text": "inverts the samples in the image", "internal": false, "type": "real" },
-			"saturate": { "text": "saturates the image", "internal": false, "type": "real" },
-			"shadow": { "text": "object property for the shadow adjusting", "ref": "core/Shadow", "internal": false, "type": "Shadow" }
+			"blur": { "text": "applies a blur effect to the image", "internal": false, "type": "real", "defaultValue": "" },
+			"grayscale": { "text": "converts the image to grayscale", "internal": false, "type": "real", "defaultValue": "" },
+			"sepia": { "text": "converts the image to sepia", "internal": false, "type": "real", "defaultValue": "" },
+			"brightness": { "text": "adjusts the brightness of the image", "internal": false, "type": "real", "defaultValue": "" },
+			"contrast": { "text": "adjusts the contrast of the image", "internal": false, "type": "real", "defaultValue": "" },
+			"hueRotate": { "text": "applies a hue rotation on the image. The value defines the number of degrees around the color circle the image samples will be adjusted", "internal": false, "type": "real", "defaultValue": "" },
+			"invert": { "text": "inverts the samples in the image", "internal": false, "type": "real", "defaultValue": "" },
+			"saturate": { "text": "saturates the image", "internal": false, "type": "real", "defaultValue": "" },
+			"shadow": { "text": "object property for the shadow adjusting", "ref": "core/Shadow", "internal": false, "type": "Shadow", "defaultValue": "Shadow" }
 		},
 
 		"Methods": {
-			"_addStyle": { "text": "@private", "internal": true },
-			"_getFilterStyle": { "text": "@private", "internal": true },
-			"_updateStyle": { "text": "@private", "internal": true },
-			"_update": { "text": "@private", "internal": true }
+			"_addStyle": { "text": "@private", "params": [], "internal": true },
+			"_getFilterStyle": { "text": "@private", "params": [], "internal": true },
+			"_updateStyle": { "text": "@private", "params": [], "internal": true },
+			"_update": { "text": "@private", "params": [], "internal": true }
 		}
 	}
 }

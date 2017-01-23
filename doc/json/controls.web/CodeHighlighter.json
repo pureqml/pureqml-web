@@ -3,18 +3,18 @@
 
 	"content": {
 		"Properties": {
-			"contentWidth": { "text": "content width", "internal": false, "type": "int" },
-			"contentHeight": { "text": "content height", "internal": false, "type": "int" },
-			"code": { "text": "code string", "internal": false, "type": "string" },
-			"language": { "text": "programming language", "internal": false, "type": "string" },
-			"font": { "text": "code text font", "ref": "controls.web/Font", "internal": false, "type": "Font" }
+			"contentWidth": { "text": "content width", "internal": false, "type": "int", "defaultValue": "" },
+			"contentHeight": { "text": "content height", "internal": false, "type": "int", "defaultValue": "" },
+			"code": { "text": "code string", "internal": false, "type": "string", "defaultValue": "" },
+			"language": { "text": "programming language", "internal": false, "type": "string", "defaultValue": "" },
+			"font": { "text": "code text font", "ref": "controls.web/Font", "internal": false, "type": "Font", "defaultValue": "Font" }
 		},
 
 		"Methods": {
-			"_update": { "text": "@private", "internal": true },
-			"getTag": { "text": "@private returns tag for corresponding element", "internal": true },
-			"registerStyle": { "text": "@private", "internal": true },
-			"_updateSize": { "text": "@private", "internal": true }
+			"_update": { "text": "@private", "params": [], "internal": true },
+			"getTag": { "text": "@private returns tag for corresponding element", "params": [], "internal": true },
+			"registerStyle": { "text": "@private", "params": [], "internal": true },
+			"_updateSize": { "text": "@private", "params": [], "internal": true }
 		}
 	}
 }

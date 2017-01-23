@@ -3,9 +3,9 @@
 
 	"content": {
 		"Properties": {
-			"delegateColor": { "text": "", "internal": false, "type": "color" },
-			"delegateTextColor": { "text": "", "internal": false, "type": "color" },
-			"currentLangCode": { "text": "", "internal": false, "type": "string" }
+			"delegateColor": { "text": "", "internal": false, "type": "color", "defaultValue": "" },
+			"delegateTextColor": { "text": "", "internal": false, "type": "color", "defaultValue": "" },
+			"currentLangCode": { "text": "", "internal": false, "type": "string", "defaultValue": "" }
 		},
 
 		"Methods": {

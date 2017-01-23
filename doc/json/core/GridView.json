@@ -3,10 +3,10 @@
 
 	"content": {
 		"Properties": {
-			"cellWidth": { "text": "", "internal": false, "type": "int" },
-			"cellHeight": { "text": "", "internal": false, "type": "int" },
-			"rows": { "text": "", "internal": false, "type": "int" },
-			"columns": { "text": "", "internal": false, "type": "int" }
+			"cellWidth": { "text": "", "internal": false, "type": "int", "defaultValue": "100" },
+			"cellHeight": { "text": "", "internal": false, "type": "int", "defaultValue": "100" },
+			"rows": { "text": "", "internal": false, "type": "int", "defaultValue": "" },
+			"columns": { "text": "", "internal": false, "type": "int", "defaultValue": "" }
 		},
 
 		"Methods": {

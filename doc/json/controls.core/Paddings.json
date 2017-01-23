@@ -3,10 +3,10 @@
 
 	"content": {
 		"Properties": {
-			"left": { "text": "left padding", "internal": false, "type": "int" },
-			"right": { "text": "right padding", "internal": false, "type": "int" },
-			"top": { "text": "top padding", "internal": false, "type": "int" },
-			"bottom": { "text": "bottom padding", "internal": false, "type": "int" }
+			"left": { "text": "left padding", "internal": false, "type": "int", "defaultValue": "" },
+			"right": { "text": "right padding", "internal": false, "type": "int", "defaultValue": "" },
+			"top": { "text": "top padding", "internal": false, "type": "int", "defaultValue": "" },
+			"bottom": { "text": "bottom padding", "internal": false, "type": "int", "defaultValue": "" }
 		},
 
 		"Methods": {

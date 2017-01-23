@@ -3,9 +3,9 @@
 
 	"content": {
 		"Properties": {
-			"centerLongitude": { "text": "", "internal": false, "type": "real" },
-			"centerLatitude": { "text": "", "internal": false, "type": "real" },
-			"zoom": { "text": "", "internal": false, "type": "int" }
+			"centerLongitude": { "text": "", "internal": false, "type": "real", "defaultValue": "" },
+			"centerLatitude": { "text": "", "internal": false, "type": "real", "defaultValue": "" },
+			"zoom": { "text": "", "internal": false, "type": "int", "defaultValue": "" }
 		},
 
 		"Methods": {

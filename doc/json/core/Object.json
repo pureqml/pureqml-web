@@ -4,18 +4,18 @@
 	"content": {
 		"Methods": {
 			"discard": { "text": "", "internal": false },
-			"addChild": { "text": "adds child object to children", "internal": false },
-			"_setId": { "text": "@private sets id", "internal": true },
-			"onChanged": { "text": "register callback on property's value changed", "internal": false },
+			"addChild": { "text": "adds child object to children", "params": [], "internal": false },
+			"_setId": { "text": "@private sets id", "params": [], "internal": true },
+			"onChanged": { "text": "register callback on property's value changed", "params": [], "internal": false },
 			"connectOnChanged": { "text": "", "internal": false },
-			"removeOnChanged": { "text": "removes 'on changed' callback", "internal": false },
-			"_removeUpdater": { "text": "@private removes dynamic value updater", "internal": true },
-			"onPressed": { "text": "registers key handler", "internal": false },
+			"removeOnChanged": { "text": "removes 'on changed' callback", "params": [], "internal": false },
+			"_removeUpdater": { "text": "@private removes dynamic value updater", "params": [], "internal": true },
+			"onPressed": { "text": "registers key handler", "params": [], "internal": false },
 			"_update": { "text": "", "internal": false },
-			"_get": { "text": "gets object by id", "internal": false },
-			"setAnimation": { "text": "sets animation on given property", "internal": false },
-			"getAnimation": { "text": "gets animation on given property", "internal": false },
-			"_tryFocus": { "text": "called to test if the component can have focus, generic object cannot be focused, so return false, override it to implement default focus policy", "internal": false }
+			"_get": { "text": "gets object by id", "params": [], "internal": false },
+			"setAnimation": { "text": "sets animation on given property", "params": [], "internal": false },
+			"getAnimation": { "text": "gets animation on given property", "params": [], "internal": false },
+			"_tryFocus": { "text": "called to test if the component can have focus, generic object cannot be focused, so return false, override it to implement default focus policy", "params": [], "internal": false }
 		}
 	}
 }

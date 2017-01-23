@@ -3,8 +3,8 @@
 
 	"content": {
 		"Properties": {
-			"source": { "text": "", "internal": false, "type": "string" },
-			"allowFullScreen": { "text": "", "internal": false, "type": "bool" }
+			"source": { "text": "", "internal": false, "type": "string", "defaultValue": "" },
+			"allowFullScreen": { "text": "", "internal": false, "type": "bool", "defaultValue": "" }
 		},
 
 		"Methods": {

@@ -3,7 +3,7 @@
 
 	"content": {
 		"Methods": {
-			"interpolate": { "text": "Animation for color-typed properties", "internal": false }
+			"interpolate": { "text": "Animation for color-typed properties", "params": [], "internal": false }
 		}
 	}
 }

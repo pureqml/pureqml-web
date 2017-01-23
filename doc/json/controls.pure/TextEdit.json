@@ -3,9 +3,9 @@
 
 	"content": {
 		"Properties": {
-			"paddings": { "text": "", "ref": "controls.pure/Paddings", "internal": false, "type": "Paddings" },
-			"placeholder": { "text": "", "internal": false, "type": "string" },
-			"cursorVisible": { "text": "", "internal": false, "type": "bool" }
+			"paddings": { "text": "", "ref": "controls.pure/Paddings", "internal": false, "type": "Paddings", "defaultValue": "Paddings" },
+			"placeholder": { "text": "", "internal": false, "type": "string", "defaultValue": "" },
+			"cursorVisible": { "text": "", "internal": false, "type": "bool", "defaultValue": "true" }
 		},
 
 		"Alias Properties": {

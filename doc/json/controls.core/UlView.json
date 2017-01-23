@@ -3,12 +3,12 @@
 
 	"content": {
 		"Properties": {
-			"model": { "text": "", "internal": false, "type": "Object" },
-			"delegate": { "text": "", "internal": false, "type": "Item" },
-			"count": { "text": "", "internal": false, "type": "int" },
-			"currentIndex": { "text": "", "internal": false, "type": "int" },
-			"contentWidth": { "text": "", "internal": false, "type": "int" },
-			"contentHeight": { "text": "", "internal": false, "type": "int" }
+			"model": { "text": "", "internal": false, "type": "Object", "defaultValue": "" },
+			"delegate": { "text": "", "internal": false, "type": "Item", "defaultValue": "" },
+			"count": { "text": "", "internal": false, "type": "int", "defaultValue": "" },
+			"currentIndex": { "text": "", "internal": false, "type": "int", "defaultValue": "" },
+			"contentWidth": { "text": "", "internal": false, "type": "int", "defaultValue": "1" },
+			"contentHeight": { "text": "", "internal": false, "type": "int", "defaultValue": "1" }
 		},
 
 		"Methods": {

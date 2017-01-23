@@ -3,10 +3,10 @@
 
 	"content": {
 		"Properties": {
-			"checked": { "text": "", "internal": false, "type": "bool" },
-			"panelColor": { "text": "", "internal": false, "type": "color" },
-			"checkedColor": { "text": "", "internal": false, "type": "color" },
-			"uncheckedColor": { "text": "", "internal": false, "type": "color" }
+			"checked": { "text": "", "internal": false, "type": "bool", "defaultValue": "false" },
+			"panelColor": { "text": "", "internal": false, "type": "color", "defaultValue": "#ccc" },
+			"checkedColor": { "text": "", "internal": false, "type": "color", "defaultValue": "#8BC34A" },
+			"uncheckedColor": { "text": "", "internal": false, "type": "color", "defaultValue": "#F44336" }
 		},
 
 		"Methods": {

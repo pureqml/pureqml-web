@@ -3,8 +3,8 @@
 
 	"content": {
 		"Properties": {
-			"autoPlay": { "text": "", "internal": false, "type": "bool" },
-			"source": { "text": "", "internal": false, "type": "string" }
+			"autoPlay": { "text": "", "internal": false, "type": "bool", "defaultValue": "true" },
+			"source": { "text": "", "internal": false, "type": "string", "defaultValue": "" }
 		},
 
 		"Methods": {
@@ -12,7 +12,7 @@
 			"play": { "text": "", "internal": false },
 			"pause": { "text": "", "internal": false },
 			"onAutoPlayChanged": { "text": "", "internal": false },
-			"getTag": { "text": "returns tag for corresponding element", "internal": false }
+			"getTag": { "text": "returns tag for corresponding element", "params": [], "internal": false }
 		}
 	}
 }

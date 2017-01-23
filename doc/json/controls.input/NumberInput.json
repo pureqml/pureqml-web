@@ -3,10 +3,10 @@
 
 	"content": {
 		"Properties": {
-			"max": { "text": "", "internal": false, "type": "float" },
-			"min": { "text": "", "internal": false, "type": "float" },
-			"step": { "text": "", "internal": false, "type": "float" },
-			"value": { "text": "", "internal": false, "type": "float" }
+			"max": { "text": "", "internal": false, "type": "float", "defaultValue": "" },
+			"min": { "text": "", "internal": false, "type": "float", "defaultValue": "" },
+			"step": { "text": "", "internal": false, "type": "float", "defaultValue": "" },
+			"value": { "text": "", "internal": false, "type": "float", "defaultValue": "" }
 		},
 
 		"Methods": {

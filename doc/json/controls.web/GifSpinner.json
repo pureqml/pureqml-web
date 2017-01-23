@@ -3,7 +3,7 @@
 
 	"content": {
 		"Properties": {
-			"running": { "text": "", "internal": false, "type": "bool" }
+			"running": { "text": "", "internal": false, "type": "bool", "defaultValue": "" }
 		},
 
 		"Methods": {

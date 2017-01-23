@@ -3,7 +3,7 @@
 
 	"content": {
 		"Methods": {
-			"getTag": { "text": "returns tag for corresponding element", "internal": false },
+			"getTag": { "text": "returns tag for corresponding element", "params": [], "internal": false },
 			"registerStyle": { "text": "", "internal": false }
 		}
 	}

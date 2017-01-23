@@ -3,12 +3,12 @@
 
 	"content": {
 		"Properties": {
-			"text": { "text": "", "internal": false, "type": "string" }
+			"text": { "text": "", "internal": false, "type": "string", "defaultValue": "" }
 		},
 
 		"Methods": {
 			"_update": { "text": "", "internal": false },
-			"getTag": { "text": "returns tag for corresponding element", "internal": false },
+			"getTag": { "text": "returns tag for corresponding element", "params": [], "internal": false },
 			"registerStyle": { "text": "", "internal": false }
 		}
 	}

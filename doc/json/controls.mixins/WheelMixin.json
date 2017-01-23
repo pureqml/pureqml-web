@@ -3,7 +3,7 @@
 
 	"content": {
 		"Properties": {
-			"enabled": { "text": "", "internal": false, "type": "bool" }
+			"enabled": { "text": "", "internal": false, "type": "bool", "defaultValue": "true" }
 		},
 
 		"Signals": {

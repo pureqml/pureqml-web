@@ -3,8 +3,8 @@
 
 	"content": {
 		"Properties": {
-			"position": { "text": "", "internal": false, "type": "real" },
-			"color": { "text": "", "internal": false, "type": "Color" }
+			"position": { "text": "", "internal": false, "type": "real", "defaultValue": "" },
+			"color": { "text": "", "internal": false, "type": "Color", "defaultValue": "" }
 		},
 
 		"Methods": {

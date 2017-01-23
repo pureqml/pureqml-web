@@ -3,11 +3,11 @@
 
 	"content": {
 		"Properties": {
-			"_gamepads": { "text": "@private", "internal": true, "type": "variant" },
-			"count": { "text": "count of the all connected gamepad devices", "internal": false, "type": "int" },
-			"gamepadChildrensCount": { "text": "count of Gamepad instances inside scope", "internal": false, "type": "int" },
-			"gamepadPollingInterval": { "text": "startup delay before gamepads polling because there is no gamepad events", "internal": false, "type": "int" },
-			"eventPollingInterval": { "text": "gamepad event polling timer interval default value is 8ms (for 120fps) because there is no gamepad events", "internal": false, "type": "int" }
+			"_gamepads": { "text": "@private", "internal": true, "type": "variant", "defaultValue": "" },
+			"count": { "text": "count of the all connected gamepad devices", "internal": false, "type": "int", "defaultValue": "0" },
+			"gamepadChildrensCount": { "text": "count of Gamepad instances inside scope", "internal": false, "type": "int", "defaultValue": "0" },
+			"gamepadPollingInterval": { "text": "startup delay before gamepads polling because there is no gamepad events", "internal": false, "type": "int", "defaultValue": "1000" },
+			"eventPollingInterval": { "text": "gamepad event polling timer interval default value is 8ms (for 120fps) because there is no gamepad events", "internal": false, "type": "int", "defaultValue": "8" }
 		},
 
 		"Signals": {
@@ -16,11 +16,11 @@
 		},
 
 		"Methods": {
-			"pollGamepads": { "text": "@private", "internal": true },
-			"gpButtonCheckLoop": { "text": "@private", "internal": true },
-			"gamepadConnectedHandler": { "text": "@private", "internal": true },
-			"gamepadDisconnectedHandler": { "text": "@private", "internal": true },
-			"onCompleted": { "text": "@private", "internal": true }
+			"pollGamepads": { "text": "@private", "params": [], "internal": true },
+			"gpButtonCheckLoop": { "text": "@private", "params": [], "internal": true },
+			"gamepadConnectedHandler": { "text": "@private", "params": [], "internal": true },
+			"gamepadDisconnectedHandler": { "text": "@private", "params": [], "internal": true },
+			"onCompleted": { "text": "@private", "params": [], "internal": true }
 		}
 	}
 }

@@ -3,9 +3,9 @@
 
 	"content": {
 		"Properties": {
-			"source": { "text": "image URL", "internal": false, "type": "string" },
-			"paintedWidth": { "text": "real image width", "internal": false, "type": "int" },
-			"paintedHeight": { "text": "real image height", "internal": false, "type": "int" }
+			"source": { "text": "image URL", "internal": false, "type": "string", "defaultValue": "" },
+			"paintedWidth": { "text": "real image width", "internal": false, "type": "int", "defaultValue": "" },
+			"paintedHeight": { "text": "real image height", "internal": false, "type": "int", "defaultValue": "" }
 		},
 
 		"Methods": {

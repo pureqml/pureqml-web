@@ -3,8 +3,8 @@
 
 	"content": {
 		"Properties": {
-			"running": { "text": "", "internal": false, "type": "bool" },
-			"squize": { "text": "", "internal": false, "type": "int" }
+			"running": { "text": "", "internal": false, "type": "bool", "defaultValue": "" },
+			"squize": { "text": "", "internal": false, "type": "int", "defaultValue": "0" }
 		},
 
 		"Methods": {

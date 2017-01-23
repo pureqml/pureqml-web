@@ -3,7 +3,7 @@
 
 	"content": {
 		"Methods": {
-			"init": { "text": "", "internal": false },
+			"init": { "text": "Init google chart function", "params": [{ "name": "data", "type": "Object", "text": "data for chart building" }, { "name": "opt", "type": "Object", "text": "chart displaying properties" }], "internal": false },
 			"registerStyle": { "text": "", "internal": false }
 		}
 	}

@@ -3,17 +3,17 @@
 
 	"content": {
 		"Properties": {
-			"x": { "text": "x coordinate", "internal": false, "type": "real" },
-			"y": { "text": "y coordinate", "internal": false, "type": "real" },
-			"color": { "text": "color of the shadow", "internal": false, "type": "Color" },
-			"blur": { "text": "applies a blur effect on the shadow", "internal": false, "type": "real" },
-			"spread": { "text": "adjusts a spread distance of the shadow", "internal": false, "type": "real" }
+			"x": { "text": "x coordinate", "internal": false, "type": "real", "defaultValue": "" },
+			"y": { "text": "y coordinate", "internal": false, "type": "real", "defaultValue": "" },
+			"color": { "text": "color of the shadow", "internal": false, "type": "Color", "defaultValue": "black" },
+			"blur": { "text": "applies a blur effect on the shadow", "internal": false, "type": "real", "defaultValue": "" },
+			"spread": { "text": "adjusts a spread distance of the shadow", "internal": false, "type": "real", "defaultValue": "" }
 		},
 
 		"Methods": {
-			"_update": { "text": "@private", "internal": true },
-			"_empty": { "text": "@private", "internal": true },
-			"_getFilterStyle": { "text": "@private", "internal": true }
+			"_update": { "text": "@private", "params": [], "internal": true },
+			"_empty": { "text": "@private", "params": [], "internal": true },
+			"_getFilterStyle": { "text": "@private", "params": [], "internal": true }
 		}
 	}
 }

@@ -3,31 +3,31 @@
 
 	"content": {
 		"Properties": {
-			"width": { "text": "", "internal": false, "type": "string" },
-			"height": { "text": "", "internal": false, "type": "string" },
-			"top": { "text": "", "internal": false, "type": "string" },
-			"left": { "text": "", "internal": false, "type": "string" },
-			"right": { "text": "", "internal": false, "type": "string" },
-			"bottom": { "text": "", "internal": false, "type": "string" },
-			"html": { "text": "", "internal": false, "type": "string" },
-			"display": { "text": "", "internal": false, "type": "string" },
-			"float": { "text": "", "internal": false, "type": "string" },
-			"boxSizing": { "text": "", "internal": false, "type": "string" },
-			"position": { "text": "", "internal": false, "type": "string" },
-			"opacity": { "text": "", "internal": false, "type": "real" },
-			"radius": { "text": "", "internal": false, "type": "real" },
-			"rotate": { "text": "", "internal": false, "type": "real" },
-			"clip": { "text": "", "internal": false, "type": "bool" },
-			"z": { "text": "", "internal": false, "type": "int" },
-			"color": { "text": "", "internal": false, "type": "color" },
-			"font": { "text": "", "ref": "controls.web/Font", "internal": false, "type": "Font" },
-			"margin": { "text": "", "ref": "controls.web/Box", "internal": false, "type": "Box" },
-			"padding": { "text": "", "ref": "controls.web/Box", "internal": false, "type": "Box" }
+			"width": { "text": "", "internal": false, "type": "string", "defaultValue": "" },
+			"height": { "text": "", "internal": false, "type": "string", "defaultValue": "" },
+			"top": { "text": "", "internal": false, "type": "string", "defaultValue": "" },
+			"left": { "text": "", "internal": false, "type": "string", "defaultValue": "" },
+			"right": { "text": "", "internal": false, "type": "string", "defaultValue": "" },
+			"bottom": { "text": "", "internal": false, "type": "string", "defaultValue": "" },
+			"html": { "text": "", "internal": false, "type": "string", "defaultValue": "" },
+			"display": { "text": "", "internal": false, "type": "string", "defaultValue": "" },
+			"float": { "text": "", "internal": false, "type": "string", "defaultValue": "" },
+			"boxSizing": { "text": "", "internal": false, "type": "string", "defaultValue": "border-box" },
+			"position": { "text": "", "internal": false, "type": "string", "defaultValue": "" },
+			"opacity": { "text": "", "internal": false, "type": "real", "defaultValue": "1" },
+			"radius": { "text": "", "internal": false, "type": "real", "defaultValue": "" },
+			"rotate": { "text": "", "internal": false, "type": "real", "defaultValue": "" },
+			"clip": { "text": "", "internal": false, "type": "bool", "defaultValue": "" },
+			"z": { "text": "", "internal": false, "type": "int", "defaultValue": "" },
+			"color": { "text": "", "internal": false, "type": "color", "defaultValue": "#0000" },
+			"font": { "text": "", "ref": "controls.web/Font", "internal": false, "type": "Font", "defaultValue": "Font" },
+			"margin": { "text": "", "ref": "controls.web/Box", "internal": false, "type": "Box", "defaultValue": "Box" },
+			"padding": { "text": "", "ref": "controls.web/Box", "internal": false, "type": "Box", "defaultValue": "Box" }
 		},
 
 		"Methods": {
 			"style": { "text": "", "internal": false },
-			"_updateStyle": { "text": "@const", "internal": false },
+			"_updateStyle": { "text": "@const", "params": [], "internal": false },
 			"_update": { "text": "", "internal": false }
 		}
 	}

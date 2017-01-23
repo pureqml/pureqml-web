@@ -3,15 +3,15 @@
 
 	"content": {
 		"Properties": {
-			"value": { "text": "", "internal": false, "type": "int" },
-			"min": { "text": "", "internal": false, "type": "int" },
-			"max": { "text": "", "internal": false, "type": "int" },
-			"step": { "text": "", "internal": false, "type": "int" }
+			"value": { "text": "", "internal": false, "type": "int", "defaultValue": "" },
+			"min": { "text": "", "internal": false, "type": "int", "defaultValue": "0" },
+			"max": { "text": "", "internal": false, "type": "int", "defaultValue": "100" },
+			"step": { "text": "", "internal": false, "type": "int", "defaultValue": "1" }
 		},
 
 		"Methods": {
-			"_update": { "text": "@private", "internal": true },
-			"getTag": { "text": "returns tag for corresponding element", "internal": false }
+			"_update": { "text": "@private", "params": [], "internal": true },
+			"getTag": { "text": "returns tag for corresponding element", "params": [], "internal": false }
 		}
 	}
 }

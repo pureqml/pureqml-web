@@ -3,12 +3,12 @@
 
 	"content": {
 		"Properties": {
-			"maxWidth": { "text": "", "internal": false, "type": "int" },
-			"maxHeight": { "text": "", "internal": false, "type": "int" },
-			"minHeight": { "text": "", "internal": false, "type": "int" },
-			"minWidth": { "text": "", "internal": false, "type": "int" },
-			"defaultWidth": { "text": "", "internal": false, "type": "int" },
-			"defaultHeight": { "text": "", "internal": false, "type": "int" }
+			"maxWidth": { "text": "", "internal": false, "type": "int", "defaultValue": "" },
+			"maxHeight": { "text": "", "internal": false, "type": "int", "defaultValue": "" },
+			"minHeight": { "text": "", "internal": false, "type": "int", "defaultValue": "1" },
+			"minWidth": { "text": "", "internal": false, "type": "int", "defaultValue": "1" },
+			"defaultWidth": { "text": "", "internal": false, "type": "int", "defaultValue": "400" },
+			"defaultHeight": { "text": "", "internal": false, "type": "int", "defaultValue": "200" }
 		}
 	}
 }

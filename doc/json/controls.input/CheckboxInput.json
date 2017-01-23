@@ -3,7 +3,7 @@
 
 	"content": {
 		"Properties": {
-			"checked": { "text": "", "internal": false, "type": "bool" }
+			"checked": { "text": "", "internal": false, "type": "bool", "defaultValue": "false" }
 		}
 	}
 }

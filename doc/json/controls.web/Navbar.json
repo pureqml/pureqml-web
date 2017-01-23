@@ -3,9 +3,9 @@
 
 	"content": {
 		"Properties": {
-			"position": { "text": "", "internal": false, "type": "string" },
-			"vertical": { "text": "", "internal": false, "type": "bool" },
-			"collapsed": { "text": "", "internal": false, "type": "bool" }
+			"position": { "text": "", "internal": false, "type": "string", "defaultValue": "" },
+			"vertical": { "text": "", "internal": false, "type": "bool", "defaultValue": "this._get('width') < 600" },
+			"collapsed": { "text": "", "internal": false, "type": "bool", "defaultValue": "true" }
 		},
 
 		"Methods": {

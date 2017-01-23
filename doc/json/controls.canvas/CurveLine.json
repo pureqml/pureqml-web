@@ -3,10 +3,10 @@
 
 	"content": {
 		"Properties": {
-			"x1": { "text": "", "internal": false, "type": "int" },
-			"y1": { "text": "", "internal": false, "type": "int" },
-			"x2": { "text": "", "internal": false, "type": "int" },
-			"y2": { "text": "", "internal": false, "type": "int" }
+			"x1": { "text": "", "internal": false, "type": "int", "defaultValue": "" },
+			"y1": { "text": "", "internal": false, "type": "int", "defaultValue": "" },
+			"x2": { "text": "", "internal": false, "type": "int", "defaultValue": "" },
+			"y2": { "text": "", "internal": false, "type": "int", "defaultValue": "" }
 		},
 
 		"Methods": {

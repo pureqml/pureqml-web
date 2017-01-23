@@ -3,19 +3,19 @@
 
 	"content": {
 		"Properties": {
-			"bottom": { "text": "Anchors, generic class to handle auto-adjusting positioning, used in Item", "internal": false, "type": "AnchorLine" },
-			"verticalCenter": { "text": "", "internal": false, "type": "AnchorLine" },
-			"top": { "text": "", "internal": false, "type": "AnchorLine" },
-			"left": { "text": "", "internal": false, "type": "AnchorLine" },
-			"horizontalCenter": { "text": "", "internal": false, "type": "AnchorLine" },
-			"right": { "text": "", "internal": false, "type": "AnchorLine" },
-			"fill": { "text": "", "internal": false, "type": "Item" },
-			"centerIn": { "text": "", "internal": false, "type": "Item" },
-			"margins": { "text": "", "internal": false, "type": "int" },
-			"bottomMargin": { "text": "", "internal": false, "type": "int" },
-			"topMargin": { "text": "", "internal": false, "type": "int" },
-			"leftMargin": { "text": "", "internal": false, "type": "int" },
-			"rightMargin": { "text": "", "internal": false, "type": "int" }
+			"bottom": { "text": "Anchors, generic class to handle auto-adjusting positioning, used in Item", "internal": false, "type": "AnchorLine", "defaultValue": "" },
+			"verticalCenter": { "text": "", "internal": false, "type": "AnchorLine", "defaultValue": "" },
+			"top": { "text": "", "internal": false, "type": "AnchorLine", "defaultValue": "" },
+			"left": { "text": "", "internal": false, "type": "AnchorLine", "defaultValue": "" },
+			"horizontalCenter": { "text": "", "internal": false, "type": "AnchorLine", "defaultValue": "" },
+			"right": { "text": "", "internal": false, "type": "AnchorLine", "defaultValue": "" },
+			"fill": { "text": "", "internal": false, "type": "Item", "defaultValue": "" },
+			"centerIn": { "text": "", "internal": false, "type": "Item", "defaultValue": "" },
+			"margins": { "text": "", "internal": false, "type": "int", "defaultValue": "" },
+			"bottomMargin": { "text": "", "internal": false, "type": "int", "defaultValue": "" },
+			"topMargin": { "text": "", "internal": false, "type": "int", "defaultValue": "" },
+			"leftMargin": { "text": "", "internal": false, "type": "int", "defaultValue": "" },
+			"rightMargin": { "text": "", "internal": false, "type": "int", "defaultValue": "" }
 		},
 
 		"Signals": {
@@ -23,12 +23,12 @@
 		},
 
 		"Methods": {
-			"_updateLeft": { "text": "@private", "internal": true },
-			"_updateRight": { "text": "@private", "internal": true },
-			"_updateTop": { "text": "@private", "internal": true },
-			"_updateBottom": { "text": "@private", "internal": true },
-			"_updateHCenter": { "text": "@private", "internal": true },
-			"_updateVCenter": { "text": "@private", "internal": true },
+			"_updateLeft": { "text": "@private", "params": [], "internal": true },
+			"_updateRight": { "text": "@private", "params": [], "internal": true },
+			"_updateTop": { "text": "@private", "params": [], "internal": true },
+			"_updateBottom": { "text": "@private", "params": [], "internal": true },
+			"_updateHCenter": { "text": "@private", "params": [], "internal": true },
+			"_updateVCenter": { "text": "@private", "params": [], "internal": true },
 			"_update": { "text": "", "internal": false }
 		}
 	}

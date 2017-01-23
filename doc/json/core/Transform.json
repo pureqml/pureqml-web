@@ -3,18 +3,18 @@
 
 	"content": {
 		"Properties": {
-			"perspective": { "text": "class controlling object transformation", "internal": false, "type": "int" },
-			"translateX": { "text": "", "internal": false, "type": "int" },
-			"translateY": { "text": "", "internal": false, "type": "int" },
-			"translateZ": { "text": "", "internal": false, "type": "int" },
-			"rotateX": { "text": "", "internal": false, "type": "real" },
-			"rotateY": { "text": "", "internal": false, "type": "real" },
-			"rotateZ": { "text": "", "internal": false, "type": "real" },
-			"rotate": { "text": "", "internal": false, "type": "real" },
-			"scaleX": { "text": "", "internal": false, "type": "real" },
-			"scaleY": { "text": "", "internal": false, "type": "real" },
-			"skewX": { "text": "", "internal": false, "type": "real" },
-			"skewY": { "text": "", "internal": false, "type": "real" }
+			"perspective": { "text": "class controlling object transformation", "internal": false, "type": "int", "defaultValue": "" },
+			"translateX": { "text": "", "internal": false, "type": "int", "defaultValue": "" },
+			"translateY": { "text": "", "internal": false, "type": "int", "defaultValue": "" },
+			"translateZ": { "text": "", "internal": false, "type": "int", "defaultValue": "" },
+			"rotateX": { "text": "", "internal": false, "type": "real", "defaultValue": "" },
+			"rotateY": { "text": "", "internal": false, "type": "real", "defaultValue": "" },
+			"rotateZ": { "text": "", "internal": false, "type": "real", "defaultValue": "" },
+			"rotate": { "text": "", "internal": false, "type": "real", "defaultValue": "" },
+			"scaleX": { "text": "", "internal": false, "type": "real", "defaultValue": "" },
+			"scaleY": { "text": "", "internal": false, "type": "real", "defaultValue": "" },
+			"skewX": { "text": "", "internal": false, "type": "real", "defaultValue": "" },
+			"skewY": { "text": "", "internal": false, "type": "real", "defaultValue": "" }
 		},
 
 		"Methods": {
