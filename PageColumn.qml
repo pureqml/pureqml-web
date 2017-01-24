@@ -1,12 +1,8 @@
 Column {
 	property string text;
 	property string title;
-	property string hash;
-	property string link;
 	width: 100%;
 	spacing: 10;
-
-	onHashChanged: { this.element.setAttribute('id', value) }
 
 	H2 {
 		anchors.topMargin: 70;

@@ -11,19 +11,19 @@ HistoryPage {
 		id: contentCol;
 		spacing: 30;
 
-		PageColumn {
+		HashPageColumn {
 			hash: "usage";
 			title: "Usage";
 			text: "QMLCore provides a set of tools written in python2 (sorry about that, lol) Usually you don't need to use them directly. build provides convenient wrapper around them all.";
 		}
 
-		PageColumn {
+		HashPageColumn {
 			hash: "prerequisites";
 			title: "Prerequisites";
 			text: "Any modern python 2.x will go well. Jinja2 is better option for templating in case you want more than qml loader in your html file, but it's not required for small apps.";
 		}
 
-		PageColumn {
+		HashPageColumn {
 			hash: "howto";
 			title: "Simple how-to";
 
@@ -41,13 +41,13 @@ HistoryPage {
 			}
 		}
 
-		PageColumn {
+		HashPageColumn {
 			hash: "howitworks";
 			title: "How it works";
 			text: "Qml compiler scans source directories for qml file and parses each one. Filename starting with uppercase letter considered component, lowercase instantiated. Project-wide options stored in .manifest file. Result of the compilation is single javascript file with minimum dependencies (modernizr only), ready to use in mobile and desktop environment, accompanied by sample .html launcher and flash video player.";
 		}
 
-		PageColumn {
+		HashPageColumn {
 			hash: "manifest";
 			title: "Manifest options";
 			text: "Manifest is a collection of project-wide hacks we used to botch various projects. Some of them may or may not be useful.";
@@ -80,19 +80,19 @@ HistoryPage {
 			}
 		}
 
-		PageColumn {
+		HashPageColumn {
 			hash: "localisation";
 			title: "Localisation";
 			text: "QmlCore uses Qt-approach to localisation. You write code in your default language, then generate/update (build -u) .ts translation files, translate them with qt linguist, and compile project. QmlCore recognizes tr, qsTr, qsTranslate function, as well as QT_TR_NOOP/QT_TRANSLATE_NOOP macros.";
 		}
 
-		PageColumn {
+		HashPageColumn {
 			hash: "controls";
 			title: "Controls library";
 			text: "QmlCore contains bare minimum of platform controls: images, texts, rectangles and model-view-delegate classes. Various controls that might be useful are in separate repository. Just clone it <code><b>git clone git@github.com:pureqml/controls.git</code></b> in your project and that's it!";
 		}
 
-		PageColumn {
+		HashPageColumn {
 			hash: "qmldifference";
 			title: "QML differences";
 			text: "";

@@ -3,11 +3,13 @@ Item {
 	property Object state: context.location.state;
 
 	onStateChanged: {
-		if (value && value.page) {
-			if (value.page !== "")
+		if (value) {
+
+			if (value.page && value.page !== "")
 				pages.pageName = value.page;
-			else 
+			else
 				pages.pageName = 'main';
+
 			window.scrollTo(0, 0)
 		}
 	}
@@ -38,25 +40,6 @@ Item {
 		width: 100%;
 		property string pageName;
 
-		Main { }
-		GettingStarted { }
-		Download { }
-		Lessons { }
-		Docs { }
-
-		//Lessons
-		// AnchorsLesson { }
-		// LayoutsLesson { }
-		// GamepadLesson { }
-		// KeyboardLesson { }
-		// SignalLesson { }
-		// ViewAndModelsLesson { }
-		// GlobalsLesson { }
-		// InputsLesson { }
-		// BasicLesson { }
-		// MixinLesson { }
-		// EffectsLesson { }
-
 		onPageNameChanged: {
 			var children = this.children
 			for (var i in children) {
@@ -66,6 +49,12 @@ Item {
 				}
 			}
 		}
+
+		Main { }
+		GettingStarted { }
+		Download { }
+		Lessons { }
+		Docs { }
 	}
 
 	Item {

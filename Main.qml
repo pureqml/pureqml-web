@@ -23,12 +23,12 @@ Column {
 		width: Math.min(100%, 1200) - 40;
 		anchors.horizontalCenter: parent.horizontalCenter;
 
-		PageColumn {
+		HashPageColumn {
 			title: "What is PureQML?";
 			text: "Whole industry have struggled for many years with UI development. Many solutions were proposed, most of them failed. Complex UI development was dreadful till Qt came out with QML. Declarative, maintainable, quick and exquisite QML became very popular language in many areas. The only problem is Qt. Huge, complicated, inefficient in some aspects. We love Qt, it’s been a gamechanger in the cross-platform development. But one size doesn’t fit all. Sometimes there is no way to get Qt on the platform (e.g. Web browsers, Smart TV, resource critical embedded platforms). That’s how PureQML idea came up.";
 		}
 
-		PageColumn {
+		HashPageColumn {
 			title: "Benefits";
 
 			Grid {
@@ -57,7 +57,7 @@ Column {
 			}
 		}
 
-		PageColumn {
+		HashPageColumn {
 			title: "Supported platforms";
 			text: "You can write web-sites, applications for modern desktop and mobile browsers. You also can deploy your application for smart TV platforms:";
 
@@ -75,7 +75,7 @@ Column {
 			}
 		}
 
-		PageColumn {
+		HashPageColumn {
 			title: "QMLCore";
 			text: "QMLCore - QML to JS translator. QMLCore is simple tool we (small team of QML advocates) used for years, simplifying building of html5 UI for both mobile and desktop targets. It was designed with original QML in mind, but it's not 100% compatible and better in some aspects. The main concepts are the same though, so if you're familiar with original QML, you could start right away.";
 		}

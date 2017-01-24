@@ -16,7 +16,7 @@ Item {
 		anchors.top: emailText.bottom;
 		anchors.topMargin: 10;
 		anchors.horizontalCenter: parent.horizontalCenter;
-		color: emailText.correct ? "green" : "red";
-		text: emailText.correct ? "Correct address" : "Incorrect address";
+		color: emailText.valid ? "green" : "red";
+		text: emailText.valid ? "Correct address" : "Incorrect address";
 	}
 }

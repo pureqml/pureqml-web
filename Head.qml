@@ -47,7 +47,7 @@ Rectangle {
 
 		Image {
 			anchors.centerIn: parent;
-			source: "res/menuIcon.png";
+			source: "http://pureqml.com/res/menuIcon.png";
 		}
 
 		onClicked: { menu.show = !menu.show }

@@ -1,0 +1,3 @@
+PageColumn {
+	property string path;
+}
