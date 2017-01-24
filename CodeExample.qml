@@ -1,5 +1,6 @@
 Item {
 	id: codeExampleProto;
+	width: 90%; x: 5%;
 	property int codeWidth: 300;
 	property int codeHeight: 300;
 	property int exampleWidth: 300;
@@ -11,16 +12,25 @@ Item {
 
 	Column {
 		id: codeContent;
-		anchors.left: parent.left;
-		anchors.right: parent.right;
+		width: 100%;
 		spacing: 10;
+
+		Text { text: "Code:"; }
+
+		CodeHighlighter {
+			width: 100%;
+			font.pixelSize: 18;
+			language: "qml";
+			code: codeSource.data;
+		}
+
+		Text { text: "Result:"; }
 
 		Rectangle {
 			id: sampleArea;
-			width: codeExampleProto.exampleWidth;
+			width: 100%;
 			height: codeExampleProto.exampleHeight;
-			border.width: 1;
-			border.color: "#ccc";
+			color: "#EEE";
 
 			property Item content: Item { anchors.fill: parent; }
 
@@ -30,14 +40,6 @@ Item {
 				item.visible = true
 				this.content.element.append(item.element)
 			}
-		}
-
-		CodeHighlighter {
-			width: codeExampleProto.codeWidth;
-			height: contentHeight;
-			font.pixelSize: 18;
-			language: "qml";
-			code: codeSource.data;
 		}
 	}
 
