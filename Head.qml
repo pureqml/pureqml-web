@@ -23,14 +23,13 @@ Rectangle {
 		property bool wide: context.width > 800;
 		property bool show: false;
 		height: 70;
-//		y: 100% - 70;
 		x: 40;
 
-		MenuItem { text: "PureQML"; href: "../"; }
-		MenuItem { text: "Getting started"; href: "gettingstarted"; }
-		MenuItem { text: "Download"; href: "download"; }
-		MenuItem { text: "Lessons"; href: "lessons"; }
-		MenuItem { text: "Docs"; href: "docs"; }
+		MenuItem { text: "PureQML"; page: "main"; }
+		MenuItem { text: "Getting started"; page: "gettingstarted"; }
+		MenuItem { text: "Download"; page: "download"; }
+		MenuItem { text: "Lessons"; page: "lessons"; }
+		MenuItem { text: "Docs"; page: "docs"; }
 
 		SearchPanel {
 			width: 240;

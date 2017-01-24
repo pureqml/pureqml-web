@@ -1,13 +1,16 @@
 WebLink {
 	property string text;
+	property string page;
+	href: "http://pureqml.com/" + page;
 	width: menuItemText.paintedWidth + 40;
 	height: 100%;
 	radius: 12;
 	color: hover ? colorTheme.darkerPrimaryColor : colorTheme.panelColor;
 
+
 	onClicked(e): {
 		e.preventDefault();
-		this._context.location.pushState({ page: this.href }, this.href, this.href) 
+		this._context.location.pushState({ page: this.page }, this.text, this.href) 
 	} 
 
 	Text {

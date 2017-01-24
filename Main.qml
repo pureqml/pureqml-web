@@ -38,19 +38,19 @@ Column {
 				horizontalSpacing: 20;
 
 				DescriptionPanel {
-					icon: "res/icons/speed.png";
+					icon: "http://pureqml.com/res/icons/speed.png";
 					title: "Quick";
 					text: "Simple and flexible declarative way for UI building can save much time.";
 				}
 
 				DescriptionPanel {
-					icon: "res/icons/gamepad.png";
+					icon: "http://pureqml.com/res/icons/gamepad.png";
 					title: "Gamedev";
 					text: "Can be used for game development. Keyboard, Mouse and Gamepad supporting.";
 				}
 
 				DescriptionPanel {
-					icon: "res/icons/crossplatform.png";
+					icon: "http://pureqml.com/res/icons/crossplatform.png";
 					title: "Crossplatform";
 					text: "One code can be used for other platforms: desktop, mobile phones, TVs.";
 				}
@@ -66,12 +66,12 @@ Column {
 				verticalSpacing: 50;
 				horizontalSpacing: 50;
 
-				PlatformItem { icon: "res/platforms/android.png"; text: "Android"; }
-				PlatformItem { icon: "res/platforms/netcast.png"; text: "LG NetCast"; }
-				PlatformItem { icon: "res/platforms/opera.png"; text: "Opera TV"; }
-				PlatformItem { icon: "res/platforms/webos.png"; text: "LG WebOS"; }
-				PlatformItem { icon: "res/platforms/smarttv.png"; text: "Samsung SmartTV"; }
-				PlatformItem { icon: "res/platforms/tizen.png"; text: "Samsung Tizen"; }
+				PlatformItem { icon: "http://pureqml.com/res/platforms/android.png"; text: "Android"; }
+				PlatformItem { icon: "http://pureqml.com/res/platforms/netcast.png"; text: "LG NetCast"; }
+				PlatformItem { icon: "http://pureqml.com/res/platforms/opera.png"; text: "Opera TV"; }
+				PlatformItem { icon: "http://pureqml.com/res/platforms/webos.png"; text: "LG WebOS"; }
+				PlatformItem { icon: "http://pureqml.com/res/platforms/smarttv.png"; text: "Samsung SmartTV"; }
+				PlatformItem { icon: "http://pureqml.com/res/platforms/tizen.png"; text: "Samsung Tizen"; }
 			}
 		}
 

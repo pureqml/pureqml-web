@@ -8,6 +8,7 @@ Item {
 				pages.pageName = value.page;
 			else 
 				pages.pageName = 'main';
+			window.scrollTo(0, 0)
 		}
 	}
 

@@ -12,7 +12,6 @@ Column {
 		width: parent.width;
 		text: parent.title;
 		color: colorTheme.primaryColor;
-		anchors.topMargin: 70;
 	}
 
 	Text { 
