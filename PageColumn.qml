@@ -9,6 +9,7 @@ Column {
 	onHashChanged: { this.element.setAttribute('id', value) }
 
 	H2 {
+		anchors.topMargin: 70;
 		width: parent.width;
 		text: parent.title;
 		color: colorTheme.primaryColor;

@@ -25,7 +25,7 @@ Rectangle {
 		height: 70;
 		x: 40;
 
-		MenuItem { text: "PureQML"; page: "main"; }
+		MenuItem { text: "PureQML"; page: ""; }
 		MenuItem { text: "Getting started"; page: "gettingstarted"; }
 		MenuItem { text: "Download"; page: "download"; }
 		MenuItem { text: "Lessons"; page: "lessons"; }

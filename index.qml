@@ -4,7 +4,7 @@ Item {
 
 	onStateChanged: {
 		if (value && value.page) {
-			if (value.page !== "../")
+			if (value.page !== "")
 				pages.pageName = value.page;
 			else 
 				pages.pageName = 'main';
