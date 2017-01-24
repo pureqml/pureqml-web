@@ -2,24 +2,29 @@ Column {
 	property string url: "main";
 	width: 100%;
 
-	Rectangle {
+	Column {
 		width: 100%;
-		color: "#8BC34A";
-		height: 300;
+		property Gradient gradient: Gradient {
+			orientation: Gradient.Custom;
+			angle: 120;
+			GradientStop { position: 0; color: "#8BC34A";}
+			GradientStop { position: 1; color: "#00BCD4";}
+		}
 
 		H1 {
-			width: 100%; height: 100%;
+			anchors.margins: 100;
+			width: Math.min(100%, 1200) - 40;
+			anchors.horizontalCenter: parent.horizontalCenter;
 			horizontalAlignment: Text.AlignHCenter;
 			verticalAlignment: Text.AlignVCenter;
 			color: "white";
-			font.pixelSize: 42;
+			font.pixelSize: 48;
 			font.weight: 100;
-			text: "<b>PureQML</b><br>Qtless, but cute QML-framework for many platforms.";
+			text: "<b>PureQML</b><br>Qtless declarative QML-framework for web and some other platforms.";
 		}
 	}
 
 	Column {
-		anchors.topMargin: 100;
 		width: Math.min(100%, 1200) - 40;
 		anchors.horizontalCenter: parent.horizontalCenter;
 

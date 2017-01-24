@@ -1,5 +1,5 @@
 Rectangle {
-	height: 70;// context.scrollY > 80 ? 70 : 150 - context.scrollY;
+	height: menu.height;
 	width: 100%;
 	color: colorTheme.panelColor;
 	effects.shadow.y: 1; 
@@ -7,23 +7,12 @@ Rectangle {
 	effects.shadow.blur: 1; 
 	effects.shadow.spread: 0;
 
-	Rectangle {
-		anchors.top: menu.top;
-		anchors.left: menu.left;
-		anchors.right: parent.right;
-		anchors.bottom: menu.bottom;
-		color: colorTheme.primaryColor;
-		visible: !menu.wide;
-
-		Behavior on x, width { Animation { duration: 300; } }
-	}
-
-	Row {
+	Grid {
 		id: menu;
-		property bool wide: context.width > 800;
+		width: Math.min(100%, 1200) - 40;
+		anchors.horizontalCenter: parent.horizontalCenter;
+		property bool wide: height <= 70;
 		property bool show: false;
-		height: 70;
-		x: 40;
 
 		MenuItem { text: "PureQML"; page: ""; }
 		MenuItem { text: "Getting started"; page: "gettingstarted"; }
@@ -34,8 +23,6 @@ Rectangle {
 		SearchPanel {
 			width: 240;
 		}
-
-		Behavior on x { Animation { duration: menu.count ? 300 : 0; } }
 	}
 
 	WebItem {
