@@ -1,4 +1,4 @@
-WebItem {
+WebLink {
 	property string icon;
 	property string text;
 	width: (height - 20) + buttonText.paintedWidth + 30;
@@ -15,25 +15,11 @@ WebItem {
 	Image {
 		width: height;
 		height: parent.height - 20;
-		anchors.left: parent.left;
 		anchors.verticalCenter: parent.verticalCenter;
-		anchors.leftMargin: 10;
-		source: "http://pureqml.com/res/colored_icons/" + parent.icon;
-		opacity: parent.hover ? 0.0 : 1.0;
+		x: 10;
+		source: "http://pureqml.com/res/" + (parent.hover ? "" : "colored_") + "icons/" + parent.icon;
 
-		Behavior on opacity { Animation { duration: 300; } }
-	}
-
-	Image {
-		width: height;
-		height: parent.height - 20;
-		anchors.left: parent.left;
-		anchors.verticalCenter: parent.verticalCenter;
-		anchors.leftMargin: 10;
-		source: "http://pureqml.com/res/icons/" + parent.icon;
-		opacity: parent.hover ? 1.0 : 0.0;
-
-		Behavior on opacity { Animation { duration: 300; } }
+		Behavior on background { Animation { duration: 300; } }
 	}
 
 	Text {
@@ -45,8 +31,8 @@ WebItem {
 		font.pixelSize: 21;
 		text: parent.text;
 
-		Behavior on color { ColorAnimation { duration: 300; } }
+		Behavior on color { Animation { duration: 300; } }
 	}
 
-	Behavior on color { ColorAnimation { duration: 300; } }
+	Behavior on background { Animation { duration: 300; } }
 }
