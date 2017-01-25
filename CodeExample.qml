@@ -18,7 +18,6 @@ Item {
 		Text { text: "Code:"; }
 
 		CodeHighlighter {
-			width: 100%;
 			font.pixelSize: 18;
 			language: "qml";
 			code: codeSource.data;
@@ -28,7 +27,7 @@ Item {
 
 		Rectangle {
 			id: sampleArea;
-			width: 100%;
+			width: codeExampleProto.sample.width;
 			height: codeExampleProto.exampleHeight;
 			color: "#EEE";
 

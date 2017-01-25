@@ -11,8 +11,8 @@ Lesson {
 		text: "To declare custom signal just write:";
 
 		CodeHighlighter {
-			width: parent.width - 20;
-			height: contentHeight;
+//			width: parent.width - 20;
+//			height: contentHeight;
 			font.pixelSize: 18;
 			language: "qml";
 			code: "WebItem {\n\tsignal mySignalOccured;\n}";

@@ -24,7 +24,7 @@ HistoryPage {
 	PageStack { 
 		id: content;
 		x: parent.width < 860 ? 0 : 256;
-		width: parent.width < 860 ? 100% : Math.min(100% - 256, 860);
+		width: parent.width < 860 ? 100% : 100% - 256;
 		property string pageName;
 
 		onPageNameChanged: {
