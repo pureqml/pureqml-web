@@ -15,8 +15,8 @@ WebLink {
 
 	Text {
 		id: menuItemText;
-		anchors.centerIn: parent;
-		horizontalAlignment: Text.AlignHCenter;
+		anchors.verticalCenter: parent.verticalCenter;
+		x: 20;
 		text: parent.text;
 		font.pointSize: 15;
 		color: parent.hover ? "#424242" : colorTheme.primaryTextColor;

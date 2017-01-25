@@ -13,7 +13,7 @@ Column {
 
 		H1 {
 			anchors.margins: 100;
-			width: Math.min(100%, 1200) - 40;
+			width: 400;//Math.min(100%, 1200) - 40;
 			anchors.horizontalCenter: parent.horizontalCenter;
 			horizontalAlignment: Text.AlignHCenter;
 			verticalAlignment: Text.AlignVCenter;

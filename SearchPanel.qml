@@ -1,6 +1,6 @@
 Item {
 	signal search;
-	height: 100%;
+	height: 70;
 	z: 4;
 	property Mixin hover: HoverMixin { cursor: "pointer"; }
 
@@ -16,7 +16,7 @@ Item {
 	SearchInput {
 		id: searchText;
 		height: 28;
-		width: 90%;
+		width: 100% - 30;
 		x: 30;
 		anchors.verticalCenter: parent.verticalCenter;
 		font.pixelSize: 18;
@@ -31,7 +31,7 @@ Item {
 
 	Rectangle {
 		anchors.top: searchText.bottom;
-		anchors.bottomMargin: -3;
+		anchors.bottomMargin: -4;
 		width: searchText.activeFocus ? searchText.width : 60;
 		height: 1;
 		x: 30;
@@ -43,7 +43,7 @@ Item {
 		id: searchResults;
 		anchors.top: searchText.bottom;
 		x: 30;
-		width: 90%;
+		width: searchText.width;
 		active: searchText.activeFocus || parent.hover.value;
 		onClear: {
 			searchText.text = "";

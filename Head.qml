@@ -5,14 +5,12 @@ Rectangle {
 	effects.shadow.y: 1; 
 	effects.shadow.color: "#0004"; 
 	effects.shadow.blur: 1; 
-	effects.shadow.spread: 0;
+	effects.shadow.spread: 1;
 
 	Grid {
 		id: menu;
 		width: Math.min(100%, 1200) - 40;
-		anchors.horizontalCenter: parent.horizontalCenter;
-		property bool wide: height <= 70;
-		property bool show: false;
+		x: (parent.width - width) / 2;
 
 		MenuItem { text: "PureQML"; page: ""; }
 		MenuItem { text: "Getting started"; page: "gettingstarted"; }
@@ -23,21 +21,6 @@ Rectangle {
 		SearchPanel {
 			width: 240;
 		}
-	}
-
-	WebItem {
-		width: height;
-		anchors.top: parent.top;
-		anchors.right: parent.right;
-		anchors.bottom: parent.bottom;
-		visible: !menu.wide;
-
-		Image {
-			anchors.centerIn: parent;
-			source: "http://pureqml.com/res/menuIcon.png";
-		}
-
-		onClicked: { menu.show = !menu.show }
 	}
 
 	onCompleted: { this.style('position', 'fixed') }
