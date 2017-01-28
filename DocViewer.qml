@@ -49,9 +49,31 @@ Column {
 			var p = content[a]
 			for (var b in p) {
 				var c = p[b]
+				if (c.internal)
+					continue
 
 				var ref = c.ref ? 'href="http://pureqml.com/docs/' + c.ref + '"' : ""
-				output += '<div style="color:#616161; padding-bottom:8px; border-bottom-style:solid; border-bottom-width:2px; border-bottom-color:#F5F5F5; font-family:Roboto Slab; font-size:26px;">' + b + ' : <a ' + ref + ' style="color:#00897B; position:static;">' + (c.type ? c.type : "") + '</a></div><p style="color:#757575;white-space:normal">' + c.text + '</p><br>'
+				output += '<div style="color:#616161; padding-bottom:8px; border-bottom-style:solid; border-bottom-width:2px; border-bottom-color:#F5F5F5; font-family:Roboto Slab; font-size:26px;">'
+
+				// Methods
+				if (!c.type) {
+					var paramText = "("
+					var params = c.params
+
+					if (params) {
+						for (var i in params) {
+							paramText += params[i].name + ": "
+							paramText += params[i].type
+							paramText += (i == params.length - 1 ? "" : ", ")
+						}
+					}
+					paramText += ")"
+
+					output += b + paramText + '<a ' + ref + ' style="color:#00897B; position:static;"></a></div><p style="color:#757575;white-space:normal">' + c.text + '</p><br>'
+				} else {
+					output += b + ' : <a ' + ref + ' style="color:#00897B; position:static;">' + c.type + '</a></div><p style="color:#757575;white-space:normal">' + c.text + '</p><br>'
+				}
+				//output += '<div style="color:#616161; padding-bottom:8px; border-bottom-style:solid; border-bottom-width:2px; border-bottom-color:#F5F5F5; font-family:Roboto Slab; font-size:26px;">' + b + ' : <a ' + ref + ' style="color:#00897B; position:static;">' + (c.type ? c.type : "") + '</a></div><p style="color:#757575;white-space:normal">' + c.text + '</p><br>'
 			}
 		}
 		docText.text = output;
