@@ -13,14 +13,14 @@ Column {
 
 		H1 {
 			anchors.margins: 100;
-			width: 400;//Math.min(100%, 1200) - 40;
+			width: Math.min(100%, 1200) - 40;
 			anchors.horizontalCenter: parent.horizontalCenter;
 			horizontalAlignment: Text.AlignHCenter;
 			verticalAlignment: Text.AlignVCenter;
 			color: "white";
 			font.pixelSize: 48;
 			font.weight: 100;
-			text: "<b>PureQML</b><br>Qtless declarative QML-framework for web and some other platforms.";
+			text: "<b>PureQML</b><br>QML-like declarative JS-framework for web and some other platforms.";
 		}
 	}
 
@@ -28,12 +28,17 @@ Column {
 		width: Math.min(100%, 1200) - 40;
 		anchors.horizontalCenter: parent.horizontalCenter;
 
-		HashPageColumn {
-			title: "What is PureQML?";
-			text: "Whole industry have struggled for many years with UI development. Many solutions were proposed, most of them failed. Complex UI development was dreadful till Qt came out with QML. Declarative, maintainable, quick and exquisite QML became very popular language in many areas. The only problem is Qt. Huge, complicated, inefficient in some aspects. We love Qt, it’s been a gamechanger in the cross-platform development. But one size doesn’t fit all. Sometimes there is no way to get Qt on the platform (e.g. Web browsers, Smart TV, resource critical embedded platforms). That’s how PureQML idea came up.";
+		PageColumn {
+			title: "What is it?";
+			text: "PureQML is a declarative front-end framework for complex UI-development (mobile/desktop/SmartTV/etc.).
+				It was originally designed in platform-agnostic manner. At least we've tried it very much.
+				In many aspects PureQML is very close to original QML by Qt, but it's not 100% compatible 
+				and we believe better in some aspects. 
+				The main concepts are the same though, so if you're familiar with original QML, 
+				you could start right away.";
 		}
 
-		HashPageColumn {
+		PageColumn {
 			title: "Benefits";
 
 			Grid {
@@ -62,7 +67,7 @@ Column {
 			}
 		}
 
-		HashPageColumn {
+		PageColumn {
 			title: "Supported platforms";
 			text: "You can write web-sites, applications for modern desktop and mobile browsers. You also can deploy your application for smart TV platforms:";
 

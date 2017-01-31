@@ -6,6 +6,7 @@ Rectangle {
 	effects.shadow.color: "#0004"; 
 	effects.shadow.blur: 1; 
 	effects.shadow.spread: 1;
+	property bool newWindow;
 
 	Grid {
 		id: menu;
@@ -15,7 +16,7 @@ Rectangle {
 		MenuItem { text: "PureQML"; page: ""; }
 		MenuItem { text: "Getting started"; page: "gettingstarted"; }
 		MenuItem { text: "Download"; page: "download"; }
-		MenuItem { text: "Lessons"; page: "lessons"; }
+		MenuItemExt { text: "Lessons"; page: "lessons"; }
 		MenuItem { text: "Docs"; page: "docs"; }
 
 		SearchPanel {

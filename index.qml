@@ -36,7 +36,7 @@ Item {
 
 	PageStack {
 		id: pages;
-		y: 70;
+		y: nav.height;
 		width: 100%;
 		property string pageName;
 

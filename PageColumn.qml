@@ -6,16 +6,13 @@ Column {
 
 	H2 {
 		anchors.topMargin: 70;
-		width: parent.width;
+		width: 100%;
 		text: parent.title;
 		color: colorTheme.primaryColor;
 	}
 
-	Text { 
+	P {
 		text: parent.text;
 		color: colorTheme.textColor;
-		width: parent.width;
-		font.pixelSize: 20;
-		wrapMode: Text.WordWrap;
 	}
 }

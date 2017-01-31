@@ -1,7 +1,7 @@
 Item {
 	anchors.fill: context;
 
-	Head { id: nav; z: 2; }
+	Head { id: nav; z: 2; newWindow: true; }
 	ColorTheme { id: colorTheme; }
 
 	Lessons {

@@ -7,8 +7,9 @@ WebLink {
 	radius: 12;
 	color: hover ? colorTheme.darkerPrimaryColor : colorTheme.panelColor;
 
-
 	onClicked(e): {
+		if (this.parent.parent.newWindow)
+			return;
 		e.preventDefault();
 		this._context.location.pushState({ page: this.page }, this.text, this.href) 
 	} 
