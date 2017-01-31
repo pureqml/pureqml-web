@@ -1,5 +1,6 @@
 {
 	"name": "controls.svg.SvgContainer",
+	"text": "returns tag for corresponding element",
 
 	"content": {
 		"Methods": {

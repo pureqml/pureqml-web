@@ -1,5 +1,6 @@
 {
 	"name": "core.Border",
+	"text": "class controlling border rendering",
 
 	"content": {
 		"Properties": {

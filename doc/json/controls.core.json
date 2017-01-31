@@ -12,6 +12,7 @@
 		"DebugInfoItem": "controls.core/DebugInfoItem.json",
 		"Activity": "controls.core/Activity.json",
 		"Audio": "controls.core/Audio.json",
+		"PlaceHolder": "controls.core/PlaceHolder.json",
 		"Paddings": "controls.core/Paddings.json",
 		"RelativeSize": "controls.core/RelativeSize.json"
 	}

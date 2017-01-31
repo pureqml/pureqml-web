@@ -1,5 +1,6 @@
 {
 	"name": "core.BaseViewContent",
+	"text": "@private content for base view scrolling area",
 
 	"content": {
 		"Methods": {

@@ -1,5 +1,6 @@
 {
 	"name": "core.ProxyModel",
+	"text": "provides target model's filtering and sorting",
 
 	"content": {
 		"Properties": {

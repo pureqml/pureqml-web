@@ -1,9 +1,14 @@
 {
 	"name": "controls.core.EllipsisText",
+	"text": "",
 
 	"content": {
+		"Properties": {
+			"active": { "text": "", "internal": false, "type": "bool", "defaultValue": "true" }
+		},
+
 		"Methods": {
-			"onPaintedWidthChanged": { "text": "", "internal": false }
+			"_update": { "text": "", "internal": false }
 		}
 	}
 }

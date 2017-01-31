@@ -1,5 +1,6 @@
 {
 	"name": "controls.svg.SvgBase",
+	"text": "specialized implementation of element creation in a certain namespace.",
 
 	"content": {
 		"Properties": {

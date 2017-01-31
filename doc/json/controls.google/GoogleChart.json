@@ -1,9 +1,10 @@
 {
 	"name": "controls.google.GoogleChart",
+	"text": "@param data:Object data for chart building 	@param opt:Object chart displaying properties 	Fill google chart function",
 
 	"content": {
 		"Methods": {
-			"init": { "text": "Init google chart function", "params": [{ "name": "data", "type": "Object", "text": "data for chart building" }, { "name": "opt", "type": "Object", "text": "chart displaying properties" }], "internal": false },
+			"fill": { "text": "Fill google chart function", "params": [{ "name": "data", "type": "Object", "text": "data for chart building" }, { "name": "opt", "type": "Object", "text": "chart displaying properties" }], "internal": false },
 			"registerStyle": { "text": "", "internal": false }
 		}
 	}

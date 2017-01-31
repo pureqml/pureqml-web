@@ -1,5 +1,6 @@
 {
 	"name": "core.Shadow",
+	"text": "provides shadow properties adjustment",
 
 	"content": {
 		"Properties": {

@@ -1,5 +1,6 @@
 {
 	"name": "controls.core.Paddings",
+	"text": "class controlling internal paddings of the parent element",
 
 	"content": {
 		"Properties": {

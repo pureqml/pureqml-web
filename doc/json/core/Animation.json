@@ -1,5 +1,6 @@
 {
 	"name": "core.Animation",
+	"text": "controls property animation behavior in declarative way Animation class works only for integral types, please use ColorAnimation for animating color properties",
 
 	"content": {
 		"Properties": {

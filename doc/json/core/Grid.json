@@ -1,5 +1,6 @@
 {
 	"name": "core.Grid",
+	"text": "Grid is a usefull way to automatically position its children",
 
 	"content": {
 		"Properties": {

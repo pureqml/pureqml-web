@@ -1,5 +1,6 @@
 {
 	"name": "core.Item",
+	"text": "base component for every visible objects.",
 
 	"content": {
 		"Properties": {

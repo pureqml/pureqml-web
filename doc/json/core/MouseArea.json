@@ -1,5 +1,6 @@
 {
 	"name": "core.MouseArea",
+	"text": "item provide mouse and touch events API",
 
 	"content": {
 		"Properties": {

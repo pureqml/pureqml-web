@@ -1,5 +1,6 @@
 {
 	"name": "core.ColorAnimation",
+	"text": "Animation for color-typed properties",
 
 	"content": {
 		"Methods": {

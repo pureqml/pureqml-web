@@ -1,5 +1,6 @@
 {
 	"name": "core.System",
+	"text": "object for storing general info about device and platform",
 
 	"content": {
 		"Properties": {

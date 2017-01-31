@@ -1,5 +1,6 @@
 {
 	"name": "core.Object",
+	"text": "the most basic QML Object, generic event emitter, properties and id links holder",
 
 	"content": {
 		"Methods": {

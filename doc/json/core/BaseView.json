@@ -1,5 +1,6 @@
 {
 	"name": "core.BaseView",
+	"text": "base class for all views, holds content, creates delegates and provides common api",
 
 	"content": {
 		"Properties": {

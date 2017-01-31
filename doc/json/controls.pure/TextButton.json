@@ -1,5 +1,6 @@
 {
 	"name": "controls.pure.TextButton",
+	"text": "",
 
 	"content": {
 		"Properties": {

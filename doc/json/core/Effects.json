@@ -1,5 +1,6 @@
 {
 	"name": "core.Effects",
+	"text": "provides various visual effects",
 
 	"content": {
 		"Properties": {

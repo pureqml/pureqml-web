@@ -1,5 +1,6 @@
 {
 	"name": "core.Rectangle",
+	"text": "Colored rectangle with optional rounded corners, border and/or gradient.",
 
 	"content": {
 		"Properties": {

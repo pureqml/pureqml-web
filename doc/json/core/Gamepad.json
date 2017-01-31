@@ -1,5 +1,6 @@
 {
 	"name": "core.Gamepad",
+	"text": "item for gamepad device instance, provide common API",
 
 	"content": {
 		"Properties": {

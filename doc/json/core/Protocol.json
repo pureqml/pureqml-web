@@ -1,5 +1,6 @@
 {
 	"name": "core.Protocol",
+	"text": "object for handling XML/HTTP requests",
 
 	"content": {
 		"Properties": {

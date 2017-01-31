@@ -1,8 +1,10 @@
 {
 	"name": "html5.Stylesheet",
+	"text": "",
 
 	"content": {
 		"Methods": {
+			"allocateClass": { "text": "", "internal": false },
 			"mangleSelector": { "text": "", "internal": false },
 			"mangleRule": { "text": "", "internal": false },
 			"addRule": { "text": "", "internal": false }

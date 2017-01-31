@@ -1,5 +1,6 @@
 {
 	"name": "core.PageStack",
+	"text": "layout for displaying one of its children at the time",
 
 	"content": {
 		"Properties": {

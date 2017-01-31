@@ -33,6 +33,7 @@
 				"DebugInfoItem": "controls.core/DebugInfoItem.json",
 				"Activity": "controls.core/Activity.json",
 				"Audio": "controls.core/Audio.json",
+				"PlaceHolder": "controls.core/PlaceHolder.json",
 				"Paddings": "controls.core/Paddings.json",
 				"RelativeSize": "controls.core/RelativeSize.json"
 			}
@@ -186,6 +187,7 @@
 			"file": "html5.json",
 			"content": {
 				"Stylesheet": "html5/Stylesheet.json",
+				"Orientation": "html5/Orientation.json",
 				"Location": "html5/Location.json"
 			}
 		},
@@ -195,6 +197,7 @@
 				"Lessons": "pureqml-web/Lessons.json",
 				"LeftMenu": "pureqml-web/LeftMenu.json",
 				"MenuItem": "pureqml-web/MenuItem.json",
+				"Main": "pureqml-web/Main.json",
 				"Head": "pureqml-web/Head.json",
 				"KeyValueView": "pureqml-web/KeyValueView.json",
 				"Docs": "pureqml-web/Docs.json",
@@ -203,13 +206,13 @@
 				"PlatformItem": "pureqml-web/PlatformItem.json",
 				"HistoryPage": "pureqml-web/HistoryPage.json",
 				"HowtoText": "pureqml-web/HowtoText.json",
-				"About": "pureqml-web/About.json",
 				"SearchPanel": "pureqml-web/SearchPanel.json",
 				"SearchResults": "pureqml-web/SearchResults.json",
 				"CodeExample": "pureqml-web/CodeExample.json",
 				"PageColumn": "pureqml-web/PageColumn.json",
 				"DescriptionPanel": "pureqml-web/DescriptionPanel.json",
 				"ContentColumn": "pureqml-web/ContentColumn.json",
+				"GettingStarted": "pureqml-web/GettingStarted.json",
 				"ColorTheme": "pureqml-web/ColorTheme.json",
 				"SectionHead": "pureqml-web/SectionHead.json",
 				"ReadMore": "pureqml-web/ReadMore.json",

@@ -1,5 +1,6 @@
 {
 	"name": "core.Transform",
+	"text": "class controlling object transformation",
 
 	"content": {
 		"Properties": {

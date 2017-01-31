@@ -1,5 +1,6 @@
 {
 	"name": "controls.web.H3",
+	"text": "returns tag for corresponding element",
 
 	"content": {
 		"Methods": {

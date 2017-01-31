@@ -1,5 +1,6 @@
 {
 	"name": "core.BaseLayout",
+	"text": "base class for BaseView and Layout",
 
 	"content": {
 		"Properties": {

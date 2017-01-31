@@ -1,5 +1,6 @@
 {
 	"name": "core.GamepadManager",
+	"text": "gamepad manager item holds Gamepad items and provide common API",
 
 	"content": {
 		"Properties": {

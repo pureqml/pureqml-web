@@ -1,10 +1,10 @@
 {
 	"name": "core.BorderSide",
+	"text": "@private Component aimed to adjust individual preferences of each border side",
 
 	"content": {
 		"Properties": {
-			"name": { "text": "@private
-Component aimed to adjust individual preferences of each border side", "internal": true, "type": "string", "defaultValue": "" },
+			"name": { "text": "@private Component aimed to adjust individual preferences of each border side", "internal": true, "type": "string", "defaultValue": "" },
 			"width": { "text": "", "internal": false, "type": "int", "defaultValue": "" },
 			"color": { "text": "", "internal": false, "type": "color", "defaultValue": "" }
 		},

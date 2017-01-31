@@ -1,5 +1,6 @@
 {
 	"name": "controls.input.TextInput",
+	"text": "",
 
 	"content": {
 		"Properties": {

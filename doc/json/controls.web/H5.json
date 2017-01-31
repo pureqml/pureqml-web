@@ -1,5 +1,6 @@
 {
 	"name": "controls.web.H5",
+	"text": "returns tag for corresponding element",
 
 	"content": {
 		"Methods": {

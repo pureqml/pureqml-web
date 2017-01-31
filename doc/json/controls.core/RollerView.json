@@ -1,5 +1,6 @@
 {
 	"name": "controls.core.RollerView",
+	"text": "@internal focuses current item",
 
 	"content": {
 		"Properties": {

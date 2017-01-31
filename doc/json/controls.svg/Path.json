@@ -1,5 +1,6 @@
 {
 	"name": "controls.svg.Path",
+	"text": "returns tag for corresponding element",
 
 	"content": {
 		"Properties": {

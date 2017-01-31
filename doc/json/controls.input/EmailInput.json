@@ -1,9 +1,10 @@
 {
 	"name": "controls.input.EmailInput",
+	"text": "",
 
 	"content": {
 		"Properties": {
-			"correct": { "text": "", "internal": false, "type": "bool", "defaultValue": "" }
+			"valid": { "text": "", "internal": false, "type": "bool", "defaultValue": "" }
 		},
 
 		"Methods": {

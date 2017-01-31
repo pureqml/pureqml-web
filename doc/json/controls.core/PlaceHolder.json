@@ -1,0 +1,19 @@
+{
+	"name": "controls.core.PlaceHolder",
+	"text": "@private",
+
+	"content": {
+		"Properties": {
+			"text": { "text": "inner text placeholder", "internal": false, "type": "string", "defaultValue": "" },
+			"color": { "text": "placeholder color", "internal": false, "type": "Color", "defaultValue": "" },
+			"font": { "text": "placeholder font", "ref": "controls.core/Font", "internal": false, "type": "Font", "defaultValue": "Font" }
+		},
+
+		"Methods": {
+			"_update": { "text": "@private", "params": [], "internal": true },
+			"getClass": { "text": "", "internal": false },
+			"setPlaceholderColor": { "text": "", "internal": false },
+			"setPlaceholderFontSize": { "text": "", "internal": false }
+		}
+	}
+}

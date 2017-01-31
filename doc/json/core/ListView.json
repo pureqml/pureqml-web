@@ -1,5 +1,6 @@
 {
 	"name": "core.ListView",
+	"text": "@private creates delegate in given item slot",
 
 	"content": {
 		"Methods": {

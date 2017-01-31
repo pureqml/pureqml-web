@@ -1,5 +1,6 @@
 {
 	"name": "controls.core.BaseButton",
+	"text": "",
 
 	"content": {
 		"Properties": {

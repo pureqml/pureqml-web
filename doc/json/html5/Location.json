@@ -1,5 +1,6 @@
 {
 	"name": "html5.Location",
+	"text": "Window location object",
 
 	"content": {
 		"Properties": {

@@ -1,5 +1,6 @@
 {
 	"name": "controls.mixins.StyleMixin",
+	"text": "@internal",
 
 	"content": {
 		"Methods": {

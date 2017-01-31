@@ -1,5 +1,6 @@
 {
 	"name": "controls.web.WebItem",
+	"text": "clickable and hoverable rectangle for mouse supportings applications",
 
 	"content": {
 		"Properties": {

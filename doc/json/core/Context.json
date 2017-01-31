@@ -1,5 +1,6 @@
 {
 	"name": "core.Context",
+	"text": "",
 
 	"content": {
 		"Properties": {
@@ -8,6 +9,7 @@
 			"stylesheet": { "text": "", "ref": "core/Stylesheet", "internal": false, "type": "Stylesheet", "defaultValue": "Stylesheet" },
 			"system": { "text": "", "ref": "core/System", "internal": false, "type": "System", "defaultValue": "System" },
 			"location": { "text": "", "ref": "core/Location", "internal": false, "type": "Location", "defaultValue": "Location" },
+			"orientation": { "text": "", "ref": "core/Orientation", "internal": false, "type": "Orientation", "defaultValue": "Orientation" },
 			"language": { "text": "", "internal": false, "type": "string", "defaultValue": "" }
 		},
 
@@ -22,7 +24,9 @@
 			"start": { "text": "", "internal": false },
 			"_processActions": { "text": "", "internal": false },
 			"scheduleAction": { "text": "", "internal": false },
-			"qsTr": { "text": "", "internal": false }
+			"qsTr": { "text": "", "internal": false },
+			"run": { "text": "", "internal": false },
+			"_run": { "text": "", "internal": false }
 		}
 	}
 }

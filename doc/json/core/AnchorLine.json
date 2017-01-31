@@ -1,5 +1,6 @@
 {
 	"name": "core.AnchorLine",
+	"text": "@private Anchor's vertical or horizontal line (left, right, center)",
 
 	"content": {
 		"Properties": {

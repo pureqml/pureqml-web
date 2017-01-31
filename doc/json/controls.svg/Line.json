@@ -1,5 +1,6 @@
 {
 	"name": "controls.svg.Line",
+	"text": "returns tag for corresponding element",
 
 	"content": {
 		"Properties": {

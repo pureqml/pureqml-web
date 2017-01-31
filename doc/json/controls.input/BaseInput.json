@@ -1,16 +1,16 @@
 {
 	"name": "controls.input.BaseInput",
+	"text": "base class for all inputs",
 
 	"content": {
 		"Properties": {
 			"paddings": { "text": "inner text paddings", "ref": "controls.input/Paddings", "internal": false, "type": "Paddings", "defaultValue": "Paddings" },
 			"color": { "text": "text color", "internal": false, "type": "Color", "defaultValue": "#000" },
 			"backgroundColor": { "text": "background color", "internal": false, "type": "Color", "defaultValue": "#fff" },
-			"placeholderColor": { "text": "placeholder color", "internal": false, "type": "Color", "defaultValue": "#ccc" },
 			"font": { "text": "object holding properties of text font", "ref": "controls.input/Font", "internal": false, "type": "Font", "defaultValue": "Font" },
 			"border": { "text": "object holding properties of the border", "ref": "controls.input/Border", "internal": false, "type": "Border", "defaultValue": "Border" },
-			"placeholder": { "text": "inner text placeholder", "internal": false, "type": "string", "defaultValue": "" },
-			"type": { "text": "input type value, must overrie in inheritor", "internal": false, "type": "string", "defaultValue": "text" }
+			"type": { "text": "input type value, must overrie in inheritor", "internal": false, "type": "string", "defaultValue": "text" },
+			"placeholder": { "text": "input placeholder object", "ref": "controls.input/PlaceHolder", "internal": false, "type": "PlaceHolder", "defaultValue": "PlaceHolder" }
 		},
 
 		"Methods": {

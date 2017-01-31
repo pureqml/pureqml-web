@@ -1,5 +1,6 @@
 {
 	"name": "controls.mixins.OverflowMixin",
+	"text": "setup parents overflow mode",
 
 	"content": {
 		"Methods": {
