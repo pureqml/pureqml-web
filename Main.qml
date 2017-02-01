@@ -24,70 +24,112 @@ Column {
 		}
 	}
 
-	Column {
+	Grid {
 		width: Math.min(100%, 1200) - 40;
 		anchors.horizontalCenter: parent.horizontalCenter;
+		spacing: 20;
+		horizontalAlignment: Grid.AlignJustify;
 
-		PageColumn {
-			title: "What is it?";
-			text: "PureQML is a declarative front-end framework for complex UI-development (mobile/desktop/SmartTV/etc.).
-				It was originally designed in platform-agnostic manner. At least we've tried it very much.
+		MainH2 { text: "What we are talking about?"; }
+
+		MainP {
+			text: "PureQML is a declarative front-end framework aimed to ease complex UI-development (mobile/desktop/SmartTV/etc.).
+				It was originally designed in platform-agnostic manner, at least we've tried it very much.
 				In many aspects PureQML is very close to original QML by Qt, but it's not 100% compatible 
 				and we believe better in some aspects. 
 				The main concepts are the same though, so if you're familiar with original QML, 
 				you could start right away.";
 		}
 
-		PageColumn {
-			title: "Benefits";
-
-			Grid {
-				id: gridPlat;
-				width: parent.width;
-				verticalSpacing: 20;
-				horizontalSpacing: 20;
-
-				DescriptionPanel {
-					icon: "http://pureqml.com/res/icons/speed.png";
-					title: "Quick";
-					text: "Simple and flexible declarative way for UI building can save much time.";
-				}
-
-				DescriptionPanel {
-					icon: "http://pureqml.com/res/icons/gamepad.png";
-					title: "Gamedev";
-					text: "Can be used for game development. Keyboard, Mouse and Gamepad supporting.";
-				}
-
-				DescriptionPanel {
-					icon: "http://pureqml.com/res/icons/crossplatform.png";
-					title: "Crossplatform";
-					text: "One code can be used for other platforms: desktop, mobile phones, TVs.";
-				}
-			}
+		StateButton {
+			relPath: "gettingstarted";
+			text: "GET STARTED";
 		}
 
-		PageColumn {
-			title: "Supported platforms";
-			text: "You can write web-sites, applications for modern desktop and mobile browsers. You also can deploy your application for smart TV platforms:";
-
-			Grid {
-				width: parent.width;
-				verticalSpacing: 50;
-				horizontalSpacing: 50;
-
-				PlatformItem { icon: "http://pureqml.com/res/platforms/android.png"; text: "Android"; }
-				PlatformItem { icon: "http://pureqml.com/res/platforms/netcast.png"; text: "LG NetCast"; }
-				PlatformItem { icon: "http://pureqml.com/res/platforms/opera.png"; text: "Opera TV"; }
-				PlatformItem { icon: "http://pureqml.com/res/platforms/webos.png"; text: "LG WebOS"; }
-				PlatformItem { icon: "http://pureqml.com/res/platforms/smarttv.png"; text: "Samsung SmartTV"; }
-				PlatformItem { icon: "http://pureqml.com/res/platforms/tizen.png"; text: "Samsung Tizen"; }
-			}
+		MainH2 {
+			text: "Approach";
 		}
 
-		HashPageColumn {
-			title: "QMLCore";
-			text: "QMLCore - QML to JS translator. QMLCore is simple tool we (small team of QML advocates) used for years, simplifying building of html5 UI for both mobile and desktop targets. It was designed with original QML in mind, but it's not 100% compatible and better in some aspects. The main concepts are the same though, so if you're familiar with original QML, you could start right away.";
+		MainP {
+			text: "Generator/compiler is where all the magic happens.
+			Qml compiler scans source directories for qml file and parses each one. 
+			Filename starting with uppercase letter considered component, lowercase instantiated. 
+			Project-wide options stored in .manifest file. 
+			For Web-projects the result of the compilation is a single javascript file with minimum dependencies 
+			(modernizr only), ready to use in mobile and desktop environment, accompanied by sample .html 
+			launcher and flash video player.";
+		}
+
+		MainH2 {
+			text: "Platforms";
+		}
+
+		MainP {
+			text: "Web, and web-based platforms like SmartTV have the most mature platform-implementations. 
+			Even though we have experimental implementation for Android (using Cordova). 
+			And hardly working on a native one (platform/pure) paired with Node.js 
+			and targeted to various embedded platforms like Set-top boxes or Openmoko.
+			The last didn't went public yet, but we hope to have it soon.";
+		}
+
+		PlatformImage { href: "https://en.wikipedia.org/wiki/HTML5"; img.source: "http://pureqml.com/res/platforms/html5.png";}
+		PlatformImage { href: "http://wiki.openmoko.org/wiki/Main_Page"; img.source: "http://pureqml.com/res/platforms/openmoko.png";}
+		PlatformImage { href: "http://webostv.developer.lge.com/discover/netcast/overview/"; img.source: "http://pureqml.com/res/platforms/netcast.png";}
+		PlatformImage { href: "https://www.opera.com/opera-tv"; img.source: "http://pureqml.com/res/platforms/opera.png";}
+		PlatformImage { href: "http://webostv.developer.lge.com/"; img.source: "http://pureqml.com/res/platforms/webos.png";}
+		PlatformImage { href: "http://developer.samsung.com/tv"; img.source: "http://pureqml.com/res/platforms/smarttv.png";}
+		PlatformImage { href: "https://developer.tizen.org/tizen/tv"; img.source: "http://pureqml.com/res/platforms/tizen.png";}
+		PlatformImage { href: "https://www.android.com"; img.source: "http://pureqml.com/res/platforms/android.png";}
+
+		MainH2 {
+			text: "Practical use";
+		}
+
+		MainP {
+			text: "PureQML shows the most of it's power in complex UI-development where declarations, 
+			mixins, inheritance, and business-logic incapsulation drastically decrease development and maintanence efforts, 
+			but it is still possible to use the framework even for quite simple websites if you wish. 
+			Particularly this website employs PureQML. <br>Also, we haven't seen anything comparable in usefulness 
+			for web-based SmartTV/STB platforms(actually that was the reason to start this project years ago).";
+		}
+
+		MainH2 {
+			text: "Current state";
+		}
+
+		MainP {
+			text: "Lets say, the project is in alpha-phase. You can expect that all basic components and features work well, 
+			many bottlenecks already have been optimized and with some respect you can use PureQML in commercial projects (as we did). 
+			BUT: there is a huge room for improvements, optimizations and other changes to be made, so please bear in mind that 
+			some interfaces and approaches are subjects to change.";
+		}
+
+		StateButton {
+			href: "https://github.com/pureqml/qmlcore";
+			text: "ON GITHUB";
+		}
+
+		StateButton {
+			relPath: "docs";
+			text: "DOCUMENTATION";
+		}
+
+		StateButton {
+			relPath: "http://pureqml.com/lessons";
+			text: "SOME EXAMPLES";
+		}
+
+		MainH2 {
+			text: "Limitations and Contributions";
+		}
+
+		MainP {
+			text: "Suddenly, all of us (PureQML-team) are using Linux on daily-basis, so we never tried to run it on 
+			Windows or MacOS, though it won't be hard to add corresponding tools to get it working.<br> As we mentioned before 
+			there are many applications of the technology and enormous amount of integration and optimization work to be done.
+			So we are very open and keen for any extra help. If you found a bug, if you have a suggestion, if you feel 
+			youself powerful enough to contribute to the code, you are very welcome, please get in touch via 
+			<a href=\"https://github.com/pureqml/qmlcore\">GitHub</a> or by <a href=\"mailto:team@pureqml.com\">team@pureqml.com</a>";
 		}
 	}
 }
