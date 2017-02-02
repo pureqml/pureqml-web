@@ -1,4 +1,6 @@
 ListView {
+	width: contentWidth;
+	height: contentHeight;
 	orientation: ListView.Horizontal;
 	spacing: 10;
 	model: ListModel {

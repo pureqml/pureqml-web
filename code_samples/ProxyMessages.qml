@@ -7,7 +7,7 @@ ListModel {
 
 	ListElement {
 		text: "Luke, I am your father";
-        contactId: '1';
+		contactId: '1';
 		unixTime: 1472731200;
 	}
 
