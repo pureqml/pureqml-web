@@ -12,7 +12,8 @@ Column {
 		}
 
 		H1 {
-			anchors.margins: 100;
+			anchors.topMargin: 100;
+			anchors.bottomMargin: 22;
 			width: Math.min(100%, 1200) - 40;
 			anchors.horizontalCenter: parent.horizontalCenter;
 			horizontalAlignment: Text.AlignHCenter;
@@ -20,7 +21,43 @@ Column {
 			color: "white";
 			font.pixelSize: 48;
 			font.weight: 100;
-			text: "<b>PureQML</b><br>QML-like declarative JS-framework for web and some other platforms.";
+			text: "<b>PureQML</b><br>QML-inspired declarative JS-framework for web and some other platforms.";
+
+			HoverMixin {}
+			onClicked: {
+				walkie.running = true
+				walkie.walk = !walkie.walk
+				stopTimer.restart();
+			}
+		}
+
+		Item {
+			width: 100%;
+			height: 78;
+
+			AnimatedSprite {
+				id: walkie;
+				property bool walk;
+				x: walk ? -width : 100%;
+				transform.rotateY: walk ? 0 : -180;
+				width: 50; height: 78;
+				duration: 780;
+				totalFrames: 10;
+				repeat: true;
+				running: false;
+				source: "res/walkingdead.png";
+				Behavior on x { Animation { duration: parent.parent.parent.width * 20; easing: "linear"; }}
+
+				Timer {
+					id: stopTimer;
+					interval: parent.parent.width * 20;
+
+					onTriggered: {
+						this.parent.running = false;
+					}
+				}
+			}
+
 		}
 	}
 
@@ -30,7 +67,7 @@ Column {
 		spacing: 20;
 		horizontalAlignment: Grid.AlignJustify;
 
-		MainH2 { text: "What we are talking about?"; }
+ 		MainH2 { text: "What is it all about?"; }
 
 		MainP {
 			text: "PureQML is a declarative front-end framework aimed to ease complex UI-development (mobile/desktop/SmartTV/etc.).
@@ -51,7 +88,7 @@ Column {
 		}
 
 		MainP {
-			text: "Generator/compiler is where all the magic happens.
+			text: "Generator/compiler is the place where all the magic happens.
 			Qml compiler scans source directories for qml file and parses each one. 
 			Filename starting with uppercase letter considered component, lowercase instantiated. 
 			Project-wide options stored in .manifest file. 
@@ -66,7 +103,7 @@ Column {
 
 		MainP {
 			text: "Web, and web-based platforms like SmartTV have the most mature platform-implementations. 
-			Even though we have experimental implementation for Android (using Cordova). 
+			Even though we have an experimental implementation for Android (using Cordova). 
 			And hardly working on a native one (platform/pure) paired with Node.js 
 			and targeted to various embedded platforms like Set-top boxes or Openmoko.
 			The last didn't went public yet, but we hope to have it soon.";
@@ -98,15 +135,16 @@ Column {
 		}
 
 		MainP {
-			text: "Lets say, the project is in alpha-phase. You can expect that all basic components and features work well, 
-			many bottlenecks already have been optimized and with some respect you can use PureQML in commercial projects (as we did). 
-			BUT: there is a huge room for improvements, optimizations and other changes to be made, so please bear in mind that 
-			some interfaces and approaches are subjects to change.";
+			text: "Lets say, the project is in BETA. You can expect that all basic components and features work well, 
+			many bottlenecks already have been optimized and with some respect 
+			you can use PureQML in commercial projects (as we are). 
+			BUT: there is a huge room for improvements, optimizations and other changes to be made, so please bear 
+			in mind that some interfaces and approaches are subject to change.";
 		}
 
 		StateButton {
 			href: "https://github.com/pureqml/qmlcore";
-			text: "ON GITHUB";
+			text: "VIEW IT ON GITHUB";
 		}
 
 		StateButton {
@@ -128,7 +166,7 @@ Column {
 			Windows or MacOS, though it won't be hard to add corresponding tools to get it working.<br> As we mentioned before 
 			there are many applications of the technology and enormous amount of integration and optimization work to be done.
 			So we are very open and keen for any extra help. If you found a bug, if you have a suggestion, if you feel 
-			youself powerful enough to contribute to the code, you are very welcome, please get in touch via 
+			you can contribute to the code, you are very very welcome, please get in touch via 
 			<a href=\"https://github.com/pureqml/qmlcore\">GitHub</a> or by <a href=\"mailto:team@pureqml.com\">team@pureqml.com</a>";
 		}
 	}
