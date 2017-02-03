@@ -7,13 +7,15 @@ Column {
 		property Gradient gradient: Gradient {
 			orientation: Gradient.Custom;
 			angle: 120;
-			GradientStop { position: 0; color: "#8BC34A";}
-			GradientStop { position: 1; color: "#00BCD4";}
+			GradientStop { position: 0; color: zombieGame.eaten && zombieGame.active ? "#FF6D00" : "#8BC34A";}
+			GradientStop { position: 1; color: zombieGame.eaten && zombieGame.active ? "#B71C1C" : "#00BCD4";}
 		}
+
+		Behavior on background { Animation { duration: 2000; easing: "linear"; }}
 
 		H1 {
 			anchors.topMargin: 100;
-			anchors.bottomMargin: 22;
+			anchors.bottomMargin: 0;
 			width: Math.min(100%, 1200) - 40;
 			anchors.horizontalCenter: parent.horizontalCenter;
 			horizontalAlignment: Text.AlignHCenter;
@@ -23,41 +25,87 @@ Column {
 			font.weight: 100;
 			text: "<b>PureQML</b><br>QML-inspired declarative JS-framework for web and some other platforms.";
 
-			HoverMixin {}
+			HoverMixin { cursor: zombieGame.active ? "default" : "pointer"; }
 			onClicked: {
-				walkie.running = true
-				walkie.walk = !walkie.walk
-				stopTimer.restart();
+				if (!zombieGame.active) {
+					brain.health = 100;
+					zombieGame.model.clear();
+					zombieGame.active = true;
+				}
 			}
 		}
 
-		Item {
+		Repeater {
+			id: zombieGame;
 			width: 100%;
-			height: 78;
+			height: 100;
+			property bool active;
+			property bool eaten: brain.health === 0;
 
-			AnimatedSprite {
-				id: walkie;
-				property bool walk;
-				x: walk ? -width : 100%;
-				transform.rotateY: walk ? 0 : -180;
-				width: 50; height: 78;
-				duration: 780;
-				totalFrames: 10;
+			onCountChanged: {
+				log("onCountChanged", value)
+				if (value === 0)
+					this.active = false;
+			}
+
+			model: ListModel { }
+
+			Timer {
+				id: creator;
+				interval: 3000;
+				running: zombieGame.active && !zombieGame.eaten;
 				repeat: true;
-				running: false;
-				source: "res/walkingdead.png";
-				Behavior on x { Animation { duration: parent.parent.parent.width * 20; easing: "linear"; }}
 
-				Timer {
-					id: stopTimer;
-					interval: parent.parent.width * 20;
+				onTriggered: {
+					this.interval = Math.floor(Math.random() * 4000) + 2000
+					var s = Math.floor(Math.random() * 4) + 4
+					var n = Math.random() > 0.5 ? "zombie2" : "zombie1"
+					log ("timer", this.interval, s, n)
 
-					onTriggered: {
-						this.parent.running = false;
+					this.parent.model.append({ speed: s, name: n})
+				}
+			}
+			delegate: Zombie {
+				active: true;
+				walking: parent.eaten || (x < (parent.width - 150));
+				transform.rotateY: parent.eaten ? -180 : 0;
+				height: 181;  width: 122;
+				name: model.name;
+				property int speed: model.speed;
+				state: walking ? "w" : "a";
+				x: -width; z: 5; y: -30;
+				property int idx: model.index;
+
+				onXChanged: {
+					if ((value < -this.width) && zombieGame.eaten) {
+						log("remove zombie", this.idx)
+						this.running = false;
+						this.parent.model.remove(this.idx);
 					}
+				}
+				onTriggered: {
+					if (!this.walking)
+						brain.health--;
+					else
+						this.x += (zombieGame.eaten ? -this.speed : this.speed);
 				}
 			}
 
+			Image {
+				id: brain;
+				property int health: 100;
+				source: "res/brain.png";
+				y: -20;
+				x: (health !== 0 && zombieGame.active) ? 100% - width / 2 : 100%;
+				Behavior on x { Animation { duration: 600; }}
+
+				Rectangle {
+					y: 100%;
+					color: parent.health > 50 ? "green" : (parent.health > 20 ? "yellow" : "red");
+					height: 4;
+					width: parent.health * parent.width / 200;
+				}
+			}
 		}
 	}
 
