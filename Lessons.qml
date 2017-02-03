@@ -17,11 +17,9 @@ HistoryPage {
 		}
 	}
 
-	LeftMenu {
-		id: leftMenu;
-	}
+	LeftMenu { id: leftMenu; y: nav.height; }
 
-	PageStack { 
+	PageStack {
 		id: content;
 		x: parent.width < 860 ? 0 : 256;
 		width: parent.width < 860 ? 100% : 100% - 256;
