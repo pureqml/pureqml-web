@@ -18,7 +18,7 @@ HistoryPage {
 		id: leftMenu;
 	}
 
-	DocViewer { 
+	DocViewer {
 		id: content;
 		x: parent.width < 860 ? 0 : 256;// (100% - 256 - width) / 3 + 256;
 		width: parent.width < 860 ? 100% : Math.min(100% - 256, 860);
