@@ -20,7 +20,41 @@ Lesson {
 
 	PageColumn {
 		title: "DragMixin";
-		text: "";
+		text: "This mixin allows you to drag and drop items";
+
+		KeyValueView {
+			shift: 180;
+			anchors.leftMargin: 20;
+
+			model: ListModel {
+				ListElement { key: "enabled"; value: "boolean flag for enabling/diabling dragging"; }
+				ListElement { key: "pressed"; value: "bool property which becomes 'true' when item was pressed and 'false' otherwise"; }
+				ListElement { key: "moved"; value: "boolean flag which means than item was moved from its initial position"; }
+				ListElement { key: "top"; value: "top border of dragging area"; }
+				ListElement { key: "left"; value: "left border of dragging area"; }
+				ListElement { key: "right"; value: "right border of dragging area"; }
+				ListElement { key: "bottom"; value: "bottom border of dragging area"; }
+				ListElement { key: "direction"; value: "enum valur for customizing avaliable direction, can be: Any, Vertical or Horizontal"; }
+			}
+		}
+
+		DescriptionText { text: "Simple usage example"; }
+
+		CodeExample {
+			codeWidth: parent.width - 20;
+			exampleWidth: 300;
+			exampleHeight: 300;
+			sample: DragMixinLesson { }
+		}
+
+		DescriptionText { text: "If you need to drag item only horizontally or vertically adjust direction property like in example below"; }
+
+		CodeExample {
+			codeWidth: parent.width - 20;
+			exampleWidth: 300;
+			exampleHeight: 300;
+			sample: DragMixinDirectionLesson { }
+		}
 	}
 
 	PageColumn {
