@@ -5,6 +5,7 @@ Column {
 	spacing: 10;
 
 	H2 {
+		id: headText;
 		anchors.topMargin: 70;
 		width: 100%;
 		text: parent.title;
