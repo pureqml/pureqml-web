@@ -12,10 +12,11 @@ Item {
 		color: "#ccc";
 
 		WebItem {
-			property Mixin drag: DragMixin { direction: DragMixin.Horizontal; }
 			width: 100;
 			height: parent.height;
 			color: "#424242";
+
+			DragMixin { direction: DragMixin.Horizontal; }
 		}
 	}
 
@@ -28,10 +29,11 @@ Item {
 		color: "#ccc";
 
 		WebItem {
-			property Mixin drag: DragMixin { direction: DragMixin.Vertical; }
 			width: parent.width;
 			height: 100;
 			color: "#424242";
+
+			DragMixin { direction: DragMixin.Vertical; }
 		}
 	}
 }

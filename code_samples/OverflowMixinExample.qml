@@ -6,9 +6,9 @@ Item {
 		width: 150;
 		height: 120;
 		anchors.centerIn: parent;
-		
+
 		OverflowMixin { value: OverflowMixin.ScrollX; }
-		
+
 		Row {
 			height: 100;
 			spacing: 10;

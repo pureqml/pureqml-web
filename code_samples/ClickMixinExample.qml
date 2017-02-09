@@ -4,7 +4,7 @@ Item {
 
 	Rectangle {
 		property Mixin hover: HoverMixin {
-			onValueChanged: { if (!value) this.parent.myText.text = ""; } 
+			onValueChanged: { if (!value) this.parent.myText.text = ""; }
 		}
 		width: 100;
 		height: 100;

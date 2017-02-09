@@ -16,6 +16,14 @@ Lesson {
 				ListElement { key: "TextMixin"; value: "mixin which allows to place text in Item"; }
 			}
 		}
+
+		DescriptionText { text: "If you need to get mixins property values you can declare them as \"property\" (see comment 1 in code below). If you just need to apply their features you can jut instanciate it (see comment 2 in code below)"; }
+
+		CodeHighlighter {
+			font.pixelSize: 18;
+			language: "qml";
+			code: "Item {\n\t// 1. Declaring as proeprty\n\tproperty Mixin hover: HoverMixin { }\n\n\t// 2. Simple instanciating\n\tHoverMixin { }\n}";
+		}
 	}
 
 	PageColumn {

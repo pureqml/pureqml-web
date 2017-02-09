@@ -17,7 +17,7 @@ Item {
 	onCompleted: {
 		if (!window.location.hostname)
 			return
-		
+
 		var path = window.location.pathname.split("/")
 		var state = {}
 		if (path[1])
@@ -27,7 +27,7 @@ Item {
 		if (path[3])
 			state.element = path[3]
 
-		this._context.location.pushState(state, window.location.pathname, window.location.pathname) 
+		this._context.location.pushState(state, window.location.pathname, window.location.pathname)
 	}
 
 	Head { id: nav; z: 2; }
