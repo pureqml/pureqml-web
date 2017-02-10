@@ -14,6 +14,7 @@ Column {
 
 	P {
 		text: parent.text;
+		font.pixelSize: 20;
 		color: colorTheme.textColor;
 	}
 }

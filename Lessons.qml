@@ -5,15 +5,15 @@ HistoryPage {
 	height: content.height;
 
 	onStateChanged: {
-		log ("lessons", value)
+		log("lessons", value)
 		if (value && value.page === "lessons"){
-			log ("lessons", value.page)
+			log("lessons", value.page)
 			if (value.section && value.section !== "") {
 				log ("lessons", value.section)
 				content.pageName = value.section;
-			}
-			else
+			} else {
 				content.pageName = "main"
+			}
 		}
 	}
 

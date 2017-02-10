@@ -15,7 +15,7 @@ Item {
 		width: 100%;
 		spacing: 10;
 
-		Text { text: "Code:"; }
+		Text { text: "Code:"; font.pixelSize: 20; }
 
 		CodeHighlighter {
 			font.pixelSize: 18;
@@ -23,7 +23,7 @@ Item {
 			code: codeSource.data;
 		}
 
-		Text { text: "Result:"; }
+		Text { text: "Result:"; font.pixelSize: 20; }
 
 		Rectangle {
 			id: sampleArea;

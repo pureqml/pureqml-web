@@ -13,6 +13,7 @@ ListView {
 			id: keyText;
 			anchors.left: parent.left;
 			font.weight: 300;
+			font.pixelSize: 20;
 			color: colorTheme.primaryColor;
 			text: model.key;
 		}
@@ -24,6 +25,7 @@ ListView {
 			x: parent.wide ? parent.parent.shift : 10;
 			y: parent.wide ? 0 : keyText.height + 10;
 			font.weight: 100;
+			font.pixelSize: 20;
 			text: model.value;
 		}
 	}
