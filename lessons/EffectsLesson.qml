@@ -34,5 +34,12 @@ Lesson {
 				ListElement { key: "spread"; value: "int property wich applies shadow's spread distance"; }
 			}
 		}
+
+		CodeExample {
+			codeWidth: parent.width - 20;
+			exampleWidth: 200;
+			exampleHeight: 200;
+			sample: ShadowExample { }
+		}
 	}
 }
