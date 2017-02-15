@@ -55,7 +55,7 @@ Lesson {
 
 		CodeExample {
 			codeWidth: parent.width - 20;
-			exampleWidth: 200;
+			exampleWidth: 330;
 			exampleHeight: 50;
 			sample: ListViewExample { }
 		}
