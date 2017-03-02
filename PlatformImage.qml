@@ -1,6 +1,6 @@
 WebLink {
-	width: 120;
-	height: 120;
+	width: 100;
+	height: 100;
 	property ImageMixin img: ImageMixin { 
 		fillMode: Image.PreserveAspectFit;
 	}
