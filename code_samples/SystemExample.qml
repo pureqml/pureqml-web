@@ -1,4 +1,5 @@
 Item {
+	property string res: colorTheme.resPath;
 	width: 200;
 	height: 200;
 
@@ -17,13 +18,13 @@ Item {
 
 	onCompleted: {
 		var os = this._context.system.os.toLowerCase()
-		var resPath = "../res/lessons/system/"
+		var resPath = this.resPath + "/lessons/system/"
 
 		if (os.indexOf("android") >= 0)
 			osIcon.source = resPath + "android.png"
-		else if (os.indexOf("ios") >= 0) 
+		else if (os.indexOf("ios") >= 0)
 			osIcon.source = resPath + "ios.png"
-		else if (os.indexOf("linux") >= 0) 
+		else if (os.indexOf("linux") >= 0)
 			osIcon.source = resPath + "linux.png"
 		else
 			osIcon.source = resPath + "windows.png"

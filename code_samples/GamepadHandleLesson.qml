@@ -10,7 +10,7 @@ Item {
 		width: 50;
 		height: 50;
 		anchors.centerIn: parent;
-		source: "../res/lessons/crosshair.png";
+		source: colorTheme.resPath + "/lessons/crosshair.png";
 
 		Timer {
 			interval: 20;

@@ -16,7 +16,7 @@ Item {
 
 			Image {
 				anchors.fill: parent;
-				source: "../res/lessons/image.png";
+				source: colorTheme.resPath + "/lessons/image.png";
 				fillMode: Image.Stretch;
 			}
 
@@ -35,7 +35,7 @@ Item {
 
 			Image {
 				anchors.fill: parent;
-				source: "../res/lessons/image.png";
+				source: colorTheme.resPath + "/lessons/image.png";
 				fillMode: Image.PreserveAspectFit;
 			}
 
@@ -54,7 +54,7 @@ Item {
 
 			Image {
 				anchors.fill: parent;
-				source: "../res/lessons/image.png";
+				source: colorTheme.resPath + "/lessons/image.png";
 				fillMode: Image.PreserveAspectCrop;
 			}
 
@@ -73,7 +73,7 @@ Item {
 
 			Image {
 				anchors.fill: parent;
-				source: "../res/lessons/image.png";
+				source: colorTheme.resPath + "/lessons/image.png";
 				fillMode: Image.Tile;
 			}
 

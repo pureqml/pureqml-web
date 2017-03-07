@@ -8,7 +8,7 @@ AnimatedSprite {
 	property bool walking;
 	running: active && !drag.pressed;
 	property string name;
-	source: "res/s" + name + state + ".png";
+	source: colorTheme.resPath + "/s" + name + state + ".png";
 	HoverMixin { cursor: "move"; }
 	property DragMixin drag: DragMixin { direction: DragMixin.Horizontal; }
 

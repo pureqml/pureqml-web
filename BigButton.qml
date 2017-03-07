@@ -17,7 +17,7 @@ WebLink {
 		height: parent.height - 20;
 		anchors.verticalCenter: parent.verticalCenter;
 		x: 10;
-		source: "http://pureqml.com/res/" + (parent.hover ? "" : "colored_") + "icons/" + parent.icon;
+		source: colorTheme.resPath + (parent.hover ? "/" : "/colored_") + "icons/" + parent.icon;
 
 		Behavior on background { Animation { duration: 300; } }
 	}
