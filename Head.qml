@@ -1,6 +1,6 @@
-WebItem {
+Rectangle {
 	property bool open;
-	height: menu.rowsCount > 1 ? (open ? menu.height : 0) + 70 : menu.height;
+	height: menu.rowsCount > 1 ? (open ? menu.height : 0) + 50 : menu.height;
 	width: 100%;
 	color: colorTheme.panelColor;
 	effects.shadow.y: 1; 
@@ -11,14 +11,26 @@ WebItem {
 	property bool newWindow;
 	Behavior on height { Animation { duration: 400; }}
 
-	onClicked: {
-		this.open = !this.open;
+
+	WebItem {
+		width: 100%;
+		height: 50;
+		visible: menu.rowsCount > 1;
+
+		onClicked: {
+			this.open = !this.open;
+		}
+
+		MaterialIcon {
+			anchors.centerIn: parent;
+			icon: "keyboard_arrow_down";
+		}
 	}
 
 	Grid {
 		id: menu;
 		width: Math.min(100%, 1200) - 40;
-		y: rowsCount > 1 ? (parent.open ? 70 : -height) : 0;
+		y: rowsCount > 1 ? (parent.open ? 50 : -height) : 0;
 		x: (parent.width - width) / 2;
 
 		Behavior on y { Animation { duration: 400; }}
