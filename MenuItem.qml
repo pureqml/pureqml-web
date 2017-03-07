@@ -3,9 +3,8 @@ WebLink {
 	property string page;
 	href: "http://pureqml.com/" + page;
 	width: menuItemText.paintedWidth + 40;
-	height: 70;
-	radius: 12;
-	color: hover ? colorTheme.darkerPrimaryColor : colorTheme.panelColor;
+	height: 50;
+	color: hover ? colorTheme.darkerPrimaryColor : "transparent";
 
 	onClicked(e): {
 		if (this.parent.parent.newWindow)

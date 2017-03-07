@@ -12,7 +12,7 @@ WebLink {
 	Text {
 		id: innerText;
 		x: 10; y: 10;
-		font.pointSize: 15;
+		font.pointSize: 14;
 		color: parent.hover ? "white" : "#666666";
 		text: parent.text;
 	}

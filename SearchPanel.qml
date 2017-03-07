@@ -1,6 +1,6 @@
 Item {
 	signal search;
-	height: 70;
+	height: 50;
 	z: 4;
 	property Mixin hover: HoverMixin { cursor: "pointer"; }
 
