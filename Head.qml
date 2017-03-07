@@ -12,20 +12,6 @@ Rectangle {
 	Behavior on height { Animation { duration: 400; }}
 
 
-	WebItem {
-		width: 100%;
-		height: 50;
-		visible: menu.rowsCount > 1;
-
-		onClicked: {
-			this.open = !this.open;
-		}
-
-		MaterialIcon {
-			anchors.centerIn: parent;
-			icon: "keyboard_arrow_down";
-		}
-	}
 
 	Grid {
 		id: menu;
@@ -43,6 +29,25 @@ Rectangle {
 
 		SearchPanel {
 			width: 240;
+		}
+	}
+
+	WebItem {
+		width: 100%;
+		height: 50;
+		visible: menu.rowsCount > 1;
+
+		onClicked: {
+			this.parent.open = !this.parent.open;
+		}
+
+		MaterialIcon {
+			anchors.centerIn: parent;
+			icon: "keyboard_arrow_down";
+			size: 36;
+			color: "#828282";
+			transform.rotateX: parent.parent.open ? 180 : 0;
+			Behavior on transform { Animation { duration: 400; }}
 		}
 	}
 

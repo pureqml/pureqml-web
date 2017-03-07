@@ -4,8 +4,7 @@ WebLink {
 	href: "http://pureqml.com/" + page;
 	width: menuItemText.paintedWidth + 40;
 	height: 50;
-	radius: 12;
-	color: hover ? colorTheme.darkerPrimaryColor : colorTheme.panelColor;
+	color: hover ? colorTheme.darkerPrimaryColor : "transparent";
 
 	onClicked(e): {
 		if (this.parent.parent.newWindow)

@@ -1,6 +1,6 @@
 Column {
-	width: parent.width < 860 ? 100% : Math.min(100% - 256, 860);
-	x: parent.width < 860 ? 0 : (100% - 256 - width) / 3 + 256;
+	width: parent.width < 860 ? 100% - 10 : Math.min(100% - 256, 850);
+	x: parent.width < 860 ? 10 : (100% - 256 - width) / 3 + 256;
 	clip: true;
 	signal fillMenu;
 

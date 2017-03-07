@@ -7,7 +7,7 @@ Rectangle {
 	color: "#FAFAFA";
 	z: 1;
 	y: parent.parent.y;
-	x: hidable ? -width : 0;
+	x: hidable ? -width + 20 : 0;
 
 	onHidableChanged: {
 		log("onHidableChanged", value)

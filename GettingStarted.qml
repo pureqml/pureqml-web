@@ -4,7 +4,6 @@ HistoryPage {
 
 	LeftMenu {
 		id: leftMenu;
-		anchors.left: parent.left;
 	}
 
 	ContentColumn {
