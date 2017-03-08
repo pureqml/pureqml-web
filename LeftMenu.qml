@@ -1,7 +1,7 @@
 Rectangle {
 	id: leftMenuProto;
 	property bool hidable: context.width < 860;
-	property bool collapsed;
+	property bool open;
 	width: 256;
 	height: context.height - y;
 	color: "#FAFAFA";
@@ -19,26 +19,6 @@ Rectangle {
 	Behavior on height { Animation { duration: 300; } }
 
 	ListModel { id: menuModel; }
-
-	WebItem {
-		width: 100%;
-		height: 40;
-		visible: parent.hidable;
-		color: hover ? "#90A4AE" : "#ECEFF1";
-		Behavior on background { Animation { duration: 400; }}
-
-		onClicked: { leftMenuProto.collapsed = !leftMenuProto.collapsed; }
-
-		MaterialIcon {
-			width: 100%; height: 100%;
-			verticalAlignment: Text.AlignVCenter;
-			horizontalAlignment: Text.AlignHCenter;
-			icon: "keyboard_arrow_down";
-			size: 32;
-			transform.rotateX: leftMenuProto.collapsed ? 0 : 180;
-			Behavior on transform { Animation { duration: 300; } }
-		}
-	}
 
 	ListView {
 		y: parent.hidable ? 40 : 10;
