@@ -3,6 +3,7 @@ Rectangle {
 	height: menu.rowsCount > 1 ? (open ? menu.height : 0) + 50 : menu.height;
 	width: 100%;
 	color: colorTheme.panelColor;
+	clip: true;
 	effects.shadow.y: 1; 
 	effects.shadow.color: "#0004"; 
 	effects.shadow.blur: 1; 
@@ -32,23 +33,37 @@ Rectangle {
 		}
 	}
 
-	WebItem {
+	MaterialIcon {
 		width: 100%;
 		height: 50;
+		anchors.bottom: menu.top;
+		horizontalAlignment: Text.AlignHCenter;
+		verticalAlignment: Text.AlignVCenter;
+		icon: "keyboard_arrow_up";
+		size: 36;
+		color: "#828282";
+		opacity: parent.open;
 		visible: menu.rowsCount > 1;
+		Behavior on opacity, y { Animation { duration: 400; }}
+		HoverMixin { cursor: "pointer"; }
+		onClicked: { this.parent.open = false; }
+	}
 
-		onClicked: {
-			this.parent.open = !this.parent.open;
-		}
 
-		MaterialIcon {
-			anchors.centerIn: parent;
-			icon: "keyboard_arrow_down";
-			size: 36;
-			color: "#828282";
-			transform.rotateX: parent.parent.open ? 180 : 0;
-			Behavior on transform { Animation { duration: 400; }}
-		}
+	MaterialIcon {
+		width: 100%;
+		height: 50;
+		anchors.top: menu.bottom;
+		horizontalAlignment: Text.AlignHCenter;
+		verticalAlignment: Text.AlignVCenter;
+		icon: "keyboard_arrow_down";
+		size: 36;
+		color: "#828282";
+		opacity: !parent.open;
+		visible: menu.rowsCount > 1;
+		Behavior on opacity, y { Animation { duration: 400; }}
+		HoverMixin { cursor: "pointer"; }
+		onClicked: { this.parent.open = true; }
 	}
 
 	onCompleted: { 
