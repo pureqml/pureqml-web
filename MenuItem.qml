@@ -10,6 +10,7 @@ WebLink {
 		if (this.parent.parent.newWindow)
 			return;
 		e.preventDefault();
+		this.parent.parent.open = false;
 		this._context.location.pushState({ page: this.page }, this.text, this.href) 
 	} 
 
