@@ -20,8 +20,8 @@ HistoryPage {
 
 	DocViewer {
 		id: content;
-		x: parent.width < 860 ? 0 : 256;// (100% - 256 - width) / 3 + 256;
-		width: parent.width < 860 ? 100% : Math.min(100% - 256, 860);
+		x: parent.width < 860 ? 20 : 256;
+		width: parent.width < 860 ? 100% - 20 : Math.min(100% - 256, 860);
 	}
 
 	Resource {

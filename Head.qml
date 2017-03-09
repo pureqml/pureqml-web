@@ -3,16 +3,13 @@ Rectangle {
 	height: menu.rowsCount > 1 ? (open ? menu.height : 0) + 50 : menu.height;
 	width: 100%;
 	color: colorTheme.panelColor;
-	clip: true;
 	effects.shadow.y: 1; 
 	effects.shadow.color: "#0004"; 
 	effects.shadow.blur: 1; 
 	effects.shadow.spread: 1;
-	transform.translateZ: 1;
+	transform.translateZ: 2;
 	property bool newWindow;
 	Behavior on height { Animation { duration: 400; }}
-
-
 
 	Grid {
 		id: menu;
