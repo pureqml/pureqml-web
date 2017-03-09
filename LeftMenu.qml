@@ -10,14 +10,12 @@ Rectangle {
 	x: hidable && !open ? -width : 0;
 	transform.translateZ: 1;
 
-	onCompleted: { 
+	onCompleted: {
 		this.style('position', 'fixed')
 		this.style('will-change', 'transform')
 	}
 
 	PositionMixin { value: PositionMixin.Fixed; }
-
-	Behavior on x { Animation { duration: 300; } }
 
 	ListModel { id: menuModel; }
 
@@ -30,7 +28,7 @@ Rectangle {
 			height: contentHeight;
 			width: 100%;
 			spacing: 5;
-			model: menuModel; 
+			model: menuModel;
 			delegate: WebLink {
 				width: 100%;
 				height: 30;
@@ -65,8 +63,8 @@ Rectangle {
 					if (a[2])
 						state.element = a[2]
 
-					this._context.location.pushState(state, this.href, this.href) 
-				} 
+					this._context.location.pushState(state, this.href, this.href)
+				}
 			}
 		}
 	}
@@ -104,4 +102,6 @@ Rectangle {
 		menuModel.clear()
 		menuModel.append(data)
 	}
+
+	Behavior on x { Animation { duration: 300; } }
 }

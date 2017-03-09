@@ -37,6 +37,7 @@ HistoryPage {
 
 		ContentColumn {
 			property string url: "main";
+			signal clicked;
 			x: 0;
 			width: 100%;
 			spacing: 30;
@@ -46,6 +47,7 @@ HistoryPage {
 				title: "Basics";
 				text: "Basic rules for pureqml developing";
 				url: "basics";
+				filePath: "lessons.BasicLesson";
 			}
 
 			PathPageColumn {
@@ -53,6 +55,7 @@ HistoryPage {
 				title: "Anchors";
 				text: "Each item can can be positionated with anchors. The PureqQML anchors are simillar to the Qt anchors. But has one more value...";
 				url: "anchors";
+				filePath: "lessons.AnchorsLesson";
 			}
 
 			PathPageColumn {
@@ -125,20 +128,32 @@ HistoryPage {
 				url: "effects";
 			}
 
+			onClicked(url): {
+				//log("GLOb", _globals)
+				//loader.source = url
+			}
+
 			onFillMenu(data): { leftMenu.fillModel(data) }
 		}
+
+		Loader {
+			id: loader;
+			anchors.fill: parent;
+			clip: true;
+		}
+
 		//Lessons
-		AnchorsLesson { }
-		LayoutsLesson { }
-		GamepadLesson { }
-		KeyboardLesson { }
-		SignalLesson { }
-		ViewAndModelsLesson { }
-		FocusLesson { }
-		GlobalsLesson { }
-		InputsLesson { }
-		BasicLesson { }
-		MixinLesson { }
-		EffectsLesson { }
+		//AnchorsLesson { }
+		//LayoutsLesson { }
+		//GamepadLesson { }
+		//KeyboardLesson { }
+		//SignalLesson { }
+		//ViewAndModelsLesson { }
+		//FocusLesson { }
+		//GlobalsLesson { }
+		//InputsLesson { }
+		//BasicLesson { }
+		//MixinLesson { }
+		//EffectsLesson { }
 	}
 }

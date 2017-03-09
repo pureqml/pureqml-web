@@ -1,6 +1,8 @@
 PageColumn {
+	signal clicked;
 	property string path;
 	property string url;
+	property string filePath;
 
 	WebLink {
 		href: "http://pureqml.com/lessons/" + parent.url;
@@ -15,6 +17,12 @@ PageColumn {
 			e.preventDefault();
 
 			this._context.location.pushState({ "page": "lessons", "section": url}, url, this.href)
+			this.parent.clicked(this.parent.filePath);
 		}
+	}
+
+	onClicked(url): {
+		if (this.parent.clicked)
+			this.parent.clicked(url)
 	}
 }
