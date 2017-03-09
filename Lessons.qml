@@ -22,8 +22,8 @@ HistoryPage {
 	PageStack {
 		id: content;
 		property string pageName;
-		x: parent.width < 860 ? 0 : 256;
-		width: parent.width < 860 ? 100% : 100% - 256;
+		x: parent.width < 860 ? 36 : 256;
+		width: parent.width < 860 ? 100% - 36: 100% - 256;
 
 		onPageNameChanged: {
 			var children = this.children

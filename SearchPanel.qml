@@ -2,6 +2,7 @@ Item {
 	signal search;
 	height: 50;
 	z: 4;
+	property bool searchFocused: searchText.activeFocus;
 	property Mixin hover: HoverMixin { cursor: "pointer"; }
 
 	onClicked: { searchText.setFocus() }
@@ -10,7 +11,7 @@ Item {
 		anchors.verticalCenter: parent.verticalCenter;
 		icon: "search";
 		color: parent.hover.value || searchText.activeFocus ? "#424242" : colorTheme.primaryTextColor;
-		size: 22;
+		size: 18;
 	}
 
 	SearchInput {
@@ -32,10 +33,10 @@ Item {
 	Rectangle {
 		anchors.top: searchText.bottom;
 		anchors.bottomMargin: -4;
-		width: searchText.activeFocus ? searchText.width : 60;
+		width: searchText.activeFocus ? searchText.width + 30 : 80;
 		height: 1;
-		x: 30;
-		color: parent.hover.value || searchText.activeFocus ? "#424242" :"#AAAAAA";
+		x: 0;
+		color: parent.hover.value || searchText.activeFocus ? "#A0B3A2" :"#AAAAAA";
 		Behavior on width { Animation { duration: 400; }}
 	}
 
@@ -47,6 +48,7 @@ Item {
 		active: searchText.activeFocus || parent.hover.value;
 		onClear: {
 			searchText.text = "";
+			this.parent.parent.parent.open = false;
 		}
 	}
 

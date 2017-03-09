@@ -14,7 +14,7 @@ Rectangle {
 	Grid {
 		id: menu;
 		width: Math.min(100%, 1200) - 40;
-		y: rowsCount > 1 ? (parent.open ? 50 : -height) : 0;
+		y: rowsCount > 1 ? (parent.open ? (searchPanel.searchFocused ? 50 - rowsCount * 50 : 50) : -height) : 0;
 		x: (parent.width - width) / 2;
 
 		Behavior on y { Animation { duration: 300; }}
@@ -26,6 +26,7 @@ Rectangle {
 		MenuItem { text: "Docs"; page: "docs"; }
 
 		SearchPanel {
+			id: searchPanel;
 			width: 240;
 		}
 	}
