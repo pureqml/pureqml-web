@@ -88,6 +88,18 @@ Rectangle {
 		}
 	}
 
+
+	WebItem {
+		x: 100% + 24;
+		height: 100%;
+		width: context.width - x;
+		color: "#000000";
+		opacity: visible ? 0.4 : 0;
+		visible: parent.hidable && parent.open;
+		onClicked: { this.parent.open = false; }
+		Behavior on opacity { Animation { duration:  parent.parent.visible ? 400 : 0; delay: parent.parent.visible ? 500 : 0; }}
+	}
+
 	fillModel(data): {
 		menuModel.clear()
 		menuModel.append(data)

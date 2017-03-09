@@ -9,7 +9,7 @@ Rectangle {
 	effects.shadow.spread: 1;
 	transform.translateZ: 2;
 	property bool newWindow;
-	Behavior on height { Animation { duration: 400; }}
+	Behavior on height { Animation { duration: 300; }}
 
 	Grid {
 		id: menu;
@@ -17,7 +17,7 @@ Rectangle {
 		y: rowsCount > 1 ? (parent.open ? 50 : -height) : 0;
 		x: (parent.width - width) / 2;
 
-		Behavior on y { Animation { duration: 400; }}
+		Behavior on y { Animation { duration: 300; }}
 
 		MenuItem { text: "PureQML"; page: ""; }
 		MenuItem { text: "Getting started"; page: "gettingstarted"; }
@@ -41,7 +41,7 @@ Rectangle {
 		color: "#828282";
 		opacity: parent.open;
 		visible: menu.rowsCount > 1;
-		Behavior on opacity, y { Animation { duration: 400; }}
+		Behavior on opacity, y { Animation { duration: 300; }}
 		HoverMixin { cursor: "pointer"; }
 		onClicked: { this.parent.open = false; }
 	}
@@ -58,7 +58,7 @@ Rectangle {
 		color: "#828282";
 		opacity: !parent.open;
 		visible: menu.rowsCount > 1;
-		Behavior on opacity, y { Animation { duration: 400; }}
+		Behavior on opacity, y { Animation { duration: 300; }}
 		HoverMixin { cursor: "pointer"; }
 		onClicked: { this.parent.open = true; }
 	}
