@@ -4,7 +4,7 @@ Item {
 	Head { id: nav; z: 2; newWindow: true; }
 	ColorTheme { id: colorTheme; }
 
-	LessonsItem {
+	Lessons {
 		id: lessons;
 		y: 70;
 		width: 100%;
