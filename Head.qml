@@ -1,6 +1,6 @@
 Rectangle {
 	property bool open;
-	height: menu.rowsCount > 1 ? (open ? menu.height : 0) + 50 : menu.height;
+	height: menu.rowsCount > 1 ? (open && !searchPanel.searchFocused ? menu.height : 0) + 50 : menu.height;
 	width: 100%;
 	color: colorTheme.panelColor;
 	effects.shadow.y: 1; 
