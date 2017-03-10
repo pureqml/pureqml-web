@@ -13,6 +13,7 @@ WebLink {
 		id: innerText;
 		x: 10; y: 10;
 		font.pointSize: 14;
+		font.family: "Roboto Slab";
 		color: parent.hover ? "white" : "#666666";
 		text: parent.text;
 	}
