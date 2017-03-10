@@ -60,12 +60,6 @@ Item {
 	Item {
 		anchors.top: pages.bottom;
 		width: 100%;
-		height: 240;
-
-		Rectangle {
-			y: 100;
-			width: 100%; height: 140;
-			color: "#EDEDED";
-		}
+		height: 140;
 	}
 }

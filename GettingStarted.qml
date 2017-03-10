@@ -101,17 +101,18 @@ HistoryPage {
 				text: "Grammar"; 
 			}
 
-			MainText { text: "Semicolon is required after each statement. This might be a subject to change."; }
+			MainP { 
+				horizontalAlignment: Text.AlignLeft;
+				text: "Grammar: Semicolon is required after each statement. This might be a subject to change."; 
+			}
 
 			H3 {
-				anchors.left: parent.left;
 				color: colorTheme.primaryColor;
-				font.weight: 300;
-				font.pixelSize: 25;
 				text: "Focus"; 
 			}
 
-			MainText {
+			MainP {
+				horizontalAlignment: Text.AlignLeft;
 				text: "The biggest discrepancy with original QML is focus implementation. We're aiming to have \"always-consistent\" focus everywhere. You have to mark every focus-able component with focus: true; property, and the rest should work without tweaking. We provide several convenient properties to handle focus with ease:";
 			}
 
@@ -124,14 +125,14 @@ HistoryPage {
 			}
 
 			H3 {
-				anchors.left: parent.left;
 				color: colorTheme.primaryColor;
-				font.weight: 300;
-				font.pixelSize: 25;
 				text: "Adding modernizr features"; 
 			}
 
-			MainText { text: "Please use the following command to get the custom modernizr build page: head -n2 dist/modernizr-custom.js | tail -n1 or just second line of modernizr-custom.js file"; }
+			MainP { 
+				horizontalAlignment: Text.AlignLeft;
+				text: "Please use the following command to get the custom modernizr build page: head -n2 dist/modernizr-custom.js | tail -n1 or just second line of modernizr-custom.js file"; 
+			}
 		}
 
 		onFillMenu(data): { leftMenu.fillModel(data) }

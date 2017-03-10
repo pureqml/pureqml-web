@@ -6,15 +6,16 @@ Column {
 
 	H2 {
 		id: headText;
-		anchors.topMargin: 70;
+		anchors.topMargin: 50;
 		width: 100%;
+		font.weight: 300;
+		font.pixelSize: 36;
 		text: parent.title;
 		color: colorTheme.primaryColor;
 	}
 
-	P {
+	MainP {
 		text: parent.text;
-		font.pixelSize: 20;
-		color: colorTheme.textColor;
+		horizontalAlignment: Text.AlignLeft;
 	}
 }

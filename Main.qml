@@ -28,7 +28,7 @@ Column {
 	}
 
 	Grid {
-		width: Math.min(100%, 1200) - 40;
+		width: Math.min(100%, 1000) - 40;
 		anchors.horizontalCenter: parent.horizontalCenter;
 		spacing: 20;
 		horizontalAlignment: Grid.AlignJustify;
@@ -119,7 +119,7 @@ Column {
 		}
 
 		StateButton {
-			relPath: "http://pureqml.com/lessons";
+			relPath: "lessons";
 			text: "SOME EXAMPLES";
 		}
 
