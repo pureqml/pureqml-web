@@ -25,16 +25,6 @@ HistoryPage {
 		x: parent.width < 860 ? 36 : 256;
 		width: parent.width < 860 ? 100% - 36: 100% - 256;
 
-		onPageNameChanged: {
-			var children = this.children
-			for (var i in children) {
-				if (children[i].url == value) {
-					this.currentIndex = i
-					return
-				}
-			}
-		}
-
 		ContentColumn {
 			property string url: "main";
 			signal clicked;
@@ -47,7 +37,7 @@ HistoryPage {
 				title: "Basics";
 				text: "Basic rules for pureqml developing";
 				url: "basics";
-				filePath: "lessons.BasicLesson";
+				filePath: "pureqml_web.lessons.BasicLesson";
 			}
 
 			PathPageColumn {
@@ -55,7 +45,7 @@ HistoryPage {
 				title: "Anchors";
 				text: "Each item can can be positionated with anchors. The PureqQML anchors are simillar to the Qt anchors. But has one more value...";
 				url: "anchors";
-				filePath: "lessons.AnchorsLesson";
+				filePath: "pureqml_web.lessons.AnchorsLesson";
 			}
 
 			PathPageColumn {
@@ -63,6 +53,7 @@ HistoryPage {
 				title: "Globals";
 				text: "Using globals properties you can manipulate page features...";
 				url: "globals";
+				filePath: "pureqml_web.lessons.GlobalsLesson";
 			}
 
 			PathPageColumn {
@@ -70,6 +61,7 @@ HistoryPage {
 				title: "Layouts";
 				text: "Usefull controls for content positioning.";
 				url: "layouts";
+				filePath: "pureqml_web.lessons.LayoutsLesson";
 			}
 
 			PathPageColumn {
@@ -77,6 +69,7 @@ HistoryPage {
 				title: "Signals";
 				text: "";
 				url: "signals";
+				filePath: "pureqml_web.lessons.SignalLesson";
 			}
 
 			PathPageColumn {
@@ -84,6 +77,7 @@ HistoryPage {
 				title: "Views and Models";
 				text: "";
 				url: "views";
+				filePath: "pureqml_web.lessons.ViewAndModelsLesson";
 			}
 
 			PathPageColumn {
@@ -91,6 +85,7 @@ HistoryPage {
 				title: "Focus";
 				text: "The biggest discrepancy with original QML is focus implementation. We're aiming to have \"always-consistent\" focus everywhere...";
 				url: "focus";
+				filePath: "pureqml_web.lessons.FocusLesson";
 			}
 
 			PathPageColumn {
@@ -98,6 +93,7 @@ HistoryPage {
 				title: "Keyboard";
 				text: "Keyboard pressing events handling...";
 				url: "keyboard";
+				filePath: "pureqml_web.lessons.KeyboardLesson";
 			}
 
 			PathPageColumn {
@@ -105,6 +101,7 @@ HistoryPage {
 				title: "Gamepad";
 				text: "PureQML support gamepad events handling. Specaial controls were designed to work with gamepads declrative way.";
 				url: "gamepad";
+				filePath: "pureqml_web.lessons.GamepadLesson";
 			}
 
 			PathPageColumn {
@@ -112,6 +109,7 @@ HistoryPage {
 				title: "Inputs";
 				text: "\"Controls\" library provide simple in use interface for using html5 inputs";
 				url: "inputs";
+				filePath: "pureqml_web.lessons.InputsLesson";
 			}
 
 			PathPageColumn {
@@ -119,6 +117,7 @@ HistoryPage {
 				title: "Mixins";
 				text: "Mixins are very usefull and simple in use features for item extending.";
 				url: "mixin";
+				filePath: "pureqml_web.lessons.MixinLesson";
 			}
 
 			PathPageColumn {
@@ -126,11 +125,12 @@ HistoryPage {
 				title: "Effects";
 				text: "";
 				url: "effects";
+				filePath: "pureqml_web.lessons.EffectsLesson";
 			}
 
 			onClicked(url): {
-				//log("GLOb", _globals)
-				//loader.source = url
+				loader.source = url
+				content.currentIndex = 1
 			}
 
 			onFillMenu(data): { leftMenu.fillModel(data) }
@@ -142,18 +142,14 @@ HistoryPage {
 			clip: true;
 		}
 
-		//Lessons
-		//AnchorsLesson { }
-		//LayoutsLesson { }
-		//GamepadLesson { }
-		//KeyboardLesson { }
-		//SignalLesson { }
-		//ViewAndModelsLesson { }
-		//FocusLesson { }
-		//GlobalsLesson { }
-		//InputsLesson { }
-		//BasicLesson { }
-		//MixinLesson { }
-		//EffectsLesson { }
+		onPageNameChanged: {
+			var children = this.children
+			for (var i in children) {
+				if (children[i].url == value) {
+					this.currentIndex = i
+					return
+				}
+			}
+		}
 	}
 }
