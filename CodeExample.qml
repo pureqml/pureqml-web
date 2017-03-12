@@ -42,16 +42,10 @@ Item {
 		}
 	}
 
-	onRecursiveVisibleChanged: {
-		if (!value)
+	onSampleChanged: {
+		if (!this.sample)
 			return
-
 		var codeFile = this.sample.componentName.replace(/\./g, "/").replace("pureqml_web/", "") + ".qml"
 		codeSource.url = "https://raw.githubusercontent.com/pureqml/pureqml-web/master/" + codeFile
-	}
-
-	onCompleted: {
-		this.recursiveVisible = false
-		this.recursiveVisible = true
 	}
 }
