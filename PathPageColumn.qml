@@ -1,11 +1,8 @@
 PageColumn {
-	signal clicked;
 	property string path;
-	property string url;
-	property string filePath;
 
 	WebLink {
-		href: "http://pureqml.com/lessons/" + parent.url;
+		href: "http://pureqml.com/" + parent.path;
 		anchors.top: parent.top;
 		anchors.left: parent.left;
 		anchors.right: parent.right;
@@ -13,16 +10,10 @@ PageColumn {
 		height: headText.height;
 
 		onClicked(e): {
-			var url = this.parent.url
 			e.preventDefault();
+			var a = this.parent.path.split("/");
 
-			this._context.location.pushState({ "page": "lessons", "section": url}, url, this.href)
-			this.parent.clicked(this.parent.filePath);
+			this._context.location.pushState({ "page": "lessons", "section": a[1]}, this.href, this.href)
 		}
-	}
-
-	onClicked(url): {
-		if (this.parent.clicked)
-			this.parent.clicked(url)
 	}
 }

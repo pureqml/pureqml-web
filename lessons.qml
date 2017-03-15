@@ -6,7 +6,7 @@ Item {
 
 	Lessons {
 		id: lessons;
-		y: 70;
+		y: 50;
 		width: 100%;
 	}
 
