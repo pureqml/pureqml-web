@@ -21,6 +21,8 @@ Item {
 			font.pixelSize: 18;
 			language: "qml";
 			code: codeSource.data;
+
+			onCodeChanged: { sampleArea.init() }
 		}
 
 		Text { text: "Result:"; font.pixelSize: 20; }
@@ -33,7 +35,7 @@ Item {
 
 			property Item content: Item { anchors.fill: parent; }
 
-			onCompleted: {
+			init: {
 				var item = codeExampleProto.sample
 				item.anchors.fill = this.content
 				item.visible = true
@@ -46,6 +48,7 @@ Item {
 		if (!this.sample)
 			return
 		var codeFile = this.sample.componentName.replace(/\./g, "/").replace("pureqml_web/", "") + ".qml"
+		log("Code", codeFile)
 		codeSource.url = "https://raw.githubusercontent.com/pureqml/pureqml-web/master/" + codeFile
 	}
 }

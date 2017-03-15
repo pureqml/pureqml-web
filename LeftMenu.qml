@@ -1,5 +1,6 @@
 Rectangle {
 	id: leftMenuProto;
+	signal optionChoosed;
 	property bool hidable: context.width < 860;
 	property bool open;
 	width: 256;
@@ -49,6 +50,7 @@ Rectangle {
 				}
 
 				onClicked(e): {
+					leftMenuProto.optionChoosed(this.parent.model.get(this._local.model.index))
 					leftMenuProto.open = false;
 					if (this.hash) {
 						return

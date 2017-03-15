@@ -17,7 +17,12 @@ HistoryPage {
 		}
 	}
 
-	LeftMenu { id: leftMenu; y: nav.height; }
+	LeftMenu {
+		id: leftMenu;
+		y: nav.height;
+
+		onOptionChoosed(option): { content.loadLesson(option.filePath) }
+	}
 
 	PageStack {
 		id: content;
@@ -128,18 +133,20 @@ HistoryPage {
 				filePath: "pureqml_web.lessons.EffectsLesson";
 			}
 
-			onClicked(url): {
-				loader.source = url
-				content.currentIndex = 1
-			}
+			onClicked(url): { this.parent.loadLesson(url) }
 
-			onFillMenu(data): { leftMenu.fillModel(data) }
+			onFillMenu(data): { log("DATA", data); leftMenu.fillModel(data) }
 		}
 
 		Loader {
 			id: loader;
 			anchors.fill: parent;
 			clip: true;
+		}
+
+		loadLesson(url): {
+			loader.source = url
+			content.currentIndex = 1
 		}
 
 		onPageNameChanged: {

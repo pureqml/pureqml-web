@@ -19,6 +19,8 @@ Column {
 				d.path = child.path
 			if (child.hash)
 				d.hash = "#" + child.hash
+			if (child.filePath)
+				d.filePath = child.filePath
 			data.push(d)
 		}
 
