@@ -124,7 +124,7 @@ HistoryPage {
 				text: "";
 			}
 
-			onFillMenu(data): { log("DATA", data); leftMenu.fillModel(data) }
+			onFillMenu(data): { leftMenu.fillModel(data) }
 		}
 
 		Loader {

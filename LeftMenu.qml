@@ -36,7 +36,7 @@ Rectangle {
 				color: hover ? "#AED581" : "transparent";
 				property bool hash: model.hash;
 				property string path: model.path;
-				href: hash ? model.hash : model.path;
+				href: hash ? model.hash : "http://pureqml.com/" + model.path;
 
 				Behavior on background { Animation { duration: 300;}}
 
@@ -56,7 +56,7 @@ Rectangle {
 						return
 					}
 					e.preventDefault();
-					var a = this.href.split("/");
+					var a = this.path.split("/");
 					var state = {}
 					if (a[0])
 						state.page = a[0]
