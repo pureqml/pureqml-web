@@ -1,6 +1,6 @@
 Item {
 	id: codeExampleProto;
-	width: 90%; x: 5%;
+	width: 100%;
 	property int codeWidth: 300;
 	property int codeHeight: 300;
 	property int exampleWidth: 300;
