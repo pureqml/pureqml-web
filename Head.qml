@@ -22,7 +22,7 @@ Rectangle {
 		MenuItem { text: "PureQML"; page: ""; }
 		MenuItem { text: "Getting started"; page: "gettingstarted"; }
 		MenuItem { text: "Download"; page: "download"; }
-		MenuItemExt { text: "Lessons"; page: "lessons"; }
+		MenuItem { text: "Lessons"; page: "lessons"; }
 		MenuItem { text: "Docs"; page: "docs"; }
 
 		SearchPanel {

@@ -53,7 +53,7 @@ Item {
 		Main { }
 		GettingStarted { }
 		Download { }
-//		Lessons { }
+		Lessons { }
 		Docs { }
 	}
 
