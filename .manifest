@@ -1,7 +1,7 @@
 {
 	"name": "pureqml",
 	"platforms": ["web"],
-	"apps": {"index": "index", "lessons": "index"},
+	"apps": {"index": "index"},
 	"minify": true,
 	"web-prefix": true
 }
