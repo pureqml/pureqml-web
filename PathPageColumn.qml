@@ -8,11 +8,13 @@ Column {
 	WebLink {
 		href: "http://pureqml.com/" + parent.path;
 		height: headText.height;
+		width: 100%;
 		anchors.topMargin: 50;
+		color: hover ? "#EEEEEE" : "transparent";
 		H2 {
 			id: headText;
-			width: 100%;
 			font.weight: 300;
+			width: 100%;
 			font.pixelSize: 36;
 			text: parent.parent.title;
 			color: colorTheme.primaryColor;

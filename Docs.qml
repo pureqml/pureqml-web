@@ -1,7 +1,6 @@
 HistoryPage {
 	height: content.contentHeight;
 	url: "docs";
-	clip: true;
 
 	property Object state: context.location.state;
 
