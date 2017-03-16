@@ -25,8 +25,8 @@ HistoryPage {
 	PageStack {
 		id: content;
 		property string pageName;
-		x: parent.width < 860 ? 36 : 256;
-		width: parent.width < 860 ? 100% - 36: 100% - 256;
+		x: parent.width < 860 ? 36 : 276;
+		width: parent.width < 860 ? 100% - 36 : Math.min(100% - 276, 960);
 
 		onCompleted: {
 			this._content = {
@@ -47,8 +47,7 @@ HistoryPage {
 
 		ContentColumn {
 			property string url: "main";
-			x: 0;
-			width: 100%;
+			width: 100%; x: 0;
 			spacing: 30;
 
 			PathPageColumn {
