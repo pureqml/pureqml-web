@@ -4,12 +4,26 @@ HistoryPage {
 	height: content.height;
 
 	onStateChanged: {
-		log("lessons", value)
+		if (!this._content) {
+			this._content = {
+				basics: "pureqml_web.lessons.BasicLesson",
+				anchors: "pureqml_web.lessons.AnchorsLesson",
+				globals: "pureqml_web.lessons.GlobalsLesson",
+				layouts: "pureqml_web.lessons.LayoutsLesson",
+				signals: "pureqml_web.lessons.SignalLesson",
+				views: "pureqml_web.lessons.ViewAndModelsLesson",
+				focus: "pureqml_web.lessons.FocusLesson",
+				keyboard: "pureqml_web.lessons.KeyboardLesson",
+				gamepad: "pureqml_web.lessons.GamepadLesson",
+				inputs: "pureqml_web.lessons.InputsLesson",
+				mixins: "pureqml_web.lessons.MixinLesson",
+				effects: "pureqml_web.lessons.EffectsLesson"
+			}
+		}
+		
 		if (value && value.page === "lessons"){
-			log("lessons", value.page)
 			if (value.section && value.section !== "") {
-				log ("lessons", value.section, content._content[value.section])
-				content.loadLesson(content._content[value.section])
+				content.loadLesson(this._content[value.section])
 				content.pageName = value.section;
 			} else {
 				content.pageName = "main"
@@ -27,23 +41,6 @@ HistoryPage {
 		property string pageName;
 		x: parent.width < 860 ? 36 : 276;
 		width: parent.width < 860 ? 100% - 36 : Math.min(100% - 276, 960);
-
-		onCompleted: {
-			this._content = {
-				basics: "pureqml_web.lessons.BasicLesson",
-				anchors: "pureqml_web.lessons.AnchorsLesson",
-				globals: "pureqml_web.lessons.GlobalsLesson",
-				layouts: "pureqml_web.lessons.LayoutsLesson",
-				signals: "pureqml_web.lessons.SignalLesson",
-				views: "pureqml_web.lessons.ViewAndModelsLesson",
-				focus: "pureqml_web.lessons.FocusLesson",
-				keyboard: "pureqml_web.lessons.KeyboardLesson",
-				gamepad: "pureqml_web.lessons.GamepadLesson",
-				inputs: "pureqml_web.lessons.InputsLesson",
-				mixins: "pureqml_web.lessons.MixinLesson",
-				effects: "pureqml_web.lessons.EffectsLesson"
-			}
-		}
 
 		ContentColumn {
 			property string url: "main";
