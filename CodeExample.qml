@@ -18,6 +18,7 @@ Item {
 		Text { text: "Code:"; font.pixelSize: 20; }
 
 		CodeHighlighter {
+			width: contentWidth > parent.width - 30 ? parent.width - 30 : contentWidth;
 			font.pixelSize: 18;
 			language: "qml";
 			code: codeSource.data;
