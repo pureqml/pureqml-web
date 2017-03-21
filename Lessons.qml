@@ -128,12 +128,15 @@ HistoryPage {
 
 		Loader {
 			id: loader;
-			anchors.top: parent.top;
-			anchors.left: parent.left;
-			anchors.right: parent.right;
 			clip: true;
 
-			onLoaded: { this.anchors.fill = this.item }
+			onLoaded: {
+				if (this.item)
+					this.anchors.fill = this.item
+				this.anchors.top = this.parent.top;
+				this.anchors.left = this.parent.left;
+				this.anchors.right = this.parent.right;
+			}
 		}
 
 		loadLesson(url): {
