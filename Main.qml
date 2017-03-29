@@ -28,7 +28,7 @@ Column {
 	}
 
 	Grid {
-		width: Math.min(100%, 1000) - 40;
+		width: Math.min(100%, 840) - 40;
 		anchors.horizontalCenter: parent.horizontalCenter;
 		spacing: 20;
 		horizontalAlignment: Grid.AlignJustify;
@@ -71,8 +71,7 @@ Column {
 			text: "Web, and web-based platforms like SmartTV have the most mature platform-implementations.
 			Even though we have an experimental implementation for Android (using Cordova).
 			And hardly working on a native one (platform/pure) paired with Node.js
-			and targeted to various embedded platforms like Set-top boxes or Openmoko.
-			The last didn't went public yet, but we hope to have it soon.";
+			and targeted to various embedded platforms like Set-top boxes or Openmoko.";
 		}
 
 		PlatformImage { href: "https://en.wikipedia.org/wiki/HTML5"; img.source: colorTheme.resPath + "/platforms/html5.png";}

@@ -4,14 +4,14 @@ WebLink {
 	href: "http://pureqml.com/" + page;
 	width: menuItemText.paintedWidth + 40;
 	height: 50;
-	color: hover ? colorTheme.darkerPrimaryColor : "transparent";
+	color: hover ? "#AED581" : "transparent";
 
 	onClicked(e): {
 		if (this.parent.parent.newWindow)
 			return;
 		e.preventDefault();
 		this.parent.parent.open = false;
-		this._context.location.pushState({ page: this.page }, this.text, this.href) 
+		this._context.location.pushState({ page: this.page }, "PureQML - " + this.text, this.href) 
 	} 
 
 	Text {
@@ -20,7 +20,7 @@ WebLink {
 		x: 20;
 		text: parent.text;
 		font.pointSize: 15;
-		color: parent.hover ? "#424242" : colorTheme.primaryTextColor;
+		color: parent.hover ? "#242424" : "#616161";
 
 		Behavior on color { Animation { duration: 300; } }
 	}
