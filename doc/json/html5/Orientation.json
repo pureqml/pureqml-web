@@ -11,7 +11,7 @@
 		},
 
 		"Methods": {
-			"onChanged": { "text": "@private", "params": [], "internal": true }
+			"onChanged": { "text": "@private", "params":], "internal": true }
 		}
 	}
 }

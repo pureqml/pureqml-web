@@ -13,11 +13,11 @@
 		},
 
 		"Methods": {
-			"_update": { "text": "@private", "params": [], "internal": true },
-			"getTag": { "text": "@private", "params": [], "internal": true },
-			"registerStyle": { "text": "@private", "params": [], "internal": true },
-			"_updateSize": { "text": "@private", "params": [], "internal": true },
-			"append": { "text": "add option into select", "params": [], "internal": false },
+			"_update": { "text": "@private", "params":], "internal": true },
+			"getTag": { "text": "@private", "params":], "internal": true },
+			"registerStyle": { "text": "@private", "params":], "internal": true },
+			"_updateSize": { "text": "@private", "params":], "internal": true },
+			"append": { "text": "add option into select", "params":], "internal": false },
 			"clear": { "text": "", "internal": false },
 			"onCountChanged": { "text": "", "internal": false },
 			"remove": { "text": "", "internal": false }

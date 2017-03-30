@@ -10,9 +10,9 @@
 		},
 
 		"Methods": {
-			"onCursorChanged": { "text": "@private", "params": [], "internal": true },
-			"_bindHover": { "text": "@private", "params": [], "internal": true },
-			"onEnabledChanged": { "text": "@private", "params": [], "internal": true }
+			"onCursorChanged": { "text": "@private", "params":], "internal": true },
+			"_bindHover": { "text": "@private", "params":], "internal": true },
+			"onEnabledChanged": { "text": "@private", "params":], "internal": true }
 		}
 	}
 }

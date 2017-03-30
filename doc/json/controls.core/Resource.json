@@ -9,7 +9,7 @@
 		},
 
 		"Methods": {
-			"onUrlChanged": { "text": "@private", "params": [], "internal": true }
+			"onUrlChanged": { "text": "@private", "params":], "internal": true }
 		}
 	}
 }

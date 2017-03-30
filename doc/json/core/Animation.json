@@ -12,12 +12,12 @@
 		},
 
 		"Methods": {
-			"disable": { "text": "disable animation.", "params": [], "internal": false },
-			"enable": { "text": "enable animation.", "params": [], "internal": false },
-			"enabled": { "text": "returns true if animation is enabled", "params": [], "internal": false },
-			"_update": { "text": "@private", "params": [], "internal": true },
-			"interpolate": { "text": "@private", "params": [], "internal": true },
-			"complete": { "text": "@private", "params": [], "internal": true }
+			"disable": { "text": "disable animation.", "params":], "internal": false },
+			"enable": { "text": "enable animation.", "params":], "internal": false },
+			"enabled": { "text": "returns true if animation is enabled", "params":], "internal": false },
+			"_update": { "text": "@private", "params":], "internal": true },
+			"interpolate": { "text": "@private", "params":], "internal": true },
+			"complete": { "text": "@private", "params":], "internal": true }
 		}
 	}
 }

@@ -17,11 +17,11 @@
 		},
 
 		"Methods": {
-			"pollGamepads": { "text": "@private", "params": [], "internal": true },
-			"gpButtonCheckLoop": { "text": "@private", "params": [], "internal": true },
-			"gamepadConnectedHandler": { "text": "@private", "params": [], "internal": true },
-			"gamepadDisconnectedHandler": { "text": "@private", "params": [], "internal": true },
-			"onCompleted": { "text": "@private", "params": [], "internal": true }
+			"pollGamepads": { "text": "@private", "params":], "internal": true },
+			"gpButtonCheckLoop": { "text": "@private", "params":], "internal": true },
+			"gamepadConnectedHandler": { "text": "@private", "params":], "internal": true },
+			"gamepadDisconnectedHandler": { "text": "@private", "params":], "internal": true },
+			"onCompleted": { "text": "@private", "params":], "internal": true }
 		}
 	}
 }

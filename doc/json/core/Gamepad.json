@@ -20,9 +20,9 @@
 		},
 
 		"Methods": {
-			"_set": { "text": "@private", "params": [], "internal": true },
-			"get": { "text": "@private", "params": [], "internal": true },
-			"poll": { "text": "@private", "params": [], "internal": true },
+			"_set": { "text": "@private", "params":], "internal": true },
+			"get": { "text": "@private", "params":], "internal": true },
+			"poll": { "text": "@private", "params":], "internal": true },
 			"onStandartMappingChanged": { "text": "", "internal": false }
 		}
 	}

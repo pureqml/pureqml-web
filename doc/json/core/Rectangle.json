@@ -10,8 +10,8 @@
 		},
 
 		"Methods": {
-			"_mapCSSAttribute": { "text": "@private", "params": [], "internal": true },
-			"_update": { "text": "@private", "params": [], "internal": true }
+			"_mapCSSAttribute": { "text": "@private", "params":], "internal": true },
+			"_update": { "text": "@private", "params":], "internal": true }
 		}
 	}
 }

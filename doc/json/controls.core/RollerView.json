@@ -11,8 +11,8 @@
 			"positionViewAtIndex": { "text": "", "internal": false },
 			"_processUpdates": { "text": "", "internal": false },
 			"_layout": { "text": "", "internal": false },
-			"focusCurrent": { "text": "@internal focuses current item", "params": [], "internal": false },
-			"_createDelegate": { "text": "@internal creates delegate in given item slot", "params": [], "internal": false },
+			"focusCurrent": { "text": "@internal focuses current item", "params":], "internal": false },
+			"_createDelegate": { "text": "@internal creates delegate in given item slot", "params":], "internal": false },
 			"onKeyPressed": { "text": "", "internal": false },
 			"onOrientationChanged": { "text": "", "internal": false },
 			"onCurrentIndexChanged": { "text": "", "internal": false }

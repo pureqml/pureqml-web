@@ -12,9 +12,9 @@
 		},
 
 		"Methods": {
-			"_update": { "text": "@private", "params": [], "internal": true },
-			"_empty": { "text": "@private", "params": [], "internal": true },
-			"_getFilterStyle": { "text": "@private", "params": [], "internal": true }
+			"_update": { "text": "@private", "params":], "internal": true },
+			"_empty": { "text": "@private", "params":], "internal": true },
+			"_getFilterStyle": { "text": "@private", "params":], "internal": true }
 		}
 	}
 }

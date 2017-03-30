@@ -13,11 +13,11 @@
 		},
 
 		"Methods": {
-			"discardItem": { "text": "@private", "params": [], "internal": true },
-			"discard": { "text": "@private", "params": [], "internal": true },
-			"onSourceChanged": { "text": "@internal", "params": [], "internal": false },
-			"_load": { "text": "@internal", "params": [], "internal": false },
-			"onCompleted": { "text": "@internal", "params": [], "internal": false }
+			"discardItem": { "text": "@private", "params":], "internal": true },
+			"discard": { "text": "@private", "params":], "internal": true },
+			"onSourceChanged": { "text": "@internal", "params":], "internal": false },
+			"_load": { "text": "@internal", "params":], "internal": false },
+			"onCompleted": { "text": "@internal", "params":], "internal": false }
 		}
 	}
 }

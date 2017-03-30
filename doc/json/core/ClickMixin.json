@@ -8,8 +8,8 @@
 		},
 
 		"Methods": {
-			"_bindClick": { "text": "@private", "params": [], "internal": true },
-			"onEnabledChanged": { "text": "@private", "params": [], "internal": true }
+			"_bindClick": { "text": "@private", "params":], "internal": true },
+			"onEnabledChanged": { "text": "@private", "params":], "internal": true }
 		}
 	}
 }

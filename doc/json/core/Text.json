@@ -13,14 +13,14 @@
 		},
 
 		"Methods": {
-			"_setText": { "text": "@private", "params": [], "internal": true },
-			"onChanged": { "text": "@private", "params": [], "internal": true },
-			"on": { "text": "@private", "params": [], "internal": true },
-			"_updateStyle": { "text": "@private", "params": [], "internal": true },
-			"_enableSizeUpdate": { "text": "@private", "params": [], "internal": true },
-			"_updateSize": { "text": "@private", "params": [], "internal": true },
-			"_updateSizeImpl": { "text": "@private", "params": [], "internal": true },
-			"_update": { "text": "@private", "params": [], "internal": true }
+			"_setText": { "text": "@private", "params":], "internal": true },
+			"onChanged": { "text": "@private", "params":], "internal": true },
+			"on": { "text": "@private", "params":], "internal": true },
+			"_updateStyle": { "text": "@private", "params":], "internal": true },
+			"_enableSizeUpdate": { "text": "@private", "params":], "internal": true },
+			"_updateSize": { "text": "@private", "params":], "internal": true },
+			"_updateSizeImpl": { "text": "@private", "params":], "internal": true },
+			"_update": { "text": "@private", "params":], "internal": true }
 		}
 	}
 }

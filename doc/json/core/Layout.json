@@ -4,9 +4,9 @@
 
 	"content": {
 		"Methods": {
-			"focusNextChild": { "text": "move focus to the next child", "params": [], "internal": false },
-			"focusPrevChild": { "text": "move focus to the previous child", "params": [], "internal": false },
-			"onCompleted": { "text": "@private", "params": [], "internal": true }
+			"focusNextChild": { "text": "move focus to the next child", "params":], "internal": false },
+			"focusPrevChild": { "text": "move focus to the previous child", "params":], "internal": false },
+			"onCompleted": { "text": "@private", "params":], "internal": true }
 		}
 	}
 }

@@ -21,9 +21,9 @@
 		},
 
 		"Methods": {
-			"onContextWidthChanged": { "text": "@private", "params": [], "internal": true },
-			"onContextHeightChanged": { "text": "@private", "params": [], "internal": true },
-			"_updateLayoutType": { "text": "@private", "params": [], "internal": true }
+			"onContextWidthChanged": { "text": "@private", "params":], "internal": true },
+			"onContextHeightChanged": { "text": "@private", "params":], "internal": true },
+			"_updateLayoutType": { "text": "@private", "params":], "internal": true }
 		}
 	}
 }
