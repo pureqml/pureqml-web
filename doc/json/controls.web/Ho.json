@@ -28,7 +28,7 @@
 
 		"Methods": {
 			"style": { "text": "", "internal": false },
-			"_updateStyle": { "text": "@const", "params":], "internal": false },
+			"_updateStyle": { "text": "@const", "params": [], "internal": false },
 			"_update": { "text": "", "internal": false }
 		}
 	}

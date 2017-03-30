@@ -36,22 +36,22 @@
 		},
 
 		"Methods": {
-			"onCursorChanged": { "text": "@private", "params":], "internal": true },
-			"_bindTouch": { "text": "@private", "params":], "internal": true },
-			"onTouchEnabledChanged": { "text": "@private", "params":], "internal": true },
-			"onRecursiveVisibleChanged": { "text": "@private", "params":], "internal": true },
-			"_bindClick": { "text": "@private", "params":], "internal": true },
-			"onClickableChanged": { "text": "@private", "params":], "internal": true },
-			"_bindWheel": { "text": "@private", "params":], "internal": true },
-			"onWheelEnabledChanged": { "text": "@private", "params":], "internal": true },
-			"_bindPressable": { "text": "@private", "params":], "internal": true },
-			"onPressableChanged": { "text": "@private", "params":], "internal": true },
-			"_bindHover": { "text": "@private", "params":], "internal": true },
-			"onHoverEnabledChanged": { "text": "@private", "params":], "internal": true },
-			"onContainsMouseChanged": { "text": "@private", "params":], "internal": true },
-			"updatePosition": { "text": "@private", "params":], "internal": true },
-			"onTouchStart": { "text": "@private", "params":], "internal": true },
-			"onTouchMove": { "text": "@private", "params":], "internal": true }
+			"onCursorChanged": { "text": "@private", "params": [], "internal": true },
+			"_bindTouch": { "text": "@private", "params": [], "internal": true },
+			"onTouchEnabledChanged": { "text": "@private", "params": [], "internal": true },
+			"onRecursiveVisibleChanged": { "text": "@private", "params": [], "internal": true },
+			"_bindClick": { "text": "@private", "params": [], "internal": true },
+			"onClickableChanged": { "text": "@private", "params": [], "internal": true },
+			"_bindWheel": { "text": "@private", "params": [], "internal": true },
+			"onWheelEnabledChanged": { "text": "@private", "params": [], "internal": true },
+			"_bindPressable": { "text": "@private", "params": [], "internal": true },
+			"onPressableChanged": { "text": "@private", "params": [], "internal": true },
+			"_bindHover": { "text": "@private", "params": [], "internal": true },
+			"onHoverEnabledChanged": { "text": "@private", "params": [], "internal": true },
+			"onContainsMouseChanged": { "text": "@private", "params": [], "internal": true },
+			"updatePosition": { "text": "@private", "params": [], "internal": true },
+			"onTouchStart": { "text": "@private", "params": [], "internal": true },
+			"onTouchMove": { "text": "@private", "params": [], "internal": true }
 		}
 	}
 }

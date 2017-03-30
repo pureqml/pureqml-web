@@ -17,9 +17,9 @@
 		},
 
 		"Methods": {
-			"updateActualValues": { "text": "@private", "params":], "internal": true },
-			"changeHref": { "text": "change current href value method, argument is new href value", "params":], "internal": false },
-			"pushState": { "text": "push new state to the history", "params":], "internal": false }
+			"updateActualValues": { "text": "@private", "params": [], "internal": true },
+			"changeHref": { "text": "change current href value method, argument is new href value", "params": [], "internal": false },
+			"pushState": { "text": "push new state to the history", "params": [], "internal": false }
 		}
 	}
 }

@@ -8,11 +8,11 @@
 		},
 
 		"Methods": {
-			"createElement": { "text": "specialized implementation of element creation in a certain namespace.", "params":], "internal": false },
-			"getTag": { "text": "returns tag for corresponding element", "params":], "internal": false },
+			"createElement": { "text": "specialized implementation of element creation in a certain namespace.", "params": [], "internal": false },
+			"getTag": { "text": "returns tag for corresponding element", "params": [], "internal": false },
 			"registerStyle": { "text": "", "internal": false },
 			"externalTarget": { "text": "", "internal": false },
-			"_update": { "text": "@internal", "params":], "internal": false },
+			"_update": { "text": "@internal", "params": [], "internal": false },
 			"style": { "text": "", "internal": false }
 		}
 	}

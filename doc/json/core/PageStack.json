@@ -9,10 +9,10 @@
 		},
 
 		"Methods": {
-			"onCurrentIndexChanged": { "text": "@private", "params":], "internal": true },
-			"onActiveFocusChanged": { "text": "@private", "params":], "internal": true },
-			"_layout": { "text": "@private", "params":], "internal": true },
-			"addChild": { "text": "@private", "params":], "internal": true }
+			"onCurrentIndexChanged": { "text": "@private", "params": [], "internal": true },
+			"onActiveFocusChanged": { "text": "@private", "params": [], "internal": true },
+			"_layout": { "text": "@private", "params": [], "internal": true },
+			"addChild": { "text": "@private", "params": [], "internal": true }
 		}
 	}
 }

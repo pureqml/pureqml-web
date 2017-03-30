@@ -14,12 +14,12 @@
 		},
 
 		"Methods": {
-			"onActiveFocusChanged": { "text": "@private", "params":], "internal": true },
-			"onRecursiveVisibleChanged": { "text": "@private", "params":], "internal": true },
-			"_update": { "text": "@private", "params":], "internal": true },
-			"getTag": { "text": "returns tag for corresponding element", "params":], "internal": false },
+			"onActiveFocusChanged": { "text": "@private", "params": [], "internal": true },
+			"onRecursiveVisibleChanged": { "text": "@private", "params": [], "internal": true },
+			"_update": { "text": "@private", "params": [], "internal": true },
+			"getTag": { "text": "returns tag for corresponding element", "params": [], "internal": false },
 			"registerStyle": { "text": "", "internal": false },
-			"_updateSize": { "text": "@private", "params":], "internal": true }
+			"_updateSize": { "text": "@private", "params": [], "internal": true }
 		}
 	}
 }

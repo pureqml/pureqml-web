@@ -9,11 +9,11 @@
 		},
 
 		"Methods": {
-			"onNameChanged": { "text": "@internal", "params":], "internal": false },
-			"onValueChanged": { "text": "@internal", "params":], "internal": false },
-			"read": { "text": "@private", "params":], "internal": true },
-			"init": { "text": "@private", "params":], "internal": true },
-			"onCompleted": { "text": "@private", "params":], "internal": true }
+			"onNameChanged": { "text": "@internal", "params": [], "internal": false },
+			"onValueChanged": { "text": "@internal", "params": [], "internal": false },
+			"read": { "text": "@private", "params": [], "internal": true },
+			"init": { "text": "@private", "params": [], "internal": true },
+			"onCompleted": { "text": "@private", "params": [], "internal": true }
 		}
 	}
 }

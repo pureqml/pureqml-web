@@ -4,7 +4,7 @@
 
 	"content": {
 		"Methods": {
-			"_layout": { "text": "@private", "params":], "internal": true }
+			"_layout": { "text": "@private", "params": [], "internal": true }
 		}
 	}
 }

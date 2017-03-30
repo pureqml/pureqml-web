@@ -11,8 +11,8 @@
 		},
 
 		"Methods": {
-			"_update": { "text": "@private", "params":], "internal": true },
-			"getTag": { "text": "returns tag for corresponding element", "params":], "internal": false }
+			"_update": { "text": "@private", "params": [], "internal": true },
+			"getTag": { "text": "returns tag for corresponding element", "params": [], "internal": false }
 		}
 	}
 }

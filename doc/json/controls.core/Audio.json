@@ -9,11 +9,11 @@
 		},
 
 		"Methods": {
-			"onSourceChanged": { "text": "@private", "params":], "internal": true },
-			"play": { "text": "play current audio", "params":], "internal": false },
-			"pause": { "text": "pause current audio", "params":], "internal": false },
-			"onAutoPlayChanged": { "text": "@private", "params":], "internal": true },
-			"getTag": { "text": "@private returns tag for corresponding element", "params":], "internal": true }
+			"onSourceChanged": { "text": "@private", "params": [], "internal": true },
+			"play": { "text": "play current audio", "params": [], "internal": false },
+			"pause": { "text": "pause current audio", "params": [], "internal": false },
+			"onAutoPlayChanged": { "text": "@private", "params": [], "internal": true },
+			"getTag": { "text": "@private returns tag for corresponding element", "params": [], "internal": true }
 		}
 	}
 }

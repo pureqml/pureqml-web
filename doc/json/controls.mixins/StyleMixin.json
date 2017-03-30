@@ -4,7 +4,7 @@
 
 	"content": {
 		"Methods": {
-			"_update": { "text": "@internal", "params":], "internal": false }
+			"_update": { "text": "@internal", "params": [], "internal": false }
 		}
 	}
 }

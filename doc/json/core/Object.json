@@ -4,19 +4,19 @@
 
 	"content": {
 		"Methods": {
-			"discard": { "text": "discard object", "params":], "internal": false },
+			"discard": { "text": "discard object", "params": [], "internal": false },
 			"addChild": { "text": "adds child object to children", "params": [{ "name": "child", "type": "Object", "text": "object to add" }], "internal": false },
-			"_setId": { "text": "@private sets id", "params":], "internal": true },
-			"onChanged": { "text": "@private register callback on property's value changed", "params":], "internal": true },
-			"connectOnChanged": { "text": "@private", "params":], "internal": true },
-			"removeOnChanged": { "text": "@private removes 'on changed' callback", "params":], "internal": true },
-			"_removeUpdater": { "text": "@private removes dynamic value updater", "params":], "internal": true },
-			"onPressed": { "text": "@private registers key handler", "params":], "internal": true },
-			"_update": { "text": "@private", "params":], "internal": true },
-			"_get": { "text": "@private gets object by id", "params":], "internal": true },
-			"setAnimation": { "text": "@private sets animation on given property", "params":], "internal": true },
-			"getAnimation": { "text": "@private gets animation on given property", "params":], "internal": true },
-			"_tryFocus": { "text": "@private called to test if the component can have focus, generic object cannot be focused, so return false, override it to implement default focus policy", "params":], "internal": true }
+			"_setId": { "text": "@private sets id", "params": [], "internal": true },
+			"onChanged": { "text": "@private register callback on property's value changed", "params": [], "internal": true },
+			"connectOnChanged": { "text": "@private", "params": [], "internal": true },
+			"removeOnChanged": { "text": "@private removes 'on changed' callback", "params": [], "internal": true },
+			"_removeUpdater": { "text": "@private removes dynamic value updater", "params": [], "internal": true },
+			"onPressed": { "text": "@private registers key handler", "params": [], "internal": true },
+			"_update": { "text": "@private", "params": [], "internal": true },
+			"_get": { "text": "@private gets object by id", "params": [], "internal": true },
+			"setAnimation": { "text": "@private sets animation on given property", "params": [], "internal": true },
+			"getAnimation": { "text": "@private gets animation on given property", "params": [], "internal": true },
+			"_tryFocus": { "text": "@private called to test if the component can have focus, generic object cannot be focused, so return false, override it to implement default focus policy", "params": [], "internal": true }
 		}
 	}
 }

@@ -4,14 +4,14 @@
 
 	"content": {
 		"Methods": {
-			"move": { "text": "@orivate", "params":], "internal": false },
-			"positionViewAtIndex": { "text": "@orivate", "params":], "internal": false },
-			"onKeyPressed": { "text": "@orivate", "params":], "internal": false },
-			"getItemPosition": { "text": "@orivate", "params":], "internal": false },
-			"indexAt": { "text": "@orivate", "params":], "internal": false },
-			"_layout": { "text": "@orivate", "params":], "internal": false },
-			"_createDelegate": { "text": "@private creates delegate in given item slot", "params":], "internal": true },
-			"onOrientationChanged": { "text": "@orivate", "params":], "internal": false }
+			"move": { "text": "@orivate", "params": [], "internal": false },
+			"positionViewAtIndex": { "text": "@orivate", "params": [], "internal": false },
+			"onKeyPressed": { "text": "@orivate", "params": [], "internal": false },
+			"getItemPosition": { "text": "@orivate", "params": [], "internal": false },
+			"indexAt": { "text": "@orivate", "params": [], "internal": false },
+			"_layout": { "text": "@orivate", "params": [], "internal": false },
+			"_createDelegate": { "text": "@private creates delegate in given item slot", "params": [], "internal": true },
+			"onOrientationChanged": { "text": "@orivate", "params": [], "internal": false }
 		}
 	}
 }

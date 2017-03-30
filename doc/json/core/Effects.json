@@ -16,10 +16,10 @@
 		},
 
 		"Methods": {
-			"_addStyle": { "text": "@private", "params":], "internal": true },
-			"_getFilterStyle": { "text": "@private", "params":], "internal": true },
-			"_updateStyle": { "text": "@private", "params":], "internal": true },
-			"_update": { "text": "@private", "params":], "internal": true }
+			"_addStyle": { "text": "@private", "params": [], "internal": true },
+			"_getFilterStyle": { "text": "@private", "params": [], "internal": true },
+			"_updateStyle": { "text": "@private", "params": [], "internal": true },
+			"_update": { "text": "@private", "params": [], "internal": true }
 		}
 	}
 }

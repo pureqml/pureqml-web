@@ -4,7 +4,7 @@
 
 	"content": {
 		"Methods": {
-			"interpolate": { "text": "@private", "params":], "internal": true }
+			"interpolate": { "text": "@private", "params": [], "internal": true }
 		}
 	}
 }
