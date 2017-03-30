@@ -1,0 +1,19 @@
+{
+	"name": "core.WheelMixin",
+	"text": "mixin for wheel events",
+
+	"content": {
+		"Properties": {
+			"enabled": { "text": "enable mixin", "internal": false, "type": "bool", "defaultValue": "true" }
+		},
+
+		"Signals": {
+			"wheel": { "text": "wheel move signal", "internal": false }
+		},
+
+		"Methods": {
+			"_bindWheel": { "text": "@private", "params": [], "internal": true },
+			"onEnabledChanged": { "text": "@private", "params": [], "internal": true }
+		}
+	}
+}

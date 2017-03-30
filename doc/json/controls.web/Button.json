@@ -1,19 +1,23 @@
 {
 	"name": "controls.web.Button",
-	"text": "returns tag for corresponding element",
+	"text": "HTML button controls",
 
 	"content": {
 		"Properties": {
-			"text": { "text": "", "internal": false, "type": "string", "defaultValue": "" },
-			"font": { "text": "", "ref": "controls.web/Font", "internal": false, "type": "Font", "defaultValue": "Font" },
-			"border": { "text": "", "ref": "controls.web/Border", "internal": false, "type": "Border", "defaultValue": "Border" }
+			"text": { "text": "button inner text", "internal": false, "type": "string", "defaultValue": "" },
+			"font": { "text": "button texts font", "ref": "controls.web/Font", "internal": false, "type": "Font", "defaultValue": "Font" },
+			"border": { "text": "buttons border", "ref": "controls.web/Border", "internal": false, "type": "Border", "defaultValue": "Border" }
+		},
+
+		"Signals": {
+			"clicked": { "text": "button clicked signal", "internal": false }
 		},
 
 		"Methods": {
-			"_update": { "text": "", "internal": false },
-			"getTag": { "text": "returns tag for corresponding element", "params": [], "internal": false },
-			"registerStyle": { "text": "", "internal": false },
-			"_updateSize": { "text": "", "internal": false }
+			"_update": { "text": "@private", "params": [], "internal": true },
+			"getTag": { "text": "@private returns tag for corresponding element", "params": [], "internal": true },
+			"registerStyle": { "text": "@private", "params": [], "internal": true },
+			"_updateSize": { "text": "@private", "params": [], "internal": true }
 		}
 	}
 }

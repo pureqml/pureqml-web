@@ -1,0 +1,16 @@
+{
+	"name": "controls.pure.keyboard.KeyboardRowModel",
+	"text": "",
+
+	"content": {
+		"Properties": {
+			"begin": { "text": "", "internal": false, "type": "int", "defaultValue": "" },
+			"end": { "text": "", "internal": false, "type": "int", "defaultValue": "" },
+			"parentModel": { "text": "", "internal": false, "type": "Object", "defaultValue": "" }
+		},
+
+		"Methods": {
+			"onCompleted": { "text": "", "internal": false }
+		}
+	}
+}

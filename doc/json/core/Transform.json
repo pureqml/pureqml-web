@@ -4,22 +4,22 @@
 
 	"content": {
 		"Properties": {
-			"perspective": { "text": "class controlling object transformation", "internal": false, "type": "int", "defaultValue": "" },
-			"translateX": { "text": "", "internal": false, "type": "int", "defaultValue": "" },
-			"translateY": { "text": "", "internal": false, "type": "int", "defaultValue": "" },
-			"translateZ": { "text": "", "internal": false, "type": "int", "defaultValue": "" },
-			"rotateX": { "text": "", "internal": false, "type": "real", "defaultValue": "" },
-			"rotateY": { "text": "", "internal": false, "type": "real", "defaultValue": "" },
-			"rotateZ": { "text": "", "internal": false, "type": "real", "defaultValue": "" },
-			"rotate": { "text": "", "internal": false, "type": "real", "defaultValue": "" },
-			"scaleX": { "text": "", "internal": false, "type": "real", "defaultValue": "" },
-			"scaleY": { "text": "", "internal": false, "type": "real", "defaultValue": "" },
-			"skewX": { "text": "", "internal": false, "type": "real", "defaultValue": "" },
-			"skewY": { "text": "", "internal": false, "type": "real", "defaultValue": "" }
+			"perspective": { "text": "perspective transformation", "internal": false, "type": "int", "defaultValue": "" },
+			"translateX": { "text": "x-translate", "internal": false, "type": "int", "defaultValue": "" },
+			"translateY": { "text": "y-translate", "internal": false, "type": "int", "defaultValue": "" },
+			"translateZ": { "text": "z-translate", "internal": false, "type": "int", "defaultValue": "" },
+			"rotateX": { "text": "x-axis rotation", "internal": false, "type": "real", "defaultValue": "" },
+			"rotateY": { "text": "y-axis rotation", "internal": false, "type": "real", "defaultValue": "" },
+			"rotateZ": { "text": "z-axis rotation", "internal": false, "type": "real", "defaultValue": "" },
+			"rotate": { "text": "rotate relative transform point", "internal": false, "type": "real", "defaultValue": "" },
+			"scaleX": { "text": "horizontal scale", "internal": false, "type": "real", "defaultValue": "" },
+			"scaleY": { "text": "vertical scale", "internal": false, "type": "real", "defaultValue": "" },
+			"skewX": { "text": "horizontal skew", "internal": false, "type": "real", "defaultValue": "" },
+			"skewY": { "text": "vertical skew", "internal": false, "type": "real", "defaultValue": "" }
 		},
 
 		"Methods": {
-			"_update": { "text": "", "internal": false }
+			"_update": { "text": "@private", "params": [], "internal": true }
 		}
 	}
 }

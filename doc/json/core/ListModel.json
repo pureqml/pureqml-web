@@ -1,29 +1,29 @@
 {
 	"name": "core.ListModel",
-	"text": "",
+	"text": "simple model implementation",
 
 	"content": {
 		"Properties": {
-			"count": { "text": "", "internal": false, "type": "int", "defaultValue": "" }
+			"count": { "text": "model rows count", "internal": false, "type": "int", "defaultValue": "" }
 		},
 
 		"Signals": {
-			"reset": { "text": "", "internal": false },
-			"rowsInserted": { "text": "", "internal": false },
-			"rowsChanged": { "text": "", "internal": false },
-			"rowsRemoved": { "text": "", "internal": false }
+			"reset": { "text": "model reset signal", "internal": false },
+			"rowsInserted": { "text": "rows inserted signal", "internal": false },
+			"rowsChanged": { "text": "rows changed signal", "internal": false },
+			"rowsRemoved": { "text": "rows removed signal", "internal": false }
 		},
 
 		"Methods": {
-			"assign": { "text": "", "internal": false },
-			"clear": { "text": "", "internal": false },
-			"append": { "text": "", "internal": false },
-			"insert": { "text": "", "internal": false },
-			"set": { "text": "", "internal": false },
-			"get": { "text": "", "internal": false },
-			"setProperty": { "text": "", "internal": false },
-			"remove": { "text": "", "internal": false },
-			"addChild": { "text": "", "internal": false }
+			"assign": { "text": "setup models row with raw array", "params": [{ "name": "rows", "type": "Object", "text": "raw rows array object" }, ], "internal": false },
+			"clear": { "text": "clear whole model data", "params": [], "internal": false },
+			"append": { "text": "add row to the model", "params": [{ "name": "row", "type": "Object", "text": "inserted row object" }, ], "internal": false },
+			"insert": { "text": "insert row to the model at the 'idx' position", "params": [{ "name": "row", "type": "Object", "text": "inserted row object" }, { "name": "idx", "type": "int", "text": "position" }], "internal": false },
+			"set": { "text": "set new value to row at 'idx' position", "params": [{ "name": "row", "type": "Object", "text": "new row value" }, { "name": "idx", "type": "int", "text": "row's position to replace" }], "internal": false },
+			"get": { "text": "get row ad 'idx' position", "params": [{ "name": "idx", "type": "int", "text": "row's position to replace" }, ], "internal": false },
+			"setProperty": { "text": "change row at 'idx' position property named 'name' with new 'value'", "params": [{ "name": "idx", "type": "int", "text": "row's position to replace" }, { "name": "name", "type": "string", "text": "property's name" }, { "name": "value", "type": "Variant", "text": "new value for the property" }], "internal": false },
+			"remove": { "text": "remove 'n' rows from model start from 'idx' index", "params": [{ "name": "idx", "type": "int", "text": "row's position to replace" }, { "name": "n", "type": "int", "text": "rows count to remove" }], "internal": false },
+			"addChild": { "text": "add row to the model (alias for 'append' method)", "params": [{ "name": "row", "type": "Object", "text": "inserted row object" }, ], "internal": false }
 		}
 	}
 }

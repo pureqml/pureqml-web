@@ -1,19 +1,21 @@
 {
 	"name": "core.Image",
-	"text": "",
+	"text": "@private",
 
 	"content": {
 		"Properties": {
-			"source": { "text": "image URL", "internal": false, "type": "string", "defaultValue": "" },
-			"paintedWidth": { "text": "real image width", "internal": false, "type": "int", "defaultValue": "" },
-			"paintedHeight": { "text": "real image height", "internal": false, "type": "int", "defaultValue": "" }
+			"paintedWidth": { "text": "actually painted image width", "internal": false, "type": "int", "defaultValue": "" },
+			"paintedHeight": { "text": "actually painted image height", "internal": false, "type": "int", "defaultValue": "" },
+			"sourceWidth": { "text": "actual width of loaded image", "internal": false, "type": "int", "defaultValue": "" },
+			"sourceHeight": { "text": "actual height of loaded image", "internal": false, "type": "int", "defaultValue": "" },
+			"source": { "text": "image URL", "internal": false, "type": "string", "defaultValue": "" }
 		},
 
 		"Methods": {
-			"_onError": { "text": "", "internal": false },
-			"_load": { "text": "", "internal": false },
-			"load": { "text": "", "internal": false },
-			"_update": { "text": "", "internal": false }
+			"_onError": { "text": "@private", "params": [], "internal": true },
+			"_load": { "text": "@private", "params": [], "internal": true },
+			"load": { "text": "@private", "params": [], "internal": true },
+			"_update": { "text": "@private", "params": [], "internal": true }
 		}
 	}
 }

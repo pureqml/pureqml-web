@@ -1,17 +1,17 @@
 {
 	"name": "core.ListView",
-	"text": "@private creates delegate in given item slot",
+	"text": "single direction (vertical or horizontal) oriented view",
 
 	"content": {
 		"Methods": {
-			"move": { "text": "", "internal": false },
-			"positionViewAtIndex": { "text": "", "internal": false },
-			"onKeyPressed": { "text": "", "internal": false },
-			"getItemPosition": { "text": "", "internal": false },
-			"indexAt": { "text": "", "internal": false },
-			"_layout": { "text": "", "internal": false },
+			"move": { "text": "@orivate", "params": [], "internal": false },
+			"positionViewAtIndex": { "text": "@orivate", "params": [], "internal": false },
+			"onKeyPressed": { "text": "@orivate", "params": [], "internal": false },
+			"getItemPosition": { "text": "@orivate", "params": [], "internal": false },
+			"indexAt": { "text": "@orivate", "params": [], "internal": false },
+			"_layout": { "text": "@orivate", "params": [], "internal": false },
 			"_createDelegate": { "text": "@private creates delegate in given item slot", "params": [], "internal": true },
-			"onOrientationChanged": { "text": "", "internal": false }
+			"onOrientationChanged": { "text": "@orivate", "params": [], "internal": false }
 		}
 	}
 }

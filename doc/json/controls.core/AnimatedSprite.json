@@ -1,0 +1,31 @@
+{
+	"name": "controls.core.AnimatedSprite",
+	"text": "start animation or continue if paused",
+
+	"content": {
+		"Properties": {
+			"frameCount": { "text": "", "internal": false, "type": "int", "defaultValue": "" },
+			"currentFrame": { "text": "", "internal": false, "type": "int", "defaultValue": "" },
+			"duration": { "text": "", "internal": false, "type": "int", "defaultValue": "" },
+			"repeat": { "text": "", "internal": false, "type": "bool", "defaultValue": "" },
+			"running": { "text": "", "internal": false, "type": "bool", "defaultValue": "" },
+			"interval": { "text": "", "internal": false, "type": "int", "defaultValue": "this._get('duration') / this._get('frameCount')" }
+		},
+
+		"Signals": {
+			"triggered": { "text": "", "internal": false },
+			"finished": { "text": "", "internal": false }
+		},
+
+		"Methods": {
+			"start": { "text": "start animation or continue if paused", "params": [], "internal": false },
+			"restart": { "text": "restarts animation from the beginning", "params": [], "internal": false },
+			"pause": { "text": "pause animation", "params": [], "internal": false },
+			"stop": { "text": "stop animation", "params": [], "internal": false },
+			"onCompleted": { "text": "", "internal": false },
+			"_update": { "text": "@private", "params": [], "internal": true },
+			"onCurrentFrameChanged": { "text": "", "internal": false },
+			"_start": { "text": "", "internal": false }
+		}
+	}
+}

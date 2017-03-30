@@ -1,0 +1,23 @@
+{
+	"name": "core.Loader",
+	"text": "component for loading custom component dinamycly via its URL",
+
+	"content": {
+		"Properties": {
+			"source": { "text": "component's URL", "internal": false, "type": "string", "defaultValue": "" },
+			"item": { "text": "item for storing requested component", "internal": false, "type": "Object", "defaultValue": "" }
+		},
+
+		"Signals": {
+			"loaded": { "text": "when requested component it loaded event signal", "internal": false }
+		},
+
+		"Methods": {
+			"discardItem": { "text": "@private", "params": [], "internal": true },
+			"discard": { "text": "@private", "params": [], "internal": true },
+			"onSourceChanged": { "text": "@internal", "params": [], "internal": false },
+			"_load": { "text": "@internal", "params": [], "internal": false },
+			"onCompleted": { "text": "@internal", "params": [], "internal": false }
+		}
+	}
+}

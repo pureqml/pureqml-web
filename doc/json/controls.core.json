@@ -4,16 +4,18 @@
 		"BaseButton": "controls.core/BaseButton.json",
 		"Checkbox": "controls.core/Checkbox.json",
 		"Resource": "controls.core/Resource.json",
-		"SettingsStorage": "controls.core/SettingsStorage.json",
-		"DropDown": "controls.core/DropDown.json",
+		"Sprite": "controls.core/Sprite.json",
+		"DebugInfoPanel": "controls.core/DebugInfoPanel.json",
 		"RollerView": "controls.core/RollerView.json",
 		"UlView": "controls.core/UlView.json",
-		"DebugInfoPanel": "controls.core/DebugInfoPanel.json",
+		"DropDown": "controls.core/DropDown.json",
+		"AnimatedSprite": "controls.core/AnimatedSprite.json",
+		"RelativeSize": "controls.core/RelativeSize.json",
 		"DebugInfoItem": "controls.core/DebugInfoItem.json",
 		"Activity": "controls.core/Activity.json",
 		"Audio": "controls.core/Audio.json",
 		"PlaceHolder": "controls.core/PlaceHolder.json",
 		"Paddings": "controls.core/Paddings.json",
-		"RelativeSize": "controls.core/RelativeSize.json"
+		"SettingsStorage": "controls.core/SettingsStorage.json"
 	}
 }

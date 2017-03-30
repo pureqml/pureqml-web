@@ -1,0 +1,15 @@
+{
+	"name": "core.ClickMixin",
+	"text": "This mixin provides mouse click event detecting",
+
+	"content": {
+		"Properties": {
+			"enabled": { "text": "turn mixin on", "internal": false, "type": "bool", "defaultValue": "true" }
+		},
+
+		"Methods": {
+			"_bindClick": { "text": "@private", "params": [], "internal": true },
+			"onEnabledChanged": { "text": "@private", "params": [], "internal": true }
+		}
+	}
+}

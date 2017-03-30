@@ -1,19 +1,19 @@
 {
 	"name": "core.LocalStorage",
-	"text": "",
+	"text": "object for storing value by key name",
 
 	"content": {
 		"Properties": {
-			"name": { "text": "", "internal": false, "type": "string", "defaultValue": "" },
-			"value": { "text": "", "internal": false, "type": "string", "defaultValue": "" }
+			"name": { "text": "stored property key name", "internal": false, "type": "string", "defaultValue": "" },
+			"value": { "text": "stored property value", "internal": false, "type": "string", "defaultValue": "" }
 		},
 
 		"Methods": {
-			"onNameChanged": { "text": "", "internal": false },
-			"onValueChanged": { "text": "", "internal": false },
-			"read": { "text": "", "internal": false },
-			"init": { "text": "", "internal": false },
-			"onCompleted": { "text": "", "internal": false }
+			"onNameChanged": { "text": "@internal", "params": [], "internal": false },
+			"onValueChanged": { "text": "@internal", "params": [], "internal": false },
+			"read": { "text": "@private", "params": [], "internal": true },
+			"init": { "text": "@private", "params": [], "internal": true },
+			"onCompleted": { "text": "@private", "params": [], "internal": true }
 		}
 	}
 }

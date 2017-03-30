@@ -8,8 +8,8 @@
 		},
 
 		"Methods": {
-			"fetchRequest": { "text": "send request using 'fetch' method", "params": [], "internal": false },
-			"requestXHR": { "text": "send request using 'XMLHttpRequest' object", "params": [], "internal": false }
+			"fetchRequest": { "text": "send request using 'fetch' method", "params": [{ "name": "request", "type": "Object", "text": "request object" }, ], "internal": false },
+			"requestXHR": { "text": "send request using 'XMLHttpRequest' object", "params": [{ "name": "request", "type": "Object", "text": "request object" }, ], "internal": false }
 		}
 	}
 }

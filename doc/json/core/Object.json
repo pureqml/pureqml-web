@@ -1,22 +1,22 @@
 {
 	"name": "core.Object",
-	"text": "the most basic QML Object, generic event emitter, properties and id links holder",
+	"text": "@private",
 
 	"content": {
 		"Methods": {
-			"discard": { "text": "", "internal": false },
-			"addChild": { "text": "adds child object to children", "params": [], "internal": false },
+			"discard": { "text": "discard object", "params": [], "internal": false },
+			"addChild": { "text": "adds child object to children", "params": [{ "name": "child", "type": "Object", "text": "object to add" }, ], "internal": false },
 			"_setId": { "text": "@private sets id", "params": [], "internal": true },
-			"onChanged": { "text": "register callback on property's value changed", "params": [], "internal": false },
-			"connectOnChanged": { "text": "", "internal": false },
-			"removeOnChanged": { "text": "removes 'on changed' callback", "params": [], "internal": false },
+			"onChanged": { "text": "@private register callback on property's value changed", "params": [], "internal": true },
+			"connectOnChanged": { "text": "@private", "params": [], "internal": true },
+			"removeOnChanged": { "text": "@private removes 'on changed' callback", "params": [], "internal": true },
 			"_removeUpdater": { "text": "@private removes dynamic value updater", "params": [], "internal": true },
-			"onPressed": { "text": "registers key handler", "params": [], "internal": false },
-			"_update": { "text": "", "internal": false },
-			"_get": { "text": "gets object by id", "params": [], "internal": false },
-			"setAnimation": { "text": "sets animation on given property", "params": [], "internal": false },
-			"getAnimation": { "text": "gets animation on given property", "params": [], "internal": false },
-			"_tryFocus": { "text": "called to test if the component can have focus, generic object cannot be focused, so return false, override it to implement default focus policy", "params": [], "internal": false }
+			"onPressed": { "text": "@private registers key handler", "params": [], "internal": true },
+			"_update": { "text": "@private", "params": [], "internal": true },
+			"_get": { "text": "@private gets object by id", "params": [], "internal": true },
+			"setAnimation": { "text": "@private sets animation on given property", "params": [], "internal": true },
+			"getAnimation": { "text": "@private gets animation on given property", "params": [], "internal": true },
+			"_tryFocus": { "text": "@private called to test if the component can have focus, generic object cannot be focused, so return false, override it to implement default focus policy", "params": [], "internal": true }
 		}
 	}
 }

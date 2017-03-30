@@ -1,0 +1,10 @@
+{
+	"name": "controls.input.DropZone",
+	"text": "",
+
+	"content": {
+		"Signals": {
+			"filesAdded": { "text": "", "internal": false }
+		}
+	}
+}

@@ -3,10 +3,6 @@
 	"text": "",
 
 	"content": {
-		"Properties": {
-			"value": { "text": "", "internal": false, "type": "Color", "defaultValue": "" }
-		},
-
 		"Methods": {
 			"_update": { "text": "", "internal": false }
 		}

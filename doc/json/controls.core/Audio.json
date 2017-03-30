@@ -1,19 +1,19 @@
 {
 	"name": "controls.core.Audio",
-	"text": "returns tag for corresponding element",
+	"text": "COntrol for playing audio",
 
 	"content": {
 		"Properties": {
-			"autoPlay": { "text": "", "internal": false, "type": "bool", "defaultValue": "true" },
-			"source": { "text": "", "internal": false, "type": "string", "defaultValue": "" }
+			"autoPlay": { "text": "autoplay flag, audio start to play immediately after source was changed", "internal": false, "type": "bool", "defaultValue": "true" },
+			"source": { "text": "audio source URL", "internal": false, "type": "string", "defaultValue": "" }
 		},
 
 		"Methods": {
-			"_update": { "text": "", "internal": false },
-			"play": { "text": "", "internal": false },
-			"pause": { "text": "", "internal": false },
-			"onAutoPlayChanged": { "text": "", "internal": false },
-			"getTag": { "text": "returns tag for corresponding element", "params": [], "internal": false }
+			"onSourceChanged": { "text": "@private", "params": [], "internal": true },
+			"play": { "text": "play current audio", "params": [], "internal": false },
+			"pause": { "text": "pause current audio", "params": [], "internal": false },
+			"onAutoPlayChanged": { "text": "@private", "params": [], "internal": true },
+			"getTag": { "text": "@private returns tag for corresponding element", "params": [], "internal": true }
 		}
 	}
 }

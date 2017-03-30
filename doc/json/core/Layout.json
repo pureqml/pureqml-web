@@ -1,12 +1,12 @@
 {
 	"name": "core.Layout",
-	"text": "",
+	"text": "base layout component.",
 
 	"content": {
 		"Methods": {
-			"focusNextChild": { "text": "", "internal": false },
-			"focusPrevChild": { "text": "", "internal": false },
-			"onCompleted": { "text": "", "internal": false }
+			"focusNextChild": { "text": "move focus to the next child", "params": [], "internal": false },
+			"focusPrevChild": { "text": "move focus to the previous child", "params": [], "internal": false },
+			"onCompleted": { "text": "@private", "params": [], "internal": true }
 		}
 	}
 }

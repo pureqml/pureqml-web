@@ -1,26 +1,26 @@
 {
 	"name": "core.Text",
-	"text": "",
+	"text": "item with text",
 
 	"content": {
 		"Properties": {
 			"text": { "text": "text to be displayed", "internal": false, "type": "string", "defaultValue": "" },
 			"color": { "text": "color of the text", "internal": false, "type": "color", "defaultValue": "" },
-			"shadow": { "text": "", "ref": "core/Shadow", "internal": false, "type": "Shadow", "defaultValue": "Shadow" },
-			"font": { "text": "", "ref": "core/Font", "internal": false, "type": "Font", "defaultValue": "Font" },
+			"shadow": { "text": "text shadow object", "ref": "core/Shadow", "internal": false, "type": "Shadow", "defaultValue": "Shadow" },
+			"font": { "text": "text font object", "ref": "core/Font", "internal": false, "type": "Font", "defaultValue": "Font" },
 			"paintedWidth": { "text": "real width of the text without any layout applied", "internal": false, "type": "int", "defaultValue": "" },
 			"paintedHeight": { "text": "real height of this text without any layout applied", "internal": false, "type": "int", "defaultValue": "" }
 		},
 
 		"Methods": {
-			"_setText": { "text": "", "internal": false },
-			"onChanged": { "text": "", "internal": false },
-			"on": { "text": "", "internal": false },
-			"_updateStyle": { "text": "", "internal": false },
-			"_enableSizeUpdate": { "text": "", "internal": false },
-			"_updateSize": { "text": "", "internal": false },
-			"_updateSizeImpl": { "text": "", "internal": false },
-			"_update": { "text": "", "internal": false }
+			"_setText": { "text": "@private", "params": [], "internal": true },
+			"onChanged": { "text": "@private", "params": [], "internal": true },
+			"on": { "text": "@private", "params": [], "internal": true },
+			"_updateStyle": { "text": "@private", "params": [], "internal": true },
+			"_enableSizeUpdate": { "text": "@private", "params": [], "internal": true },
+			"_updateSize": { "text": "@private", "params": [], "internal": true },
+			"_updateSizeImpl": { "text": "@private", "params": [], "internal": true },
+			"_update": { "text": "@private", "params": [], "internal": true }
 		}
 	}
 }

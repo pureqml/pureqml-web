@@ -17,12 +17,12 @@
 		"Methods": {
 			"restart": { "text": "restart timer, activate if stopped", "params": [], "internal": false },
 			"stop": { "text": "stops timer", "params": [], "internal": false },
-			"onTriggered": { "text": "", "internal": false },
 			"start": { "text": "starts timer", "params": [], "internal": false },
-			"onRunningChanged": { "text": "", "internal": false },
-			"onCompleted": { "text": "", "internal": false },
+			"onTriggered": { "text": "@private", "params": [], "internal": true },
+			"onRunningChanged": { "text": "@private", "params": [], "internal": true },
+			"onCompleted": { "text": "@private", "params": [], "internal": true },
 			"_update": { "text": "@private", "params": [], "internal": true },
-			"_restart": { "text": "", "internal": false }
+			"_restart": { "text": "@private", "params": [], "internal": true }
 		}
 	}
 }

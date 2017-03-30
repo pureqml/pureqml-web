@@ -1,6 +1,5 @@
 {
 	"controls.canvas": {
-		"Canvas": "controls.canvas/Canvas.json",
-		"CurveLine": "controls.canvas/CurveLine.json"
+		"Canvas": "controls.canvas/Canvas.json"
 	}
 }

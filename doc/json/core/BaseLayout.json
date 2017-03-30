@@ -14,8 +14,8 @@
 		},
 
 		"Methods": {
-			"_processUpdates": { "text": "", "internal": false },
-			"_update": { "text": "", "internal": false }
+			"_processUpdates": { "text": "@private", "params": [], "internal": true },
+			"_update": { "text": "@private", "params": [], "internal": true }
 		}
 	}
 }

@@ -8,7 +8,7 @@
 			"backgroundColor": { "text": "", "internal": false, "type": "Color", "defaultValue": "#000" },
 			"volume": { "text": "", "internal": false, "type": "float", "defaultValue": "1.0" },
 			"loop": { "text": "", "internal": false, "type": "bool", "defaultValue": "false" },
-			"flash": { "text": "", "internal": false, "type": "bool", "defaultValue": "true" },
+			"flash": { "text": "", "internal": false, "type": "bool", "defaultValue": "false" },
 			"ready": { "text": "", "internal": false, "type": "bool", "defaultValue": "false" },
 			"muted": { "text": "", "internal": false, "type": "bool", "defaultValue": "false" },
 			"paused": { "text": "", "internal": false, "type": "bool", "defaultValue": "false" },

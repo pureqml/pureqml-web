@@ -1,13 +1,13 @@
 {
 	"name": "core.RAIIEventEmitter",
-	"text": "",
+	"text": "@private",
 
 	"content": {
 		"Methods": {
-			"discard": { "text": "", "internal": false },
-			"on": { "text": "", "internal": false },
-			"onListener": { "text": "", "internal": false },
-			"removeAllListeners": { "text": "", "internal": false }
+			"discard": { "text": "@private", "params": [], "internal": true },
+			"on": { "text": "@private", "params": [], "internal": true },
+			"onListener": { "text": "@private", "params": [], "internal": true },
+			"removeAllListeners": { "text": "@private", "params": [], "internal": true }
 		}
 	}
 }

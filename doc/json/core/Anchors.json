@@ -4,23 +4,23 @@
 
 	"content": {
 		"Properties": {
-			"bottom": { "text": "Anchors, generic class to handle auto-adjusting positioning, used in Item", "internal": false, "type": "AnchorLine", "defaultValue": "" },
-			"verticalCenter": { "text": "", "internal": false, "type": "AnchorLine", "defaultValue": "" },
-			"top": { "text": "", "internal": false, "type": "AnchorLine", "defaultValue": "" },
-			"left": { "text": "", "internal": false, "type": "AnchorLine", "defaultValue": "" },
-			"horizontalCenter": { "text": "", "internal": false, "type": "AnchorLine", "defaultValue": "" },
-			"right": { "text": "", "internal": false, "type": "AnchorLine", "defaultValue": "" },
-			"fill": { "text": "", "internal": false, "type": "Item", "defaultValue": "" },
-			"centerIn": { "text": "", "internal": false, "type": "Item", "defaultValue": "" },
-			"margins": { "text": "", "internal": false, "type": "int", "defaultValue": "" },
-			"bottomMargin": { "text": "", "internal": false, "type": "int", "defaultValue": "" },
-			"topMargin": { "text": "", "internal": false, "type": "int", "defaultValue": "" },
-			"leftMargin": { "text": "", "internal": false, "type": "int", "defaultValue": "" },
-			"rightMargin": { "text": "", "internal": false, "type": "int", "defaultValue": "" }
+			"bottom": { "text": "bottom anchor line", "internal": false, "type": "AnchorLine", "defaultValue": "" },
+			"verticalCenter": { "text": "target for vertical center", "internal": false, "type": "AnchorLine", "defaultValue": "" },
+			"top": { "text": "top anchor line", "internal": false, "type": "AnchorLine", "defaultValue": "" },
+			"left": { "text": "left anchor line", "internal": false, "type": "AnchorLine", "defaultValue": "" },
+			"horizontalCenter": { "text": "target for horizontal center", "internal": false, "type": "AnchorLine", "defaultValue": "" },
+			"right": { "text": "right anchor line", "internal": false, "type": "AnchorLine", "defaultValue": "" },
+			"fill": { "text": "target to fill", "internal": false, "type": "Item", "defaultValue": "" },
+			"centerIn": { "text": "target to place in center of it", "internal": false, "type": "Item", "defaultValue": "" },
+			"margins": { "text": "set all margins to same value", "internal": false, "type": "int", "defaultValue": "" },
+			"bottomMargin": { "text": "bottom margin value", "internal": false, "type": "int", "defaultValue": "" },
+			"topMargin": { "text": "top margin value", "internal": false, "type": "int", "defaultValue": "" },
+			"leftMargin": { "text": "left margin value", "internal": false, "type": "int", "defaultValue": "" },
+			"rightMargin": { "text": "right margin value", "internal": false, "type": "int", "defaultValue": "" }
 		},
 
 		"Signals": {
-			"marginsUpdated": { "text": "", "internal": false }
+			"marginsUpdated": { "text": "@private", "internal": true }
 		},
 
 		"Methods": {
@@ -30,7 +30,7 @@
 			"_updateBottom": { "text": "@private", "params": [], "internal": true },
 			"_updateHCenter": { "text": "@private", "params": [], "internal": true },
 			"_updateVCenter": { "text": "@private", "params": [], "internal": true },
-			"_update": { "text": "", "internal": false }
+			"_update": { "text": "@private", "params": [], "internal": true }
 		}
 	}
 }

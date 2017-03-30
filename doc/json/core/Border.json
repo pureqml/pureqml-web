@@ -7,14 +7,14 @@
 			"width": { "text": "width of the border", "internal": false, "type": "int", "defaultValue": "" },
 			"color": { "text": "color of the border", "internal": false, "type": "color", "defaultValue": "" },
 			"style": { "text": "style of the border", "internal": false, "type": "string", "defaultValue": "" },
-			"left": { "text": "", "ref": "core/BorderSide", "internal": false, "type": "BorderSide", "defaultValue": "BorderSide" },
-			"right": { "text": "", "ref": "core/BorderSide", "internal": false, "type": "BorderSide", "defaultValue": "BorderSide" },
-			"top": { "text": "", "ref": "core/BorderSide", "internal": false, "type": "BorderSide", "defaultValue": "BorderSide" },
-			"bottom": { "text": "", "ref": "core/BorderSide", "internal": false, "type": "BorderSide", "defaultValue": "BorderSide" }
+			"left": { "text": "left border side", "ref": "core/BorderSide", "internal": false, "type": "BorderSide", "defaultValue": "BorderSide" },
+			"right": { "text": "right border side", "ref": "core/BorderSide", "internal": false, "type": "BorderSide", "defaultValue": "BorderSide" },
+			"top": { "text": "top border side", "ref": "core/BorderSide", "internal": false, "type": "BorderSide", "defaultValue": "BorderSide" },
+			"bottom": { "text": "bottom border side", "ref": "core/BorderSide", "internal": false, "type": "BorderSide", "defaultValue": "BorderSide" }
 		},
 
 		"Methods": {
-			"_update": { "text": "", "internal": false }
+			"_update": { "text": "@private", "params": [], "internal": true }
 		}
 	}
 }

@@ -1,0 +1,15 @@
+{
+	"name": "controls.core.Sprite",
+	"text": "",
+
+	"content": {
+		"Properties": {
+			"offsetX": { "text": "", "internal": false, "type": "int", "defaultValue": "" },
+			"offsetY": { "text": "", "internal": false, "type": "int", "defaultValue": "" }
+		},
+
+		"Methods": {
+			"_update": { "text": "", "internal": false }
+		}
+	}
+}

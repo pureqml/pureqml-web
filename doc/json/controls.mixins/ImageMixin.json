@@ -4,8 +4,7 @@
 
 	"content": {
 		"Methods": {
-			"createElement": { "text": "", "internal": false },
-			"_init": { "text": "", "internal": false }
+			"createElement": { "text": "", "internal": false }
 		}
 	}
 }

@@ -5,7 +5,7 @@
 	"content": {
 		"Methods": {
 			"fill": { "text": "Fill google chart function", "params": [{ "name": "data", "type": "Object", "text": "data for chart building" }, { "name": "opt", "type": "Object", "text": "chart displaying properties" }], "internal": false },
-			"registerStyle": { "text": "", "internal": false }
+			"registerStyle": { "text": "@private", "params": [], "internal": true }
 		}
 	}
 }

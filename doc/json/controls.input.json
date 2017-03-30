@@ -4,13 +4,14 @@
 		"RangeInput": "controls.input/RangeInput.json",
 		"FileInput": "controls.input/FileInput.json",
 		"EmailInput": "controls.input/EmailInput.json",
+		"ColorInput": "controls.input/ColorInput.json",
 		"CheckboxInput": "controls.input/CheckboxInput.json",
 		"DateInput": "controls.input/DateInput.json",
 		"NumberInput": "controls.input/NumberInput.json",
 		"TextAreaInput": "controls.input/TextAreaInput.json",
 		"SearchInput": "controls.input/SearchInput.json",
 		"TimeInput": "controls.input/TimeInput.json",
-		"ColorInput": "controls.input/ColorInput.json",
+		"DropZone": "controls.input/DropZone.json",
 		"TextInput": "controls.input/TextInput.json"
 	}
 }

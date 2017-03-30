@@ -10,12 +10,12 @@
 		},
 
 		"Methods": {
-			"onWidthChanged": { "text": "", "internal": false },
-			"onHeightChanged": { "text": "", "internal": false },
-			"onFlowChanged": { "text": "", "internal": false },
-			"_layout": { "text": "", "internal": false },
-			"addChild": { "text": "", "internal": false },
-			"_update": { "text": "", "internal": false }
+			"onWidthChanged": { "text": "@private", "params": [], "internal": true },
+			"onHeightChanged": { "text": "@private", "params": [], "internal": true },
+			"onFlowChanged": { "text": "@private", "params": [], "internal": true },
+			"_layout": { "text": "@private", "params": [], "internal": true },
+			"addChild": { "text": "@private", "params": [], "internal": true },
+			"_update": { "text": "@private", "params": [], "internal": true }
 		}
 	}
 }

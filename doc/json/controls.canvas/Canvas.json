@@ -4,6 +4,7 @@
 
 	"content": {
 		"Methods": {
+			"clearAll": { "text": "", "internal": false },
 			"getTag": { "text": "", "internal": false },
 			"registerStyle": { "text": "", "internal": false },
 			"onWidthChanged": { "text": "", "internal": false },

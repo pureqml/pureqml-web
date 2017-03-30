@@ -7,9 +7,7 @@
 			"maxWidth": { "text": "", "internal": false, "type": "int", "defaultValue": "" },
 			"maxHeight": { "text": "", "internal": false, "type": "int", "defaultValue": "" },
 			"minHeight": { "text": "", "internal": false, "type": "int", "defaultValue": "1" },
-			"minWidth": { "text": "", "internal": false, "type": "int", "defaultValue": "1" },
-			"defaultWidth": { "text": "", "internal": false, "type": "int", "defaultValue": "400" },
-			"defaultHeight": { "text": "", "internal": false, "type": "int", "defaultValue": "200" }
+			"minWidth": { "text": "", "internal": false, "type": "int", "defaultValue": "1" }
 		}
 	}
 }

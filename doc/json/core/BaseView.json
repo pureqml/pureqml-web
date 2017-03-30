@@ -11,17 +11,19 @@
 			"scrollingStep": { "text": "scrolling step", "internal": false, "type": "int", "defaultValue": "0" },
 			"animationDuration": { "text": "", "internal": false, "type": "int", "defaultValue": "0" },
 			"contentFollowsCurrentItem": { "text": "auto-scroll content to current focused item", "internal": false, "type": "bool", "defaultValue": "true" },
-			"pageScrolling": { "text": "", "internal": false, "type": "bool", "defaultValue": "false" },
-			"rendered": { "text": "", "internal": false, "type": "bool", "defaultValue": "false" },
-			"trace": { "text": "", "internal": false, "type": "bool", "defaultValue": "" },
+			"trace": { "text": "@internal", "internal": false, "type": "bool", "defaultValue": "" },
 			"content": { "text": "", "ref": "core/BaseViewContent", "internal": false, "type": "BaseViewContent", "defaultValue": "BaseViewContent" }
+		},
+
+		"Signals": {
+			"layoutFinished": { "text": "base class for all views, holds content, creates delegates and provides common api", "internal": false }
 		},
 
 		"Methods": {
 			"itemAt": { "text": "returns index of item by x,y coordinates", "params": [], "internal": false },
 			"focusCurrent": { "text": "@private focuses current item", "params": [], "internal": true },
-			"onFocusedChildChanged": { "text": "", "internal": false },
-			"onCurrentIndexChanged": { "text": "", "internal": false },
+			"onFocusedChildChanged": { "text": "@private", "params": [], "internal": true },
+			"onCurrentIndexChanged": { "text": "@private", "params": [], "internal": true },
 			"_onReset": { "text": "@private", "params": [], "internal": true },
 			"_onRowsInserted": { "text": "@private", "params": [], "internal": true },
 			"_onRowsChanged": { "text": "@private", "params": [], "internal": true },
@@ -29,19 +31,19 @@
 			"_attach": { "text": "@private", "params": [], "internal": true },
 			"_update": { "text": "@private", "params": [], "internal": true },
 			"_createDelegate": { "text": "@private creates delegate in given item slot", "params": [], "internal": true },
-			"_updateDelegate": { "text": "", "internal": false },
-			"_updateDelegateIndex": { "text": "", "internal": false },
-			"_discardItem": { "text": "", "internal": false },
-			"_insertItems": { "text": "", "internal": false },
-			"_removeItems": { "text": "", "internal": false },
-			"_updateItems": { "text": "", "internal": false },
-			"_processUpdates": { "text": "", "internal": false },
-			"onContentXChanged": { "text": "", "internal": false },
-			"onContentYChanged": { "text": "", "internal": false },
-			"onRecursiveVisibleChanged": { "text": "", "internal": false },
-			"onWidthChanged": { "text": "", "internal": false },
-			"onHeightChanged": { "text": "", "internal": false },
-			"onCompleted": { "text": "", "internal": false }
+			"_updateDelegate": { "text": "@private", "params": [], "internal": true },
+			"_updateDelegateIndex": { "text": "@private", "params": [], "internal": true },
+			"_discardItem": { "text": "@private", "params": [], "internal": true },
+			"_insertItems": { "text": "@private", "params": [], "internal": true },
+			"_removeItems": { "text": "@private", "params": [], "internal": true },
+			"_updateItems": { "text": "@private", "params": [], "internal": true },
+			"_processUpdates": { "text": "@private", "params": [], "internal": true },
+			"onContentXChanged": { "text": "@private", "params": [], "internal": true },
+			"onContentYChanged": { "text": "@private", "params": [], "internal": true },
+			"onRecursiveVisibleChanged": { "text": "@private", "params": [], "internal": true },
+			"onWidthChanged": { "text": "@private", "params": [], "internal": true },
+			"onHeightChanged": { "text": "@private", "params": [], "internal": true },
+			"onCompleted": { "text": "@private", "params": [], "internal": true }
 		}
 	}
 }

@@ -1,12 +1,12 @@
 {
 	"name": "core.Row",
-	"text": "",
+	"text": "@private",
 
 	"content": {
 		"Methods": {
-			"onKeyPressed": { "text": "", "internal": false },
-			"_layout": { "text": "", "internal": false },
-			"addChild": { "text": "", "internal": false }
+			"onKeyPressed": { "text": "@private", "params": [], "internal": true },
+			"_layout": { "text": "@private", "params": [], "internal": true },
+			"addChild": { "text": "@private", "params": [], "internal": true }
 		}
 	}
 }

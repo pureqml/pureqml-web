@@ -1,17 +1,17 @@
 {
 	"name": "core.Gradient",
-	"text": "",
+	"text": "gradient filled area, just place GradientStop in its scope",
 
 	"content": {
 		"Properties": {
-			"angle": { "text": "", "internal": false, "type": "real", "defaultValue": "" }
+			"angle": { "text": "angle for custom orientated gradient", "internal": false, "type": "real", "defaultValue": "" }
 		},
 
 		"Methods": {
-			"addChild": { "text": "", "internal": false },
-			"_update": { "text": "", "internal": false },
-			"_getDeclaration": { "text": "", "internal": false },
-			"onCompleted": { "text": "", "internal": false }
+			"addChild": { "text": "@private", "params": [], "internal": true },
+			"_update": { "text": "@private", "params": [], "internal": true },
+			"_getDeclaration": { "text": "@private", "params": [], "internal": true },
+			"onCompleted": { "text": "@private", "params": [], "internal": true }
 		}
 	}
 }

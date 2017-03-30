@@ -1,6 +1,6 @@
 {
 	"name": "core.EventEmitter",
-	"text": "",
+	"text": "@private",
 
 	"content": {
 		"Methods": {
