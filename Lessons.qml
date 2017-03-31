@@ -1,6 +1,37 @@
 HistoryPage {
+	property Object state: context.location.state;
 	url: "lessons";
 	height: content.height;
+
+	onStateChanged: {
+		if (!this._content) {
+			this._content = {
+				basics: "pureqml_web.lessons.BasicLesson",
+				anchors: "pureqml_web.lessons.AnchorsLesson",
+				globals: "pureqml_web.lessons.GlobalsLesson",
+				layouts: "pureqml_web.lessons.LayoutsLesson",
+				signals: "pureqml_web.lessons.SignalLesson",
+				views: "pureqml_web.lessons.ViewAndModelsLesson",
+				focus: "pureqml_web.lessons.FocusLesson",
+				keyboard: "pureqml_web.lessons.KeyboardLesson",
+				gamepad: "pureqml_web.lessons.GamepadLesson",
+				inputs: "pureqml_web.lessons.InputsLesson",
+				mixins: "pureqml_web.lessons.MixinLesson",
+				effects: "pureqml_web.lessons.EffectsLesson"
+			}
+		}
+
+		if (value && value.page === "lessons"){
+			log("state", value, "page", value.page)
+			if (value.section && value.section !== "") {
+				log ("lessons", value.section, this._content[value.section])
+				content.loadLesson(this._content[value.section])
+				content.pageName = value.section;
+			} else {
+				content.pageName = "main"
+			}
+		}
+	}
 
 	LeftMenu {
 		id: leftMenu;
@@ -96,38 +127,7 @@ HistoryPage {
 
 		Loader {
 			id: loader;
-			property Object state: context.location.state;
 			clip: true;
-
-			onStateChanged: {
-				if (!this._content) {
-					this._content = {
-						basics: "pureqml_web.lessons.BasicLesson",
-						anchors: "pureqml_web.lessons.AnchorsLesson",
-						globals: "pureqml_web.lessons.GlobalsLesson",
-						layouts: "pureqml_web.lessons.LayoutsLesson",
-						signals: "pureqml_web.lessons.SignalLesson",
-						views: "pureqml_web.lessons.ViewAndModelsLesson",
-						focus: "pureqml_web.lessons.FocusLesson",
-						keyboard: "pureqml_web.lessons.KeyboardLesson",
-						gamepad: "pureqml_web.lessons.GamepadLesson",
-						inputs: "pureqml_web.lessons.InputsLesson",
-						mixins: "pureqml_web.lessons.MixinLesson",
-						effects: "pureqml_web.lessons.EffectsLesson"
-					}
-				}
-
-				if (value && value.page === "lessons"){
-					log("state", value, "page", value.page)
-					if (value.section && value.section !== "") {
-						log ("lessons", value.section, this._content[value.section])
-						content.loadLesson(this._content[value.section])
-						content.pageName = value.section;
-					} else {
-						content.pageName = "main"
-					}
-				}
-			}
 
 			onLoaded: {
 				if (this.item)
@@ -145,6 +145,7 @@ HistoryPage {
 
 		onPageNameChanged: {
 			var children = this.children
+			log("name", value, "children", this.children)
 			for (var i in children) {
 				if (children[i].url == value) {
 					this.currentIndex = i
