@@ -140,8 +140,8 @@ HistoryPage {
 		}
 
 		loadLesson(url): {
-			loader.source = url
 			content.currentIndex = 1
+			loader.source = url
 		}
 	}
 }
