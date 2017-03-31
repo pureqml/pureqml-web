@@ -2,7 +2,7 @@ Item {
 	signal search;
 	height: 50;
 	z: 4;
-	property bool searchFocused: searchText.activeFocus;
+	property bool searchFocused: searchText.activeFocus || searchResults.visible;
 	property Mixin hover: HoverClickMixin { cursor: "pointer"; }
 
 	onClicked: { searchText.setFocus() }

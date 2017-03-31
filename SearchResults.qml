@@ -21,7 +21,8 @@ Rectangle {
 		delegate: WebLink {
 			width: parent.width;
 			height: 30;
-			href: model.path;
+			href: "http://pureqml.com/" + path;
+			property string path: model.path;
 
 			Text {
 				x: 10; y: 5;
@@ -34,7 +35,7 @@ Rectangle {
 
 			onClicked(e): {
 				e.preventDefault();
-				var a = this.href.split("/");
+				var a = this.path.split("/");
 				var state = {}
 				if (a[0])
 					state.page = a[0]
