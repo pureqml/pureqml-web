@@ -3,7 +3,7 @@ Item {
 	height: 200;
 
 	Rectangle {
-		property Mixin hover: HoverMixin {
+		property Mixin hover: HoverClickMixin {
 			onValueChanged: { if (!value) this.parent.myText.text = ""; }
 		}
 		width: 100;

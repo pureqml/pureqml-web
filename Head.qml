@@ -43,7 +43,7 @@ Rectangle {
 		opacity: parent.open;
 		visible: menu.rowsCount > 1;
 		Behavior on opacity, y { Animation { duration: 300; }}
-		HoverMixin { cursor: "pointer"; }
+		HoverClickMixin { cursor: "pointer"; }
 		onClicked: { this.parent.open = false; }
 	}
 
@@ -60,7 +60,7 @@ Rectangle {
 		opacity: !parent.open;
 		visible: menu.rowsCount > 1;
 		Behavior on opacity, y { Animation { duration: 300; }}
-		HoverMixin { cursor: "pointer"; }
+		HoverClickMixin { cursor: "pointer"; }
 		onClicked: { this.parent.open = true; }
 	}
 

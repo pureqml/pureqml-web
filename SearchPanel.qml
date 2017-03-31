@@ -3,7 +3,7 @@ Item {
 	height: 50;
 	z: 4;
 	property bool searchFocused: searchText.activeFocus;
-	property Mixin hover: HoverMixin { cursor: "pointer"; }
+	property Mixin hover: HoverClickMixin { cursor: "pointer"; }
 
 	onClicked: { searchText.setFocus() }
 
