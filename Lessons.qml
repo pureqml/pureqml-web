@@ -21,6 +21,7 @@ HistoryPage {
 			}
 		}
 
+		content.pageName = ""
 		if (value && value.page === "lessons"){
 			log("state", value, "page", value.page)
 			if (value.section && value.section !== "") {
