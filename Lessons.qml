@@ -21,6 +21,7 @@ HistoryPage {
 			}
 		}
 
+		content.currentIndex = 0
 		if (value && value.page === "lessons"){
 			log("state", value, "page", value.page)
 			if (value.section && value.section !== "") {
@@ -141,17 +142,6 @@ HistoryPage {
 		loadLesson(url): {
 			loader.source = url
 			content.currentIndex = 1
-		}
-
-		onPageNameChanged: {
-			var children = this.children
-			log("name", value, "children", this.children)
-			for (var i in children) {
-				if (children[i].url == value) {
-					this.currentIndex = i
-					return
-				}
-			}
 		}
 	}
 }
