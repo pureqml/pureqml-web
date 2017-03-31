@@ -1,37 +1,12 @@
 HistoryPage {
+	id: lessonsPage;
 	property Object state: context.location.state;
 	url: "lessons";
 	height: content.height;
 
 	onStateChanged: {
-		if (!this._content) {
-			this._content = {
-				basics: "pureqml_web.lessons.BasicLesson",
-				anchors: "pureqml_web.lessons.AnchorsLesson",
-				globals: "pureqml_web.lessons.GlobalsLesson",
-				layouts: "pureqml_web.lessons.LayoutsLesson",
-				signals: "pureqml_web.lessons.SignalLesson",
-				views: "pureqml_web.lessons.ViewAndModelsLesson",
-				focus: "pureqml_web.lessons.FocusLesson",
-				keyboard: "pureqml_web.lessons.KeyboardLesson",
-				gamepad: "pureqml_web.lessons.GamepadLesson",
-				inputs: "pureqml_web.lessons.InputsLesson",
-				mixins: "pureqml_web.lessons.MixinLesson",
-				effects: "pureqml_web.lessons.EffectsLesson"
-			}
-		}
-
-		content.currentIndex = 0
-		if (value && value.page === "lessons"){
-			log("state", value, "page", value.page)
-			if (value.section && value.section !== "") {
-				log ("lessons", value.section, this._content[value.section])
-				content.loadLesson(this._content[value.section])
-				content.pageName = value.section;
-			} else {
-				content.pageName = "main"
-			}
-		}
+		this._state = value
+		this.update()
 	}
 
 	LeftMenu {
@@ -140,12 +115,46 @@ HistoryPage {
 				this.anchors.right = this.parent.right;
 			}
 
-			onCompleted: { log("loader completed") }
+			onCompleted: { lessonsPage._loaderReady = true; lessonsPage.update() }
 		}
 
 		loadLesson(url): {
 			content.currentIndex = 1
 			loader.source = url
+		}
+	}
+
+	update: {
+		if (!this._content) {
+			this._content = {
+				basics: "pureqml_web.lessons.BasicLesson",
+				anchors: "pureqml_web.lessons.AnchorsLesson",
+				globals: "pureqml_web.lessons.GlobalsLesson",
+				layouts: "pureqml_web.lessons.LayoutsLesson",
+				signals: "pureqml_web.lessons.SignalLesson",
+				views: "pureqml_web.lessons.ViewAndModelsLesson",
+				focus: "pureqml_web.lessons.FocusLesson",
+				keyboard: "pureqml_web.lessons.KeyboardLesson",
+				gamepad: "pureqml_web.lessons.GamepadLesson",
+				inputs: "pureqml_web.lessons.InputsLesson",
+				mixins: "pureqml_web.lessons.MixinLesson",
+				effects: "pureqml_web.lessons.EffectsLesson"
+			}
+		}
+		if (!this._state || !this._loaderReady)
+			return
+
+		var state = this._state
+		content.currentIndex = 0
+		if (state && state.page === "lessons") {
+			log("state", state, "page", state.page)
+			if (state.section && state.section !== "") {
+				log ("lessons", state.section, this._content[state.section])
+				content.loadLesson(this._content[state.section])
+				content.pageName = state.section;
+			} else {
+				content.pageName = "main"
+			}
 		}
 	}
 }
