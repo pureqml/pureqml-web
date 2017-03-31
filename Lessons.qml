@@ -124,6 +124,8 @@ HistoryPage {
 			}
 
 			onFillMenu(data): { leftMenu.fillModel(data) }
+
+			onCompleted: { log("main completed") }
 		}
 
 		Loader {
@@ -137,6 +139,8 @@ HistoryPage {
 				this.anchors.left = this.parent.left;
 				this.anchors.right = this.parent.right;
 			}
+
+			onCompleted: { log("loader completed") }
 		}
 
 		loadLesson(url): {
