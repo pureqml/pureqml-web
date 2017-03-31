@@ -22,7 +22,7 @@ HistoryPage {
 		}
 
 		if (value && value.page === "lessons"){
-			log("lessons", value.page)
+			log("state", value, "page", value.page)
 			if (value.section && value.section !== "") {
 				log ("lessons", value.section, this._content[value.section])
 				content.loadLesson(this._content[value.section])
