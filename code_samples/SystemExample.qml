@@ -1,5 +1,5 @@
 Item {
-	property string res: colorTheme.resPath;
+	property string resPath: colorTheme.resPath;
 	width: 200;
 	height: 200;
 

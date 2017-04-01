@@ -41,7 +41,6 @@ Lesson {
 				ListElement { key: "contextHeight"; value: "int property wich store current page content height"; }
 				ListElement { key: "device"; value: "enum property which returns current device, possible values are: Desktop, Tv and Mobile"; }
 				ListElement { key: "layoutType"; value: "enum property which represent current layout mode, possible values are: MobileS, MobileM, MobileL, Tablet, Laptop, LaptopL, Laptop4K"; }
-
 			}
 		}
 
@@ -75,7 +74,6 @@ Lesson {
 				ListElement { key: "historyState"; value: "current history state"; }
 				ListElement { key: "changeHref(href)"; value: "change current href value method, argument is new href value"; }
 				ListElement { key: "pushState(state, title, url)"; value: "push new state to the history"; }
-
 			}
 		}
 	}
