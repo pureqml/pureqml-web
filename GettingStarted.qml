@@ -33,7 +33,7 @@ HistoryPage {
 				spacing: 5;
 				HowtoText { text: "Create project directory"; code: "cd &lt;project-dir&gt;"; }
 				HowtoText { text: "Clone qmlcore to it"; code: "git clone git@github.com:pureqml/qmlcore.git"; }
-				HowtoText { text: "Run"; code: "./qmlcore --boilerplate"; }
+				HowtoText { text: "Run"; code: "./qmlcore/build --boilerplate"; }
 				HowtoText { text: "Look into"; code: "app.qml"; }
 				HowtoText { text: "Run"; code: "./qmlcore/build"; }
 				HowtoText { text: "Find resulting files in"; code: ".app.web/*";}
