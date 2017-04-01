@@ -17,7 +17,7 @@ Item {
 
 	onCompleted: {
 		var os = this._context.system.os.toLowerCase()
-		var resPath =  + "../res/lessons/system/"
+		var resPath = "../res/lessons/system/"
 
 		if (os.indexOf("android") >= 0)
 			osIcon.source = resPath + "android.png"
