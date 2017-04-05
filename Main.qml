@@ -135,8 +135,9 @@ Column {
 		}
 
 		MainP {
-			text: "Suddenly, all of us (PureQML-team) are using Linux on a daily-basis, so we never tried to run it on
-			Windows or MacOS, though it won't be hard to add corresponding tools to get it working.<br> As we mentioned,
+			text: "At the moment, PureQML can be easily deployed on Linux and MacOS, if you want to have one on Windows you have to install Python 
+			on your own (it can be a bit tricky for a first time), while special tools for Windows are still in development.
+			<br> As we mentioned,
 			there are many applications of the technology and an enormous amount of integration and optimization work to be done.
 			So, we are very open and keen for any extra help. If you found a bug, if you have a suggestion, if you feel
 			you can contribute to the code, you are welcome; please get in touch via
