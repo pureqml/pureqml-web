@@ -36,6 +36,7 @@ Rectangle {
 				color: hover ? "#AED581" : "transparent";
 				property bool hash: model.hash;
 				property string path: model.path;
+				property string text: model.text;
 				href: hash ? model.hash : "http://pureqml.com/" + model.path;
 
 				Behavior on background { Animation { duration: 300;}}
@@ -46,7 +47,7 @@ Rectangle {
 					font.weight: 300;
 					font.pixelSize: 18;
 					color: colorTheme.textColor;
-					text: model.text;
+					text: parent.text;
 				}
 
 				onClicked(e): {
@@ -65,7 +66,7 @@ Rectangle {
 					if (a[2])
 						state.element = a[2]
 
-					this._context.location.pushState(state, this.href, this.href)
+					this._context.location.pushState(state, this.text, this.href)
 				}
 			}
 		}
