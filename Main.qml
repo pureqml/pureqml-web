@@ -38,15 +38,23 @@ Column {
 		MainP {
 			text: "PureQML is a declarative front-end framework aimed to ease complex UI-development (mobile/desktop/SmartTV/etc.).
 				It was originally designed in a platform-agnostic manner; at least, we've tried.
-				In many aspects, PureQML is close to original QML by Qt, but it's not 100% compatible,
-				and we believe better in some aspects.
-				The main concepts are the same, though, so if you're familiar with original QML,
-				you could start right away.";
+				The ultimate goal is to have complete compatibility with original QML by Qt, so, applications developed for Qt QML 
+				can be launched in PureQML environment, but due architectural differences between Qt/HTML5/Android/etc., this approach may cause some performance issues, and 
+				to avoid that PureQML provides a number of extentions, which allow to achieve a close to native performance. 
+				In any case, you can enjoy both portability and performance";
 		}
 
 		StateButton {
 			relPath: "gettingstarted";
 			text: "GET STARTED";
+		}
+
+		StateButton {
+			href: "https://t.me/pureqml";
+			color: hover ? "#5682a3" : "transparent";
+			border.color: "#5682a3";
+			text: "Telegram support channel";
+			onClicked: {}
 		}
 
 		MainH2 {
