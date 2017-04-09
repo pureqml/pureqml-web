@@ -132,7 +132,7 @@ HistoryPage {
 				globals: "lessons.GlobalsLesson",
 				layouts: "lessons.LayoutsLesson",
 				signals: "lessons.SignalLesson",
-				views: "pureqml_web.lessons.ViewAndModelsLesson",
+				views: "lessons.ViewAndModelsLesson",
 				focus: "lessons.FocusLesson",
 				keyboard: "lessons.KeyboardLesson",
 				gamepad: "lessons.GamepadLesson",
