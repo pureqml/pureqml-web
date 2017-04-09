@@ -1,0 +1,12 @@
+/*** @used { lessons.AnchorsLesson } **/
+/*** @used { lessons.BasicLesson } **/
+/*** @used { lessons.EffectsLesson } **/
+/*** @used { lessons.FocusLesson } **/
+/*** @used { lessons.GamepadLesson } **/
+/*** @used { lessons.GlobalsLesson } **/
+/*** @used { lessons.InputsLesson } **/
+/*** @used { lessons.KeyboardLesson } **/
+/*** @used { lessons.LayoutsLesson } **/
+/*** @used { lessons.SignalLesson } **/
+/*** @used { lessons.MixinLesson } **/
+/*** @used { lessons.ViewAndModelsLesson } **/

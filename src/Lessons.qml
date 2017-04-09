@@ -127,18 +127,18 @@ HistoryPage {
 	update: {
 		if (!this._content) {
 			this._content = {
-				basics: "pureqml_web.lessons.BasicLesson",
-				anchors: "pureqml_web.lessons.AnchorsLesson",
-				globals: "pureqml_web.lessons.GlobalsLesson",
-				layouts: "pureqml_web.lessons.LayoutsLesson",
-				signals: "pureqml_web.lessons.SignalLesson",
+				basics: "lessons.BasicLesson",
+				anchors: "lessons.AnchorsLesson",
+				globals: "lessons.GlobalsLesson",
+				layouts: "lessons.LayoutsLesson",
+				signals: "lessons.SignalLesson",
 				views: "pureqml_web.lessons.ViewAndModelsLesson",
-				focus: "pureqml_web.lessons.FocusLesson",
-				keyboard: "pureqml_web.lessons.KeyboardLesson",
-				gamepad: "pureqml_web.lessons.GamepadLesson",
-				inputs: "pureqml_web.lessons.InputsLesson",
-				mixins: "pureqml_web.lessons.MixinLesson",
-				effects: "pureqml_web.lessons.EffectsLesson"
+				focus: "lessons.FocusLesson",
+				keyboard: "lessons.KeyboardLesson",
+				gamepad: "lessons.GamepadLesson",
+				inputs: "lessons.InputsLesson",
+				mixins: "lessons.MixinLesson",
+				effects: "lessons.EffectsLesson"
 			}
 		}
 		if (!this._state || !this._loaderReady)
