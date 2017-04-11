@@ -98,6 +98,12 @@ HistoryPage {
 				text: "";
 			}
 
+			PathPageColumn {
+				path: "lessons/sprite";
+				title: "Sprites";
+				text: "";
+			}
+
 			onFillMenu(data): { leftMenu.fillModel(data) }
 
 			onCompleted: { log("main completed") }
@@ -138,7 +144,8 @@ HistoryPage {
 				gamepad: "lessons.GamepadLesson",
 				inputs: "lessons.InputsLesson",
 				mixins: "lessons.MixinLesson",
-				effects: "lessons.EffectsLesson"
+				effects: "lessons.EffectsLesson",
+				sprite: "lessons.SpriteLesson"
 			}
 		}
 		if (!this._state || !this._loaderReady)

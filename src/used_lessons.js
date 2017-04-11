@@ -10,3 +10,4 @@
 /*** @used { lessons.SignalLesson } **/
 /*** @used { lessons.MixinLesson } **/
 /*** @used { lessons.ViewAndModelsLesson } **/
+/*** @used { lessons.SpriteLesson } **/
