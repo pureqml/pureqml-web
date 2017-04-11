@@ -17,9 +17,9 @@ Item {
 			var angle = this.transform.rotate * 1.0 / 180 * 3.1415926
 			var x = Math.sin(angle) * speed
 			var y = Math.cos(angle) * speed
-			var size = this.width
-			this.x = this.x + x > 0 ? (this.x > this.parent.width - size ? this.parent.width - size : this.x + x) : 0
-			this.y = this.y - y > 0 ? (this.y > this.parent.height - size ? this.parent.height - size : this.y - y) : 0
+			var offset = 2 * this.width
+			this.x = this.x + x > 0 ? (this.x > this.parent.width - offset ? this.parent.width - offset : this.x + x) : 0
+			this.y = this.y - y > 0 ? (this.y > this.parent.height - offset ? this.parent.height - offset : this.y - y) : 0
 		}
 
 		Timer {
