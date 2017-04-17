@@ -1,6 +1,6 @@
 {
 	"name": "controls.google.GoogleChart",
-	"text": "@param data:Object data for chart building 	@param opt:Object chart displaying properties 	Fill google chart function",
+	"text": "google chart item",
 
 	"content": {
 		"Methods": {

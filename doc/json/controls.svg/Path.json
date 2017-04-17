@@ -15,7 +15,7 @@
 
 		"Methods": {
 			"getTag": { "text": "returns tag for corresponding element", "params": [], "internal": false },
-			"_update": { "text": "@internal", "params": [], "internal": false },
+			"_update": { "text": "@internal", "params": [], "internal": true },
 			"buildPath": { "text": "", "internal": false }
 		}
 	}

@@ -1,10 +1,10 @@
 {
 	"name": "controls.mixins.ImageMixin",
-	"text": "",
+	"text": "is the same thing as usual Image but fill it's parent instead of placing it inside",
 
 	"content": {
 		"Methods": {
-			"createElement": { "text": "", "internal": false }
+			"createElement": { "text": "@private", "params": [], "internal": true }
 		}
 	}
 }

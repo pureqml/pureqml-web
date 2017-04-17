@@ -1,0 +1,11 @@
+{
+	"name": "src.PageColumn",
+	"text": "",
+
+	"content": {
+		"Properties": {
+			"text": { "text": "", "internal": false, "type": "string", "defaultValue": "" },
+			"title": { "text": "", "internal": false, "type": "string", "defaultValue": "" }
+		}
+	}
+}

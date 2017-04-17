@@ -1,0 +1,10 @@
+{
+	"name": "src.PlatformImage",
+	"text": "",
+
+	"content": {
+		"Properties": {
+			"img": { "text": "", "ref": "src/ImageMixin", "internal": false, "type": "ImageMixin", "defaultValue": "ImageMixin" }
+		}
+	}
+}

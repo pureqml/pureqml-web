@@ -1,0 +1,15 @@
+{
+	"name": "src.DocKeyValueView",
+	"text": "",
+
+	"content": {
+		"Properties": {
+			"shift": { "text": "", "internal": false, "type": "int", "defaultValue": "400" },
+			"wide": { "text": "", "internal": false, "type": "bool", "defaultValue": "this._get('context')._get('width') > 800" }
+		},
+
+		"Methods": {
+			"fill": { "text": "", "internal": false }
+		}
+	}
+}

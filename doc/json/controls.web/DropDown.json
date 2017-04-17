@@ -1,0 +1,26 @@
+{
+	"name": "controls.web.DropDown",
+	"text": "@private",
+
+	"content": {
+		"Properties": {
+			"font": { "text": "", "ref": "controls.web/Font", "internal": false, "type": "Font", "defaultValue": "Font" },
+			"color": { "text": "", "internal": false, "type": "Color", "defaultValue": "#000" },
+			"currentIndex": { "text": "", "internal": false, "type": "int", "defaultValue": "" },
+			"count": { "text": "", "internal": false, "type": "int", "defaultValue": "" },
+			"value": { "text": "", "internal": false, "type": "string", "defaultValue": "" },
+			"text": { "text": "", "internal": false, "type": "string", "defaultValue": "" }
+		},
+
+		"Methods": {
+			"_update": { "text": "@private", "params": [], "internal": true },
+			"getTag": { "text": "@private", "params": [], "internal": true },
+			"registerStyle": { "text": "@private", "params": [], "internal": true },
+			"_updateSize": { "text": "@private", "params": [], "internal": true },
+			"append": { "text": "add option into select", "params": [], "internal": false },
+			"clear": { "text": "", "internal": false },
+			"onCountChanged": { "text": "", "internal": false },
+			"remove": { "text": "", "internal": false }
+		}
+	}
+}

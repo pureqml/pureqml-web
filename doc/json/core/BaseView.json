@@ -11,7 +11,7 @@
 			"scrollingStep": { "text": "scrolling step", "internal": false, "type": "int", "defaultValue": "0" },
 			"animationDuration": { "text": "", "internal": false, "type": "int", "defaultValue": "0" },
 			"contentFollowsCurrentItem": { "text": "auto-scroll content to current focused item", "internal": false, "type": "bool", "defaultValue": "true" },
-			"trace": { "text": "@internal", "internal": false, "type": "bool", "defaultValue": "" },
+			"trace": { "text": "@internal", "internal": true, "type": "bool", "defaultValue": "" },
 			"content": { "text": "", "ref": "core/BaseViewContent", "internal": false, "type": "BaseViewContent", "defaultValue": "BaseViewContent" }
 		},
 

@@ -1,49 +1,49 @@
 {
 	"name": "web.VideoPlayer",
-	"text": "",
+	"text": "container item for videos",
 
 	"content": {
 		"Properties": {
-			"source": { "text": "", "internal": false, "type": "string", "defaultValue": "" },
-			"backgroundColor": { "text": "", "internal": false, "type": "Color", "defaultValue": "#000" },
-			"volume": { "text": "", "internal": false, "type": "float", "defaultValue": "1.0" },
-			"loop": { "text": "", "internal": false, "type": "bool", "defaultValue": "false" },
-			"flash": { "text": "", "internal": false, "type": "bool", "defaultValue": "false" },
-			"ready": { "text": "", "internal": false, "type": "bool", "defaultValue": "false" },
-			"muted": { "text": "", "internal": false, "type": "bool", "defaultValue": "false" },
-			"paused": { "text": "", "internal": false, "type": "bool", "defaultValue": "false" },
-			"autoPlay": { "text": "", "internal": false, "type": "bool", "defaultValue": "false" },
-			"waiting": { "text": "", "internal": false, "type": "bool", "defaultValue": "false" },
-			"seeking": { "text": "", "internal": false, "type": "bool", "defaultValue": "false" },
-			"duration": { "text": "", "internal": false, "type": "int", "defaultValue": "" },
-			"progress": { "text": "", "internal": false, "type": "int", "defaultValue": "" },
-			"buffered": { "text": "", "internal": false, "type": "int", "defaultValue": "" }
+			"source": { "text": "video source URL", "internal": false, "type": "string", "defaultValue": "" },
+			"backgroundColor": { "text": "default background color", "internal": false, "type": "Color", "defaultValue": "#000" },
+			"volume": { "text": "video volume value [0:1]", "internal": false, "type": "float", "defaultValue": "1.0" },
+			"loop": { "text": "video loop flag", "internal": false, "type": "bool", "defaultValue": "false" },
+			"flash": { "text": "use flash flag", "internal": false, "type": "bool", "defaultValue": "false" },
+			"ready": { "text": "read only property becomes 'true' when video is ready to play, 'false' otherwise", "internal": false, "type": "bool", "defaultValue": "false" },
+			"muted": { "text": "volume mute flag", "internal": false, "type": "bool", "defaultValue": "false" },
+			"paused": { "text": "video paused flag", "internal": false, "type": "bool", "defaultValue": "false" },
+			"waiting": { "text": "wating flag while video is seeking and not ready to continue playing", "internal": false, "type": "bool", "defaultValue": "false" },
+			"seeking": { "text": "seeking flag", "internal": false, "type": "bool", "defaultValue": "false" },
+			"autoPlay": { "text": "play video immediately after source changed", "internal": false, "type": "bool", "defaultValue": "false" },
+			"duration": { "text": "content duration in seconds (valid only for not live videos)", "internal": false, "type": "int", "defaultValue": "" },
+			"progress": { "text": "current playback progress in seconds", "internal": false, "type": "int", "defaultValue": "" },
+			"buffered": { "text": "buffered contetnt in seconds", "internal": false, "type": "int", "defaultValue": "" }
 		},
 
 		"Signals": {
-			"finished": { "text": "", "internal": false },
-			"error": { "text": "", "internal": false }
+			"error": { "text": "error occured signal", "internal": false },
+			"finished": { "text": "video finished signal", "internal": false }
 		},
 
 		"Methods": {
-			"_update": { "text": "", "internal": false },
-			"getFlashMovieObject": { "text": "", "internal": false },
-			"play": { "text": "", "internal": false },
-			"seek": { "text": "", "internal": false },
-			"seekTo": { "text": "", "internal": false },
-			"onAutoPlayChanged": { "text": "", "internal": false },
-			"applyVolume": { "text": "", "internal": false },
-			"pause": { "text": "", "internal": false },
-			"volumeUp": { "text": "", "internal": false },
-			"volumeDown": { "text": "", "internal": false },
-			"toggleMute": { "text": "", "internal": false },
-			"onVolumeChanged": { "text": "", "internal": false },
-			"onReadyChanged": { "text": "", "internal": false },
-			"onError": { "text": "", "internal": false },
-			"onSourceChanged": { "text": "", "internal": false },
-			"onWidthChanged": { "text": "", "internal": false },
-			"onHeightChanged": { "text": "", "internal": false },
-			"onCompleted": { "text": "", "internal": false }
+			"_update": { "text": "@private", "params": [], "internal": true },
+			"getFlashMovieObject": { "text": "@private", "params": [], "internal": true },
+			"play": { "text": "play video", "params": [], "internal": false },
+			"seek": { "text": "seek video on 'value' seconds respectivly current playback progress", "params": [{ "name": "value", "type": "int", "text": "seek time in seconds" }], "internal": false },
+			"seekTo": { "text": "set video progres to fixed second", "params": [{ "name": "value", "type": "int", "text": "progress time in seconds" }], "internal": false },
+			"onAutoPlayChanged": { "text": "@private", "params": [], "internal": true },
+			"applyVolume": { "text": "@private", "params": [], "internal": true },
+			"pause": { "text": "pause video", "params": [], "internal": false },
+			"volumeUp": { "text": "increase current volume", "params": [], "internal": false },
+			"volumeDown": { "text": "decrease current volume", "params": [], "internal": false },
+			"toggleMute": { "text": "toggle volume mute on\off", "params": [], "internal": false },
+			"onVolumeChanged": { "text": "@private", "params": [], "internal": true },
+			"onReadyChanged": { "text": "@private", "params": [], "internal": true },
+			"onError": { "text": "@private", "params": [], "internal": true },
+			"onSourceChanged": { "text": "@private", "params": [], "internal": true },
+			"onWidthChanged": { "text": "@private", "params": [], "internal": true },
+			"onHeightChanged": { "text": "@private", "params": [], "internal": true },
+			"onCompleted": { "text": "@private", "params": [], "internal": true }
 		}
 	}
 }

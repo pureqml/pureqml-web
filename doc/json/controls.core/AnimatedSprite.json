@@ -1,20 +1,20 @@
 {
 	"name": "controls.core.AnimatedSprite",
-	"text": "start animation or continue if paused",
+	"text": "sprite image animation item",
 
 	"content": {
 		"Properties": {
-			"frameCount": { "text": "", "internal": false, "type": "int", "defaultValue": "" },
-			"currentFrame": { "text": "", "internal": false, "type": "int", "defaultValue": "" },
-			"duration": { "text": "", "internal": false, "type": "int", "defaultValue": "" },
-			"repeat": { "text": "", "internal": false, "type": "bool", "defaultValue": "" },
-			"running": { "text": "", "internal": false, "type": "bool", "defaultValue": "" },
-			"interval": { "text": "", "internal": false, "type": "int", "defaultValue": "this._get('duration') / this._get('frameCount')" }
+			"frameCount": { "text": "frames in duration value", "internal": false, "type": "int", "defaultValue": "" },
+			"currentFrame": { "text": "displayed frame index", "internal": false, "type": "int", "defaultValue": "" },
+			"duration": { "text": "animation time interval in milliseconds", "internal": false, "type": "int", "defaultValue": "" },
+			"interval": { "text": "read only property, time interval between each frames", "internal": false, "type": "int", "defaultValue": "this._get('duration') / this._get('frameCount')" },
+			"repeat": { "text": "repeat animation flag", "internal": false, "type": "bool", "defaultValue": "" },
+			"running": { "text": "animation is running flag", "internal": false, "type": "bool", "defaultValue": "" }
 		},
 
 		"Signals": {
-			"triggered": { "text": "", "internal": false },
-			"finished": { "text": "", "internal": false }
+			"finished": { "text": "animation was ended signal", "internal": false },
+			"triggered": { "text": "frame changed signal", "internal": false }
 		},
 
 		"Methods": {
@@ -22,10 +22,10 @@
 			"restart": { "text": "restarts animation from the beginning", "params": [], "internal": false },
 			"pause": { "text": "pause animation", "params": [], "internal": false },
 			"stop": { "text": "stop animation", "params": [], "internal": false },
-			"onCompleted": { "text": "", "internal": false },
+			"onCompleted": { "text": "@private", "params": [], "internal": true },
 			"_update": { "text": "@private", "params": [], "internal": true },
-			"onCurrentFrameChanged": { "text": "", "internal": false },
-			"_start": { "text": "", "internal": false }
+			"onCurrentFrameChanged": { "text": "@private", "params": [], "internal": true },
+			"_start": { "text": "@private", "params": [], "internal": true }
 		}
 	}
 }

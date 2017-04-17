@@ -1,0 +1,14 @@
+{
+	"name": "src.Docs",
+	"text": "",
+
+	"content": {
+		"Properties": {
+			"state": { "text": "", "internal": false, "type": "Object", "defaultValue": "this._get('context')._get('location')._get('state')" }
+		},
+
+		"Methods": {
+			"onStateChanged": { "text": "", "internal": false }
+		}
+	}
+}

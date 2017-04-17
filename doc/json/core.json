@@ -32,7 +32,6 @@
 		"BaseView": "core/BaseView.json",
 		"ClickMixin": "core/ClickMixin.json",
 		"ColorAnimation": "core/ColorAnimation.json",
-		"Protocol": "core/Protocol.json",
 		"Gamepad": "core/Gamepad.json",
 		"WheelMixin": "core/WheelMixin.json",
 		"Text": "core/Text.json",

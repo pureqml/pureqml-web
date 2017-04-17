@@ -4,14 +4,15 @@
 
 	"content": {
 		"Properties": {
-			"left": { "text": "left padding", "internal": false, "type": "int", "defaultValue": "" },
-			"right": { "text": "right padding", "internal": false, "type": "int", "defaultValue": "" },
-			"top": { "text": "top padding", "internal": false, "type": "int", "defaultValue": "" },
-			"bottom": { "text": "bottom padding", "internal": false, "type": "int", "defaultValue": "" }
+			"left": { "text": "left padding", "internal": false, "type": "int", "defaultValue": "this._get('all')" },
+			"right": { "text": "right padding", "internal": false, "type": "int", "defaultValue": "this._get('all')" },
+			"top": { "text": "top padding", "internal": false, "type": "int", "defaultValue": "this._get('all')" },
+			"bottom": { "text": "bottom padding", "internal": false, "type": "int", "defaultValue": "this._get('all')" },
+			"all": { "text": "a value for all sides", "internal": false, "type": "int", "defaultValue": "" }
 		},
 
 		"Methods": {
-			"_update": { "text": "", "internal": false }
+			"_update": { "text": "@private", "params": [], "internal": true }
 		}
 	}
 }

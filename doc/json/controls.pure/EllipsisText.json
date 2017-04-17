@@ -1,0 +1,14 @@
+{
+	"name": "controls.pure.EllipsisText",
+	"text": "",
+
+	"content": {
+		"Properties": {
+			"active": { "text": "", "internal": false, "type": "bool", "defaultValue": "true" }
+		},
+
+		"Methods": {
+			"_update": { "text": "", "internal": false }
+		}
+	}
+}

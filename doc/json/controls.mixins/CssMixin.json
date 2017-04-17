@@ -1,0 +1,16 @@
+{
+	"name": "controls.mixins.CssMixin",
+	"text": "@private",
+
+	"content": {
+		"Properties": {
+			"hover": { "text": "mouse over style", "internal": false, "type": "string", "defaultValue": "" },
+			"focus": { "text": "element with focus style", "internal": false, "type": "string", "defaultValue": "" },
+			"generic": { "text": "any custom style", "internal": false, "type": "string", "defaultValue": "" }
+		},
+
+		"Methods": {
+			"onCompleted": { "text": "@private", "params": [], "internal": true }
+		}
+	}
+}

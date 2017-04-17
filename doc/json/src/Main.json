@@ -1,0 +1,10 @@
+{
+	"name": "src.Main",
+	"text": "",
+
+	"content": {
+		"Properties": {
+			"url": { "text": "", "internal": false, "type": "string", "defaultValue": "main" }
+		}
+	}
+}

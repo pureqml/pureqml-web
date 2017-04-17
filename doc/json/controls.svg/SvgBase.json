@@ -12,7 +12,7 @@
 			"getTag": { "text": "returns tag for corresponding element", "params": [], "internal": false },
 			"registerStyle": { "text": "", "internal": false },
 			"externalTarget": { "text": "", "internal": false },
-			"_update": { "text": "@internal", "params": [], "internal": false },
+			"_update": { "text": "@internal", "params": [], "internal": true },
 			"style": { "text": "", "internal": false }
 		}
 	}

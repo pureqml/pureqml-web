@@ -1,0 +1,17 @@
+{
+	"name": "controls.google.YouTube",
+	"text": "item for embedded youtube video",
+
+	"content": {
+		"Properties": {
+			"source": { "text": "video source URL", "internal": false, "type": "string", "defaultValue": "" },
+			"allowFullScreen": { "text": "allow fullscreen flag", "internal": false, "type": "bool", "defaultValue": "" }
+		},
+
+		"Methods": {
+			"_update": { "text": "@private", "params": [], "internal": true },
+			"getTag": { "text": "@private", "params": [], "internal": true },
+			"_updateSize": { "text": "@private", "params": [], "internal": true }
+		}
+	}
+}

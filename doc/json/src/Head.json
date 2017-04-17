@@ -1,0 +1,15 @@
+{
+	"name": "src.Head",
+	"text": "",
+
+	"content": {
+		"Properties": {
+			"open": { "text": "", "internal": false, "type": "bool", "defaultValue": "" },
+			"newWindow": { "text": "", "internal": false, "type": "bool", "defaultValue": "" }
+		},
+
+		"Methods": {
+			"onCompleted": { "text": "", "internal": false }
+		}
+	}
+}

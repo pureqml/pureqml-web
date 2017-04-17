@@ -9,8 +9,8 @@
 		},
 
 		"Methods": {
-			"onNameChanged": { "text": "@internal", "params": [], "internal": false },
-			"onValueChanged": { "text": "@internal", "params": [], "internal": false },
+			"onNameChanged": { "text": "@internal", "params": [], "internal": true },
+			"onValueChanged": { "text": "@internal", "params": [], "internal": true },
 			"read": { "text": "@private", "params": [], "internal": true },
 			"init": { "text": "@private", "params": [], "internal": true },
 			"onCompleted": { "text": "@private", "params": [], "internal": true }

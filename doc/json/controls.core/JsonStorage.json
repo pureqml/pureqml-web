@@ -1,0 +1,18 @@
+{
+	"name": "controls.core.JsonStorage",
+	"text": "LocalStorage wrapper with signals and simple interface",
+
+	"content": {
+		"Signals": {
+			"loaded": { "text": "json was loaded", "internal": false },
+			"optionUpdated": { "text": "option changed signal", "internal": false }
+		},
+
+		"Methods": {
+			"load": { "text": "load JSON method", "params": [], "internal": false },
+			"getValue": { "text": "returns JSON proeprty value by name", "params": [{ "name": "name", "type": "string", "text": "property name" }], "internal": false },
+			"setValue": { "text": "save JSON property 'name' with value 'value'", "params": [{ "name": "name", "type": "string", "text": "property name" }, { "name": "value", "type": "Object", "text": "property value" }], "internal": false },
+			"onCompleted": { "text": "@private", "params": [], "internal": true }
+		}
+	}
+}
