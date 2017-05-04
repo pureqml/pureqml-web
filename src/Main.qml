@@ -37,10 +37,10 @@ Column {
 
 		MainP {
 			text: "PureQML is a declarative front-end framework aimed to ease complex UI-development (mobile/desktop/SmartTV/etc.).
-				It was originally designed in a platform-agnostic manner; at least, we've tried.
-				The ultimate goal is to have complete compatibility with original QML by Qt, so, applications developed for Qt QML 
-				can be launched in PureQML environment, but due architectural differences between Qt/HTML5/Android/etc., this approach may cause some performance issues, and 
-				to avoid that PureQML provides a number of extentions, which allow to achieve a close to native performance. 
+				It was originally designed in a platform-agnostic manner.
+				The ultimate goal is to have complete compatibility with original QML by Qt, so, applications developed for Qt QML
+				can be launched in PureQML environment, but due architectural differences between Qt/HTML5/Android/etc., this approach may cause some performance issues, and
+				to avoid that PureQML provides a number of extentions, which allow to achieve a close to native performance.
 				In any case, you can enjoy both portability and performance";
 		}
 
@@ -111,7 +111,7 @@ Column {
 			text: "Let's say, the project is in BETA. You can expect all basic components and features work well,
 			many bottlenecks already have been optimized, and in some respect,
 			you can use PureQML in commercial projects (as we are).
-			BUT: there is room for improvements, optimizations, and other changes to be made, so please 
+			BUT: there is room for improvements, optimizations, and other changes to be made, so please
 			remember some interfaces and approaches are subject to change.";
 		}
 
@@ -135,7 +135,7 @@ Column {
 		}
 
 		MainP {
-			text: "At the moment, PureQML can be easily deployed on Linux and MacOS, if you want to have one on Windows you have to install Python 
+			text: "At the moment, PureQML can be easily deployed on Linux and MacOS, if you want to have one on Windows you have to install Python
 			on your own (it can be a bit tricky for a first time), while special tools for Windows are still in development.
 			<br> As we mentioned,
 			there are many applications of the technology and an enormous amount of integration and optimization work to be done.
