@@ -23,7 +23,7 @@ Item {
 		font.pixelSize: 18;
 		font.weight: 300;
 		color: "#424242";
-		placeholder: "Search";
+		placeholder.text: "Search";
 
 		onTextChanged: {
 			searchTimer.restart() 
