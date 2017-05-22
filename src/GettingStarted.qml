@@ -27,16 +27,17 @@ HistoryPage {
 			title: "Simple how-to";
 
 			Column {
+				x: 20;
 				height: contentHeight;
 				width: parent.width - 40;
-				x: 20;
 				spacing: 5;
+
 				HowtoText { text: "Create project directory"; code: "cd &lt;project-dir&gt;"; }
 				HowtoText { text: "Clone qmlcore to it"; code: "git clone git@github.com:pureqml/qmlcore.git"; }
 				HowtoText { text: "Run"; code: "./qmlcore/build --boilerplate"; }
-				HowtoText { text: "Look into"; code: "app.qml"; }
+				HowtoText { text: "Look into"; code: "src/app.qml"; }
 				HowtoText { text: "Run"; code: "./qmlcore/build"; }
-				HowtoText { text: "Find resulting files in"; code: ".app.web/*";}
+				HowtoText { text: "Find resulting files in"; code: "build.web/*";}
 			}
 		}
 
@@ -98,17 +99,17 @@ HistoryPage {
 
 			H3 {
 				color: colorTheme.primaryColor;
-				text: "Grammar"; 
+				text: "Grammar";
 			}
 
-			MainP { 
+			MainP {
 				horizontalAlignment: Text.AlignLeft;
-				text: "Grammar: Semicolon is required after each statement. This might be subject to change."; 
+				text: "Grammar: Semicolon is required after each statement. This might be subject to change.";
 			}
 
 			H3 {
 				color: colorTheme.primaryColor;
-				text: "Focus"; 
+				text: "Focus";
 			}
 
 			MainP {
@@ -126,12 +127,12 @@ HistoryPage {
 
 			H3 {
 				color: colorTheme.primaryColor;
-				text: "Adding modernizr features"; 
+				text: "Adding modernizr features";
 			}
 
-			MainP { 
+			MainP {
 				horizontalAlignment: Text.AlignLeft;
-				text: "Please use the following command to get the custom modernizr build page: head -n2 dist/modernizr-custom.js | tail -n1 or just second line of modernizr-custom.js file."; 
+				text: "Please use the following command to get the custom modernizr build page: head -n2 dist/modernizr-custom.js | tail -n1 or just second line of modernizr-custom.js file.";
 			}
 		}
 
