@@ -60,7 +60,7 @@ HistoryPage {
 					ListElement { key: "web-prefix"; value: "see -p option below, specify css rules prefix"; }
 					ListElement { key: "minify"; value: "false/true or compiler name as string, only 'gcc' and 'uglify-js' are supported. Google closure compiler requires java to run."; }
 					ListElement { key: "platforms"; value: "use additional platform/*/ files, default and only platform is 'web' for now."; }
-					ListElement { key: "path"; value: "additional directories to search sources for"; }
+					ListElement { key: "sources"; value: "directories to search sources for"; }
 				}
 			}
 
