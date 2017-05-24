@@ -9,7 +9,8 @@
 		},
 
 		"Methods": {
-			"_update": { "text": "", "internal": false },
+			"onHrefChanged": { "text": "", "internal": true },
+			"onTargetChanged": { "text": "", "internal": true },
 			"getTag": { "text": "", "internal": false },
 			"registerStyle": { "text": "", "internal": false }
 		}

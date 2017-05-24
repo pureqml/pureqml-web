@@ -16,7 +16,7 @@
 		},
 
 		"Signals": {
-			"layoutFinished": { "text": "base class for all views, holds content, creates delegates and provides common api", "internal": false }
+			"l": { "text": "base class for all views, holds content, creates delegates and provides common api", "internal": false }
 		},
 
 		"Methods": {
@@ -29,7 +29,7 @@
 			"_onRowsChanged": { "text": "@private", "params": [], "internal": true },
 			"_onRowsRemoved": { "text": "@private", "params": [], "internal": true },
 			"_attach": { "text": "@private", "params": [], "internal": true },
-			"_update": { "text": "@private", "params": [], "internal": true },
+			"onDelegateChanged": { "text": "", "internal": true },
 			"_createDelegate": { "text": "@private creates delegate in given item slot", "params": [], "internal": true },
 			"_updateDelegate": { "text": "@private", "params": [], "internal": true },
 			"_updateDelegateIndex": { "text": "@private", "params": [], "internal": true },

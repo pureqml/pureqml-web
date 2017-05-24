@@ -9,7 +9,7 @@
 		},
 
 		"Signals": {
-			"loaded": { "text": "when requested component it loaded event signal", "internal": false }
+			"l": { "text": "when requested component it loaded event signal", "internal": false }
 		},
 
 		"Methods": {

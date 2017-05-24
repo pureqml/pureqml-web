@@ -9,7 +9,7 @@
 		},
 
 		"Methods": {
-			"_update": { "text": "@private", "params": [], "internal": true },
+			"onPositionChanged": { "text": "@private", "params": [], "internal": true },
 			"_getDeclaration": { "text": "@private", "params": [], "internal": true }
 		}
 	}

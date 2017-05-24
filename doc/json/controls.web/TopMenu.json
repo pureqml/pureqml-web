@@ -13,8 +13,8 @@
 
 		"Methods": {
 			"toggleShow": { "text": "", "internal": false },
-			"onWidthChanged": { "text": "", "internal": false },
-			"_update": { "text": "", "internal": false },
+			"onWidthChanged": { "text": "", "internal": true },
+			"onContentChanged": { "text": "", "internal": true },
 			"onCompleted": { "text": "", "internal": false }
 		}
 	}

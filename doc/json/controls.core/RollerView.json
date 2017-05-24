@@ -14,8 +14,8 @@
 			"focusCurrent": { "text": "@internal focuses current item", "params": [], "internal": true },
 			"_createDelegate": { "text": "@internal creates delegate in given item slot", "params": [], "internal": true },
 			"onKeyPressed": { "text": "", "internal": false },
-			"onOrientationChanged": { "text": "", "internal": false },
-			"onCurrentIndexChanged": { "text": "", "internal": false }
+			"onOrientationChanged": { "text": "", "internal": true },
+			"onCurrentIndexChanged": { "text": "", "internal": true }
 		}
 	}
 }

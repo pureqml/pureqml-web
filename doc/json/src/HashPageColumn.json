@@ -8,7 +8,7 @@
 		},
 
 		"Methods": {
-			"onHashChanged": { "text": "", "internal": false }
+			"onHashChanged": { "text": "", "internal": true }
 		}
 	}
 }

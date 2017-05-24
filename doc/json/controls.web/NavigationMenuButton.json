@@ -16,7 +16,7 @@
 		"Methods": {
 			"hide": { "text": "", "internal": false },
 			"toggleShow": { "text": "", "internal": false },
-			"onShowChanged": { "text": "", "internal": false }
+			"onShowChanged": { "text": "", "internal": true }
 		}
 	}
 }

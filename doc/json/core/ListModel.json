@@ -8,10 +8,10 @@
 		},
 
 		"Signals": {
-			"reset": { "text": "model reset signal", "internal": false },
-			"rowsInserted": { "text": "rows inserted signal", "internal": false },
-			"rowsChanged": { "text": "rows changed signal", "internal": false },
-			"rowsRemoved": { "text": "rows removed signal", "internal": false }
+			"r": { "text": "model reset signal", "internal": false },
+			"r": { "text": "rows inserted signal", "internal": false },
+			"r": { "text": "rows changed signal", "internal": false },
+			"r": { "text": "rows removed signal", "internal": false }
 		},
 
 		"Methods": {

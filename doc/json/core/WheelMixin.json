@@ -8,7 +8,7 @@
 		},
 
 		"Signals": {
-			"wheel": { "text": "wheel move signal", "internal": false }
+			"w": { "text": "wheel move signal", "internal": false }
 		},
 
 		"Methods": {

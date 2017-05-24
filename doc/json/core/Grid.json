@@ -15,7 +15,7 @@
 			"onFlowChanged": { "text": "@private", "params": [], "internal": true },
 			"_layout": { "text": "@private", "params": [], "internal": true },
 			"addChild": { "text": "@private", "params": [], "internal": true },
-			"_update": { "text": "@private", "params": [], "internal": true }
+			"onHorizontalSpacingChanged": { "text": "", "internal": true }
 		}
 	}
 }

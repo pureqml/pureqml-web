@@ -10,7 +10,8 @@
 		},
 
 		"Methods": {
-			"_update": { "text": "", "internal": false }
+			"onMinChanged": { "text": "", "internal": true },
+			"onMaxChanged": { "text": "", "internal": true }
 		}
 	}
 }

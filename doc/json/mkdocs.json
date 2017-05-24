@@ -53,7 +53,12 @@
 		"controls": {
 			"file": "controls.json",
 			"content": {
-				"HlsPlayer": "controls/HlsPlayer.json"
+				"HlsPlayer": "controls/HlsPlayer.json",
+				"TheOPlayer": "controls/TheOPlayer.json",
+				"ShakaPlayer": "controls/ShakaPlayer.json",
+				"JWPlayer": "controls/JWPlayer.json",
+				"Bitmovin": "controls/Bitmovin.json",
+				"VideoJS": "controls/VideoJS.json"
 			}
 		},
 		"controls.canvas": {
@@ -70,9 +75,9 @@
 				"JsonStorage": "controls.core/JsonStorage.json",
 				"DebugInfoPanel": "controls.core/DebugInfoPanel.json",
 				"RollerView": "controls.core/RollerView.json",
-				"UlView": "controls.core/UlView.json",
 				"Request": "controls.core/Request.json",
 				"AnimatedSprite": "controls.core/AnimatedSprite.json",
+				"PlaceholderFont": "controls.core/PlaceholderFont.json",
 				"DebugInfoItem": "controls.core/DebugInfoItem.json",
 				"Activity": "controls.core/Activity.json",
 				"Audio": "controls.core/Audio.json",
@@ -150,7 +155,7 @@
 		"controls.vk": {
 			"file": "controls.vk.json",
 			"content": {
-				"VkApiProtocol": "controls.vk/VkApiProtocol.json",
+				"VkApi": "controls.vk/VkApi.json",
 				"VkWallModel": "controls.vk/VkWallModel.json"
 			}
 		},
@@ -184,6 +189,13 @@
 				"H5": "controls.web/H5.json",
 				"NavbarItem": "controls.web/NavbarItem.json",
 				"ResizableBox": "controls.web/ResizableBox.json"
+			}
+		},
+		"controls.web.audio": {
+			"file": "controls.web.audio.json",
+			"content": {
+				"Oscillator": "controls.web.audio/Oscillator.json",
+				"AudioBuffer": "controls.web.audio/AudioBuffer.json"
 			}
 		},
 		"controls.yandex": {

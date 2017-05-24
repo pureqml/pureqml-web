@@ -17,22 +17,22 @@
 		},
 
 		"Alias Properties": {
-			"hover": { "text": "containsMouse property alias", "internal": false },
-			"hoverable": { "text": "hoverEnabled property alias", "internal": false }
+			"h": { "text": "containsMouse property alias", "internal": false },
+			"h": { "text": "hoverEnabled property alias", "internal": false }
 		},
 
 		"Signals": {
-			"entered": { "text": "emitted when mouse entered the item's area", "internal": false },
-			"exited": { "text": "emitted when mouse leaved the item's area", "internal": false },
-			"clicked": { "text": "emitted on mouse click", "internal": false },
-			"canceled": { "text": "emitted when mouse leaved the item's area while mouse button was pressed", "internal": false },
-			"wheelEvent": { "text": "emitted when mouse wheel scrolling", "internal": false },
-			"verticalSwiped": { "text": "emitted on vertical swipe", "internal": false },
-			"horizontalSwiped": { "text": "emitted on horizontal swipe", "internal": false },
-			"mouseMove": { "text": "emitted on mouse moved inside the item's area", "internal": false },
-			"touchEnd": { "text": "emitted on touch event end", "internal": false },
-			"touchMove": { "text": "emitted on mouse move while touching", "internal": false },
-			"touchStart": { "text": "emitted on touch event start", "internal": false }
+			"e": { "text": "emitted when mouse entered the item's area", "internal": false },
+			"e": { "text": "emitted when mouse leaved the item's area", "internal": false },
+			"c": { "text": "emitted on mouse click", "internal": false },
+			"c": { "text": "emitted when mouse leaved the item's area while mouse button was pressed", "internal": false },
+			"w": { "text": "emitted when mouse wheel scrolling", "internal": false },
+			"v": { "text": "emitted on vertical swipe", "internal": false },
+			"h": { "text": "emitted on horizontal swipe", "internal": false },
+			"m": { "text": "emitted on mouse moved inside the item's area", "internal": false },
+			"t": { "text": "emitted on touch event end", "internal": false },
+			"t": { "text": "emitted on mouse move while touching", "internal": false },
+			"t": { "text": "emitted on touch event start", "internal": false }
 		},
 
 		"Methods": {

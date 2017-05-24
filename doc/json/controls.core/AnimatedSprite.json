@@ -13,8 +13,8 @@
 		},
 
 		"Signals": {
-			"finished": { "text": "animation was ended signal", "internal": false },
-			"triggered": { "text": "frame changed signal", "internal": false }
+			"f": { "text": "animation was ended signal", "internal": false },
+			"t": { "text": "frame changed signal", "internal": false }
 		},
 
 		"Methods": {
@@ -23,7 +23,7 @@
 			"pause": { "text": "pause animation", "params": [], "internal": false },
 			"stop": { "text": "stop animation", "params": [], "internal": false },
 			"onCompleted": { "text": "@private", "params": [], "internal": true },
-			"_update": { "text": "@private", "params": [], "internal": true },
+			"onRepeatChanged": { "text": "@private", "params": [], "internal": true },
 			"onCurrentFrameChanged": { "text": "@private", "params": [], "internal": true },
 			"_start": { "text": "@private", "params": [], "internal": true }
 		}

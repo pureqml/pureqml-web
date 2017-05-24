@@ -5,7 +5,7 @@
 	"content": {
 		"Methods": {
 			"onXChanged": { "text": "@private content for base view scrolling area", "params": [], "internal": true },
-			"onYChanged": { "text": "", "internal": false }
+			"onYChanged": { "text": "", "internal": true }
 		}
 	}
 }

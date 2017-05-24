@@ -4,12 +4,12 @@
 
 	"content": {
 		"Properties": {
-			"source": { "text": "source to load script from", "internal": false, "type": "string", "defaultValue": "" }
+			"source": { "text": "@private", "internal": true, "type": "string", "defaultValue": "" }
 		},
 
 		"Methods": {
 			"load": { "text": "", "internal": false },
-			"onSourceChanged": { "text": "", "internal": false },
+			"onSourceChanged": { "text": "", "internal": true },
 			"onCompleted": { "text": "", "internal": false },
 			"getTag": { "text": "", "internal": false }
 		}

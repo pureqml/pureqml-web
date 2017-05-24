@@ -11,7 +11,7 @@
 		"Methods": {
 			"start": { "text": "", "internal": false },
 			"stop": { "text": "", "internal": false },
-			"onRunningChanged": { "text": "", "internal": false }
+			"onRunningChanged": { "text": "", "internal": true }
 		}
 	}
 }

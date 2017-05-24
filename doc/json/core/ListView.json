@@ -11,7 +11,7 @@
 			"indexAt": { "text": "@orivate", "params": [], "internal": false },
 			"_layout": { "text": "@orivate", "params": [], "internal": false },
 			"_createDelegate": { "text": "@private creates delegate in given item slot", "params": [], "internal": true },
-			"onOrientationChanged": { "text": "@orivate", "params": [], "internal": false }
+			"onOrientationChanged": { "text": "@orivate", "params": [], "internal": true }
 		}
 	}
 }

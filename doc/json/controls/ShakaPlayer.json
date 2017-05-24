@@ -1,6 +1,6 @@
 {
-	"name": "web.VideoPlayer",
-	"text": "container item for videos",
+	"name": "controls.ShakaPlayer",
+	"text": "Video paly er based on shaka-player",
 
 	"content": {
 		"Properties": {
@@ -8,7 +8,6 @@
 			"backgroundColor": { "text": "default background color", "internal": false, "type": "Color", "defaultValue": "#000" },
 			"volume": { "text": "video volume value [0:1]", "internal": false, "type": "float", "defaultValue": "1.0" },
 			"loop": { "text": "video loop flag", "internal": false, "type": "bool", "defaultValue": "false" },
-			"flash": { "text": "use flash flag", "internal": false, "type": "bool", "defaultValue": "false" },
 			"ready": { "text": "read only property becomes 'true' when video is ready to play, 'false' otherwise", "internal": false, "type": "bool", "defaultValue": "false" },
 			"muted": { "text": "volume mute flag", "internal": false, "type": "bool", "defaultValue": "false" },
 			"paused": { "text": "video paused flag", "internal": false, "type": "bool", "defaultValue": "false" },
@@ -26,24 +25,10 @@
 		},
 
 		"Methods": {
-			"_update": { "text": "@private", "params": [], "internal": true },
-			"getFlashMovieObject": { "text": "@private", "params": [], "internal": true },
-			"play": { "text": "play video", "params": [], "internal": false },
-			"seek": { "text": "seek video on 'value' seconds respectivly current playback progress", "params": [{ "name": "value", "type": "int", "text": "seek time in seconds" }], "internal": false },
-			"seekTo": { "text": "set video progres to fixed second", "params": [{ "name": "value", "type": "int", "text": "progress time in seconds" }], "internal": false },
-			"onAutoPlayChanged": { "text": "@private", "params": [], "internal": true },
-			"applyVolume": { "text": "@private", "params": [], "internal": true },
-			"pause": { "text": "pause video", "params": [], "internal": false },
-			"volumeUp": { "text": "increase current volume", "params": [], "internal": false },
-			"volumeDown": { "text": "decrease current volume", "params": [], "internal": false },
-			"toggleMute": { "text": "toggle volume mute on\off", "params": [], "internal": false },
-			"onVolumeChanged": { "text": "@private", "params": [], "internal": true },
-			"onReadyChanged": { "text": "@private", "params": [], "internal": true },
-			"onError": { "text": "@private", "params": [], "internal": true },
+			"getTag": { "text": "@private", "params": [], "internal": true },
 			"onSourceChanged": { "text": "@private", "params": [], "internal": true },
-			"onWidthChanged": { "text": "@private", "params": [], "internal": true },
-			"onHeightChanged": { "text": "@private", "params": [], "internal": true },
-			"onCompleted": { "text": "@private", "params": [], "internal": true }
+			"onWidthChanged": { "text": "", "internal": true },
+			"onHeightChanged": { "text": "", "internal": true }
 		}
 	}
 }

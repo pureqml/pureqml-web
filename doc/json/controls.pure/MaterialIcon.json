@@ -4,8 +4,8 @@
 
 	"content": {
 		"Alias Properties": {
-			"icon": { "text": "", "internal": false },
-			"size": { "text": "", "internal": false }
+			"i": { "text": "", "internal": false },
+			"s": { "text": "", "internal": false }
 		}
 	}
 }

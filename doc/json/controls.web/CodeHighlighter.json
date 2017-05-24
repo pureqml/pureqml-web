@@ -12,7 +12,9 @@
 		},
 
 		"Methods": {
-			"_update": { "text": "@private", "params": [], "internal": true },
+			"onWidthChanged": { "text": "@private", "params": [], "internal": true },
+			"onCodeChanged": { "text": "@private", "params": [], "internal": true },
+			"onLanguageChanged": { "text": "@private", "params": [], "internal": true },
 			"getTag": { "text": "@private returns tag for corresponding element", "params": [], "internal": true },
 			"registerStyle": { "text": "@private", "params": [], "internal": true },
 			"_updateSize": { "text": "@private", "params": [], "internal": true }

@@ -9,7 +9,8 @@
 		},
 
 		"Methods": {
-			"_update": { "text": "", "internal": false }
+			"onTextChanged": { "text": "", "internal": true },
+			"onActiveFocusChanged": { "text": "", "internal": true }
 		}
 	}
 }

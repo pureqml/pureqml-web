@@ -13,13 +13,13 @@
 		},
 
 		"Methods": {
-			"onCursorChanged": { "text": "", "internal": false },
+			"onCursorChanged": { "text": "", "internal": true },
 			"_bindClick": { "text": "", "internal": false },
 			"_bindHover": { "text": "", "internal": false },
 			"_bindActiveHover": { "text": "", "internal": false },
-			"onEnabledChanged": { "text": "", "internal": false },
-			"onClickableChanged": { "text": "", "internal": false },
-			"onActiveHoverEnabledChanged": { "text": "", "internal": false }
+			"onEnabledChanged": { "text": "", "internal": true },
+			"onClickableChanged": { "text": "", "internal": true },
+			"onActiveHoverEnabledChanged": { "text": "", "internal": true }
 		}
 	}
 }

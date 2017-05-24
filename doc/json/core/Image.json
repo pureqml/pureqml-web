@@ -15,7 +15,7 @@
 			"_onError": { "text": "@private", "params": [], "internal": true },
 			"_load": { "text": "@private", "params": [], "internal": true },
 			"load": { "text": "@private", "params": [], "internal": true },
-			"_update": { "text": "@private", "params": [], "internal": true }
+			"onWidthChanged": { "text": "", "internal": true }
 		}
 	}
 }

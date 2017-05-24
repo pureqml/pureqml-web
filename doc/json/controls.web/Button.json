@@ -14,11 +14,14 @@
 		},
 
 		"Signals": {
-			"clicked": { "text": "button clicked signal", "internal": false }
+			"c": { "text": "button clicked signal", "internal": false }
 		},
 
 		"Methods": {
-			"_update": { "text": "@private", "params": [], "internal": true },
+			"onTextChanged": { "text": "@private", "params": [], "internal": true },
+			"onWidthChanged": { "text": "@private", "params": [], "internal": true },
+			"onHeightChanged": { "text": "@private", "params": [], "internal": true },
+			"onTextColorChanged": { "text": "@private", "params": [], "internal": true },
 			"getTag": { "text": "@private returns tag for corresponding element", "params": [], "internal": true },
 			"registerStyle": { "text": "@private", "params": [], "internal": true },
 			"_updateSize": { "text": "@private", "params": [], "internal": true }

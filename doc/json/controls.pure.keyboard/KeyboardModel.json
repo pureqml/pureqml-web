@@ -4,8 +4,8 @@
 
 	"content": {
 		"Methods": {
-			"onModeChanged": { "text": "", "internal": false },
-			"onLanguageChanged": { "text": "", "internal": false },
+			"onModeChanged": { "text": "", "internal": true },
+			"onLanguageChanged": { "text": "", "internal": true },
 			"fill": { "text": "", "internal": false },
 			"switchLanguage": { "text": "", "internal": false },
 			"switchCase": { "text": "", "internal": false },

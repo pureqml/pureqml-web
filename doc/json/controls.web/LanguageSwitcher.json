@@ -10,14 +10,14 @@
 		},
 
 		"Signals": {
-			"languageChanged": { "text": "", "internal": false }
+			"l": { "text": "", "internal": false }
 		},
 
 		"Methods": {
 			"addLanguage": { "text": "", "internal": false },
-			"onCountChanged": { "text": "", "internal": false },
+			"onCountChanged": { "text": "", "internal": true },
 			"onClicked": { "text": "", "internal": false },
-			"onCurrentIndexChanged": { "text": "", "internal": false },
+			"onCurrentIndexChanged": { "text": "", "internal": true },
 			"onCompleted": { "text": "", "internal": false }
 		}
 	}

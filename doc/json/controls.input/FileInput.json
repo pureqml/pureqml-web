@@ -9,7 +9,7 @@
 		},
 
 		"Methods": {
-			"_update": { "text": "", "internal": false }
+			"onFilterChanged": { "text": "", "internal": true }
 		}
 	}
 }

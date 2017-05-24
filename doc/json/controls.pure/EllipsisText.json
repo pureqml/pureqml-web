@@ -8,7 +8,7 @@
 		},
 
 		"Methods": {
-			"_update": { "text": "", "internal": false }
+			"onActiveChanged": { "text": "", "internal": true }
 		}
 	}
 }

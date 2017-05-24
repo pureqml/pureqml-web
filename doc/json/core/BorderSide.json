@@ -11,7 +11,7 @@
 
 		"Methods": {
 			"_updateStyle": { "text": "", "internal": false },
-			"_update": { "text": "", "internal": false }
+			"onWidthChanged": { "text": "", "internal": true }
 		}
 	}
 }

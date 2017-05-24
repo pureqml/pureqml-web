@@ -8,8 +8,8 @@
 		},
 
 		"Signals": {
-			"keySelected": { "text": "", "internal": false },
-			"backspase": { "text": "", "internal": false }
+			"k": { "text": "", "internal": false },
+			"b": { "text": "", "internal": false }
 		},
 
 		"Methods": {

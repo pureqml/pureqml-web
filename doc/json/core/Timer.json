@@ -11,7 +11,7 @@
 		},
 
 		"Signals": {
-			"triggered": { "text": "this signal triggered when timer fires", "internal": false }
+			"t": { "text": "this signal triggered when timer fires", "internal": false }
 		},
 
 		"Methods": {
@@ -19,9 +19,10 @@
 			"stop": { "text": "stops timer", "params": [], "internal": false },
 			"start": { "text": "starts timer", "params": [], "internal": false },
 			"onTriggered": { "text": "@private", "params": [], "internal": true },
-			"onRunningChanged": { "text": "@private", "params": [], "internal": true },
 			"onCompleted": { "text": "@private", "params": [], "internal": true },
-			"_update": { "text": "@private", "params": [], "internal": true },
+			"onRunningChanged": { "text": "", "internal": true },
+			"onIntervalChanged": { "text": "", "internal": true },
+			"onRepeatChanged": { "text": "", "internal": true },
 			"_restart": { "text": "@private", "params": [], "internal": true }
 		}
 	}

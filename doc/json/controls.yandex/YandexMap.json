@@ -10,7 +10,7 @@
 		},
 
 		"Methods": {
-			"_update": { "text": "", "internal": false },
+			"onCenterLongitudeChanged": { "text": "", "internal": true },
 			"_updateCenter": { "text": "", "internal": false },
 			"getUserLocation": { "text": "", "internal": false }
 		}

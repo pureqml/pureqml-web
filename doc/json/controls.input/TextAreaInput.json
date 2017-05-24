@@ -8,7 +8,7 @@
 		},
 
 		"Methods": {
-			"_update": { "text": "", "internal": false },
+			"onTextChanged": { "text": "", "internal": true },
 			"getTag": { "text": "returns tag for corresponding element", "params": [], "internal": false },
 			"registerStyle": { "text": "", "internal": false }
 		}

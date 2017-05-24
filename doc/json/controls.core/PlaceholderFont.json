@@ -1,6 +1,6 @@
 {
-	"name": "core.Font",
-	"text": "adjusts text font properties",
+	"name": "controls.core.PlaceholderFont",
+	"text": "@private",
 
 	"content": {
 		"Properties": {
@@ -16,15 +16,17 @@
 		},
 
 		"Methods": {
-			"onFamilyChanged": { "text": "", "internal": true },
-			"onPointSizeChanged": { "text": "", "internal": true },
-			"onPixelSizeChanged": { "text": "", "internal": true },
-			"onItalicChanged": { "text": "", "internal": true },
-			"onBoldChanged": { "text": "", "internal": true },
-			"onUnderlineChanged": { "text": "", "internal": true },
-			"onStrikeChanged": { "text": "", "internal": true },
-			"onLineHeightChanged": { "text": "", "internal": true },
-			"onWeightChanged": { "text": "", "internal": true }
+			"onBoldChanged": { "text": "@private", "params": [], "internal": true },
+			"onWeightChanged": { "text": "@private", "params": [], "internal": true },
+			"onFamilyChanged": { "text": "@private", "params": [], "internal": true },
+			"onItalicChanged": { "text": "@private", "params": [], "internal": true },
+			"onStrikeChanged": { "text": "@private", "params": [], "internal": true },
+			"onPointSizeChanged": { "text": "@private", "params": [], "internal": true },
+			"onPixelSizeChanged": { "text": "@private", "params": [], "internal": true },
+			"onUnderlineChanged": { "text": "@private", "params": [], "internal": true },
+			"onLineHeightChanged": { "text": "@private", "params": [], "internal": true },
+			"getClass": { "text": "@private", "params": [], "internal": true },
+			"updateProperty": { "text": "@private", "params": [], "internal": true }
 		}
 	}
 }

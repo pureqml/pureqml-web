@@ -9,7 +9,9 @@
 		},
 
 		"Methods": {
-			"_update": { "text": "@private", "params": [], "internal": true },
+			"onWidthChanged": { "text": "@private", "params": [], "internal": true },
+			"onSourceChanged": { "text": "@private", "params": [], "internal": true },
+			"onAllowFullScreenChanged": { "text": "@private", "params": [], "internal": true },
 			"getTag": { "text": "@private", "params": [], "internal": true },
 			"_updateSize": { "text": "@private", "params": [], "internal": true }
 		}

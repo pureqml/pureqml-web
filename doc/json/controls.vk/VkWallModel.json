@@ -1,11 +1,20 @@
 {
 	"name": "controls.vk.VkWallModel",
-	"text": "",
+	"text": "this model wich get data from the 'vkontakte' socail network wall",
 
 	"content": {
+		"Properties": {
+			"ownerId": { "text": "", "internal": false, "type": "int", "defaultValue": "" }
+		},
+
+		"Signals": {
+			"e": { "text": "this model wich get data from the 'vkontakte' socail network wall", "internal": false }
+		},
+
 		"Methods": {
-			"_fillImpl": { "text": "", "internal": false },
-			"fill": { "text": "", "internal": false }
+			"_fillImpl": { "text": "@private", "params": [], "internal": true },
+			"fillDefault": { "text": "fill model with data from 'ownerId' wall with default parameters", "params": [], "internal": false },
+			"fillCustom": { "text": "fill model with data from the wall with customized settings such as count, extended etc.", "params": [{ "name": "settings", "type": "Object", "text": "additional request parameters" }], "internal": false }
 		}
 	}
 }

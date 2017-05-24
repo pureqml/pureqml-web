@@ -9,7 +9,7 @@
 		},
 
 		"Methods": {
-			"_update": { "text": "", "internal": false }
+			"onOffsetYChanged": { "text": "", "internal": true }
 		}
 	}
 }

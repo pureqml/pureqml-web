@@ -11,7 +11,10 @@
 		},
 
 		"Methods": {
-			"_update": { "text": "@private", "params": [], "internal": true },
+			"onMinChanged": { "text": "@private", "params": [], "internal": true },
+			"onMaxChanged": { "text": "@private", "params": [], "internal": true },
+			"onStepChanged": { "text": "@private", "params": [], "internal": true },
+			"onOrientationChanged": { "text": "@private", "params": [], "internal": true },
 			"getTag": { "text": "returns tag for corresponding element", "params": [], "internal": false }
 		}
 	}

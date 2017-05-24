@@ -8,7 +8,7 @@
 		},
 
 		"Methods": {
-			"_update": { "text": "", "internal": false },
+			"onSocailNetworkChanged": { "text": "", "internal": true },
 			"open": { "text": "", "internal": false },
 			"redirect": { "text": "", "internal": false }
 		}

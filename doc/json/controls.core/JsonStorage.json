@@ -4,8 +4,8 @@
 
 	"content": {
 		"Signals": {
-			"loaded": { "text": "json was loaded", "internal": false },
-			"optionUpdated": { "text": "option changed signal", "internal": false }
+			"l": { "text": "json was loaded", "internal": false },
+			"o": { "text": "option changed signal", "internal": false }
 		},
 
 		"Methods": {

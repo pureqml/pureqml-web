@@ -12,7 +12,10 @@
 		},
 
 		"Methods": {
-			"_update": { "text": "", "internal": false }
+			"onTopChanged": { "text": "", "internal": true },
+			"onLeftChanged": { "text": "", "internal": true },
+			"onRightChanged": { "text": "", "internal": true },
+			"onBottomChanged": { "text": "", "internal": true }
 		}
 	}
 }

@@ -8,7 +8,7 @@
 		},
 
 		"Methods": {
-			"onStateChanged": { "text": "", "internal": false }
+			"onStateChanged": { "text": "", "internal": true }
 		}
 	}
 }

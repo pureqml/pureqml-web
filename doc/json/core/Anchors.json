@@ -20,7 +20,7 @@
 		},
 
 		"Signals": {
-			"marginsUpdated": { "text": "@private", "internal": true }
+			"m": { "text": "@private", "internal": true }
 		},
 
 		"Methods": {
@@ -30,7 +30,15 @@
 			"_updateBottom": { "text": "@private", "params": [], "internal": true },
 			"_updateHCenter": { "text": "@private", "params": [], "internal": true },
 			"_updateVCenter": { "text": "@private", "params": [], "internal": true },
-			"_update": { "text": "@private", "params": [], "internal": true }
+			"onLeftChanged": { "text": "", "internal": true },
+			"onRightChanged": { "text": "", "internal": true },
+			"onTopChanged": { "text": "", "internal": true },
+			"onBottomChanged": { "text": "", "internal": true },
+			"onHorizontalCenterChanged": { "text": "", "internal": true },
+			"onVerticalCenterChanged": { "text": "", "internal": true },
+			"onFillChanged": { "text": "", "internal": true },
+			"onCenterInChanged": { "text": "", "internal": true },
+			"onLeftMarginChanged": { "text": "", "internal": true }
 		}
 	}
 }

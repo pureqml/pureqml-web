@@ -12,7 +12,7 @@
 		},
 
 		"Methods": {
-			"onSampleChanged": { "text": "", "internal": false }
+			"onSampleChanged": { "text": "", "internal": true }
 		}
 	}
 }

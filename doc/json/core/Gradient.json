@@ -9,7 +9,7 @@
 
 		"Methods": {
 			"addChild": { "text": "@private", "params": [], "internal": true },
-			"_update": { "text": "@private", "params": [], "internal": true },
+			"_updateStyle": { "text": "@private", "params": [], "internal": true },
 			"_getDeclaration": { "text": "@private", "params": [], "internal": true },
 			"onCompleted": { "text": "@private", "params": [], "internal": true }
 		}

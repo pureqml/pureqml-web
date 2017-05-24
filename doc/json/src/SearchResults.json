@@ -8,7 +8,7 @@
 		},
 
 		"Signals": {
-			"clear": { "text": "", "internal": false }
+			"c": { "text": "", "internal": false }
 		},
 
 		"Methods": {

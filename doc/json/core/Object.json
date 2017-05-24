@@ -1,6 +1,6 @@
 {
 	"name": "core.Object",
-	"text": "@private",
+	"text": "discard object",
 
 	"content": {
 		"Methods": {

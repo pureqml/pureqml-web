@@ -9,13 +9,14 @@
 		},
 
 		"Signals": {
-			"reset": { "text": "emitted when model is reset", "internal": false },
-			"rowsInserted": { "text": "emitted when row is inserted", "internal": false },
-			"rowsChanged": { "text": "emitted when row is changed", "internal": false },
-			"rowsRemoved": { "text": "emitted when row is removed", "internal": false }
+			"r": { "text": "emitted when model is reset", "internal": false },
+			"r": { "text": "emitted when row is inserted", "internal": false },
+			"r": { "text": "emitted when row is changed", "internal": false },
+			"r": { "text": "emitted when row is removed", "internal": false }
 		},
 
 		"Methods": {
+			"rebuild": { "text": "@private", "params": [], "internal": true },
 			"setFilter": { "text": "this method set target model rows filter function, 'filter' function must return boolean value, 'true' - when row must be displayed, 'false' otherwise", "params": [], "internal": false },
 			"setCompare": { "text": "this method set a comparison function, target model rows are sorted in ascending order according to a comparison function 'cmp'", "params": [], "internal": false },
 			"_buildIndexMap": { "text": "@private", "params": [], "internal": true },
@@ -27,10 +28,6 @@
 			"setProperty": { "text": "replace a row's property, throws exception if index is out of range or if 'row' isn't Object", "params": [], "internal": false },
 			"remove": { "text": "remove rows from model from 'idx' to 'idx' + 'n' position", "params": [], "internal": false },
 			"addChild": { "text": "this method is alias for 'append' method", "params": [], "internal": false },
-			"_onReset": { "text": "@private", "params": [], "internal": true },
-			"_onRowsInserted": { "text": "@private", "params": [], "internal": true },
-			"_onRowsChanged": { "text": "@private", "params": [], "internal": true },
-			"_onRowsRemoved": { "text": "@private", "params": [], "internal": true },
 			"onCompleted": { "text": "@private", "params": [], "internal": true }
 		}
 	}

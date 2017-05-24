@@ -1,5 +1,10 @@
 {
 	"controls": {
-		"HlsPlayer": "controls/HlsPlayer.json"
+		"HlsPlayer": "controls/HlsPlayer.json",
+		"TheOPlayer": "controls/TheOPlayer.json",
+		"ShakaPlayer": "controls/ShakaPlayer.json",
+		"JWPlayer": "controls/JWPlayer.json",
+		"Bitmovin": "controls/Bitmovin.json",
+		"VideoJS": "controls/VideoJS.json"
 	}
 }

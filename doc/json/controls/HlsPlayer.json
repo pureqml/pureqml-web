@@ -20,8 +20,8 @@
 		},
 
 		"Signals": {
-			"finished": { "text": "", "internal": false },
-			"error": { "text": "", "internal": false }
+			"f": { "text": "", "internal": false },
+			"e": { "text": "", "internal": false }
 		},
 
 		"Methods": {
@@ -38,9 +38,9 @@
 			"volumeUp": { "text": "", "internal": false },
 			"volumeDown": { "text": "", "internal": false },
 			"toggleMute": { "text": "", "internal": false },
-			"onVolumeChanged": { "text": "", "internal": false },
+			"onVolumeChanged": { "text": "", "internal": true },
 			"applyVolume": { "text": "", "internal": false },
-			"onSourceChanged": { "text": "", "internal": false },
+			"onSourceChanged": { "text": "", "internal": true },
 			"onCompleted": { "text": "", "internal": false }
 		}
 	}

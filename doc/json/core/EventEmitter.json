@@ -4,7 +4,7 @@
 
 	"content": {
 		"Methods": {
-			"discard": { "text": "", "internal": false },
+			"discard": { "text": "@private", "params": [], "internal": true },
 			"on": { "text": "", "internal": false },
 			"connectOn": { "text": "", "internal": false },
 			"emit": { "text": "", "internal": false },

@@ -10,11 +10,11 @@
 		},
 
 		"Methods": {
-			"onPositionChanged": { "text": "", "internal": false },
+			"onPositionChanged": { "text": "", "internal": true },
 			"addChild": { "text": "", "internal": false },
 			"_layout": { "text": "", "internal": false },
-			"onSpacingChanged": { "text": "", "internal": false },
-			"onVerticalChanged": { "text": "", "internal": false }
+			"onSpacingChanged": { "text": "", "internal": true },
+			"onVerticalChanged": { "text": "", "internal": true }
 		}
 	}
 }

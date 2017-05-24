@@ -14,7 +14,9 @@
 		},
 
 		"Methods": {
-			"_update": { "text": "@private", "params": [], "internal": true }
+			"onWidthChanged": { "text": "@private", "params": [], "internal": true },
+			"onColorChanged": { "text": "", "internal": true },
+			"onStyleChanged": { "text": "", "internal": true }
 		}
 	}
 }

@@ -17,7 +17,9 @@
 			"landscape": { "text": "landscape oriented screen flag", "internal": false, "type": "bool", "defaultValue": "! this._get('portrait')" },
 			"pageActive": { "text": "page active flag", "internal": false, "type": "bool", "defaultValue": "true" },
 			"screenWidth": { "text": "device screen width value", "internal": false, "type": "int", "defaultValue": "" },
-			"screenHeight": { "text": "device screen height value", "internal": false, "type": "int", "defaultValue": "" }
+			"screenHeight": { "text": "device screen height value", "internal": false, "type": "int", "defaultValue": "" },
+			"contextWidth": { "text": "@private", "internal": true, "type": "int", "defaultValue": "this._get('context')._get('width')" },
+			"contextHeight": { "text": "@private", "internal": true, "type": "int", "defaultValue": "this._get('context')._get('height')" }
 		},
 
 		"Methods": {
