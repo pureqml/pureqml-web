@@ -3,7 +3,7 @@
 ./qmlcore/build -m
 git checkout gh-pages
 git pull
-cp -r .app.web/* .
+cp -r build.web/* .
 git commit -a -m "updated site"
 git checkout master
 git push --all
