@@ -8,7 +8,7 @@ Item {
 		duration: 600;
 		frameCount: 8;
 		running: parent.visible;
-		source: "res/lessons/bug_sprite.png";
+		source: "../res/lessons/bug_sprite.png";
 		repeat: running;
 
 		updatePos: {
