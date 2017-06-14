@@ -1,4 +1,4 @@
-Item {
+ScrollView {
 	anchors.fill: context;
 	property Object state: context.location.state;
 
