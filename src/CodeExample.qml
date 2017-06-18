@@ -52,4 +52,8 @@ Item {
 		log("Code", codeFile)
 		codeSource.url = "https://raw.githubusercontent.com/pureqml/pureqml-web/master/" + codeFile
 	}
+	onRecursiveVisibleChanged: {
+		if (this.sample)
+			this._updateVisibilityForChild(this.sample, value)
+	}
 }
