@@ -14,7 +14,8 @@
 			"onLengthChanged": { "text": "@private", "params": [], "internal": true },
 			"play": { "text": "Play audio buffer", "params": [], "internal": false },
 			"setBuffer": { "text": "Set audio buffer", "params": [], "internal": false },
-			"reset": { "text": "@private", "params": [], "internal": true }
+			"reset": { "text": "@private", "params": [], "internal": true },
+			"constructor": { "text": "@private", "params": [], "internal": true }
 		}
 	}
 }

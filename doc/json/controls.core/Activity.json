@@ -1,28 +1,19 @@
 {
 	"name": "controls.core.Activity",
-	"text": "very usefull for single page applications, aimed to simplify logic between root and children Activities",
+	"text": "",
 
 	"content": {
 		"Properties": {
-			"active": { "text": "is current Activity active or not", "internal": false, "type": "bool", "defaultValue": "" },
-			"hasAnyActiveChild": { "text": "is 'true' when corresponded activity has active child", "internal": false, "type": "bool", "defaultValue": "false" },
-			"currentActivity": { "text": "displays current active activity name", "internal": false, "type": "string", "defaultValue": "" },
-			"name": { "text": "activity name", "internal": false, "type": "string", "defaultValue": "" }
-		},
-
-		"Signals": {
-			"started": { "text": "activity was started signal", "internal": false },
-			"stopped": { "text": "activity was stopped signal", "internal": false }
+			"name": { "text": "", "internal": false, "type": "string", "defaultValue": "" }
 		},
 
 		"Methods": {
-			"isActivity": { "text": "@private", "params": [], "internal": true },
-			"isAnyActiveInContext": { "text": "checking child activities if there is at least one", "params": [], "internal": false },
-			"closeAll": { "text": "close all child activities", "params": [], "internal": false },
-			"closeParentActivities": { "text": "stop all activities from one common parent", "params": [], "internal": false },
-			"start": { "text": "start activity", "params": [], "internal": false },
-			"stop": { "text": "stop activity", "params": [], "internal": false },
-			"onBackPressed": { "text": "@private", "params": [], "internal": true }
+			"init": { "text": "", "internal": false },
+			"pop": { "text": "", "internal": false },
+			"push": { "text": "", "internal": false },
+			"setState": { "text": "", "internal": false },
+			"clear": { "text": "", "internal": false },
+			"onBackPressed": { "text": "", "internal": false }
 		}
 	}
 }

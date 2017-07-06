@@ -13,6 +13,8 @@
 		},
 
 		"Methods": {
+			"constructor": { "text": "@private", "params": [], "internal": true },
+			"_scheduleUpdateSize": { "text": "@private", "params": [], "internal": true },
 			"_setText": { "text": "@private", "params": [], "internal": true },
 			"onChanged": { "text": "@private", "params": [], "internal": true },
 			"on": { "text": "@private", "params": [], "internal": true },

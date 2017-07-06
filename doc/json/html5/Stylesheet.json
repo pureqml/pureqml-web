@@ -4,6 +4,7 @@
 
 	"content": {
 		"Methods": {
+			"constructor": { "text": "", "internal": false },
 			"allocateClass": { "text": "", "internal": false },
 			"mangleSelector": { "text": "", "internal": false },
 			"mangleRule": { "text": "", "internal": false },

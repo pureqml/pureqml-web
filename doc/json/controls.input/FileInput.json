@@ -9,7 +9,8 @@
 		},
 
 		"Methods": {
-			"onFilterChanged": { "text": "", "internal": true }
+			"onFilterChanged": { "text": "", "internal": true },
+			"constructor": { "text": "", "internal": false }
 		}
 	}
 }

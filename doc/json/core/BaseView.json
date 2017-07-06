@@ -11,7 +11,8 @@
 			"scrollingStep": { "text": "scrolling step", "internal": false, "type": "int", "defaultValue": "0" },
 			"animationDuration": { "text": "", "internal": false, "type": "int", "defaultValue": "0" },
 			"contentFollowsCurrentItem": { "text": "auto-scroll content to current focused item", "internal": false, "type": "bool", "defaultValue": "true" },
-			"trace": { "text": "@internal", "internal": true, "type": "bool", "defaultValue": "" },
+			"nativeScrolling": { "text": "allows native scrolling on mobile targets and shows native scrollbars", "internal": false, "type": "bool", "defaultValue": "" },
+			"prerender": { "text": "allocate additional delegates by viewport (prerender * horizontal/vertical view size) px", "internal": false, "type": "real", "defaultValue": "0.5" },
 			"content": { "text": "", "ref": "core/BaseViewContent", "internal": false, "type": "BaseViewContent", "defaultValue": "BaseViewContent" }
 		},
 
@@ -22,6 +23,7 @@
 		"Methods": {
 			"itemAt": { "text": "returns index of item by x,y coordinates", "params": [], "internal": false },
 			"focusCurrent": { "text": "@private focuses current item", "params": [], "internal": true },
+			"constructor": { "text": "@private", "params": [], "internal": true },
 			"onFocusedChildChanged": { "text": "@private", "params": [], "internal": true },
 			"onCurrentIndexChanged": { "text": "@private", "params": [], "internal": true },
 			"_onReset": { "text": "@private", "params": [], "internal": true },
@@ -38,12 +40,13 @@
 			"_removeItems": { "text": "@private", "params": [], "internal": true },
 			"_updateItems": { "text": "@private", "params": [], "internal": true },
 			"_processUpdates": { "text": "@private", "params": [], "internal": true },
-			"onContentXChanged": { "text": "@private", "params": [], "internal": true },
-			"onContentYChanged": { "text": "@private", "params": [], "internal": true },
-			"onRecursiveVisibleChanged": { "text": "@private", "params": [], "internal": true },
-			"onWidthChanged": { "text": "@private", "params": [], "internal": true },
-			"onHeightChanged": { "text": "@private", "params": [], "internal": true },
-			"onCompleted": { "text": "@private", "params": [], "internal": true }
+			"onContentXChanged": { "text": "", "internal": true },
+			"onContentYChanged": { "text": "", "internal": true },
+			"onRecursiveVisibleChanged": { "text": "", "internal": true },
+			"onWidthChanged": { "text": "", "internal": true },
+			"onHeightChanged": { "text": "", "internal": true },
+			"_updateScrollPositions": { "text": "@private silently updates scroll positions, because browser animates scroll", "params": [], "internal": true },
+			"onCompleted": { "text": "", "internal": true }
 		}
 	}
 }

@@ -1,0 +1,19 @@
+{
+	"name": "controls.core.ActivityManager",
+	"text": "",
+
+	"content": {
+		"Properties": {
+			"count": { "text": "", "internal": false, "type": "int", "defaultValue": "" }
+		},
+
+		"Methods": {
+			"constructor": { "text": "", "internal": false },
+			"push": { "text": "", "internal": false },
+			"pop": { "text": "", "internal": false },
+			"setState": { "text": "", "internal": false },
+			"clear": { "text": "", "internal": false },
+			"initTopIntent": { "text": "", "internal": false }
+		}
+	}
+}

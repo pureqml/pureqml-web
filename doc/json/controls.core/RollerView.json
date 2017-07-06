@@ -8,6 +8,8 @@
 		},
 
 		"Methods": {
+			"constructor": { "text": "", "internal": false },
+			"_onReset": { "text": "", "internal": false },
 			"positionViewAtIndex": { "text": "", "internal": false },
 			"_processUpdates": { "text": "", "internal": false },
 			"_layout": { "text": "", "internal": false },

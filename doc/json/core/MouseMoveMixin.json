@@ -14,6 +14,7 @@
 		},
 
 		"Methods": {
+			"constructor": { "text": "@private", "params": [], "internal": true },
 			"_updatePosition": { "text": "@private", "params": [], "internal": true },
 			"_bindMove": { "text": "@private", "params": [], "internal": true },
 			"onEnabledChanged": { "text": "", "internal": true }

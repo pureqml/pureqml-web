@@ -19,6 +19,7 @@
 		},
 
 		"Methods": {
+			"constructor": { "text": "@private", "params": [], "internal": true },
 			"_update": { "text": "@private", "params": [], "internal": true }
 		}
 	}

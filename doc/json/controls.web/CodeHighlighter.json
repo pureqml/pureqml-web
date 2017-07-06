@@ -17,6 +17,7 @@
 			"onLanguageChanged": { "text": "@private", "params": [], "internal": true },
 			"getTag": { "text": "@private returns tag for corresponding element", "params": [], "internal": true },
 			"registerStyle": { "text": "@private", "params": [], "internal": true },
+			"constructor": { "text": "@private", "params": [], "internal": true },
 			"_updateSize": { "text": "@private", "params": [], "internal": true }
 		}
 	}

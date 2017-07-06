@@ -17,7 +17,9 @@
 			"indexAt": { "text": "@private", "params": [], "internal": true },
 			"positionViewAtIndex": { "text": "@private", "params": [], "internal": true },
 			"_layout": { "text": "@private", "params": [], "internal": true },
-			"onFlowChanged": { "text": "@private", "params": [], "internal": true }
+			"_updateOverflow": { "text": "@private", "params": [], "internal": true },
+			"onFlowChanged": { "text": "@private", "params": [], "internal": true },
+			"onCompleted": { "text": "", "internal": true }
 		}
 	}
 }

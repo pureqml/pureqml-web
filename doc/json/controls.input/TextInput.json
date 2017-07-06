@@ -1,16 +1,17 @@
 {
 	"name": "controls.input.TextInput",
-	"text": "",
+	"text": "HTML text input item",
 
 	"content": {
 		"Properties": {
-			"text": { "text": "", "internal": false, "type": "string", "defaultValue": "" },
-			"passwordMode": { "text": "", "internal": false, "type": "bool", "defaultValue": "false" }
+			"text": { "text": "input text string property", "internal": false, "type": "string", "defaultValue": "" },
+			"passwordMode": { "text": "show password chars instead of input text flag property", "internal": false, "type": "bool", "defaultValue": "false" }
 		},
 
 		"Methods": {
 			"onTextChanged": { "text": "", "internal": true },
-			"onActiveFocusChanged": { "text": "", "internal": true }
+			"onActiveFocusChanged": { "text": "", "internal": true },
+			"constructor": { "text": "", "internal": false }
 		}
 	}
 }

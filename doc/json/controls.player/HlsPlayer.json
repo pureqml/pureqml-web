@@ -1,0 +1,48 @@
+{
+	"name": "controls.player.HlsPlayer",
+	"text": "",
+
+	"content": {
+		"Properties": {
+			"source": { "text": "", "internal": false, "type": "string", "defaultValue": "" },
+			"backgroundColor": { "text": "", "internal": false, "type": "Color", "defaultValue": "#000" },
+			"volume": { "text": "", "internal": false, "type": "float", "defaultValue": "1.0" },
+			"loop": { "text": "", "internal": false, "type": "bool", "defaultValue": "false" },
+			"ready": { "text": "", "internal": false, "type": "bool", "defaultValue": "false" },
+			"muted": { "text": "", "internal": false, "type": "bool", "defaultValue": "false" },
+			"paused": { "text": "", "internal": false, "type": "bool", "defaultValue": "false" },
+			"autoPlay": { "text": "", "internal": false, "type": "bool", "defaultValue": "false" },
+			"waiting": { "text": "", "internal": false, "type": "bool", "defaultValue": "false" },
+			"seeking": { "text": "", "internal": false, "type": "bool", "defaultValue": "false" },
+			"duration": { "text": "", "internal": false, "type": "int", "defaultValue": "" },
+			"progress": { "text": "", "internal": false, "type": "int", "defaultValue": "" },
+			"buffered": { "text": "", "internal": false, "type": "int", "defaultValue": "" }
+		},
+
+		"Signals": {
+			"finished": { "text": "", "internal": false },
+			"error": { "text": "", "internal": false }
+		},
+
+		"Methods": {
+			"getTag": { "text": "", "internal": false },
+			"constructor": { "text": "", "internal": false },
+			"initHls": { "text": "", "internal": false },
+			"deinit": { "text": "", "internal": false },
+			"errorHandling": { "text": "", "internal": false },
+			"manifestParsedHandler": { "text": "", "internal": false },
+			"play": { "text": "", "internal": false },
+			"stop": { "text": "", "internal": false },
+			"pause": { "text": "", "internal": false },
+			"seek": { "text": "", "internal": false },
+			"seekTo": { "text": "", "internal": false },
+			"volumeUp": { "text": "", "internal": false },
+			"volumeDown": { "text": "", "internal": false },
+			"toggleMute": { "text": "", "internal": false },
+			"onVolumeChanged": { "text": "", "internal": true },
+			"applyVolume": { "text": "", "internal": false },
+			"onSourceChanged": { "text": "", "internal": true },
+			"onCompleted": { "text": "", "internal": true }
+		}
+	}
+}

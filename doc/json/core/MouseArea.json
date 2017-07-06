@@ -51,7 +51,8 @@
 			"onContainsMouseChanged": { "text": "@private", "params": [], "internal": true },
 			"updatePosition": { "text": "@private", "params": [], "internal": true },
 			"onTouchStart": { "text": "@private", "params": [], "internal": true },
-			"onTouchMove": { "text": "@private", "params": [], "internal": true }
+			"onTouchMove": { "text": "@private", "params": [], "internal": true },
+			"constructor": { "text": "@private", "params": [], "internal": true }
 		}
 	}
 }

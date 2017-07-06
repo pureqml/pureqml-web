@@ -8,7 +8,9 @@
 		},
 
 		"Methods": {
-			"onActiveChanged": { "text": "", "internal": true }
+			"updateStyle": { "text": "", "internal": false },
+			"onActiveChanged": { "text": "", "internal": true },
+			"onCompleted": { "text": "", "internal": true }
 		}
 	}
 }

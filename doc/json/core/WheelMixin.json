@@ -12,6 +12,7 @@
 		},
 
 		"Methods": {
+			"constructor": { "text": "@private", "params": [], "internal": true },
 			"_bindWheel": { "text": "@private", "params": [], "internal": true },
 			"onEnabledChanged": { "text": "@private", "params": [], "internal": true }
 		}

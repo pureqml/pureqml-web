@@ -11,7 +11,9 @@
 			"indexAt": { "text": "@private", "params": [], "internal": true },
 			"_layout": { "text": "@private", "params": [], "internal": true },
 			"_createDelegate": { "text": "@private creates delegate in given item slot", "params": [], "internal": true },
-			"onOrientationChanged": { "text": "@private", "params": [], "internal": true }
+			"_updateOverflow": { "text": "@private", "params": [], "internal": true },
+			"onOrientationChanged": { "text": "@private", "params": [], "internal": true },
+			"onCompleted": { "text": "", "internal": true }
 		}
 	}
 }

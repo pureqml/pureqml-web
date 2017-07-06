@@ -1,5 +1,6 @@
 {
 	"web": {
+		"Device": "web/Device.json",
 		"VideoPlayer": "web/VideoPlayer.json"
 	}
 }

@@ -9,6 +9,7 @@
 			"bold": { "text": "applies bold style", "internal": false, "type": "bool", "defaultValue": "" },
 			"underline": { "text": "applies underline style", "internal": false, "type": "bool", "defaultValue": "" },
 			"strike": { "text": "line throw text flag", "internal": false, "type": "bool", "defaultValue": "" },
+			"letterSpacing": { "text": "spacing between letters", "internal": false, "type": "real", "defaultValue": "" },
 			"pixelSize": { "text": "font size in pixels", "internal": false, "type": "int", "defaultValue": "" },
 			"pointSize": { "text": "font size in points", "internal": false, "type": "int", "defaultValue": "" },
 			"lineHeight": { "text": "font line height in pixels", "internal": false, "type": "int", "defaultValue": "" },
@@ -24,7 +25,8 @@
 			"onUnderlineChanged": { "text": "", "internal": true },
 			"onStrikeChanged": { "text": "", "internal": true },
 			"onLineHeightChanged": { "text": "", "internal": true },
-			"onWeightChanged": { "text": "", "internal": true }
+			"onWeightChanged": { "text": "", "internal": true },
+			"onLetterSpacingChanged": { "text": "", "internal": true }
 		}
 	}
 }

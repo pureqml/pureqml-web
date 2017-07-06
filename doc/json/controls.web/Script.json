@@ -1,13 +1,15 @@
 {
 	"name": "controls.web.Script",
-	"text": "",
+	"text": "@private",
 
 	"content": {
 		"Properties": {
-			"source": { "text": "@private", "internal": true, "type": "string", "defaultValue": "" }
+			"source": { "text": "source to load script from", "internal": false, "type": "string", "defaultValue": "" }
 		},
 
 		"Methods": {
+			"constructor": { "text": "", "internal": false },
+			"_delayedLoad": { "text": "@private", "params": [], "internal": true },
 			"load": { "text": "", "internal": false },
 			"onSourceChanged": { "text": "", "internal": true },
 			"onCompleted": { "text": "", "internal": true },

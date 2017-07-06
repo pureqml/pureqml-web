@@ -1,11 +1,13 @@
 {
 	"controls.mixins": {
+		"SwipeMixin": "controls.mixins/SwipeMixin.json",
 		"ImageMixin": "controls.mixins/ImageMixin.json",
 		"OverflowMixin": "controls.mixins/OverflowMixin.json",
 		"StyleMixin": "controls.mixins/StyleMixin.json",
 		"CssMixin": "controls.mixins/CssMixin.json",
 		"TextMixin": "controls.mixins/TextMixin.json",
 		"DragMixin": "controls.mixins/DragMixin.json",
+		"FocusOnHoverMixin": "controls.mixins/FocusOnHoverMixin.json",
 		"PositionMixin": "controls.mixins/PositionMixin.json"
 	}
 }

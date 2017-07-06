@@ -1,0 +1,15 @@
+{
+	"name": "web.Device",
+	"text": "",
+
+	"content": {
+		"Properties": {
+			"macAccessable": { "text": "", "internal": false, "type": "bool", "defaultValue": "false" }
+		},
+
+		"Methods": {
+			"getDeviceId": { "text": "", "internal": false },
+			"getMacAddress": { "text": "", "internal": false }
+		}
+	}
+}

@@ -4,6 +4,7 @@
 
 	"content": {
 		"Methods": {
+			"constructor": { "text": "", "internal": false },
 			"clearAll": { "text": "", "internal": false },
 			"getTag": { "text": "", "internal": false },
 			"registerStyle": { "text": "", "internal": false },

@@ -14,7 +14,8 @@
 			"onMinChanged": { "text": "", "internal": true },
 			"onMaxChanged": { "text": "", "internal": true },
 			"onStepChanged": { "text": "", "internal": true },
-			"onValueChanged": { "text": "", "internal": true }
+			"onValueChanged": { "text": "", "internal": true },
+			"constructor": { "text": "", "internal": false }
 		}
 	}
 }

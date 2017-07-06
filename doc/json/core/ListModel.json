@@ -15,6 +15,7 @@
 		},
 
 		"Methods": {
+			"constructor": { "text": "@private", "params": [], "internal": true },
 			"assign": { "text": "setup models row with raw array", "params": [{ "name": "rows", "type": "Object", "text": "raw rows array object" }], "internal": false },
 			"clear": { "text": "clear whole model data", "params": [], "internal": false },
 			"append": { "text": "add row to the model", "params": [{ "name": "row", "type": "Object", "text": "inserted row object" }], "internal": false },

@@ -10,6 +10,7 @@
 		"TopMenu": "controls.web/TopMenu.json",
 		"MobileMenuButton": "controls.web/MobileMenuButton.json",
 		"Ho": "controls.web/Ho.json",
+		"IFrame": "controls.web/IFrame.json",
 		"GifSpinner": "controls.web/GifSpinner.json",
 		"LanguageSelector": "controls.web/LanguageSelector.json",
 		"Box": "controls.web/Box.json",

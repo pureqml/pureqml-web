@@ -10,6 +10,7 @@
 		},
 
 		"Methods": {
+			"constructor": { "text": "@private", "params": [], "internal": true },
 			"onTextChanged": { "text": "@private", "params": [], "internal": true },
 			"onColorChanged": { "text": "@private", "params": [], "internal": true },
 			"getClass": { "text": "@private", "params": [], "internal": true },

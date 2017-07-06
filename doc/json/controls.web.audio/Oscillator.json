@@ -18,6 +18,7 @@
 			"playPause": { "text": "", "internal": false },
 			"playWithTimeout": { "text": "play generated sound 'ms' milliseconds", "params": [{ "name": "ms", "type": "int", "text": "time interval in milliseconds" }], "internal": false },
 			"onPlayingChanged": { "text": "@private", "params": [], "internal": true },
+			"constructor": { "text": "@private", "params": [], "internal": true },
 			"reset": { "text": "@private", "params": [], "internal": true },
 			"onCompleted": { "text": "@private", "params": [], "internal": true }
 		}

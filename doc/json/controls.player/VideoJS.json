@@ -1,0 +1,45 @@
+{
+	"name": "controls.player.VideoJS",
+	"text": "Video palyer based on JWplayer",
+
+	"content": {
+		"Properties": {
+			"source": { "text": "video source URL", "internal": false, "type": "string", "defaultValue": "" },
+			"backgroundColor": { "text": "default background color", "internal": false, "type": "Color", "defaultValue": "#000" },
+			"volume": { "text": "video volume value [0:1]", "internal": false, "type": "float", "defaultValue": "1.0" },
+			"loop": { "text": "video loop flag", "internal": false, "type": "bool", "defaultValue": "" },
+			"ready": { "text": "read only property becomes 'true' when video is ready to play, 'false' otherwise", "internal": false, "type": "bool", "defaultValue": "" },
+			"muted": { "text": "volume mute flag", "internal": false, "type": "bool", "defaultValue": "" },
+			"paused": { "text": "video paused flag", "internal": false, "type": "bool", "defaultValue": "" },
+			"waiting": { "text": "wating flag while video is seeking and not ready to continue playing", "internal": false, "type": "bool", "defaultValue": "" },
+			"seeking": { "text": "seeking flag", "internal": false, "type": "bool", "defaultValue": "" },
+			"autoPlay": { "text": "play video immediately after source changed", "internal": false, "type": "bool", "defaultValue": "" },
+			"controls": { "text": "display VideoJS controls", "internal": false, "type": "bool", "defaultValue": "" },
+			"duration": { "text": "content duration in seconds (valid only for not live videos)", "internal": false, "type": "int", "defaultValue": "" },
+			"progress": { "text": "current playback progress in seconds", "internal": false, "type": "int", "defaultValue": "" },
+			"buffered": { "text": "buffered contetnt in seconds", "internal": false, "type": "int", "defaultValue": "" },
+			"logsEnabled": { "text": "", "internal": false, "type": "bool", "defaultValue": "this._get('recursiveVisible')" }
+		},
+
+		"Signals": {
+			"error": { "text": "error occured signal", "internal": false },
+			"finished": { "text": "video finished signal", "internal": false }
+		},
+
+		"Methods": {
+			"getTag": { "text": "@private", "params": [], "internal": true },
+			"constructor": { "text": "@private", "params": [], "internal": true },
+			"onSourceChanged": { "text": "", "internal": true },
+			"play": { "text": "play video", "params": [], "internal": false },
+			"pause": { "text": "pause video", "params": [], "internal": false },
+			"stop": { "text": "stop video", "params": [], "internal": false },
+			"seek": { "text": "seek video on 'value' seconds respectivly current playback progress", "params": [{ "name": "value", "type": "int", "text": "seek time in seconds" }], "internal": false },
+			"seekTo": { "text": "set video progres to fixed second", "params": [{ "name": "value", "type": "int", "text": "progress time in seconds" }], "internal": false },
+			"toggleAttr": { "text": "@private", "params": [], "internal": true },
+			"onAutoPlay": { "text": "", "internal": false },
+			"onControlsChanged": { "text": "", "internal": true },
+			"onWidthChanged": { "text": "", "internal": true },
+			"onHeightChanged": { "text": "", "internal": true }
+		}
+	}
+}

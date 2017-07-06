@@ -6,6 +6,7 @@
 		"Methods": {
 			"focusNextChild": { "text": "move focus to the next child", "params": [], "internal": false },
 			"focusPrevChild": { "text": "move focus to the previous child", "params": [], "internal": false },
+			"onCurrentIndexChanged": { "text": "", "internal": true },
 			"onCompleted": { "text": "@private", "params": [], "internal": true }
 		}
 	}

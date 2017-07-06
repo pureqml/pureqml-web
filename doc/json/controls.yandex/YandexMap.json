@@ -11,6 +11,7 @@
 
 		"Methods": {
 			"onCenterLongitudeChanged": { "text": "", "internal": true },
+			"constructor": { "text": "", "internal": false },
 			"_updateCenter": { "text": "", "internal": false },
 			"getUserLocation": { "text": "", "internal": false }
 		}

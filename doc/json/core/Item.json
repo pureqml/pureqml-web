@@ -12,7 +12,7 @@
 			"clip": { "text": "clip all children outside rectangular area defined by x, y, width, height", "internal": false, "type": "bool", "defaultValue": "" },
 			"radius": { "text": "round corner radius", "internal": false, "type": "real", "defaultValue": "" },
 			"focus": { "text": "this item can be focused", "internal": false, "type": "bool", "defaultValue": "" },
-			"focused": { "text": "this item is focused among its siblings", "internal": false, "type": "bool", "defaultValue": "this._get('focusedChild') === this" },
+			"focused": { "text": "this item is focused among its siblings", "internal": false, "type": "bool", "defaultValue": "" },
 			"activeFocus": { "text": "this item can receive events and really focused at this moment", "internal": false, "type": "bool", "defaultValue": "" },
 			"focusedChild": { "text": "current focused item (this item only)", "internal": false, "type": "Item", "defaultValue": "" },
 			"visible": { "text": "this item and its children are visible", "internal": false, "type": "bool", "defaultValue": "true" },
@@ -37,6 +37,7 @@
 		},
 
 		"Methods": {
+			"constructor": { "text": "@private", "params": [], "internal": true },
 			"discard": { "text": "@private", "params": [], "internal": true },
 			"getTag": { "text": "returns tag for corresponding element", "params": [], "internal": false },
 			"registerStyle": { "text": "@private", "params": [], "internal": true },
@@ -49,9 +50,9 @@
 			"_mapCSSAttribute": { "text": "@private returns css rule by property name", "params": [], "internal": true },
 			"_updateVisibility": { "text": "@private", "params": [], "internal": true },
 			"_updateVisibilityForChild": { "text": "", "internal": false },
-			"onVisibleInViewChanged": { "text": "", "internal": true },
 			"onRecursiveVisibleChanged": { "text": "", "internal": true },
 			"onVisibleChanged": { "text": "", "internal": true },
+			"onVisibleInViewChanged": { "text": "", "internal": true },
 			"onWidthChanged": { "text": "", "internal": true },
 			"onHeightChanged": { "text": "", "internal": true },
 			"onXChanged": { "text": "", "internal": true },

@@ -12,10 +12,12 @@
 		},
 
 		"Methods": {
+			"constructor": { "text": "", "internal": false },
 			"disable": { "text": "disable animation.", "params": [], "internal": false },
 			"enable": { "text": "enable animation.", "params": [], "internal": false },
 			"enabled": { "text": "returns true if animation is enabled", "params": [], "internal": false },
 			"onDelayChanged": { "text": "@private", "params": [], "internal": true },
+			"active": { "text": "", "internal": false },
 			"_updateAnimation": { "text": "", "internal": false },
 			"interpolate": { "text": "@private", "params": [], "internal": true },
 			"complete": { "text": "@private", "params": [], "internal": true }

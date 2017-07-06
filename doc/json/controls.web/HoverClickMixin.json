@@ -13,6 +13,7 @@
 		},
 
 		"Methods": {
+			"constructor": { "text": "", "internal": false },
 			"onCursorChanged": { "text": "", "internal": true },
 			"_bindClick": { "text": "", "internal": false },
 			"_bindHover": { "text": "", "internal": false },

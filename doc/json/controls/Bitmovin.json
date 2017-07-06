@@ -26,6 +26,7 @@
 		},
 
 		"Methods": {
+			"constructor": { "text": "@private", "params": [], "internal": true },
 			"onSourceChanged": { "text": "@private", "params": [], "internal": true },
 			"play": { "text": "", "internal": false },
 			"loadPlaylist": { "text": "", "internal": false },

@@ -4,6 +4,7 @@
 
 	"content": {
 		"Methods": {
+			"constructor": { "text": "", "internal": false },
 			"createElement": { "text": "", "internal": false }
 		}
 	}

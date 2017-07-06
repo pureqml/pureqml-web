@@ -10,10 +10,12 @@
 			"system": { "text": "system info object", "ref": "core/System", "internal": false, "type": "System", "defaultValue": "System" },
 			"location": { "text": "web-page location object", "ref": "core/Location", "internal": false, "type": "Location", "defaultValue": "Location" },
 			"stylesheet": { "text": "@private", "ref": "core/Stylesheet", "internal": true, "type": "Stylesheet", "defaultValue": "Stylesheet" },
-			"orientation": { "text": "screen orientation object", "ref": "core/Orientation", "internal": false, "type": "Orientation", "defaultValue": "Orientation" }
+			"orientation": { "text": "screen orientation object", "ref": "core/Orientation", "internal": false, "type": "Orientation", "defaultValue": "Orientation" },
+			"buildIdentifier": { "text": "@private", "internal": true, "type": "string", "defaultValue": "Powered by PureQML No-Partnership Edition Engine" }
 		},
 
 		"Methods": {
+			"constructor": { "text": "@private", "params": [], "internal": true },
 			"getClass": { "text": "@private", "params": [], "internal": true },
 			"registerStyle": { "text": "@private", "params": [], "internal": true },
 			"createElement": { "text": "@private", "params": [], "internal": true },
@@ -24,6 +26,7 @@
 			"start": { "text": "@private", "params": [], "internal": true },
 			"_processActions": { "text": "@private", "params": [], "internal": true },
 			"scheduleAction": { "text": "@private", "params": [], "internal": true },
+			"delayedAction": { "text": "@private", "params": [], "internal": true },
 			"qsTr": { "text": "Returns input text translation", "params": [{ "name": "text", "type": "string", "text": "text that must be translated" }], "internal": false },
 			"run": { "text": "@private", "params": [], "internal": true },
 			"_run": { "text": "@private", "params": [], "internal": true }

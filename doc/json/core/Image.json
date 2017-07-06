@@ -12,6 +12,8 @@
 		},
 
 		"Methods": {
+			"constructor": { "text": "@private", "params": [], "internal": true },
+			"_scheduleLoad": { "text": "@private", "params": [], "internal": true },
 			"_onError": { "text": "@private", "params": [], "internal": true },
 			"_load": { "text": "@private", "params": [], "internal": true },
 			"load": { "text": "@private", "params": [], "internal": true },

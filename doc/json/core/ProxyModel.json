@@ -16,7 +16,8 @@
 		},
 
 		"Methods": {
-			"rebuild": { "text": "@private", "params": [], "internal": true },
+			"constructor": { "text": "@private", "params": [], "internal": true },
+			"rebuild": { "text": "", "internal": false },
 			"setFilter": { "text": "this method set target model rows filter function, 'filter' function must return boolean value, 'true' - when row must be displayed, 'false' otherwise", "params": [], "internal": false },
 			"setCompare": { "text": "this method set a comparison function, target model rows are sorted in ascending order according to a comparison function 'cmp'", "params": [], "internal": false },
 			"_buildIndexMap": { "text": "@private", "params": [], "internal": true },

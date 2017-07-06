@@ -5,6 +5,7 @@
 	"content": {
 		"Properties": {
 			"count": { "text": "number of children elements", "internal": false, "type": "int", "defaultValue": "" },
+			"trace": { "text": "output debug info in logs: layouts, item positioning", "internal": false, "type": "bool", "defaultValue": "" },
 			"spacing": { "text": "spacing between adjanced items, pixels", "internal": false, "type": "int", "defaultValue": "" },
 			"currentIndex": { "text": "index of current focused item", "internal": false, "type": "int", "defaultValue": "" },
 			"contentWidth": { "text": "content width", "internal": false, "type": "int", "defaultValue": "" },
@@ -14,6 +15,9 @@
 		},
 
 		"Methods": {
+			"constructor": { "text": "@private", "params": [], "internal": true },
+			"_scheduleLayout": { "text": "@private", "params": [], "internal": true },
+			"_doLayout": { "text": "@private", "params": [], "internal": true },
 			"_processUpdates": { "text": "@private", "params": [], "internal": true },
 			"onSpacingChanged": { "text": "", "internal": true }
 		}
