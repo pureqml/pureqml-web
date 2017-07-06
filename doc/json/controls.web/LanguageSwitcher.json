@@ -10,7 +10,7 @@
 		},
 
 		"Signals": {
-			"l": { "text": "", "internal": false }
+			"languageChanged": { "text": "", "internal": false }
 		},
 
 		"Methods": {
@@ -18,7 +18,7 @@
 			"onCountChanged": { "text": "", "internal": true },
 			"onClicked": { "text": "", "internal": false },
 			"onCurrentIndexChanged": { "text": "", "internal": true },
-			"onCompleted": { "text": "", "internal": false }
+			"onCompleted": { "text": "", "internal": true }
 		}
 	}
 }

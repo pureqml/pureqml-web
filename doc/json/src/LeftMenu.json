@@ -9,11 +9,11 @@
 		},
 
 		"Signals": {
-			"o": { "text": "", "internal": false }
+			"optionChoosed": { "text": "", "internal": false }
 		},
 
 		"Methods": {
-			"onCompleted": { "text": "", "internal": false },
+			"onCompleted": { "text": "", "internal": true },
 			"fillModel": { "text": "", "internal": false }
 		}
 	}

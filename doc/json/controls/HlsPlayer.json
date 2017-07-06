@@ -20,8 +20,8 @@
 		},
 
 		"Signals": {
-			"f": { "text": "", "internal": false },
-			"e": { "text": "", "internal": false }
+			"finished": { "text": "", "internal": false },
+			"error": { "text": "", "internal": false }
 		},
 
 		"Methods": {
@@ -41,7 +41,7 @@
 			"onVolumeChanged": { "text": "", "internal": true },
 			"applyVolume": { "text": "", "internal": false },
 			"onSourceChanged": { "text": "", "internal": true },
-			"onCompleted": { "text": "", "internal": false }
+			"onCompleted": { "text": "", "internal": true }
 		}
 	}
 }

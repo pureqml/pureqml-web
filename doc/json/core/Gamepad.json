@@ -15,8 +15,8 @@
 		},
 
 		"Signals": {
-			"a": { "text": "emitted when one of the axes is changed", "internal": false },
-			"b": { "text": "emitted when any button is pressed", "internal": false }
+			"axes": { "text": "emitted when one of the axes is changed", "internal": false },
+			"button": { "text": "emitted when any button is pressed", "internal": false }
 		},
 
 		"Methods": {

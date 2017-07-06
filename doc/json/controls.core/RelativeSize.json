@@ -14,7 +14,7 @@
 		"Methods": {
 			"onGlobalWidthChanged": { "text": "", "internal": true },
 			"_calculate": { "text": "", "internal": false },
-			"onCompleted": { "text": "", "internal": false }
+			"onCompleted": { "text": "", "internal": true }
 		}
 	}
 }

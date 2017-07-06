@@ -9,7 +9,7 @@
 		},
 
 		"Signals": {
-			"l": { "text": "when requested component it loaded event signal", "internal": false }
+			"loaded": { "text": "when requested component it loaded event signal", "internal": false }
 		},
 
 		"Methods": {
@@ -17,6 +17,7 @@
 			"discard": { "text": "@private", "params": [], "internal": true },
 			"onSourceChanged": { "text": "@internal", "params": [], "internal": true },
 			"_load": { "text": "@internal", "params": [], "internal": true },
+			"onRecursiveVisibleChanged": { "text": "", "internal": true },
 			"onCompleted": { "text": "@internal", "params": [], "internal": true }
 		}
 	}

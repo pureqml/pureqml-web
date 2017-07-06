@@ -4,11 +4,11 @@
 
 	"content": {
 		"Signals": {
-			"f": { "text": "", "internal": false }
+			"fillMenu": { "text": "", "internal": false }
 		},
 
 		"Methods": {
-			"onCompleted": { "text": "", "internal": false }
+			"onCompleted": { "text": "", "internal": true }
 		}
 	}
 }

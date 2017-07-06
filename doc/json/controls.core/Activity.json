@@ -11,8 +11,8 @@
 		},
 
 		"Signals": {
-			"s": { "text": "activity was started signal", "internal": false },
-			"s": { "text": "activity was stopped signal", "internal": false }
+			"started": { "text": "activity was started signal", "internal": false },
+			"stopped": { "text": "activity was stopped signal", "internal": false }
 		},
 
 		"Methods": {

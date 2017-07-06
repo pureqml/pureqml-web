@@ -11,7 +11,7 @@
 			"switchCase": { "text": "", "internal": false },
 			"getCaseIndex": { "text": "", "internal": false },
 			"updateLetters": { "text": "", "internal": false },
-			"onCompleted": { "text": "", "internal": false }
+			"onCompleted": { "text": "", "internal": true }
 		}
 	}
 }

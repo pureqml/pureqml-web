@@ -20,8 +20,8 @@
 		},
 
 		"Signals": {
-			"e": { "text": "error occured signal", "internal": false },
-			"f": { "text": "video finished signal", "internal": false }
+			"error": { "text": "error occured signal", "internal": false },
+			"finished": { "text": "video finished signal", "internal": false }
 		},
 
 		"Methods": {

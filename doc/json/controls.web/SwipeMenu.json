@@ -15,7 +15,7 @@
 		"Methods": {
 			"show": { "text": "", "internal": false },
 			"hide": { "text": "", "internal": false },
-			"onCompleted": { "text": "", "internal": false }
+			"onCompleted": { "text": "", "internal": true }
 		}
 	}
 }

@@ -14,7 +14,7 @@
 		},
 
 		"Signals": {
-			"c": { "text": "button clicked signal", "internal": false }
+			"clicked": { "text": "button clicked signal", "internal": false }
 		},
 
 		"Methods": {

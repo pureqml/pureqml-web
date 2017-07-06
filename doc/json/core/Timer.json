@@ -11,7 +11,7 @@
 		},
 
 		"Signals": {
-			"t": { "text": "this signal triggered when timer fires", "internal": false }
+			"triggered": { "text": "this signal triggered when timer fires", "internal": false }
 		},
 
 		"Methods": {

@@ -10,11 +10,11 @@
 		},
 
 		"Alias Properties": {
-			"h": { "text": "", "internal": false },
-			"b": { "text": "", "internal": false },
-			"t": { "text": "", "internal": false },
-			"f": { "text": "", "internal": false },
-			"c": { "text": "", "internal": false }
+			"horizontalAlignment": { "text": "", "internal": false },
+			"backgroundColor": { "text": "", "internal": false },
+			"text": { "text": "", "internal": false },
+			"font": { "text": "", "internal": false },
+			"color": { "text": "", "internal": false }
 		},
 
 		"Methods": {

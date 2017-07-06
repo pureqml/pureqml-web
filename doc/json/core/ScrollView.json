@@ -1,0 +1,12 @@
+{
+	"name": "core.ScrollView",
+	"text": "@private",
+
+	"content": {
+		"Methods": {
+			"_setStyle": { "text": "@private", "params": [], "internal": true },
+			"onHorizontalScrollBarPolicyChanged": { "text": "", "internal": true },
+			"onVerticalScrollBarPolicyChanged": { "text": "", "internal": true }
+		}
+	}
+}

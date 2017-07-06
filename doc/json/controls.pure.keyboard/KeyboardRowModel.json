@@ -10,7 +10,7 @@
 		},
 
 		"Methods": {
-			"onCompleted": { "text": "", "internal": false }
+			"onCompleted": { "text": "", "internal": true }
 		}
 	}
 }

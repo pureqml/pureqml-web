@@ -20,7 +20,7 @@
 		},
 
 		"Signals": {
-			"m": { "text": "@private", "internal": true }
+			"marginsUpdated": { "text": "@private", "internal": true }
 		},
 
 		"Methods": {

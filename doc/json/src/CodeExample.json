@@ -12,7 +12,8 @@
 		},
 
 		"Methods": {
-			"onSampleChanged": { "text": "", "internal": true }
+			"onSampleChanged": { "text": "", "internal": true },
+			"onRecursiveVisibleChanged": { "text": "", "internal": true }
 		}
 	}
 }

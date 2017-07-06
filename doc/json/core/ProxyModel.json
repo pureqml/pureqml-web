@@ -9,10 +9,10 @@
 		},
 
 		"Signals": {
-			"r": { "text": "emitted when model is reset", "internal": false },
-			"r": { "text": "emitted when row is inserted", "internal": false },
-			"r": { "text": "emitted when row is changed", "internal": false },
-			"r": { "text": "emitted when row is removed", "internal": false }
+			"reset": { "text": "emitted when model is reset", "internal": false },
+			"rowsInserted": { "text": "emitted when row is inserted", "internal": false },
+			"rowsChanged": { "text": "emitted when row is changed", "internal": false },
+			"rowsRemoved": { "text": "emitted when row is removed", "internal": false }
 		},
 
 		"Methods": {

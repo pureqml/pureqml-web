@@ -12,8 +12,8 @@
 		},
 
 		"Signals": {
-			"c": { "text": "emitted when any gamepad is connected", "internal": false },
-			"d": { "text": "emitted when gamepad is disconnected", "internal": false }
+			"connected": { "text": "emitted when any gamepad is connected", "internal": false },
+			"disconnected": { "text": "emitted when gamepad is disconnected", "internal": false }
 		},
 
 		"Methods": {

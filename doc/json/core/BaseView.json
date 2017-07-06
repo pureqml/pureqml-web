@@ -16,7 +16,7 @@
 		},
 
 		"Signals": {
-			"l": { "text": "base class for all views, holds content, creates delegates and provides common api", "internal": false }
+			"layoutFinished": { "text": "base class for all views, holds content, creates delegates and provides common api", "internal": false }
 		},
 
 		"Methods": {

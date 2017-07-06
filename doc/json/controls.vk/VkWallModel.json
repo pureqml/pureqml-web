@@ -8,7 +8,7 @@
 		},
 
 		"Signals": {
-			"e": { "text": "this model wich get data from the 'vkontakte' socail network wall", "internal": false }
+			"error": { "text": "this model wich get data from the 'vkontakte' socail network wall", "internal": false }
 		},
 
 		"Methods": {

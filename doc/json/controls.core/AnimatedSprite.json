@@ -13,8 +13,8 @@
 		},
 
 		"Signals": {
-			"f": { "text": "animation was ended signal", "internal": false },
-			"t": { "text": "frame changed signal", "internal": false }
+			"finished": { "text": "animation was ended signal", "internal": false },
+			"triggered": { "text": "frame changed signal", "internal": false }
 		},
 
 		"Methods": {
