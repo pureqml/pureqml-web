@@ -26,8 +26,9 @@ Rectangle {
 
 		ListView {
 			y: leftMenuProto.hidable ? 40 : 10;
-			height: contentHeight;
 			width: 100%;
+			height: 80%;
+			prerender: 10;
 			spacing: 5;
 			model: menuModel;
 			delegate: WebLink {
