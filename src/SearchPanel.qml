@@ -26,14 +26,14 @@ Item {
 		placeholder.text: "Search";
 
 		onTextChanged: {
-			searchTimer.restart() 
+			searchTimer.restart()
 		}
 	}
 
 	Rectangle {
 		anchors.top: searchText.bottom;
 		anchors.bottomMargin: -4;
-		width: searchText.activeFocus ? searchText.width + 30 : 80;
+		width: searchText.activeFocus ? searchText.width + 30 : 100;
 		height: 1;
 		x: 0;
 		color: parent.hover.value || searchText.activeFocus ? "#A0B3A2" :"#AAAAAA";
@@ -63,7 +63,7 @@ Item {
 		var txt = text.toLowerCase()
 		for (var i in data) {
 			var item = data[i]
-			var idx = item.text.toLowerCase().indexOf(txt) 
+			var idx = item.text.toLowerCase().indexOf(txt)
 			if (idx > -1) {
 				var it = item.text
 				var formatted = it.substr(0, idx) + '<b style="color:#43A047">' + it.substr(idx, text.length) + '</b>' + it.substr(idx + text.length)
