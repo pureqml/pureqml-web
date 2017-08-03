@@ -18,7 +18,7 @@ Lesson {
 
 	PageColumn {
 		title: "Model";
-		text: "The simple model with minimal interface is \"ListModel\" use it or inhirits from it.";
+		text: "The simple model with minimal interface is \"ListModel\" use it or inherit from it.";
 
 		CodeHighlighter {
 			width: parent.width - 20;
