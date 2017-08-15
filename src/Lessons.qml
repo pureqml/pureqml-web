@@ -5,6 +5,7 @@ HistoryPage {
 	height: content.height;
 
 	onStateChanged: {
+		log("Lessons State", value)
 		this._state = value
 		this.update()
 	}
@@ -148,6 +149,8 @@ HistoryPage {
 				sprite: "lessons.SpriteLesson"
 			}
 		}
+
+		log("Lessons update", this._state, "ready", this._loaderReady)
 		if (!this._state || !this._loaderReady)
 			return
 

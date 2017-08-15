@@ -3,13 +3,12 @@ ScrollView {
 	property Object state: context.location.state;
 
 	onStateChanged: {
+		log("State", value, "pageName", pages.pageName)
 		if (value) {
-
 			if (value.page && value.page !== "")
 				pages.pageName = value.page;
 			else
 				pages.pageName = 'main';
-
 			window.scrollTo(0, 0)
 		}
 	}
