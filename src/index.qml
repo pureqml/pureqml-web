@@ -58,6 +58,8 @@ ScrollView {
 		Download { }
 		Lessons { }
 		Docs { }
+
+		onCompleted: { this.pageName = ""; log("onCompleted", this.pageName)  }
 	}
 
 	Item {
