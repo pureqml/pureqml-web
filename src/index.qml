@@ -9,6 +9,7 @@ ScrollView {
 				pages.pageName = value.page;
 			else
 				pages.pageName = 'main';
+			log("New pagename", pages.pageName)
 			window.scrollTo(0, 0)
 		}
 	}
@@ -35,9 +36,9 @@ ScrollView {
 
 	PageStack {
 		id: pages;
+		property string pageName;
 		y: 50;
 		width: 100%;
-		property string pageName;
 
 		onPageNameChanged: {
 			var children = this.children
