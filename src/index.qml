@@ -41,12 +41,15 @@ ScrollView {
 
 		onPageNameChanged: {
 			var children = this.children
+			log("onPageNameChanged", value, "children", children)
 			for (var i in children) {
+				log("url", children[i].url, "value", value)
 				if (children[i].url == value) {
 					this.currentIndex = i
 					return
 				}
 			}
+			log("=============")
 		}
 
 		Main { }
