@@ -27,6 +27,7 @@ ScrollView {
 		if (path[3])
 			state.element = path[3]
 
+		log("pushState", state, "pathname", window.location.pathname)
 		this._context.location.pushState(state, window.location.pathname, window.location.pathname)
 	}
 
