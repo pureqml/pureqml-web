@@ -11,6 +11,7 @@ ScrollView {
 				pages.pageName = 'main';
 			log("New pagename", pages.pageName)
 			window.scrollTo(0, 0)
+			pages.updatePage()
 		}
 	}
 
@@ -41,12 +42,14 @@ ScrollView {
 		y: 50;
 		width: 100%;
 
-		onPageNameChanged: {
+		onPageNameChanged: { log("onPageNameChanged", value); this.updatePage() }
+
+		updatePage: {
 			var children = this.children
-			log("onPageNameChanged", value, "children", children)
+			log("updatePage", this.pageName, "children", children)
 			for (var i in children) {
-				log("url", children[i].url, "value", value)
-				if (children[i].url == value) {
+				log("url", children[i].url, "this.pageName", this.pageName)
+				if (children[i].url == this.pageName) {
 					this.currentIndex = i
 					return
 				}
