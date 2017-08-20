@@ -9,9 +9,7 @@ ScrollView {
 				pages.pageName = value.page;
 			else
 				pages.pageName = 'main';
-			log("New pagename", pages.pageName)
 			window.scrollTo(0, 0)
-			pages.updatePage()
 		}
 	}
 
@@ -42,19 +40,14 @@ ScrollView {
 		y: 50;
 		width: 100%;
 
-		onPageNameChanged: { log("onPageNameChanged", value); this.updatePage() }
-
-		updatePage: {
+		onPageNameChanged: {
 			var children = this.children
-			log("updatePage", this.pageName, "children", children)
 			for (var i in children) {
-				log("url", children[i].url, "this.pageName", this.pageName)
-				if (children[i].url == this.pageName) {
+				if (children[i].url == value) {
 					this.currentIndex = i
 					return
 				}
 			}
-			log("=============")
 		}
 
 		Main { }
@@ -63,7 +56,7 @@ ScrollView {
 		Lessons { }
 		Docs { }
 
-		onCompleted: { this.pageName = ""; log("onCompleted", this.pageName)  }
+		onCompleted: { this.pageName = ""; }
 	}
 
 	Item {
