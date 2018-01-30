@@ -1,15 +1,15 @@
 {
 	"lessons": {
-		"EffectsLesson": "lessons/EffectsLesson.json",
 		"ViewAndModelsLesson": "lessons/ViewAndModelsLesson.json",
 		"BasicLesson": "lessons/BasicLesson.json",
 		"GamepadLesson": "lessons/GamepadLesson.json",
+		"EffectsLesson": "lessons/EffectsLesson.json",
 		"MixinLesson": "lessons/MixinLesson.json",
 		"KeyboardLesson": "lessons/KeyboardLesson.json",
 		"AnchorsLesson": "lessons/AnchorsLesson.json",
-		"SignalLesson": "lessons/SignalLesson.json",
-		"InputsLesson": "lessons/InputsLesson.json",
 		"LayoutsLesson": "lessons/LayoutsLesson.json",
+		"InputsLesson": "lessons/InputsLesson.json",
+		"SignalLesson": "lessons/SignalLesson.json",
 		"Lesson": "lessons/Lesson.json",
 		"SpriteLesson": "lessons/SpriteLesson.json",
 		"GlobalsLesson": "lessons/GlobalsLesson.json",

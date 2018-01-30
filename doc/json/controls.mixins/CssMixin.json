@@ -4,9 +4,7 @@
 
 	"content": {
 		"Properties": {
-			"hover": { "text": "mouse over style", "internal": false, "type": "string", "defaultValue": "" },
-			"focus": { "text": "element with focus style", "internal": false, "type": "string", "defaultValue": "" },
-			"generic": { "text": "any custom style", "internal": false, "type": "string", "defaultValue": "" }
+			"rules": { "text": "", "internal": false, "type": "string", "defaultValue": "" }
 		},
 
 		"Methods": {

@@ -1,0 +1,10 @@
+{
+	"name": "controls.web.tables.TableBody",
+	"text": "",
+
+	"content": {
+		"Methods": {
+			"getTag": { "text": "", "internal": false }
+		}
+	}
+}

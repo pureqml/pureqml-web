@@ -7,7 +7,7 @@
 			"frameCount": { "text": "frames in duration value", "internal": false, "type": "int", "defaultValue": "" },
 			"currentFrame": { "text": "displayed frame index", "internal": false, "type": "int", "defaultValue": "" },
 			"duration": { "text": "animation time interval in milliseconds", "internal": false, "type": "int", "defaultValue": "" },
-			"interval": { "text": "read only property, time interval between each frames", "internal": false, "type": "int", "defaultValue": "this._get('duration') / this._get('frameCount')" },
+			"interval": { "text": "read only property, time interval between each frames", "internal": false, "type": "int", "defaultValue": "${duration} / ${frameCount}" },
 			"repeat": { "text": "repeat animation flag", "internal": false, "type": "bool", "defaultValue": "" },
 			"running": { "text": "animation is running flag", "internal": false, "type": "bool", "defaultValue": "" }
 		},

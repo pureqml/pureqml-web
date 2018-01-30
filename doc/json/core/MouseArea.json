@@ -52,6 +52,8 @@
 			"updatePosition": { "text": "@private", "params": [], "internal": true },
 			"onTouchStart": { "text": "@private", "params": [], "internal": true },
 			"onTouchMove": { "text": "@private", "params": [], "internal": true },
+			"onMouseXChanged": { "text": "", "internal": true },
+			"onMouseYChanged": { "text": "", "internal": true },
 			"constructor": { "text": "@private", "params": [], "internal": true }
 		}
 	}

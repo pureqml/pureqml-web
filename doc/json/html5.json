@@ -1,7 +1,5 @@
 {
 	"html5": {
-		"Stylesheet": "html5/Stylesheet.json",
-		"Orientation": "html5/Orientation.json",
-		"Location": "html5/Location.json"
+		"Stylesheet": "html5/Stylesheet.json"
 	}
 }

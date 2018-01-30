@@ -1,13 +1,16 @@
 {
 	"controls.mixins": {
-		"SwipeMixin": "controls.mixins/SwipeMixin.json",
+		"FocusOnHoverMixin": "controls.mixins/FocusOnHoverMixin.json",
 		"ImageMixin": "controls.mixins/ImageMixin.json",
 		"OverflowMixin": "controls.mixins/OverflowMixin.json",
-		"StyleMixin": "controls.mixins/StyleMixin.json",
 		"CssMixin": "controls.mixins/CssMixin.json",
-		"TextMixin": "controls.mixins/TextMixin.json",
+		"UserSelectMixin": "controls.mixins/UserSelectMixin.json",
+		"SwipeMixin": "controls.mixins/SwipeMixin.json",
 		"DragMixin": "controls.mixins/DragMixin.json",
-		"FocusOnHoverMixin": "controls.mixins/FocusOnHoverMixin.json",
-		"PositionMixin": "controls.mixins/PositionMixin.json"
+		"OrientationMixin": "controls.mixins/OrientationMixin.json",
+		"TitleMixin": "controls.mixins/TitleMixin.json",
+		"PositionMixin": "controls.mixins/PositionMixin.json",
+		"TextMixin": "controls.mixins/TextMixin.json",
+		"BaseMixin": "controls.mixins/BaseMixin.json"
 	}
 }

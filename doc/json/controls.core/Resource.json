@@ -8,8 +8,14 @@
 			"data": { "text": "uploaded from URL data", "internal": false, "type": "string", "defaultValue": "" }
 		},
 
+		"Signals": {
+			"error": { "text": "error signal", "internal": false }
+		},
+
 		"Methods": {
-			"onUrlChanged": { "text": "@private", "params": [], "internal": true }
+			"load": { "text": "", "internal": false },
+			"onUrlChanged": { "text": "", "internal": true },
+			"onCompleted": { "text": "", "internal": true }
 		}
 	}
 }

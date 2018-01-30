@@ -4,7 +4,7 @@
 
 	"content": {
 		"Properties": {
-			"hidable": { "text": "", "internal": false, "type": "bool", "defaultValue": "this._get('context')._get('width') < 860" },
+			"hidable": { "text": "", "internal": false, "type": "bool", "defaultValue": "${context.width} < 860" },
 			"open": { "text": "", "internal": false, "type": "bool", "defaultValue": "" }
 		},
 

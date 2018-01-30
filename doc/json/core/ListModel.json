@@ -4,7 +4,8 @@
 
 	"content": {
 		"Properties": {
-			"count": { "text": "model rows count", "internal": false, "type": "int", "defaultValue": "" }
+			"count": { "text": "model rows count", "internal": false, "type": "int", "defaultValue": "" },
+			"data": { "text": "declarative way of assigning data", "internal": false, "type": "array", "defaultValue": "" }
 		},
 
 		"Signals": {
@@ -17,6 +18,7 @@
 		"Methods": {
 			"constructor": { "text": "@private", "params": [], "internal": true },
 			"assign": { "text": "setup models row with raw array", "params": [{ "name": "rows", "type": "Object", "text": "raw rows array object" }], "internal": false },
+			"onDataChanged": { "text": "", "internal": true },
 			"clear": { "text": "clear whole model data", "params": [], "internal": false },
 			"append": { "text": "add row to the model", "params": [{ "name": "row", "type": "Object", "text": "inserted row object" }], "internal": false },
 			"insert": { "text": "insert row to the model at the 'idx' position", "params": [{ "name": "row", "type": "Object", "text": "inserted row object" }, { "name": "idx", "type": "int", "text": "position" }], "internal": false },
@@ -24,7 +26,8 @@
 			"get": { "text": "get row ad 'idx' position", "params": [{ "name": "idx", "type": "int", "text": "row's position to replace" }], "internal": false },
 			"setProperty": { "text": "change row at 'idx' position property named 'name' with new 'value'", "params": [{ "name": "idx", "type": "int", "text": "row's position to replace" }, { "name": "name", "type": "string", "text": "property's name" }, { "name": "value", "type": "Variant", "text": "new value for the property" }], "internal": false },
 			"remove": { "text": "remove 'n' rows from model start from 'idx' index", "params": [{ "name": "idx", "type": "int", "text": "row's position to replace" }, { "name": "n", "type": "int", "text": "rows count to remove" }], "internal": false },
-			"addChild": { "text": "add row to the model (alias for 'append' method)", "params": [{ "name": "row", "type": "Object", "text": "inserted row object" }], "internal": false }
+			"addChild": { "text": "add row to the model (alias for 'append' method)", "params": [{ "name": "row", "type": "Object", "text": "inserted row object" }], "internal": false },
+			"forEach": { "text": "", "internal": false }
 		}
 	}
 }

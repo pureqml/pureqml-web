@@ -10,7 +10,6 @@
 
 		"Methods": {
 			"onTextChanged": { "text": "", "internal": true },
-			"onActiveFocusChanged": { "text": "", "internal": true },
 			"constructor": { "text": "", "internal": false }
 		}
 	}

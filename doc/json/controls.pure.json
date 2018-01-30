@@ -3,7 +3,6 @@
 		"MaterialIcon": "controls.pure/MaterialIcon.json",
 		"TextEdit": "controls.pure/TextEdit.json",
 		"Checkbox": "controls.pure/Checkbox.json",
-		"EllipsisText": "controls.pure/EllipsisText.json",
 		"ProgressBar": "controls.pure/ProgressBar.json"
 	}
 }

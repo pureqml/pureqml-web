@@ -22,6 +22,7 @@
 			"anchors": { "text": "", "ref": "core/lazy", "internal": false, "type": "lazy", "defaultValue": "Anchors" },
 			"effects": { "text": "", "ref": "core/lazy", "internal": false, "type": "lazy", "defaultValue": "Effects" },
 			"transform": { "text": "", "ref": "core/lazy", "internal": false, "type": "lazy", "defaultValue": "Transform" },
+			"cssTranslatePositioning": { "text": "", "internal": false, "type": "bool", "defaultValue": "" },
 			"left": { "text": "", "ref": "core/lazy", "internal": false, "type": "lazy", "defaultValue": "AnchorLine" },
 			"top": { "text": "", "ref": "core/lazy", "internal": false, "type": "lazy", "defaultValue": "AnchorLine" },
 			"right": { "text": "", "ref": "core/lazy", "internal": false, "type": "lazy", "defaultValue": "AnchorLine" },
@@ -29,7 +30,8 @@
 			"horizontalCenter": { "text": "", "ref": "core/lazy", "internal": false, "type": "lazy", "defaultValue": "AnchorLine" },
 			"verticalCenter": { "text": "", "ref": "core/lazy", "internal": false, "type": "lazy", "defaultValue": "AnchorLine" },
 			"viewX": { "text": "x position in view (if any)", "internal": false, "type": "int", "defaultValue": "" },
-			"viewY": { "text": "y position in view (if any)", "internal": false, "type": "int", "defaultValue": "" }
+			"viewY": { "text": "y position in view (if any)", "internal": false, "type": "int", "defaultValue": "" },
+			"keyProcessDelay": { "text": "delay time between key pressed events", "internal": false, "type": "int", "defaultValue": "" }
 		},
 
 		"Signals": {
@@ -37,19 +39,18 @@
 		},
 
 		"Methods": {
-			"constructor": { "text": "@private", "params": [], "internal": true },
+			"constructor": { "text": "", "internal": false },
 			"discard": { "text": "@private", "params": [], "internal": true },
 			"getTag": { "text": "returns tag for corresponding element", "params": [], "internal": false },
+			"getClass": { "text": "returns tag for corresponding element", "params": [], "internal": false },
 			"registerStyle": { "text": "@private", "params": [], "internal": true },
-			"createElement": { "text": "default implementation of element creation routine.", "params": [], "internal": false },
+			"_attachElement": { "text": "", "internal": false },
+			"_createElement": { "text": "default implementation of element creation routine.", "params": [], "internal": false },
 			"toScreen": { "text": "map relative component coordinates to absolute screen ones", "params": [], "internal": false },
-			"_updateAnimation": { "text": "@private tries to set animation on name using css transitions, returns true on success", "params": [], "internal": true },
-			"setAnimation": { "text": "@private sets animation on given property", "params": [], "internal": true },
 			"style": { "text": "@private passes style (or styles { a:, b:, c: ... }) to underlying element", "params": [], "internal": true },
 			"addChild": { "text": "@private adds child, focus it if child accepts focus", "params": [], "internal": true },
-			"_mapCSSAttribute": { "text": "@private returns css rule by property name", "params": [], "internal": true },
 			"_updateVisibility": { "text": "@private", "params": [], "internal": true },
-			"_updateVisibilityForChild": { "text": "", "internal": false },
+			"_updateVisibilityForChild": { "text": "@private", "params": [], "internal": true },
 			"onRecursiveVisibleChanged": { "text": "", "internal": true },
 			"onVisibleChanged": { "text": "", "internal": true },
 			"onVisibleInViewChanged": { "text": "", "internal": true },
@@ -68,11 +69,11 @@
 			"_focusTree": { "text": "@private focus subtree of current focused child", "params": [], "internal": true },
 			"_focusChild": { "text": "@private", "params": [], "internal": true },
 			"focusChild": { "text": "@private", "params": [], "internal": true },
-			"setTransition": { "text": "@private", "params": [], "internal": true },
 			"_updateStyle": { "text": "@private", "params": [], "internal": true },
 			"_enqueueNextChildInFocusChain": { "text": "@private", "params": [], "internal": true },
 			"invokeKeyHandlers": { "text": "@private", "params": [], "internal": true },
 			"_processKey": { "text": "@private", "params": [], "internal": true },
+			"getComponentPath": { "text": "", "internal": false },
 			"setFocus": { "text": "focus this item", "params": [], "internal": false }
 		}
 	}

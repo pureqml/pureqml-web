@@ -3,8 +3,8 @@
 	"text": "",
 
 	"content": {
-		"Properties": {
-			"hoverClickMixin": { "text": "", "ref": "controls.mixins/Mixin", "internal": false, "type": "Mixin", "defaultValue": "HoverClickMixin" }
+		"Methods": {
+			"onValueChanged": { "text": "", "internal": true }
 		}
 	}
 }

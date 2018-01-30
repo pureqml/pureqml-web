@@ -1,17 +1,17 @@
 {
 	"code_samples": {
 		"LayoutGrid": "code_samples/LayoutGrid.json",
-		"ListViewExample": "code_samples/ListViewExample.json",
+		"PropertyHandling": "code_samples/PropertyHandling.json",
 		"AnchorsFill": "code_samples/AnchorsFill.json",
 		"LayoutRow": "code_samples/LayoutRow.json",
 		"SystemExample": "code_samples/SystemExample.json",
 		"AnchorsMarginsFixed": "code_samples/AnchorsMarginsFixed.json",
 		"TextExample": "code_samples/TextExample.json",
 		"KeyLesson": "code_samples/KeyLesson.json",
-		"GamepadHandleLesson": "code_samples/GamepadHandleLesson.json",
+		"SearchInputExample": "code_samples/SearchInputExample.json",
 		"SpriteExample": "code_samples/SpriteExample.json",
 		"RectanglesExample": "code_samples/RectanglesExample.json",
-		"RangeInputExample": "code_samples/RangeInputExample.json",
+		"GamepadHandleLesson": "code_samples/GamepadHandleLesson.json",
 		"DragMixinLesson": "code_samples/DragMixinLesson.json",
 		"TimeInputExample": "code_samples/TimeInputExample.json",
 		"SignalTestItem": "code_samples/SignalTestItem.json",
@@ -19,12 +19,11 @@
 		"ClickMixinExample": "code_samples/ClickMixinExample.json",
 		"DragMixinDirectionLesson": "code_samples/DragMixinDirectionLesson.json",
 		"ProxyLessonExample": "code_samples/ProxyLessonExample.json",
-		"PropertyHandling": "code_samples/PropertyHandling.json",
+		"ListViewExample": "code_samples/ListViewExample.json",
 		"DateInputExample": "code_samples/DateInputExample.json",
 		"KeySelectLesson": "code_samples/KeySelectLesson.json",
 		"GridViewExample": "code_samples/GridViewExample.json",
 		"OverflowMixinExample": "code_samples/OverflowMixinExample.json",
-		"SearchInputExample": "code_samples/SearchInputExample.json",
 		"KeyPressLesson": "code_samples/KeyPressLesson.json",
 		"LayoutColumn": "code_samples/LayoutColumn.json",
 		"ShadowExample": "code_samples/ShadowExample.json",
@@ -39,6 +38,7 @@
 		"ImageExample": "code_samples/ImageExample.json",
 		"SignalHandling": "code_samples/SignalHandling.json",
 		"SignalArgsHandling": "code_samples/SignalArgsHandling.json",
+		"RangeInputExample": "code_samples/RangeInputExample.json",
 		"GamepadCodeLesson": "code_samples/GamepadCodeLesson.json"
 	}
 }

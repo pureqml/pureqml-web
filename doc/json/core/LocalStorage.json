@@ -9,10 +9,11 @@
 		},
 
 		"Methods": {
-			"onNameChanged": { "text": "@internal", "params": [], "internal": true },
-			"onValueChanged": { "text": "@internal", "params": [], "internal": true },
-			"read": { "text": "@private", "params": [], "internal": true },
-			"init": { "text": "@private", "params": [], "internal": true },
+			"constructor": { "text": "", "internal": false },
+			"read": { "text": "read 'name' property from storage and set its value to 'value' property", "params": [], "internal": false },
+			"getItem": { "text": "return stored item by name if it exists", "params": [{ "name": "name", "type": "string", "text": "stored item name" }], "internal": false },
+			"onValueChanged": { "text": "@private", "params": [], "internal": true },
+			"onNameChanged": { "text": "@private", "params": [], "internal": true },
 			"onCompleted": { "text": "@private", "params": [], "internal": true }
 		}
 	}

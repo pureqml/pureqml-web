@@ -15,7 +15,10 @@
 
 		"Methods": {
 			"getTag": { "text": "returns tag for corresponding element", "params": [], "internal": false },
-			"_update": { "text": "@internal", "params": [], "internal": true },
+			"onColorChanged": { "text": "", "internal": true },
+			"onFillChanged": { "text": "", "internal": true },
+			"onWidthChanged": { "text": "", "internal": true },
+			"onX1Changed": { "text": "", "internal": true },
 			"buildPath": { "text": "", "internal": false }
 		}
 	}

@@ -4,10 +4,10 @@
 
 	"content": {
 		"Properties": {
-			"top": { "text": "top padding", "internal": false, "type": "int", "defaultValue": "this._get('all')" },
-			"left": { "text": "left padding", "internal": false, "type": "int", "defaultValue": "this._get('all')" },
-			"right": { "text": "right padding", "internal": false, "type": "int", "defaultValue": "this._get('all')" },
-			"bottom": { "text": "bottom padding", "internal": false, "type": "int", "defaultValue": "this._get('all')" },
+			"top": { "text": "top padding", "internal": false, "type": "int", "defaultValue": "${all}" },
+			"left": { "text": "left padding", "internal": false, "type": "int", "defaultValue": "${all}" },
+			"right": { "text": "right padding", "internal": false, "type": "int", "defaultValue": "${all}" },
+			"bottom": { "text": "bottom padding", "internal": false, "type": "int", "defaultValue": "${all}" },
 			"all": { "text": "a value for all sides", "internal": false, "type": "int", "defaultValue": "" }
 		},
 

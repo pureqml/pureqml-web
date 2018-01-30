@@ -5,7 +5,6 @@
 	"content": {
 		"Methods": {
 			"constructor": { "text": "@private", "params": [], "internal": true },
-			"discard": { "text": "@private", "params": [], "internal": true },
 			"on": { "text": "@private", "params": [], "internal": true },
 			"onListener": { "text": "@private", "params": [], "internal": true },
 			"removeAllListeners": { "text": "@private", "params": [], "internal": true }

@@ -1,0 +1,10 @@
+{
+	"name": "controls.mixins.BaseMixin",
+	"text": "Base object for all mixins",
+
+	"content": {
+		"Methods": {
+			"stopPropagation": { "text": "Base object for all mixins", "params": [], "internal": false }
+		}
+	}
+}

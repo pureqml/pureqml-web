@@ -9,17 +9,17 @@
 			"file": "code_samples.json",
 			"content": {
 				"LayoutGrid": "code_samples/LayoutGrid.json",
-				"ListViewExample": "code_samples/ListViewExample.json",
+				"PropertyHandling": "code_samples/PropertyHandling.json",
 				"AnchorsFill": "code_samples/AnchorsFill.json",
 				"LayoutRow": "code_samples/LayoutRow.json",
 				"SystemExample": "code_samples/SystemExample.json",
 				"AnchorsMarginsFixed": "code_samples/AnchorsMarginsFixed.json",
 				"TextExample": "code_samples/TextExample.json",
 				"KeyLesson": "code_samples/KeyLesson.json",
-				"GamepadHandleLesson": "code_samples/GamepadHandleLesson.json",
+				"SearchInputExample": "code_samples/SearchInputExample.json",
 				"SpriteExample": "code_samples/SpriteExample.json",
 				"RectanglesExample": "code_samples/RectanglesExample.json",
-				"RangeInputExample": "code_samples/RangeInputExample.json",
+				"GamepadHandleLesson": "code_samples/GamepadHandleLesson.json",
 				"DragMixinLesson": "code_samples/DragMixinLesson.json",
 				"TimeInputExample": "code_samples/TimeInputExample.json",
 				"SignalTestItem": "code_samples/SignalTestItem.json",
@@ -27,12 +27,11 @@
 				"ClickMixinExample": "code_samples/ClickMixinExample.json",
 				"DragMixinDirectionLesson": "code_samples/DragMixinDirectionLesson.json",
 				"ProxyLessonExample": "code_samples/ProxyLessonExample.json",
-				"PropertyHandling": "code_samples/PropertyHandling.json",
+				"ListViewExample": "code_samples/ListViewExample.json",
 				"DateInputExample": "code_samples/DateInputExample.json",
 				"KeySelectLesson": "code_samples/KeySelectLesson.json",
 				"GridViewExample": "code_samples/GridViewExample.json",
 				"OverflowMixinExample": "code_samples/OverflowMixinExample.json",
-				"SearchInputExample": "code_samples/SearchInputExample.json",
 				"KeyPressLesson": "code_samples/KeyPressLesson.json",
 				"LayoutColumn": "code_samples/LayoutColumn.json",
 				"ShadowExample": "code_samples/ShadowExample.json",
@@ -47,13 +46,8 @@
 				"ImageExample": "code_samples/ImageExample.json",
 				"SignalHandling": "code_samples/SignalHandling.json",
 				"SignalArgsHandling": "code_samples/SignalArgsHandling.json",
+				"RangeInputExample": "code_samples/RangeInputExample.json",
 				"GamepadCodeLesson": "code_samples/GamepadCodeLesson.json"
-			}
-		},
-		"controls": {
-			"file": "controls.json",
-			"content": {
-				"Bitmovin": "controls/Bitmovin.json"
 			}
 		},
 		"controls.canvas": {
@@ -71,12 +65,12 @@
 				"JsonStorage": "controls.core/JsonStorage.json",
 				"DebugInfoPanel": "controls.core/DebugInfoPanel.json",
 				"RollerView": "controls.core/RollerView.json",
-				"PlaceholderFont": "controls.core/PlaceholderFont.json",
 				"Request": "controls.core/Request.json",
 				"AnimatedSprite": "controls.core/AnimatedSprite.json",
-				"FragmentActivity": "controls.core/FragmentActivity.json",
+				"PlaceholderFont": "controls.core/PlaceholderFont.json",
 				"DebugInfoItem": "controls.core/DebugInfoItem.json",
 				"Activity": "controls.core/Activity.json",
+				"FragmentActivity": "controls.core/FragmentActivity.json",
 				"SwapImage": "controls.core/SwapImage.json",
 				"Audio": "controls.core/Audio.json",
 				"PlaceHolder": "controls.core/PlaceHolder.json",
@@ -96,13 +90,13 @@
 			"content": {
 				"BaseInput": "controls.input/BaseInput.json",
 				"RangeInput": "controls.input/RangeInput.json",
-				"FileInput": "controls.input/FileInput.json",
+				"TextAreaInput": "controls.input/TextAreaInput.json",
 				"EmailInput": "controls.input/EmailInput.json",
 				"ColorInput": "controls.input/ColorInput.json",
 				"CheckboxInput": "controls.input/CheckboxInput.json",
 				"DateInput": "controls.input/DateInput.json",
 				"NumberInput": "controls.input/NumberInput.json",
-				"TextAreaInput": "controls.input/TextAreaInput.json",
+				"FileInput": "controls.input/FileInput.json",
 				"SearchInput": "controls.input/SearchInput.json",
 				"TimeInput": "controls.input/TimeInput.json",
 				"DropZone": "controls.input/DropZone.json",
@@ -112,26 +106,18 @@
 		"controls.mixins": {
 			"file": "controls.mixins.json",
 			"content": {
-				"SwipeMixin": "controls.mixins/SwipeMixin.json",
+				"FocusOnHoverMixin": "controls.mixins/FocusOnHoverMixin.json",
 				"ImageMixin": "controls.mixins/ImageMixin.json",
 				"OverflowMixin": "controls.mixins/OverflowMixin.json",
-				"StyleMixin": "controls.mixins/StyleMixin.json",
 				"CssMixin": "controls.mixins/CssMixin.json",
-				"TextMixin": "controls.mixins/TextMixin.json",
+				"UserSelectMixin": "controls.mixins/UserSelectMixin.json",
+				"SwipeMixin": "controls.mixins/SwipeMixin.json",
 				"DragMixin": "controls.mixins/DragMixin.json",
-				"FocusOnHoverMixin": "controls.mixins/FocusOnHoverMixin.json",
-				"PositionMixin": "controls.mixins/PositionMixin.json"
-			}
-		},
-		"controls.player": {
-			"file": "controls.player.json",
-			"content": {
-				"HlsPlayer": "controls.player/HlsPlayer.json",
-				"PlayerDebugPanel": "controls.player/PlayerDebugPanel.json",
-				"TheOPlayer": "controls.player/TheOPlayer.json",
-				"ShakaPlayer": "controls.player/ShakaPlayer.json",
-				"JWPlayer": "controls.player/JWPlayer.json",
-				"VideoJS": "controls.player/VideoJS.json"
+				"OrientationMixin": "controls.mixins/OrientationMixin.json",
+				"TitleMixin": "controls.mixins/TitleMixin.json",
+				"PositionMixin": "controls.mixins/PositionMixin.json",
+				"TextMixin": "controls.mixins/TextMixin.json",
+				"BaseMixin": "controls.mixins/BaseMixin.json"
 			}
 		},
 		"controls.pure": {
@@ -140,7 +126,6 @@
 				"MaterialIcon": "controls.pure/MaterialIcon.json",
 				"TextEdit": "controls.pure/TextEdit.json",
 				"Checkbox": "controls.pure/Checkbox.json",
-				"EllipsisText": "controls.pure/EllipsisText.json",
 				"ProgressBar": "controls.pure/ProgressBar.json"
 			}
 		},
@@ -182,11 +167,11 @@
 				"NavigationMenuButton": "controls.web/NavigationMenuButton.json",
 				"TopMenu": "controls.web/TopMenu.json",
 				"MobileMenuButton": "controls.web/MobileMenuButton.json",
-				"Ho": "controls.web/Ho.json",
+				"LanguageSelector": "controls.web/LanguageSelector.json",
 				"IFrame": "controls.web/IFrame.json",
 				"GifSpinner": "controls.web/GifSpinner.json",
-				"LanguageSelector": "controls.web/LanguageSelector.json",
 				"Box": "controls.web/Box.json",
+				"EllipsisText": "controls.web/EllipsisText.json",
 				"DropDown": "controls.web/DropDown.json",
 				"Navbar": "controls.web/Navbar.json",
 				"Button": "controls.web/Button.json",
@@ -210,6 +195,19 @@
 				"AudioBuffer": "controls.web.audio/AudioBuffer.json"
 			}
 		},
+		"controls.web.tables": {
+			"file": "controls.web.tables.json",
+			"content": {
+				"TableHeader": "controls.web.tables/TableHeader.json",
+				"TableCell": "controls.web.tables/TableCell.json",
+				"TableElement": "controls.web.tables/TableElement.json",
+				"TableHeaderCell": "controls.web.tables/TableHeaderCell.json",
+				"TableRow": "controls.web.tables/TableRow.json",
+				"Table": "controls.web.tables/Table.json",
+				"TableBody": "controls.web.tables/TableBody.json",
+				"TableFooter": "controls.web.tables/TableFooter.json"
+			}
+		},
 		"controls.yandex": {
 			"file": "controls.yandex.json",
 			"content": {
@@ -219,45 +217,48 @@
 		"core": {
 			"file": "core.json",
 			"content": {
-				"MouseArea": "core/MouseArea.json",
+				"Object": "core/Object.json",
 				"Layout": "core/Layout.json",
 				"Gradient": "core/Gradient.json",
 				"System": "core/System.json",
 				"Animation": "core/Animation.json",
+				"Location": "core/Location.json",
+				"BorderSide": "core/BorderSide.json",
 				"GamepadManager": "core/GamepadManager.json",
 				"Rectangle": "core/Rectangle.json",
 				"RAIIEventEmitter": "core/RAIIEventEmitter.json",
-				"GradientStop": "core/GradientStop.json",
-				"Anchors": "core/Anchors.json",
-				"Object": "core/Object.json",
+				"Repeater": "core/Repeater.json",
+				"ProxyModel": "core/ProxyModel.json",
+				"MouseArea": "core/MouseArea.json",
 				"MouseMoveMixin": "core/MouseMoveMixin.json",
 				"Grid": "core/Grid.json",
 				"Effects": "core/Effects.json",
+				"Device": "core/Device.json",
 				"Shadow": "core/Shadow.json",
 				"ListView": "core/ListView.json",
 				"MousePressMixin": "core/MousePressMixin.json",
 				"BaseLayout": "core/BaseLayout.json",
-				"BaseView": "core/BaseView.json",
 				"GridView": "core/GridView.json",
 				"Column": "core/Column.json",
 				"HoverMixin": "core/HoverMixin.json",
-				"Timer": "core/Timer.json",
+				"ScrollView": "core/ScrollView.json",
 				"Transform": "core/Transform.json",
 				"BaseViewContent": "core/BaseViewContent.json",
 				"Item": "core/Item.json",
 				"AnchorLine": "core/AnchorLine.json",
 				"LocalStorage": "core/LocalStorage.json",
-				"BorderSide": "core/BorderSide.json",
+				"Timer": "core/Timer.json",
 				"Context": "core/Context.json",
-				"Repeater": "core/Repeater.json",
-				"ProxyModel": "core/ProxyModel.json",
-				"ScrollView": "core/ScrollView.json",
+				"GradientStop": "core/GradientStop.json",
+				"Anchors": "core/Anchors.json",
+				"BaseView": "core/BaseView.json",
 				"ClickMixin": "core/ClickMixin.json",
 				"ColorAnimation": "core/ColorAnimation.json",
 				"Gamepad": "core/Gamepad.json",
 				"WheelMixin": "core/WheelMixin.json",
 				"Text": "core/Text.json",
 				"Image": "core/Image.json",
+				"VideoPlayer": "core/VideoPlayer.json",
 				"ListModel": "core/ListModel.json",
 				"Loader": "core/Loader.json",
 				"EventEmitter": "core/EventEmitter.json",
@@ -270,24 +271,22 @@
 		"html5": {
 			"file": "html5.json",
 			"content": {
-				"Stylesheet": "html5/Stylesheet.json",
-				"Orientation": "html5/Orientation.json",
-				"Location": "html5/Location.json"
+				"Stylesheet": "html5/Stylesheet.json"
 			}
 		},
 		"lessons": {
 			"file": "lessons.json",
 			"content": {
-				"EffectsLesson": "lessons/EffectsLesson.json",
 				"ViewAndModelsLesson": "lessons/ViewAndModelsLesson.json",
 				"BasicLesson": "lessons/BasicLesson.json",
 				"GamepadLesson": "lessons/GamepadLesson.json",
+				"EffectsLesson": "lessons/EffectsLesson.json",
 				"MixinLesson": "lessons/MixinLesson.json",
 				"KeyboardLesson": "lessons/KeyboardLesson.json",
 				"AnchorsLesson": "lessons/AnchorsLesson.json",
-				"SignalLesson": "lessons/SignalLesson.json",
-				"InputsLesson": "lessons/InputsLesson.json",
 				"LayoutsLesson": "lessons/LayoutsLesson.json",
+				"InputsLesson": "lessons/InputsLesson.json",
+				"SignalLesson": "lessons/SignalLesson.json",
 				"Lesson": "lessons/Lesson.json",
 				"SpriteLesson": "lessons/SpriteLesson.json",
 				"GlobalsLesson": "lessons/GlobalsLesson.json",
@@ -307,13 +306,13 @@
 				"DocKeyValueView": "src/DocKeyValueView.json",
 				"DocViewer": "src/DocViewer.json",
 				"HistoryPage": "src/HistoryPage.json",
-				"PlatformImage": "src/PlatformImage.json",
+				"HowtoText": "src/HowtoText.json",
 				"StateButton": "src/StateButton.json",
 				"SearchPanel": "src/SearchPanel.json",
 				"MainP": "src/MainP.json",
 				"SearchResults": "src/SearchResults.json",
 				"CodeExample": "src/CodeExample.json",
-				"P": "src/P.json",
+				"PageColumn": "src/PageColumn.json",
 				"PathPageColumn": "src/PathPageColumn.json",
 				"DescriptionPanel": "src/DescriptionPanel.json",
 				"Download": "src/Download.json",
@@ -321,20 +320,13 @@
 				"GettingStarted": "src/GettingStarted.json",
 				"ColorTheme": "src/ColorTheme.json",
 				"SectionHead": "src/SectionHead.json",
-				"PageColumn": "src/PageColumn.json",
-				"HowtoText": "src/HowtoText.json",
+				"P": "src/P.json",
+				"PlatformImage": "src/PlatformImage.json",
 				"BigButton": "src/BigButton.json",
 				"DescriptionText": "src/DescriptionText.json",
 				"HashPageColumn": "src/HashPageColumn.json",
 				"MenuItem": "src/MenuItem.json",
 				"MainText": "src/MainText.json"
-			}
-		},
-		"web": {
-			"file": "web.json",
-			"content": {
-				"Device": "web/Device.json",
-				"VideoPlayer": "web/VideoPlayer.json"
 			}
 		}
 	}

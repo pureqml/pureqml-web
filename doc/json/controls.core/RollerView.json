@@ -1,21 +1,18 @@
 {
 	"name": "controls.core.RollerView",
-	"text": "@internal focuses current item",
+	"text": "",
 
 	"content": {
-		"Properties": {
-			"cacheEnable": { "text": "", "internal": false, "type": "bool", "defaultValue": "true" }
-		},
-
 		"Methods": {
 			"constructor": { "text": "", "internal": false },
-			"_onReset": { "text": "", "internal": false },
 			"positionViewAtIndex": { "text": "", "internal": false },
-			"_processUpdates": { "text": "", "internal": false },
+			"_getCurrentIndex": { "text": "", "internal": false },
 			"_layout": { "text": "", "internal": false },
-			"focusCurrent": { "text": "@internal focuses current item", "params": [], "internal": true },
-			"_createDelegate": { "text": "@internal creates delegate in given item slot", "params": [], "internal": true },
+			"next": { "text": "", "internal": false },
+			"prev": { "text": "", "internal": false },
 			"onKeyPressed": { "text": "", "internal": false },
+			"_setContentOffset": { "text": "", "internal": false },
+			"_scroll": { "text": "", "internal": false },
 			"onOrientationChanged": { "text": "", "internal": true },
 			"onCurrentIndexChanged": { "text": "", "internal": true }
 		}

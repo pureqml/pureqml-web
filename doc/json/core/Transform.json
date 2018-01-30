@@ -20,7 +20,19 @@
 
 		"Methods": {
 			"constructor": { "text": "@private", "params": [], "internal": true },
-			"_update": { "text": "@private", "params": [], "internal": true }
+			"onPerspectiveChanged": { "text": "", "internal": true },
+			"onTranslateXChanged": { "text": "", "internal": true },
+			"onTranslateYChanged": { "text": "", "internal": true },
+			"onTranslateZChanged": { "text": "", "internal": true },
+			"onRotateXChanged": { "text": "", "internal": true },
+			"onRotateYChanged": { "text": "", "internal": true },
+			"onRotateZChanged": { "text": "", "internal": true },
+			"onRotateChanged": { "text": "", "internal": true },
+			"onScaleXChanged": { "text": "", "internal": true },
+			"onScaleYChanged": { "text": "", "internal": true },
+			"onSkewXChanged": { "text": "", "internal": true },
+			"onSkewYChanged": { "text": "", "internal": true },
+			"_updateTransform": { "text": "", "internal": false }
 		}
 	}
 }

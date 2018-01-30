@@ -4,7 +4,7 @@
 
 	"content": {
 		"Properties": {
-			"state": { "text": "", "internal": false, "type": "Object", "defaultValue": "this._get('context')._get('location')._get('state')" }
+			"state": { "text": "", "internal": false, "type": "Object", "defaultValue": "${context.location.state}" }
 		},
 
 		"Methods": {

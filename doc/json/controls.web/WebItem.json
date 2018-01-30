@@ -5,8 +5,7 @@
 	"content": {
 		"Properties": {
 			"hoverMixin": { "text": "hover mixin object proveds common API for mouse properties", "ref": "controls.web/Mixin", "internal": false, "type": "Mixin", "defaultValue": "HoverClickMixin" },
-			"position": { "text": "position mode property", "internal": false, "type": "string", "defaultValue": "" },
-			"title": { "text": "title attribute property", "internal": false, "type": "string", "defaultValue": "" }
+			"position": { "text": "position mode property", "internal": false, "type": "string", "defaultValue": "" }
 		},
 
 		"Alias Properties": {
@@ -19,7 +18,6 @@
 		},
 
 		"Methods": {
-			"onTitleChanged": { "text": "@private", "params": [], "internal": true },
 			"onPositionChanged": { "text": "@private", "params": [], "internal": true }
 		}
 	}

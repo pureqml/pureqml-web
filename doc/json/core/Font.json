@@ -4,15 +4,15 @@
 
 	"content": {
 		"Properties": {
-			"family": { "text": "font family", "internal": false, "type": "string", "defaultValue": "" },
+			"family": { "text": "font family", "internal": false, "type": "string", "defaultValue": "${manifest.style.font.family}" },
 			"italic": { "text": "applies italic style", "internal": false, "type": "bool", "defaultValue": "" },
 			"bold": { "text": "applies bold style", "internal": false, "type": "bool", "defaultValue": "" },
 			"underline": { "text": "applies underline style", "internal": false, "type": "bool", "defaultValue": "" },
 			"strike": { "text": "line throw text flag", "internal": false, "type": "bool", "defaultValue": "" },
 			"letterSpacing": { "text": "spacing between letters", "internal": false, "type": "real", "defaultValue": "" },
-			"pixelSize": { "text": "font size in pixels", "internal": false, "type": "int", "defaultValue": "" },
+			"pixelSize": { "text": "font size in pixels", "internal": false, "type": "int", "defaultValue": "${manifest.style.font.pixelSize}" },
 			"pointSize": { "text": "font size in points", "internal": false, "type": "int", "defaultValue": "" },
-			"lineHeight": { "text": "font line height in pixels", "internal": false, "type": "int", "defaultValue": "" },
+			"lineHeight": { "text": "font line height in font heights", "internal": false, "type": "real", "defaultValue": "${manifest.style.font.lineHeight}" },
 			"weight": { "text": "font weight value", "internal": false, "type": "int", "defaultValue": "" }
 		},
 

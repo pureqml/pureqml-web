@@ -10,7 +10,8 @@
 			"font": { "text": "object holding properties of text font", "ref": "controls.input/Font", "internal": false, "type": "Font", "defaultValue": "Font" },
 			"border": { "text": "object holding properties of the border", "ref": "controls.input/Border", "internal": false, "type": "Border", "defaultValue": "Border" },
 			"type": { "text": "input type value, must overrie in inheritor", "internal": false, "type": "string", "defaultValue": "text" },
-			"placeholder": { "text": "input placeholder object", "ref": "controls.input/PlaceHolder", "internal": false, "type": "PlaceHolder", "defaultValue": "PlaceHolder" }
+			"placeholder": { "text": "input placeholder object", "ref": "controls.input/PlaceHolder", "internal": false, "type": "PlaceHolder", "defaultValue": "PlaceHolder" },
+			"enabled": { "text": "input enabled", "internal": false, "type": "bool", "defaultValue": "true" }
 		},
 
 		"Methods": {
@@ -22,9 +23,12 @@
 			"onColorChanged": { "text": "@private", "params": [], "internal": true },
 			"onBackgroundColorChanged": { "text": "@private", "params": [], "internal": true },
 			"onHorizontalAlignmentChanged": { "text": "@private", "params": [], "internal": true },
+			"onEnabledChanged": { "text": "", "internal": true },
 			"getTag": { "text": "returns tag for corresponding element", "params": [], "internal": false },
 			"registerStyle": { "text": "", "internal": false },
-			"_updateSize": { "text": "@private", "params": [], "internal": true }
+			"_updateSize": { "text": "@private", "params": [], "internal": true },
+			"focusBrowser": { "text": "", "internal": false },
+			"blurBrowser": { "text": "", "internal": false }
 		}
 	}
 }

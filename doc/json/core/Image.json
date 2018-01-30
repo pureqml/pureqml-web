@@ -8,11 +8,13 @@
 			"paintedHeight": { "text": "actually painted image height", "internal": false, "type": "int", "defaultValue": "" },
 			"sourceWidth": { "text": "actual width of loaded image", "internal": false, "type": "int", "defaultValue": "" },
 			"sourceHeight": { "text": "actual height of loaded image", "internal": false, "type": "int", "defaultValue": "" },
-			"source": { "text": "image URL", "internal": false, "type": "string", "defaultValue": "" }
+			"source": { "text": "image URL", "internal": false, "type": "string", "defaultValue": "" },
+			"smooth": { "text": "if false, image will be pixelated", "internal": false, "type": "bool", "defaultValue": "true" }
 		},
 
 		"Methods": {
 			"constructor": { "text": "@private", "params": [], "internal": true },
+			"getClass": { "text": "", "internal": false },
 			"_scheduleLoad": { "text": "@private", "params": [], "internal": true },
 			"_onError": { "text": "@private", "params": [], "internal": true },
 			"_load": { "text": "@private", "params": [], "internal": true },

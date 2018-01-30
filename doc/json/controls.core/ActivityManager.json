@@ -4,7 +4,9 @@
 
 	"content": {
 		"Properties": {
-			"count": { "text": "", "internal": false, "type": "int", "defaultValue": "" }
+			"count": { "text": "", "internal": false, "type": "int", "defaultValue": "" },
+			"keepLastActivity": { "text": "", "internal": false, "type": "bool", "defaultValue": "true" },
+			"currentActicity": { "text": "", "internal": false, "type": "string", "defaultValue": "" }
 		},
 
 		"Methods": {
@@ -12,6 +14,7 @@
 			"push": { "text": "", "internal": false },
 			"pop": { "text": "", "internal": false },
 			"setState": { "text": "", "internal": false },
+			"setIntent": { "text": "", "internal": false },
 			"clear": { "text": "", "internal": false },
 			"initTopIntent": { "text": "", "internal": false }
 		}

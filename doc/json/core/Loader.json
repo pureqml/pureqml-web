@@ -1,6 +1,6 @@
 {
 	"name": "core.Loader",
-	"text": "component for loading custom component dinamycly via its URL",
+	"text": "object that helps loading components dynamically",
 
 	"content": {
 		"Properties": {

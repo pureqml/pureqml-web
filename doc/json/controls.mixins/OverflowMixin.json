@@ -4,7 +4,9 @@
 
 	"content": {
 		"Methods": {
-			"_update": { "text": "@internal", "params": [], "internal": true }
+			"_updateOverflow": { "text": "@internal", "params": [], "internal": true },
+			"onValueChanged": { "text": "", "internal": true },
+			"onCompleted": { "text": "", "internal": true }
 		}
 	}
 }

@@ -7,7 +7,11 @@
 			"getTag": { "text": "returns tag for corresponding element", "params": [], "internal": false },
 			"registerStyle": { "text": "@private", "params": [], "internal": true },
 			"createElement": { "text": "specialized implementation of element creation in a certain namespace.", "params": [], "internal": false },
-			"_update": { "text": "@internal", "params": [], "internal": true }
+			"onWidthChanged": { "text": "", "internal": true },
+			"onHeightChanged": { "text": "", "internal": true },
+			"onYChanged": { "text": "", "internal": true },
+			"onXChanged": { "text": "", "internal": true },
+			"onClipChanged": { "text": "", "internal": true }
 		}
 	}
 }

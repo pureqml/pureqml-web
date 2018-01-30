@@ -14,7 +14,11 @@
 
 		"Methods": {
 			"getTag": { "text": "returns tag for corresponding element", "params": [], "internal": false },
-			"_update": { "text": "@internal", "params": [], "internal": true }
+			"onColorChanged": { "text": "@internal", "params": [], "internal": true },
+			"onX1Changed": { "text": "", "internal": true },
+			"onX2Changed": { "text": "", "internal": true },
+			"onY1Changed": { "text": "", "internal": true },
+			"onY2Changed": { "text": "", "internal": true }
 		}
 	}
 }

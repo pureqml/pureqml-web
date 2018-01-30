@@ -8,6 +8,7 @@
 		},
 
 		"Methods": {
+			"onCheckedChanged": { "text": "", "internal": true },
 			"constructor": { "text": "", "internal": false }
 		}
 	}

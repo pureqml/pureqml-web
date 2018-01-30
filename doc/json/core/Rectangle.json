@@ -10,8 +10,9 @@
 		},
 
 		"Methods": {
-			"_mapCSSAttribute": { "text": "@private", "params": [], "internal": true },
-			"onColorChanged": { "text": "", "internal": true }
+			"constructor": { "text": "", "internal": false },
+			"onColorChanged": { "text": "", "internal": true },
+			"prototypeConstructor": { "text": "", "internal": false }
 		}
 	}
 }
