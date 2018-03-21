@@ -100,6 +100,12 @@ HistoryPage {
 			}
 
 			PathPageColumn {
+				path: "lessons/transform";
+				title: "Transform";
+				text: "Each items has a 'transform' property to change its perspective, position, scale, scew and rotation";
+			}
+
+			PathPageColumn {
 				path: "lessons/sprite";
 				title: "Sprites";
 				text: "";
@@ -146,6 +152,7 @@ HistoryPage {
 				inputs: "lessons.InputsLesson",
 				mixins: "lessons.MixinLesson",
 				effects: "lessons.EffectsLesson",
+				transform: "lessons.TransformLesson",
 				sprite: "lessons.SpriteLesson"
 			}
 		}

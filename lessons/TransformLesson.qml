@@ -30,8 +30,8 @@ Lesson {
 
 		CodeExample {
 			codeWidth: parent.width - 20;
-			exampleWidth: 250;
-			exampleHeight: 250;
+			exampleWidth: 350;
+			exampleHeight: 350;
 			sample: TransformScaleExample { }
 		}
 	}
@@ -42,8 +42,8 @@ Lesson {
 
 		CodeExample {
 			codeWidth: parent.width - 20;
-			exampleWidth: 250;
-			exampleHeight: 250;
+			exampleWidth: 350;
+			exampleHeight: 350;
 			sample: TransformScaleExample { }
 		}
 	}

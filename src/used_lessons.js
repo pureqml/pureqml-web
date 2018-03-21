@@ -11,3 +11,4 @@
 /*** @using { lessons.MixinLesson } **/
 /*** @using { lessons.ViewAndModelsLesson } **/
 /*** @using { lessons.SpriteLesson } **/
+/*** @using { lessons.TransformLesson } **/
