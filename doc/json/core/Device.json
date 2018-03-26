@@ -8,6 +8,8 @@
 			"modelName": { "text": "", "internal": false, "type": "string", "defaultValue": "" },
 			"deviceId": { "text": "", "internal": false, "type": "string", "defaultValue": "" },
 			"firmware": { "text": "", "internal": false, "type": "string", "defaultValue": "" },
+			"language": { "text": "", "internal": false, "type": "string", "defaultValue": "" },
+			"country": { "text": "", "internal": false, "type": "string", "defaultValue": "" },
 			"sdk": { "text": "", "internal": false, "type": "string", "defaultValue": "" },
 			"supportingUhd": { "text": "", "internal": false, "type": "bool", "defaultValue": "" },
 			"supporting3d": { "text": "", "internal": false, "type": "bool", "defaultValue": "" }

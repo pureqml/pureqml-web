@@ -6,6 +6,7 @@
 		"EffectsLesson": "lessons/EffectsLesson.json",
 		"MixinLesson": "lessons/MixinLesson.json",
 		"KeyboardLesson": "lessons/KeyboardLesson.json",
+		"TransformLesson": "lessons/TransformLesson.json",
 		"AnchorsLesson": "lessons/AnchorsLesson.json",
 		"LayoutsLesson": "lessons/LayoutsLesson.json",
 		"InputsLesson": "lessons/InputsLesson.json",

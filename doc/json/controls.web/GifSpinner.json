@@ -3,10 +3,6 @@
 	"text": "",
 
 	"content": {
-		"Properties": {
-			"running": { "text": "", "internal": false, "type": "bool", "defaultValue": "" }
-		},
-
 		"Methods": {
 			"start": { "text": "", "internal": false },
 			"stop": { "text": "", "internal": false }

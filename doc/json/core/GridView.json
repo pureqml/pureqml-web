@@ -18,7 +18,8 @@
 			"positionViewAtIndex": { "text": "@private", "params": [], "internal": true },
 			"_layout": { "text": "@private", "params": [], "internal": true },
 			"_updateOverflow": { "text": "@private", "params": [], "internal": true },
-			"onFlowChanged": { "text": "@private", "params": [], "internal": true },
+			"onFlowChanged": { "text": "", "internal": true },
+			"onCellWidthChanged": { "text": "", "internal": true },
 			"onCompleted": { "text": "", "internal": true }
 		}
 	}

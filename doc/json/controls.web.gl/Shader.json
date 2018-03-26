@@ -1,11 +1,11 @@
 {
-	"name": "controls.mixins.TextMixin",
+	"name": "controls.web.gl.Shader",
 	"text": "",
 
 	"content": {
 		"Methods": {
 			"constructor": { "text": "", "internal": false },
-			"_createElement": { "text": "", "internal": false }
+			"createImpl": { "text": "", "internal": false }
 		}
 	}
 }

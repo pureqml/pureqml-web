@@ -9,7 +9,8 @@
 			"sourceWidth": { "text": "actual width of loaded image", "internal": false, "type": "int", "defaultValue": "" },
 			"sourceHeight": { "text": "actual height of loaded image", "internal": false, "type": "int", "defaultValue": "" },
 			"source": { "text": "image URL", "internal": false, "type": "string", "defaultValue": "" },
-			"smooth": { "text": "if false, image will be pixelated", "internal": false, "type": "bool", "defaultValue": "true" }
+			"smooth": { "text": "if false, image will be pixelated", "internal": false, "type": "bool", "defaultValue": "true" },
+			"preload": { "text": "image will be loaded even if it's not visible", "internal": false, "type": "bool", "defaultValue": "false" }
 		},
 
 		"Methods": {
@@ -18,8 +19,8 @@
 			"_scheduleLoad": { "text": "@private", "params": [], "internal": true },
 			"_onError": { "text": "@private", "params": [], "internal": true },
 			"_load": { "text": "@private", "params": [], "internal": true },
-			"load": { "text": "@private", "params": [], "internal": true },
-			"onWidthChanged": { "text": "", "internal": true }
+			"onPreloadChanged": { "text": "", "internal": true },
+			"onSourceChanged": { "text": "", "internal": true }
 		}
 	}
 }

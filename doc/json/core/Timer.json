@@ -15,6 +15,7 @@
 		},
 
 		"Methods": {
+			"constructor": { "text": "", "internal": false },
 			"restart": { "text": "restart timer, activate if stopped", "params": [], "internal": false },
 			"stop": { "text": "stops timer", "params": [], "internal": false },
 			"start": { "text": "starts timer", "params": [], "internal": false },

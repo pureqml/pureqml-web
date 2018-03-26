@@ -1,0 +1,10 @@
+{
+	"name": "controls.web.gl.FragmentShader",
+	"text": "",
+
+	"content": {
+		"Methods": {
+			"create": { "text": "", "internal": false }
+		}
+	}
+}

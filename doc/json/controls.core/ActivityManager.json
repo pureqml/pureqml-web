@@ -6,11 +6,12 @@
 		"Properties": {
 			"count": { "text": "", "internal": false, "type": "int", "defaultValue": "" },
 			"keepLastActivity": { "text": "", "internal": false, "type": "bool", "defaultValue": "true" },
-			"currentActicity": { "text": "", "internal": false, "type": "string", "defaultValue": "" }
+			"currentActivity": { "text": "", "internal": false, "type": "string", "defaultValue": "" }
 		},
 
 		"Methods": {
 			"constructor": { "text": "", "internal": false },
+			"replaceTopActivity": { "text": "", "internal": false },
 			"push": { "text": "", "internal": false },
 			"pop": { "text": "", "internal": false },
 			"setState": { "text": "", "internal": false },

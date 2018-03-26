@@ -14,7 +14,6 @@
 			"removeOnChanged": { "text": "@private removes 'on changed' callback", "params": [], "internal": true },
 			"_removeUpdater": { "text": "@private removes dynamic value updater", "params": [], "internal": true },
 			"_replaceUpdater": { "text": "@private replaces dynamic value updater", "params": [], "internal": true },
-			"onPressed": { "text": "@private registers key handler", "params": [], "internal": true },
 			"_createPropertyStorage": { "text": "@private creates property storage", "params": [], "internal": true },
 			"setPropertyForwardingTarget": { "text": "mixin api: set default forwarding _target", "params": [], "internal": false },
 			"_setProperty": { "text": "@private patch property storage directly without signalling.", "params": [], "internal": true },

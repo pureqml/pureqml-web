@@ -1,12 +1,13 @@
 {
 	"name": "controls.core.RollerView",
-	"text": "",
+	"text": "@private creates delegate in given item slot",
 
 	"content": {
 		"Methods": {
 			"constructor": { "text": "", "internal": false },
 			"positionViewAtIndex": { "text": "", "internal": false },
 			"_getCurrentIndex": { "text": "", "internal": false },
+			"_createDelegate": { "text": "@private creates delegate in given item slot", "params": [], "internal": true },
 			"_layout": { "text": "", "internal": false },
 			"next": { "text": "", "internal": false },
 			"prev": { "text": "", "internal": false },

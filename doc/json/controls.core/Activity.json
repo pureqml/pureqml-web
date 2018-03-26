@@ -18,6 +18,7 @@
 			"init": { "text": "", "internal": false },
 			"pop": { "text": "", "internal": false },
 			"push": { "text": "", "internal": false },
+			"replaceTopActivity": { "text": "", "internal": false },
 			"setState": { "text": "", "internal": false },
 			"setIntent": { "text": "", "internal": false },
 			"clear": { "text": "", "internal": false },

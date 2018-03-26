@@ -28,7 +28,6 @@
 		"Transform": "core/Transform.json",
 		"BaseViewContent": "core/BaseViewContent.json",
 		"Item": "core/Item.json",
-		"AnchorLine": "core/AnchorLine.json",
 		"LocalStorage": "core/LocalStorage.json",
 		"Timer": "core/Timer.json",
 		"Context": "core/Context.json",

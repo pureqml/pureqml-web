@@ -23,12 +23,14 @@
 			"effects": { "text": "", "ref": "core/lazy", "internal": false, "type": "lazy", "defaultValue": "Effects" },
 			"transform": { "text": "", "ref": "core/lazy", "internal": false, "type": "lazy", "defaultValue": "Transform" },
 			"cssTranslatePositioning": { "text": "", "internal": false, "type": "bool", "defaultValue": "" },
-			"left": { "text": "", "ref": "core/lazy", "internal": false, "type": "lazy", "defaultValue": "AnchorLine" },
-			"top": { "text": "", "ref": "core/lazy", "internal": false, "type": "lazy", "defaultValue": "AnchorLine" },
-			"right": { "text": "", "ref": "core/lazy", "internal": false, "type": "lazy", "defaultValue": "AnchorLine" },
-			"bottom": { "text": "", "ref": "core/lazy", "internal": false, "type": "lazy", "defaultValue": "AnchorLine" },
-			"horizontalCenter": { "text": "", "ref": "core/lazy", "internal": false, "type": "lazy", "defaultValue": "AnchorLine" },
-			"verticalCenter": { "text": "", "ref": "core/lazy", "internal": false, "type": "lazy", "defaultValue": "AnchorLine" },
+			"cssNullTranslate3D": { "text": "", "internal": false, "type": "bool", "defaultValue": "" },
+			"cssDelegateAlwaysVisibleOnAcceleratedSurfaces": { "text": "", "internal": false, "type": "bool", "defaultValue": "true" },
+			"left": { "text": "", "internal": false, "type": "const", "defaultValue": " return [this, 0]; " },
+			"top": { "text": "", "internal": false, "type": "const", "defaultValue": " return [this, 1]; " },
+			"right": { "text": "", "internal": false, "type": "const", "defaultValue": " return [this, 2]; " },
+			"bottom": { "text": "", "internal": false, "type": "const", "defaultValue": " return [this, 3]; " },
+			"horizontalCenter": { "text": "", "internal": false, "type": "const", "defaultValue": " return [this, 4]; " },
+			"verticalCenter": { "text": "", "internal": false, "type": "const", "defaultValue": " return [this, 5]; " },
 			"viewX": { "text": "x position in view (if any)", "internal": false, "type": "int", "defaultValue": "" },
 			"viewY": { "text": "y position in view (if any)", "internal": false, "type": "int", "defaultValue": "" },
 			"keyProcessDelay": { "text": "delay time between key pressed events", "internal": false, "type": "int", "defaultValue": "" }
@@ -58,6 +60,7 @@
 			"onHeightChanged": { "text": "", "internal": true },
 			"onXChanged": { "text": "", "internal": true },
 			"onYChanged": { "text": "", "internal": true },
+			"onCssNullTranslate3DChanged": { "text": "", "internal": true },
 			"onOpacityChanged": { "text": "", "internal": true },
 			"onZChanged": { "text": "", "internal": true },
 			"onRadiusChanged": { "text": "", "internal": true },
@@ -73,7 +76,8 @@
 			"_enqueueNextChildInFocusChain": { "text": "@private", "params": [], "internal": true },
 			"invokeKeyHandlers": { "text": "@private", "params": [], "internal": true },
 			"_processKey": { "text": "@private", "params": [], "internal": true },
-			"getComponentPath": { "text": "", "internal": false },
+			"onPressed": { "text": "@private registers key handler", "params": [], "internal": true },
+			"getComponentPath": { "text": "outputs component path in qml (e.g Rectangle → Item → ListItem → Rectangle)", "params": [], "internal": false },
 			"setFocus": { "text": "focus this item", "params": [], "internal": false }
 		}
 	}

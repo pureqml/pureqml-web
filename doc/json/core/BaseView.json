@@ -23,6 +23,8 @@
 		},
 
 		"Methods": {
+			"onContentXChanged": { "text": "", "internal": true },
+			"onContentYChanged": { "text": "", "internal": true },
 			"itemAt": { "text": "returns index of item by x,y coordinates", "params": [], "internal": false },
 			"focusCurrent": { "text": "@private focuses current item", "params": [], "internal": true },
 			"constructor": { "text": "@private", "params": [], "internal": true },
@@ -42,11 +44,10 @@
 			"_removeItems": { "text": "@private", "params": [], "internal": true },
 			"_updateItems": { "text": "@private", "params": [], "internal": true },
 			"_processUpdates": { "text": "@private", "params": [], "internal": true },
-			"onContentXChanged": { "text": "", "internal": true },
-			"onContentYChanged": { "text": "", "internal": true },
 			"onRecursiveVisibleChanged": { "text": "", "internal": true },
 			"onWidthChanged": { "text": "", "internal": true },
 			"onHeightChanged": { "text": "", "internal": true },
+			"onModelChanged": { "text": "", "internal": true },
 			"_updateScrollPositions": { "text": "@private silently updates scroll positions, because browser animates scroll", "params": [], "internal": true },
 			"onCompleted": { "text": "", "internal": true }
 		}
