@@ -5,9 +5,10 @@ Item {
 
 	WebItem {
 		property Mixin drag: DragMixin { }
+		x: 100;
+		y: 100;
 		width: 100;
 		height: width;
-		anchors.centerIn: parent;
 		radius: width / 2;
 		color: "red";
 
