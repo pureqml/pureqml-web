@@ -5,10 +5,11 @@ HistoryPage {
 	property Object state: context.location.state;
 
 	onStateChanged: {
-		if (value && value.page === "docs"){
-			if (value.section)
+		if (value && value.page === "docs") {
+			if (value.section) {
+				log("State changed section:", value.section, "element:", value.element)
 				dataLoader.url = "https://raw.githubusercontent.com/pureqml/pureqml-web/master/doc/json/" + (value.element ? value.section + "/" + value.element : value.section) + ".json"
-			else
+			} else
 				dataLoader.url = "https://raw.githubusercontent.com/pureqml/pureqml-web/master/doc/json/core/Item.json"
 		}
 	}
