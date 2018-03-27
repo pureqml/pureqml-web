@@ -21,14 +21,13 @@ Rectangle {
 	ListModel { id: menuModel; }
 
 	Item {
-		width: 100%; height: 100%;
-		OverflowMixin {	value: parent.recursiveVisible ? OverflowMixin.ScrollY : OverflowMixin.Hidden; }
+		width: 100%;
+		height: 100%;
 
 		ListView {
 			y: leftMenuProto.hidable ? 40 : 10;
 			width: 100%;
-			height: 80%;
-			prerender: 10;
+			height: 100%;
 			spacing: 5;
 			model: menuModel;
 			delegate: WebLink {
@@ -70,6 +69,8 @@ Rectangle {
 					this._context.location.pushState(state, this.text, this.href)
 				}
 			}
+
+			OverflowMixin { value: leftMenuProto.recursiveVisible ? OverflowMixin.ScrollY : OverflowMixin.Hidden; }
 		}
 	}
 
