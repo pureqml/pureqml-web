@@ -5,7 +5,7 @@
 	"content": {
 		"Properties": {
 			"searchFocused": { "text": "", "internal": false, "type": "bool", "defaultValue": "${searchText.activeFocus} || ${searchResults.visible}" },
-			"hover": { "text": "", "ref": "src/Mixin", "internal": false, "type": "Mixin", "defaultValue": "HoverClickMixin" }
+			"hover": { "text": "", "internal": false, "type": "Mixin", "defaultValue": "HoverClickMixin" }
 		},
 
 		"Signals": {

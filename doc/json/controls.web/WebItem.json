@@ -4,7 +4,7 @@
 
 	"content": {
 		"Properties": {
-			"hoverMixin": { "text": "hover mixin object proveds common API for mouse properties", "ref": "controls.web/Mixin", "internal": false, "type": "Mixin", "defaultValue": "HoverClickMixin" },
+			"hoverMixin": { "text": "hover mixin object proveds common API for mouse properties", "internal": false, "type": "Mixin", "defaultValue": "HoverClickMixin" },
 			"position": { "text": "position mode property", "internal": false, "type": "string", "defaultValue": "" }
 		},
 

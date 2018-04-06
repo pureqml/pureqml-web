@@ -4,8 +4,8 @@
 
 	"content": {
 		"Properties": {
-			"model": { "text": "", "ref": "controls.web.tables/Object", "internal": false, "type": "Object", "defaultValue": "ListModel" },
-			"headerModel": { "text": "", "ref": "controls.web.tables/Object", "internal": false, "type": "Object", "defaultValue": "ListModel" },
+			"model": { "text": "", "ref": "qmlcore.core/Object", "internal": false, "type": "Object", "defaultValue": "ListModel" },
+			"headerModel": { "text": "", "ref": "qmlcore.core/Object", "internal": false, "type": "Object", "defaultValue": "ListModel" },
 			"textColor": { "text": "", "internal": false, "type": "Color", "defaultValue": "" }
 		},
 

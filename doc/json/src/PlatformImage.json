@@ -4,7 +4,7 @@
 
 	"content": {
 		"Properties": {
-			"img": { "text": "", "ref": "src/ImageMixin", "internal": false, "type": "ImageMixin", "defaultValue": "ImageMixin" }
+			"img": { "text": "", "ref": "controls.mixins/ImageMixin", "internal": false, "type": "ImageMixin", "defaultValue": "ImageMixin" }
 		}
 	}
 }

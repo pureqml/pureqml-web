@@ -8,9 +8,9 @@
 			"keyProcessDelay": { "text": "key pressed handling delay timeout in millisecnods", "internal": false, "type": "int", "defaultValue": "" },
 			"fullscreen": { "text": "fullscreen mode enabled / disabled", "internal": false, "type": "bool", "defaultValue": "" },
 			"language": { "text": "localisation language", "internal": false, "type": "string", "defaultValue": "" },
-			"system": { "text": "system info object", "ref": "core/System", "internal": false, "type": "System", "defaultValue": "System" },
-			"location": { "text": "web-page location object", "ref": "core/Location", "internal": false, "type": "Location", "defaultValue": "Location" },
-			"stylesheet": { "text": "@private", "ref": "core/Stylesheet", "internal": true, "type": "Stylesheet", "defaultValue": "Stylesheet" },
+			"system": { "text": "system info object", "ref": "qmlcore.core/System", "internal": false, "type": "System", "defaultValue": "System" },
+			"location": { "text": "web-page location object", "ref": "qmlcore.core/Location", "internal": false, "type": "Location", "defaultValue": "Location" },
+			"stylesheet": { "text": "@private", "ref": "qmlcore.platform.html5/Stylesheet", "internal": true, "type": "Stylesheet", "defaultValue": "Stylesheet" },
 			"buildIdentifier": { "text": "@private", "internal": true, "type": "string", "defaultValue": "Powered by PureQML No-Partnership Edition Engine" }
 		},
 

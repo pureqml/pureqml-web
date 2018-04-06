@@ -4,7 +4,7 @@
 
 	"content": {
 		"Properties": {
-			"font": { "text": "", "ref": "controls.web/Font", "internal": false, "type": "Font", "defaultValue": "Font" },
+			"font": { "text": "", "ref": "qmlcore.core/Font", "internal": false, "type": "Font", "defaultValue": "Font" },
 			"color": { "text": "", "internal": false, "type": "Color", "defaultValue": "#000" },
 			"currentIndex": { "text": "", "internal": false, "type": "int", "defaultValue": "" },
 			"count": { "text": "", "internal": false, "type": "int", "defaultValue": "" },

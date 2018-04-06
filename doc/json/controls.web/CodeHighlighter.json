@@ -8,7 +8,7 @@
 			"contentHeight": { "text": "content height", "internal": false, "type": "int", "defaultValue": "" },
 			"code": { "text": "code string", "internal": false, "type": "string", "defaultValue": "" },
 			"language": { "text": "programming language", "internal": false, "type": "string", "defaultValue": "" },
-			"font": { "text": "code text font", "ref": "controls.web/Font", "internal": false, "type": "Font", "defaultValue": "Font" }
+			"font": { "text": "code text font", "ref": "qmlcore.core/Font", "internal": false, "type": "Font", "defaultValue": "Font" }
 		},
 
 		"Methods": {

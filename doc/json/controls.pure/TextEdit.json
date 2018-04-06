@@ -4,7 +4,7 @@
 
 	"content": {
 		"Properties": {
-			"paddings": { "text": "", "ref": "controls.pure/Paddings", "internal": false, "type": "Paddings", "defaultValue": "Paddings" },
+			"paddings": { "text": "", "ref": "controls.core/Paddings", "internal": false, "type": "Paddings", "defaultValue": "Paddings" },
 			"placeholder": { "text": "", "internal": false, "type": "string", "defaultValue": "" },
 			"cursorVisible": { "text": "", "internal": false, "type": "bool", "defaultValue": "true" }
 		},

@@ -7,10 +7,10 @@
 			"width": { "text": "width of the border", "internal": false, "type": "int", "defaultValue": "" },
 			"color": { "text": "color of the border", "internal": false, "type": "color", "defaultValue": "" },
 			"style": { "text": "style of the border", "internal": false, "type": "string", "defaultValue": "" },
-			"left": { "text": "left border side", "ref": "core/lazy", "internal": false, "type": "lazy", "defaultValue": "BorderSide" },
-			"right": { "text": "right border side", "ref": "core/lazy", "internal": false, "type": "lazy", "defaultValue": "BorderSide" },
-			"top": { "text": "top border side", "ref": "core/lazy", "internal": false, "type": "lazy", "defaultValue": "BorderSide" },
-			"bottom": { "text": "bottom border side", "ref": "core/lazy", "internal": false, "type": "lazy", "defaultValue": "BorderSide" }
+			"left": { "text": "left border side", "internal": false, "type": "lazy", "defaultValue": "BorderSide" },
+			"right": { "text": "right border side", "internal": false, "type": "lazy", "defaultValue": "BorderSide" },
+			"top": { "text": "top border side", "internal": false, "type": "lazy", "defaultValue": "BorderSide" },
+			"bottom": { "text": "bottom border side", "internal": false, "type": "lazy", "defaultValue": "BorderSide" }
 		},
 
 		"Methods": {

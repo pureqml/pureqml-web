@@ -8,7 +8,7 @@
 			"hasEnoughSpace": { "text": "", "internal": false, "type": "bool", "defaultValue": "true" },
 			"showMenu": { "text": "", "internal": false, "type": "bool", "defaultValue": "false" },
 			"content": { "text": "", "internal": false, "type": "Item", "defaultValue": "" },
-			"panel": { "text": "", "ref": "controls.web/Rectangle", "internal": false, "type": "Rectangle", "defaultValue": "Rectangle" }
+			"panel": { "text": "", "ref": "qmlcore.core/Rectangle", "internal": false, "type": "Rectangle", "defaultValue": "Rectangle" }
 		},
 
 		"Methods": {

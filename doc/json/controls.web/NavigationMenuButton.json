@@ -10,7 +10,7 @@
 			"content": { "text": "", "internal": false, "type": "Item", "defaultValue": "" },
 			"contentX": { "text": "", "internal": false, "type": "int", "defaultValue": "" },
 			"contentY": { "text": "", "internal": false, "type": "int", "defaultValue": "" },
-			"panel": { "text": "", "ref": "controls.web/Rectangle", "internal": false, "type": "Rectangle", "defaultValue": "Rectangle" }
+			"panel": { "text": "", "ref": "qmlcore.core/Rectangle", "internal": false, "type": "Rectangle", "defaultValue": "Rectangle" }
 		},
 
 		"Methods": {

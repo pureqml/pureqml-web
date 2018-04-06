@@ -6,7 +6,7 @@
 		"Properties": {
 			"text": { "text": "inner text placeholder", "internal": false, "type": "string", "defaultValue": "" },
 			"color": { "text": "placeholder color", "internal": false, "type": "Color", "defaultValue": "" },
-			"font": { "text": "placeholder font", "ref": "controls.core/Font", "internal": false, "type": "Font", "defaultValue": "PlaceholderFont" }
+			"font": { "text": "placeholder font", "ref": "qmlcore.core/Font", "internal": false, "type": "Font", "defaultValue": "PlaceholderFont" }
 		},
 
 		"Methods": {

@@ -15,7 +15,7 @@
 			"nativeScrolling": { "text": "allows native scrolling on mobile targets and shows native scrollbars", "internal": false, "type": "bool", "defaultValue": "" },
 			"prerender": { "text": "allocate additional delegates by viewport (prerender * horizontal/vertical view size) px", "internal": false, "type": "real", "defaultValue": "0.5" },
 			"visibilityProperty": { "text": "if this property is false, delegate is not created at all", "internal": false, "type": "string", "defaultValue": "" },
-			"content": { "text": "", "ref": "core/BaseViewContent", "internal": false, "type": "BaseViewContent", "defaultValue": "BaseViewContent" }
+			"content": { "text": "", "ref": "qmlcore.core/BaseViewContent", "internal": false, "type": "BaseViewContent", "defaultValue": "BaseViewContent" }
 		},
 
 		"Signals": {
