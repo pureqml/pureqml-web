@@ -6,7 +6,7 @@
 		"Methods": {
 			"onXChanged": { "text": "@private content for base view scrolling area", "params": [], "internal": true },
 			"onYChanged": { "text": "", "internal": true },
-			"constructor": { "text": "", "internal": false },
+			"constructor": { "text": "", "internal": true },
 			"_updateScrollPositions": { "text": "@private silently updates scroll positions, because browser animates scroll", "params": [], "internal": true }
 		}
 	}

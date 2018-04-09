@@ -10,10 +10,12 @@
 		},
 
 		"Methods": {
-			"constructor": { "text": "", "internal": false },
+			"constructor": { "text": "", "internal": true },
 			"replaceTopActivity": { "text": "", "internal": false },
 			"push": { "text": "", "internal": false },
+			"closeAll": { "text": "", "internal": false },
 			"pop": { "text": "", "internal": false },
+			"findActivity": { "text": "", "internal": false },
 			"setState": { "text": "", "internal": false },
 			"setIntent": { "text": "", "internal": false },
 			"clear": { "text": "", "internal": false },

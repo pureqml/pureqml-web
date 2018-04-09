@@ -4,7 +4,7 @@
 
 	"content": {
 		"Methods": {
-			"constructor": { "text": "", "internal": false },
+			"constructor": { "text": "", "internal": true },
 			"positionViewAtIndex": { "text": "", "internal": false },
 			"_getCurrentIndex": { "text": "", "internal": false },
 			"_createDelegate": { "text": "@private creates delegate in given item slot", "params": [], "internal": true },

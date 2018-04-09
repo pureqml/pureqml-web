@@ -12,7 +12,7 @@
 		"Methods": {
 			"onMinChanged": { "text": "", "internal": true },
 			"onMaxChanged": { "text": "", "internal": true },
-			"constructor": { "text": "", "internal": false }
+			"constructor": { "text": "", "internal": true }
 		}
 	}
 }

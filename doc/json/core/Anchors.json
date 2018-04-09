@@ -24,7 +24,7 @@
 		},
 
 		"Methods": {
-			"constructor": { "text": "", "internal": false },
+			"constructor": { "text": "", "internal": true },
 			"_updateAll": { "text": "@private", "params": [], "internal": true },
 			"_subscribe": { "text": "@private", "params": [], "internal": true },
 			"onLeftChanged": { "text": "", "internal": true },

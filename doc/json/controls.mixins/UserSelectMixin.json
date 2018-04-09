@@ -6,7 +6,7 @@
 		"Methods": {
 			"_updateValue": { "text": "@private", "params": [], "internal": true },
 			"onValueChanged": { "text": "", "internal": true },
-			"constructor": { "text": "", "internal": false }
+			"constructor": { "text": "", "internal": true }
 		}
 	}
 }

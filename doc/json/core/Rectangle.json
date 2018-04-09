@@ -10,7 +10,7 @@
 		},
 
 		"Methods": {
-			"constructor": { "text": "", "internal": false },
+			"constructor": { "text": "", "internal": true },
 			"onColorChanged": { "text": "", "internal": true },
 			"prototypeConstructor": { "text": "", "internal": false }
 		}

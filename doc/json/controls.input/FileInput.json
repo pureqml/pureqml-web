@@ -10,7 +10,7 @@
 
 		"Methods": {
 			"onFilterChanged": { "text": "", "internal": true },
-			"constructor": { "text": "", "internal": false }
+			"constructor": { "text": "", "internal": true }
 		}
 	}
 }

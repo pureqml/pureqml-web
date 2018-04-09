@@ -8,7 +8,7 @@
 		},
 
 		"Methods": {
-			"constructor": { "text": "", "internal": false },
+			"constructor": { "text": "", "internal": true },
 			"_delayedLoad": { "text": "@private", "params": [], "internal": true },
 			"load": { "text": "", "internal": false },
 			"onSourceChanged": { "text": "", "internal": true },

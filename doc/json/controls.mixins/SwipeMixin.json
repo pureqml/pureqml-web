@@ -15,7 +15,7 @@
 		},
 
 		"Methods": {
-			"constructor": { "text": "", "internal": false },
+			"constructor": { "text": "", "internal": true },
 			"onEnabledChanged": { "text": "", "internal": true },
 			"_bindTouch": { "text": "@private", "params": [], "internal": true },
 			"onTouchStart": { "text": "@private", "params": [], "internal": true },

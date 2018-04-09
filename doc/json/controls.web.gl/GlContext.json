@@ -4,7 +4,7 @@
 
 	"content": {
 		"Methods": {
-			"constructor": { "text": "", "internal": false },
+			"constructor": { "text": "", "internal": true },
 			"onWidthChanged": { "text": "", "internal": true }
 		}
 	}

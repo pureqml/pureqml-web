@@ -14,7 +14,7 @@
 		"Methods": {
 			"getTag": { "text": "@private", "params": [], "internal": true },
 			"onSourceChanged": { "text": "", "internal": true },
-			"constructor": { "text": "", "internal": false }
+			"constructor": { "text": "", "internal": true }
 		}
 	}
 }

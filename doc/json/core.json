@@ -23,6 +23,7 @@
 		"BaseLayout": "core/BaseLayout.json",
 		"GridView": "core/GridView.json",
 		"Column": "core/Column.json",
+		"PropertyStorage": "core/PropertyStorage.json",
 		"HoverMixin": "core/HoverMixin.json",
 		"ScrollView": "core/ScrollView.json",
 		"Transform": "core/Transform.json",

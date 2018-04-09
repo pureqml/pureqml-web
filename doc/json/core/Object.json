@@ -4,7 +4,7 @@
 
 	"content": {
 		"Methods": {
-			"constructor": { "text": "the most basic QML Object, generic event emitter, properties and id links holder", "params": [], "internal": false },
+			"constructor": { "text": "the most basic QML Object, generic event emitter, properties and id links holder", "params": [], "internal": true },
 			"prototypeConstructor": { "text": "", "internal": false },
 			"discard": { "text": "discard object", "params": [], "internal": false },
 			"addChild": { "text": "adds child object to children", "params": [{ "name": "child", "type": "Object", "text": "object to add" }], "internal": false },

@@ -20,7 +20,7 @@
 		},
 
 		"Methods": {
-			"constructor": { "text": "", "internal": false },
+			"constructor": { "text": "", "internal": true },
 			"onSdkChanged": { "text": "", "internal": true }
 		}
 	}

@@ -13,7 +13,7 @@
 		},
 
 		"Methods": {
-			"constructor": { "text": "", "internal": false },
+			"constructor": { "text": "", "internal": true },
 			"onWidthChanged": { "text": "@private", "params": [], "internal": true },
 			"getTag": { "text": "@private", "params": [], "internal": true },
 			"registerStyle": { "text": "@private", "params": [], "internal": true },

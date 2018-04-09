@@ -41,7 +41,7 @@
 		},
 
 		"Methods": {
-			"constructor": { "text": "", "internal": false },
+			"constructor": { "text": "", "internal": true },
 			"discard": { "text": "@private", "params": [], "internal": true },
 			"getTag": { "text": "returns tag for corresponding element", "params": [], "internal": false },
 			"getClass": { "text": "returns tag for corresponding element", "params": [], "internal": false },

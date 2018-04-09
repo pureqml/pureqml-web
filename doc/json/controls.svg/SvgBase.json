@@ -8,7 +8,7 @@
 		},
 
 		"Methods": {
-			"constructor": { "text": "", "internal": false },
+			"constructor": { "text": "", "internal": true },
 			"_createElement": { "text": "specialized implementation of element creation in a certain namespace.", "params": [], "internal": false },
 			"getTag": { "text": "returns tag for corresponding element", "params": [], "internal": false },
 			"registerStyle": { "text": "", "internal": false },
