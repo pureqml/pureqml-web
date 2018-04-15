@@ -13,7 +13,7 @@
 			"constructor": { "text": "", "internal": true },
 			"replaceTopActivity": { "text": "", "internal": false },
 			"push": { "text": "", "internal": false },
-			"closeAll": { "text": "", "internal": false },
+			"closeAllExcept": { "text": "", "internal": false },
 			"pop": { "text": "", "internal": false },
 			"findActivity": { "text": "", "internal": false },
 			"setState": { "text": "", "internal": false },

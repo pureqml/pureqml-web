@@ -46,7 +46,7 @@
 			"getTag": { "text": "returns tag for corresponding element", "params": [], "internal": false },
 			"getClass": { "text": "returns tag for corresponding element", "params": [], "internal": false },
 			"registerStyle": { "text": "@private", "params": [], "internal": true },
-			"_attachElement": { "text": "", "internal": false },
+			"_attachElement": { "text": "@private", "params": [], "internal": true },
 			"_createElement": { "text": "default implementation of element creation routine.", "params": [], "internal": false },
 			"toScreen": { "text": "map relative component coordinates to absolute screen ones", "params": [], "internal": false },
 			"style": { "text": "@private passes style (or styles { a:, b:, c: ... }) to underlying element", "params": [], "internal": true },

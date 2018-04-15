@@ -1,6 +1,6 @@
 {
 	"name": "controls.mixins.TextMixin",
-	"text": "",
+	"text": "mixin which instantiate text in component without creating extra entities",
 
 	"content": {
 		"Methods": {
