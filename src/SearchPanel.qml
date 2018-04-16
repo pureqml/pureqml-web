@@ -1,28 +1,28 @@
 Item {
 	signal search;
-	height: 50;
-	z: 4;
 	property bool searchFocused: searchText.activeFocus || searchResults.visible;
 	property Mixin hover: HoverClickMixin { cursor: "pointer"; }
+	height: 50;
+	z: 4;
 
 	onClicked: { searchText.setFocus() }
 
 	MaterialIcon {
 		anchors.verticalCenter: parent.verticalCenter;
 		icon: "search";
-		color: parent.hover.value || searchText.activeFocus ? "#424242" : colorTheme.primaryTextColor;
+		color: parent.hover.value || searchText.activeFocus ? colorTheme.textColor : colorTheme.primaryTextColor;
 		size: 18;
 	}
 
 	SearchInput {
 		id: searchText;
-		height: 28;
-		width: 100% - 30;
 		x: 30;
+		width: 100% - 30;
+		height: 28;
 		anchors.verticalCenter: parent.verticalCenter;
 		font.pixelSize: 18;
 		font.weight: 300;
-		color: "#424242";
+		color: colorTheme.textColor;
 		placeholder.text: "Search";
 
 		onTextChanged: {

@@ -2,7 +2,7 @@ Rectangle {
 	signal clear;
 	width: 100%;
 	height: searchView.height > 200 ? 200 : searchView.height;
-	color: "white";
+	color: colorTheme.hTextColor;
 	effects.shadow.y: 2;
 	effects.shadow.blur: 2;
 	effects.shadow.color: "#0004";

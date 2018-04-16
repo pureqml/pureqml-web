@@ -2,10 +2,10 @@ WebLink {
 	property string relPath;
 	property string text;
 	href: "http://pureqml.com/" + relPath;
-	color: hover ? "#8BC34A" : "white";
+	color: hover ? colorTheme.primaryColor : colorTheme.hTextColor;
 	radius: 5;
 	border.width: 1;
-	border.color: "#8BC34A";
+	border.color: colorTheme.primaryColor;
 	width: innerText.width + 20;
 	height: innerText.height + 20;
 
@@ -14,7 +14,7 @@ WebLink {
 		x: 10; y: 10;
 		font.pointSize: 14;
 		font.family: "Roboto Slab";
-		color: parent.hover ? "white" : "#666666";
+		color: parent.hover ? colorTheme.hTextColor : "#666666";
 		text: parent.text;
 	}
 
@@ -32,8 +32,8 @@ WebLink {
 		if (a[2])
 			state.element = a[2]
 
-		this._context.location.pushState(state, this.href, this.href) 
-	} 
+		this._context.location.pushState(state, this.href, this.href)
+	}
 
 	Behavior on background, color { Animation { duration: 300; } }
 }

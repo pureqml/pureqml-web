@@ -20,7 +20,7 @@ Column {
 			anchors.horizontalCenter: parent.horizontalCenter;
 			horizontalAlignment: Text.AlignHCenter;
 			verticalAlignment: Text.AlignVCenter;
-			color: "white";
+			color: colorTheme.hTextColor;
 			font.pixelSize: 48;
 			font.weight: 100;
 			text: "<b>PureQML</b><br>QML-inspired declarative JS-framework for web (and other platforms).";

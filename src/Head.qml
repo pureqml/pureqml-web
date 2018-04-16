@@ -3,9 +3,9 @@ Rectangle {
 	height: menu.rowsCount > 1 ? (open && !searchPanel.searchFocused ? menu.height : 0) + 50 : menu.height;
 	width: 100%;
 	color: colorTheme.panelColor;
-	effects.shadow.y: 1; 
-	effects.shadow.color: "#0004"; 
-	effects.shadow.blur: 1; 
+	effects.shadow.y: 1;
+	effects.shadow.color: "#0004";
+	effects.shadow.blur: 1;
 	effects.shadow.spread: 1;
 	transform.translateZ: 2;
 	property bool newWindow;
@@ -39,7 +39,7 @@ Rectangle {
 		verticalAlignment: Text.AlignVCenter;
 		icon: "keyboard_arrow_up";
 		size: 36;
-		color: "#828282";
+		color: colorTheme.iconColor;
 		opacity: parent.open;
 		visible: menu.rowsCount > 1;
 		Behavior on opacity, y { Animation { duration: 300; }}
@@ -56,7 +56,7 @@ Rectangle {
 		verticalAlignment: Text.AlignVCenter;
 		icon: "keyboard_arrow_down";
 		size: 36;
-		color: "#828282";
+		color: colorTheme.iconColor;
 		opacity: !parent.open;
 		visible: menu.rowsCount > 1;
 		Behavior on opacity, y { Animation { duration: 300; }}
@@ -64,7 +64,7 @@ Rectangle {
 		onClicked: { this.parent.open = true; }
 	}
 
-	onCompleted: { 
+	onCompleted: {
 		this.style('position', 'fixed')
 		this.style('will-change', 'transform')
 	}

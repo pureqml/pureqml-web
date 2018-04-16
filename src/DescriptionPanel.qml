@@ -6,7 +6,7 @@ Rectangle {
 	height: 350;
 	color: colorTheme.panelColor;
 	radius: 3;
-	effects.shadow.color: "#ccc";
+	effects.shadow.color: colorTheme.shadowColor;
 	effects.shadow.x: 1;
 	effects.shadow.y: 1;
 

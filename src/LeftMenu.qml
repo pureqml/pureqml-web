@@ -5,7 +5,7 @@ Rectangle {
 	property bool open;
 	width: 256;
 	height: context.height - y;
-	color: "#FAFAFA";
+	color: colorTheme.leftMenuColor;
 	z: 1;
 	y: parent.parent.y;
 	x: hidable && !open ? -width : 0;
@@ -31,12 +31,12 @@ Rectangle {
 			spacing: 5;
 			model: menuModel;
 			delegate: WebLink {
-				width: 100%;
-				height: 30;
-				color: hover ? "#AED581" : "transparent";
 				property bool hash: model.hash;
 				property string path: model.path;
 				property string text: model.text;
+				width: 100%;
+				height: 30;
+				color: hover ? "#AED581" : "transparent";
 				href: hash ? model.hash : "http://pureqml.com/" + model.path;
 
 				Behavior on background { Animation { duration: 300;}}
@@ -75,32 +75,34 @@ Rectangle {
 	}
 
 	WebItem {
+		x: 100%;
 		width: 24;
 		height: 100%;
 		visible: parent.hidable;
-		color: "white";
-		x: 100%;
+		color: colorTheme.hTextColor;
 		onClicked: { this.parent.open = !this.parent.open; }
 		border.width: 1;
 		border.color: "#EEE";
+
 		MaterialIcon {
 			anchors.centerIn: parent;
 			icon: leftMenuProto.open ? "keyboard_arrow_left" : "keyboard_arrow_right";
 			size: 24;
-			color: "#828282";
+			color: colorTheme.iconColor;
 		}
 	}
 
-
 	WebItem {
 		x: 100% + 24;
-		height: 100%;
 		width: context.width - x;
+		height: 100%;
 		color: "#000000";
 		opacity: visible ? 0.4 : 0;
 		visible: parent.hidable && parent.open;
+
 		onClicked: { this.parent.open = false; }
-		Behavior on opacity { Animation { duration:  parent.parent.visible ? 400 : 0; delay: parent.parent.visible ? 500 : 0; }}
+
+		Behavior on opacity { Animation { duration: parent.parent.visible ? 400 : 0; delay: parent.parent.visible ? 500 : 0; }}
 	}
 
 	fillModel(data): {

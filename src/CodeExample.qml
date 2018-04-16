@@ -32,7 +32,7 @@ Item {
 			id: sampleArea;
 			width: codeExampleProto.sample.width;
 			height: codeExampleProto.exampleHeight;
-			color: "#EEE";
+			color: colorTheme.codeSampleColor;
 
 			property Item content: Item { anchors.fill: parent; }
 
@@ -52,6 +52,7 @@ Item {
 		log("Code", codeFile)
 		codeSource.url = "https://raw.githubusercontent.com/pureqml/pureqml-web/master/" + codeFile
 	}
+
 	onRecursiveVisibleChanged: {
 		if (this.sample)
 			this._updateVisibilityForChild(this.sample, value)

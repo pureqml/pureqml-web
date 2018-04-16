@@ -9,7 +9,7 @@ WebLink {
 	border.color: !hover ? colorTheme.primaryColor : colorTheme.panelColor;
 	effects.shadow.y: hover ? 2 : 0;
 	effects.shadow.blur: hover ? 8 : 4;
-	effects.shadow.color: "#cccc";
+	effects.shadow.color: colorTheme.shadowColor;
 	effects.shadow.spread: 2;
 
 	Image {
