@@ -1,6 +1,6 @@
 {
 	"name": "controls.input.ColorInput",
-	"text": "",
+	"text": "color selecting input",
 
 	"content": {
 		"Methods": {

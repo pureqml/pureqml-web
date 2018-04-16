@@ -55,12 +55,14 @@
 		"controls.core": {
 			"file": "controls.core.json",
 			"content": {
+				"RollerView": "controls.core/RollerView.json",
 				"ActivityManager": "controls.core/ActivityManager.json",
 				"Resource": "controls.core/Resource.json",
 				"Sprite": "controls.core/Sprite.json",
 				"JsonStorage": "controls.core/JsonStorage.json",
 				"DebugInfoPanel": "controls.core/DebugInfoPanel.json",
-				"RollerView": "controls.core/RollerView.json",
+				"BaseActivity": "controls.core/BaseActivity.json",
+				"LazyActivity": "controls.core/LazyActivity.json",
 				"Request": "controls.core/Request.json",
 				"AnimatedSprite": "controls.core/AnimatedSprite.json",
 				"PlaceholderFont": "controls.core/PlaceholderFont.json",

@@ -1,6 +1,6 @@
 {
 	"name": "core.Column",
-	"text": "@private",
+	"text": "Layout for vertical oriented content",
 
 	"content": {
 		"Methods": {

@@ -3,26 +3,9 @@
 	"text": "",
 
 	"content": {
-		"Properties": {
-			"name": { "text": "", "internal": false, "type": "string", "defaultValue": "" }
-		},
-
-		"Signals": {
-			"started": { "text": "", "internal": false },
-			"stopped": { "text": "", "internal": false }
-		},
-
 		"Methods": {
 			"start": { "text": "", "internal": false },
-			"stop": { "text": "", "internal": false },
-			"init": { "text": "", "internal": false },
-			"pop": { "text": "", "internal": false },
-			"push": { "text": "", "internal": false },
-			"replaceTopActivity": { "text": "", "internal": false },
-			"setState": { "text": "", "internal": false },
-			"setIntent": { "text": "", "internal": false },
-			"clear": { "text": "", "internal": false },
-			"onBackPressed": { "text": "", "internal": false }
+			"stop": { "text": "", "internal": false }
 		}
 	}
 }

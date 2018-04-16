@@ -1,13 +1,13 @@
 {
 	"name": "controls.input.RangeInput",
-	"text": "@private",
+	"text": "range input",
 
 	"content": {
 		"Properties": {
-			"value": { "text": "", "internal": false, "type": "int", "defaultValue": "" },
-			"min": { "text": "", "internal": false, "type": "int", "defaultValue": "0" },
-			"max": { "text": "", "internal": false, "type": "int", "defaultValue": "100" },
-			"step": { "text": "", "internal": false, "type": "int", "defaultValue": "1" }
+			"value": { "text": "current value", "internal": false, "type": "int", "defaultValue": "" },
+			"min": { "text": "minimal range value", "internal": false, "type": "int", "defaultValue": "0" },
+			"max": { "text": "maximum range value", "internal": false, "type": "int", "defaultValue": "100" },
+			"step": { "text": "range step", "internal": false, "type": "int", "defaultValue": "1" }
 		},
 
 		"Methods": {

@@ -1,0 +1,18 @@
+{
+	"name": "controls.core.LazyActivity",
+	"text": "",
+
+	"content": {
+		"Properties": {
+			"component": { "text": "", "internal": false, "type": "string", "defaultValue": "" }
+		},
+
+		"Methods": {
+			"createItem": { "text": "", "internal": false },
+			"getItem": { "text": "", "internal": false },
+			"init": { "text": "", "internal": false },
+			"start": { "text": "", "internal": false },
+			"stop": { "text": "", "internal": false }
+		}
+	}
+}

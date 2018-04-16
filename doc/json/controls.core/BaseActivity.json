@@ -1,0 +1,27 @@
+{
+	"name": "controls.core.BaseActivity",
+	"text": "",
+
+	"content": {
+		"Properties": {
+			"name": { "text": "", "internal": false, "type": "string", "defaultValue": "" },
+			"manager": { "text": "", "internal": false, "type": "Item", "defaultValue": "${parent}" }
+		},
+
+		"Signals": {
+			"started": { "text": "", "internal": false },
+			"stopped": { "text": "", "internal": false }
+		},
+
+		"Methods": {
+			"init": { "text": "", "internal": false },
+			"pop": { "text": "", "internal": false },
+			"push": { "text": "", "internal": false },
+			"replaceTopActivity": { "text": "", "internal": false },
+			"setState": { "text": "", "internal": false },
+			"setIntent": { "text": "", "internal": false },
+			"clear": { "text": "", "internal": false },
+			"onBackPressed": { "text": "", "internal": false }
+		}
+	}
+}

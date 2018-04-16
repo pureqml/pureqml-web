@@ -1,12 +1,12 @@
 {
 	"name": "controls.input.DateInput",
-	"text": "",
+	"text": "date selecting input",
 
 	"content": {
 		"Properties": {
-			"max": { "text": "", "internal": false, "type": "string", "defaultValue": "" },
-			"min": { "text": "", "internal": false, "type": "string", "defaultValue": "" },
-			"value": { "text": "", "internal": false, "type": "string", "defaultValue": "" }
+			"max": { "text": "maximum date value", "internal": false, "type": "string", "defaultValue": "" },
+			"min": { "text": "minimal date value", "internal": false, "type": "string", "defaultValue": "" },
+			"value": { "text": "current date value", "internal": false, "type": "string", "defaultValue": "" }
 		},
 
 		"Methods": {

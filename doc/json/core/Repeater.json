@@ -1,6 +1,6 @@
 {
 	"name": "core.Repeater",
-	"text": "@private",
+	"text": "The simplest view implementation, creates elements without positioning",
 
 	"content": {
 		"Methods": {

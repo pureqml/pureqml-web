@@ -16,6 +16,7 @@
 			"closeAllExcept": { "text": "", "internal": false },
 			"pop": { "text": "", "internal": false },
 			"findActivity": { "text": "", "internal": false },
+			"createActivity": { "text": "", "internal": false },
 			"setState": { "text": "", "internal": false },
 			"setIntent": { "text": "", "internal": false },
 			"clear": { "text": "", "internal": false },

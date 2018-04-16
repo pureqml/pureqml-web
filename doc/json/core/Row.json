@@ -1,6 +1,6 @@
 {
 	"name": "core.Row",
-	"text": "@private",
+	"text": "layout for horizontal oriented content",
 
 	"content": {
 		"Methods": {

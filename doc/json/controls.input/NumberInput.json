@@ -1,13 +1,13 @@
 {
 	"name": "controls.input.NumberInput",
-	"text": "",
+	"text": "number input",
 
 	"content": {
 		"Properties": {
-			"max": { "text": "", "internal": false, "type": "float", "defaultValue": "" },
-			"min": { "text": "", "internal": false, "type": "float", "defaultValue": "" },
-			"step": { "text": "", "internal": false, "type": "float", "defaultValue": "" },
-			"value": { "text": "", "internal": false, "type": "float", "defaultValue": "" }
+			"max": { "text": "maximum number value", "internal": false, "type": "float", "defaultValue": "" },
+			"min": { "text": "minimum number value", "internal": false, "type": "float", "defaultValue": "" },
+			"step": { "text": "number step value", "internal": false, "type": "float", "defaultValue": "" },
+			"value": { "text": "number value", "internal": false, "type": "float", "defaultValue": "" }
 		},
 
 		"Methods": {

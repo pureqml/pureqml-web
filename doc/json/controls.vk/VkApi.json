@@ -1,6 +1,6 @@
 {
 	"name": "controls.vk.VkApi",
-	"text": "@param callback:function request done callback function 	@param settings:Object additional query params 	call vk API 'wall.get' method function",
+	"text": "vkontakte API object",
 
 	"content": {
 		"Methods": {
