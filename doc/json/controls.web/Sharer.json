@@ -1,16 +1,16 @@
 {
 	"name": "controls.web.Sharer",
-	"text": "",
+	"text": "object for sharing URL in corresponded social network",
 
 	"content": {
 		"Properties": {
-			"url": { "text": "", "internal": false, "type": "string", "defaultValue": "" }
+			"url": { "text": "URL you want to share", "internal": false, "type": "string", "defaultValue": "" }
 		},
 
 		"Methods": {
 			"onSocailNetworkChanged": { "text": "", "internal": true },
-			"open": { "text": "", "internal": false },
-			"redirect": { "text": "", "internal": false }
+			"open": { "text": "load URL", "params": [], "internal": false },
+			"redirect": { "text": "set location to corresponded URL", "params": [], "internal": false }
 		}
 	}
 }

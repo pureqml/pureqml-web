@@ -1,6 +1,6 @@
 {
 	"name": "controls.web.HoverClickMixin",
-	"text": "this mixin provides mouse hover events handling",
+	"text": "this mixin provides mouse hover and click events handling",
 
 	"content": {
 		"Properties": {
@@ -9,15 +9,15 @@
 			"activeHoverEnabled": { "text": "", "internal": false, "type": "bool", "defaultValue": "false" },
 			"value": { "text": "", "internal": false, "type": "bool", "defaultValue": "" },
 			"activeHover": { "text": "", "internal": false, "type": "bool", "defaultValue": "false" },
-			"cursor": { "text": "", "internal": false, "type": "string", "defaultValue": "" }
+			"cursor": { "text": "cursor over the parent item type name", "internal": false, "type": "string", "defaultValue": "" }
 		},
 
 		"Methods": {
 			"constructor": { "text": "", "internal": true },
 			"onCursorChanged": { "text": "", "internal": true },
-			"_bindClick": { "text": "", "internal": false },
-			"_bindHover": { "text": "", "internal": false },
-			"_bindActiveHover": { "text": "", "internal": false },
+			"_bindClick": { "text": "@private", "params": [], "internal": true },
+			"_bindHover": { "text": "@private", "params": [], "internal": true },
+			"_bindActiveHover": { "text": "@private", "params": [], "internal": true },
 			"onEnabledChanged": { "text": "", "internal": true },
 			"onClickableChanged": { "text": "", "internal": true },
 			"onActiveHoverEnabledChanged": { "text": "", "internal": true }

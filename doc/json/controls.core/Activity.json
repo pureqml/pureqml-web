@@ -5,7 +5,8 @@
 	"content": {
 		"Methods": {
 			"start": { "text": "", "internal": false },
-			"stop": { "text": "", "internal": false }
+			"stop": { "text": "", "internal": false },
+			"getActivity": { "text": "", "internal": false }
 		}
 	}
 }

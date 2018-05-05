@@ -8,8 +8,8 @@
 		},
 
 		"Methods": {
-			"createItem": { "text": "", "internal": false },
-			"getItem": { "text": "", "internal": false },
+			"createActivity": { "text": "", "internal": false },
+			"getActivity": { "text": "", "internal": false },
 			"init": { "text": "", "internal": false },
 			"start": { "text": "", "internal": false },
 			"stop": { "text": "", "internal": false }

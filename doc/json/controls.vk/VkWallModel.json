@@ -1,14 +1,14 @@
 {
 	"name": "controls.vk.VkWallModel",
-	"text": "this model wich get data from the 'vkontakte' socail network wall",
+	"text": "this model get data from the 'vkontakte' social network wall",
 
 	"content": {
 		"Properties": {
-			"ownerId": { "text": "", "internal": false, "type": "int", "defaultValue": "" }
+			"ownerId": { "text": "user ID  of the owner of the wall", "internal": false, "type": "int", "defaultValue": "" }
 		},
 
 		"Signals": {
-			"error": { "text": "this model wich get data from the 'vkontakte' socail network wall", "internal": false }
+			"error": { "text": "any error during requestoccured signal", "internal": false }
 		},
 
 		"Methods": {

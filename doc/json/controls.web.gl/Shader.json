@@ -1,11 +1,11 @@
 {
 	"name": "controls.web.gl.Shader",
-	"text": "",
+	"text": "@param {string} sourceCode - shader source code 	@param {string} type - shader type to create 	shader creation function implementaion",
 
 	"content": {
 		"Methods": {
 			"constructor": { "text": "", "internal": true },
-			"createImpl": { "text": "", "internal": false }
+			"createImpl": { "text": "@param {string} sourceCode - shader source code", "params": [{ "name": "sourceCode", "type": "string", "text": "shader source code" }, { "name": "type", "type": "string", "text": "shader type to create" }], "internal": false }
 		}
 	}
 }

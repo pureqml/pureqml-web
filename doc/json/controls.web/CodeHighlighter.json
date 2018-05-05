@@ -1,6 +1,6 @@
 {
 	"name": "controls.web.CodeHighlighter",
-	"text": "@private",
+	"text": "item for displaying code with syntax highlighting powered by highlight.js",
 
 	"content": {
 		"Properties": {

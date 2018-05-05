@@ -1,11 +1,17 @@
 {
 	"name": "controls.web.gl.GlContext",
-	"text": "",
+	"text": "Canvas with initialized WebGl indeside",
 
 	"content": {
+		"Signals": {
+			"drawScene": { "text": "triggered on scene rendering with time delta argument", "internal": false }
+		},
+
 		"Methods": {
 			"constructor": { "text": "", "internal": true },
-			"onWidthChanged": { "text": "", "internal": true }
+			"render": { "text": "@private", "params": [], "internal": true },
+			"onWidthChanged": { "text": "", "internal": true },
+			"onCompleted": { "text": "@private", "params": [], "internal": true }
 		}
 	}
 }

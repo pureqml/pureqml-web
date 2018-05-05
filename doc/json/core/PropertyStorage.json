@@ -9,12 +9,17 @@
 			"defaultValue": { "text": "default init value", "internal": false, "type": "string", "defaultValue": "" }
 		},
 
+		"Signals": {
+			"ready": { "text": "the value now in a sync state with underlying storage", "internal": false }
+		},
+
 		"Methods": {
 			"_checkNameValid": { "text": "@private", "params": [], "internal": true },
 			"_read": { "text": "@private", "params": [], "internal": true },
 			"_write": { "text": "@private", "params": [], "internal": true },
 			"onValueChanged": { "text": "@private", "params": [], "internal": true },
-			"onNameChanged": { "text": "@private", "params": [], "internal": true }
+			"onNameChanged": { "text": "@private", "params": [], "internal": true },
+			"onCompleted": { "text": "", "internal": true }
 		}
 	}
 }
