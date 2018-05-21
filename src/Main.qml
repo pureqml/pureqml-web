@@ -83,14 +83,14 @@ Column {
 			and targeted to various embedded platforms, like Set-top boxes or Openmoko.";
 		}
 
-		PlatformImage { href: "https://en.wikipedia.org/wiki/HTML5"; img.source: colorTheme.resPath + "/platforms/html5.png";}
-		PlatformImage { href: "http://wiki.openmoko.org/wiki/Main_Page"; img.source: colorTheme.resPath + "/platforms/openmoko.png";}
-		PlatformImage { href: "http://webostv.developer.lge.com/discover/netcast/overview/"; img.source: colorTheme.resPath + "/platforms/netcast.png";}
-		PlatformImage { href: "https://www.opera.com/opera-tv"; img.source: colorTheme.resPath + "/platforms/opera.png";}
-		PlatformImage { href: "http://webostv.developer.lge.com/"; img.source: colorTheme.resPath + "/platforms/webos.png";}
-		PlatformImage { href: "http://developer.samsung.com/tv"; img.source: colorTheme.resPath + "/platforms/smarttv.png";}
-		PlatformImage { href: "https://developer.tizen.org/tizen/tv"; img.source: colorTheme.resPath + "/platforms/tizen.png";}
-		PlatformImage { href: "https://www.android.com"; img.source: colorTheme.resPath + "/platforms/android.png";}
+		PlatformImage { href: "https://en.wikipedia.org/wiki/HTML5"; icon: colorTheme.resPath + "/platforms/html5.png"; }
+		PlatformImage { href: "http://wiki.openmoko.org/wiki/Main_Page"; icon: colorTheme.resPath + "/platforms/openmoko.png"; }
+		PlatformImage { href: "http://webostv.developer.lge.com/discover/netcast/overview/"; icon: colorTheme.resPath + "/platforms/netcast.png"; }
+		PlatformImage { href: "https://www.opera.com/opera-tv"; icon: colorTheme.resPath + "/platforms/opera.png"; }
+		PlatformImage { href: "http://webostv.developer.lge.com/"; icon: colorTheme.resPath + "/platforms/webos.png"; }
+		PlatformImage { href: "http://developer.samsung.com/tv"; icon: colorTheme.resPath + "/platforms/smarttv.png"; }
+		PlatformImage { href: "https://developer.tizen.org/tizen/tv"; icon: colorTheme.resPath + "/platforms/tizen.png"; }
+		PlatformImage { href: "https://www.android.com"; icon: colorTheme.resPath + "/platforms/android.png"; }
 
 		MainH2 {
 			text: "Practical use";
