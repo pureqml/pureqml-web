@@ -2,21 +2,20 @@ Column {
 	property string url: "main";
 	width: 100%;
 
-	Column {
+	Item {
 		width: 100%;
+		height: 374;
 		property Gradient gradient: Gradient {
 			orientation: Gradient.Custom;
 			angle: 120;
-			GradientStop { position: 0; color: "#8BC34A";}
-			GradientStop { position: 1; color: "#00BCD4";}
+
+			GradientStop { position: 0; color: "#8BC34A"; }
+			GradientStop { position: 1; color: "#00BCD4"; }
 		}
 
-		Behavior on background { Animation { duration: 2000; easing: "linear"; }}
-
 		H1 {
-			anchors.topMargin: 100;
-			anchors.bottomMargin: 100;
 			width: Math.min(100%, 1200) - 40;
+			height: 100%;
 			anchors.horizontalCenter: parent.horizontalCenter;
 			horizontalAlignment: Text.AlignHCenter;
 			verticalAlignment: Text.AlignVCenter;
@@ -25,6 +24,8 @@ Column {
 			font.weight: 100;
 			text: "<b>PureQML</b><br>QML-inspired declarative JS-framework for web (and other platforms).";
 		}
+
+		Behavior on background { Animation { duration: 2000; easing: "linear"; }}
 	}
 
 	Grid {
