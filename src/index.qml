@@ -64,8 +64,6 @@ ScrollView {
 		}
 
 		onPageNameChanged: { log("onPageNameChanged", value); if (value) this.updatePage() }
-
-		onCompleted: { this.pageName = ""; }
 	}
 
 	Item {
