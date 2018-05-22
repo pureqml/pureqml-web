@@ -40,21 +40,30 @@ ScrollView {
 		y: 50;
 		width: 100%;
 
-		onPageNameChanged: {
+		Main { }
+		GettingStarted { }
+		Download { }
+		Lessons { }
+		Docs { }
+
+		updatePage: {
 			var children = this.children
+			log("upatePage children", children, "value", this.pageName)
 			for (var i in children) {
-				if (children[i].url == value) {
+				if (children[i].url == this.pageName) {
 					this.currentIndex = i
 					return
 				}
 			}
 		}
 
-		Main { }
-		GettingStarted { }
-		Download { }
-		Lessons { }
-		Docs { }
+		onCountChanged: {
+			log("Count", value)
+			if (value)
+				this.updatePage()
+		}
+
+		onPageNameChanged: { log("onPageNameChanged", value); if (value) this.updatePage() }
 
 		onCompleted: { this.pageName = ""; }
 	}
