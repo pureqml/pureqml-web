@@ -11,13 +11,14 @@ WebLink {
 			return;
 		e.preventDefault();
 		this.parent.parent.open = false;
-		this._context.location.pushState({ page: this.page }, "PureQML - " + this.text, this.href) 
-	} 
+		this._context.location.pushState({ page: this.page }, "PureQML - " + this.text, this.href)
+	}
 
 	Text {
 		id: menuItemText;
+		width: 100%;
 		anchors.verticalCenter: parent.verticalCenter;
-		x: 20;
+		horizontalAlignment: Text.AlignHCenter;
 		text: parent.text;
 		font.pointSize: 15;
 		color: parent.hover ? "#242424" : "#616161";
