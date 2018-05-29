@@ -6,7 +6,7 @@ Column {
 	spacing: 10;
 
 	WebLink {
-		href: "http://pureqml.com/" + parent.path;
+		href: "https://pureqml.com/" + parent.path;
 		height: headText.height;
 		width: 100%;
 		anchors.topMargin: 50;

@@ -15,5 +15,5 @@ Object {
 	property color iconColor:			"#828282";
 	property color shadowColor:			"#828282";
 
-	property string resPath:	"http://pureqml.com/res";
+	property string resPath:	"https://pureqml.com/res";
 }
