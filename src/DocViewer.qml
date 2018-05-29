@@ -35,7 +35,7 @@ Column {
 			for (var a in data) {
 				nameText.text = a
 				for (var b in data[a])
-					output += '<a href="http://pureqml.com/docs/' + a + '/' + b + '" style="font-family:Roboto Slab; font-size:26px; padding-bottom:8px; color:#00897B; position:static;">' + b + "</a><br>"
+					output += '<a href="https://pureqml.com/docs/' + a + '/' + b + '" style="font-family:Roboto Slab; font-size:26px; padding-bottom:8px; color:#00897B; position:static;">' + b + "</a><br>"
 			}
 			docText.text = output;
 			window.scrollTo(0, 0)
@@ -62,7 +62,7 @@ Column {
 				if (c.internal)
 					continue
 
-				var ref = c.ref ? 'href="http://pureqml.com/docs/' + c.ref + '"' : ""
+				var ref = c.ref ? 'href="https://pureqml.com/docs/' + c.ref + '"' : ""
 				output += '<div style="color:#616161; padding-bottom:8px; border-bottom-style:solid; border-bottom-width:2px; border-bottom-color:#F5F5F5; font-family:Roboto Slab; font-size:26px;">'
 
 				// Methods

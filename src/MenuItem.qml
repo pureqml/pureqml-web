@@ -1,7 +1,7 @@
 WebLink {
 	property string text;
 	property string page;
-	href: "http://pureqml.com/" + page;
+	href: "https://pureqml.com/" + page;
 	width: menuItemText.paintedWidth + 40;
 	height: 50;
 	color: hover ? "#AED581" : "transparent";
