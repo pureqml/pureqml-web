@@ -6,18 +6,13 @@ ActivityManager {
 
 	ColorTheme { id: colorTheme; }
 
-	//@using { src.Main }
-	LazyActivity { name: "main"; component: "src.Main"; }
-	//@using { src.GettingStarted }
-	LazyActivity { name: "gettingstarted"; component: "src.GettingStarted"; }
-	//@using { src.Download }
-	LazyActivity { name: "download"; component: "src.Download"; }
-	//@using { src.Lessons }
-	LazyActivity { name: "lessons"; component: "src.Lessons"; }
-	//@using { src.Docs }
-	LazyActivity { name: "docs"; component: "src.Docs"; }
+	Main { }
+	GettingStarted { }
+	Download { }
+	Lessons { }
+	Docs { }
 
-	onStateChanged: { if (value.page) this.replaceTopActivity(value.page) }
+	onStateChanged: { this.replaceTopActivity(value.page ? value.page : "main") }
 
 	onCompleted: { this.push("main") }
 }

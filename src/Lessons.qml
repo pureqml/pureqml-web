@@ -1,4 +1,6 @@
 SiteActivity {
+	id: lessonsActivityProto;
+	property bool active;
 	name: "lessons";
 
 	HistoryPage {
@@ -7,7 +9,8 @@ SiteActivity {
 		height: content.height;
 
 		onStateChanged: {
-			log("Lessons State", value)
+			if (!lessonsActivityProto.active)
+				return
 			this._state = value
 			this.update()
 		}
@@ -177,4 +180,7 @@ SiteActivity {
 			}
 		}
 	}
+
+	onStarted: { this.active = true }
+	onStopped: { this.active = false }
 }
