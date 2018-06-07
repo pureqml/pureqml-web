@@ -1,24 +1,27 @@
-HistoryPage {
-	url: "download";
-	height: contentGrid.height + Math.max((context.height - contentGrid.height - 240 - 70), 0);
+SiteActivity {
+	name: "download";
 
-	Grid {
-		id: contentGrid;
-		width: 100%;
-		horizontalAlignment: Grid.AlignHCenter;
+	HistoryPage {
+		height: contentGrid.height + Math.max((context.height - contentGrid.height - 240 - 70), 0);
 
-		BigButton {
-			anchors.margins: 30;
-			icon: "github.png";
-			text: "View on github";
-			href: "https://github.com/pureqml/";
-		}
+		Grid {
+			id: contentGrid;
+			width: 100%;
+			horizontalAlignment: Grid.AlignHCenter;
 
-		BigButton {
-			anchors.margins: 30;
-			icon: "download.png";
-			text: "Download";
-			href: "https://github.com/pureqml/qmlcore/archive/master.zip";
+			BigButton {
+				anchors.margins: 30;
+				icon: "github.png";
+				text: "View on github";
+				href: "https://github.com/pureqml/";
+			}
+
+			BigButton {
+				anchors.margins: 30;
+				icon: "download.png";
+				text: "Download";
+				href: "https://github.com/pureqml/qmlcore/archive/master.zip";
+			}
 		}
 	}
 }
