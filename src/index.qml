@@ -14,5 +14,5 @@ ActivityManager {
 
 	onStateChanged: { this.replaceTopActivity(value.page ? value.page : "main") }
 
-	onCompleted: { this.push("main") }
+	onCompleted: { this.push(this.state && this.state.page ? this.state.page : "main") }
 }
