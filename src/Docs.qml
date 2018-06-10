@@ -64,7 +64,7 @@ SiteActivity {
 			var location = this._context.location
 			log("Docs location", location)
 			if (location && location.state)
-				this.processState(value)
+				this.processState(location.state)
 		}
 	}
 }
