@@ -2,19 +2,8 @@ SiteActivity {
 	name: "docs";
 
 	HistoryPage {
-		height: content.contentHeight;
-
 		property Object state: context.location.state;
-
-		onStateChanged: {
-			if (value && value.page === "docs") {
-				if (value.section) {
-					log("State changed section:", value.section, "element:", value.element)
-					dataLoader.url = "https://raw.githubusercontent.com/pureqml/pureqml-web/master/doc/json/" + (value.element ? value.section + "/" + value.element : value.section) + ".json"
-				} else
-					dataLoader.url = "https://raw.githubusercontent.com/pureqml/pureqml-web/master/doc/json/core/Item.json"
-			}
-		}
+		height: content.contentHeight;
 
 		LeftMenu {
 			id: leftMenu;
@@ -56,6 +45,26 @@ SiteActivity {
 				var data = JSON.parse(value)
 				content.fill(data)
 			}
+		}
+
+		processState(state): {
+			if (state && state.page === "docs") {
+				log("Docs state", state)
+				if (state.section) {
+					log("State changed section:", state.section, "element:", state.element)
+					dataLoader.url = "https://raw.githubusercontent.com/pureqml/pureqml-web/master/doc/json/" + (state.element ? state.section + "/" + state.element : state.section) + ".json"
+				} else
+					dataLoader.url = "https://raw.githubusercontent.com/pureqml/pureqml-web/master/doc/json/core/Item.json"
+			}
+		}
+
+		onStateChanged: { this.processState(value) }
+
+		onCompleted: {
+			var location = this._context.location
+			log("Docs location", location)
+			if (location && location.state)
+				this.processState(value)
 		}
 	}
 }

@@ -16,7 +16,6 @@ ActivityManager {
 
 	onCompleted: {
 		var location = this._context.location
-		log("Context", location, "state", this.state)
 		this.push(location.state && location.state.page ? location.state.page : "main")
 	}
 }
