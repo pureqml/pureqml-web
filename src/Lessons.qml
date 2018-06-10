@@ -8,13 +8,6 @@ SiteActivity {
 		property Object state: context.location.state;
 		height: content.height;
 
-		onStateChanged: {
-			if (!lessonsActivityProto.active)
-				return
-			this._state = value
-			this.update()
-		}
-
 		LeftMenu {
 			id: leftMenu;
 			y: 50;
@@ -178,6 +171,22 @@ SiteActivity {
 					content.pageName = "main"
 				}
 			}
+		}
+
+		processState(state): {
+			if (!lessonsActivityProto.active)
+				return
+			this._state = state
+			this.update()
+		}
+
+		onStateChanged: { this.processState(value) }
+
+		onCompleted: {
+			var location = this._context.location
+			log("Lessons location", location)
+			if (location && location.state)
+				this.processState(location.state)
 		}
 	}
 
