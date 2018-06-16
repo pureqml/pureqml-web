@@ -1,6 +1,5 @@
 SiteActivity {
 	id: lessonsActivityProto;
-	property bool active;
 	name: "lessons";
 
 	HistoryPage {
@@ -189,7 +188,4 @@ SiteActivity {
 				this.processState(location.state)
 		}
 	}
-
-	onStarted: { this.active = true }
-	onStopped: { this.active = false }
 }

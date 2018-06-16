@@ -1,4 +1,5 @@
 SiteActivity {
+	id: docsPageProto;
 	name: "docs";
 
 	HistoryPage {
@@ -48,7 +49,7 @@ SiteActivity {
 		}
 
 		processState(state): {
-			if (state && state.page === "docs") {
+			if (!docsPageProto.active) {
 				log("Docs state", state)
 				if (state.section) {
 					log("State changed section:", state.section, "element:", state.element)
