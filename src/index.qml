@@ -12,10 +12,11 @@ ActivityManager {
 	Lessons { }
 	Docs { }
 
-	onStateChanged: { this.replaceTopActivity(value.page ? value.page : "main") }
+	onStateChanged: { log("stateChanged", location, "window", window.location); this.replaceTopActivity(value.page ? value.page : "main") }
 
 	onCompleted: {
 		var location = this._context.location
+		log("onCompleted", location, "window", window.location)
 		this.push(location.state && location.state.page ? location.state.page : "main")
 	}
 }
