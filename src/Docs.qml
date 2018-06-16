@@ -49,8 +49,8 @@ SiteActivity {
 		}
 
 		processState(state): {
-			if (!docsPageProto.active) {
-				log("Docs state", state)
+			log("Docs state", state, "active", docsPageProto.active)
+			if (docsPageProto.active) {
 				if (state.section) {
 					log("State changed section:", state.section, "element:", state.element)
 					dataLoader.url = "https://raw.githubusercontent.com/pureqml/pureqml-web/master/doc/json/" + (state.element ? state.section + "/" + state.element : state.section) + ".json"
