@@ -81,7 +81,14 @@ Lesson {
 
 	PageColumn {
 		title: "ImageMixin";
-		text: "";
+		text: "ImageMixin is like a usual Image but it doesnt create new instance in parent DOM element. It changes parent's background image instead.";
+
+		CodeExample {
+			codeWidth: parent.width - 20;
+			exampleWidth: 200;
+			exampleHeight: 200;
+			sample: ImageMixinExample { }
+		}
 	}
 
 	PageColumn {
@@ -105,6 +112,13 @@ Lesson {
 
 	PageColumn {
 		title: "TextMixin";
-		text: "";
+		text: "ImageMixin is like a usual Text component but it doesnt create new instance in parent DOM element. It add text in parent's node instead.";
+
+		CodeExample {
+			codeWidth: parent.width - 20;
+			exampleWidth: 200;
+			exampleHeight: 200;
+			sample: TextMixinExample { }
+		}
 	}
 }
