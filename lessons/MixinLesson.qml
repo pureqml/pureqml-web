@@ -116,8 +116,8 @@ Lesson {
 
 		CodeExample {
 			codeWidth: parent.width - 20;
-			exampleWidth: 200;
-			exampleHeight: 200;
+			exampleWidth: 300;
+			exampleHeight: 50;
 			sample: TextMixinExample { }
 		}
 	}
