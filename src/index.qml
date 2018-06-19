@@ -23,8 +23,8 @@ ActivityManager {
 			var pathname = location.pathname
 			var args = pathname.split('/')
 			log("Args", args)
-			if (args.length > 0) {
-				var page = args[0]
+			if (args.length > 1) {
+				var page = args[1]
 				this.push(page ? page : "main")
 			}
 		}
