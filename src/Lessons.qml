@@ -184,8 +184,20 @@ SiteActivity {
 		onCompleted: {
 			var location = this._context.location
 			log("Lessons location", location)
-			if (location && location.state)
+			if (location && location.state) {
 				this.processState(location.state)
+			} else {
+				var pathname = location.pathname
+				var args = pathname.split('/')
+				var state = {}
+				if (args.length > 1)
+					state.page = args[1]
+				if (args.length > 2)
+					state.section = args[2]
+				if (args.length > 3)
+					state.element = args[3]
+				this.processState(state)
+			}
 		}
 	}
 }
