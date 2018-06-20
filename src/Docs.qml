@@ -64,7 +64,7 @@ SiteActivity {
 
 		onCompleted: {
 			var location = this._context.location
-			if (location && location.state)
+			if (location && location.state) {
 				this.processState(location.state)
 			} else {
 				var pathname = location.pathname
