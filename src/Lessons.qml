@@ -196,6 +196,7 @@ SiteActivity {
 					state.section = args[2]
 				if (args.length > 3)
 					state.element = args[3]
+				log("state", state, "Path", pathname)
 				this.processState(state)
 			}
 		}
