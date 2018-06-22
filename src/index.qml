@@ -16,9 +16,9 @@ ActivityManager {
 
 	onCompleted: {
 		var location = this._context.location
-		log("onCompleted", location, "window", window.location)
 		if (location.state) {
-			this.push(location.state.page ? location.state.page : "main")
+			var pageExist = this.findActivity(location.state.page)
+			this.push(location.state.page && pageExist ? location.state.page : "main")
 		} else {
 			var pathname = location.pathname
 			var args = pathname.split('/')
