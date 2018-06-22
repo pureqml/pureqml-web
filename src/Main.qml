@@ -93,6 +93,7 @@ SiteActivity {
 			PlatformImage { href: "http://developer.samsung.com/tv"; icon: colorTheme.resPath + "/platforms/smarttv.png"; }
 			PlatformImage { href: "https://developer.tizen.org/tizen/tv"; icon: colorTheme.resPath + "/platforms/tizen.png"; }
 			PlatformImage { href: "https://www.android.com"; icon: colorTheme.resPath + "/platforms/android.png"; }
+			PlatformImage { href: "http://www.hisense.com/"; icon: colorTheme.resPath + "/platforms/hisense.png"; }
 
 			MainH2 {
 				text: "Practical use";
