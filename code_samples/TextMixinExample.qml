@@ -10,4 +10,3 @@ Rectangle {
 		text: "red fox jumps over the lazy dog";
 	}
 }
-

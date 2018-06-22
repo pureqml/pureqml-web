@@ -93,7 +93,7 @@ SiteActivity {
 				PathPageColumn {
 					path: "lessons/effects";
 					title: "Effects";
-					text: "";
+					text: "Various effects like shadow, blur etc.";
 				}
 
 				PathPageColumn {

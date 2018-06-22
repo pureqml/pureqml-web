@@ -5,6 +5,6 @@ Item {
 	ImageMixin {
 		width: 100%;
 		height: 100%;
-		source: "res/lessons/image.png";
+		source: colorTheme.resPath + "/lessons/image.png";
 	}
 }
