@@ -12,20 +12,24 @@ ActivityManager {
 	Lessons { }
 	Docs { }
 
-	onStateChanged: { this.replaceTopActivity(value.page ? value.page : "main") }
+	getStartPage(name): {
+		var pageExist = this.findActivity(location.state.page)
+		log("PageExist", pageExist, "page", location.state.page, "location")
+		return name && pageExist ? name : "main"
+	}
+
+	onStateChanged: { this.replaceTopActivity(this.getStartPage(value)) }
 
 	onCompleted: {
 		var location = this._context.location
 		if (location.state) {
-			var pageExist = this.findActivity(location.state.page)
-			log("PageExist", pageExist, "page", location.state.page, "location")
-			this.push(location.state.page && pageExist ? location.state.page : "main")
+			this.push(this.getStartPage(location.state.page))
 		} else {
 			var pathname = location.pathname
 			var args = pathname.split('/')
 			if (args.length > 1) {
 				var page = args[1]
-				this.push(page ? page : "main")
+				this.push(this.getStartPage(page))
 			}
 		}
 	}
