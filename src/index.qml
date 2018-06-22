@@ -13,7 +13,7 @@ ActivityManager {
 	Docs { }
 
 	getStartPage(name): {
-		var pageExist = this.findActivity(location.state.page)
+		var pageExist = this.findActivity(name)
 		log("PageExist", pageExist, "page", location.state.page, "location")
 		return name && pageExist ? name : "main"
 	}
