@@ -18,7 +18,7 @@ ActivityManager {
 		return name && pageExist ? name : "main"
 	}
 
-	onStateChanged: { this.replaceTopActivity(this.getStartPage(value)) }
+	onStateChanged: { this.replaceTopActivity(this.getStartPage(value ? value.page : "main")) }
 
 	onCompleted: {
 		var location = this._context.location
