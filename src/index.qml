@@ -18,6 +18,7 @@ ActivityManager {
 		var location = this._context.location
 		if (location.state) {
 			var pageExist = this.findActivity(location.state.page)
+			log("PageExist", pageExist, "page", location.state.page, "location")
 			this.push(location.state.page && pageExist ? location.state.page : "main")
 		} else {
 			var pathname = location.pathname
