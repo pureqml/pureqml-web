@@ -4,15 +4,7 @@
 
 	"content": {
 		"Properties": {
-			"count": { "text": "rows count property", "internal": false, "type": "int", "defaultValue": "" },
 			"target": { "text": "target model object", "internal": false, "type": "Object", "defaultValue": "" }
-		},
-
-		"Signals": {
-			"reset": { "text": "emitted when model is reset", "internal": false },
-			"rowsInserted": { "text": "emitted when row is inserted", "internal": false },
-			"rowsChanged": { "text": "emitted when row is changed", "internal": false },
-			"rowsRemoved": { "text": "emitted when row is removed", "internal": false }
 		},
 
 		"Methods": {

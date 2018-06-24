@@ -5,13 +5,14 @@
 	"content": {
 		"Properties": {
 			"name": { "text": "@private Component aimed to adjust individual preferences of each border side", "internal": true, "type": "string", "defaultValue": "" },
-			"width": { "text": "", "internal": false, "type": "int", "defaultValue": "" },
-			"color": { "text": "", "internal": false, "type": "color", "defaultValue": "" }
+			"width": { "text": "", "internal": false, "type": "int", "defaultValue": "${parent.width}" },
+			"color": { "text": "", "internal": false, "type": "color", "defaultValue": "${parent.color}" },
+			"style": { "text": "", "internal": false, "type": "int", "defaultValue": "${parent.style}" }
 		},
 
 		"Methods": {
-			"_updateStyle": { "text": "", "internal": false },
-			"onWidthChanged": { "text": "", "internal": true }
+			"_updateStyle": { "text": "@private", "params": [], "internal": true },
+			"onWidthChanged": { "text": "@private", "params": [], "internal": true }
 		}
 	}
 }

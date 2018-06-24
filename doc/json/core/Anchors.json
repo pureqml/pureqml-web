@@ -25,6 +25,8 @@
 
 		"Methods": {
 			"constructor": { "text": "", "internal": true },
+			"_grab": { "text": "", "internal": false },
+			"_getAnchor": { "text": "", "internal": false },
 			"_updateAll": { "text": "@private", "params": [], "internal": true },
 			"_subscribe": { "text": "@private", "params": [], "internal": true },
 			"onLeftChanged": { "text": "", "internal": true },

@@ -17,7 +17,7 @@
 			"codeSampleColor": { "text": "", "internal": false, "type": "color", "defaultValue": "#eeeeee" },
 			"iconColor": { "text": "", "internal": false, "type": "color", "defaultValue": "#828282" },
 			"shadowColor": { "text": "", "internal": false, "type": "color", "defaultValue": "#828282" },
-			"resPath": { "text": "", "internal": false, "type": "string", "defaultValue": "http://pureqml.com/res" }
+			"resPath": { "text": "", "internal": false, "type": "string", "defaultValue": "https://pureqml.com/res" }
 		}
 	}
 }

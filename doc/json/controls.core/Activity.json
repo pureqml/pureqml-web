@@ -3,6 +3,10 @@
 	"text": "",
 
 	"content": {
+		"Properties": {
+			"handleDisplay": { "text": "", "internal": false, "type": "bool", "defaultValue": "" }
+		},
+
 		"Methods": {
 			"start": { "text": "", "internal": false },
 			"stop": { "text": "", "internal": false },

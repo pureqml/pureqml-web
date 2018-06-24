@@ -23,7 +23,6 @@
 			"onCompleted": { "text": "@private", "params": [], "internal": true },
 			"onRunningChanged": { "text": "", "internal": true },
 			"onIntervalChanged": { "text": "", "internal": true },
-			"onRepeatChanged": { "text": "", "internal": true },
 			"_restart": { "text": "@private", "params": [], "internal": true }
 		}
 	}

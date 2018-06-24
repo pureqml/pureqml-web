@@ -11,7 +11,7 @@
 			"constructor": { "text": "", "internal": true },
 			"render": { "text": "@private", "params": [], "internal": true },
 			"onWidthChanged": { "text": "", "internal": true },
-			"onCompleted": { "text": "@private", "params": [], "internal": true }
+			"startRender": { "text": "@private", "params": [], "internal": true }
 		}
 	}
 }

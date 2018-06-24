@@ -47,7 +47,7 @@
 			"onReadyChanged": { "text": "@private", "params": [], "internal": true },
 			"onError": { "text": "@private", "params": [], "internal": true },
 			"onSourceChanged": { "text": "@private", "params": [], "internal": true },
-			"onBoxChanged": { "text": "", "internal": true },
+			"onNewBoundingBox": { "text": "", "internal": false },
 			"onRecursiveVisibleChanged": { "text": "", "internal": true },
 			"onCompleted": { "text": "@private", "params": [], "internal": true }
 		}

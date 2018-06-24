@@ -7,10 +7,6 @@
 			"enabled": { "text": "enable mixin", "internal": false, "type": "bool", "defaultValue": "true" }
 		},
 
-		"Signals": {
-			"wheel": { "text": "wheel move signal", "internal": false }
-		},
-
 		"Methods": {
 			"constructor": { "text": "@private", "params": [], "internal": true },
 			"_bindWheel": { "text": "@private", "params": [], "internal": true },

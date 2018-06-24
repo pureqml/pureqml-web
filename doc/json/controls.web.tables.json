@@ -2,9 +2,9 @@
 	"controls.web.tables": {
 		"TableHeader": "controls.web.tables/TableHeader.json",
 		"TableCell": "controls.web.tables/TableCell.json",
-		"TableElement": "controls.web.tables/TableElement.json",
-		"TableHeaderCell": "controls.web.tables/TableHeaderCell.json",
 		"TableRow": "controls.web.tables/TableRow.json",
+		"TableHeaderCell": "controls.web.tables/TableHeaderCell.json",
+		"TableElement": "controls.web.tables/TableElement.json",
 		"Table": "controls.web.tables/Table.json",
 		"TableBody": "controls.web.tables/TableBody.json",
 		"TableFooter": "controls.web.tables/TableFooter.json"

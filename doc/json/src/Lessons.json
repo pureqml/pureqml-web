@@ -3,13 +3,5 @@
 	"text": "",
 
 	"content": {
-		"Properties": {
-			"state": { "text": "", "internal": false, "type": "Object", "defaultValue": "${context.location.state}" }
-		},
-
-		"Methods": {
-			"onStateChanged": { "text": "", "internal": true },
-			"update": { "text": "", "internal": false }
-		}
 	}
 }

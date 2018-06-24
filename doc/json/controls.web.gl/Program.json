@@ -6,7 +6,8 @@
 		"Methods": {
 			"constructor": { "text": "", "internal": true },
 			"attachShader": { "text": "", "internal": false },
-			"linkProgram": { "text": "", "internal": false }
+			"linkProgram": { "text": "", "internal": false },
+			"create": { "text": "", "internal": false }
 		}
 	}
 }

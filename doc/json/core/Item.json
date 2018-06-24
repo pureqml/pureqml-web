@@ -37,7 +37,7 @@
 		},
 
 		"Signals": {
-			"boxChanged": { "text": "emitted when position or size changed", "internal": false }
+			"newBoundingBox": { "text": "emitted when position or size changed", "internal": false }
 		},
 
 		"Methods": {
@@ -53,6 +53,7 @@
 			"addChild": { "text": "@private adds child, focus it if child accepts focus", "params": [], "internal": true },
 			"_updateVisibility": { "text": "@private", "params": [], "internal": true },
 			"_updateVisibilityForChild": { "text": "@private", "params": [], "internal": true },
+			"_setSizeAdjust": { "text": "@private", "params": [], "internal": true },
 			"onRecursiveVisibleChanged": { "text": "", "internal": true },
 			"onVisibleChanged": { "text": "", "internal": true },
 			"onVisibleInViewChanged": { "text": "", "internal": true },
