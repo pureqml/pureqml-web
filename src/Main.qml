@@ -86,7 +86,6 @@ SiteActivity {
 			}
 
 			PlatformImage { href: "https://en.wikipedia.org/wiki/HTML5"; icon: colorTheme.resPath + "/platforms/html5.png"; }
-			PlatformImage { href: "http://wiki.openmoko.org/wiki/Main_Page"; icon: colorTheme.resPath + "/platforms/openmoko.png"; }
 			PlatformImage { href: "http://webostv.developer.lge.com/discover/netcast/overview/"; icon: colorTheme.resPath + "/platforms/netcast.png"; }
 			PlatformImage { href: "https://www.opera.com/opera-tv"; icon: colorTheme.resPath + "/platforms/opera.png"; }
 			PlatformImage { href: "http://webostv.developer.lge.com/"; icon: colorTheme.resPath + "/platforms/webos.png"; }
