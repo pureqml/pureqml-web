@@ -42,10 +42,11 @@ Item {
 
 	SearchResults {
 		id: searchResults;
-		anchors.top: searchText.bottom;
 		x: 30;
+		anchors.top: searchText.bottom;
 		width: searchText.width;
 		active: searchText.activeFocus || parent.hover.value;
+
 		onClear: {
 			searchText.text = "";
 			this.parent.parent.parent.open = false;

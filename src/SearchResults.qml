@@ -8,16 +8,18 @@ Rectangle {
 	effects.shadow.color: "#0004";
 	effects.shadow.spread: 1;
 	property bool active;
-	visible: active && (searchView.count > 0);
+	visible: active && (searchModel.count > 0);
 
 	OverflowMixin {	value: parent.recursiveVisible ? OverflowMixin.ScrollY : OverflowMixin.Hidden; }
 
+	ListModel { id: searchModel; }
+
 	ListView {
 		id: searchView;
-		height: contentHeight;
-		width: 100% - 24;
 		x: 12;
-		model: ListModel { }
+		width: 100% - 24;
+		height: contentHeight;
+		model: searchModel;
 		delegate: WebLink {
 			width: parent.width;
 			height: 30;
@@ -53,6 +55,6 @@ Rectangle {
 	fill(data): {
 		searchView.model.clear()
 		if (data)
-			searchView.model.append(data)
+			searchModel.append(data)
 	}
 }
