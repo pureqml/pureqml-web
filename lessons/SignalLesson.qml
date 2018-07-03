@@ -3,7 +3,7 @@ Lesson {
 
 	PageColumn {
 		title: "Signals";
-		text: "TODO: write something intresting about it";
+		text: "Here you can find examples how to create your own signals and handle them.";
 	}
 
 	PageColumn {
@@ -11,8 +11,8 @@ Lesson {
 		text: "To declare custom signal just write:";
 
 		CodeHighlighter {
-//			width: parent.width - 20;
-//			height: contentHeight;
+			width: parent.width - 20;
+			// height: contentHeight;
 			font.pixelSize: 18;
 			language: "qml";
 			code: "WebItem {\n\tsignal mySignalOccured;\n}";

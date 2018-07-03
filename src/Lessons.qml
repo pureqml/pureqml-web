@@ -51,13 +51,13 @@ SiteActivity {
 				PathPageColumn {
 					path: "lessons/signals";
 					title: "Signals";
-					text: "";
+					text: "Create your own signals, emit and handle them.";
 				}
 
 				PathPageColumn {
 					path: "lessons/views";
 					title: "Views and Models";
-					text: "";
+					text: "Use views to represent any collection of data via models.";
 				}
 
 				PathPageColumn {
