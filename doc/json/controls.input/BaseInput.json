@@ -25,10 +25,10 @@
 			"onHorizontalAlignmentChanged": { "text": "@private", "params": [], "internal": true },
 			"onEnabledChanged": { "text": "", "internal": true },
 			"getTag": { "text": "returns tag for corresponding element", "params": [], "internal": false },
-			"registerStyle": { "text": "", "internal": false },
+			"registerStyle": { "text": "@private", "params": [], "internal": true },
 			"_updateSize": { "text": "@private", "params": [], "internal": true },
-			"focusBrowser": { "text": "", "internal": false },
-			"blurBrowser": { "text": "", "internal": false }
+			"focusBrowser": { "text": "focus browser", "params": [], "internal": false },
+			"blurBrowser": { "text": "blur browser", "params": [], "internal": false }
 		}
 	}
 }

@@ -1,0 +1,20 @@
+{
+	"name": "controls.mixins.RightClickMixin",
+	"text": "@private",
+
+	"content": {
+		"Properties": {
+			"enabled": { "text": "", "internal": false, "type": "bool", "defaultValue": "true" }
+		},
+
+		"Signals": {
+			"clicked": { "text": "", "internal": false }
+		},
+
+		"Methods": {
+			"constructor": { "text": "", "internal": true },
+			"_bindClicked": { "text": "@private", "params": [], "internal": true },
+			"onEnabledChanged": { "text": "@private", "params": [], "internal": true }
+		}
+	}
+}

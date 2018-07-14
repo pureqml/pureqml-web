@@ -1,16 +1,16 @@
 {
 	"name": "controls.core.Activity",
-	"text": "",
+	"text": "simple activity control",
 
 	"content": {
 		"Properties": {
-			"handleDisplay": { "text": "", "internal": false, "type": "bool", "defaultValue": "" }
+			"handleDisplay": { "text": "use this flag if you want to hide inactive activivties with CSS 'display' property.", "internal": false, "type": "bool", "defaultValue": "" }
 		},
 
 		"Methods": {
-			"start": { "text": "", "internal": false },
-			"stop": { "text": "", "internal": false },
-			"getActivity": { "text": "", "internal": false }
+			"start": { "text": "start activity", "params": [], "internal": false },
+			"stop": { "text": "stop activity", "params": [], "internal": false },
+			"getActivity": { "text": "get activity item", "params": [], "internal": false }
 		}
 	}
 }

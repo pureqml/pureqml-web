@@ -1,10 +1,10 @@
 {
 	"name": "controls.input.CheckboxInput",
-	"text": "",
+	"text": "web browser checkbox",
 
 	"content": {
 		"Properties": {
-			"checked": { "text": "", "internal": false, "type": "bool", "defaultValue": "false" }
+			"checked": { "text": "checked flag value", "internal": false, "type": "bool", "defaultValue": "false" }
 		},
 
 		"Methods": {

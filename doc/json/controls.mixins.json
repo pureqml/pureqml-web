@@ -13,6 +13,7 @@
 		"OrientationMixin": "controls.mixins/OrientationMixin.json",
 		"FocusOnHoverMixin": "controls.mixins/FocusOnHoverMixin.json",
 		"TextMixin": "controls.mixins/TextMixin.json",
+		"RightClickMixin": "controls.mixins/RightClickMixin.json",
 		"TitleMixin": "controls.mixins/TitleMixin.json"
 	}
 }

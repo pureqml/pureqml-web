@@ -25,6 +25,7 @@
 
 		"Methods": {
 			"constructor": { "text": "", "internal": true },
+			"_scheduleUpdate": { "text": "", "internal": false },
 			"_grab": { "text": "", "internal": false },
 			"_getAnchor": { "text": "", "internal": false },
 			"_updateAll": { "text": "@private", "params": [], "internal": true },
