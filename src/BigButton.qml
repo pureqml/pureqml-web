@@ -3,23 +3,17 @@ WebLink {
 	property string text;
 	width: (height - 20) + buttonText.paintedWidth + 30;
 	height: 100;
-	radius: 10;
-	color: hover ? colorTheme.primaryColor : colorTheme.panelColor;
-	border.width: 1;
-	border.color: !hover ? colorTheme.primaryColor : colorTheme.panelColor;
-	effects.shadow.y: hover ? 2 : 0;
-	effects.shadow.blur: hover ? 8 : 4;
-	effects.shadow.color: colorTheme.shadowColor;
-	effects.shadow.spread: 2;
+	color: colorTheme.panelColor;
+	effects.shadow.blur: hover ? 4 : 2;
+	effects.shadow.color: colorTheme.primaryColor;
+	effects.shadow.spread: hover ? 2 : 0;
 
 	Image {
+		x: 10;
 		width: height;
 		height: parent.height - 20;
 		anchors.verticalCenter: parent.verticalCenter;
-		x: 10;
-		source: colorTheme.resPath + (parent.hover ? "/" : "/colored_") + "icons/" + parent.icon;
-
-		Behavior on background { Animation { duration: 300; } }
+		source: colorTheme.resPath + "/colored_icons/" + parent.icon;
 	}
 
 	Text {
@@ -27,12 +21,8 @@ WebLink {
 		anchors.left: parent.left;
 		anchors.verticalCenter: parent.verticalCenter;
 		anchors.leftMargin: parent.height;
-		color: !parent.hover ? colorTheme.primaryColor : colorTheme.panelColor;
-		font.pixelSize: 21;
+		color: colorTheme.primaryColor;
+		font.pixelSize: 23;
 		text: parent.text;
-
-		Behavior on color { Animation { duration: 300; } }
 	}
-
-	Behavior on background { Animation { duration: 300; } }
 }

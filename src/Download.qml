@@ -22,6 +22,13 @@ SiteActivity {
 				text: "Download";
 				href: "https://github.com/pureqml/qmlcore/archive/master.zip";
 			}
+
+			BigButton {
+				anchors.margins: 30;
+				icon: "win.png";
+				text: "Win32 Snapshot";
+				href: "https://github.com/pureqml/qmlcore/releases/tag/v1.0";
+			}
 		}
 	}
 }
