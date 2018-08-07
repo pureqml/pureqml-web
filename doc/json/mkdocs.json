@@ -64,6 +64,7 @@
 				"SwapImage": "controls.core/SwapImage.json",
 				"BaseActivity": "controls.core/BaseActivity.json",
 				"RollerView": "controls.core/RollerView.json",
+				"PlaceholderFont": "controls.core/PlaceholderFont.json",
 				"DebugInfoPanel": "controls.core/DebugInfoPanel.json",
 				"Request": "controls.core/Request.json",
 				"LazyActivity": "controls.core/LazyActivity.json",
@@ -72,7 +73,8 @@
 				"AnimatedSprite": "controls.core/AnimatedSprite.json",
 				"Activity": "controls.core/Activity.json",
 				"Resource": "controls.core/Resource.json",
-				"PlaceholderFont": "controls.core/PlaceholderFont.json",
+				"LazyPageStack": "controls.core/LazyPageStack.json",
+				"LazyPage": "controls.core/LazyPage.json",
 				"PlaceHolder": "controls.core/PlaceHolder.json",
 				"Paddings": "controls.core/Paddings.json",
 				"RelativeSize": "controls.core/RelativeSize.json"
@@ -125,7 +127,6 @@
 		"controls.pure": {
 			"file": "controls.pure.json",
 			"content": {
-				"MaterialIcon": "controls.pure/MaterialIcon.json",
 				"TextEdit": "controls.pure/TextEdit.json",
 				"Checkbox": "controls.pure/Checkbox.json",
 				"ProgressBar": "controls.pure/ProgressBar.json"
@@ -178,6 +179,7 @@
 				"DropDown": "controls.web/DropDown.json",
 				"Navbar": "controls.web/Navbar.json",
 				"Button": "controls.web/Button.json",
+				"MaterialIcon": "controls.web/MaterialIcon.json",
 				"LanguageSwitcher": "controls.web/LanguageSwitcher.json",
 				"WebItem": "controls.web/WebItem.json",
 				"SwipeMenu": "controls.web/SwipeMenu.json",

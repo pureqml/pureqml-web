@@ -1,6 +1,5 @@
 {
 	"controls.pure": {
-		"MaterialIcon": "controls.pure/MaterialIcon.json",
 		"TextEdit": "controls.pure/TextEdit.json",
 		"Checkbox": "controls.pure/Checkbox.json",
 		"ProgressBar": "controls.pure/ProgressBar.json"

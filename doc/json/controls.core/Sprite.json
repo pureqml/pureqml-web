@@ -1,11 +1,11 @@
 {
 	"name": "controls.core.Sprite",
-	"text": "",
+	"text": "base sprite object",
 
 	"content": {
 		"Properties": {
-			"offsetX": { "text": "", "internal": false, "type": "int", "defaultValue": "" },
-			"offsetY": { "text": "", "internal": false, "type": "int", "defaultValue": "" }
+			"offsetX": { "text": "sprite horizontal offset", "internal": false, "type": "int", "defaultValue": "" },
+			"offsetY": { "text": "sprite vertical offset", "internal": false, "type": "int", "defaultValue": "" }
 		},
 
 		"Methods": {

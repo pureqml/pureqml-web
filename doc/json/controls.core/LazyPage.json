@@ -1,0 +1,17 @@
+{
+	"name": "controls.core.LazyPage",
+	"text": "Page for LazyPageStack",
+
+	"content": {
+		"Properties": {
+			"component": { "text": "page component path", "internal": false, "type": "string", "defaultValue": "" },
+			"manager": { "text": "reference to PageStack item", "internal": false, "type": "Item", "defaultValue": "${parent}" }
+		},
+
+		"Methods": {
+			"createPage": { "text": "create page", "params": [], "internal": false },
+			"getPage": { "text": "get page content item", "params": [], "internal": false },
+			"onActiveFocusChanged": { "text": "", "internal": true }
+		}
+	}
+}

@@ -1,0 +1,11 @@
+{
+	"name": "controls.core.LazyPageStack",
+	"text": "PageStack which pages will be initialized only after opening. Wrap your pages in LazyPage component.",
+
+	"content": {
+		"Methods": {
+			"_layout": { "text": "@private", "params": [], "internal": true },
+			"chooseCurrentPage": { "text": "set focus on current LazyPage content", "params": [], "internal": false }
+		}
+	}
+}
