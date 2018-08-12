@@ -108,6 +108,12 @@ SiteActivity {
 					text: "";
 				}
 
+				PathPageColumn {
+					path: "lessons/loader";
+					title: "Loader";
+					text: "How to load other components dynamically";
+				}
+
 				onFillMenu(data): { leftMenu.fillModel(data) }
 
 				onCompleted: { log("main completed") }
@@ -150,6 +156,7 @@ SiteActivity {
 					mixins: "lessons.MixinLesson",
 					effects: "lessons.EffectsLesson",
 					transform: "lessons.TransformLesson",
+					loader: "lessons.LoaderLesson",
 					sprite: "lessons.SpriteLesson"
 				}
 			}

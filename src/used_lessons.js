@@ -12,3 +12,4 @@
 /*** @using { lessons.ViewAndModelsLesson } **/
 /*** @using { lessons.SpriteLesson } **/
 /*** @using { lessons.TransformLesson } **/
+/*** @using { lessons.LoaderLesson } **/
