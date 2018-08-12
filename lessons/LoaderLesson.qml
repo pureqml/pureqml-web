@@ -49,7 +49,7 @@ Lesson {
 		}
 
 		MainP {
-			text: "!!! IMPORTANT !!!\nDon't forget to add '@using' directive with component URL to be sure that desired component will be looked by compiler before that loader instance.";
+			text: "!!! IMPORTANT !!!\nDon't forget to add '@using' directive with component URL to be sure that desired component will be included by compiler before that loader instance.";
 			horizontalAlignment: Text.AlignLeft;
 		}
 	}
