@@ -13,3 +13,4 @@
 /*** @using { lessons.SpriteLesson } **/
 /*** @using { lessons.TransformLesson } **/
 /*** @using { lessons.LoaderLesson } **/
+/*** @using { lessons.LocalizationLesson } **/

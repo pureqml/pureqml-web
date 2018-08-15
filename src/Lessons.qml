@@ -114,6 +114,12 @@ SiteActivity {
 					text: "How to load other components dynamically";
 				}
 
+				PathPageColumn {
+					path: "lessons/localization";
+					title: "Localization";
+					text: "How to build a miltilanguage application";
+				}
+
 				onFillMenu(data): { leftMenu.fillModel(data) }
 
 				onCompleted: { log("main completed") }
@@ -157,6 +163,7 @@ SiteActivity {
 					effects: "lessons.EffectsLesson",
 					transform: "lessons.TransformLesson",
 					loader: "lessons.LoaderLesson",
+					localization: "lessons.LocalizationLesson",
 					sprite: "lessons.SpriteLesson"
 				}
 			}
