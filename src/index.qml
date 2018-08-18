@@ -37,5 +37,6 @@ ActivityManager {
 				this.push(this.getStartPage(page))
 			}
 		}
+		//qsTr("Hello world");
 	}
 }

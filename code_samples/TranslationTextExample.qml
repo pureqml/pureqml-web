@@ -9,7 +9,5 @@ WebItem {
 		text: qsTr("Hello world");
 	}
 
-	ClickMixin {
-		onClicked: { context.language == "ru_RU" ? "default" : "ru_RU" }
-	}
+	onClicked: { context.language = context.language == "ru_RU" ? "default" : "ru_RU" }
 }

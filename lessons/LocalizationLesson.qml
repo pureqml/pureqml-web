@@ -1,6 +1,8 @@
 Lesson {
 	url: "localization";
 
+	Resource { id: translationFile; url: "https://raw.githubusercontent.com/pureqml/pureqml-web/master/translation_file_example.ts"; }
+
 	PageColumn {
 		title: "Localization";
 		text: "One of the feature of QML it's easy way to support many languages. For example we will try to implement text with 3 supported languages.\nLets look on simple text example:";
@@ -29,7 +31,7 @@ Lesson {
 		}
 
 		MainP {
-			text: "To add new translations we should add desired language codes in .manifest file. Russian and German language codes for example:";
+			text: "To add new translations we should add desired language codes in .manifest file. Russian language codes for example:";
 			horizontalAlignment: Text.AlignLeft;
 		}
 
@@ -38,7 +40,7 @@ Lesson {
 			font.pixelSize: 18;
 			language: "qml";
 			code: "{\n" +
-				"\t\"languages\": [\"ru_RU\", \"de_DE\"];\n" +
+				"\t\"languages\": [\"ru_RU\"];\n" +
 			"}";
 		}
 
@@ -47,16 +49,28 @@ Lesson {
 			horizontalAlignment: Text.AlignLeft;
 		}
 
+		MainP {
+			text: "If everything is correct you will see ru_RU.ts file in your 'src' folder. In this file you can add your translation &lt;translation&gt; tag";
+			horizontalAlignment: Text.AlignLeft;
+		}
+
 		CodeHighlighter {
 			width: parent.width - 30;
 			font.pixelSize: 18;
-			language: "shell";
-			code: "./qmlcore/build -u";
+			language: "qml";
+			code: translationFile.data;
 		}
 
 		MainP {
-			text: "If everything is correct you will see ru_RU.ts and de_DE.ts files in your 'src' folder. With this files you can add yout translation";
+			text: "Now try swith language in our text example. Click on text to toggle current language";
 			horizontalAlignment: Text.AlignLeft;
+		}
+
+		CodeExample {
+			codeWidth: parent.width - 20;
+			exampleWidth: 200;
+			exampleHeight: 200;
+			sample: TranslationTextExample { }
 		}
 	}
 }
