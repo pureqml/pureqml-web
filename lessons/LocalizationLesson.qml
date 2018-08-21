@@ -5,18 +5,26 @@ Lesson {
 
 	PageColumn {
 		title: "Localization";
-		text: "One of the feature of QML it's easy way to support many languages. For example we will try to implement text with 3 supported languages.\nLets look on simple text example:";
+		text: "One of the feature of QML it's easy way to support many languages. For example we will try to implement text with 2 supported languages.\nLets look on simple example with text:";
 
 		CodeHighlighter {
 			width: parent.width - 30;
 			font.pixelSize: 18;
 			language: "qml";
-			code: "Text {\n" +
-				"\ttext: \"Hello world\";\n" +
+			code: "WebItem {\n" +
+				"\twidth: 200;\n" +
+				"\theight: 200;\n\n" +
+				"\tText {\n" +
+				"\t\tanchors.centerIn: parent;\n" +
+				"\t\tcolor: \"black\";\n" +
+				"\t\tfont.pixelSize: 25\n" +
+				"\t\ttext: \"Hello world\";\n" +
+				"\t}\n" +
 			"}";
 		}
 
 		MainP {
+			anchors.topMargin: 20;
 			text: "To make this text multilanguage we shuold add 'qsTr()' method";
 			horizontalAlignment: Text.AlignLeft;
 		}
@@ -25,12 +33,20 @@ Lesson {
 			width: parent.width - 30;
 			font.pixelSize: 18;
 			language: "qml";
-			code: "Text {\n" +
-				"\ttext: qsTr(\"Hello world\");\n" +
+			code: "WebItem {\n" +
+				"\twidth: 200;\n" +
+				"\theight: 200;\n\n" +
+				"\tText {\n" +
+				"\t\tanchors.centerIn: parent;\n" +
+				"\t\tcolor: \"black\";\n" +
+				"\t\tfont.pixelSize: 25\n" +
+				"\t\ttext: qsTr(\"Hello world\");\n" +
+				"\t}\n" +
 			"}";
 		}
 
 		MainP {
+			anchors.topMargin: 20;
 			text: "To add new translations we should add desired language codes in .manifest file. Russian language codes for example:";
 			horizontalAlignment: Text.AlignLeft;
 		}
