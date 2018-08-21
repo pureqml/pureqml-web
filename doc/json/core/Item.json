@@ -37,7 +37,8 @@
 		},
 
 		"Signals": {
-			"newBoundingBox": { "text": "emitted when position or size changed", "internal": false }
+			"newBoundingBox": { "text": "emitted when position or size changed", "internal": false },
+			"anchorsMarginsUpdated": { "text": "emitted when anchors margins have been changed", "internal": false }
 		},
 
 		"Methods": {
@@ -78,7 +79,6 @@
 			"invokeKeyHandlers": { "text": "@private", "params": [], "internal": true },
 			"_processKey": { "text": "@private", "params": [], "internal": true },
 			"onPressed": { "text": "@private registers key handler", "params": [], "internal": true },
-			"getComponentPath": { "text": "outputs component path in qml (e.g Rectangle → Item → ListItem → Rectangle)", "params": [], "internal": false },
 			"setFocus": { "text": "focus this item", "params": [], "internal": false }
 		}
 	}

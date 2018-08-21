@@ -19,10 +19,6 @@
 			"rightMargin": { "text": "right margin value", "internal": false, "type": "int", "defaultValue": "" }
 		},
 
-		"Signals": {
-			"marginsUpdated": { "text": "@private", "internal": true }
-		},
-
 		"Methods": {
 			"constructor": { "text": "", "internal": true },
 			"_scheduleUpdate": { "text": "", "internal": false },

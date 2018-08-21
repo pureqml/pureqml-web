@@ -4,6 +4,7 @@
 
 	"content": {
 		"Properties": {
+			"name": { "text": "page name", "internal": false, "type": "string", "defaultValue": "" },
 			"component": { "text": "page component path", "internal": false, "type": "string", "defaultValue": "" },
 			"manager": { "text": "reference to PageStack item", "internal": false, "type": "Item", "defaultValue": "${parent}" }
 		},

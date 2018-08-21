@@ -5,6 +5,8 @@
 	"content": {
 		"Methods": {
 			"_layout": { "text": "@private", "params": [], "internal": true },
+			"showPageByName": { "text": "show page by its name", "params": [{ "name": "name", "type": "string", "text": "page name" }], "internal": false },
+			"getPageIndexByName": { "text": "find page index in pagestack by its name", "params": [{ "name": "name", "type": "string", "text": "page name" }], "internal": false },
 			"chooseCurrentPage": { "text": "set focus on current LazyPage content", "params": [], "internal": false }
 		}
 	}

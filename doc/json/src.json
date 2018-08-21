@@ -31,6 +31,7 @@
 		"DescriptionText": "src/DescriptionText.json",
 		"HashPageColumn": "src/HashPageColumn.json",
 		"MenuItem": "src/MenuItem.json",
-		"SiteActivity": "src/SiteActivity.json"
+		"SiteActivity": "src/SiteActivity.json",
+		"RectangleExample": "src/RectangleExample.json"
 	}
 }
