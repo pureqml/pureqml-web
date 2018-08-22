@@ -5,7 +5,7 @@ Lesson {
 
 	PageColumn {
 		title: "Localization";
-		text: "One of the feature of QML it's easy way to support many languages. For example we will try to implement text with 2 supported languages.\nLets look on simple example with text:";
+		text: "One of the features of QML it's easy way to support many languages. For example we will try to implement text with 2 supported languages.\nLets look on simple example with text:";
 
 		CodeHighlighter {
 			width: parent.width - 30;
@@ -47,7 +47,7 @@ Lesson {
 
 		MainP {
 			anchors.topMargin: 20;
-			text: "To add new translations we should add desired language codes in .manifest file. Russian language codes for example:";
+			text: "To add new translations we have to add desired language codes in .manifest file. Russian language codes for example:";
 			horizontalAlignment: Text.AlignLeft;
 		}
 
