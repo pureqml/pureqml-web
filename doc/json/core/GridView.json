@@ -13,6 +13,10 @@
 		"Methods": {
 			"move": { "text": "@private", "params": [], "internal": true },
 			"onKeyPressed": { "text": "@private", "params": [], "internal": true },
+			"moveUp": { "text": "", "internal": false },
+			"moveDown": { "text": "", "internal": false },
+			"moveLeft": { "text": "", "internal": false },
+			"moveRight": { "text": "", "internal": false },
 			"getItemPosition": { "text": "@private", "params": [], "internal": true },
 			"indexAt": { "text": "@private", "params": [], "internal": true },
 			"positionViewAtIndex": { "text": "@private", "params": [], "internal": true },

@@ -21,7 +21,7 @@
 			"createElement": { "text": "@private", "params": [], "internal": true },
 			"_init": { "text": "@private", "params": [], "internal": true },
 			"init": { "text": "@private", "params": [], "internal": true },
-			"_onCompleted": { "text": "@private", "params": [], "internal": true },
+			"__onCompleted": { "text": "@private", "params": [], "internal": true },
 			"onFullscreenChanged": { "text": "", "internal": true },
 			"scheduleComplete": { "text": "@internal", "params": [], "internal": true },
 			"start": { "text": "@private", "params": [], "internal": true },

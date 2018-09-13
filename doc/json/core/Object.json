@@ -5,6 +5,9 @@
 	"content": {
 		"Methods": {
 			"constructor": { "text": "the most basic QML Object, generic event emitter, properties and id links holder", "params": [], "internal": true },
+			"completed": { "text": "", "internal": false },
+			"_registerDelayedAction": { "text": "@private", "params": [], "internal": true },
+			"_cancelDelayedAction": { "text": "@private", "params": [], "internal": true },
 			"prototypeConstructor": { "text": "", "internal": false },
 			"discard": { "text": "discard object", "params": [], "internal": false },
 			"addChild": { "text": "adds child object to children", "params": [{ "name": "child", "type": "Object", "text": "object to add" }], "internal": false },
