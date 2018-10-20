@@ -15,6 +15,7 @@
 			"push": { "text": "", "internal": false },
 			"closeAllExcept": { "text": "", "internal": false },
 			"pop": { "text": "", "internal": false },
+			"popWithState": { "text": "", "internal": false },
 			"findActivity": { "text": "", "internal": false },
 			"createActivity": { "text": "", "internal": false },
 			"setState": { "text": "", "internal": false },

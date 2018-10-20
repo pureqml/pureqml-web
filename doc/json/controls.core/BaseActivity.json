@@ -21,6 +21,7 @@
 			"setIntent": { "text": "Change activity intent", "params": [{ "name": "state", "type": "object", "text": "init activity state" }, { "name": "name", "type": "string", "text": "activity name" }], "internal": false },
 			"clear": { "text": "clear all activities from manager stack", "params": [], "internal": false },
 			"pop": { "text": "Pop current top activity from manager stack", "params": [], "internal": false },
+			"popWithState": { "text": "Pop current top activity from manager stack and send state to the top activity", "params": [], "internal": false },
 			"onBackPressed": { "text": "@private", "params": [], "internal": true }
 		}
 	}
