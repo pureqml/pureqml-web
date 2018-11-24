@@ -10,7 +10,7 @@ Rectangle {
 	property bool active;
 	visible: active && (searchModel.count > 0);
 
-	OverflowMixin {	value: parent.recursiveVisible ? OverflowMixin.ScrollY : OverflowMixin.Hidden; }
+	OverflowMixin { value: parent.recursiveVisible ? OverflowMixin.ScrollY : OverflowMixin.Hidden; }
 
 	ListModel { id: searchModel; }
 

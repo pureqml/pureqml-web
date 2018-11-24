@@ -23,7 +23,7 @@ Item {
 		font.pixelSize: 18;
 		font.weight: 300;
 		color: colorTheme.textColor;
-		placeholder.text: "Search";
+		placeholder.text: "Documentation search";
 
 		onTextChanged: {
 			searchTimer.restart()
@@ -33,7 +33,7 @@ Item {
 	Rectangle {
 		anchors.top: searchText.bottom;
 		anchors.bottomMargin: -4;
-		width: searchText.activeFocus ? searchText.width + 30 : 100;
+		width: searchText.activeFocus ? searchText.width + 30 : 215;
 		height: 1;
 		x: 0;
 		color: parent.hover.value || searchText.activeFocus ? "#A0B3A2" :"#AAAAAA";
