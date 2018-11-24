@@ -45,6 +45,7 @@
 			"toggleMute": { "text": "toggle volume mute on\off", "params": [], "internal": false },
 			"onVolumeChanged": { "text": "@private", "params": [], "internal": true },
 			"onReadyChanged": { "text": "@private", "params": [], "internal": true },
+			"setupDrm": { "text": "Setup DRM configuration", "params": [{ "name": "type", "type": "string", "text": "DRM type "widevine" or "playready"" }, { "name": "options", "type": "Object", "text": "options for corresponded DRM type" }, { "name": "callback", "type": "function", "text": "callback for async based implementation" }, { "name": "error", "type": "function", "text": "callback to report fail during configuration" }], "internal": false },
 			"onError": { "text": "@private", "params": [], "internal": true },
 			"onSourceChanged": { "text": "@private", "params": [], "internal": true },
 			"onNewBoundingBox": { "text": "", "internal": false },
