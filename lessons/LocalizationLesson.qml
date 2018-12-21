@@ -25,6 +25,12 @@ Lesson {
 
 		MainP {
 			anchors.topMargin: 20;
+			text: "Attention! To use 'WebItem' you have to add <a href='https://github.com/pureqml/controls'>controls</a> into your project";
+			horizontalAlignment: Text.AlignLeft;
+		}
+
+		MainP {
+			anchors.topMargin: 20;
 			text: "To make this text multilanguage we shuold add 'qsTr()' method";
 			horizontalAlignment: Text.AlignLeft;
 		}
