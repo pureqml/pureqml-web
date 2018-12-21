@@ -56,7 +56,7 @@ Lesson {
 			font.pixelSize: 18;
 			language: "qml";
 			code: "{\n" +
-				"\t\"languages\": [\"ru_RU\"];\n" +
+				"\t\"languages\": [\"ru_RU\"]\n" +
 			"}";
 		}
 
