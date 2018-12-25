@@ -1,5 +1,5 @@
 &lt;?xml version="1.0"? &gt;
-rlt;TS language="ru_RU" version="2.0"&gt;
+&lt;TS language="ru_RU" version="2.0"&gt;
 	&lt;context&gt;
 		&lt;name&gt;app&lt;/name&gt;
 		&lt;message&gt;
