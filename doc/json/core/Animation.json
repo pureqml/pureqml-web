@@ -8,7 +8,11 @@
 			"duration": { "text": "duration in ms", "internal": false, "type": "int", "defaultValue": "200" },
 			"cssTransition": { "text": "use css transition if possible", "internal": false, "type": "bool", "defaultValue": "true" },
 			"running": { "text": "currently running", "internal": false, "type": "bool", "defaultValue": "false" },
-			"easing": { "text": "easing function", "internal": false, "type": "string", "defaultValue": "ease" }
+			"easing": { "text": "easing function", "internal": false, "type": "string", "defaultValue": "ease" },
+			"target": { "text": "target object", "internal": false, "type": "Object", "defaultValue": "" },
+			"property": { "text": "target object property", "internal": false, "type": "string", "defaultValue": "" },
+			"from": { "text": "used in declarative animation inside SequentialAnimation, starting value", "internal": false, "type": "variant", "defaultValue": "" },
+			"to": { "text": "used in declarative animation inside SequentialAnimation, destination value", "internal": false, "type": "variant", "defaultValue": "" }
 		},
 
 		"Methods": {

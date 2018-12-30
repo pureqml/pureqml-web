@@ -238,6 +238,7 @@
 				"Layout": "core/Layout.json",
 				"Gradient": "core/Gradient.json",
 				"Transform": "core/Transform.json",
+				"SequentialAnimation": "core/SequentialAnimation.json",
 				"Animation": "core/Animation.json",
 				"Location": "core/Location.json",
 				"GamepadManager": "core/GamepadManager.json",
