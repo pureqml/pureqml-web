@@ -12,17 +12,16 @@ Lesson {
 
 		CodeHighlighter {
 			width: parent.width - 20;
-			// height: contentHeight;
 			font.pixelSize: 18;
 			language: "qml";
 			code: "WebItem {\n\tsignal mySignalOccured;\n}";
 		}
 
+		DescriptionText { text: "Attention! To use 'WebItem' you have to add <a href='https://github.com/pureqml/controls'>controls</a> into your project"; }
 		DescriptionText { text: "To emit this signal, just call such function in its context:"; }
 
 		CodeHighlighter {
 			width: parent.width - 20;
-			height: contentHeight;
 			font.pixelSize: 18;
 			language: "qml";
 			code: "WebItem {\n\tsignal mySignalOccured;\n\n\tonClicked: {\n\t\tthis.mySignalOccured()\n\t}\n}";
@@ -47,7 +46,6 @@ Lesson {
 
 		CodeHighlighter {
 			width: parent.width - 20;
-			height: contentHeight;
 			font.pixelSize: 18;
 			language: "qml";
 			code: "WebItem {\n\tsignal mySignalOccured;\n\n\tonClicked: {\n\t\tthis.mySignalOccured(1, \"test\")\n\t}\n}";
