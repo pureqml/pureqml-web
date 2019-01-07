@@ -41,7 +41,7 @@ ActivityManager {
 		//qsTr("Hello world");
 
 		((window.gitter = {}).chat = {}).options = {
-			room: "pureqml/support"
+			room: "pureqml/community"
 		};
 	}
 }
