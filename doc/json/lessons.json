@@ -2,20 +2,20 @@
 	"lessons": {
 		"TransformLesson": "lessons/TransformLesson.json",
 		"ViewAndModelsLesson": "lessons/ViewAndModelsLesson.json",
+		"EffectsLesson": "lessons/EffectsLesson.json",
 		"BasicLesson": "lessons/BasicLesson.json",
 		"GamepadLesson": "lessons/GamepadLesson.json",
-		"SignalLesson": "lessons/SignalLesson.json",
 		"MixinLesson": "lessons/MixinLesson.json",
 		"KeyboardLesson": "lessons/KeyboardLesson.json",
-		"LocalizationLesson": "lessons/LocalizationLesson.json",
+		"GlobalsLesson": "lessons/GlobalsLesson.json",
 		"LoaderLesson": "lessons/LoaderLesson.json",
 		"AnchorsLesson": "lessons/AnchorsLesson.json",
 		"LayoutsLesson": "lessons/LayoutsLesson.json",
 		"InputsLesson": "lessons/InputsLesson.json",
-		"EffectsLesson": "lessons/EffectsLesson.json",
+		"SignalLesson": "lessons/SignalLesson.json",
 		"Lesson": "lessons/Lesson.json",
 		"SpriteLesson": "lessons/SpriteLesson.json",
-		"GlobalsLesson": "lessons/GlobalsLesson.json",
+		"LocalizationLesson": "lessons/LocalizationLesson.json",
 		"FocusLesson": "lessons/FocusLesson.json"
 	}
 }

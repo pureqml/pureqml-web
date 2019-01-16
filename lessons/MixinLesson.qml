@@ -22,7 +22,7 @@ Lesson {
 		CodeHighlighter {
 			font.pixelSize: 18;
 			language: "qml";
-			code: "Item {\n\t// 1. Declaring as proeprty\n\tproperty Mixin hover: HoverMixin { }\n\n\t// 2. Simple instanciating\n\tHoverMixin { }\n}";
+			code: "Item {\n\t// 1. Declaring mixin as a property\n\tproperty Mixin hover: HoverMixin { }\n\n\t// 2. Create instance\n\tHoverMixin { }\n}";
 		}
 	}
 
@@ -75,7 +75,7 @@ Lesson {
 			codeWidth: parent.width - 20;
 			exampleWidth: 200;
 			exampleHeight: 200;
-			sample: ClickMixinExample { }
+			sample: HoverMixinExample { }
 		}
 	}
 
@@ -93,12 +93,12 @@ Lesson {
 
 	PageColumn {
 		title: "OverflowMixin";
-		text: "This mixin contatins just one proeprty - \"value\" for setting overflow mode.";
+		text: "This mixin contatins just one property - \"value\" for setting overflow mode.";
 
 		KeyValueView {
 			anchors.leftMargin: 20;
 			model: ListModel {
-				ListElement { key: "value"; value: "enum property which set overflow behavour. Possible values: Visible, Hidden, Scroll, ScrollX, ScrollY"; }
+				ListElement { key: "value"; value: "enum property controlling overflow behavour. Possible values: Visible, Hidden, Scroll, ScrollX, ScrollY"; }
 			}
 		}
 
@@ -112,7 +112,7 @@ Lesson {
 
 	PageColumn {
 		title: "TextMixin";
-		text: "ImageMixin is like a usual Text component but it doesnt create new instance in parent DOM element. It add text in parent's node instead.";
+		text: "ImageMixin is similar to normal Text component, but it doesn't create new object in parent DOM element. It adds text in parent's node instead.";
 
 		CodeExample {
 			codeWidth: parent.width - 20;

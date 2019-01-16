@@ -3,7 +3,6 @@
 	"platforms": ["web"],
 	"languages": ["ru_RU"],
 	"apps": {"index": "index"},
-	"minify": true,
 	"sources": ["src", "lessons", "code_samples"],
 	"web-prefix": true
 }

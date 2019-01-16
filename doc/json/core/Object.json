@@ -18,7 +18,6 @@
 			"_removeUpdater": { "text": "@private removes dynamic value updater", "params": [], "internal": true },
 			"_replaceUpdater": { "text": "@private replaces dynamic value updater", "params": [], "internal": true },
 			"_createPropertyStorage": { "text": "@private creates property storage", "params": [], "internal": true },
-			"setPropertyForwardingTarget": { "text": "mixin api: set default forwarding _target", "params": [], "internal": false },
 			"_setProperty": { "text": "@private patch property storage directly without signalling.", "params": [], "internal": true },
 			"updateAnimation": { "text": "@private updates animation properties on given property", "params": [], "internal": true },
 			"setAnimation": { "text": "@private sets animation on given property", "params": [], "internal": true },

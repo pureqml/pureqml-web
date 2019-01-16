@@ -49,7 +49,7 @@ Lesson {
 		KeyValueView {
 			anchors.leftMargin: 20;
 			model: ListModel {
-				ListElement { key: "orientation"; value: "Enumeration proeprty can be \"Vertical\" or \"Horizontal\". Orientation is vertical by default"; }
+				ListElement { key: "orientation"; value: "Enumeration property can be \"Vertical\" or \"Horizontal\". Orientation is vertical by default"; }
 			}
 		}
 

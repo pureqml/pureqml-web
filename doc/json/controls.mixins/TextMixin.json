@@ -4,7 +4,7 @@
 
 	"content": {
 		"Methods": {
-			"constructor": { "text": "", "internal": true },
+			"prototypeConstructor": { "text": "", "internal": false },
 			"_createElement": { "text": "", "internal": false }
 		}
 	}
