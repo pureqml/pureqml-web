@@ -1,7 +1,7 @@
 WebLink {
 	property string icon;
 	property string text;
-	width: (height - 20) + buttonText.paintedWidth + 30;
+	width: 300;
 	height: 100;
 	color: colorTheme.panelColor;
 	effects.shadow.blur: hover ? 4 : 2;
@@ -18,9 +18,10 @@ WebLink {
 
 	Text {
 		id: buttonText;
-		anchors.left: parent.left;
+		x: parent.height - 20;
+		width: parent.width - x;
 		anchors.verticalCenter: parent.verticalCenter;
-		anchors.leftMargin: parent.height;
+		horizontalAlignment: Text.AlignHCenter;
 		color: colorTheme.primaryColor;
 		font.pixelSize: 23;
 		text: parent.text;
