@@ -56,6 +56,7 @@
 			"_updateVisibilityForChild": { "text": "@private", "params": [], "internal": true },
 			"_setSizeAdjust": { "text": "@private", "params": [], "internal": true },
 			"onRecursiveVisibleChanged": { "text": "", "internal": true },
+			"onFocusChanged": { "text": "", "internal": true },
 			"onVisibleChanged": { "text": "", "internal": true },
 			"onVisibleInViewChanged": { "text": "", "internal": true },
 			"onWidthChanged": { "text": "", "internal": true },

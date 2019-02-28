@@ -13,6 +13,7 @@
 		"Methods": {
 			"move": { "text": "@private", "params": [], "internal": true },
 			"onKeyPressed": { "text": "@private", "params": [], "internal": true },
+			"onCountChanged": { "text": "", "internal": true },
 			"moveUp": { "text": "", "internal": false },
 			"moveDown": { "text": "", "internal": false },
 			"moveLeft": { "text": "", "internal": false },

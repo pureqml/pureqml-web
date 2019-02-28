@@ -20,6 +20,7 @@
 			"createActivity": { "text": "", "internal": false },
 			"setState": { "text": "", "internal": false },
 			"setIntent": { "text": "", "internal": false },
+			"isActivityInStack": { "text": "", "internal": false },
 			"clear": { "text": "", "internal": false },
 			"initTopIntent": { "text": "", "internal": false }
 		}

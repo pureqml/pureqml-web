@@ -30,6 +30,7 @@
 			"scheduleAction": { "text": "@private", "params": [], "internal": true },
 			"delayedAction": { "text": "@private", "params": [], "internal": true },
 			"qsTr": { "text": "Returns input text translation", "params": [{ "name": "text", "type": "string", "text": "text that must be translated" }], "internal": false },
+			"tr": { "text": "", "internal": false },
 			"processKey": { "text": "", "internal": false },
 			"run": { "text": "@private", "params": [], "internal": true },
 			"_run": { "text": "@private", "params": [], "internal": true }
