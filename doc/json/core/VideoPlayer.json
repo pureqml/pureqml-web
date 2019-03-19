@@ -52,6 +52,7 @@
 			"getAudioTracks": { "text": "Return array of available audio tracks", "params": [], "internal": false },
 			"onError": { "text": "@private", "params": [], "internal": true },
 			"onSourceChanged": { "text": "@private", "params": [], "internal": true },
+			"onBackendChanged": { "text": "", "internal": true },
 			"onNewBoundingBox": { "text": "", "internal": false },
 			"onRecursiveVisibleChanged": { "text": "", "internal": true },
 			"onCompleted": { "text": "@private", "params": [], "internal": true }

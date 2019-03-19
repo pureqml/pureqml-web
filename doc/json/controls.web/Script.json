@@ -7,8 +7,14 @@
 			"source": { "text": "source to load script from", "internal": false, "type": "string", "defaultValue": "" }
 		},
 
+		"Signals": {
+			"loaded": { "text": "signal emitted when script loaded", "internal": false }
+		},
+
 		"Methods": {
 			"constructor": { "text": "", "internal": true },
+			"on": { "text": "", "internal": false },
+			"discard": { "text": "@private", "params": [], "internal": true },
 			"_delayedLoad": { "text": "@private", "params": [], "internal": true },
 			"load": { "text": "", "internal": false },
 			"onSourceChanged": { "text": "", "internal": true },
