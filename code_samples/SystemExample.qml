@@ -4,7 +4,7 @@ Item {
 
 	Image {
 		anchors.fill: parent;
-		source: "../res/lessons/system/" + (context.system.device == System.Mobile ? "mobile" : (
+		source: "https://pureqml.com/res/lessons/system/" + (context.system.device == System.Mobile ? "mobile" : (
 			context.system.browser == System.Tv ? "tv" : "desktop")) + ".png";
 
 		Image {
@@ -17,7 +17,7 @@ Item {
 
 	onCompleted: {
 		var os = this._context.system.os.toLowerCase()
-		var resPath = "../res/lessons/system/"
+		var resPath = "https://pureqml.com/res/lessons/system/"
 
 		if (os.indexOf("android") >= 0)
 			osIcon.source = resPath + "android.png"

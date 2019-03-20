@@ -8,7 +8,7 @@ Item {
 		duration: 600;
 		frameCount: 8;
 		running: parent.visible;
-		source: "http://pureqml.com/res/lessons/bug_sprite.png";
+		source: "https://pureqml.com/res/lessons/bug_sprite.png";
 		repeat: running;
 
 		updatePos: {
