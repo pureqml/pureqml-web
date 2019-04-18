@@ -39,5 +39,5 @@ Activity {
 		onClicked: { mainActivityProto.push("next") }
 	}
 
-	onCompleted: { log("main activity created") }
+	onCompleted: { log("MAIN ACTIVITY CREATED") }
 }
