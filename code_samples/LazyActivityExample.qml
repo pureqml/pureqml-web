@@ -1,5 +1,6 @@
 ActivityManager {
-	anchors.fill: context;
+	width: 500;
+	height: 500;
 
 	//@using { code_samples.MainActivity }
 	LazyActivity { name: "main"; component: "code_samples.MainActivity"; }

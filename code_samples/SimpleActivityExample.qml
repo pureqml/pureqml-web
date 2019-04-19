@@ -1,5 +1,6 @@
 ActivityManager {
-	anchors.fill: context;
+	width: 500;
+	height: 500;
 
 	MainActivity { }
 	NextActivity { }
