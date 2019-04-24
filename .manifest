@@ -3,5 +3,6 @@
 	"platforms": ["web"],
 	"languages": ["ru_RU"],
 	"apps": {"index": "index"},
-	"sources": ["src", "lessons", "code_samples"]
+	"sources": ["src", "lessons", "code_samples"],
+	"web-prefix": "pure"
 }
