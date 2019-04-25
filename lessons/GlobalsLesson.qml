@@ -18,7 +18,7 @@ Lesson {
 	}
 
 	PageColumn {
-		title: "Sytem";
+		title: "System";
 		text: "This object store readonly information about device, browser and supporting fatures.";
 
 		KeyValueView {
