@@ -1,7 +1,7 @@
 WebLink {
 	property string relPath;
 	property string text;
-	href: "https://pureqml.com/" + relPath + ".html";
+	href: "https://pureqml.com/" + (relPath? relPath + ".html": "");
 	color: hover ? colorTheme.primaryColor : colorTheme.hTextColor;
 	radius: 5;
 	border.width: 1;

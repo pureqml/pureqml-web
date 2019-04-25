@@ -37,7 +37,7 @@ Rectangle {
 				width: 100%;
 				height: 30;
 				color: hover ? "#AED581" : "transparent";
-				href: hash ? model.hash : "https://pureqml.com/" + model.path + ".html";
+				href: hash ? model.hash : "https://pureqml.com/" + (model.path? model.path + ".html": "");
 
 				Behavior on background { Animation { duration: 300;}}
 
