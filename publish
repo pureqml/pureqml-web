@@ -1,9 +1,20 @@
 #!/bin/sh
 
+#updating sitemap
+./update-sitemap
+git commit -m "updated sitemap" dist/sitemap.txt
+git push
+
+#building and minifying
+rm -rf build.web
 ./qmlcore/build -m
+
+#updating gh-pages
 git checkout gh-pages
 git pull
 cp -r build.web/* .
 git commit -a -m "updated site"
+
+#restoring master
 git checkout master
-git push --all
+git push --all #a bit dangerous lol
