@@ -23,7 +23,7 @@ Rectangle {
 		delegate: WebLink {
 			width: parent.width;
 			height: 30;
-			href: "https://pureqml.com/" + path;
+			href: "https://pureqml.com/" + path + ".html";
 			property string path: model.path;
 
 			Text {
