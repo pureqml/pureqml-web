@@ -5,6 +5,8 @@
 git commit -m "updated sitemap" dist/sitemap.txt
 git push
 
+FILES=$(tail --lines='+2' < dist/sitemap.txt | sed -r "s/^https:\/\/pureqml.com\///" | xargs)
+
 #building and minifying
 rm -rf build.web
 ./qmlcore/build -m
@@ -15,7 +17,6 @@ git pull
 cp -r build.web/* .
 
 #adding all sitemap urls
-FILES=$(tail --lines='+2' < dist/sitemap.txt | sed -r "s/^https:\/\/pureqml.com\///" | xargs)
 mkdir lessons 2> /dev/null
 for FILE in $FILES; do
 	cp index.html $FILE
