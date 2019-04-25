@@ -1,0 +1,20 @@
+#!/bin/sh
+
+#SITE_ACTS=$(grep -rl SiteActivity src | grep -v Main.qml)
+#grep 'name:' $SITE_ACTS | cut -d: -f3 | tr -d '";"'
+
+BASE="https://pureqml.com/"
+TOP="gettingstarted download lessons docs"
+
+LESSONS=$(egrep -hr 'url:\s*\"\w+\"' lessons | cut -d: -f2 | tr -d '";"' | sort)
+
+{
+	echo $BASE
+	for PATH in $TOP; do
+		echo "${BASE}${PATH}.html"
+	done
+
+	for PATH in $LESSONS; do
+		echo "${BASE}lessons/${PATH}.html"
+	done
+} > dist/sitemap.txt
