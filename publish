@@ -13,6 +13,16 @@ rm -rf build.web
 git checkout gh-pages
 git pull
 cp -r build.web/* .
+
+#adding all sitemap urls
+FILES=$(tail --lines='+2' < dist/sitemap.txt | sed -r "s/^https:\/\/pureqml.com\///" | xargs)
+mkdir lessons 2> /dev/null
+for FILE in $FILES; do
+	cp index.html $FILE
+done
+
+git add $FILES
+
 git commit -a -m "updated site"
 
 #restoring master
