@@ -4,5 +4,11 @@
 	"languages": ["ru_RU"],
 	"apps": {"index": "index"},
 	"sources": ["src", "lessons", "code_samples"],
-	"web-prefix": "pure"
+	"web-prefix": "pure",
+	"templater": "jinja2",
+	"properties": {
+		"style.font" : {
+			"family": "Roboto"
+		}
+	}
 }
