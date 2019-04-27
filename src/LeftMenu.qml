@@ -56,7 +56,6 @@ Rectangle {
 					if (this.hash) {
 						return
 					}
-					e.preventDefault();
 					var a = this.path.split("/");
 					var state = {}
 					if (a[0])
@@ -67,6 +66,7 @@ Rectangle {
 						state.element = a[2]
 
 					this._context.location.pushState(state, this.text, this.href)
+					e.preventDefault();
 				}
 			}
 

@@ -36,7 +36,6 @@ Rectangle {
 			}
 
 			onClicked(e): {
-				e.preventDefault();
 				var a = this.path.split("/");
 				var state = {}
 				if (a[0])
@@ -48,6 +47,7 @@ Rectangle {
 
 				this._context.location.pushState(state, this.href, this.href)
 				this.parent.parent.clear()
+				e.preventDefault();
 			}
 		}
 	}

@@ -9,9 +9,10 @@ WebLink {
 	onClicked(e): {
 		if (this.parent.parent.newWindow)
 			return;
-		e.preventDefault();
+
 		this.parent.parent.open = false;
 		this._context.location.pushState({ page: this.page }, "PureQML - " + this.text, this.href)
+		e.preventDefault();
 	}
 
 	Text {

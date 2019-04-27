@@ -21,10 +21,10 @@ Column {
 		}
 
 		onClicked(e): {
-			e.preventDefault();
 			var a = this.parent.path.split("/");
 
 			this._context.location.pushState({ "page": "lessons", "section": a[1]}, this.href, this.href)
+			e.preventDefault();
 		}
 	}
 

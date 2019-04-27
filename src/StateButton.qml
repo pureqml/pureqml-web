@@ -22,7 +22,6 @@ WebLink {
 		if (this.relPath === "")
 			return
 
-		e.preventDefault();
 		var a = this.relPath.split("/");
 		var state = {}
 		if (a[0])
@@ -33,6 +32,7 @@ WebLink {
 			state.element = a[2]
 
 		this._context.location.pushState(state, this.href, this.href)
+		e.preventDefault();
 	}
 
 	Behavior on background, color { Animation { duration: 300; } }
