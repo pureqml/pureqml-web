@@ -40,7 +40,6 @@ Item {
 				var item = codeExampleProto.sample
 				item.anchors.fill = this.content
 				item.visible = true
-				this.content.element.append(item.element)
 			}
 		}
 	}
