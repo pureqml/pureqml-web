@@ -15,13 +15,13 @@ SiteActivity {
 			HashPageColumn {
 				hash: "usage";
 				title: "Usage";
-				text: "QMLCore provides a set of tools written in python2 (sorry about that, lol). Usually, you need not use them directly. <b>build</b> provides a convenient wrapper around them all.";
+				text: "QmlCore provides a toolchain written in Python using python-future, allowing it to be run on top of both python versions. Normally you don't need to use them directly. ```build``` provides a convenient wrapper around them all.";
 			}
 
 			HashPageColumn {
 				hash: "prerequisites";
 				title: "Prerequisites";
-				text: "Any modern python 2.x will go well. Jinja2 is a better option for templating if you want more than qml loader in your html file, but it's not required for small apps.";
+				text: "Any modern Python (2 or 3) will go well. Jinja2 is a different option for templating in case you want more than QML loader in your HTML file, while it's not required for small apps.";
 			}
 
 			HashPageColumn {
