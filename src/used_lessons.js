@@ -14,3 +14,4 @@
 /*** @using { lessons.TransformLesson } **/
 /*** @using { lessons.LoaderLesson } **/
 /*** @using { lessons.LocalizationLesson } **/
+/*** @using { lessons.ActivityLesson } **/

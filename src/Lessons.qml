@@ -120,6 +120,12 @@ SiteActivity {
 					text: "How to build a miltilanguage application";
 				}
 
+				PathPageColumn {
+					path: "lessons/activity";
+					title: "Activities";
+					text: "Very usefull pattern for app building";
+				}
+
 				onFillMenu(data): { leftMenu.fillModel(data) }
 
 				onCompleted: { log("main completed") }
@@ -164,7 +170,8 @@ SiteActivity {
 					transform: "lessons.TransformLesson",
 					loader: "lessons.LoaderLesson",
 					localization: "lessons.LocalizationLesson",
-					sprite: "lessons.SpriteLesson"
+					sprite: "lessons.SpriteLesson",
+					activity: "lessons.ActivityLesson"
 				}
 			}
 
