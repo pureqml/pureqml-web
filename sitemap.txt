@@ -3,6 +3,7 @@ https://pureqml.com/gettingstarted.html
 https://pureqml.com/download.html
 https://pureqml.com/lessons.html
 https://pureqml.com/docs.html
+https://pureqml.com/lessons/activity.html
 https://pureqml.com/lessons/anchors.html
 https://pureqml.com/lessons/basics.html
 https://pureqml.com/lessons/effects.html
@@ -18,4 +19,5 @@ https://pureqml.com/lessons/mixins.html
 https://pureqml.com/lessons/signals.html
 https://pureqml.com/lessons/sprite.html
 https://pureqml.com/lessons/transform.html
+https://pureqml.com/lessons/videoplayer.html
 https://pureqml.com/lessons/views.html
