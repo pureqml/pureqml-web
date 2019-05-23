@@ -182,11 +182,12 @@ SiteActivity {
 			var state = this._state
 			content.currentIndex = 0
 			if (state && state.page === "lessons") {
+				var section = state.section.replace(".html", "")
 				log("state", state, "page", state.page)
-				if (state.section && state.section !== "") {
-					log ("lessons", state.section, this._content[state.section])
-					content.loadLesson(this._content[state.section])
-					content.pageName = state.section;
+				if (section && section !== "") {
+					log ("lessons", section, this._content[section])
+					content.loadLesson(this._content[section])
+					content.pageName = section;
 				} else {
 					content.pageName = "main"
 				}
