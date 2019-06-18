@@ -6,7 +6,7 @@
 		"Properties": {
 			"text": { "text": "button inner text", "internal": false, "type": "string", "defaultValue": "" },
 			"font": { "text": "button texts font", "ref": "qmlcore.core/Font", "internal": false, "type": "Font", "defaultValue": "Font" },
-			"paddings": { "text": "inner text paddings", "ref": "controls.core/Paddings", "internal": false, "type": "Paddings", "defaultValue": "Paddings" },
+			"paddings": { "text": "inner text paddings", "internal": false, "type": "lazy", "defaultValue": "Paddings" },
 			"hover": { "text": "", "ref": "qmlcore.core/HoverMixin", "internal": false, "type": "HoverMixin", "defaultValue": "HoverMixin" },
 			"textColor": { "text": "", "internal": false, "type": "color", "defaultValue": "" },
 			"paintedWidth": { "text": "", "internal": false, "type": "int", "defaultValue": "" },

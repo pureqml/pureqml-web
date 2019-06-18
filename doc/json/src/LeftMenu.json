@@ -9,7 +9,7 @@
 		},
 
 		"Signals": {
-			"optionChoosed": { "text": "", "internal": false }
+			"optionChosen": { "text": "", "internal": false }
 		},
 
 		"Methods": {

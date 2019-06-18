@@ -4,7 +4,7 @@
 
 	"content": {
 		"Properties": {
-			"paddings": { "text": "inner text paddings", "ref": "controls.core/Paddings", "internal": false, "type": "Paddings", "defaultValue": "Paddings" },
+			"paddings": { "text": "inner text paddings", "internal": false, "type": "lazy", "defaultValue": "Paddings" },
 			"color": { "text": "text color", "internal": false, "type": "Color", "defaultValue": "#000" },
 			"backgroundColor": { "text": "background color", "internal": false, "type": "Color", "defaultValue": "#fff" },
 			"font": { "text": "object holding properties of text font", "ref": "qmlcore.core/Font", "internal": false, "type": "Font", "defaultValue": "Font" },

@@ -16,7 +16,7 @@
 				"AnchorsMarginsFixed": "code_samples/AnchorsMarginsFixed.json",
 				"TransformTranslateExample": "code_samples/TransformTranslateExample.json",
 				"TextExample": "code_samples/TextExample.json",
-				"KeyLesson": "code_samples/KeyLesson.json",
+				"MainActivity": "code_samples/MainActivity.json",
 				"SearchInputExample": "code_samples/SearchInputExample.json",
 				"SpriteExample": "code_samples/SpriteExample.json",
 				"RectanglesExample": "code_samples/RectanglesExample.json",
@@ -26,6 +26,8 @@
 				"SignalTestItem": "code_samples/SignalTestItem.json",
 				"ImageMixinExample": "code_samples/ImageMixinExample.json",
 				"FocusExample": "code_samples/FocusExample.json",
+				"HoverMixinExample": "code_samples/HoverMixinExample.json",
+				"VideoPlayerSample": "code_samples/VideoPlayerSample.json",
 				"DragMixinDirectionLesson": "code_samples/DragMixinDirectionLesson.json",
 				"ProxyLessonExample": "code_samples/ProxyLessonExample.json",
 				"ListViewExample": "code_samples/ListViewExample.json",
@@ -45,11 +47,14 @@
 				"TextInputExample": "code_samples/TextInputExample.json",
 				"AnchorsMargins": "code_samples/AnchorsMargins.json",
 				"Anchors1": "code_samples/Anchors1.json",
-				"HoverMixinExample": "code_samples/HoverMixinExample.json",
+				"SimpleActivityExample": "code_samples/SimpleActivityExample.json",
+				"KeyLesson": "code_samples/KeyLesson.json",
 				"LoaderCodeLesson": "code_samples/LoaderCodeLesson.json",
 				"AnchorsCenter": "code_samples/AnchorsCenter.json",
 				"TextMixinExample": "code_samples/TextMixinExample.json",
 				"NumberInputExample": "code_samples/NumberInputExample.json",
+				"NextActivity": "code_samples/NextActivity.json",
+				"LazyActivityExample": "code_samples/LazyActivityExample.json",
 				"ImageExample": "code_samples/ImageExample.json",
 				"SignalHandling": "code_samples/SignalHandling.json",
 				"SignalArgsHandling": "code_samples/SignalArgsHandling.json",
@@ -225,6 +230,13 @@
 				"TableFooter": "controls.web.tables/TableFooter.json"
 			}
 		},
+		"controls.web.websocket": {
+			"file": "controls.web.websocket.json",
+			"content": {
+				"WebSocketServer": "controls.web.websocket/WebSocketServer.json",
+				"WebSocketClient": "controls.web.websocket/WebSocketClient.json"
+			}
+		},
 		"controls.yandex": {
 			"file": "controls.yandex.json",
 			"content": {
@@ -297,18 +309,20 @@
 		"lessons": {
 			"file": "lessons.json",
 			"content": {
+				"AnchorsLesson": "lessons/AnchorsLesson.json",
 				"TransformLesson": "lessons/TransformLesson.json",
 				"ViewAndModelsLesson": "lessons/ViewAndModelsLesson.json",
 				"BasicLesson": "lessons/BasicLesson.json",
 				"GamepadLesson": "lessons/GamepadLesson.json",
 				"SignalLesson": "lessons/SignalLesson.json",
-				"MixinLesson": "lessons/MixinLesson.json",
-				"KeyboardLesson": "lessons/KeyboardLesson.json",
-				"LocalizationLesson": "lessons/LocalizationLesson.json",
-				"LoaderLesson": "lessons/LoaderLesson.json",
-				"AnchorsLesson": "lessons/AnchorsLesson.json",
-				"LayoutsLesson": "lessons/LayoutsLesson.json",
 				"InputsLesson": "lessons/InputsLesson.json",
+				"MixinLesson": "lessons/MixinLesson.json",
+				"ActivityLesson": "lessons/ActivityLesson.json",
+				"KeyboardLesson": "lessons/KeyboardLesson.json",
+				"LoaderLesson": "lessons/LoaderLesson.json",
+				"VideoPlayerLesson": "lessons/VideoPlayerLesson.json",
+				"LayoutsLesson": "lessons/LayoutsLesson.json",
+				"LocalizationLesson": "lessons/LocalizationLesson.json",
 				"EffectsLesson": "lessons/EffectsLesson.json",
 				"Lesson": "lessons/Lesson.json",
 				"SpriteLesson": "lessons/SpriteLesson.json",
