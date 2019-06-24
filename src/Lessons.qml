@@ -126,6 +126,12 @@ SiteActivity {
 					text: "Very usefull pattern for app building";
 				}
 
+				PathPageColumn {
+					path: "lessons/videoplayer";
+					title: "VideoPlayer";
+					text: "VideoPlayer usage example";
+				}
+
 				onFillMenu(data): { leftMenu.fillModel(data) }
 
 				onCompleted: { log("main completed") }
@@ -171,7 +177,8 @@ SiteActivity {
 					loader: "lessons.LoaderLesson",
 					localization: "lessons.LocalizationLesson",
 					sprite: "lessons.SpriteLesson",
-					activity: "lessons.ActivityLesson"
+					activity: "lessons.ActivityLesson",
+					videoplayer: "lessons.VideoPlayerLesson"
 				}
 			}
 

@@ -15,3 +15,4 @@
 /*** @using { lessons.LoaderLesson } **/
 /*** @using { lessons.LocalizationLesson } **/
 /*** @using { lessons.ActivityLesson } **/
+/*** @using { lessons.VideoPlayerLesson } **/
