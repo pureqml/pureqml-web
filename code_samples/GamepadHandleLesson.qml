@@ -7,10 +7,11 @@ Item {
 		id: icon;
 		property int dx;
 		property int dy;
+		x: 175;
+		y: 175;
 		width: 50;
 		height: 50;
-		anchors.centerIn: parent;
-		source: colorTheme.resPath + "/lessons/crosshair.png";
+		source: "https://pureqml.com/res/lessons/crosshair.png";
 
 		Timer {
 			interval: 20;
