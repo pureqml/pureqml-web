@@ -5,6 +5,6 @@ Item {
 	ImageMixin {
 		width: 100%;
 		height: 100%;
-		source: colorTheme.resPath + "/lessons/image.png";
+		source: "https://pureqml.com/res/lessons/image.png";
 	}
 }
