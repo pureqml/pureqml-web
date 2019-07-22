@@ -19,7 +19,8 @@
 			"autoPlay": { "text": "play video immediately after source changed", "internal": false, "type": "bool", "defaultValue": "" },
 			"duration": { "text": "content duration in seconds (only for non-live videos)", "internal": false, "type": "real", "defaultValue": "" },
 			"progress": { "text": "current playback progress in seconds", "internal": false, "type": "real", "defaultValue": "" },
-			"buffered": { "text": "how much content to buffer in seconds", "internal": false, "type": "real", "defaultValue": "" }
+			"buffered": { "text": "how much content to buffer in seconds", "internal": false, "type": "real", "defaultValue": "" },
+			"startPosition": { "text": "second at which the video should start playback", "internal": false, "type": "real", "defaultValue": "" }
 		},
 
 		"Signals": {

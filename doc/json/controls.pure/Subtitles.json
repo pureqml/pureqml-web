@@ -1,0 +1,19 @@
+{
+	"name": "controls.pure.Subtitles",
+	"text": "",
+
+	"content": {
+		"Properties": {
+			"progress": { "text": "", "internal": false, "type": "real", "defaultValue": "" },
+			"text": { "text": "", "internal": false, "type": "string", "defaultValue": "" }
+		},
+
+		"Methods": {
+			"onProgressChanged": { "text": "", "internal": true },
+			"turnOff": { "text": "", "internal": false },
+			"onDataChanged": { "text": "", "internal": true },
+			"getTimeDuration": { "text": "", "internal": false },
+			"constructor": { "text": "", "internal": true }
+		}
+	}
+}
