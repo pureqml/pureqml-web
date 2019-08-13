@@ -121,7 +121,7 @@ SiteActivity {
 				}
 
 				PathPageColumn {
-					path: "lessons/activity";
+					path: "lessons/activitylesson";
 					title: "Activities";
 					text: "Very usefull pattern for app building";
 				}
@@ -177,7 +177,7 @@ SiteActivity {
 					loader: "lessons.LoaderLesson",
 					localization: "lessons.LocalizationLesson",
 					sprite: "lessons.SpriteLesson",
-					activity: "lessons.ActivityLesson",
+					activitylesson: "lessons.ActivityLesson",
 					videoplayer: "lessons.VideoPlayerLesson"
 				}
 			}
