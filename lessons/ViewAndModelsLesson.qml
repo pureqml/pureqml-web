@@ -86,7 +86,7 @@ Lesson {
 
 	PageColumn {
 		title: "ProxyModel";
-		text: "If you need to sort or filter model with same data you actually don't have to implement new model for every case. You can just use ProxyModel.<br>For example we have a model this recieved messages:";
+		text: "If you need to sort or filter model with same data you actually don't have to implement new model for every case. You can just use ProxyModel.<br>For example we have a model this recieved messages (save this code in <b>ProxyMessages.qml</b> file):";
 
 		CodeHighlighter {
 			width: parent.width - 20;
