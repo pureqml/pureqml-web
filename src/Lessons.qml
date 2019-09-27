@@ -132,6 +132,12 @@ SiteActivity {
 					text: "VideoPlayer usage example";
 				}
 
+				PathPageColumn {
+					path: "lessons/drm";
+					title: "DRM";
+					text: "DRM video playing";
+				}
+
 				onFillMenu(data): { leftMenu.fillModel(data) }
 
 				onCompleted: { log("main completed") }
@@ -178,7 +184,8 @@ SiteActivity {
 					localization: "lessons.LocalizationLesson",
 					sprite: "lessons.SpriteLesson",
 					activitylesson: "lessons.ActivityLesson",
-					videoplayer: "lessons.VideoPlayerLesson"
+					videoplayer: "lessons.VideoPlayerLesson",
+					drm: "lessons.DrmLesson"
 				}
 			}
 

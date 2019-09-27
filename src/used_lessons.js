@@ -16,3 +16,4 @@
 /*** @using { lessons.LocalizationLesson } **/
 /*** @using { lessons.ActivityLesson } **/
 /*** @using { lessons.VideoPlayerLesson } **/
+/*** @using { lessons.DrmLesson } **/
