@@ -24,4 +24,18 @@ Lesson {
 		language: "qml";
 		code: "\"requires\": [\"video.shaka\"]";
 	}
+
+	Resource { id: drmExampleSource; url: "https://raw.githubusercontent.com/pureqml/pureqml-web/master/code_samples/DrmExample.qml"; }
+
+	PageColumn {
+		title: "Code example";
+		text: "Simple code usage example";
+
+		CodeHighlighter {
+			width: contentWidth > parent.width - 30 ? parent.width - 30 : contentWidth;
+			font.pixelSize: 18;
+			language: "qml";
+			code: drmExampleSource.data;
+		}
+	}
 }
