@@ -7,6 +7,7 @@ BASE="https://pureqml.com/"
 TOP="gettingstarted download lessons docs"
 
 LESSONS=$(egrep -hr 'url:\s*\"\w+\"' lessons | cut -d: -f2 | tr -d '";"' | sort)
+DOCS=$(egrep -hr ".json" doc/json/ | cut -d: -f2 | tr -d '"; ,"' | grep -w -E "controls|core"| sed -e "s/\.json/\.html/g" | sort)
 
 {
 	echo $BASE
@@ -16,5 +17,9 @@ LESSONS=$(egrep -hr 'url:\s*\"\w+\"' lessons | cut -d: -f2 | tr -d '";"' | sort)
 
 	for PATH in $LESSONS; do
 		echo "${BASE}lessons/${PATH}.html"
+	done
+
+	for PATH in $DOCS; do
+		echo "${BASE}${PATH}"
 	done
 } > dist/sitemap.txt
