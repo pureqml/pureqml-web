@@ -19,7 +19,7 @@ cp -r build.web/* .
 #adding all sitemap urls
 mkdir lessons 2> /dev/null
 for FILE in $FILES; do
-	install -D index.html $FILE
+	cp index.html $FILE
 done
 
 git add $FILES
