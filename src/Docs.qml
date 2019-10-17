@@ -53,7 +53,8 @@ SiteActivity {
 			if (docsPageProto.active) {
 				if (state.section) {
 					log("State changed section:", state.section, "element:", state.element)
-					dataLoader.url = "https://raw.githubusercontent.com/pureqml/pureqml-web/master/doc/json/" + (state.element ? state.section + "/" + state.element : state.section) + ".json"
+					var section = state.element ? state.section + "/" + state.element : state.section
+					dataLoader.url = "https://raw.githubusercontent.com/pureqml/pureqml-web/master/doc/json/" + (section.indexOf(".html") >= 0 ? section.replace(".html", ",json") : (section + ".json"))
 				} else {
 					dataLoader.url = "https://raw.githubusercontent.com/pureqml/pureqml-web/master/doc/json/core/Item.json"
 				}
