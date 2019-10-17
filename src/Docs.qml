@@ -54,7 +54,7 @@ SiteActivity {
 				if (state.section) {
 					log("State changed section:", state.section, "element:", state.element)
 					var section = state.element ? state.section + "/" + state.element : state.section
-					dataLoader.url = "https://raw.githubusercontent.com/pureqml/pureqml-web/master/doc/json/" + (section.indexOf(".html") >= 0 ? section.replace(".html", ",json") : (section + ".json"))
+					dataLoader.url = "https://raw.githubusercontent.com/pureqml/pureqml-web/master/doc/json/" + (section.indexOf(".html") >= 0 ? section.replace(".html", ".json") : (section + ".json"))
 				} else {
 					dataLoader.url = "https://raw.githubusercontent.com/pureqml/pureqml-web/master/doc/json/core/Item.json"
 				}
