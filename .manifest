@@ -5,5 +5,8 @@
 	"apps": {"index": "index"},
 	"sources": ["src", "lessons", "code_samples"],
 	"web-prefix": "pure",
+	"properties": {
+		"title": "PureQML"
+	},
 	"templater": "jinja2"
 }
