@@ -63,10 +63,17 @@ SiteActivity {
 						ListElement { key: "minify"; value: "false/true or compiler name as string, only 'gcc' and 'uglify-js' are supported. Google closure compiler requires java to run."; }
 						ListElement { key: "platforms"; value: "use additional platform/*/ files, default and only platform is 'web' for now."; }
 						ListElement { key: "sources"; value: "directories to search sources for"; }
+						ListElement {
+							key: "properties";
+							value: "custom app properties object. Create any property within and it will be accessabe in runtime js code. For example: <i>\"properties\": { \"foo\": \"bar\" }</i> - property 'foo' can be accessed in code this way: <i>var foo = $manifest$foo$</i><br>Some properties are reserved by qmlcore and qmlcore-tv:<br><b>title</b> - project title which will be used as app name for smartTV apps or web page title<br><b>author</b> - project author info object which will be passed in smartTV apps configuration files. This property contains this fileds: name, email, organization, site<br><b>resolutionWidth, resolutionHeight</b> - app screen size properties it's usefull for smartTV apps with not default OSD size. webOS FHD apps For instance <b>style.font</b> - app default font properties such as family or size</br><b>iconColor</b> - app icon color used only for webOS platform</br><b>version</b> - app version</br><b>domain</b> - app donmain name used only for android applications</br><b>hostname</b> - app host name used only for android applications";
+						}
 					}
 				}
 
-				H3 { text: "build tool command line options"; }
+				MainP {
+					text: "build tool command line options";
+					horizontalAlignment: Text.AlignLeft;
+				}
 
 				KeyValueView {
 					shift: 270;
@@ -101,6 +108,7 @@ SiteActivity {
 
 				H3 {
 					color: colorTheme.primaryColor;
+					width: 100%;
 					text: "Grammar";
 				}
 
@@ -110,6 +118,7 @@ SiteActivity {
 				}
 
 				H3 {
+					width: 100%;
 					color: colorTheme.primaryColor;
 					text: "Focus";
 				}
@@ -128,6 +137,7 @@ SiteActivity {
 				}
 
 				H3 {
+					width: 100%;
 					color: colorTheme.primaryColor;
 					text: "Adding modernizr features";
 				}
