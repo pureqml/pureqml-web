@@ -25,6 +25,21 @@ Lesson {
 		code: "\"requires\": [\"video.shaka\"]";
 	}
 
+	PageColumn {
+		title: "Setup DRM";
+		text: "To play DRM video call <b>setupDrm</b> method first and set required URL in callback. setupDrm arguments:";
+
+		KeyValueView {
+			anchors.leftMargin: 20;
+			model: ListModel {
+				ListElement { key: "type"; value: "DRM type. 'widevine' or 'playready' are available for PureQML"; }
+				ListElement { key: "options"; value: "DRM options object with properties <b>laServer</n> - LA server URL and <b>contentId</b> - content ID"; }
+				ListElement { key: "callback"; value: "successful callback"; }
+				ListElement { key: "error"; value: "error callback"; }
+			}
+		}
+	}
+
 	Resource { id: drmExampleSource; url: "https://raw.githubusercontent.com/pureqml/pureqml-web/master/code_samples/DrmExample.qml"; }
 
 	PageColumn {
