@@ -9,6 +9,7 @@
 			"_registerDelayedAction": { "text": "@private", "params": [], "internal": true },
 			"_cancelDelayedAction": { "text": "@private", "params": [], "internal": true },
 			"prototypeConstructor": { "text": "", "internal": false },
+			"removeAllOnChanged": { "text": "@private removes all on changes connections", "params": [], "internal": true },
 			"discard": { "text": "discard object", "params": [], "internal": false },
 			"addChild": { "text": "adds child object to children", "params": [{ "name": "child", "type": "Object", "text": "object to add" }], "internal": false },
 			"_setId": { "text": "@private sets id", "params": [], "internal": true },

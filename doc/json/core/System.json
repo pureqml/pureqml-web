@@ -19,7 +19,9 @@
 			"screenWidth": { "text": "device screen width value", "internal": false, "type": "int", "defaultValue": "" },
 			"screenHeight": { "text": "device screen height value", "internal": false, "type": "int", "defaultValue": "" },
 			"contextWidth": { "text": "@private", "internal": true, "type": "int", "defaultValue": "${context.width}" },
-			"contextHeight": { "text": "@private", "internal": true, "type": "int", "defaultValue": "${context.height}" }
+			"contextHeight": { "text": "@private", "internal": true, "type": "int", "defaultValue": "${context.height}" },
+			"resolutionWidth": { "text": "app screen width from manifest", "internal": false, "type": "int", "defaultValue": "" },
+			"resolutionHeight": { "text": "app screen height from manifest", "internal": false, "type": "int", "defaultValue": "" }
 		},
 
 		"Methods": {

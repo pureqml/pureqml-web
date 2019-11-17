@@ -23,6 +23,7 @@
 				"RangeInputExample": "code_samples/RangeInputExample.json",
 				"DragMixinLesson": "code_samples/DragMixinLesson.json",
 				"TimeInputExample": "code_samples/TimeInputExample.json",
+				"DrmExample": "code_samples/DrmExample.json",
 				"SignalTestItem": "code_samples/SignalTestItem.json",
 				"ImageMixinExample": "code_samples/ImageMixinExample.json",
 				"FocusExample": "code_samples/FocusExample.json",
@@ -202,6 +203,13 @@
 				"ResizableBox": "controls.web/ResizableBox.json"
 			}
 		},
+		"controls.web.api": {
+			"file": "controls.web.api.json",
+			"content": {
+				"Method": "controls.web.api/Method.json",
+				"Rest": "controls.web.api/Rest.json"
+			}
+		},
 		"controls.web.audio": {
 			"file": "controls.web.audio.json",
 			"content": {
@@ -279,6 +287,7 @@
 				"System": "core/System.json",
 				"BaseViewContent": "core/BaseViewContent.json",
 				"Item": "core/Item.json",
+				"Connection": "core/Connection.json",
 				"LocalStorage": "core/LocalStorage.json",
 				"ScrollView": "core/ScrollView.json",
 				"Context": "core/Context.json",
@@ -313,6 +322,7 @@
 			"content": {
 				"AnchorsLesson": "lessons/AnchorsLesson.json",
 				"TransformLesson": "lessons/TransformLesson.json",
+				"DrmLesson": "lessons/DrmLesson.json",
 				"ViewAndModelsLesson": "lessons/ViewAndModelsLesson.json",
 				"BasicLesson": "lessons/BasicLesson.json",
 				"GamepadLesson": "lessons/GamepadLesson.json",

@@ -1,0 +1,6 @@
+{
+	"controls.web.api": {
+		"Method": "controls.web.api/Method.json",
+		"Rest": "controls.web.api/Rest.json"
+	}
+}

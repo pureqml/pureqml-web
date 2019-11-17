@@ -5,6 +5,7 @@
 	"content": {
 		"Methods": {
 			"constructor": { "text": "@private", "params": [], "internal": true },
+			"removeAllOn": { "text": "@private removes all on(signal) connections", "params": [], "internal": true },
 			"discard": { "text": "", "internal": false },
 			"on": { "text": "", "internal": false },
 			"connectOn": { "text": "", "internal": false },

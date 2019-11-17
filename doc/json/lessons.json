@@ -2,6 +2,7 @@
 	"lessons": {
 		"AnchorsLesson": "lessons/AnchorsLesson.json",
 		"TransformLesson": "lessons/TransformLesson.json",
+		"DrmLesson": "lessons/DrmLesson.json",
 		"ViewAndModelsLesson": "lessons/ViewAndModelsLesson.json",
 		"BasicLesson": "lessons/BasicLesson.json",
 		"GamepadLesson": "lessons/GamepadLesson.json",

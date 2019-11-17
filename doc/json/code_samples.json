@@ -15,6 +15,7 @@
 		"RangeInputExample": "code_samples/RangeInputExample.json",
 		"DragMixinLesson": "code_samples/DragMixinLesson.json",
 		"TimeInputExample": "code_samples/TimeInputExample.json",
+		"DrmExample": "code_samples/DrmExample.json",
 		"SignalTestItem": "code_samples/SignalTestItem.json",
 		"ImageMixinExample": "code_samples/ImageMixinExample.json",
 		"FocusExample": "code_samples/FocusExample.json",
