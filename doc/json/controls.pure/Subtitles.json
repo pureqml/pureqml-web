@@ -1,18 +1,18 @@
 {
 	"name": "controls.pure.Subtitles",
-	"text": "",
+	"text": "turn subtitles off",
 
 	"content": {
 		"Properties": {
-			"progress": { "text": "", "internal": false, "type": "real", "defaultValue": "" },
-			"text": { "text": "", "internal": false, "type": "string", "defaultValue": "" }
+			"progress": { "text": "bind player progress with this property", "internal": false, "type": "real", "defaultValue": "" },
+			"text": { "text": "current subttile text will be changed on corresponded time", "internal": false, "type": "string", "defaultValue": "" }
 		},
 
 		"Methods": {
 			"onProgressChanged": { "text": "", "internal": true },
-			"turnOff": { "text": "", "internal": false },
+			"turnOff": { "text": "turn subtitles off", "params": [], "internal": false },
 			"onDataChanged": { "text": "", "internal": true },
-			"getTimeDuration": { "text": "", "internal": false },
+			"getTimeDuration": { "text": "@private", "params": [], "internal": true },
 			"constructor": { "text": "", "internal": true }
 		}
 	}

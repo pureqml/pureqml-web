@@ -51,6 +51,8 @@
 			"onWidthChanged": { "text": "", "internal": true },
 			"onHeightChanged": { "text": "", "internal": true },
 			"_updateScrollPositions": { "text": "@private silently updates scroll positions, because browser animates scroll", "params": [], "internal": true },
+			"positionViewAtItemHorizontally": { "text": "", "internal": false },
+			"positionViewAtItemVertically": { "text": "", "internal": false },
 			"onCompleted": { "text": "", "internal": true }
 		}
 	}

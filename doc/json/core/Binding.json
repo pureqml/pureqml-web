@@ -1,0 +1,20 @@
+{
+	"name": "core.Binding",
+	"text": "",
+
+	"content": {
+		"Properties": {
+			"delayed": { "text": "delays update to the next tick", "internal": false, "type": "bool", "defaultValue": "" },
+			"property": { "text": "target property", "internal": false, "type": "string", "defaultValue": "" },
+			"target": { "text": "target object", "internal": false, "type": "Object", "defaultValue": "" },
+			"when": { "text": "assign value to target when this condition met", "internal": false, "type": "bool", "defaultValue": "true" },
+			"value": { "text": "any value", "internal": false, "type": "var", "defaultValue": "" }
+		},
+
+		"Methods": {
+			"_updateTarget": { "text": "", "internal": false },
+			"_updateTargetImpl": { "text": "", "internal": false },
+			"onTargetChanged": { "text": "", "internal": true }
+		}
+	}
+}

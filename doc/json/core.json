@@ -45,6 +45,7 @@
 		"WheelMixin": "core/WheelMixin.json",
 		"Text": "core/Text.json",
 		"Image": "core/Image.json",
+		"Binding": "core/Binding.json",
 		"VideoPlayer": "core/VideoPlayer.json",
 		"ListModel": "core/ListModel.json",
 		"Loader": "core/Loader.json",

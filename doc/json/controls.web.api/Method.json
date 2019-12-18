@@ -13,6 +13,7 @@
 			"call": { "text": "", "internal": false },
 			"headers": { "text": "", "internal": false },
 			"args": { "text": "", "internal": false },
+			"pathArgs": { "text": "", "internal": false },
 			"onNameChanged": { "text": "", "internal": true }
 		}
 	}

@@ -1,0 +1,16 @@
+{
+	"name": "controls.core.Highlighter",
+	"text": "@private",
+
+	"content": {
+		"Properties": {
+			"target": { "text": "target view for highlighter", "internal": false, "type": "Object", "defaultValue": "" },
+			"updatePositionProperty": { "text": "which property must changed to update highlighter position", "internal": false, "type": "string", "defaultValue": "currentIndex" }
+		},
+
+		"Methods": {
+			"_updatePos": { "text": "@private", "params": [], "internal": true },
+			"onCompleted": { "text": "", "internal": true }
+		}
+	}
+}

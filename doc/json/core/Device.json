@@ -4,7 +4,7 @@
 
 	"content": {
 		"Properties": {
-			"macAddess": { "text": "device MAC address if its available for current platform", "internal": false, "type": "string", "defaultValue": "" },
+			"macAddress": { "text": "device MAC address if its available for current platform", "internal": false, "type": "string", "defaultValue": "" },
 			"modelName": { "text": "device model name", "internal": false, "type": "string", "defaultValue": "" },
 			"deviceId": { "text": "unique device id or random generated id if its not supported", "internal": false, "type": "string", "defaultValue": "" },
 			"firmware": { "text": "firmware version", "internal": false, "type": "string", "defaultValue": "" },
