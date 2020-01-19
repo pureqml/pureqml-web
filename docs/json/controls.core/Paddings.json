@@ -1,0 +1,21 @@
+{
+	"name": "controls.core.Paddings",
+	"text": "class controlling internal paddings of the parent element",
+
+	"content": {
+		"Properties": {
+			"top": { "text": "top padding", "internal": false, "type": "int", "defaultValue": "${all}" },
+			"left": { "text": "left padding", "internal": false, "type": "int", "defaultValue": "${all}" },
+			"right": { "text": "right padding", "internal": false, "type": "int", "defaultValue": "${all}" },
+			"bottom": { "text": "bottom padding", "internal": false, "type": "int", "defaultValue": "${all}" },
+			"all": { "text": "a value for all sides", "internal": false, "type": "int", "defaultValue": "" }
+		},
+
+		"Methods": {
+			"onTopChanged": { "text": "@private", "params": [], "internal": true },
+			"onLeftChanged": { "text": "@private", "params": [], "internal": true },
+			"onRightChanged": { "text": "@private", "params": [], "internal": true },
+			"onBottomChanged": { "text": "@private", "params": [], "internal": true }
+		}
+	}
+}

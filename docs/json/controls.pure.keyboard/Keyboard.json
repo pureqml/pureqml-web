@@ -1,0 +1,20 @@
+{
+	"name": "controls.pure.keyboard.Keyboard",
+	"text": "",
+
+	"content": {
+		"Properties": {
+			"currentRow": { "text": "", "internal": false, "type": "int", "defaultValue": "" }
+		},
+
+		"Signals": {
+			"keySelected": { "text": "", "internal": false },
+			"backspase": { "text": "", "internal": false }
+		},
+
+		"Methods": {
+			"switchLanguage": { "text": "", "internal": false },
+			"switchCase": { "text": "", "internal": false }
+		}
+	}
+}

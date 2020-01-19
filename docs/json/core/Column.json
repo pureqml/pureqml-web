@@ -1,0 +1,12 @@
+{
+	"name": "core.Column",
+	"text": "Layout for vertical oriented content",
+
+	"content": {
+		"Methods": {
+			"onKeyPressed": { "text": "@private", "params": [], "internal": true },
+			"_layout": { "text": "@private", "params": [], "internal": true },
+			"addChild": { "text": "@private", "params": [], "internal": true }
+		}
+	}
+}

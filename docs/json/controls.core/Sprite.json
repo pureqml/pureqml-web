@@ -1,0 +1,15 @@
+{
+	"name": "controls.core.Sprite",
+	"text": "base sprite object",
+
+	"content": {
+		"Properties": {
+			"offsetX": { "text": "sprite horizontal offset", "internal": false, "type": "int", "defaultValue": "" },
+			"offsetY": { "text": "sprite vertical offset", "internal": false, "type": "int", "defaultValue": "" }
+		},
+
+		"Methods": {
+			"onOffsetYChanged": { "text": "", "internal": true }
+		}
+	}
+}

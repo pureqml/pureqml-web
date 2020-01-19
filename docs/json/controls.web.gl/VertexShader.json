@@ -1,0 +1,10 @@
+{
+	"name": "controls.web.gl.VertexShader",
+	"text": "@param {string} sourceCode - shader source code 	vertex shader creation function",
+
+	"content": {
+		"Methods": {
+			"create": { "text": "@param {string} sourceCode - shader source code", "params": [{ "name": "sourceCode", "type": "string", "text": "shader source code" }], "internal": false }
+		}
+	}
+}

@@ -1,0 +1,10 @@
+{
+	"name": "lessons.Lesson",
+	"text": "",
+
+	"content": {
+		"Properties": {
+			"url": { "text": "", "internal": false, "type": "string", "defaultValue": "" }
+		}
+	}
+}

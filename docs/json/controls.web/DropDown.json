@@ -1,0 +1,27 @@
+{
+	"name": "controls.web.DropDown",
+	"text": "html drop down list chooser",
+
+	"content": {
+		"Properties": {
+			"font": { "text": "", "ref": "qmlcore.core/Font", "internal": false, "type": "Font", "defaultValue": "Font" },
+			"color": { "text": "", "internal": false, "type": "Color", "defaultValue": "#000" },
+			"currentIndex": { "text": "current option index", "internal": false, "type": "int", "defaultValue": "" },
+			"count": { "text": "drop down options count", "internal": false, "type": "int", "defaultValue": "" },
+			"value": { "text": "current option value", "internal": false, "type": "string", "defaultValue": "" },
+			"text": { "text": "current option text", "internal": false, "type": "string", "defaultValue": "" }
+		},
+
+		"Methods": {
+			"constructor": { "text": "", "internal": true },
+			"onWidthChanged": { "text": "@private", "params": [], "internal": true },
+			"getTag": { "text": "@private", "params": [], "internal": true },
+			"registerStyle": { "text": "@private", "params": [], "internal": true },
+			"_updateSize": { "text": "@private", "params": [], "internal": true },
+			"append": { "text": "add option into select", "params": [{ "name": "value", "type": "string", "text": "new option value" }, { "name": "text", "type": "string", "text": "new option text" }], "internal": false },
+			"clear": { "text": "remove all options from dropdown list", "params": [], "internal": false },
+			"remove": { "text": "remove option from drop down list by index", "params": [{ "name": "idx", "type": "number", "text": "new option value" }], "internal": false },
+			"onCountChanged": { "text": "", "internal": true }
+		}
+	}
+}

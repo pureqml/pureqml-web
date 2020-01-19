@@ -1,0 +1,10 @@
+{
+	"name": "controls.mixins.FocusOnHoverMixin",
+	"text": "",
+
+	"content": {
+		"Methods": {
+			"onValueChanged": { "text": "", "internal": true }
+		}
+	}
+}

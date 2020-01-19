@@ -1,0 +1,25 @@
+{
+	"name": "controls.svg.Path",
+	"text": "returns tag for corresponding element",
+
+	"content": {
+		"Properties": {
+			"x1": { "text": "", "internal": false, "type": "int", "defaultValue": "" },
+			"x2": { "text": "", "internal": false, "type": "int", "defaultValue": "" },
+			"y1": { "text": "", "internal": false, "type": "int", "defaultValue": "" },
+			"y2": { "text": "", "internal": false, "type": "int", "defaultValue": "" },
+			"color": { "text": "", "internal": false, "type": "Color", "defaultValue": "red" },
+			"fill": { "text": "", "internal": false, "type": "string", "defaultValue": "none" },
+			"width": { "text": "", "internal": false, "type": "int", "defaultValue": "2" }
+		},
+
+		"Methods": {
+			"getTag": { "text": "returns tag for corresponding element", "params": [], "internal": false },
+			"onColorChanged": { "text": "", "internal": true },
+			"onFillChanged": { "text": "", "internal": true },
+			"onWidthChanged": { "text": "", "internal": true },
+			"onX1Changed": { "text": "", "internal": true },
+			"buildPath": { "text": "", "internal": false }
+		}
+	}
+}

@@ -1,0 +1,24 @@
+{
+	"name": "controls.web.LanguageSwitcher",
+	"text": "",
+
+	"content": {
+		"Properties": {
+			"languges": { "text": "", "internal": false, "type": "variant", "defaultValue": "" },
+			"currentIndex": { "text": "", "internal": false, "type": "int", "defaultValue": "" },
+			"count": { "text": "", "internal": false, "type": "int", "defaultValue": "" }
+		},
+
+		"Signals": {
+			"languageChanged": { "text": "", "internal": false }
+		},
+
+		"Methods": {
+			"addLanguage": { "text": "", "internal": false },
+			"onCountChanged": { "text": "", "internal": true },
+			"onClicked": { "text": "", "internal": false },
+			"onCurrentIndexChanged": { "text": "", "internal": true },
+			"onCompleted": { "text": "", "internal": true }
+		}
+	}
+}

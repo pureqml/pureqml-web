@@ -1,0 +1,20 @@
+{
+	"name": "src.LeftMenu",
+	"text": "",
+
+	"content": {
+		"Properties": {
+			"hidable": { "text": "", "internal": false, "type": "bool", "defaultValue": "${context.width} < 860" },
+			"open": { "text": "", "internal": false, "type": "bool", "defaultValue": "" }
+		},
+
+		"Signals": {
+			"optionChosen": { "text": "", "internal": false }
+		},
+
+		"Methods": {
+			"onCompleted": { "text": "", "internal": true },
+			"fillModel": { "text": "", "internal": false }
+		}
+	}
+}

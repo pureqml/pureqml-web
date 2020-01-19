@@ -1,0 +1,31 @@
+{
+	"name": "core.BaseLayout",
+	"text": "base class for BaseView and Layout",
+
+	"content": {
+		"Properties": {
+			"count": { "text": "number of children elements", "internal": false, "type": "int", "defaultValue": "" },
+			"trace": { "text": "output debug info in logs: layouts, item positioning", "internal": false, "type": "bool", "defaultValue": "" },
+			"spacing": { "text": "spacing between adjanced items, pixels", "internal": false, "type": "int", "defaultValue": "" },
+			"currentIndex": { "text": "index of current focused item", "internal": false, "type": "int", "defaultValue": "" },
+			"contentWidth": { "text": "content width", "internal": false, "type": "int", "defaultValue": "" },
+			"contentHeight": { "text": "content height", "internal": false, "type": "int", "defaultValue": "" },
+			"keyNavigationWraps": { "text": "key navigation wraps from first to last and vise versa", "internal": false, "type": "bool", "defaultValue": "" },
+			"handleNavigationKeys": { "text": "handle navigation keys, move focus", "internal": false, "type": "bool", "defaultValue": "" },
+			"layoutDelay": { "text": "<0 - end of the tick (default), 0 - request animation frame, >0 - delay in ms", "internal": false, "type": "int", "defaultValue": "- 1" },
+			"prerenderDelay": { "text": "<0 - end of the tick (default), 0 - request animation frame, >0 - delay in ms", "internal": false, "type": "int", "defaultValue": "- 1" },
+			"offlineLayout": { "text": "layout delegates even if view's invisible", "internal": false, "type": "bool", "defaultValue": "" }
+		},
+
+		"Methods": {
+			"constructor": { "text": "@private", "params": [], "internal": true },
+			"_attach": { "text": "@private", "params": [], "internal": true },
+			"_scheduleLayout": { "text": "@private", "params": [], "internal": true },
+			"_doLayout": { "text": "@private", "params": [], "internal": true },
+			"_doLayoutNP": { "text": "@private", "params": [], "internal": true },
+			"_processUpdates": { "text": "@private", "params": [], "internal": true },
+			"onSpacingChanged": { "text": "", "internal": true },
+			"onCompleted": { "text": "@private", "params": [], "internal": true }
+		}
+	}
+}

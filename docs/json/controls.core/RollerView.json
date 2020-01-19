@@ -1,0 +1,21 @@
+{
+	"name": "controls.core.RollerView",
+	"text": "@private",
+
+	"content": {
+		"Methods": {
+			"constructor": { "text": "", "internal": true },
+			"positionViewAtIndex": { "text": "@private", "params": [], "internal": true },
+			"_getCurrentIndex": { "text": "@private", "params": [], "internal": true },
+			"_createDelegate": { "text": "@private creates delegate in given item slot", "params": [], "internal": true },
+			"_layout": { "text": "@private", "params": [], "internal": true },
+			"next": { "text": "@private", "params": [], "internal": true },
+			"prev": { "text": "@private", "params": [], "internal": true },
+			"onKeyPressed": { "text": "", "internal": false },
+			"_setContentOffset": { "text": "@private", "params": [], "internal": true },
+			"_scroll": { "text": "@private", "params": [], "internal": true },
+			"onOrientationChanged": { "text": "", "internal": true },
+			"onCurrentIndexChanged": { "text": "", "internal": true }
+		}
+	}
+}

@@ -1,0 +1,11 @@
+{
+	"name": "core.Repeater",
+	"text": "The simplest view implementation, creates elements without positioning",
+
+	"content": {
+		"Methods": {
+			"positionViewAtIndex": { "text": "@private", "params": [], "internal": true },
+			"_layout": { "text": "@private", "params": [], "internal": true }
+		}
+	}
+}

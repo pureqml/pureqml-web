@@ -1,0 +1,12 @@
+{
+	"name": "src.PathPageColumn",
+	"text": "",
+
+	"content": {
+		"Properties": {
+			"text": { "text": "", "internal": false, "type": "string", "defaultValue": "" },
+			"title": { "text": "", "internal": false, "type": "string", "defaultValue": "" },
+			"path": { "text": "", "internal": false, "type": "string", "defaultValue": "" }
+		}
+	}
+}

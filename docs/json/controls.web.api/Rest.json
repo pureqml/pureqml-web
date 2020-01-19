@@ -1,0 +1,25 @@
+{
+	"name": "controls.web.api.Rest",
+	"text": "",
+
+	"content": {
+		"Properties": {
+			"baseUrl": { "text": "", "internal": false, "type": "string", "defaultValue": "" }
+		},
+
+		"Signals": {
+			"error": { "text": "", "internal": false },
+			"internetConnectionLost": { "text": "", "internal": false }
+		},
+
+		"Methods": {
+			"constructor": { "text": "", "internal": true },
+			"onError": { "text": "", "internal": false },
+			"args": { "text": "", "internal": false },
+			"headers": { "text": "", "internal": false },
+			"_call": { "text": "", "internal": false },
+			"call": { "text": "", "internal": false },
+			"_registerMethod": { "text": "", "internal": false }
+		}
+	}
+}

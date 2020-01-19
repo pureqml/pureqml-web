@@ -1,0 +1,16 @@
+{
+	"name": "controls.input.FileInput",
+	"text": "file selected input",
+
+	"content": {
+		"Properties": {
+			"value": { "text": "selected filename", "internal": false, "type": "string", "defaultValue": "" },
+			"filter": { "text": "filter for file selecting", "internal": false, "type": "string", "defaultValue": "" }
+		},
+
+		"Methods": {
+			"onFilterChanged": { "text": "", "internal": true },
+			"constructor": { "text": "", "internal": true }
+		}
+	}
+}

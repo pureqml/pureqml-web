@@ -1,0 +1,16 @@
+{
+	"controls.input": {
+		"BaseInput": "controls.input/BaseInput.json",
+		"RangeInput": "controls.input/RangeInput.json",
+		"TextAreaInput": "controls.input/TextAreaInput.json",
+		"EmailInput": "controls.input/EmailInput.json",
+		"CheckboxInput": "controls.input/CheckboxInput.json",
+		"DateInput": "controls.input/DateInput.json",
+		"NumberInput": "controls.input/NumberInput.json",
+		"FileInput": "controls.input/FileInput.json",
+		"SearchInput": "controls.input/SearchInput.json",
+		"TimeInput": "controls.input/TimeInput.json",
+		"ColorInput": "controls.input/ColorInput.json",
+		"TextInput": "controls.input/TextInput.json"
+	}
+}

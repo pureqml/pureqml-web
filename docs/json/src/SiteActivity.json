@@ -1,0 +1,15 @@
+{
+	"name": "src.SiteActivity",
+	"text": "",
+
+	"content": {
+		"Properties": {
+			"active": { "text": "", "internal": false, "type": "bool", "defaultValue": "" }
+		},
+
+		"Methods": {
+			"onStarted": { "text": "", "internal": false },
+			"onStopped": { "text": "", "internal": false }
+		}
+	}
+}

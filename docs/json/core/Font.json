@@ -1,0 +1,39 @@
+{
+	"name": "core.Font",
+	"text": "adjusts text font properties",
+
+	"content": {
+		"Properties": {
+			"family": { "text": "font family", "internal": false, "type": "string", "defaultValue": "${manifest.style.font.family}" },
+			"italic": { "text": "applies italic style", "internal": false, "type": "bool", "defaultValue": "" },
+			"bold": { "text": "applies bold style", "internal": false, "type": "bool", "defaultValue": "" },
+			"underline": { "text": "applies underline style", "internal": false, "type": "bool", "defaultValue": "" },
+			"overline": { "text": "applies overline style", "internal": false, "type": "bool", "defaultValue": "" },
+			"strike": { "text": "line throw text flag", "internal": false, "type": "bool", "defaultValue": "" },
+			"strikeout": { "text": "line throw text flag for compatibility with QML", "internal": false, "type": "bool", "defaultValue": "" },
+			"letterSpacing": { "text": "spacing between letters", "internal": false, "type": "real", "defaultValue": "" },
+			"wordSpacing": { "text": "spacing between words", "internal": false, "type": "real", "defaultValue": "" },
+			"pixelSize": { "text": "font size in pixels", "internal": false, "type": "int", "defaultValue": "${manifest.style.font.pixelSize}" },
+			"pointSize": { "text": "font size in points", "internal": false, "type": "int", "defaultValue": "" },
+			"lineHeight": { "text": "font line height in font heights", "internal": false, "type": "real", "defaultValue": "${manifest.style.font.lineHeight}" },
+			"weight": { "text": "font weight value", "internal": false, "type": "int", "defaultValue": "" }
+		},
+
+		"Methods": {
+			"_updateTextDecoration": { "text": "@private", "params": [], "internal": true },
+			"onFamilyChanged": { "text": "", "internal": true },
+			"onPointSizeChanged": { "text": "", "internal": true },
+			"onPixelSizeChanged": { "text": "", "internal": true },
+			"onItalicChanged": { "text": "", "internal": true },
+			"onBoldChanged": { "text": "", "internal": true },
+			"onUnderlineChanged": { "text": "", "internal": true },
+			"onOverlineChanged": { "text": "", "internal": true },
+			"onStrikeChanged": { "text": "", "internal": true },
+			"onLineHeightChanged": { "text": "", "internal": true },
+			"onWeightChanged": { "text": "", "internal": true },
+			"onLetterSpacingChanged": { "text": "", "internal": true },
+			"onWordSpacingChanged": { "text": "", "internal": true },
+			"onCapitalizationChanged": { "text": "", "internal": true }
+		}
+	}
+}

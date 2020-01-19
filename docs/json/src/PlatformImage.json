@@ -1,0 +1,10 @@
+{
+	"name": "src.PlatformImage",
+	"text": "",
+
+	"content": {
+		"Properties": {
+			"icon": { "text": "", "internal": false, "type": "string", "defaultValue": "" }
+		}
+	}
+}

@@ -1,0 +1,30 @@
+{
+	"name": "core.Animation",
+	"text": "controls property animation behavior in declarative way Animation class works only for integral types, please use ColorAnimation for animating color properties",
+
+	"content": {
+		"Properties": {
+			"delay": { "text": "delay in ms", "internal": false, "type": "int", "defaultValue": "0" },
+			"duration": { "text": "duration in ms", "internal": false, "type": "int", "defaultValue": "200" },
+			"cssTransition": { "text": "use css transition if possible", "internal": false, "type": "bool", "defaultValue": "true" },
+			"running": { "text": "currently running", "internal": false, "type": "bool", "defaultValue": "false" },
+			"easing": { "text": "easing function", "internal": false, "type": "string", "defaultValue": "ease" },
+			"target": { "text": "target object", "internal": false, "type": "Object", "defaultValue": "" },
+			"property": { "text": "target object property", "internal": false, "type": "string", "defaultValue": "" },
+			"from": { "text": "used in declarative animation inside SequentialAnimation, starting value", "internal": false, "type": "variant", "defaultValue": "" },
+			"to": { "text": "used in declarative animation inside SequentialAnimation, destination value", "internal": false, "type": "variant", "defaultValue": "" }
+		},
+
+		"Methods": {
+			"constructor": { "text": "", "internal": true },
+			"disable": { "text": "disable animation.", "params": [], "internal": false },
+			"enable": { "text": "enable animation.", "params": [], "internal": false },
+			"enabled": { "text": "returns true if animation is enabled", "params": [], "internal": false },
+			"onDelayChanged": { "text": "@private", "params": [], "internal": true },
+			"active": { "text": "", "internal": false },
+			"_updateAnimation": { "text": "", "internal": false },
+			"interpolate": { "text": "@private", "params": [], "internal": true },
+			"complete": { "text": "@private", "params": [], "internal": true }
+		}
+	}
+}

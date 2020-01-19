@@ -1,0 +1,11 @@
+{
+	"name": "controls.input.ColorInput",
+	"text": "color selecting input",
+
+	"content": {
+		"Methods": {
+			"onColorChanged": { "text": "", "internal": true },
+			"constructor": { "text": "", "internal": true }
+		}
+	}
+}

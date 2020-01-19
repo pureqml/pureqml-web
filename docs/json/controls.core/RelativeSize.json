@@ -1,0 +1,20 @@
+{
+	"name": "controls.core.RelativeSize",
+	"text": "object for geting relative size values",
+
+	"content": {
+		"Properties": {
+			"xs": { "text": "extra small devices, phones (<768px)", "internal": false, "type": "real", "defaultValue": "100" },
+			"sm": { "text": "small devices, tablets (>=768px)", "internal": false, "type": "real", "defaultValue": "0" },
+			"md": { "text": "medium devices, desktops (>=992px)", "internal": false, "type": "real", "defaultValue": "0" },
+			"lg": { "text": "large devices, desktops (>=1200px)", "internal": false, "type": "real", "defaultValue": "0" },
+			"globalWidth": { "text": "@private", "internal": true, "type": "int", "defaultValue": "${context.width}" }
+		},
+
+		"Methods": {
+			"onGlobalWidthChanged": { "text": "", "internal": true },
+			"_calculate": { "text": "/@private", "params": [], "internal": true },
+			"onCompleted": { "text": "", "internal": true }
+		}
+	}
+}

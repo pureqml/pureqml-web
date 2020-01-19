@@ -1,0 +1,12 @@
+{
+	"name": "controls.core.Activity",
+	"text": "simple activity control",
+
+	"content": {
+		"Methods": {
+			"start": { "text": "start activity", "params": [], "internal": false },
+			"stop": { "text": "stop activity", "params": [], "internal": false },
+			"getActivity": { "text": "get activity item", "params": [], "internal": false }
+		}
+	}
+}

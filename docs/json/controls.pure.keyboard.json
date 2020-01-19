@@ -1,0 +1,8 @@
+{
+	"controls.pure.keyboard": {
+		"KeyboardRowModel": "controls.pure.keyboard/KeyboardRowModel.json",
+		"KeyboardModel": "controls.pure.keyboard/KeyboardModel.json",
+		"KeyboardDelegate": "controls.pure.keyboard/KeyboardDelegate.json",
+		"Keyboard": "controls.pure.keyboard/Keyboard.json"
+	}
+}

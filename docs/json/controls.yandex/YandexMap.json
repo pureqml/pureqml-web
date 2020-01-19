@@ -1,0 +1,19 @@
+{
+	"name": "controls.yandex.YandexMap",
+	"text": "",
+
+	"content": {
+		"Properties": {
+			"centerLongitude": { "text": "", "internal": false, "type": "real", "defaultValue": "" },
+			"centerLatitude": { "text": "", "internal": false, "type": "real", "defaultValue": "" },
+			"zoom": { "text": "", "internal": false, "type": "int", "defaultValue": "" }
+		},
+
+		"Methods": {
+			"onCenterLongitudeChanged": { "text": "", "internal": true },
+			"constructor": { "text": "", "internal": true },
+			"_updateCenter": { "text": "", "internal": false },
+			"getUserLocation": { "text": "", "internal": false }
+		}
+	}
+}

@@ -1,0 +1,60 @@
+{
+	"name": "core.MouseArea",
+	"text": "item provide mouse and touch events API",
+
+	"content": {
+		"Properties": {
+			"mouseX": { "text": "mouse x coordinate", "internal": false, "type": "real", "defaultValue": "" },
+			"mouseY": { "text": "mouse y coordinate", "internal": false, "type": "real", "defaultValue": "" },
+			"cursor": { "text": "mouse cursor inside the item's area", "internal": false, "type": "string", "defaultValue": "" },
+			"pressed": { "text": "mouse pressed flag", "internal": false, "type": "bool", "defaultValue": "" },
+			"containsMouse": { "text": "mouse inside item's area flag", "internal": false, "type": "bool", "defaultValue": "" },
+			"clickable": { "text": "enable mouse click event handling flag", "internal": false, "type": "bool", "defaultValue": "true" },
+			"pressable": { "text": "enable mouse click event handling flag", "internal": false, "type": "bool", "defaultValue": "true" },
+			"touchEnabled": { "text": "enable touch events handling flag", "internal": false, "type": "bool", "defaultValue": "true" },
+			"hoverEnabled": { "text": "enable mouse hover event handling flag", "internal": false, "type": "bool", "defaultValue": "true" },
+			"wheelEnabled": { "text": "enable mouse click event handling flag", "internal": false, "type": "bool", "defaultValue": "true" }
+		},
+
+		"Alias Properties": {
+			"hover": { "text": "containsMouse property alias", "internal": false },
+			"hoverable": { "text": "hoverEnabled property alias", "internal": false }
+		},
+
+		"Signals": {
+			"entered": { "text": "emitted when mouse entered the item's area", "internal": false },
+			"exited": { "text": "emitted when mouse leaved the item's area", "internal": false },
+			"clicked": { "text": "emitted on mouse click", "internal": false },
+			"canceled": { "text": "emitted when mouse leaved the item's area while mouse button was pressed", "internal": false },
+			"wheelEvent": { "text": "emitted when mouse wheel scrolling", "internal": false },
+			"verticalSwiped": { "text": "emitted on vertical swipe", "internal": false },
+			"horizontalSwiped": { "text": "emitted on horizontal swipe", "internal": false },
+			"mouseMove": { "text": "emitted on mouse moved inside the item's area", "internal": false },
+			"touchEnd": { "text": "emitted on touch event end", "internal": false },
+			"touchMove": { "text": "emitted on mouse move while touching", "internal": false },
+			"touchStart": { "text": "emitted on touch event start", "internal": false }
+		},
+
+		"Methods": {
+			"onCursorChanged": { "text": "@private", "params": [], "internal": true },
+			"_bindTouch": { "text": "@private", "params": [], "internal": true },
+			"onTouchEnabledChanged": { "text": "@private", "params": [], "internal": true },
+			"onRecursiveVisibleChanged": { "text": "@private", "params": [], "internal": true },
+			"_bindClick": { "text": "@private", "params": [], "internal": true },
+			"onClickableChanged": { "text": "@private", "params": [], "internal": true },
+			"_bindWheel": { "text": "@private", "params": [], "internal": true },
+			"onWheelEnabledChanged": { "text": "@private", "params": [], "internal": true },
+			"_bindPressable": { "text": "@private", "params": [], "internal": true },
+			"onPressableChanged": { "text": "@private", "params": [], "internal": true },
+			"_bindHover": { "text": "@private", "params": [], "internal": true },
+			"onHoverEnabledChanged": { "text": "@private", "params": [], "internal": true },
+			"onContainsMouseChanged": { "text": "@private", "params": [], "internal": true },
+			"updatePosition": { "text": "@private", "params": [], "internal": true },
+			"onTouchStart": { "text": "@private", "params": [], "internal": true },
+			"onTouchMove": { "text": "@private", "params": [], "internal": true },
+			"onMouseXChanged": { "text": "", "internal": true },
+			"onMouseYChanged": { "text": "", "internal": true },
+			"constructor": { "text": "@private", "params": [], "internal": true }
+		}
+	}
+}

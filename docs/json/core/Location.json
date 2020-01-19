@@ -1,0 +1,25 @@
+{
+	"name": "core.Location",
+	"text": "Window location object",
+
+	"content": {
+		"Properties": {
+			"hash": { "text": "contains current hash value (after '#' charachter)", "internal": false, "type": "string", "defaultValue": "" },
+			"host": { "text": "current host with port number", "internal": false, "type": "string", "defaultValue": "" },
+			"href": { "text": "whole current URL", "internal": false, "type": "string", "defaultValue": "" },
+			"port": { "text": "current port number", "internal": false, "type": "string", "defaultValue": "" },
+			"origin": { "text": "current protocol, hostname and port number of a URL", "internal": false, "type": "string", "defaultValue": "" },
+			"hostname": { "text": "current host name", "internal": false, "type": "string", "defaultValue": "" },
+			"pathname": { "text": "path name of the current URL", "internal": false, "type": "string", "defaultValue": "" },
+			"protocol": { "text": "current protocol", "internal": false, "type": "string", "defaultValue": "" },
+			"search": { "text": "query string of the URL", "internal": false, "type": "string", "defaultValue": "" },
+			"state": { "text": "current history state", "internal": false, "type": "Object", "defaultValue": "" }
+		},
+
+		"Methods": {
+			"constructor": { "text": "@private", "params": [], "internal": true },
+			"pushState": { "text": "", "internal": false },
+			"changeHref": { "text": "", "internal": false }
+		}
+	}
+}

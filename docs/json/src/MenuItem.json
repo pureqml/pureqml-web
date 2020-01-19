@@ -1,0 +1,15 @@
+{
+	"name": "src.MenuItem",
+	"text": "",
+
+	"content": {
+		"Properties": {
+			"text": { "text": "", "internal": false, "type": "string", "defaultValue": "" },
+			"page": { "text": "", "internal": false, "type": "string", "defaultValue": "" }
+		},
+
+		"Methods": {
+			"onClicked": { "text": "", "internal": false }
+		}
+	}
+}

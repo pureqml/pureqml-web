@@ -1,0 +1,30 @@
+{
+	"name": "core.Object",
+	"text": "the most basic QML Object, generic event emitter, properties and id links holder",
+
+	"content": {
+		"Methods": {
+			"constructor": { "text": "the most basic QML Object, generic event emitter, properties and id links holder", "params": [], "internal": true },
+			"completed": { "text": "", "internal": false },
+			"_registerDelayedAction": { "text": "@private", "params": [], "internal": true },
+			"_cancelDelayedAction": { "text": "@private", "params": [], "internal": true },
+			"prototypeConstructor": { "text": "", "internal": false },
+			"removeAllOnChanged": { "text": "@private removes all on changes connections", "params": [], "internal": true },
+			"discard": { "text": "discard object", "params": [], "internal": false },
+			"addChild": { "text": "adds child object to children", "params": [{ "name": "child", "type": "Object", "text": "object to add" }], "internal": false },
+			"_setId": { "text": "@private sets id", "params": [], "internal": true },
+			"onChanged": { "text": "@private register callback on property's value changed", "params": [], "internal": true },
+			"connectOnChanged": { "text": "@private", "params": [], "internal": true },
+			"removeOnChanged": { "text": "@private removes 'on changed' callback", "params": [], "internal": true },
+			"_removeUpdater": { "text": "@private removes dynamic value updater", "params": [], "internal": true },
+			"_replaceUpdater": { "text": "@private replaces dynamic value updater", "params": [], "internal": true },
+			"_createPropertyStorage": { "text": "@private creates property storage", "params": [], "internal": true },
+			"_setProperty": { "text": "@private patch property storage directly without signalling.", "params": [], "internal": true },
+			"updateAnimation": { "text": "@private updates animation properties on given property", "params": [], "internal": true },
+			"setAnimation": { "text": "@private sets animation on given property", "params": [], "internal": true },
+			"resetAnimation": { "text": "", "internal": false },
+			"getComponentPath": { "text": "outputs component path in qml (e.g Rectangle → Item → ListItem → Rectangle)", "params": [], "internal": false },
+			"_tryFocus": { "text": "@private called to test if the component can have focus, generic object cannot be focused, so return false, override it to implement default focus policy", "params": [], "internal": true }
+		}
+	}
+}

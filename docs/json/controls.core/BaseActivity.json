@@ -1,0 +1,31 @@
+{
+	"name": "controls.core.BaseActivity",
+	"text": "base activity control",
+
+	"content": {
+		"Properties": {
+			"active": { "text": "active at the moment", "internal": false, "type": "bool", "defaultValue": "" },
+			"name": { "text": "activity name", "internal": false, "type": "string", "defaultValue": "" },
+			"manager": { "text": "activities manager", "internal": false, "type": "Item", "defaultValue": "${parent}" }
+		},
+
+		"Signals": {
+			"started": { "text": "activity started signal", "internal": false },
+			"stopped": { "text": "activity stopped signal", "internal": false }
+		},
+
+		"Methods": {
+			"init": { "text": "Initialize activity", "params": [{ "name": "intent", "type": "object", "text": "required data for activity" }, { "name": "state", "type": "object", "text": "init activity state" }], "internal": false },
+			"push": { "text": "Push activity in manager activities stack to show it", "params": [{ "name": "name", "type": "string", "text": "activity name" }, { "name": "intent", "type": "object", "text": "required data for activity" }, { "name": "state", "type": "object", "text": "init activity state" }], "internal": false },
+			"replaceTopActivity": { "text": "Replace top activity with new one", "params": [{ "name": "name", "type": "string", "text": "activity name" }, { "name": "intent", "type": "object", "text": "required data for activity" }, { "name": "state", "type": "object", "text": "init activity state" }], "internal": false },
+			"setState": { "text": "Change activity state", "params": [{ "name": "state", "type": "object", "text": "init activity state" }, { "name": "name", "type": "string", "text": "activity name" }], "internal": false },
+			"closeAllExcept": { "text": "Close all activities in manager except activity with corresponded name", "params": [{ "name": "name", "type": "string", "text": "activity name" }], "internal": false },
+			"removeActivity": { "text": "Remove activity from stack by its name", "params": [{ "name": "name", "type": "string", "text": "activity name" }], "internal": false },
+			"setIntent": { "text": "Change activity intent", "params": [{ "name": "state", "type": "object", "text": "init activity state" }, { "name": "name", "type": "string", "text": "activity name" }], "internal": false },
+			"clear": { "text": "clear all activities from manager stack", "params": [], "internal": false },
+			"pop": { "text": "Pop current top activity from manager stack", "params": [], "internal": false },
+			"popWithState": { "text": "Pop current top activity from manager stack and send state to the top activity", "params": [], "internal": false },
+			"onBackPressed": { "text": "@private", "params": [], "internal": true }
+		}
+	}
+}

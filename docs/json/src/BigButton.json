@@ -1,0 +1,11 @@
+{
+	"name": "src.BigButton",
+	"text": "",
+
+	"content": {
+		"Properties": {
+			"icon": { "text": "", "internal": false, "type": "string", "defaultValue": "" },
+			"text": { "text": "", "internal": false, "type": "string", "defaultValue": "" }
+		}
+	}
+}

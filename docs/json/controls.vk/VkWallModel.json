@@ -1,0 +1,22 @@
+{
+	"name": "controls.vk.VkWallModel",
+	"text": "this model get data from the 'vkontakte' social network wall",
+
+	"content": {
+		"Properties": {
+			"ownerId": { "text": "user ID  of the owner of the wall", "internal": false, "type": "int", "defaultValue": "" },
+			"version": { "text": "VK api version", "internal": false, "type": "string", "defaultValue": "5.0" },
+			"accessToken": { "text": "VK API access token", "internal": false, "type": "string", "defaultValue": "" }
+		},
+
+		"Signals": {
+			"error": { "text": "any error during requestoccured signal", "internal": false }
+		},
+
+		"Methods": {
+			"_fillImpl": { "text": "@private", "params": [], "internal": true },
+			"fillDefault": { "text": "fill model with data from 'ownerId' wall with default parameters", "params": [], "internal": false },
+			"fillCustom": { "text": "fill model with data from the wall with customized settings such as count, extended etc.", "params": [{ "name": "settings", "type": "Object", "text": "additional request parameters" }], "internal": false }
+		}
+	}
+}

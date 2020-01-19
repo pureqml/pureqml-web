@@ -1,0 +1,13 @@
+{
+	"name": "controls.web.ResizableBox",
+	"text": "",
+
+	"content": {
+		"Properties": {
+			"maxWidth": { "text": "", "internal": false, "type": "int", "defaultValue": "" },
+			"maxHeight": { "text": "", "internal": false, "type": "int", "defaultValue": "" },
+			"minHeight": { "text": "", "internal": false, "type": "int", "defaultValue": "1" },
+			"minWidth": { "text": "", "internal": false, "type": "int", "defaultValue": "1" }
+		}
+	}
+}

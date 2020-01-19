@@ -1,0 +1,21 @@
+{
+	"name": "src.SearchPanel",
+	"text": "",
+
+	"content": {
+		"Properties": {
+			"searchFocused": { "text": "", "internal": false, "type": "bool", "defaultValue": "${searchText.activeFocus} || ${searchResults.visible}" },
+			"hover": { "text": "", "internal": false, "type": "Mixin", "defaultValue": "HoverClickMixin" }
+		},
+
+		"Signals": {
+			"search": { "text": "", "internal": false }
+		},
+
+		"Methods": {
+			"onClicked": { "text": "", "internal": false },
+			"onSearch": { "text": "", "internal": false },
+			"searchCall": { "text": "", "internal": false }
+		}
+	}
+}

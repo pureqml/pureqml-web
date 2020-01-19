@@ -1,0 +1,29 @@
+{
+	"name": "core.Timer",
+	"text": "class handles periodic tasks",
+
+	"content": {
+		"Properties": {
+			"interval": { "text": "interval, ms", "internal": false, "type": "int", "defaultValue": "1000" },
+			"repeat": { "text": "makes this timer periodic", "internal": false, "type": "bool", "defaultValue": "" },
+			"running": { "text": "current timer status, true - running, false - paused", "internal": false, "type": "bool", "defaultValue": "" },
+			"triggeredOnStart": { "text": "fire timer's signal on start or activation", "internal": false, "type": "bool", "defaultValue": "" }
+		},
+
+		"Signals": {
+			"triggered": { "text": "this signal triggered when timer fires", "internal": false }
+		},
+
+		"Methods": {
+			"constructor": { "text": "", "internal": true },
+			"restart": { "text": "restart timer, activate if stopped", "params": [], "internal": false },
+			"stop": { "text": "stops timer", "params": [], "internal": false },
+			"start": { "text": "starts timer", "params": [], "internal": false },
+			"onTriggered": { "text": "@private", "params": [], "internal": true },
+			"onCompleted": { "text": "@private", "params": [], "internal": true },
+			"onRunningChanged": { "text": "", "internal": true },
+			"onIntervalChanged": { "text": "", "internal": true },
+			"_restart": { "text": "@private", "params": [], "internal": true }
+		}
+	}
+}

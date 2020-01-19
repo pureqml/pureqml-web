@@ -1,0 +1,19 @@
+{
+	"name": "core.ListView",
+	"text": "single direction (vertical or horizontal) oriented view",
+
+	"content": {
+		"Methods": {
+			"move": { "text": "@private", "params": [], "internal": true },
+			"positionViewAtIndex": { "text": "@private", "params": [], "internal": true },
+			"onKeyPressed": { "text": "@private", "params": [], "internal": true },
+			"getItemPosition": { "text": "@private", "params": [], "internal": true },
+			"indexAt": { "text": "@private", "params": [], "internal": true },
+			"_layout": { "text": "@private", "params": [], "internal": true },
+			"_createDelegate": { "text": "@private creates delegate in given item slot", "params": [], "internal": true },
+			"_updateOverflow": { "text": "@private", "params": [], "internal": true },
+			"onOrientationChanged": { "text": "@private", "params": [], "internal": true },
+			"onCompleted": { "text": "", "internal": true }
+		}
+	}
+}

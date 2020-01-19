@@ -1,0 +1,26 @@
+{
+	"name": "controls.web.audio.Oscillator",
+	"text": "Object generates sound and play it via web audio API",
+
+	"content": {
+		"Properties": {
+			"playing": { "text": "is oscillator playing right now", "internal": false, "type": "bool", "defaultValue": "" },
+			"frequency": { "text": "signal frequency value", "internal": false, "type": "int", "defaultValue": "" },
+			"detune": { "text": "representing detuning of oscillation in cents", "internal": false, "type": "int", "defaultValue": "" }
+		},
+
+		"Methods": {
+			"onDetuneChanged": { "text": "@private", "params": [], "internal": true },
+			"onFrequencyChanged": { "text": "@private", "params": [], "internal": true },
+			"onTypeChanged": { "text": "paly generated sound", "params": [], "internal": true },
+			"play": { "text": "pause generated sound", "params": [], "internal": false },
+			"pause": { "text": "play/pause generated sound", "params": [], "internal": false },
+			"playPause": { "text": "", "internal": false },
+			"playWithTimeout": { "text": "play generated sound 'ms' milliseconds", "params": [{ "name": "ms", "type": "int", "text": "time interval in milliseconds" }], "internal": false },
+			"onPlayingChanged": { "text": "@private", "params": [], "internal": true },
+			"constructor": { "text": "@private", "params": [], "internal": true },
+			"reset": { "text": "@private", "params": [], "internal": true },
+			"onCompleted": { "text": "@private", "params": [], "internal": true }
+		}
+	}
+}

@@ -1,0 +1,22 @@
+{
+	"name": "controls.web.NavigationMenuButton",
+	"text": "",
+
+	"content": {
+		"Properties": {
+			"icon": { "text": "", "internal": false, "type": "string", "defaultValue": "" },
+			"scrollable": { "text": "", "internal": false, "type": "bool", "defaultValue": "false" },
+			"show": { "text": "", "internal": false, "type": "bool", "defaultValue": "false" },
+			"content": { "text": "", "internal": false, "type": "Item", "defaultValue": "" },
+			"contentX": { "text": "", "internal": false, "type": "int", "defaultValue": "" },
+			"contentY": { "text": "", "internal": false, "type": "int", "defaultValue": "" },
+			"panel": { "text": "", "ref": "qmlcore.core/Rectangle", "internal": false, "type": "Rectangle", "defaultValue": "Rectangle" }
+		},
+
+		"Methods": {
+			"hide": { "text": "", "internal": false },
+			"toggleShow": { "text": "", "internal": false },
+			"onShowChanged": { "text": "", "internal": true }
+		}
+	}
+}

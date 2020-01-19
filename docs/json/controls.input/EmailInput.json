@@ -1,0 +1,14 @@
+{
+	"name": "controls.input.EmailInput",
+	"text": "email input",
+
+	"content": {
+		"Properties": {
+			"valid": { "text": "is typed email valid or not flag", "internal": false, "type": "bool", "defaultValue": "" }
+		},
+
+		"Methods": {
+			"onTextChanged": { "text": "", "internal": true }
+		}
+	}
+}

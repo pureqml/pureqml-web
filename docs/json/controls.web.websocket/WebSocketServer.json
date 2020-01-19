@@ -1,0 +1,26 @@
+{
+	"name": "controls.web.websocket.WebSocketServer",
+	"text": "",
+
+	"content": {
+		"Properties": {
+			"started": { "text": "", "internal": false, "type": "bool", "defaultValue": "" },
+			"autostart": { "text": "", "internal": false, "type": "bool", "defaultValue": "" },
+			"ip": { "text": "", "internal": false, "type": "string", "defaultValue": "" },
+			"port": { "text": "", "internal": false, "type": "string", "defaultValue": "" }
+		},
+
+		"Signals": {
+			"message": { "text": "", "internal": false },
+			"userConnected": { "text": "", "internal": false },
+			"userDisconnected": { "text": "", "internal": false }
+		},
+
+		"Methods": {
+			"sendMessage": { "text": "", "internal": false },
+			"start": { "text": "", "internal": false },
+			"send": { "text": "", "internal": false },
+			"onCompleted": { "text": "", "internal": true }
+		}
+	}
+}
