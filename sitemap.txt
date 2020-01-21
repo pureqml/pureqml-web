@@ -30,6 +30,7 @@ https://pureqml.com/docs/controls.core/BaseActivity.html
 https://pureqml.com/docs/controls.core/DebugInfoItem.html
 https://pureqml.com/docs/controls.core/DebugInfoPanel.html
 https://pureqml.com/docs/controls.core/FragmentActivity.html
+https://pureqml.com/docs/controls.core/Highlighter.html
 https://pureqml.com/docs/controls.core.html
 https://pureqml.com/docs/controls.core/JsonStorage.html
 https://pureqml.com/docs/controls.core/LazyActivity.html
@@ -96,6 +97,9 @@ https://pureqml.com/docs/controls.svg/SvgContainer.html
 https://pureqml.com/docs/controls.vk.html
 https://pureqml.com/docs/controls.vk/VkApi.html
 https://pureqml.com/docs/controls.vk/VkWallModel.html
+https://pureqml.com/docs/controls.web.api.html
+https://pureqml.com/docs/controls.web.api/Method.html
+https://pureqml.com/docs/controls.web.api/Rest.html
 https://pureqml.com/docs/controls.web.audio/AudioBuffer.html
 https://pureqml.com/docs/controls.web.audio.html
 https://pureqml.com/docs/controls.web.audio/Oscillator.html
@@ -155,11 +159,13 @@ https://pureqml.com/docs/core/Animation.html
 https://pureqml.com/docs/core/BaseLayout.html
 https://pureqml.com/docs/core/BaseViewContent.html
 https://pureqml.com/docs/core/BaseView.html
+https://pureqml.com/docs/core/Binding.html
 https://pureqml.com/docs/core/Border.html
 https://pureqml.com/docs/core/BorderSide.html
 https://pureqml.com/docs/core/ClickMixin.html
 https://pureqml.com/docs/core/ColorAnimation.html
 https://pureqml.com/docs/core/Column.html
+https://pureqml.com/docs/core/Connection.html
 https://pureqml.com/docs/core/Context.html
 https://pureqml.com/docs/core/Device.html
 https://pureqml.com/docs/core/Effects.html
