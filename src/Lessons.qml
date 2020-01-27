@@ -144,7 +144,7 @@ SiteActivity {
 			}
 
 			Loader {
-				id: loader;
+				id: lessonLoader;
 				clip: true;
 
 				onLoaded: {
@@ -160,7 +160,7 @@ SiteActivity {
 
 			loadLesson(url): {
 				content.currentIndex = 1
-				loader.source = url
+				lessonLoader.source = url
 			}
 		}
 
