@@ -195,7 +195,7 @@ SiteActivity {
 
 			var state = this._state
 			content.currentIndex = 0
-			if (state && state.page === "lessons") {
+			if (state && state.page === "lessons" && state.section) {
 				var section = state.section.replace(".html", "")
 				log("state", state, "page", state.page)
 				if (section && section !== "") {
