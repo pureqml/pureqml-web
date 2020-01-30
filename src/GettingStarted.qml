@@ -15,7 +15,7 @@ SiteActivity {
 			HashPageColumn {
 				hash: "usage";
 				title: "Usage";
-				text: "QmlCore provides a toolchain written in Python using python-future, allowing it to be run on top of both python versions. Normally you don't need to use them directly. ```build``` provides a convenient wrapper around them all.";
+				text: "QmlCore provides a toolchain written in Python using python-future, allowing it to be run on top of both python versions. Normally you don't need to use them directly. <b>build</b> provides a convenient wrapper around them all.";
 			}
 
 			HashPageColumn {
