@@ -40,7 +40,6 @@ https://pureqml.com/docs/controls.core/Paddings.html
 https://pureqml.com/docs/controls.core/PlaceHolder.html
 https://pureqml.com/docs/controls.core/PlaceholderFont.html
 https://pureqml.com/docs/controls.core/RelativeSize.html
-https://pureqml.com/docs/controls.core/Request.html
 https://pureqml.com/docs/controls.core/Resource.html
 https://pureqml.com/docs/controls.core/RollerView.html
 https://pureqml.com/docs/controls.core/Sprite.html
@@ -199,6 +198,7 @@ https://pureqml.com/docs/core/RAIIEventEmitter.html
 https://pureqml.com/docs/core/Radius.html
 https://pureqml.com/docs/core/Rectangle.html
 https://pureqml.com/docs/core/Repeater.html
+https://pureqml.com/docs/core/Request.html
 https://pureqml.com/docs/core/Row.html
 https://pureqml.com/docs/core/ScrollView.html
 https://pureqml.com/docs/core/SequentialAnimation.html
