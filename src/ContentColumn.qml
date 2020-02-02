@@ -9,6 +9,7 @@ Column {
 	onCompleted: {
 		var data = []
 		var children = this.children
+		log("Content location", this._context.location)
 		for (var i in children) {
 			var child = children[i]
 			var d = {}
