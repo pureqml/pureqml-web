@@ -19,7 +19,7 @@ Column {
 			if (child.path)
 				d.path = child.path
 			if (child.hash)
-				d.hash = this._context.location.origin + child.hash
+				d.hash = this._context.location.origin + "/" + child.hash
 			if (child.filePath)
 				d.filePath = child.filePath
 			data.push(d)
