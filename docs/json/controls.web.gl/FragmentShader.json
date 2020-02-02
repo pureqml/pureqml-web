@@ -1,6 +1,6 @@
 {
 	"name": "controls.web.gl.FragmentShader",
-	"text": "@param {string} sourceCode - shader source code 	fragment shader creation function",
+	"text": "@param {string} sourceCode - shader source code     fragment shader creation function",
 
 	"content": {
 		"Methods": {

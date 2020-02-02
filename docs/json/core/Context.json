@@ -11,7 +11,7 @@
 			"system": { "text": "system info object", "ref": "qmlcore.core/System", "internal": false, "type": "System", "defaultValue": "System" },
 			"location": { "text": "web-page location object", "ref": "qmlcore.core/Location", "internal": false, "type": "Location", "defaultValue": "Location" },
 			"stylesheet": { "text": "@private", "ref": "qmlcore.platform.html5/Stylesheet", "internal": true, "type": "Stylesheet", "defaultValue": "Stylesheet" },
-			"buildIdentifier": { "text": "@private", "internal": true, "type": "string", "defaultValue": "Powered by PureQML No-Partnership Edition Engine" },
+			"buildIdentifier": { "text": "@private", "internal": true, "type": "string", "defaultValue": "b'Powered by PureQML No-Partnership Edition Engine'" },
 			"virtualWidth": { "text": "virtual viewport width", "internal": false, "type": "int", "defaultValue": "${manifest.virtual.width}" },
 			"virtualHeight": { "text": "virtual viewport height", "internal": false, "type": "int", "defaultValue": "${manifest.virtual.height}" },
 			"virtualScale": { "text": "@private", "internal": true, "type": "real", "defaultValue": "Math.min(((${system.resolutionWidth} || ${width}) / ${virtualWidth}),((${system.resolutionHeight} || ${height}) / ${virtualHeight}))" }

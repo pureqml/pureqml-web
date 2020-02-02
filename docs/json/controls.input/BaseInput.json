@@ -12,8 +12,13 @@
 			"type": { "text": "input type value, must override in inheriting component", "internal": false, "type": "string", "defaultValue": "text" },
 			"placeholder": { "text": "input placeholder object", "ref": "controls.core/PlaceHolder", "internal": false, "type": "PlaceHolder", "defaultValue": "PlaceHolder" },
 			"enabled": { "text": "input enabled", "internal": false, "type": "bool", "defaultValue": "true" },
+			"nativeFocus": { "text": "use native focus for input (may trigger IME)", "internal": false, "type": "bool", "defaultValue": "${manifest.useNativeFocusForInput}" },
 			"inputMode": { "text": "inputmode attribute, numeric keyboard, etc", "internal": false, "type": "string", "defaultValue": "" },
 			"autocomplete": { "text": "autocomplete variants (username, current-password, etc)", "internal": false, "type": "string", "defaultValue": "" }
+		},
+
+		"Signals": {
+			"change": { "text": "emit signal when input loses focus or IME closes", "internal": false }
 		},
 
 		"Methods": {
