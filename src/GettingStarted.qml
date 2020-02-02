@@ -13,19 +13,19 @@ SiteActivity {
 			spacing: 30;
 
 			HashPageColumn {
-				hash: "gettingstarted#usage";
+				hash: "usage";
 				title: "Usage";
 				text: "QmlCore provides a toolchain written in Python using python-future, allowing it to be run on top of both python versions. Normally you don't need to use them directly. <b>build</b> provides a convenient wrapper around them all.";
 			}
 
 			HashPageColumn {
-				hash: "gettingstarted#prerequisites";
+				hash: "prerequisites";
 				title: "Prerequisites";
 				text: "Any modern Python (2 or 3) will go well. Jinja2 is a different option for templating in case you want more than QML loader in your HTML file, while it's not required for small apps.";
 			}
 
 			HashPageColumn {
-				hash: "gettingstarted#howto";
+				hash: "howto";
 				title: "Simple how-to";
 
 				Column {
@@ -44,13 +44,13 @@ SiteActivity {
 			}
 
 			HashPageColumn {
-				hash: "gettingstarted#howitworks";
+				hash: "howitworks";
 				title: "How it works";
 				text: "Qml compiler scans source directories for qml file and parses each one. Filename, starting with uppercase letter considered component, lowercase instantiated. Project-wide options stored in .manifest file. Result of the compilation is a single JavaScript file with minimum dependencies (modernizr only), ready to use in mobile and desktop environment, accompanied by sample .html launcher and flash video player.";
 			}
 
 			HashPageColumn {
-				hash: "gettingstarted#manifest";
+				hash: "manifest";
 				title: "Manifest options";
 				text: "Manifest is a collection of project-wide hacks we used to botch various projects. Some may be useful.";
 
@@ -90,19 +90,19 @@ SiteActivity {
 			}
 
 			HashPageColumn {
-				hash: "gettingstarted#localisation";
+				hash: "localisation";
 				title: "Localisation";
 				text: "QmlCore uses Qt-approach to localisation. You write code in your default language, then generate/update (build -u) .ts translation files, translate them with qt linguist, and compile project. QmlCore recognizes tr, qsTr, qsTranslate function, and QT_TR_NOOP/QT_TRANSLATE_NOOP macros.";
 			}
 
 			HashPageColumn {
-				hash: "gettingstarted#controls";
+				hash: "controls";
 				title: "Controls library";
 				text: "QmlCore contains bare minimum platform controls: images, texts, rectangles and model-view-delegate classes. Various controls that might be useful are in separate repository. Just clone it <code><b>git clone git@github.com:pureqml/controls.git</code></b> in your project, and that's it!";
 			}
 
 			HashPageColumn {
-				hash: "gettingstarted#qmldifference";
+				hash: "qmldifference";
 				title: "QML differences";
 				text: "";
 
