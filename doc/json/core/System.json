@@ -21,7 +21,8 @@
 			"contextWidth": { "text": "@private", "internal": true, "type": "int", "defaultValue": "${context.width}" },
 			"contextHeight": { "text": "@private", "internal": true, "type": "int", "defaultValue": "${context.height}" },
 			"resolutionWidth": { "text": "app screen width from manifest", "internal": false, "type": "int", "defaultValue": "" },
-			"resolutionHeight": { "text": "app screen height from manifest", "internal": false, "type": "int", "defaultValue": "" }
+			"resolutionHeight": { "text": "app screen height from manifest", "internal": false, "type": "int", "defaultValue": "" },
+			"virtualKeyboard": { "text": "used to tweak components which use on-screen keyboard", "internal": false, "type": "bool", "defaultValue": "${device} === System.Tv || ${device} === System.Mobile" }
 		},
 
 		"Methods": {

@@ -13,7 +13,7 @@
 		},
 
 		"Methods": {
-			"load": { "text": "", "internal": false },
+			"load": { "text": "@private", "params": [], "internal": true },
 			"onUrlChanged": { "text": "", "internal": true },
 			"onCompleted": { "text": "", "internal": true }
 		}

@@ -1,6 +1,6 @@
 {
 	"name": "controls.web.gl.VertexShader",
-	"text": "@param {string} sourceCode - shader source code 	vertex shader creation function",
+	"text": "@param {string} sourceCode - shader source code     vertex shader creation function",
 
 	"content": {
 		"Methods": {

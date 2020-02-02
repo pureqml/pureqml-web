@@ -4,7 +4,9 @@
 
 	"content": {
 		"Properties": {
-			"ownerId": { "text": "user ID  of the owner of the wall", "internal": false, "type": "int", "defaultValue": "" }
+			"ownerId": { "text": "user ID  of the owner of the wall", "internal": false, "type": "int", "defaultValue": "" },
+			"version": { "text": "VK api version", "internal": false, "type": "string", "defaultValue": "5.0" },
+			"accessToken": { "text": "VK API access token", "internal": false, "type": "string", "defaultValue": "" }
 		},
 
 		"Signals": {

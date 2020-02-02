@@ -1,12 +1,12 @@
 {
 	"controls.web.tables": {
-		"TableHeader": "controls.web.tables/TableHeader.json",
+		"TableElement": "controls.web.tables/TableElement.json",
+		"TableBody": "controls.web.tables/TableBody.json",
+		"Table": "controls.web.tables/Table.json",
+		"TableHeaderCell": "controls.web.tables/TableHeaderCell.json",
 		"TableCell": "controls.web.tables/TableCell.json",
 		"TableRow": "controls.web.tables/TableRow.json",
-		"TableHeaderCell": "controls.web.tables/TableHeaderCell.json",
-		"TableElement": "controls.web.tables/TableElement.json",
-		"Table": "controls.web.tables/Table.json",
-		"TableBody": "controls.web.tables/TableBody.json",
+		"TableHeader": "controls.web.tables/TableHeader.json",
 		"TableFooter": "controls.web.tables/TableFooter.json"
 	}
 }
