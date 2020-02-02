@@ -1,6 +1,6 @@
 {
 	"name": "controls.web.gl.Shader",
-	"text": "@param {string} sourceCode - shader source code     @param {string} type - shader type to create     shader creation function implementaion",
+	"text": "@param {string} sourceCode - shader source code 	@param {string} type - shader type to create 	shader creation function implementaion",
 
 	"content": {
 		"Methods": {

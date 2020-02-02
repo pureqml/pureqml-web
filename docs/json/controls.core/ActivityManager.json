@@ -1,6 +1,6 @@
 {
 	"name": "controls.core.ActivityManager",
-	"text": "@param name:string activity name to replace     @param intent:Object activity initial data object     @param state:Object activity initial state object     replace current top activity with new one",
+	"text": "@param name:string activity name to replace 	@param intent:Object activity initial data object 	@param state:Object activity initial state object 	replace current top activity with new one",
 
 	"content": {
 		"Properties": {

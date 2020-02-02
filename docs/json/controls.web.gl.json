@@ -1,9 +1,9 @@
 {
 	"controls.web.gl": {
 		"VertexShader": "controls.web.gl/VertexShader.json",
-		"FragmentShader": "controls.web.gl/FragmentShader.json",
 		"Program": "controls.web.gl/Program.json",
-		"GlContext": "controls.web.gl/GlContext.json",
-		"Shader": "controls.web.gl/Shader.json"
+		"FragmentShader": "controls.web.gl/FragmentShader.json",
+		"Shader": "controls.web.gl/Shader.json",
+		"GlContext": "controls.web.gl/GlContext.json"
 	}
 }

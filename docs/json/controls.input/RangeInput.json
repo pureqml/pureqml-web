@@ -16,9 +16,7 @@
 			"onMaxChanged": { "text": "@private", "params": [], "internal": true },
 			"onStepChanged": { "text": "@private", "params": [], "internal": true },
 			"onOrientationChanged": { "text": "@private", "params": [], "internal": true },
-			"getTag": { "text": "returns tag for corresponding element", "params": [], "internal": false },
-			"_getValue": { "text": "gets element native value", "params": [], "internal": false },
-			"_setValue": { "text": "sets element native value", "params": [], "internal": false }
+			"getTag": { "text": "returns tag for corresponding element", "params": [], "internal": false }
 		}
 	}
 }
