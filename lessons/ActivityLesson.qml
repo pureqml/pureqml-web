@@ -18,11 +18,22 @@ Lesson {
 			horizontalAlignment: Text.AlignLeft;
 		}
 
-		CodeExample {
-			codeWidth: parent.width - 20;
-			exampleWidth: 500;
-			exampleHeight: 500;
-			sample: MainActivity { }
+		CodeHighlighter {
+			width: parent.width - 20;
+			font.pixelSize: 18;
+			language: "qml";
+			code: mainActivityResource.data;
+
+			onCodeChanged: { sampleArea.init() }
+		}
+
+		CodeHighlighter {
+			width: parent.width - 20;
+			font.pixelSize: 18;
+			language: "qml";
+			code: nextActivityResource.data;
+
+			onCodeChanged: { sampleArea.init() }
 		}
 
 		CodeExample {
@@ -66,4 +77,7 @@ Lesson {
 			horizontalAlignment: Text.AlignLeft;
 		}
 	}
+
+	Resource { id: mainActivityResource; url: "https://raw.githubusercontent.com/pureqml/pureqml-web/master/code_samples/MainActivity.qml"; }
+	Resource { id: nextActivityResource; url: "https://raw.githubusercontent.com/pureqml/pureqml-web/master/code_samples/NextActivity.qml"; }
 }
