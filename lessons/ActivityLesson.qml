@@ -36,13 +36,6 @@ Lesson {
 			onCodeChanged: { sampleArea.init() }
 		}
 
-		CodeExample {
-			codeWidth: parent.width - 20;
-			exampleWidth: 500;
-			exampleHeight: 500;
-			sample: NextActivity { }
-		}
-
 		MainP {
 			text: "Now we will use them as simple activities:";
 			horizontalAlignment: Text.AlignLeft;
