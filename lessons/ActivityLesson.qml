@@ -1,5 +1,5 @@
 Lesson {
-	url: "activity";
+	url: "activitylesson";
 
 	PageColumn {
 		title: "Activities";
