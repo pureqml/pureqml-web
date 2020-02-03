@@ -1,6 +1,0 @@
-{
-	"controls.web.websocket": {
-		"WebSocketServer": "controls.web.websocket/WebSocketServer.json",
-		"WebSocketClient": "controls.web.websocket/WebSocketClient.json"
-	}
-}

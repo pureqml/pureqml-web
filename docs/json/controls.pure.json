@@ -1,9 +1,0 @@
-{
-	"controls.pure": {
-		"Checkbox": "controls.pure/Checkbox.json",
-		"TextEdit": "controls.pure/TextEdit.json",
-		"ScrollBar": "controls.pure/ScrollBar.json",
-		"Subtitles": "controls.pure/Subtitles.json",
-		"ProgressBar": "controls.pure/ProgressBar.json"
-	}
-}
