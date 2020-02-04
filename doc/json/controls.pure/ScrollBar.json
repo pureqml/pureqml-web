@@ -1,90 +1,26 @@
 {
-    "content": {
-        "Methods": {
-            "onHeightChanged": {
-                "internal": "true", 
-                "text": ""
-            }, 
-            "show": {
-                "internal": "false", 
-                "text": ""
-            }
-        }, 
-        "Properties": {
-            "animationDuration": {
-                "defaultValue": "300", 
-                "internal": "false", 
-                "text": "", 
-                "type": "int"
-            }, 
-            "barColor": {
-                "defaultValue": "#fff", 
-                "internal": "false", 
-                "text": "", 
-                "type": "Color"
-            }, 
-            "contentHeight": {
-                "defaultValue": "1", 
-                "internal": "false", 
-                "text": "", 
-                "type": "int"
-            }, 
-            "contentY": {
-                "defaultValue": "", 
-                "internal": "false", 
-                "text": "", 
-                "type": "int"
-            }, 
-            "display": {
-                "defaultValue": "false", 
-                "internal": "false", 
-                "text": "", 
-                "type": "bool"
-            }, 
-            "displayHeight": {
-                "defaultValue": "1", 
-                "internal": "false", 
-                "text": "", 
-                "type": "int"
-            }, 
-            "displaySeconds": {
-                "defaultValue": "1000", 
-                "internal": "false", 
-                "text": "", 
-                "type": "int"
-            }, 
-            "maxContentY": {
-                "defaultValue": "${displayHeight} - ${movingBar.height}", 
-                "internal": "false", 
-                "text": "", 
-                "type": "int"
-            }, 
-            "minHeight": {
-                "defaultValue": "10", 
-                "internal": "false", 
-                "text": "", 
-                "type": "int"
-            }, 
-            "realContentY": {
-                "defaultValue": "${contentHeight} ? - ${contentY} * 1.0 / ${contentHeight} * ${displayHeight} : 0", 
-                "internal": "false", 
-                "text": "", 
-                "type": "int"
-            }, 
-            "realHeight": {
-                "defaultValue": "${contentHeight} ? ${displayHeight} * 1.0 / ${contentHeight} * ${displayHeight} : 0", 
-                "internal": "false", 
-                "text": "", 
-                "type": "int"
-            }, 
-            "shift": {
-                "defaultValue": "${realContentY} > ${maxContentY} ? ${maxContentY} : ${realContentY}", 
-                "internal": "false", 
-                "text": "", 
-                "type": "int"
-            }
-        }
-    }, 
-    "name": "controls.pure.ScrollBar", 
-    "text": ""
+	"name": "controls.pure.ScrollBar",
+	"text": "",
+
+	"content": {
+		"Properties": {
+			"contentY": { "text": "", "internal": false, "type": "int", "defaultValue": "" },
+			"minHeight": { "text": "", "internal": false, "type": "int", "defaultValue": "10" },
+			"contentHeight": { "text": "", "internal": false, "type": "int", "defaultValue": "1" },
+			"displayHeight": { "text": "", "internal": false, "type": "int", "defaultValue": "1" },
+			"displaySeconds": { "text": "", "internal": false, "type": "int", "defaultValue": "1000" },
+			"animationDuration": { "text": "", "internal": false, "type": "int", "defaultValue": "300" },
+			"realContentY": { "text": "", "internal": false, "type": "int", "defaultValue": "${contentHeight} ? - ${contentY} * 1.0 / ${contentHeight} * ${displayHeight} : 0" },
+			"realHeight": { "text": "", "internal": false, "type": "int", "defaultValue": "${contentHeight} ? ${displayHeight} * 1.0 / ${contentHeight} * ${displayHeight} : 0" },
+			"maxContentY": { "text": "", "internal": false, "type": "int", "defaultValue": "${displayHeight} - ${movingBar.height}" },
+			"shift": { "text": "", "internal": false, "type": "int", "defaultValue": "${realContentY} > ${maxContentY} ? ${maxContentY} : ${realContentY}" },
+			"display": { "text": "", "internal": false, "type": "bool", "defaultValue": "false" },
+			"barColor": { "text": "", "internal": false, "type": "Color", "defaultValue": "#fff" }
+		},
+
+		"Methods": {
+			"onHeightChanged": { "text": "", "internal": true },
+			"show": { "text": "", "internal": false }
+		}
+	}
 }

@@ -1,5 +1,7 @@
 {
-    "content": {}, 
-    "name": "lessons.ActivityLesson", 
-    "text": ""
+	"name": "lessons.ActivityLesson",
+	"text": "",
+
+	"content": {
+	}
 }

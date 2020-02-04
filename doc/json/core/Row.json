@@ -1,23 +1,12 @@
 {
-    "content": {
-        "Methods": {
-            "_layout": {
-                "internal": "true", 
-                "params": [], 
-                "text": "@private"
-            }, 
-            "addChild": {
-                "internal": "true", 
-                "params": [], 
-                "text": "@private"
-            }, 
-            "onKeyPressed": {
-                "internal": "true", 
-                "params": [], 
-                "text": "@private"
-            }
-        }
-    }, 
-    "name": "core.Row", 
-    "text": "layout for horizontal oriented content"
+	"name": "core.Row",
+	"text": "layout for horizontal oriented content",
+
+	"content": {
+		"Methods": {
+			"onKeyPressed": { "text": "@private", "params": [], "internal": true },
+			"_layout": { "text": "@private", "params": [], "internal": true },
+			"addChild": { "text": "@private", "params": [], "internal": true }
+		}
+	}
 }

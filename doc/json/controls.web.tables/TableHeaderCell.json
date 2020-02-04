@@ -1,12 +1,10 @@
 {
-    "content": {
-        "Methods": {
-            "getTag": {
-                "internal": "false", 
-                "text": ""
-            }
-        }
-    }, 
-    "name": "controls.web.tables.TableHeaderCell", 
-    "text": ""
+	"name": "controls.web.tables.TableHeaderCell",
+	"text": "",
+
+	"content": {
+		"Methods": {
+			"getTag": { "text": "", "internal": false }
+		}
+	}
 }

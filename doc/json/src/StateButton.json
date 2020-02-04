@@ -1,26 +1,15 @@
 {
-    "content": {
-        "Methods": {
-            "onClicked": {
-                "internal": "false", 
-                "text": ""
-            }
-        }, 
-        "Properties": {
-            "relPath": {
-                "defaultValue": "", 
-                "internal": "false", 
-                "text": "", 
-                "type": "string"
-            }, 
-            "text": {
-                "defaultValue": "", 
-                "internal": "false", 
-                "text": "", 
-                "type": "string"
-            }
-        }
-    }, 
-    "name": "src.StateButton", 
-    "text": ""
+	"name": "src.StateButton",
+	"text": "",
+
+	"content": {
+		"Properties": {
+			"relPath": { "text": "", "internal": false, "type": "string", "defaultValue": "" },
+			"text": { "text": "", "internal": false, "type": "string", "defaultValue": "" }
+		},
+
+		"Methods": {
+			"onClicked": { "text": "", "internal": false }
+		}
+	}
 }

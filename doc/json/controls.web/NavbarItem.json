@@ -1,5 +1,7 @@
 {
-    "content": {}, 
-    "name": "controls.web.NavbarItem", 
-    "text": ""
+	"name": "controls.web.NavbarItem",
+	"text": "",
+
+	"content": {
+	}
 }

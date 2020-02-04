@@ -1,41 +1,18 @@
 {
-    "content": {
-        "Methods": {
-            "createActivity": {
-                "internal": "false", 
-                "params": [], 
-                "text": "create activity"
-            }, 
-            "getActivity": {
-                "internal": "false", 
-                "params": [], 
-                "text": "get activity item"
-            }, 
-            "init": {
-                "internal": "false", 
-                "params": [], 
-                "text": "Initialize activity"
-            }, 
-            "start": {
-                "internal": "false", 
-                "params": [], 
-                "text": "Start activity lazy way"
-            }, 
-            "stop": {
-                "internal": "false", 
-                "params": [], 
-                "text": "Stop activity"
-            }
-        }, 
-        "Properties": {
-            "component": {
-                "defaultValue": "", 
-                "internal": "false", 
-                "text": "path to activity source", 
-                "type": "string"
-            }
-        }
-    }, 
-    "name": "controls.core.LazyActivity", 
-    "text": "this activity instanciate only when init method is called"
+	"name": "controls.core.LazyActivity",
+	"text": "this activity instanciate only when init method is called",
+
+	"content": {
+		"Properties": {
+			"component": { "text": "path to activity source", "internal": false, "type": "string", "defaultValue": "" }
+		},
+
+		"Methods": {
+			"createActivity": { "text": "create activity", "params": [], "internal": false },
+			"getActivity": { "text": "get activity item", "params": [], "internal": false },
+			"init": { "text": "Initialize activity", "params": [], "internal": false },
+			"start": { "text": "Start activity lazy way", "params": [], "internal": false },
+			"stop": { "text": "Stop activity", "params": [], "internal": false }
+		}
+	}
 }

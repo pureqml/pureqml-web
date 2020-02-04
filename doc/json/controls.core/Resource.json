@@ -1,41 +1,21 @@
 {
-    "content": {
-        "Methods": {
-            "load": {
-                "internal": "true", 
-                "params": [], 
-                "text": "@private"
-            }, 
-            "onCompleted": {
-                "internal": "true", 
-                "text": ""
-            }, 
-            "onUrlChanged": {
-                "internal": "true", 
-                "text": ""
-            }
-        }, 
-        "Properties": {
-            "data": {
-                "defaultValue": "", 
-                "internal": "false", 
-                "text": "uploaded from URL data", 
-                "type": "string"
-            }, 
-            "url": {
-                "defaultValue": "", 
-                "internal": "false", 
-                "text": "resource URL", 
-                "type": "string"
-            }
-        }, 
-        "Signals": {
-            "error": {
-                "internal": "false", 
-                "text": "error signal"
-            }
-        }
-    }, 
-    "name": "controls.core.Resource", 
-    "text": "Object for getting remote resources"
+	"name": "controls.core.Resource",
+	"text": "Object for getting remote resources",
+
+	"content": {
+		"Properties": {
+			"url": { "text": "resource URL", "internal": false, "type": "string", "defaultValue": "" },
+			"data": { "text": "uploaded from URL data", "internal": false, "type": "string", "defaultValue": "" }
+		},
+
+		"Signals": {
+			"error": { "text": "error signal", "internal": false }
+		},
+
+		"Methods": {
+			"load": { "text": "@private", "params": [], "internal": true },
+			"onUrlChanged": { "text": "", "internal": true },
+			"onCompleted": { "text": "", "internal": true }
+		}
+	}
 }

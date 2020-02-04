@@ -1,12 +1,10 @@
 {
-    "content": {
-        "Methods": {
-            "onCompleted": {
-                "internal": "true", 
-                "text": ""
-            }
-        }
-    }, 
-    "name": "code_samples.SystemExample", 
-    "text": ""
+	"name": "code_samples.SystemExample",
+	"text": "",
+
+	"content": {
+		"Methods": {
+			"onCompleted": { "text": "", "internal": true }
+		}
+	}
 }

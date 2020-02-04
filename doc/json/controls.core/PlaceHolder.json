@@ -1,54 +1,20 @@
 {
-    "content": {
-        "Methods": {
-            "constructor": {
-                "internal": "true", 
-                "params": [], 
-                "text": "@private"
-            }, 
-            "getClass": {
-                "internal": "true", 
-                "params": [], 
-                "text": "@private"
-            }, 
-            "onColorChanged": {
-                "internal": "true", 
-                "params": [], 
-                "text": "@private"
-            }, 
-            "onTextChanged": {
-                "internal": "true", 
-                "params": [], 
-                "text": "@private"
-            }, 
-            "setPlaceholderColor": {
-                "internal": "true", 
-                "params": [], 
-                "text": "@private"
-            }
-        }, 
-        "Properties": {
-            "color": {
-                "defaultValue": "", 
-                "internal": "false", 
-                "text": "placeholder color", 
-                "type": "Color"
-            }, 
-            "font": {
-                "defaultValue": "PlaceholderFont", 
-                "internal": "false", 
-                "ref": "qmlcore.core/Font", 
-                "text": "placeholder font", 
-                "type": "Font"
-            }, 
-            "text": {
-                "defaultValue": "", 
-                "internal": "false", 
-                "text": "inner text placeholder", 
-                "type": "string"
-            }
-        }
-    }, 
-    "name": "controls.core.PlaceHolder", 
-    "text": "placeholder adjustment object for inputs"
+	"name": "controls.core.PlaceHolder",
+	"text": "placeholder adjustment object for inputs",
+
+	"content": {
+		"Properties": {
+			"text": { "text": "inner text placeholder", "internal": false, "type": "string", "defaultValue": "" },
+			"color": { "text": "placeholder color", "internal": false, "type": "Color", "defaultValue": "" },
+			"font": { "text": "placeholder font", "ref": "qmlcore.core/Font", "internal": false, "type": "Font", "defaultValue": "PlaceholderFont" }
+		},
+
+		"Methods": {
+			"constructor": { "text": "@private", "params": [], "internal": true },
+			"onTextChanged": { "text": "@private", "params": [], "internal": true },
+			"onColorChanged": { "text": "@private", "params": [], "internal": true },
+			"getClass": { "text": "@private", "params": [], "internal": true },
+			"setPlaceholderColor": { "text": "@private", "params": [], "internal": true }
+		}
+	}
 }

@@ -1,386 +1,386 @@
 {
-    "docs_dir": ".", 
-    "pages": {
-        "code_samples": {
-            "content": {
-                "Anchors1": "code_samples/Anchors1.json", 
-                "AnchorsCenter": "code_samples/AnchorsCenter.json", 
-                "AnchorsFill": "code_samples/AnchorsFill.json", 
-                "AnchorsMargins": "code_samples/AnchorsMargins.json", 
-                "AnchorsMarginsFixed": "code_samples/AnchorsMarginsFixed.json", 
-                "ColorInputExample": "code_samples/ColorInputExample.json", 
-                "DateInputExample": "code_samples/DateInputExample.json", 
-                "DragMixinDirectionLesson": "code_samples/DragMixinDirectionLesson.json", 
-                "DragMixinLesson": "code_samples/DragMixinLesson.json", 
-                "DrmExample": "code_samples/DrmExample.json", 
-                "EmailInputExample": "code_samples/EmailInputExample.json", 
-                "FocusExample": "code_samples/FocusExample.json", 
-                "GamepadCodeLesson": "code_samples/GamepadCodeLesson.json", 
-                "GamepadHandleLesson": "code_samples/GamepadHandleLesson.json", 
-                "GridViewExample": "code_samples/GridViewExample.json", 
-                "HoverMixinExample": "code_samples/HoverMixinExample.json", 
-                "ImageExample": "code_samples/ImageExample.json", 
-                "ImageMixinExample": "code_samples/ImageMixinExample.json", 
-                "KeyLesson": "code_samples/KeyLesson.json", 
-                "KeyPressLesson": "code_samples/KeyPressLesson.json", 
-                "KeySelectLesson": "code_samples/KeySelectLesson.json", 
-                "LayoutColumn": "code_samples/LayoutColumn.json", 
-                "LayoutGrid": "code_samples/LayoutGrid.json", 
-                "LayoutRow": "code_samples/LayoutRow.json", 
-                "LazyActivityExample": "code_samples/LazyActivityExample.json", 
-                "ListViewExample": "code_samples/ListViewExample.json", 
-                "LoaderCodeLesson": "code_samples/LoaderCodeLesson.json", 
-                "MainActivity": "code_samples/MainActivity.json", 
-                "NextActivity": "code_samples/NextActivity.json", 
-                "NumberInputExample": "code_samples/NumberInputExample.json", 
-                "OverflowMixinExample": "code_samples/OverflowMixinExample.json", 
-                "PropertyHandling": "code_samples/PropertyHandling.json", 
-                "ProxyLessonExample": "code_samples/ProxyLessonExample.json", 
-                "ProxyMessages": "code_samples/ProxyMessages.json", 
-                "RangeInputExample": "code_samples/RangeInputExample.json", 
-                "RectanglesExample": "code_samples/RectanglesExample.json", 
-                "SearchInputExample": "code_samples/SearchInputExample.json", 
-                "ShadowExample": "code_samples/ShadowExample.json", 
-                "SignalArgsHandling": "code_samples/SignalArgsHandling.json", 
-                "SignalHandling": "code_samples/SignalHandling.json", 
-                "SignalTestItem": "code_samples/SignalTestItem.json", 
-                "SimpleActivityExample": "code_samples/SimpleActivityExample.json", 
-                "SpriteExample": "code_samples/SpriteExample.json", 
-                "SystemExample": "code_samples/SystemExample.json", 
-                "TextExample": "code_samples/TextExample.json", 
-                "TextInputExample": "code_samples/TextInputExample.json", 
-                "TextMixinExample": "code_samples/TextMixinExample.json", 
-                "TimeInputExample": "code_samples/TimeInputExample.json", 
-                "TransformScaleExample": "code_samples/TransformScaleExample.json", 
-                "TransformTranslateExample": "code_samples/TransformTranslateExample.json", 
-                "TranslationTextExample": "code_samples/TranslationTextExample.json", 
-                "VideoPlayerSample": "code_samples/VideoPlayerSample.json"
-            }, 
-            "file": "code_samples.json"
-        }, 
-        "controls.core": {
-            "content": {
-                "Activity": "controls.core/Activity.json", 
-                "ActivityManager": "controls.core/ActivityManager.json", 
-                "AnimatedSprite": "controls.core/AnimatedSprite.json", 
-                "Audio": "controls.core/Audio.json", 
-                "BaseActivity": "controls.core/BaseActivity.json", 
-                "DebugInfoItem": "controls.core/DebugInfoItem.json", 
-                "DebugInfoPanel": "controls.core/DebugInfoPanel.json", 
-                "FragmentActivity": "controls.core/FragmentActivity.json", 
-                "Highlighter": "controls.core/Highlighter.json", 
-                "JsonStorage": "controls.core/JsonStorage.json", 
-                "LazyActivity": "controls.core/LazyActivity.json", 
-                "LazyPage": "controls.core/LazyPage.json", 
-                "LazyPageStack": "controls.core/LazyPageStack.json", 
-                "Paddings": "controls.core/Paddings.json", 
-                "PlaceHolder": "controls.core/PlaceHolder.json", 
-                "PlaceholderFont": "controls.core/PlaceholderFont.json", 
-                "RelativeSize": "controls.core/RelativeSize.json", 
-                "Resource": "controls.core/Resource.json", 
-                "RollerView": "controls.core/RollerView.json", 
-                "Sprite": "controls.core/Sprite.json", 
-                "SwapImage": "controls.core/SwapImage.json"
-            }, 
-            "file": "controls.core.json"
-        }, 
-        "controls.google": {
-            "content": {
-                "GoogleChart": "controls.google/GoogleChart.json", 
-                "YouTube": "controls.google/YouTube.json"
-            }, 
-            "file": "controls.google.json"
-        }, 
-        "controls.input": {
-            "content": {
-                "BaseInput": "controls.input/BaseInput.json", 
-                "CheckboxInput": "controls.input/CheckboxInput.json", 
-                "ColorInput": "controls.input/ColorInput.json", 
-                "DateInput": "controls.input/DateInput.json", 
-                "EmailInput": "controls.input/EmailInput.json", 
-                "FileInput": "controls.input/FileInput.json", 
-                "NumberInput": "controls.input/NumberInput.json", 
-                "RangeInput": "controls.input/RangeInput.json", 
-                "SearchInput": "controls.input/SearchInput.json", 
-                "TextAreaInput": "controls.input/TextAreaInput.json", 
-                "TextInput": "controls.input/TextInput.json", 
-                "TimeInput": "controls.input/TimeInput.json"
-            }, 
-            "file": "controls.input.json"
-        }, 
-        "controls.mixins": {
-            "content": {
-                "BaseMixin": "controls.mixins/BaseMixin.json", 
-                "CssMixin": "controls.mixins/CssMixin.json", 
-                "DoubleClickMixin": "controls.mixins/DoubleClickMixin.json", 
-                "DragMixin": "controls.mixins/DragMixin.json", 
-                "DropZoneMixin": "controls.mixins/DropZoneMixin.json", 
-                "FocusOnHoverMixin": "controls.mixins/FocusOnHoverMixin.json", 
-                "ImageMixin": "controls.mixins/ImageMixin.json", 
-                "OrientationMixin": "controls.mixins/OrientationMixin.json", 
-                "OverflowMixin": "controls.mixins/OverflowMixin.json", 
-                "PositionMixin": "controls.mixins/PositionMixin.json", 
-                "RightClickMixin": "controls.mixins/RightClickMixin.json", 
-                "SwipeMixin": "controls.mixins/SwipeMixin.json", 
-                "TextMixin": "controls.mixins/TextMixin.json", 
-                "TitleMixin": "controls.mixins/TitleMixin.json", 
-                "UserSelectMixin": "controls.mixins/UserSelectMixin.json"
-            }, 
-            "file": "controls.mixins.json"
-        }, 
-        "controls.pure": {
-            "content": {
-                "Checkbox": "controls.pure/Checkbox.json", 
-                "ProgressBar": "controls.pure/ProgressBar.json", 
-                "ScrollBar": "controls.pure/ScrollBar.json", 
-                "Subtitles": "controls.pure/Subtitles.json", 
-                "TextEdit": "controls.pure/TextEdit.json"
-            }, 
-            "file": "controls.pure.json"
-        }, 
-        "controls.pure.keyboard": {
-            "content": {
-                "Keyboard": "controls.pure.keyboard/Keyboard.json", 
-                "KeyboardDelegate": "controls.pure.keyboard/KeyboardDelegate.json", 
-                "KeyboardModel": "controls.pure.keyboard/KeyboardModel.json", 
-                "KeyboardRowModel": "controls.pure.keyboard/KeyboardRowModel.json"
-            }, 
-            "file": "controls.pure.keyboard.json"
-        }, 
-        "controls.svg": {
-            "content": {
-                "ExternalPath": "controls.svg/ExternalPath.json", 
-                "Line": "controls.svg/Line.json", 
-                "Path": "controls.svg/Path.json", 
-                "SvgBase": "controls.svg/SvgBase.json", 
-                "SvgContainer": "controls.svg/SvgContainer.json"
-            }, 
-            "file": "controls.svg.json"
-        }, 
-        "controls.vk": {
-            "content": {
-                "VkApi": "controls.vk/VkApi.json", 
-                "VkWallModel": "controls.vk/VkWallModel.json"
-            }, 
-            "file": "controls.vk.json"
-        }, 
-        "controls.web": {
-            "content": {
-                "Box": "controls.web/Box.json", 
-                "Button": "controls.web/Button.json", 
-                "Canvas": "controls.web/Canvas.json", 
-                "CodeHighlighter": "controls.web/CodeHighlighter.json", 
-                "DropDown": "controls.web/DropDown.json", 
-                "EllipsisText": "controls.web/EllipsisText.json", 
-                "GifSpinner": "controls.web/GifSpinner.json", 
-                "H1": "controls.web/H1.json", 
-                "H2": "controls.web/H2.json", 
-                "H3": "controls.web/H3.json", 
-                "H4": "controls.web/H4.json", 
-                "H5": "controls.web/H5.json", 
-                "H6": "controls.web/H6.json", 
-                "HoverClickMixin": "controls.web/HoverClickMixin.json", 
-                "IFrame": "controls.web/IFrame.json", 
-                "LanguageSelector": "controls.web/LanguageSelector.json", 
-                "LanguageSwitcher": "controls.web/LanguageSwitcher.json", 
-                "MaterialIcon": "controls.web/MaterialIcon.json", 
-                "MobileMenuButton": "controls.web/MobileMenuButton.json", 
-                "Navbar": "controls.web/Navbar.json", 
-                "NavbarItem": "controls.web/NavbarItem.json", 
-                "NavigationMenuButton": "controls.web/NavigationMenuButton.json", 
-                "ResizableBox": "controls.web/ResizableBox.json", 
-                "Script": "controls.web/Script.json", 
-                "Sharer": "controls.web/Sharer.json", 
-                "Spinner": "controls.web/Spinner.json", 
-                "SwipeMenu": "controls.web/SwipeMenu.json", 
-                "TopMenu": "controls.web/TopMenu.json", 
-                "WebItem": "controls.web/WebItem.json", 
-                "WebLink": "controls.web/WebLink.json"
-            }, 
-            "file": "controls.web.json"
-        }, 
-        "controls.web.api": {
-            "content": {
-                "Method": "controls.web.api/Method.json", 
-                "Rest": "controls.web.api/Rest.json"
-            }, 
-            "file": "controls.web.api.json"
-        }, 
-        "controls.web.audio": {
-            "content": {
-                "AudioBuffer": "controls.web.audio/AudioBuffer.json", 
-                "Oscillator": "controls.web.audio/Oscillator.json"
-            }, 
-            "file": "controls.web.audio.json"
-        }, 
-        "controls.web.gl": {
-            "content": {
-                "FragmentShader": "controls.web.gl/FragmentShader.json", 
-                "GlContext": "controls.web.gl/GlContext.json", 
-                "Program": "controls.web.gl/Program.json", 
-                "Shader": "controls.web.gl/Shader.json", 
-                "VertexShader": "controls.web.gl/VertexShader.json"
-            }, 
-            "file": "controls.web.gl.json"
-        }, 
-        "controls.web.tables": {
-            "content": {
-                "Table": "controls.web.tables/Table.json", 
-                "TableBody": "controls.web.tables/TableBody.json", 
-                "TableCell": "controls.web.tables/TableCell.json", 
-                "TableElement": "controls.web.tables/TableElement.json", 
-                "TableFooter": "controls.web.tables/TableFooter.json", 
-                "TableHeader": "controls.web.tables/TableHeader.json", 
-                "TableHeaderCell": "controls.web.tables/TableHeaderCell.json", 
-                "TableRow": "controls.web.tables/TableRow.json"
-            }, 
-            "file": "controls.web.tables.json"
-        }, 
-        "controls.web.websocket": {
-            "content": {
-                "WebSocketClient": "controls.web.websocket/WebSocketClient.json", 
-                "WebSocketServer": "controls.web.websocket/WebSocketServer.json"
-            }, 
-            "file": "controls.web.websocket.json"
-        }, 
-        "controls.yandex": {
-            "content": {
-                "YandexMap": "controls.yandex/YandexMap.json"
-            }, 
-            "file": "controls.yandex.json"
-        }, 
-        "core": {
-            "content": {
-                "Anchors": "core/Anchors.json", 
-                "Animation": "core/Animation.json", 
-                "BaseLayout": "core/BaseLayout.json", 
-                "BaseView": "core/BaseView.json", 
-                "BaseViewContent": "core/BaseViewContent.json", 
-                "Binding": "core/Binding.json", 
-                "Border": "core/Border.json", 
-                "BorderSide": "core/BorderSide.json", 
-                "ClickMixin": "core/ClickMixin.json", 
-                "ColorAnimation": "core/ColorAnimation.json", 
-                "Column": "core/Column.json", 
-                "Connection": "core/Connection.json", 
-                "Context": "core/Context.json", 
-                "Device": "core/Device.json", 
-                "Effects": "core/Effects.json", 
-                "EventEmitter": "core/EventEmitter.json", 
-                "Font": "core/Font.json", 
-                "Gamepad": "core/Gamepad.json", 
-                "GamepadManager": "core/GamepadManager.json", 
-                "Gradient": "core/Gradient.json", 
-                "GradientStop": "core/GradientStop.json", 
-                "Grid": "core/Grid.json", 
-                "GridView": "core/GridView.json", 
-                "HoverMixin": "core/HoverMixin.json", 
-                "Image": "core/Image.json", 
-                "Item": "core/Item.json", 
-                "Layout": "core/Layout.json", 
-                "ListModel": "core/ListModel.json", 
-                "ListView": "core/ListView.json", 
-                "Loader": "core/Loader.json", 
-                "LocalStorage": "core/LocalStorage.json", 
-                "Location": "core/Location.json", 
-                "Model": "core/Model.json", 
-                "MouseArea": "core/MouseArea.json", 
-                "MouseMoveMixin": "core/MouseMoveMixin.json", 
-                "MousePressMixin": "core/MousePressMixin.json", 
-                "Object": "core/Object.json", 
-                "PageStack": "core/PageStack.json", 
-                "PropertyStorage": "core/PropertyStorage.json", 
-                "ProxyModel": "core/ProxyModel.json", 
-                "RAIIEventEmitter": "core/RAIIEventEmitter.json", 
-                "Radius": "core/Radius.json", 
-                "Rectangle": "core/Rectangle.json", 
-                "Repeater": "core/Repeater.json", 
-                "Request": "core/Request.json", 
-                "Row": "core/Row.json", 
-                "ScrollView": "core/ScrollView.json", 
-                "SequentialAnimation": "core/SequentialAnimation.json", 
-                "Shadow": "core/Shadow.json", 
-                "System": "core/System.json", 
-                "Text": "core/Text.json", 
-                "Timer": "core/Timer.json", 
-                "Transform": "core/Transform.json", 
-                "VideoPlayer": "core/VideoPlayer.json", 
-                "WheelMixin": "core/WheelMixin.json"
-            }, 
-            "file": "core.json"
-        }, 
-        "html5": {
-            "content": {
-                "Stylesheet": "html5/Stylesheet.json"
-            }, 
-            "file": "html5.json"
-        }, 
-        "lessons": {
-            "content": {
-                "ActivityLesson": "lessons/ActivityLesson.json", 
-                "AnchorsLesson": "lessons/AnchorsLesson.json", 
-                "BasicLesson": "lessons/BasicLesson.json", 
-                "DrmLesson": "lessons/DrmLesson.json", 
-                "EffectsLesson": "lessons/EffectsLesson.json", 
-                "FocusLesson": "lessons/FocusLesson.json", 
-                "GamepadLesson": "lessons/GamepadLesson.json", 
-                "GlobalsLesson": "lessons/GlobalsLesson.json", 
-                "InputsLesson": "lessons/InputsLesson.json", 
-                "KeyboardLesson": "lessons/KeyboardLesson.json", 
-                "LayoutsLesson": "lessons/LayoutsLesson.json", 
-                "Lesson": "lessons/Lesson.json", 
-                "LoaderLesson": "lessons/LoaderLesson.json", 
-                "LocalizationLesson": "lessons/LocalizationLesson.json", 
-                "MixinLesson": "lessons/MixinLesson.json", 
-                "SignalLesson": "lessons/SignalLesson.json", 
-                "SpriteLesson": "lessons/SpriteLesson.json", 
-                "TransformLesson": "lessons/TransformLesson.json", 
-                "VideoPlayerLesson": "lessons/VideoPlayerLesson.json", 
-                "ViewAndModelsLesson": "lessons/ViewAndModelsLesson.json"
-            }, 
-            "file": "lessons.json"
-        }, 
-        "src": {
-            "content": {
-                "BigButton": "src/BigButton.json", 
-                "CodeExample": "src/CodeExample.json", 
-                "ColorTheme": "src/ColorTheme.json", 
-                "ContentColumn": "src/ContentColumn.json", 
-                "DescriptionPanel": "src/DescriptionPanel.json", 
-                "DescriptionText": "src/DescriptionText.json", 
-                "DocKeyValueView": "src/DocKeyValueView.json", 
-                "DocViewer": "src/DocViewer.json", 
-                "Docs": "src/Docs.json", 
-                "Download": "src/Download.json", 
-                "GettingStarted": "src/GettingStarted.json", 
-                "HashPageColumn": "src/HashPageColumn.json", 
-                "Head": "src/Head.json", 
-                "HistoryPage": "src/HistoryPage.json", 
-                "HowtoText": "src/HowtoText.json", 
-                "KeyValueView": "src/KeyValueView.json", 
-                "LeftMenu": "src/LeftMenu.json", 
-                "Lessons": "src/Lessons.json", 
-                "Main": "src/Main.json", 
-                "MainH2": "src/MainH2.json", 
-                "MainP": "src/MainP.json", 
-                "MainText": "src/MainText.json", 
-                "MenuItem": "src/MenuItem.json", 
-                "P": "src/P.json", 
-                "PageColumn": "src/PageColumn.json", 
-                "PathPageColumn": "src/PathPageColumn.json", 
-                "PlatformImage": "src/PlatformImage.json", 
-                "RectangleExample": "src/RectangleExample.json", 
-                "SearchPanel": "src/SearchPanel.json", 
-                "SearchResults": "src/SearchResults.json", 
-                "SectionHead": "src/SectionHead.json", 
-                "SiteActivity": "src/SiteActivity.json", 
-                "StateButton": "src/StateButton.json"
-            }, 
-            "file": "src.json"
-        }
-    }, 
-    "repo_url": "https://github.com/pureqml/qmlcore/", 
-    "site_dir": "../html", 
-    "site_name": "QML Documentation", 
-    "use_directory_urls": false
+	"site_name": "QML Documentation",
+	"use_directory_urls": false,
+	"docs_dir": ".",
+	"site_dir": "../html",
+	"repo_url": "https://github.com/pureqml/qmlcore/",
+	"pages": {
+		"code_samples": {
+			"file": "code_samples.json",
+			"content": {
+				"FocusExample": "code_samples/FocusExample.json",
+				"ProxyLessonExample": "code_samples/ProxyLessonExample.json",
+				"ImageExample": "code_samples/ImageExample.json",
+				"DragMixinLesson": "code_samples/DragMixinLesson.json",
+				"Anchors1": "code_samples/Anchors1.json",
+				"KeyLesson": "code_samples/KeyLesson.json",
+				"NumberInputExample": "code_samples/NumberInputExample.json",
+				"EmailInputExample": "code_samples/EmailInputExample.json",
+				"AnchorsMarginsFixed": "code_samples/AnchorsMarginsFixed.json",
+				"TimeInputExample": "code_samples/TimeInputExample.json",
+				"GridViewExample": "code_samples/GridViewExample.json",
+				"SpriteExample": "code_samples/SpriteExample.json",
+				"RectanglesExample": "code_samples/RectanglesExample.json",
+				"TransformScaleExample": "code_samples/TransformScaleExample.json",
+				"LayoutRow": "code_samples/LayoutRow.json",
+				"ListViewExample": "code_samples/ListViewExample.json",
+				"PropertyHandling": "code_samples/PropertyHandling.json",
+				"TextExample": "code_samples/TextExample.json",
+				"TranslationTextExample": "code_samples/TranslationTextExample.json",
+				"ShadowExample": "code_samples/ShadowExample.json",
+				"AnchorsMargins": "code_samples/AnchorsMargins.json",
+				"DateInputExample": "code_samples/DateInputExample.json",
+				"RangeInputExample": "code_samples/RangeInputExample.json",
+				"SignalHandling": "code_samples/SignalHandling.json",
+				"AnchorsFill": "code_samples/AnchorsFill.json",
+				"LazyActivityExample": "code_samples/LazyActivityExample.json",
+				"LoaderCodeLesson": "code_samples/LoaderCodeLesson.json",
+				"KeySelectLesson": "code_samples/KeySelectLesson.json",
+				"ColorInputExample": "code_samples/ColorInputExample.json",
+				"GamepadCodeLesson": "code_samples/GamepadCodeLesson.json",
+				"SignalArgsHandling": "code_samples/SignalArgsHandling.json",
+				"HoverMixinExample": "code_samples/HoverMixinExample.json",
+				"GamepadHandleLesson": "code_samples/GamepadHandleLesson.json",
+				"DrmExample": "code_samples/DrmExample.json",
+				"AnchorsCenter": "code_samples/AnchorsCenter.json",
+				"SystemExample": "code_samples/SystemExample.json",
+				"SignalTestItem": "code_samples/SignalTestItem.json",
+				"TextMixinExample": "code_samples/TextMixinExample.json",
+				"TransformTranslateExample": "code_samples/TransformTranslateExample.json",
+				"LayoutColumn": "code_samples/LayoutColumn.json",
+				"VideoPlayerSample": "code_samples/VideoPlayerSample.json",
+				"ImageMixinExample": "code_samples/ImageMixinExample.json",
+				"DragMixinDirectionLesson": "code_samples/DragMixinDirectionLesson.json",
+				"MainActivity": "code_samples/MainActivity.json",
+				"NextActivity": "code_samples/NextActivity.json",
+				"TextInputExample": "code_samples/TextInputExample.json",
+				"OverflowMixinExample": "code_samples/OverflowMixinExample.json",
+				"SearchInputExample": "code_samples/SearchInputExample.json",
+				"KeyPressLesson": "code_samples/KeyPressLesson.json",
+				"LayoutGrid": "code_samples/LayoutGrid.json",
+				"SimpleActivityExample": "code_samples/SimpleActivityExample.json",
+				"ProxyMessages": "code_samples/ProxyMessages.json"
+			}
+		},
+		"controls.core": {
+			"file": "controls.core.json",
+			"content": {
+				"PlaceholderFont": "controls.core/PlaceholderFont.json",
+				"Activity": "controls.core/Activity.json",
+				"Highlighter": "controls.core/Highlighter.json",
+				"Paddings": "controls.core/Paddings.json",
+				"SwapImage": "controls.core/SwapImage.json",
+				"LazyPageStack": "controls.core/LazyPageStack.json",
+				"ActivityManager": "controls.core/ActivityManager.json",
+				"FragmentActivity": "controls.core/FragmentActivity.json",
+				"AnimatedSprite": "controls.core/AnimatedSprite.json",
+				"LazyPage": "controls.core/LazyPage.json",
+				"Audio": "controls.core/Audio.json",
+				"Resource": "controls.core/Resource.json",
+				"Sprite": "controls.core/Sprite.json",
+				"BaseActivity": "controls.core/BaseActivity.json",
+				"RelativeSize": "controls.core/RelativeSize.json",
+				"LazyActivity": "controls.core/LazyActivity.json",
+				"JsonStorage": "controls.core/JsonStorage.json",
+				"DebugInfoPanel": "controls.core/DebugInfoPanel.json",
+				"PlaceHolder": "controls.core/PlaceHolder.json",
+				"RollerView": "controls.core/RollerView.json",
+				"DebugInfoItem": "controls.core/DebugInfoItem.json"
+			}
+		},
+		"controls.google": {
+			"file": "controls.google.json",
+			"content": {
+				"YouTube": "controls.google/YouTube.json",
+				"GoogleChart": "controls.google/GoogleChart.json"
+			}
+		},
+		"controls.input": {
+			"file": "controls.input.json",
+			"content": {
+				"TimeInput": "controls.input/TimeInput.json",
+				"CheckboxInput": "controls.input/CheckboxInput.json",
+				"BaseInput": "controls.input/BaseInput.json",
+				"ColorInput": "controls.input/ColorInput.json",
+				"TextAreaInput": "controls.input/TextAreaInput.json",
+				"FileInput": "controls.input/FileInput.json",
+				"EmailInput": "controls.input/EmailInput.json",
+				"NumberInput": "controls.input/NumberInput.json",
+				"TextInput": "controls.input/TextInput.json",
+				"RangeInput": "controls.input/RangeInput.json",
+				"DateInput": "controls.input/DateInput.json",
+				"SearchInput": "controls.input/SearchInput.json"
+			}
+		},
+		"controls.mixins": {
+			"file": "controls.mixins.json",
+			"content": {
+				"UserSelectMixin": "controls.mixins/UserSelectMixin.json",
+				"TitleMixin": "controls.mixins/TitleMixin.json",
+				"OverflowMixin": "controls.mixins/OverflowMixin.json",
+				"DropZoneMixin": "controls.mixins/DropZoneMixin.json",
+				"CssMixin": "controls.mixins/CssMixin.json",
+				"ImageMixin": "controls.mixins/ImageMixin.json",
+				"PositionMixin": "controls.mixins/PositionMixin.json",
+				"TextMixin": "controls.mixins/TextMixin.json",
+				"DoubleClickMixin": "controls.mixins/DoubleClickMixin.json",
+				"OrientationMixin": "controls.mixins/OrientationMixin.json",
+				"SwipeMixin": "controls.mixins/SwipeMixin.json",
+				"DragMixin": "controls.mixins/DragMixin.json",
+				"BaseMixin": "controls.mixins/BaseMixin.json",
+				"RightClickMixin": "controls.mixins/RightClickMixin.json",
+				"FocusOnHoverMixin": "controls.mixins/FocusOnHoverMixin.json"
+			}
+		},
+		"controls.pure": {
+			"file": "controls.pure.json",
+			"content": {
+				"ScrollBar": "controls.pure/ScrollBar.json",
+				"Subtitles": "controls.pure/Subtitles.json",
+				"TextEdit": "controls.pure/TextEdit.json",
+				"Checkbox": "controls.pure/Checkbox.json",
+				"ProgressBar": "controls.pure/ProgressBar.json"
+			}
+		},
+		"controls.pure.keyboard": {
+			"file": "controls.pure.keyboard.json",
+			"content": {
+				"KeyboardDelegate": "controls.pure.keyboard/KeyboardDelegate.json",
+				"KeyboardModel": "controls.pure.keyboard/KeyboardModel.json",
+				"KeyboardRowModel": "controls.pure.keyboard/KeyboardRowModel.json",
+				"Keyboard": "controls.pure.keyboard/Keyboard.json"
+			}
+		},
+		"controls.svg": {
+			"file": "controls.svg.json",
+			"content": {
+				"Path": "controls.svg/Path.json",
+				"SvgContainer": "controls.svg/SvgContainer.json",
+				"SvgBase": "controls.svg/SvgBase.json",
+				"Line": "controls.svg/Line.json",
+				"ExternalPath": "controls.svg/ExternalPath.json"
+			}
+		},
+		"controls.vk": {
+			"file": "controls.vk.json",
+			"content": {
+				"VkApi": "controls.vk/VkApi.json",
+				"VkWallModel": "controls.vk/VkWallModel.json"
+			}
+		},
+		"controls.web": {
+			"file": "controls.web.json",
+			"content": {
+				"HoverClickMixin": "controls.web/HoverClickMixin.json",
+				"LanguageSelector": "controls.web/LanguageSelector.json",
+				"WebItem": "controls.web/WebItem.json",
+				"Script": "controls.web/Script.json",
+				"Navbar": "controls.web/Navbar.json",
+				"TopMenu": "controls.web/TopMenu.json",
+				"H1": "controls.web/H1.json",
+				"CodeHighlighter": "controls.web/CodeHighlighter.json",
+				"Box": "controls.web/Box.json",
+				"WebLink": "controls.web/WebLink.json",
+				"H6": "controls.web/H6.json",
+				"H2": "controls.web/H2.json",
+				"DropDown": "controls.web/DropDown.json",
+				"ResizableBox": "controls.web/ResizableBox.json",
+				"GifSpinner": "controls.web/GifSpinner.json",
+				"Canvas": "controls.web/Canvas.json",
+				"MobileMenuButton": "controls.web/MobileMenuButton.json",
+				"LanguageSwitcher": "controls.web/LanguageSwitcher.json",
+				"MaterialIcon": "controls.web/MaterialIcon.json",
+				"Spinner": "controls.web/Spinner.json",
+				"H4": "controls.web/H4.json",
+				"IFrame": "controls.web/IFrame.json",
+				"Sharer": "controls.web/Sharer.json",
+				"Button": "controls.web/Button.json",
+				"EllipsisText": "controls.web/EllipsisText.json",
+				"NavbarItem": "controls.web/NavbarItem.json",
+				"H5": "controls.web/H5.json",
+				"NavigationMenuButton": "controls.web/NavigationMenuButton.json",
+				"SwipeMenu": "controls.web/SwipeMenu.json",
+				"H3": "controls.web/H3.json"
+			}
+		},
+		"controls.web.api": {
+			"file": "controls.web.api.json",
+			"content": {
+				"Method": "controls.web.api/Method.json",
+				"Rest": "controls.web.api/Rest.json"
+			}
+		},
+		"controls.web.audio": {
+			"file": "controls.web.audio.json",
+			"content": {
+				"AudioBuffer": "controls.web.audio/AudioBuffer.json",
+				"Oscillator": "controls.web.audio/Oscillator.json"
+			}
+		},
+		"controls.web.gl": {
+			"file": "controls.web.gl.json",
+			"content": {
+				"VertexShader": "controls.web.gl/VertexShader.json",
+				"FragmentShader": "controls.web.gl/FragmentShader.json",
+				"Program": "controls.web.gl/Program.json",
+				"GlContext": "controls.web.gl/GlContext.json",
+				"Shader": "controls.web.gl/Shader.json"
+			}
+		},
+		"controls.web.tables": {
+			"file": "controls.web.tables.json",
+			"content": {
+				"TableElement": "controls.web.tables/TableElement.json",
+				"TableBody": "controls.web.tables/TableBody.json",
+				"Table": "controls.web.tables/Table.json",
+				"TableHeaderCell": "controls.web.tables/TableHeaderCell.json",
+				"TableCell": "controls.web.tables/TableCell.json",
+				"TableRow": "controls.web.tables/TableRow.json",
+				"TableHeader": "controls.web.tables/TableHeader.json",
+				"TableFooter": "controls.web.tables/TableFooter.json"
+			}
+		},
+		"controls.web.websocket": {
+			"file": "controls.web.websocket.json",
+			"content": {
+				"WebSocketServer": "controls.web.websocket/WebSocketServer.json",
+				"WebSocketClient": "controls.web.websocket/WebSocketClient.json"
+			}
+		},
+		"controls.yandex": {
+			"file": "controls.yandex.json",
+			"content": {
+				"YandexMap": "controls.yandex/YandexMap.json"
+			}
+		},
+		"core": {
+			"file": "core.json",
+			"content": {
+				"Repeater": "core/Repeater.json",
+				"HoverMixin": "core/HoverMixin.json",
+				"BaseLayout": "core/BaseLayout.json",
+				"Layout": "core/Layout.json",
+				"MousePressMixin": "core/MousePressMixin.json",
+				"RAIIEventEmitter": "core/RAIIEventEmitter.json",
+				"Timer": "core/Timer.json",
+				"MouseArea": "core/MouseArea.json",
+				"MouseMoveMixin": "core/MouseMoveMixin.json",
+				"ScrollView": "core/ScrollView.json",
+				"Request": "core/Request.json",
+				"BaseView": "core/BaseView.json",
+				"Anchors": "core/Anchors.json",
+				"ColorAnimation": "core/ColorAnimation.json",
+				"ListView": "core/ListView.json",
+				"EventEmitter": "core/EventEmitter.json",
+				"Model": "core/Model.json",
+				"Radius": "core/Radius.json",
+				"Animation": "core/Animation.json",
+				"Transform": "core/Transform.json",
+				"Binding": "core/Binding.json",
+				"Device": "core/Device.json",
+				"Grid": "core/Grid.json",
+				"Effects": "core/Effects.json",
+				"Context": "core/Context.json",
+				"SequentialAnimation": "core/SequentialAnimation.json",
+				"VideoPlayer": "core/VideoPlayer.json",
+				"System": "core/System.json",
+				"Item": "core/Item.json",
+				"BaseViewContent": "core/BaseViewContent.json",
+				"GridView": "core/GridView.json",
+				"PageStack": "core/PageStack.json",
+				"BorderSide": "core/BorderSide.json",
+				"Rectangle": "core/Rectangle.json",
+				"GamepadManager": "core/GamepadManager.json",
+				"Location": "core/Location.json",
+				"GradientStop": "core/GradientStop.json",
+				"Connection": "core/Connection.json",
+				"WheelMixin": "core/WheelMixin.json",
+				"Text": "core/Text.json",
+				"Row": "core/Row.json",
+				"Shadow": "core/Shadow.json",
+				"Gamepad": "core/Gamepad.json",
+				"Object": "core/Object.json",
+				"Image": "core/Image.json",
+				"Border": "core/Border.json",
+				"ClickMixin": "core/ClickMixin.json",
+				"Column": "core/Column.json",
+				"Font": "core/Font.json",
+				"PropertyStorage": "core/PropertyStorage.json",
+				"ListModel": "core/ListModel.json",
+				"LocalStorage": "core/LocalStorage.json",
+				"Loader": "core/Loader.json",
+				"Gradient": "core/Gradient.json",
+				"ProxyModel": "core/ProxyModel.json"
+			}
+		},
+		"html5": {
+			"file": "html5.json",
+			"content": {
+				"Stylesheet": "html5/Stylesheet.json"
+			}
+		},
+		"lessons": {
+			"file": "lessons.json",
+			"content": {
+				"Lesson": "lessons/Lesson.json",
+				"GamepadLesson": "lessons/GamepadLesson.json",
+				"EffectsLesson": "lessons/EffectsLesson.json",
+				"InputsLesson": "lessons/InputsLesson.json",
+				"LayoutsLesson": "lessons/LayoutsLesson.json",
+				"DrmLesson": "lessons/DrmLesson.json",
+				"ActivityLesson": "lessons/ActivityLesson.json",
+				"FocusLesson": "lessons/FocusLesson.json",
+				"KeyboardLesson": "lessons/KeyboardLesson.json",
+				"SignalLesson": "lessons/SignalLesson.json",
+				"BasicLesson": "lessons/BasicLesson.json",
+				"SpriteLesson": "lessons/SpriteLesson.json",
+				"ViewAndModelsLesson": "lessons/ViewAndModelsLesson.json",
+				"LocalizationLesson": "lessons/LocalizationLesson.json",
+				"VideoPlayerLesson": "lessons/VideoPlayerLesson.json",
+				"AnchorsLesson": "lessons/AnchorsLesson.json",
+				"TransformLesson": "lessons/TransformLesson.json",
+				"MixinLesson": "lessons/MixinLesson.json",
+				"GlobalsLesson": "lessons/GlobalsLesson.json",
+				"LoaderLesson": "lessons/LoaderLesson.json"
+			}
+		},
+		"src": {
+			"file": "src.json",
+			"content": {
+				"PageColumn": "src/PageColumn.json",
+				"KeyValueView": "src/KeyValueView.json",
+				"Lessons": "src/Lessons.json",
+				"MainH2": "src/MainH2.json",
+				"LeftMenu": "src/LeftMenu.json",
+				"P": "src/P.json",
+				"SearchPanel": "src/SearchPanel.json",
+				"CodeExample": "src/CodeExample.json",
+				"SearchResults": "src/SearchResults.json",
+				"Head": "src/Head.json",
+				"StateButton": "src/StateButton.json",
+				"SiteActivity": "src/SiteActivity.json",
+				"PathPageColumn": "src/PathPageColumn.json",
+				"DocKeyValueView": "src/DocKeyValueView.json",
+				"MenuItem": "src/MenuItem.json",
+				"SectionHead": "src/SectionHead.json",
+				"DescriptionText": "src/DescriptionText.json",
+				"Docs": "src/Docs.json",
+				"HowtoText": "src/HowtoText.json",
+				"RectangleExample": "src/RectangleExample.json",
+				"PlatformImage": "src/PlatformImage.json",
+				"HashPageColumn": "src/HashPageColumn.json",
+				"ContentColumn": "src/ContentColumn.json",
+				"HistoryPage": "src/HistoryPage.json",
+				"MainText": "src/MainText.json",
+				"Download": "src/Download.json",
+				"ColorTheme": "src/ColorTheme.json",
+				"MainP": "src/MainP.json",
+				"GettingStarted": "src/GettingStarted.json",
+				"DocViewer": "src/DocViewer.json",
+				"DescriptionPanel": "src/DescriptionPanel.json",
+				"BigButton": "src/BigButton.json",
+				"Main": "src/Main.json"
+			}
+		}
+	}
 }

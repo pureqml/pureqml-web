@@ -1,14 +1,10 @@
 {
-    "content": {
-        "Properties": {
-            "icon": {
-                "defaultValue": "", 
-                "internal": "false", 
-                "text": "", 
-                "type": "string"
-            }
-        }
-    }, 
-    "name": "src.PlatformImage", 
-    "text": ""
+	"name": "src.PlatformImage",
+	"text": "",
+
+	"content": {
+		"Properties": {
+			"icon": { "text": "", "internal": false, "type": "string", "defaultValue": "" }
+		}
+	}
 }

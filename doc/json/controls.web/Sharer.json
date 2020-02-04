@@ -1,30 +1,16 @@
 {
-    "content": {
-        "Methods": {
-            "onSocailNetworkChanged": {
-                "internal": "true", 
-                "text": ""
-            }, 
-            "open": {
-                "internal": "false", 
-                "params": [], 
-                "text": "load URL"
-            }, 
-            "redirect": {
-                "internal": "false", 
-                "params": [], 
-                "text": "set location to corresponded URL"
-            }
-        }, 
-        "Properties": {
-            "url": {
-                "defaultValue": "", 
-                "internal": "false", 
-                "text": "URL you want to share", 
-                "type": "string"
-            }
-        }
-    }, 
-    "name": "controls.web.Sharer", 
-    "text": "object for sharing URL in corresponded social network"
+	"name": "controls.web.Sharer",
+	"text": "object for sharing URL in corresponded social network",
+
+	"content": {
+		"Properties": {
+			"url": { "text": "URL you want to share", "internal": false, "type": "string", "defaultValue": "" }
+		},
+
+		"Methods": {
+			"onSocailNetworkChanged": { "text": "", "internal": true },
+			"open": { "text": "load URL", "params": [], "internal": false },
+			"redirect": { "text": "set location to corresponded URL", "params": [], "internal": false }
+		}
+	}
 }

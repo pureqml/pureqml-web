@@ -1,21 +1,14 @@
 {
-    "content": {
-        "Methods": {
-            "onCompleted": {
-                "internal": "true", 
-                "params": [], 
-                "text": "@private"
-            }
-        }, 
-        "Properties": {
-            "rules": {
-                "defaultValue": "", 
-                "internal": "false", 
-                "text": "", 
-                "type": "string"
-            }
-        }
-    }, 
-    "name": "controls.mixins.CssMixin", 
-    "text": "@private"
+	"name": "controls.mixins.CssMixin",
+	"text": "@private",
+
+	"content": {
+		"Properties": {
+			"rules": { "text": "", "internal": false, "type": "string", "defaultValue": "" }
+		},
+
+		"Methods": {
+			"onCompleted": { "text": "@private", "params": [], "internal": true }
+		}
+	}
 }

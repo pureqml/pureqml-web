@@ -1,34 +1,20 @@
 {
-    "content": {
-        "Methods": {
-            "switchCase": {
-                "internal": "false", 
-                "text": ""
-            }, 
-            "switchLanguage": {
-                "internal": "false", 
-                "text": ""
-            }
-        }, 
-        "Properties": {
-            "currentRow": {
-                "defaultValue": "", 
-                "internal": "false", 
-                "text": "", 
-                "type": "int"
-            }
-        }, 
-        "Signals": {
-            "backspase": {
-                "internal": "false", 
-                "text": ""
-            }, 
-            "keySelected": {
-                "internal": "false", 
-                "text": ""
-            }
-        }
-    }, 
-    "name": "controls.pure.keyboard.Keyboard", 
-    "text": ""
+	"name": "controls.pure.keyboard.Keyboard",
+	"text": "",
+
+	"content": {
+		"Properties": {
+			"currentRow": { "text": "", "internal": false, "type": "int", "defaultValue": "" }
+		},
+
+		"Signals": {
+			"keySelected": { "text": "", "internal": false },
+			"backspase": { "text": "", "internal": false }
+		},
+
+		"Methods": {
+			"switchLanguage": { "text": "", "internal": false },
+			"switchCase": { "text": "", "internal": false }
+		}
+	}
 }

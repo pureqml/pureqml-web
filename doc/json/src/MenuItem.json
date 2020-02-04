@@ -1,26 +1,15 @@
 {
-    "content": {
-        "Methods": {
-            "onClicked": {
-                "internal": "false", 
-                "text": ""
-            }
-        }, 
-        "Properties": {
-            "page": {
-                "defaultValue": "", 
-                "internal": "false", 
-                "text": "", 
-                "type": "string"
-            }, 
-            "text": {
-                "defaultValue": "", 
-                "internal": "false", 
-                "text": "", 
-                "type": "string"
-            }
-        }
-    }, 
-    "name": "src.MenuItem", 
-    "text": ""
+	"name": "src.MenuItem",
+	"text": "",
+
+	"content": {
+		"Properties": {
+			"text": { "text": "", "internal": false, "type": "string", "defaultValue": "" },
+			"page": { "text": "", "internal": false, "type": "string", "defaultValue": "" }
+		},
+
+		"Methods": {
+			"onClicked": { "text": "", "internal": false }
+		}
+	}
 }

@@ -1,59 +1,21 @@
 {
-    "content": {
-        "Methods": {
-            "hide": {
-                "internal": "false", 
-                "text": ""
-            }, 
-            "onCompleted": {
-                "internal": "true", 
-                "text": ""
-            }, 
-            "show": {
-                "internal": "false", 
-                "text": ""
-            }
-        }, 
-        "Properties": {
-            "hideable": {
-                "defaultValue": "true", 
-                "internal": "false", 
-                "text": "", 
-                "type": "bool"
-            }, 
-            "innerArea": {
-                "defaultValue": "Item", 
-                "internal": "false", 
-                "ref": "qmlcore.core/Item", 
-                "text": "", 
-                "type": "Item"
-            }, 
-            "intPos": {
-                "defaultValue": "0", 
-                "internal": "false", 
-                "text": "", 
-                "type": "int"
-            }, 
-            "openWidth": {
-                "defaultValue": "280", 
-                "internal": "false", 
-                "text": "", 
-                "type": "int"
-            }, 
-            "shiftX": {
-                "defaultValue": "", 
-                "internal": "false", 
-                "text": "", 
-                "type": "int"
-            }, 
-            "xDuration": {
-                "defaultValue": "350", 
-                "internal": "false", 
-                "text": "", 
-                "type": "int"
-            }
-        }
-    }, 
-    "name": "controls.web.SwipeMenu", 
-    "text": ""
+	"name": "controls.web.SwipeMenu",
+	"text": "",
+
+	"content": {
+		"Properties": {
+			"innerArea": { "text": "", "ref": "qmlcore.core/Item", "internal": false, "type": "Item", "defaultValue": "Item" },
+			"hideable": { "text": "", "internal": false, "type": "bool", "defaultValue": "true" },
+			"xDuration": { "text": "", "internal": false, "type": "int", "defaultValue": "350" },
+			"openWidth": { "text": "", "internal": false, "type": "int", "defaultValue": "280" },
+			"intPos": { "text": "", "internal": false, "type": "int", "defaultValue": "0" },
+			"shiftX": { "text": "", "internal": false, "type": "int", "defaultValue": "" }
+		},
+
+		"Methods": {
+			"show": { "text": "", "internal": false },
+			"hide": { "text": "", "internal": false },
+			"onCompleted": { "text": "", "internal": true }
+		}
+	}
 }

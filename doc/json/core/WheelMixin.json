@@ -1,31 +1,16 @@
 {
-    "content": {
-        "Methods": {
-            "_bindWheel": {
-                "internal": "true", 
-                "params": [], 
-                "text": "@private"
-            }, 
-            "constructor": {
-                "internal": "true", 
-                "params": [], 
-                "text": "@private"
-            }, 
-            "onEnabledChanged": {
-                "internal": "true", 
-                "params": [], 
-                "text": "@private"
-            }
-        }, 
-        "Properties": {
-            "enabled": {
-                "defaultValue": "true", 
-                "internal": "false", 
-                "text": "enable mixin", 
-                "type": "bool"
-            }
-        }
-    }, 
-    "name": "core.WheelMixin", 
-    "text": "mixin for wheel events"
+	"name": "core.WheelMixin",
+	"text": "mixin for wheel events",
+
+	"content": {
+		"Properties": {
+			"enabled": { "text": "enable mixin", "internal": false, "type": "bool", "defaultValue": "true" }
+		},
+
+		"Methods": {
+			"constructor": { "text": "@private", "params": [], "internal": true },
+			"_bindWheel": { "text": "@private", "params": [], "internal": true },
+			"onEnabledChanged": { "text": "@private", "params": [], "internal": true }
+		}
+	}
 }

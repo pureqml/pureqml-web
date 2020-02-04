@@ -1,12 +1,10 @@
 {
-    "content": {
-        "Methods": {
-            "onClicked": {
-                "internal": "false", 
-                "text": ""
-            }
-        }
-    }, 
-    "name": "code_samples.VideoPlayerSample", 
-    "text": ""
+	"name": "code_samples.VideoPlayerSample",
+	"text": "",
+
+	"content": {
+		"Methods": {
+			"onClicked": { "text": "", "internal": false }
+		}
+	}
 }

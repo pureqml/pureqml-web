@@ -1,47 +1,19 @@
 {
-    "content": {
-        "Methods": {
-            "getTag": {
-                "internal": "true", 
-                "params": [], 
-                "text": "@private returns tag for corresponding element"
-            }, 
-            "onAutoPlayChanged": {
-                "internal": "true", 
-                "params": [], 
-                "text": "@private"
-            }, 
-            "onSourceChanged": {
-                "internal": "true", 
-                "params": [], 
-                "text": "@private"
-            }, 
-            "pause": {
-                "internal": "false", 
-                "params": [], 
-                "text": "pause current audio"
-            }, 
-            "play": {
-                "internal": "false", 
-                "params": [], 
-                "text": "play current audio"
-            }
-        }, 
-        "Properties": {
-            "autoPlay": {
-                "defaultValue": "true", 
-                "internal": "false", 
-                "text": "autoplay flag, audio start to play immediately after source was changed", 
-                "type": "bool"
-            }, 
-            "source": {
-                "defaultValue": "", 
-                "internal": "false", 
-                "text": "audio source URL", 
-                "type": "string"
-            }
-        }
-    }, 
-    "name": "controls.core.Audio", 
-    "text": "COntrol for playing audio"
+	"name": "controls.core.Audio",
+	"text": "COntrol for playing audio",
+
+	"content": {
+		"Properties": {
+			"autoPlay": { "text": "autoplay flag, audio start to play immediately after source was changed", "internal": false, "type": "bool", "defaultValue": "true" },
+			"source": { "text": "audio source URL", "internal": false, "type": "string", "defaultValue": "" }
+		},
+
+		"Methods": {
+			"onSourceChanged": { "text": "@private", "params": [], "internal": true },
+			"play": { "text": "play current audio", "params": [], "internal": false },
+			"pause": { "text": "pause current audio", "params": [], "internal": false },
+			"onAutoPlayChanged": { "text": "@private", "params": [], "internal": true },
+			"getTag": { "text": "@private returns tag for corresponding element", "params": [], "internal": true }
+		}
+	}
 }

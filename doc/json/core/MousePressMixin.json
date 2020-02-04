@@ -1,37 +1,17 @@
 {
-    "content": {
-        "Methods": {
-            "_bindPress": {
-                "internal": "true", 
-                "params": [], 
-                "text": "@private"
-            }, 
-            "constructor": {
-                "internal": "true", 
-                "params": [], 
-                "text": "@private"
-            }, 
-            "onEnabledChanged": {
-                "internal": "true", 
-                "params": [], 
-                "text": "@private"
-            }
-        }, 
-        "Properties": {
-            "enabled": {
-                "defaultValue": "true", 
-                "internal": "false", 
-                "text": "enable/disable mixin", 
-                "type": "bool"
-            }, 
-            "pressed": {
-                "defaultValue": "", 
-                "internal": "false", 
-                "text": "true if any buttons pressed", 
-                "type": "bool"
-            }
-        }
-    }, 
-    "name": "core.MousePressMixin", 
-    "text": "this mixin provides mouse press events handling"
+	"name": "core.MousePressMixin",
+	"text": "this mixin provides mouse press events handling",
+
+	"content": {
+		"Properties": {
+			"enabled": { "text": "enable/disable mixin", "internal": false, "type": "bool", "defaultValue": "true" },
+			"pressed": { "text": "true if any buttons pressed", "internal": false, "type": "bool", "defaultValue": "" }
+		},
+
+		"Methods": {
+			"constructor": { "text": "@private", "params": [], "internal": true },
+			"_bindPress": { "text": "@private", "params": [], "internal": true },
+			"onEnabledChanged": { "text": "@private", "params": [], "internal": true }
+		}
+	}
 }

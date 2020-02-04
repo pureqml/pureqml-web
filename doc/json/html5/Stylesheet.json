@@ -1,28 +1,14 @@
 {
-    "content": {
-        "Methods": {
-            "addRule": {
-                "internal": "false", 
-                "text": ""
-            }, 
-            "allocateClass": {
-                "internal": "false", 
-                "text": ""
-            }, 
-            "constructor": {
-                "internal": "true", 
-                "text": ""
-            }, 
-            "mangleRule": {
-                "internal": "false", 
-                "text": ""
-            }, 
-            "mangleSelector": {
-                "internal": "false", 
-                "text": ""
-            }
-        }
-    }, 
-    "name": "html5.Stylesheet", 
-    "text": ""
+	"name": "html5.Stylesheet",
+	"text": "",
+
+	"content": {
+		"Methods": {
+			"constructor": { "text": "", "internal": true },
+			"allocateClass": { "text": "", "internal": false },
+			"mangleSelector": { "text": "", "internal": false },
+			"mangleRule": { "text": "", "internal": false },
+			"addRule": { "text": "", "internal": false }
+		}
+	}
 }

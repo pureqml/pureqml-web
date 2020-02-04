@@ -1,20 +1,11 @@
 {
-    "content": {
-        "Properties": {
-            "label": {
-                "defaultValue": "", 
-                "internal": "false", 
-                "text": "", 
-                "type": "string"
-            }, 
-            "value": {
-                "defaultValue": "", 
-                "internal": "false", 
-                "text": "", 
-                "type": "string"
-            }
-        }
-    }, 
-    "name": "controls.core.DebugInfoItem", 
-    "text": ""
+	"name": "controls.core.DebugInfoItem",
+	"text": "",
+
+	"content": {
+		"Properties": {
+			"label": { "text": "", "internal": false, "type": "string", "defaultValue": "" },
+			"value": { "text": "", "internal": false, "type": "string", "defaultValue": "" }
+		}
+	}
 }

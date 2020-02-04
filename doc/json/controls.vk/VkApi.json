@@ -1,77 +1,13 @@
 {
-    "content": {
-        "Methods": {
-            "vkMethodRequest": {
-                "internal": "false", 
-                "params": [
-                    {
-                        "name": "method", 
-                        "text": "vk API method name", 
-                        "type": "string"
-                    }, 
-                    {
-                        "name": "callback", 
-                        "text": "request done callback function", 
-                        "type": "function"
-                    }, 
-                    {
-                        "name": "settings", 
-                        "text": "additional query params", 
-                        "type": "Object"
-                    }
-                ], 
-                "text": "\tcall vk API method function"
-            }, 
-            "wallGet": {
-                "internal": "false", 
-                "params": [
-                    {
-                        "name": "callback", 
-                        "text": "request done callback function", 
-                        "type": "function"
-                    }, 
-                    {
-                        "name": "settings", 
-                        "text": "additional query params", 
-                        "type": "Object"
-                    }
-                ], 
-                "text": "\tcall vk API 'wall.get' method function"
-            }, 
-            "wallGetComments": {
-                "internal": "false", 
-                "params": [
-                    {
-                        "name": "callback", 
-                        "text": "request done callback function", 
-                        "type": "function"
-                    }, 
-                    {
-                        "name": "settings", 
-                        "text": "additional query params", 
-                        "type": "Object"
-                    }
-                ], 
-                "text": "\tcall vk API 'wall.getComments' method function"
-            }, 
-            "wallSearch": {
-                "internal": "false", 
-                "params": [
-                    {
-                        "name": "callback", 
-                        "text": "request done callback function", 
-                        "type": "function"
-                    }, 
-                    {
-                        "name": "settings", 
-                        "text": "additional query params", 
-                        "type": "Object"
-                    }
-                ], 
-                "text": "\tcall vk API 'wall.search' method function"
-            }
-        }
-    }, 
-    "name": "controls.vk.VkApi", 
-    "text": "vkontakte API object"
+	"name": "controls.vk.VkApi",
+	"text": "vkontakte API object",
+
+	"content": {
+		"Methods": {
+			"wallGet": { "text": "call vk API 'wall.get' method function", "params": [{ "name": "callback", "type": "function", "text": "request done callback function" }, { "name": "settings", "type": "Object", "text": "additional query params" }], "internal": false },
+			"wallSearch": { "text": "call vk API 'wall.search' method function", "params": [{ "name": "callback", "type": "function", "text": "request done callback function" }, { "name": "settings", "type": "Object", "text": "additional query params" }], "internal": false },
+			"wallGetComments": { "text": "call vk API 'wall.getComments' method function", "params": [{ "name": "callback", "type": "function", "text": "request done callback function" }, { "name": "settings", "type": "Object", "text": "additional query params" }], "internal": false },
+			"vkMethodRequest": { "text": "call vk API method function", "params": [{ "name": "method", "type": "string", "text": "vk API method name" }, { "name": "callback", "type": "function", "text": "request done callback function" }, { "name": "settings", "type": "Object", "text": "additional query params" }], "internal": false }
+		}
+	}
 }

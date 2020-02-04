@@ -1,13 +1,10 @@
 {
-    "content": {
-        "Methods": {
-            "stopPropagation": {
-                "internal": "false", 
-                "params": [], 
-                "text": "Base object for all mixins"
-            }
-        }
-    }, 
-    "name": "controls.mixins.BaseMixin", 
-    "text": "Base object for all mixins"
+	"name": "controls.mixins.BaseMixin",
+	"text": "Base object for all mixins",
+
+	"content": {
+		"Methods": {
+			"stopPropagation": { "text": "Base object for all mixins", "params": [], "internal": false }
+		}
+	}
 }

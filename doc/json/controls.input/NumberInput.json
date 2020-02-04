@@ -1,54 +1,21 @@
 {
-    "content": {
-        "Methods": {
-            "constructor": {
-                "internal": "true", 
-                "text": ""
-            }, 
-            "onMaxChanged": {
-                "internal": "true", 
-                "text": ""
-            }, 
-            "onMinChanged": {
-                "internal": "true", 
-                "text": ""
-            }, 
-            "onStepChanged": {
-                "internal": "true", 
-                "text": ""
-            }, 
-            "onValueChanged": {
-                "internal": "true", 
-                "text": ""
-            }
-        }, 
-        "Properties": {
-            "max": {
-                "defaultValue": "", 
-                "internal": "false", 
-                "text": "maximum number value", 
-                "type": "float"
-            }, 
-            "min": {
-                "defaultValue": "", 
-                "internal": "false", 
-                "text": "minimum number value", 
-                "type": "float"
-            }, 
-            "step": {
-                "defaultValue": "", 
-                "internal": "false", 
-                "text": "number step value", 
-                "type": "float"
-            }, 
-            "value": {
-                "defaultValue": "", 
-                "internal": "false", 
-                "text": "number value", 
-                "type": "float"
-            }
-        }
-    }, 
-    "name": "controls.input.NumberInput", 
-    "text": "number input"
+	"name": "controls.input.NumberInput",
+	"text": "number input",
+
+	"content": {
+		"Properties": {
+			"max": { "text": "maximum number value", "internal": false, "type": "float", "defaultValue": "" },
+			"min": { "text": "minimum number value", "internal": false, "type": "float", "defaultValue": "" },
+			"step": { "text": "number step value", "internal": false, "type": "float", "defaultValue": "" },
+			"value": { "text": "number value", "internal": false, "type": "float", "defaultValue": "" }
+		},
+
+		"Methods": {
+			"onMinChanged": { "text": "", "internal": true },
+			"onMaxChanged": { "text": "", "internal": true },
+			"onStepChanged": { "text": "", "internal": true },
+			"onValueChanged": { "text": "", "internal": true },
+			"constructor": { "text": "", "internal": true }
+		}
+	}
 }

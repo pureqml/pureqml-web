@@ -1,22 +1,15 @@
 {
-    "content": {
-        "Alias Properties": {
-            "icon": {
-                "internal": "false", 
-                "text": "material icon name"
-            }, 
-            "size": {
-                "internal": "false", 
-                "text": "material icon size"
-            }
-        }, 
-        "Methods": {
-            "constructor": {
-                "internal": "true", 
-                "text": ""
-            }
-        }
-    }, 
-    "name": "controls.web.MaterialIcon", 
-    "text": "google material icon control"
+	"name": "controls.web.MaterialIcon",
+	"text": "google material icon control",
+
+	"content": {
+		"Alias Properties": {
+			"icon": { "text": "material icon name", "internal": false },
+			"size": { "text": "material icon size", "internal": false }
+		},
+
+		"Methods": {
+			"constructor": { "text": "", "internal": true }
+		}
+	}
 }

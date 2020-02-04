@@ -1,19 +1,14 @@
 {
-    "content": {
-        "Methods": {
-            "constructor": {
-                "internal": "true", 
-                "params": [], 
-                "text": "@private"
-            }
-        }, 
-        "Signals": {
-            "filesAdded": {
-                "internal": "false", 
-                "text": "any file dropped inside DropZone signal"
-            }
-        }
-    }, 
-    "name": "controls.mixins.DropZoneMixin", 
-    "text": "Object for loading files via drag'n'drop"
+	"name": "controls.mixins.DropZoneMixin",
+	"text": "Object for loading files via drag'n'drop",
+
+	"content": {
+		"Signals": {
+			"filesAdded": { "text": "any file dropped inside DropZone signal", "internal": false }
+		},
+
+		"Methods": {
+			"constructor": { "text": "@private", "params": [], "internal": true }
+		}
+	}
 }

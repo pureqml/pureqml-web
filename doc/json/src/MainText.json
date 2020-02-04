@@ -1,5 +1,7 @@
 {
-    "content": {}, 
-    "name": "src.MainText", 
-    "text": ""
+	"name": "src.MainText",
+	"text": "",
+
+	"content": {
+	}
 }

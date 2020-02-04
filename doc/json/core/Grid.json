@@ -1,74 +1,25 @@
 {
-    "content": {
-        "Methods": {
-            "_layout": {
-                "internal": "true", 
-                "params": [], 
-                "text": "@private"
-            }, 
-            "addChild": {
-                "internal": "true", 
-                "params": [], 
-                "text": "@private"
-            }, 
-            "focusDown": {
-                "internal": "false", 
-                "text": ""
-            }, 
-            "focusUp": {
-                "internal": "false", 
-                "text": ""
-            }, 
-            "getPosition": {
-                "internal": "false", 
-                "text": ""
-            }, 
-            "onFlowChanged": {
-                "internal": "true", 
-                "params": [], 
-                "text": "@private"
-            }, 
-            "onHeightChanged": {
-                "internal": "true", 
-                "params": [], 
-                "text": "@private"
-            }, 
-            "onHorizontalSpacingChanged": {
-                "internal": "true", 
-                "text": ""
-            }, 
-            "onKeyPressed": {
-                "internal": "true", 
-                "params": [], 
-                "text": "@private"
-            }, 
-            "onWidthChanged": {
-                "internal": "true", 
-                "params": [], 
-                "text": "@private"
-            }
-        }, 
-        "Properties": {
-            "horizontalSpacing": {
-                "defaultValue": "", 
-                "internal": "false", 
-                "text": "horizontal spacing between rows, overrides regular spacing, pixels", 
-                "type": "int"
-            }, 
-            "rowsCount": {
-                "defaultValue": "", 
-                "internal": "false", 
-                "text": "read-only property, represents number of row in a grid", 
-                "type": "int"
-            }, 
-            "verticalSpacing": {
-                "defaultValue": "", 
-                "internal": "false", 
-                "text": "vertical spacing between columns, overrides regular spacing, pixels", 
-                "type": "int"
-            }
-        }
-    }, 
-    "name": "core.Grid", 
-    "text": "Grid is a usefull way to automatically position its children"
+	"name": "core.Grid",
+	"text": "Grid is a usefull way to automatically position its children",
+
+	"content": {
+		"Properties": {
+			"horizontalSpacing": { "text": "horizontal spacing between rows, overrides regular spacing, pixels", "internal": false, "type": "int", "defaultValue": "" },
+			"verticalSpacing": { "text": "vertical spacing between columns, overrides regular spacing, pixels", "internal": false, "type": "int", "defaultValue": "" },
+			"rowsCount": { "text": "read-only property, represents number of row in a grid", "internal": false, "type": "int", "defaultValue": "" }
+		},
+
+		"Methods": {
+			"onWidthChanged": { "text": "@private", "params": [], "internal": true },
+			"onHeightChanged": { "text": "@private", "params": [], "internal": true },
+			"onFlowChanged": { "text": "@private", "params": [], "internal": true },
+			"getPosition": { "text": "", "internal": false },
+			"focusUp": { "text": "", "internal": false },
+			"focusDown": { "text": "", "internal": false },
+			"onKeyPressed": { "text": "@private", "params": [], "internal": true },
+			"_layout": { "text": "@private", "params": [], "internal": true },
+			"addChild": { "text": "@private", "params": [], "internal": true },
+			"onHorizontalSpacingChanged": { "text": "", "internal": true }
+		}
+	}
 }

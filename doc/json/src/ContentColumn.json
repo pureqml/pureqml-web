@@ -1,18 +1,14 @@
 {
-    "content": {
-        "Methods": {
-            "onCompleted": {
-                "internal": "true", 
-                "text": ""
-            }
-        }, 
-        "Signals": {
-            "fillMenu": {
-                "internal": "false", 
-                "text": ""
-            }
-        }
-    }, 
-    "name": "src.ContentColumn", 
-    "text": ""
+	"name": "src.ContentColumn",
+	"text": "",
+
+	"content": {
+		"Signals": {
+			"fillMenu": { "text": "", "internal": false }
+		},
+
+		"Methods": {
+			"onCompleted": { "text": "", "internal": true }
+		}
+	}
 }

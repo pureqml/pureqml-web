@@ -1,48 +1,19 @@
 {
-    "content": {
-        "Methods": {
-            "_bindHover": {
-                "internal": "true", 
-                "params": [], 
-                "text": "@private"
-            }, 
-            "constructor": {
-                "internal": "true", 
-                "params": [], 
-                "text": "@private"
-            }, 
-            "onCursorChanged": {
-                "internal": "true", 
-                "params": [], 
-                "text": "@private"
-            }, 
-            "onEnabledChanged": {
-                "internal": "true", 
-                "params": [], 
-                "text": "@private"
-            }
-        }, 
-        "Properties": {
-            "cursor": {
-                "defaultValue": "", 
-                "internal": "false", 
-                "text": "mouse cursor", 
-                "type": "string"
-            }, 
-            "enabled": {
-                "defaultValue": "true", 
-                "internal": "false", 
-                "text": "enable/disable mixin", 
-                "type": "bool"
-            }, 
-            "value": {
-                "defaultValue": "", 
-                "internal": "false", 
-                "text": "is 'true' if item if hovered, 'false' otherwise", 
-                "type": "bool"
-            }
-        }
-    }, 
-    "name": "core.HoverMixin", 
-    "text": "this mixin provides mouse hover events handling"
+	"name": "core.HoverMixin",
+	"text": "this mixin provides mouse hover events handling",
+
+	"content": {
+		"Properties": {
+			"value": { "text": "is 'true' if item if hovered, 'false' otherwise", "internal": false, "type": "bool", "defaultValue": "" },
+			"enabled": { "text": "enable/disable mixin", "internal": false, "type": "bool", "defaultValue": "true" },
+			"cursor": { "text": "mouse cursor", "internal": false, "type": "string", "defaultValue": "" }
+		},
+
+		"Methods": {
+			"constructor": { "text": "@private", "params": [], "internal": true },
+			"onCursorChanged": { "text": "@private", "params": [], "internal": true },
+			"_bindHover": { "text": "@private", "params": [], "internal": true },
+			"onEnabledChanged": { "text": "@private", "params": [], "internal": true }
+		}
+	}
 }

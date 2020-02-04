@@ -1,48 +1,19 @@
 {
-    "content": {
-        "Methods": {
-            "onRecursiveVisibleChanged": {
-                "internal": "true", 
-                "text": ""
-            }, 
-            "onSampleChanged": {
-                "internal": "true", 
-                "text": ""
-            }
-        }, 
-        "Properties": {
-            "codeHeight": {
-                "defaultValue": "300", 
-                "internal": "false", 
-                "text": "", 
-                "type": "int"
-            }, 
-            "codeWidth": {
-                "defaultValue": "300", 
-                "internal": "false", 
-                "text": "", 
-                "type": "int"
-            }, 
-            "exampleHeight": {
-                "defaultValue": "300", 
-                "internal": "false", 
-                "text": "", 
-                "type": "int"
-            }, 
-            "exampleWidth": {
-                "defaultValue": "300", 
-                "internal": "false", 
-                "text": "", 
-                "type": "int"
-            }, 
-            "sample": {
-                "defaultValue": "", 
-                "internal": "false", 
-                "text": "", 
-                "type": "Item"
-            }
-        }
-    }, 
-    "name": "src.CodeExample", 
-    "text": ""
+	"name": "src.CodeExample",
+	"text": "",
+
+	"content": {
+		"Properties": {
+			"codeWidth": { "text": "", "internal": false, "type": "int", "defaultValue": "300" },
+			"codeHeight": { "text": "", "internal": false, "type": "int", "defaultValue": "300" },
+			"exampleWidth": { "text": "", "internal": false, "type": "int", "defaultValue": "300" },
+			"exampleHeight": { "text": "", "internal": false, "type": "int", "defaultValue": "300" },
+			"sample": { "text": "", "internal": false, "type": "Item", "defaultValue": "" }
+		},
+
+		"Methods": {
+			"onSampleChanged": { "text": "", "internal": true },
+			"onRecursiveVisibleChanged": { "text": "", "internal": true }
+		}
+	}
 }

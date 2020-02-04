@@ -1,12 +1,10 @@
 {
-    "content": {
-        "Methods": {
-            "onClicked": {
-                "internal": "false", 
-                "text": ""
-            }
-        }
-    }, 
-    "name": "code_samples.TranslationTextExample", 
-    "text": ""
+	"name": "code_samples.TranslationTextExample",
+	"text": "",
+
+	"content": {
+		"Methods": {
+			"onClicked": { "text": "", "internal": false }
+		}
+	}
 }

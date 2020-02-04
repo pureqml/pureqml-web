@@ -1,46 +1,18 @@
 {
-    "content": {
-        "Methods": {
-            "connectOn": {
-                "internal": "false", 
-                "text": ""
-            }, 
-            "constructor": {
-                "internal": "true", 
-                "params": [], 
-                "text": "@private"
-            }, 
-            "discard": {
-                "internal": "false", 
-                "text": ""
-            }, 
-            "emit": {
-                "internal": "false", 
-                "text": ""
-            }, 
-            "emitWithArgs": {
-                "internal": "false", 
-                "text": ""
-            }, 
-            "on": {
-                "internal": "false", 
-                "text": ""
-            }, 
-            "removeAllListeners": {
-                "internal": "false", 
-                "text": ""
-            }, 
-            "removeAllOn": {
-                "internal": "true", 
-                "params": [], 
-                "text": "@private removes all on(signal) connections"
-            }, 
-            "removeListener": {
-                "internal": "false", 
-                "text": ""
-            }
-        }
-    }, 
-    "name": "core.EventEmitter", 
-    "text": "@private"
+	"name": "core.EventEmitter",
+	"text": "@private",
+
+	"content": {
+		"Methods": {
+			"constructor": { "text": "@private", "params": [], "internal": true },
+			"removeAllOn": { "text": "@private removes all on(signal) connections", "params": [], "internal": true },
+			"discard": { "text": "", "internal": false },
+			"on": { "text": "", "internal": false },
+			"connectOn": { "text": "", "internal": false },
+			"emit": { "text": "", "internal": false },
+			"emitWithArgs": { "text": "", "internal": false },
+			"removeAllListeners": { "text": "", "internal": false },
+			"removeListener": { "text": "", "internal": false }
+		}
+	}
 }

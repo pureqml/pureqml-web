@@ -1,24 +1,13 @@
 {
-    "content": {
-        "Methods": {
-            "attachShader": {
-                "internal": "false", 
-                "text": ""
-            }, 
-            "constructor": {
-                "internal": "true", 
-                "text": ""
-            }, 
-            "create": {
-                "internal": "false", 
-                "text": ""
-            }, 
-            "linkProgram": {
-                "internal": "false", 
-                "text": ""
-            }
-        }
-    }, 
-    "name": "controls.web.gl.Program", 
-    "text": ""
+	"name": "controls.web.gl.Program",
+	"text": "",
+
+	"content": {
+		"Methods": {
+			"constructor": { "text": "", "internal": true },
+			"attachShader": { "text": "", "internal": false },
+			"linkProgram": { "text": "", "internal": false },
+			"create": { "text": "", "internal": false }
+		}
+	}
 }

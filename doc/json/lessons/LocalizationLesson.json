@@ -1,5 +1,7 @@
 {
-    "content": {}, 
-    "name": "lessons.LocalizationLesson", 
-    "text": ""
+	"name": "lessons.LocalizationLesson",
+	"text": "",
+
+	"content": {
+	}
 }
