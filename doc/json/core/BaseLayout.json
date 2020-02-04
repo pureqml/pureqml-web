@@ -1,31 +1,115 @@
 {
-	"name": "core.BaseLayout",
-	"text": "base class for BaseView and Layout",
-
-	"content": {
-		"Properties": {
-			"count": { "text": "number of children elements", "internal": false, "type": "int", "defaultValue": "" },
-			"trace": { "text": "output debug info in logs: layouts, item positioning", "internal": false, "type": "bool", "defaultValue": "" },
-			"spacing": { "text": "spacing between adjanced items, pixels", "internal": false, "type": "int", "defaultValue": "" },
-			"currentIndex": { "text": "index of current focused item", "internal": false, "type": "int", "defaultValue": "" },
-			"contentWidth": { "text": "content width", "internal": false, "type": "int", "defaultValue": "" },
-			"contentHeight": { "text": "content height", "internal": false, "type": "int", "defaultValue": "" },
-			"keyNavigationWraps": { "text": "key navigation wraps from first to last and vise versa", "internal": false, "type": "bool", "defaultValue": "" },
-			"handleNavigationKeys": { "text": "handle navigation keys, move focus", "internal": false, "type": "bool", "defaultValue": "" },
-			"layoutDelay": { "text": "<0 - end of the tick (default), 0 - request animation frame, >0 - delay in ms", "internal": false, "type": "int", "defaultValue": "- 1" },
-			"prerenderDelay": { "text": "<0 - end of the tick (default), 0 - request animation frame, >0 - delay in ms", "internal": false, "type": "int", "defaultValue": "- 1" },
-			"offlineLayout": { "text": "layout delegates even if view's invisible", "internal": false, "type": "bool", "defaultValue": "" }
-		},
-
-		"Methods": {
-			"constructor": { "text": "@private", "params": [], "internal": true },
-			"_attach": { "text": "@private", "params": [], "internal": true },
-			"_scheduleLayout": { "text": "@private", "params": [], "internal": true },
-			"_doLayout": { "text": "@private", "params": [], "internal": true },
-			"_doLayoutNP": { "text": "@private", "params": [], "internal": true },
-			"_processUpdates": { "text": "@private", "params": [], "internal": true },
-			"onSpacingChanged": { "text": "", "internal": true },
-			"onCompleted": { "text": "@private", "params": [], "internal": true }
-		}
-	}
+    "content": {
+        "Methods": {
+            "_attach": {
+                "internal": "true", 
+                "params": [], 
+                "text": "@private"
+            }, 
+            "_doLayout": {
+                "internal": "true", 
+                "params": [], 
+                "text": "@private"
+            }, 
+            "_doLayoutNP": {
+                "internal": "true", 
+                "params": [], 
+                "text": "@private"
+            }, 
+            "_processUpdates": {
+                "internal": "true", 
+                "params": [], 
+                "text": "@private"
+            }, 
+            "_scheduleLayout": {
+                "internal": "true", 
+                "params": [], 
+                "text": "@private"
+            }, 
+            "constructor": {
+                "internal": "true", 
+                "params": [], 
+                "text": "@private"
+            }, 
+            "onCompleted": {
+                "internal": "true", 
+                "params": [], 
+                "text": "@private"
+            }, 
+            "onSpacingChanged": {
+                "internal": "true", 
+                "text": ""
+            }
+        }, 
+        "Properties": {
+            "contentHeight": {
+                "defaultValue": "", 
+                "internal": "false", 
+                "text": "content height", 
+                "type": "int"
+            }, 
+            "contentWidth": {
+                "defaultValue": "", 
+                "internal": "false", 
+                "text": "content width", 
+                "type": "int"
+            }, 
+            "count": {
+                "defaultValue": "", 
+                "internal": "false", 
+                "text": "number of children elements", 
+                "type": "int"
+            }, 
+            "currentIndex": {
+                "defaultValue": "", 
+                "internal": "false", 
+                "text": "index of current focused item", 
+                "type": "int"
+            }, 
+            "handleNavigationKeys": {
+                "defaultValue": "", 
+                "internal": "false", 
+                "text": "handle navigation keys, move focus", 
+                "type": "bool"
+            }, 
+            "keyNavigationWraps": {
+                "defaultValue": "", 
+                "internal": "false", 
+                "text": "key navigation wraps from first to last and vise versa", 
+                "type": "bool"
+            }, 
+            "layoutDelay": {
+                "defaultValue": "- 1", 
+                "internal": "false", 
+                "text": "<0 - end of the tick (default), 0 - request animation frame, >0 - delay in ms", 
+                "type": "int"
+            }, 
+            "offlineLayout": {
+                "defaultValue": "", 
+                "internal": "false", 
+                "text": "layout delegates even if view's invisible", 
+                "type": "bool"
+            }, 
+            "prerenderDelay": {
+                "defaultValue": "- 1", 
+                "internal": "false", 
+                "text": "<0 - end of the tick (default), 0 - request animation frame, >0 - delay in ms", 
+                "type": "int"
+            }, 
+            "spacing": {
+                "defaultValue": "", 
+                "internal": "false", 
+                "text": "spacing between adjanced items, pixels", 
+                "type": "int"
+            }, 
+            "trace": {
+                "defaultValue": "", 
+                "internal": "false", 
+                "text": "output debug info in logs: layouts, item positioning", 
+                "type": "bool"
+            }
+        }
+    }, 
+    "name": "core.BaseLayout", 
+    "text": "base class for BaseView and Layout"
 }

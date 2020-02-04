@@ -1,39 +1,139 @@
 {
-	"name": "core.Text",
-	"text": "item with text",
-
-	"content": {
-		"Properties": {
-			"text": { "text": "text to be displayed", "internal": false, "type": "string", "defaultValue": "" },
-			"color": { "text": "color of the text", "internal": false, "type": "color", "defaultValue": "" },
-			"shadow": { "text": "text shadow object", "internal": false, "type": "lazy", "defaultValue": "Shadow" },
-			"font": { "text": "text font object", "internal": false, "type": "lazy", "defaultValue": "Font" },
-			"paintedWidth": { "text": "real width of the text without any layout applied", "internal": false, "type": "int", "defaultValue": "" },
-			"paintedHeight": { "text": "real height of this text without any layout applied", "internal": false, "type": "int", "defaultValue": "" }
-		},
-
-		"Methods": {
-			"constructor": { "text": "@private", "params": [], "internal": true },
-			"getClass": { "text": "", "internal": false },
-			"registerStyle": { "text": "", "internal": false },
-			"_scheduleUpdateSize": { "text": "@private", "params": [], "internal": true },
-			"_setText": { "text": "@private", "params": [], "internal": true },
-			"onChanged": { "text": "@private", "params": [], "internal": true },
-			"on": { "text": "@private", "params": [], "internal": true },
-			"_updateStyle": { "text": "@private", "params": [], "internal": true },
-			"_enableSizeUpdate": { "text": "@private", "params": [], "internal": true },
-			"onRecursiveVisibleChanged": { "text": "", "internal": true },
-			"_updateSize": { "text": "@private", "params": [], "internal": true },
-			"_updateSizeImpl": { "text": "@private", "params": [], "internal": true },
-			"onTextChanged": { "text": "", "internal": true },
-			"onColorChanged": { "text": "", "internal": true },
-			"onWidthChanged": { "text": "", "internal": true },
-			"onHeightChanged": { "text": "", "internal": true },
-			"onVerticalAlignmentChanged": { "text": "", "internal": true },
-			"onHorizontalAlignmentChanged": { "text": "", "internal": true },
-			"_updateWSHandling": { "text": "", "internal": false },
-			"onTextFormatChanged": { "text": "", "internal": true },
-			"onWrapModeChanged": { "text": "", "internal": true }
-		}
-	}
+    "content": {
+        "Methods": {
+            "_enableSizeUpdate": {
+                "internal": "true", 
+                "params": [], 
+                "text": "@private"
+            }, 
+            "_scheduleUpdateSize": {
+                "internal": "true", 
+                "params": [], 
+                "text": "@private"
+            }, 
+            "_setText": {
+                "internal": "true", 
+                "params": [], 
+                "text": "@private"
+            }, 
+            "_updateSize": {
+                "internal": "true", 
+                "params": [], 
+                "text": "@private"
+            }, 
+            "_updateSizeImpl": {
+                "internal": "true", 
+                "params": [], 
+                "text": "@private"
+            }, 
+            "_updateStyle": {
+                "internal": "true", 
+                "params": [], 
+                "text": "@private"
+            }, 
+            "_updateWSHandling": {
+                "internal": "false", 
+                "text": ""
+            }, 
+            "constructor": {
+                "internal": "true", 
+                "params": [], 
+                "text": "@private"
+            }, 
+            "getClass": {
+                "internal": "false", 
+                "text": ""
+            }, 
+            "on": {
+                "internal": "true", 
+                "params": [], 
+                "text": "@private"
+            }, 
+            "onChanged": {
+                "internal": "true", 
+                "params": [], 
+                "text": "@private"
+            }, 
+            "onColorChanged": {
+                "internal": "true", 
+                "text": ""
+            }, 
+            "onHeightChanged": {
+                "internal": "true", 
+                "text": ""
+            }, 
+            "onHorizontalAlignmentChanged": {
+                "internal": "true", 
+                "text": ""
+            }, 
+            "onRecursiveVisibleChanged": {
+                "internal": "true", 
+                "text": ""
+            }, 
+            "onTextChanged": {
+                "internal": "true", 
+                "text": ""
+            }, 
+            "onTextFormatChanged": {
+                "internal": "true", 
+                "text": ""
+            }, 
+            "onVerticalAlignmentChanged": {
+                "internal": "true", 
+                "text": ""
+            }, 
+            "onWidthChanged": {
+                "internal": "true", 
+                "text": ""
+            }, 
+            "onWrapModeChanged": {
+                "internal": "true", 
+                "text": ""
+            }, 
+            "registerStyle": {
+                "internal": "false", 
+                "text": ""
+            }
+        }, 
+        "Properties": {
+            "color": {
+                "defaultValue": "", 
+                "internal": "false", 
+                "text": "color of the text", 
+                "type": "color"
+            }, 
+            "font": {
+                "defaultValue": "Font", 
+                "internal": "false", 
+                "text": "text font object", 
+                "type": "lazy"
+            }, 
+            "paintedHeight": {
+                "defaultValue": "", 
+                "internal": "false", 
+                "text": "real height of this text without any layout applied", 
+                "type": "int"
+            }, 
+            "paintedWidth": {
+                "defaultValue": "", 
+                "internal": "false", 
+                "text": "real width of the text without any layout applied", 
+                "type": "int"
+            }, 
+            "shadow": {
+                "defaultValue": "Shadow", 
+                "internal": "false", 
+                "text": "text shadow object", 
+                "type": "lazy"
+            }, 
+            "text": {
+                "defaultValue": "", 
+                "internal": "false", 
+                "text": "text to be displayed", 
+                "type": "string"
+            }
+        }
+    }, 
+    "name": "core.Text", 
+    "text": "item with text"
 }

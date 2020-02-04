@@ -1,18 +1,41 @@
 {
-	"name": "core.Gradient",
-	"text": "gradient filled area, just place GradientStop in its scope",
-
-	"content": {
-		"Properties": {
-			"angle": { "text": "angle for custom orientated gradient", "internal": false, "type": "real", "defaultValue": "" }
-		},
-
-		"Methods": {
-			"constructor": { "text": "@private", "params": [], "internal": true },
-			"addChild": { "text": "@private", "params": [], "internal": true },
-			"_updateStyle": { "text": "@private", "params": [], "internal": true },
-			"_getDeclaration": { "text": "@private", "params": [], "internal": true },
-			"onCompleted": { "text": "@private", "params": [], "internal": true }
-		}
-	}
+    "content": {
+        "Methods": {
+            "_getDeclaration": {
+                "internal": "true", 
+                "params": [], 
+                "text": "@private"
+            }, 
+            "_updateStyle": {
+                "internal": "true", 
+                "params": [], 
+                "text": "@private"
+            }, 
+            "addChild": {
+                "internal": "true", 
+                "params": [], 
+                "text": "@private"
+            }, 
+            "constructor": {
+                "internal": "true", 
+                "params": [], 
+                "text": "@private"
+            }, 
+            "onCompleted": {
+                "internal": "true", 
+                "params": [], 
+                "text": "@private"
+            }
+        }, 
+        "Properties": {
+            "angle": {
+                "defaultValue": "", 
+                "internal": "false", 
+                "text": "angle for custom orientated gradient", 
+                "type": "real"
+            }
+        }
+    }, 
+    "name": "core.Gradient", 
+    "text": "gradient filled area, just place GradientStop in its scope"
 }

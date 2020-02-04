@@ -1,12 +1,26 @@
 {
-	"name": "src.PathPageColumn",
-	"text": "",
-
-	"content": {
-		"Properties": {
-			"text": { "text": "", "internal": false, "type": "string", "defaultValue": "" },
-			"title": { "text": "", "internal": false, "type": "string", "defaultValue": "" },
-			"path": { "text": "", "internal": false, "type": "string", "defaultValue": "" }
-		}
-	}
+    "content": {
+        "Properties": {
+            "path": {
+                "defaultValue": "", 
+                "internal": "false", 
+                "text": "", 
+                "type": "string"
+            }, 
+            "text": {
+                "defaultValue": "", 
+                "internal": "false", 
+                "text": "", 
+                "type": "string"
+            }, 
+            "title": {
+                "defaultValue": "", 
+                "internal": "false", 
+                "text": "", 
+                "type": "string"
+            }
+        }
+    }, 
+    "name": "src.PathPageColumn", 
+    "text": ""
 }

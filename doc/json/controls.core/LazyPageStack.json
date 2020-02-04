@@ -1,14 +1,44 @@
 {
-	"name": "controls.core.LazyPageStack",
-	"text": "PageStack which pages will be initialized only after opening. Wrap your pages in LazyPage component.",
-
-	"content": {
-		"Methods": {
-			"_layout": { "text": "@private", "params": [], "internal": true },
-			"showPageByName": { "text": "show page by its name", "params": [{ "name": "name", "type": "string", "text": "page name" }], "internal": false },
-			"getPageIndexByName": { "text": "find page index in pagestack by its name", "params": [{ "name": "name", "type": "string", "text": "page name" }], "internal": false },
-			"setState": { "text": "", "internal": false },
-			"chooseCurrentPage": { "text": "set focus on current LazyPage content", "params": [], "internal": false }
-		}
-	}
+    "content": {
+        "Methods": {
+            "_layout": {
+                "internal": "true", 
+                "params": [], 
+                "text": "@private"
+            }, 
+            "chooseCurrentPage": {
+                "internal": "false", 
+                "params": [], 
+                "text": "set focus on current LazyPage content"
+            }, 
+            "getPageIndexByName": {
+                "internal": "false", 
+                "params": [
+                    {
+                        "name": "name", 
+                        "text": "page name", 
+                        "type": "string"
+                    }
+                ], 
+                "text": "\tfind page index in pagestack by its name"
+            }, 
+            "setState": {
+                "internal": "false", 
+                "text": ""
+            }, 
+            "showPageByName": {
+                "internal": "false", 
+                "params": [
+                    {
+                        "name": "name", 
+                        "text": "page name", 
+                        "type": "string"
+                    }
+                ], 
+                "text": "\tshow page by its name"
+            }
+        }
+    }, 
+    "name": "controls.core.LazyPageStack", 
+    "text": "PageStack which pages will be initialized only after opening. Wrap your pages in LazyPage component."
 }

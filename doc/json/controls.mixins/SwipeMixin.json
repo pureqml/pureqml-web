@@ -1,25 +1,57 @@
 {
-	"name": "controls.mixins.SwipeMixin",
-	"text": "mixin provides touch swipe events",
-
-	"content": {
-		"Properties": {
-			"enabled": { "text": "enable mixin flag", "internal": false, "type": "bool", "defaultValue": "true" }
-		},
-
-		"Signals": {
-			"touchMove": { "text": "@private", "internal": true },
-			"touchStart": { "text": "@private", "internal": true },
-			"verticalSwiped": { "text": "emitted on vertical swipe", "internal": false },
-			"horizontalSwiped": { "text": "emitted on horizontal swipe", "internal": false }
-		},
-
-		"Methods": {
-			"constructor": { "text": "", "internal": true },
-			"onEnabledChanged": { "text": "", "internal": true },
-			"_bindTouch": { "text": "@private", "params": [], "internal": true },
-			"onTouchStart": { "text": "@private", "params": [], "internal": true },
-			"onTouchMove": { "text": "@private", "params": [], "internal": true }
-		}
-	}
+    "content": {
+        "Methods": {
+            "_bindTouch": {
+                "internal": "true", 
+                "params": [], 
+                "text": "@private"
+            }, 
+            "constructor": {
+                "internal": "true", 
+                "text": ""
+            }, 
+            "onEnabledChanged": {
+                "internal": "true", 
+                "text": ""
+            }, 
+            "onTouchMove": {
+                "internal": "true", 
+                "params": [], 
+                "text": "@private"
+            }, 
+            "onTouchStart": {
+                "internal": "true", 
+                "params": [], 
+                "text": "@private"
+            }
+        }, 
+        "Properties": {
+            "enabled": {
+                "defaultValue": "true", 
+                "internal": "false", 
+                "text": "enable mixin flag", 
+                "type": "bool"
+            }
+        }, 
+        "Signals": {
+            "horizontalSwiped": {
+                "internal": "false", 
+                "text": "emitted on horizontal swipe"
+            }, 
+            "touchMove": {
+                "internal": "true", 
+                "text": "@private"
+            }, 
+            "touchStart": {
+                "internal": "true", 
+                "text": "@private"
+            }, 
+            "verticalSwiped": {
+                "internal": "false", 
+                "text": "emitted on vertical swipe"
+            }
+        }
+    }, 
+    "name": "controls.mixins.SwipeMixin", 
+    "text": "mixin provides touch swipe events"
 }

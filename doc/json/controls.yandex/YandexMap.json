@@ -1,19 +1,44 @@
 {
-	"name": "controls.yandex.YandexMap",
-	"text": "",
-
-	"content": {
-		"Properties": {
-			"centerLongitude": { "text": "", "internal": false, "type": "real", "defaultValue": "" },
-			"centerLatitude": { "text": "", "internal": false, "type": "real", "defaultValue": "" },
-			"zoom": { "text": "", "internal": false, "type": "int", "defaultValue": "" }
-		},
-
-		"Methods": {
-			"onCenterLongitudeChanged": { "text": "", "internal": true },
-			"constructor": { "text": "", "internal": true },
-			"_updateCenter": { "text": "", "internal": false },
-			"getUserLocation": { "text": "", "internal": false }
-		}
-	}
+    "content": {
+        "Methods": {
+            "_updateCenter": {
+                "internal": "false", 
+                "text": ""
+            }, 
+            "constructor": {
+                "internal": "true", 
+                "text": ""
+            }, 
+            "getUserLocation": {
+                "internal": "false", 
+                "text": ""
+            }, 
+            "onCenterLongitudeChanged": {
+                "internal": "true", 
+                "text": ""
+            }
+        }, 
+        "Properties": {
+            "centerLatitude": {
+                "defaultValue": "", 
+                "internal": "false", 
+                "text": "", 
+                "type": "real"
+            }, 
+            "centerLongitude": {
+                "defaultValue": "", 
+                "internal": "false", 
+                "text": "", 
+                "type": "real"
+            }, 
+            "zoom": {
+                "defaultValue": "", 
+                "internal": "false", 
+                "text": "", 
+                "type": "int"
+            }
+        }
+    }, 
+    "name": "controls.yandex.YandexMap", 
+    "text": ""
 }

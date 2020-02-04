@@ -1,16 +1,28 @@
 {
-	"name": "controls.web.tables.TableElement",
-	"text": "",
-
-	"content": {
-		"Properties": {
-			"text": { "text": "", "internal": false, "type": "string", "defaultValue": "" }
-		},
-
-		"Methods": {
-			"onTextChanged": { "text": "", "internal": true },
-			"onCompleted": { "text": "", "internal": true },
-			"registerStyle": { "text": "", "internal": false }
-		}
-	}
+    "content": {
+        "Methods": {
+            "onCompleted": {
+                "internal": "true", 
+                "text": ""
+            }, 
+            "onTextChanged": {
+                "internal": "true", 
+                "text": ""
+            }, 
+            "registerStyle": {
+                "internal": "false", 
+                "text": ""
+            }
+        }, 
+        "Properties": {
+            "text": {
+                "defaultValue": "", 
+                "internal": "false", 
+                "text": "", 
+                "type": "string"
+            }
+        }
+    }, 
+    "name": "controls.web.tables.TableElement", 
+    "text": ""
 }

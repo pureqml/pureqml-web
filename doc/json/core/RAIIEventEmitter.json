@@ -1,13 +1,28 @@
 {
-	"name": "core.RAIIEventEmitter",
-	"text": "@private",
-
-	"content": {
-		"Methods": {
-			"constructor": { "text": "@private", "params": [], "internal": true },
-			"on": { "text": "@private", "params": [], "internal": true },
-			"onListener": { "text": "@private", "params": [], "internal": true },
-			"removeAllListeners": { "text": "@private", "params": [], "internal": true }
-		}
-	}
+    "content": {
+        "Methods": {
+            "constructor": {
+                "internal": "true", 
+                "params": [], 
+                "text": "@private"
+            }, 
+            "on": {
+                "internal": "true", 
+                "params": [], 
+                "text": "@private"
+            }, 
+            "onListener": {
+                "internal": "true", 
+                "params": [], 
+                "text": "@private"
+            }, 
+            "removeAllListeners": {
+                "internal": "true", 
+                "params": [], 
+                "text": "@private"
+            }
+        }
+    }, 
+    "name": "core.RAIIEventEmitter", 
+    "text": "@private"
 }

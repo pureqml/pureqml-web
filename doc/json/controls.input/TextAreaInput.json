@@ -1,17 +1,33 @@
 {
-	"name": "controls.input.TextAreaInput",
-	"text": "returns tag for corresponding element",
-
-	"content": {
-		"Properties": {
-			"text": { "text": "", "internal": false, "type": "string", "defaultValue": "" }
-		},
-
-		"Methods": {
-			"onTextChanged": { "text": "", "internal": true },
-			"getTag": { "text": "returns tag for corresponding element", "params": [], "internal": false },
-			"registerStyle": { "text": "", "internal": false },
-			"constructor": { "text": "", "internal": true }
-		}
-	}
+    "content": {
+        "Methods": {
+            "constructor": {
+                "internal": "true", 
+                "text": ""
+            }, 
+            "getTag": {
+                "internal": "false", 
+                "params": [], 
+                "text": "returns tag for corresponding element"
+            }, 
+            "onTextChanged": {
+                "internal": "true", 
+                "text": ""
+            }, 
+            "registerStyle": {
+                "internal": "false", 
+                "text": ""
+            }
+        }, 
+        "Properties": {
+            "text": {
+                "defaultValue": "", 
+                "internal": "false", 
+                "text": "", 
+                "type": "string"
+            }
+        }
+    }, 
+    "name": "controls.input.TextAreaInput", 
+    "text": "returns tag for corresponding element"
 }

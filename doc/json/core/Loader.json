@@ -1,24 +1,57 @@
 {
-	"name": "core.Loader",
-	"text": "object that helps loading components dynamically",
-
-	"content": {
-		"Properties": {
-			"source": { "text": "component's URL", "internal": false, "type": "string", "defaultValue": "" },
-			"item": { "text": "item for storing requested component", "internal": false, "type": "Object", "defaultValue": "" }
-		},
-
-		"Signals": {
-			"loaded": { "text": "when requested component it loaded event signal", "internal": false }
-		},
-
-		"Methods": {
-			"discardItem": { "text": "@private", "params": [], "internal": true },
-			"discard": { "text": "@private", "params": [], "internal": true },
-			"onSourceChanged": { "text": "@internal", "params": [], "internal": true },
-			"_load": { "text": "@internal", "params": [], "internal": true },
-			"onRecursiveVisibleChanged": { "text": "", "internal": true },
-			"onCompleted": { "text": "@internal", "params": [], "internal": true }
-		}
-	}
+    "content": {
+        "Methods": {
+            "_load": {
+                "internal": "true", 
+                "params": [], 
+                "text": "@internal"
+            }, 
+            "discard": {
+                "internal": "true", 
+                "params": [], 
+                "text": "@private"
+            }, 
+            "discardItem": {
+                "internal": "true", 
+                "params": [], 
+                "text": "@private"
+            }, 
+            "onCompleted": {
+                "internal": "true", 
+                "params": [], 
+                "text": "@internal"
+            }, 
+            "onRecursiveVisibleChanged": {
+                "internal": "true", 
+                "text": ""
+            }, 
+            "onSourceChanged": {
+                "internal": "true", 
+                "params": [], 
+                "text": "@internal"
+            }
+        }, 
+        "Properties": {
+            "item": {
+                "defaultValue": "", 
+                "internal": "false", 
+                "text": "item for storing requested component", 
+                "type": "Object"
+            }, 
+            "source": {
+                "defaultValue": "", 
+                "internal": "false", 
+                "text": "component's URL", 
+                "type": "string"
+            }
+        }, 
+        "Signals": {
+            "loaded": {
+                "internal": "false", 
+                "text": "when requested component it loaded event signal"
+            }
+        }
+    }, 
+    "name": "core.Loader", 
+    "text": "object that helps loading components dynamically"
 }

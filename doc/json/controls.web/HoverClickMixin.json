@@ -1,26 +1,81 @@
 {
-	"name": "controls.web.HoverClickMixin",
-	"text": "this mixin provides mouse hover and click events handling",
-
-	"content": {
-		"Properties": {
-			"enabled": { "text": "enable/disable mixin", "internal": false, "type": "bool", "defaultValue": "true" },
-			"clickable": { "text": "", "internal": false, "type": "bool", "defaultValue": "true" },
-			"activeHoverEnabled": { "text": "", "internal": false, "type": "bool", "defaultValue": "false" },
-			"value": { "text": "", "internal": false, "type": "bool", "defaultValue": "" },
-			"activeHover": { "text": "", "internal": false, "type": "bool", "defaultValue": "false" },
-			"cursor": { "text": "cursor over the parent item type name", "internal": false, "type": "string", "defaultValue": "" }
-		},
-
-		"Methods": {
-			"constructor": { "text": "", "internal": true },
-			"onCursorChanged": { "text": "", "internal": true },
-			"_bindClick": { "text": "@private", "params": [], "internal": true },
-			"_bindHover": { "text": "@private", "params": [], "internal": true },
-			"_bindActiveHover": { "text": "@private", "params": [], "internal": true },
-			"onEnabledChanged": { "text": "", "internal": true },
-			"onClickableChanged": { "text": "", "internal": true },
-			"onActiveHoverEnabledChanged": { "text": "", "internal": true }
-		}
-	}
+    "content": {
+        "Methods": {
+            "_bindActiveHover": {
+                "internal": "true", 
+                "params": [], 
+                "text": "@private"
+            }, 
+            "_bindClick": {
+                "internal": "true", 
+                "params": [], 
+                "text": "@private"
+            }, 
+            "_bindHover": {
+                "internal": "true", 
+                "params": [], 
+                "text": "@private"
+            }, 
+            "constructor": {
+                "internal": "true", 
+                "text": ""
+            }, 
+            "onActiveHoverEnabledChanged": {
+                "internal": "true", 
+                "text": ""
+            }, 
+            "onClickableChanged": {
+                "internal": "true", 
+                "text": ""
+            }, 
+            "onCursorChanged": {
+                "internal": "true", 
+                "text": ""
+            }, 
+            "onEnabledChanged": {
+                "internal": "true", 
+                "text": ""
+            }
+        }, 
+        "Properties": {
+            "activeHover": {
+                "defaultValue": "false", 
+                "internal": "false", 
+                "text": "", 
+                "type": "bool"
+            }, 
+            "activeHoverEnabled": {
+                "defaultValue": "false", 
+                "internal": "false", 
+                "text": "", 
+                "type": "bool"
+            }, 
+            "clickable": {
+                "defaultValue": "true", 
+                "internal": "false", 
+                "text": "", 
+                "type": "bool"
+            }, 
+            "cursor": {
+                "defaultValue": "", 
+                "internal": "false", 
+                "text": "cursor over the parent item type name", 
+                "type": "string"
+            }, 
+            "enabled": {
+                "defaultValue": "true", 
+                "internal": "false", 
+                "text": "enable/disable mixin", 
+                "type": "bool"
+            }, 
+            "value": {
+                "defaultValue": "", 
+                "internal": "false", 
+                "text": "", 
+                "type": "bool"
+            }
+        }
+    }, 
+    "name": "controls.web.HoverClickMixin", 
+    "text": "this mixin provides mouse hover and click events handling"
 }

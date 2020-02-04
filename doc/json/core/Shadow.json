@@ -1,20 +1,54 @@
 {
-	"name": "core.Shadow",
-	"text": "provides shadow properties adjustment",
-
-	"content": {
-		"Properties": {
-			"x": { "text": "x coordinate", "internal": false, "type": "real", "defaultValue": "" },
-			"y": { "text": "y coordinate", "internal": false, "type": "real", "defaultValue": "" },
-			"color": { "text": "color of the shadow", "internal": false, "type": "Color", "defaultValue": "black" },
-			"blur": { "text": "applies a blur effect on the shadow", "internal": false, "type": "real", "defaultValue": "" },
-			"spread": { "text": "adjusts a spread distance of the shadow", "internal": false, "type": "real", "defaultValue": "" }
-		},
-
-		"Methods": {
-			"onXChanged": { "text": "", "internal": true },
-			"_empty": { "text": "@private", "params": [], "internal": true },
-			"_getFilterStyle": { "text": "@private", "params": [], "internal": true }
-		}
-	}
+    "content": {
+        "Methods": {
+            "_empty": {
+                "internal": "true", 
+                "params": [], 
+                "text": "@private"
+            }, 
+            "_getFilterStyle": {
+                "internal": "true", 
+                "params": [], 
+                "text": "@private"
+            }, 
+            "onXChanged": {
+                "internal": "true", 
+                "text": ""
+            }
+        }, 
+        "Properties": {
+            "blur": {
+                "defaultValue": "", 
+                "internal": "false", 
+                "text": "applies a blur effect on the shadow", 
+                "type": "real"
+            }, 
+            "color": {
+                "defaultValue": "black", 
+                "internal": "false", 
+                "text": "color of the shadow", 
+                "type": "Color"
+            }, 
+            "spread": {
+                "defaultValue": "", 
+                "internal": "false", 
+                "text": "adjusts a spread distance of the shadow", 
+                "type": "real"
+            }, 
+            "x": {
+                "defaultValue": "", 
+                "internal": "false", 
+                "text": "x coordinate", 
+                "type": "real"
+            }, 
+            "y": {
+                "defaultValue": "", 
+                "internal": "false", 
+                "text": "y coordinate", 
+                "type": "real"
+            }
+        }
+    }, 
+    "name": "core.Shadow", 
+    "text": "provides shadow properties adjustment"
 }

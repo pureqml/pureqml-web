@@ -1,14 +1,28 @@
 {
-	"name": "controls.web.Canvas",
-	"text": "",
-
-	"content": {
-		"Methods": {
-			"getTag": { "text": "", "internal": false },
-			"registerStyle": { "text": "", "internal": false },
-			"getContext": { "text": "", "internal": false },
-			"onWidthChanged": { "text": "", "internal": true },
-			"onHeightChanged": { "text": "", "internal": true }
-		}
-	}
+    "content": {
+        "Methods": {
+            "getContext": {
+                "internal": "false", 
+                "text": ""
+            }, 
+            "getTag": {
+                "internal": "false", 
+                "text": ""
+            }, 
+            "onHeightChanged": {
+                "internal": "true", 
+                "text": ""
+            }, 
+            "onWidthChanged": {
+                "internal": "true", 
+                "text": ""
+            }, 
+            "registerStyle": {
+                "internal": "false", 
+                "text": ""
+            }
+        }
+    }, 
+    "name": "controls.web.Canvas", 
+    "text": ""
 }

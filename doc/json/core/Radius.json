@@ -1,20 +1,52 @@
 {
-	"name": "core.Radius",
-	"text": "",
-
-	"content": {
-		"Properties": {
-			"radius": { "text": "radius for all corners", "internal": false, "type": "real", "defaultValue": "" },
-			"topLeft": { "text": "top left corner radius", "internal": false, "type": "real", "defaultValue": "" },
-			"topRight": { "text": "top right corner radius", "internal": false, "type": "real", "defaultValue": "" },
-			"bottomLeft": { "text": "bottom left corner radius", "internal": false, "type": "real", "defaultValue": "" },
-			"bottomRight": { "text": "bottom right corner radius", "internal": false, "type": "real", "defaultValue": "" }
-		},
-
-		"Methods": {
-			"prototypeConstructor": { "text": "", "internal": false },
-			"onRadiusUpdate": { "text": "", "internal": false },
-			"onCompleted": { "text": "", "internal": true }
-		}
-	}
+    "content": {
+        "Methods": {
+            "onCompleted": {
+                "internal": "true", 
+                "text": ""
+            }, 
+            "onRadiusUpdate": {
+                "internal": "false", 
+                "text": ""
+            }, 
+            "prototypeConstructor": {
+                "internal": "false", 
+                "text": ""
+            }
+        }, 
+        "Properties": {
+            "bottomLeft": {
+                "defaultValue": "", 
+                "internal": "false", 
+                "text": "bottom left corner radius", 
+                "type": "real"
+            }, 
+            "bottomRight": {
+                "defaultValue": "", 
+                "internal": "false", 
+                "text": "bottom right corner radius", 
+                "type": "real"
+            }, 
+            "radius": {
+                "defaultValue": "", 
+                "internal": "false", 
+                "text": "radius for all corners", 
+                "type": "real"
+            }, 
+            "topLeft": {
+                "defaultValue": "", 
+                "internal": "false", 
+                "text": "top left corner radius", 
+                "type": "real"
+            }, 
+            "topRight": {
+                "defaultValue": "", 
+                "internal": "false", 
+                "text": "top right corner radius", 
+                "type": "real"
+            }
+        }
+    }, 
+    "name": "core.Radius", 
+    "text": ""
 }

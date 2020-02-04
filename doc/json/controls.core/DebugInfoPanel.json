@@ -1,7 +1,5 @@
 {
-	"name": "controls.core.DebugInfoPanel",
-	"text": "panel with system info within (OS, platform, vendor, layout type etc.)",
-
-	"content": {
-	}
+    "content": {}, 
+    "name": "controls.core.DebugInfoPanel", 
+    "text": "panel with system info within (OS, platform, vendor, layout type etc.)"
 }

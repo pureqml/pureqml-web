@@ -1,7 +1,5 @@
 {
-	"name": "lessons.GamepadLesson",
-	"text": "",
-
-	"content": {
-	}
+    "content": {}, 
+    "name": "lessons.GamepadLesson", 
+    "text": ""
 }

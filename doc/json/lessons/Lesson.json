@@ -1,10 +1,14 @@
 {
-	"name": "lessons.Lesson",
-	"text": "",
-
-	"content": {
-		"Properties": {
-			"url": { "text": "", "internal": false, "type": "string", "defaultValue": "" }
-		}
-	}
+    "content": {
+        "Properties": {
+            "url": {
+                "defaultValue": "", 
+                "internal": "false", 
+                "text": "", 
+                "type": "string"
+            }
+        }
+    }, 
+    "name": "lessons.Lesson", 
+    "text": ""
 }

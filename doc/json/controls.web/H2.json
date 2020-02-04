@@ -1,11 +1,17 @@
 {
-	"name": "controls.web.H2",
-	"text": "returns tag for corresponding element",
-
-	"content": {
-		"Methods": {
-			"getTag": { "text": "returns tag for corresponding element", "params": [], "internal": false },
-			"registerStyle": { "text": "", "internal": false }
-		}
-	}
+    "content": {
+        "Methods": {
+            "getTag": {
+                "internal": "false", 
+                "params": [], 
+                "text": "returns tag for corresponding element"
+            }, 
+            "registerStyle": {
+                "internal": "false", 
+                "text": ""
+            }
+        }
+    }, 
+    "name": "controls.web.H2", 
+    "text": "returns tag for corresponding element"
 }

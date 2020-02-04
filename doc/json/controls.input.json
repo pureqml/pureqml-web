@@ -1,16 +1,16 @@
 {
-	"controls.input": {
-		"TimeInput": "controls.input/TimeInput.json",
-		"CheckboxInput": "controls.input/CheckboxInput.json",
-		"BaseInput": "controls.input/BaseInput.json",
-		"ColorInput": "controls.input/ColorInput.json",
-		"TextAreaInput": "controls.input/TextAreaInput.json",
-		"FileInput": "controls.input/FileInput.json",
-		"EmailInput": "controls.input/EmailInput.json",
-		"NumberInput": "controls.input/NumberInput.json",
-		"TextInput": "controls.input/TextInput.json",
-		"RangeInput": "controls.input/RangeInput.json",
-		"DateInput": "controls.input/DateInput.json",
-		"SearchInput": "controls.input/SearchInput.json"
-	}
+    "controls.input": {
+        "BaseInput": "controls.input/BaseInput.json", 
+        "CheckboxInput": "controls.input/CheckboxInput.json", 
+        "ColorInput": "controls.input/ColorInput.json", 
+        "DateInput": "controls.input/DateInput.json", 
+        "EmailInput": "controls.input/EmailInput.json", 
+        "FileInput": "controls.input/FileInput.json", 
+        "NumberInput": "controls.input/NumberInput.json", 
+        "RangeInput": "controls.input/RangeInput.json", 
+        "SearchInput": "controls.input/SearchInput.json", 
+        "TextAreaInput": "controls.input/TextAreaInput.json", 
+        "TextInput": "controls.input/TextInput.json", 
+        "TimeInput": "controls.input/TimeInput.json"
+    }
 }

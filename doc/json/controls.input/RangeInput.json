@@ -1,24 +1,74 @@
 {
-	"name": "controls.input.RangeInput",
-	"text": "range input",
-
-	"content": {
-		"Properties": {
-			"value": { "text": "current value", "internal": false, "type": "int", "defaultValue": "" },
-			"min": { "text": "minimal range value", "internal": false, "type": "int", "defaultValue": "0" },
-			"max": { "text": "maximum range value", "internal": false, "type": "int", "defaultValue": "100" },
-			"step": { "text": "range step", "internal": false, "type": "int", "defaultValue": "1" }
-		},
-
-		"Methods": {
-			"constructor": { "text": "@private", "params": [], "internal": true },
-			"onMinChanged": { "text": "@private", "params": [], "internal": true },
-			"onMaxChanged": { "text": "@private", "params": [], "internal": true },
-			"onStepChanged": { "text": "@private", "params": [], "internal": true },
-			"onOrientationChanged": { "text": "@private", "params": [], "internal": true },
-			"getTag": { "text": "returns tag for corresponding element", "params": [], "internal": false },
-			"_getValue": { "text": "gets element native value", "params": [], "internal": false },
-			"_setValue": { "text": "sets element native value", "params": [], "internal": false }
-		}
-	}
+    "content": {
+        "Methods": {
+            "_getValue": {
+                "internal": "false", 
+                "params": [], 
+                "text": "gets element native value"
+            }, 
+            "_setValue": {
+                "internal": "false", 
+                "params": [], 
+                "text": "sets element native value"
+            }, 
+            "constructor": {
+                "internal": "true", 
+                "params": [], 
+                "text": "@private"
+            }, 
+            "getTag": {
+                "internal": "false", 
+                "params": [], 
+                "text": "returns tag for corresponding element"
+            }, 
+            "onMaxChanged": {
+                "internal": "true", 
+                "params": [], 
+                "text": "@private"
+            }, 
+            "onMinChanged": {
+                "internal": "true", 
+                "params": [], 
+                "text": "@private"
+            }, 
+            "onOrientationChanged": {
+                "internal": "true", 
+                "params": [], 
+                "text": "@private"
+            }, 
+            "onStepChanged": {
+                "internal": "true", 
+                "params": [], 
+                "text": "@private"
+            }
+        }, 
+        "Properties": {
+            "max": {
+                "defaultValue": "100", 
+                "internal": "false", 
+                "text": "maximum range value", 
+                "type": "int"
+            }, 
+            "min": {
+                "defaultValue": "0", 
+                "internal": "false", 
+                "text": "minimal range value", 
+                "type": "int"
+            }, 
+            "step": {
+                "defaultValue": "1", 
+                "internal": "false", 
+                "text": "range step", 
+                "type": "int"
+            }, 
+            "value": {
+                "defaultValue": "", 
+                "internal": "false", 
+                "text": "current value", 
+                "type": "int"
+            }
+        }
+    }, 
+    "name": "controls.input.RangeInput", 
+    "text": "range input"
 }

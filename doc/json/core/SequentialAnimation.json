@@ -1,19 +1,42 @@
 {
-	"name": "core.SequentialAnimation",
-	"text": "",
-
-	"content": {
-		"Properties": {
-			"running": { "text": "", "internal": false, "type": "bool", "defaultValue": "false" },
-			"trace": { "text": "", "internal": false, "type": "bool", "defaultValue": "false" }
-		},
-
-		"Methods": {
-			"constructor": { "text": "", "internal": true },
-			"onRunningChanged": { "text": "", "internal": true },
-			"_start": { "text": "", "internal": false },
-			"_onAnimationRunningChanged": { "text": "", "internal": false },
-			"addChild": { "text": "", "internal": false }
-		}
-	}
+    "content": {
+        "Methods": {
+            "_onAnimationRunningChanged": {
+                "internal": "false", 
+                "text": ""
+            }, 
+            "_start": {
+                "internal": "false", 
+                "text": ""
+            }, 
+            "addChild": {
+                "internal": "false", 
+                "text": ""
+            }, 
+            "constructor": {
+                "internal": "true", 
+                "text": ""
+            }, 
+            "onRunningChanged": {
+                "internal": "true", 
+                "text": ""
+            }
+        }, 
+        "Properties": {
+            "running": {
+                "defaultValue": "false", 
+                "internal": "false", 
+                "text": "", 
+                "type": "bool"
+            }, 
+            "trace": {
+                "defaultValue": "false", 
+                "internal": "false", 
+                "text": "", 
+                "type": "bool"
+            }
+        }
+    }, 
+    "name": "core.SequentialAnimation", 
+    "text": ""
 }

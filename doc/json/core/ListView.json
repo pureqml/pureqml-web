@@ -1,20 +1,61 @@
 {
-	"name": "core.ListView",
-	"text": "single direction (vertical or horizontal) oriented view",
-
-	"content": {
-		"Methods": {
-			"constructor": { "text": "", "internal": true },
-			"move": { "text": "@private", "params": [], "internal": true },
-			"positionViewAtIndex": { "text": "@private", "params": [], "internal": true },
-			"onKeyPressed": { "text": "@private", "params": [], "internal": true },
-			"getItemPosition": { "text": "@private", "params": [], "internal": true },
-			"indexAt": { "text": "@private", "params": [], "internal": true },
-			"_layout": { "text": "fixme: override model update api to make sizes stable", "params": [], "internal": false },
-			"_createDelegate": { "text": "@private creates delegate in given item slot", "params": [], "internal": true },
-			"_updateOverflow": { "text": "@private", "params": [], "internal": true },
-			"onOrientationChanged": { "text": "@private", "params": [], "internal": true },
-			"onCompleted": { "text": "", "internal": true }
-		}
-	}
+    "content": {
+        "Methods": {
+            "_createDelegate": {
+                "internal": "true", 
+                "params": [], 
+                "text": "@private creates delegate in given item slot"
+            }, 
+            "_layout": {
+                "internal": "false", 
+                "params": [], 
+                "text": "fixme: override model update api to make sizes stable"
+            }, 
+            "_updateOverflow": {
+                "internal": "true", 
+                "params": [], 
+                "text": "@private"
+            }, 
+            "constructor": {
+                "internal": "true", 
+                "text": ""
+            }, 
+            "getItemPosition": {
+                "internal": "true", 
+                "params": [], 
+                "text": "@private"
+            }, 
+            "indexAt": {
+                "internal": "true", 
+                "params": [], 
+                "text": "@private"
+            }, 
+            "move": {
+                "internal": "true", 
+                "params": [], 
+                "text": "@private"
+            }, 
+            "onCompleted": {
+                "internal": "true", 
+                "text": ""
+            }, 
+            "onKeyPressed": {
+                "internal": "true", 
+                "params": [], 
+                "text": "@private"
+            }, 
+            "onOrientationChanged": {
+                "internal": "true", 
+                "params": [], 
+                "text": "@private"
+            }, 
+            "positionViewAtIndex": {
+                "internal": "true", 
+                "params": [], 
+                "text": "@private"
+            }
+        }
+    }, 
+    "name": "core.ListView", 
+    "text": "single direction (vertical or horizontal) oriented view"
 }

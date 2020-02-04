@@ -1,21 +1,64 @@
 {
-	"name": "controls.core.RollerView",
-	"text": "@private",
-
-	"content": {
-		"Methods": {
-			"constructor": { "text": "", "internal": true },
-			"positionViewAtIndex": { "text": "@private", "params": [], "internal": true },
-			"_getCurrentIndex": { "text": "@private", "params": [], "internal": true },
-			"_createDelegate": { "text": "@private creates delegate in given item slot", "params": [], "internal": true },
-			"_layout": { "text": "@private", "params": [], "internal": true },
-			"next": { "text": "@private", "params": [], "internal": true },
-			"prev": { "text": "@private", "params": [], "internal": true },
-			"onKeyPressed": { "text": "", "internal": false },
-			"_setContentOffset": { "text": "@private", "params": [], "internal": true },
-			"_scroll": { "text": "@private", "params": [], "internal": true },
-			"onOrientationChanged": { "text": "", "internal": true },
-			"onCurrentIndexChanged": { "text": "", "internal": true }
-		}
-	}
+    "content": {
+        "Methods": {
+            "_createDelegate": {
+                "internal": "true", 
+                "params": [], 
+                "text": "@private creates delegate in given item slot"
+            }, 
+            "_getCurrentIndex": {
+                "internal": "true", 
+                "params": [], 
+                "text": "@private"
+            }, 
+            "_layout": {
+                "internal": "true", 
+                "params": [], 
+                "text": "@private"
+            }, 
+            "_scroll": {
+                "internal": "true", 
+                "params": [], 
+                "text": "@private"
+            }, 
+            "_setContentOffset": {
+                "internal": "true", 
+                "params": [], 
+                "text": "@private"
+            }, 
+            "constructor": {
+                "internal": "true", 
+                "text": ""
+            }, 
+            "next": {
+                "internal": "true", 
+                "params": [], 
+                "text": "@private"
+            }, 
+            "onCurrentIndexChanged": {
+                "internal": "true", 
+                "text": ""
+            }, 
+            "onKeyPressed": {
+                "internal": "false", 
+                "text": ""
+            }, 
+            "onOrientationChanged": {
+                "internal": "true", 
+                "text": ""
+            }, 
+            "positionViewAtIndex": {
+                "internal": "true", 
+                "params": [], 
+                "text": "@private"
+            }, 
+            "prev": {
+                "internal": "true", 
+                "params": [], 
+                "text": "@private"
+            }
+        }
+    }, 
+    "name": "controls.core.RollerView", 
+    "text": "@private"
 }

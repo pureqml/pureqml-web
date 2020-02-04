@@ -1,14 +1,20 @@
 {
-	"name": "controls.input.EmailInput",
-	"text": "email input",
-
-	"content": {
-		"Properties": {
-			"valid": { "text": "is typed email valid or not flag", "internal": false, "type": "bool", "defaultValue": "" }
-		},
-
-		"Methods": {
-			"onTextChanged": { "text": "", "internal": true }
-		}
-	}
+    "content": {
+        "Methods": {
+            "onTextChanged": {
+                "internal": "true", 
+                "text": ""
+            }
+        }, 
+        "Properties": {
+            "valid": {
+                "defaultValue": "", 
+                "internal": "false", 
+                "text": "is typed email valid or not flag", 
+                "type": "bool"
+            }
+        }
+    }, 
+    "name": "controls.input.EmailInput", 
+    "text": "email input"
 }

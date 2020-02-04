@@ -1,15 +1,26 @@
 {
-	"name": "src.DocKeyValueView",
-	"text": "",
-
-	"content": {
-		"Properties": {
-			"shift": { "text": "", "internal": false, "type": "int", "defaultValue": "400" },
-			"wide": { "text": "", "internal": false, "type": "bool", "defaultValue": "${context.width} > 800" }
-		},
-
-		"Methods": {
-			"fill": { "text": "", "internal": false }
-		}
-	}
+    "content": {
+        "Methods": {
+            "fill": {
+                "internal": "false", 
+                "text": ""
+            }
+        }, 
+        "Properties": {
+            "shift": {
+                "defaultValue": "400", 
+                "internal": "false", 
+                "text": "", 
+                "type": "int"
+            }, 
+            "wide": {
+                "defaultValue": "${context.width} > 800", 
+                "internal": "false", 
+                "text": "", 
+                "type": "bool"
+            }
+        }
+    }, 
+    "name": "src.DocKeyValueView", 
+    "text": ""
 }

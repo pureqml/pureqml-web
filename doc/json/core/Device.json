@@ -1,29 +1,90 @@
 {
-	"name": "core.Device",
-	"text": "Object which contains device specific information like model name. MAC address etc.",
-
-	"content": {
-		"Properties": {
-			"macAddress": { "text": "device MAC address if its available for current platform", "internal": false, "type": "string", "defaultValue": "" },
-			"modelName": { "text": "device model name", "internal": false, "type": "string", "defaultValue": "" },
-			"deviceId": { "text": "unique device id or random generated id if its not supported", "internal": false, "type": "string", "defaultValue": "" },
-			"firmware": { "text": "firmware version", "internal": false, "type": "string", "defaultValue": "" },
-			"language": { "text": "device langgcode", "internal": false, "type": "string", "defaultValue": "" },
-			"country": { "text": "device country code", "internal": false, "type": "string", "defaultValue": "" },
-			"sdk": { "text": "SDK version", "internal": false, "type": "string", "defaultValue": "" },
-			"ip": { "text": "device IP address if its available", "internal": false, "type": "string", "defaultValue": "" },
-			"supportingUhd": { "text": "UHD (4K) supporting flag", "internal": false, "type": "bool", "defaultValue": "" },
-			"supportingHdr": { "text": "HDR supporting flag", "internal": false, "type": "bool", "defaultValue": "" },
-			"supporting3d": { "text": "3D Video supporting flag", "internal": false, "type": "bool", "defaultValue": "" }
-		},
-
-		"Signals": {
-			"propertyUpdated": { "text": "this signal is emited every time when one of the property was changed", "internal": false }
-		},
-
-		"Methods": {
-			"constructor": { "text": "", "internal": true },
-			"onSdkChanged": { "text": "", "internal": true }
-		}
-	}
+    "content": {
+        "Methods": {
+            "constructor": {
+                "internal": "true", 
+                "text": ""
+            }, 
+            "onSdkChanged": {
+                "internal": "true", 
+                "text": ""
+            }
+        }, 
+        "Properties": {
+            "country": {
+                "defaultValue": "", 
+                "internal": "false", 
+                "text": "device country code", 
+                "type": "string"
+            }, 
+            "deviceId": {
+                "defaultValue": "", 
+                "internal": "false", 
+                "text": "unique device id or random generated id if its not supported", 
+                "type": "string"
+            }, 
+            "firmware": {
+                "defaultValue": "", 
+                "internal": "false", 
+                "text": "firmware version", 
+                "type": "string"
+            }, 
+            "ip": {
+                "defaultValue": "", 
+                "internal": "false", 
+                "text": "device IP address if its available", 
+                "type": "string"
+            }, 
+            "language": {
+                "defaultValue": "", 
+                "internal": "false", 
+                "text": "device langgcode", 
+                "type": "string"
+            }, 
+            "macAddress": {
+                "defaultValue": "", 
+                "internal": "false", 
+                "text": "device MAC address if its available for current platform", 
+                "type": "string"
+            }, 
+            "modelName": {
+                "defaultValue": "", 
+                "internal": "false", 
+                "text": "device model name", 
+                "type": "string"
+            }, 
+            "sdk": {
+                "defaultValue": "", 
+                "internal": "false", 
+                "text": "SDK version", 
+                "type": "string"
+            }, 
+            "supporting3d": {
+                "defaultValue": "", 
+                "internal": "false", 
+                "text": "3D Video supporting flag", 
+                "type": "bool"
+            }, 
+            "supportingHdr": {
+                "defaultValue": "", 
+                "internal": "false", 
+                "text": "HDR supporting flag", 
+                "type": "bool"
+            }, 
+            "supportingUhd": {
+                "defaultValue": "", 
+                "internal": "false", 
+                "text": "UHD (4K) supporting flag", 
+                "type": "bool"
+            }
+        }, 
+        "Signals": {
+            "propertyUpdated": {
+                "internal": "false", 
+                "text": "this signal is emited every time when one of the property was changed"
+            }
+        }
+    }, 
+    "name": "core.Device", 
+    "text": "Object which contains device specific information like model name. MAC address etc."
 }

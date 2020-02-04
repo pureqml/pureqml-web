@@ -1,31 +1,101 @@
 {
-	"name": "core.GridView",
-	"text": "view for displaying models data in grid",
-
-	"content": {
-		"Properties": {
-			"cellWidth": { "text": "grid cell width", "internal": false, "type": "int", "defaultValue": "100" },
-			"cellHeight": { "text": "grid cell height", "internal": false, "type": "int", "defaultValue": "100" },
-			"rows": { "text": "grids row count (read only)", "internal": false, "type": "int", "defaultValue": "" },
-			"columns": { "text": "grid columns count (read only)", "internal": false, "type": "int", "defaultValue": "" }
-		},
-
-		"Methods": {
-			"move": { "text": "@private", "params": [], "internal": true },
-			"onKeyPressed": { "text": "@private", "params": [], "internal": true },
-			"onCountChanged": { "text": "", "internal": true },
-			"moveUp": { "text": "", "internal": false },
-			"moveDown": { "text": "", "internal": false },
-			"moveLeft": { "text": "", "internal": false },
-			"moveRight": { "text": "", "internal": false },
-			"getItemPosition": { "text": "@private", "params": [], "internal": true },
-			"indexAt": { "text": "@private", "params": [], "internal": true },
-			"positionViewAtIndex": { "text": "@private", "params": [], "internal": true },
-			"_layout": { "text": "@private", "params": [], "internal": true },
-			"_updateOverflow": { "text": "@private", "params": [], "internal": true },
-			"onFlowChanged": { "text": "", "internal": true },
-			"onCellWidthChanged": { "text": "", "internal": true },
-			"onCompleted": { "text": "", "internal": true }
-		}
-	}
+    "content": {
+        "Methods": {
+            "_layout": {
+                "internal": "true", 
+                "params": [], 
+                "text": "@private"
+            }, 
+            "_updateOverflow": {
+                "internal": "true", 
+                "params": [], 
+                "text": "@private"
+            }, 
+            "getItemPosition": {
+                "internal": "true", 
+                "params": [], 
+                "text": "@private"
+            }, 
+            "indexAt": {
+                "internal": "true", 
+                "params": [], 
+                "text": "@private"
+            }, 
+            "move": {
+                "internal": "true", 
+                "params": [], 
+                "text": "@private"
+            }, 
+            "moveDown": {
+                "internal": "false", 
+                "text": ""
+            }, 
+            "moveLeft": {
+                "internal": "false", 
+                "text": ""
+            }, 
+            "moveRight": {
+                "internal": "false", 
+                "text": ""
+            }, 
+            "moveUp": {
+                "internal": "false", 
+                "text": ""
+            }, 
+            "onCellWidthChanged": {
+                "internal": "true", 
+                "text": ""
+            }, 
+            "onCompleted": {
+                "internal": "true", 
+                "text": ""
+            }, 
+            "onCountChanged": {
+                "internal": "true", 
+                "text": ""
+            }, 
+            "onFlowChanged": {
+                "internal": "true", 
+                "text": ""
+            }, 
+            "onKeyPressed": {
+                "internal": "true", 
+                "params": [], 
+                "text": "@private"
+            }, 
+            "positionViewAtIndex": {
+                "internal": "true", 
+                "params": [], 
+                "text": "@private"
+            }
+        }, 
+        "Properties": {
+            "cellHeight": {
+                "defaultValue": "100", 
+                "internal": "false", 
+                "text": "grid cell height", 
+                "type": "int"
+            }, 
+            "cellWidth": {
+                "defaultValue": "100", 
+                "internal": "false", 
+                "text": "grid cell width", 
+                "type": "int"
+            }, 
+            "columns": {
+                "defaultValue": "", 
+                "internal": "false", 
+                "text": "grid columns count (read only)", 
+                "type": "int"
+            }, 
+            "rows": {
+                "defaultValue": "", 
+                "internal": "false", 
+                "text": "grids row count (read only)", 
+                "type": "int"
+            }
+        }
+    }, 
+    "name": "core.GridView", 
+    "text": "view for displaying models data in grid"
 }

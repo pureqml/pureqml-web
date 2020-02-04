@@ -1,18 +1,40 @@
 {
-	"name": "controls.input.TimeInput",
-	"text": "time selecting input",
-
-	"content": {
-		"Properties": {
-			"max": { "text": "maximum time value", "internal": false, "type": "string", "defaultValue": "" },
-			"min": { "text": "minimal time value", "internal": false, "type": "string", "defaultValue": "" },
-			"value": { "text": "current value", "internal": false, "type": "string", "defaultValue": "" }
-		},
-
-		"Methods": {
-			"onMinChanged": { "text": "", "internal": true },
-			"onMaxChanged": { "text": "", "internal": true },
-			"constructor": { "text": "", "internal": true }
-		}
-	}
+    "content": {
+        "Methods": {
+            "constructor": {
+                "internal": "true", 
+                "text": ""
+            }, 
+            "onMaxChanged": {
+                "internal": "true", 
+                "text": ""
+            }, 
+            "onMinChanged": {
+                "internal": "true", 
+                "text": ""
+            }
+        }, 
+        "Properties": {
+            "max": {
+                "defaultValue": "", 
+                "internal": "false", 
+                "text": "maximum time value", 
+                "type": "string"
+            }, 
+            "min": {
+                "defaultValue": "", 
+                "internal": "false", 
+                "text": "minimal time value", 
+                "type": "string"
+            }, 
+            "value": {
+                "defaultValue": "", 
+                "internal": "false", 
+                "text": "current value", 
+                "type": "string"
+            }
+        }
+    }, 
+    "name": "controls.input.TimeInput", 
+    "text": "time selecting input"
 }

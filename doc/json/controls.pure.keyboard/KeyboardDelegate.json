@@ -1,7 +1,5 @@
 {
-	"name": "controls.pure.keyboard.KeyboardDelegate",
-	"text": "",
-
-	"content": {
-	}
+    "content": {}, 
+    "name": "controls.pure.keyboard.KeyboardDelegate", 
+    "text": ""
 }

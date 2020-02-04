@@ -1,28 +1,79 @@
 {
-	"name": "controls.core.FragmentActivity",
-	"text": "very usefull for single page applications, aimed to simplify logic between root and children Activities",
-
-	"content": {
-		"Properties": {
-			"active": { "text": "is current FragmentActivity active or not", "internal": false, "type": "bool", "defaultValue": "" },
-			"hasAnyActiveChild": { "text": "is 'true' when corresponded activity has active child", "internal": false, "type": "bool", "defaultValue": "false" },
-			"currentActivity": { "text": "displays current active activity name", "internal": false, "type": "string", "defaultValue": "" },
-			"name": { "text": "activity name", "internal": false, "type": "string", "defaultValue": "" }
-		},
-
-		"Signals": {
-			"started": { "text": "activity was started signal", "internal": false },
-			"stopped": { "text": "activity was stopped signal", "internal": false }
-		},
-
-		"Methods": {
-			"isFragmentActivity": { "text": "@private", "params": [], "internal": true },
-			"isAnyActiveInContext": { "text": "checking child activities if there is at least one", "params": [], "internal": false },
-			"closeAll": { "text": "close all child activities", "params": [], "internal": false },
-			"closeParentActivities": { "text": "stop all activities from one common parent", "params": [], "internal": false },
-			"start": { "text": "start activity", "params": [], "internal": false },
-			"stop": { "text": "stop activity", "params": [], "internal": false },
-			"onBackPressed": { "text": "@private", "params": [], "internal": true }
-		}
-	}
+    "content": {
+        "Methods": {
+            "closeAll": {
+                "internal": "false", 
+                "params": [], 
+                "text": "close all child activities"
+            }, 
+            "closeParentActivities": {
+                "internal": "false", 
+                "params": [], 
+                "text": "stop all activities from one common parent"
+            }, 
+            "isAnyActiveInContext": {
+                "internal": "false", 
+                "params": [], 
+                "text": "checking child activities if there is at least one"
+            }, 
+            "isFragmentActivity": {
+                "internal": "true", 
+                "params": [], 
+                "text": "@private"
+            }, 
+            "onBackPressed": {
+                "internal": "true", 
+                "params": [], 
+                "text": "@private"
+            }, 
+            "start": {
+                "internal": "false", 
+                "params": [], 
+                "text": "start activity"
+            }, 
+            "stop": {
+                "internal": "false", 
+                "params": [], 
+                "text": "stop activity"
+            }
+        }, 
+        "Properties": {
+            "active": {
+                "defaultValue": "", 
+                "internal": "false", 
+                "text": "is current FragmentActivity active or not", 
+                "type": "bool"
+            }, 
+            "currentActivity": {
+                "defaultValue": "", 
+                "internal": "false", 
+                "text": "displays current active activity name", 
+                "type": "string"
+            }, 
+            "hasAnyActiveChild": {
+                "defaultValue": "false", 
+                "internal": "false", 
+                "text": "is 'true' when corresponded activity has active child", 
+                "type": "bool"
+            }, 
+            "name": {
+                "defaultValue": "", 
+                "internal": "false", 
+                "text": "activity name", 
+                "type": "string"
+            }
+        }, 
+        "Signals": {
+            "started": {
+                "internal": "false", 
+                "text": "activity was started signal"
+            }, 
+            "stopped": {
+                "internal": "false", 
+                "text": "activity was stopped signal"
+            }
+        }
+    }, 
+    "name": "controls.core.FragmentActivity", 
+    "text": "very usefull for single page applications, aimed to simplify logic between root and children Activities"
 }

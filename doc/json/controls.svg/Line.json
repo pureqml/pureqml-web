@@ -1,24 +1,72 @@
 {
-	"name": "controls.svg.Line",
-	"text": "returns tag for corresponding element",
-
-	"content": {
-		"Properties": {
-			"x1": { "text": "", "internal": false, "type": "int", "defaultValue": "" },
-			"x2": { "text": "", "internal": false, "type": "int", "defaultValue": "" },
-			"y1": { "text": "", "internal": false, "type": "int", "defaultValue": "" },
-			"y2": { "text": "", "internal": false, "type": "int", "defaultValue": "" },
-			"color": { "text": "", "internal": false, "type": "Color", "defaultValue": "red" },
-			"width": { "text": "", "internal": false, "type": "int", "defaultValue": "2" }
-		},
-
-		"Methods": {
-			"getTag": { "text": "returns tag for corresponding element", "params": [], "internal": false },
-			"onColorChanged": { "text": "@internal", "params": [], "internal": true },
-			"onX1Changed": { "text": "", "internal": true },
-			"onX2Changed": { "text": "", "internal": true },
-			"onY1Changed": { "text": "", "internal": true },
-			"onY2Changed": { "text": "", "internal": true }
-		}
-	}
+    "content": {
+        "Methods": {
+            "getTag": {
+                "internal": "false", 
+                "params": [], 
+                "text": "returns tag for corresponding element"
+            }, 
+            "onColorChanged": {
+                "internal": "true", 
+                "params": [], 
+                "text": "@internal"
+            }, 
+            "onX1Changed": {
+                "internal": "true", 
+                "text": ""
+            }, 
+            "onX2Changed": {
+                "internal": "true", 
+                "text": ""
+            }, 
+            "onY1Changed": {
+                "internal": "true", 
+                "text": ""
+            }, 
+            "onY2Changed": {
+                "internal": "true", 
+                "text": ""
+            }
+        }, 
+        "Properties": {
+            "color": {
+                "defaultValue": "red", 
+                "internal": "false", 
+                "text": "", 
+                "type": "Color"
+            }, 
+            "width": {
+                "defaultValue": "2", 
+                "internal": "false", 
+                "text": "", 
+                "type": "int"
+            }, 
+            "x1": {
+                "defaultValue": "", 
+                "internal": "false", 
+                "text": "", 
+                "type": "int"
+            }, 
+            "x2": {
+                "defaultValue": "", 
+                "internal": "false", 
+                "text": "", 
+                "type": "int"
+            }, 
+            "y1": {
+                "defaultValue": "", 
+                "internal": "false", 
+                "text": "", 
+                "type": "int"
+            }, 
+            "y2": {
+                "defaultValue": "", 
+                "internal": "false", 
+                "text": "", 
+                "type": "int"
+            }
+        }
+    }, 
+    "name": "controls.svg.Line", 
+    "text": "returns tag for corresponding element"
 }

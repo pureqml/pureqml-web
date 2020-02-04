@@ -1,7 +1,5 @@
 {
-	"name": "src.DescriptionText",
-	"text": "",
-
-	"content": {
-	}
+    "content": {}, 
+    "name": "src.DescriptionText", 
+    "text": ""
 }

@@ -1,40 +1,150 @@
 {
-	"name": "core.Anchors",
-	"text": "Anchors, generic class to handle auto-adjusting positioning, used in Item",
-
-	"content": {
-		"Properties": {
-			"bottom": { "text": "bottom anchor line", "internal": false, "type": "AnchorLine", "defaultValue": "" },
-			"verticalCenter": { "text": "target for vertical center", "internal": false, "type": "AnchorLine", "defaultValue": "" },
-			"top": { "text": "top anchor line", "internal": false, "type": "AnchorLine", "defaultValue": "" },
-			"left": { "text": "left anchor line", "internal": false, "type": "AnchorLine", "defaultValue": "" },
-			"horizontalCenter": { "text": "target for horizontal center", "internal": false, "type": "AnchorLine", "defaultValue": "" },
-			"right": { "text": "right anchor line", "internal": false, "type": "AnchorLine", "defaultValue": "" },
-			"fill": { "text": "target to fill", "internal": false, "type": "Item", "defaultValue": "" },
-			"centerIn": { "text": "target to place in center of it", "internal": false, "type": "Item", "defaultValue": "" },
-			"margins": { "text": "set all margins to same value", "internal": false, "type": "int", "defaultValue": "" },
-			"bottomMargin": { "text": "bottom margin value", "internal": false, "type": "int", "defaultValue": "" },
-			"topMargin": { "text": "top margin value", "internal": false, "type": "int", "defaultValue": "" },
-			"leftMargin": { "text": "left margin value", "internal": false, "type": "int", "defaultValue": "" },
-			"rightMargin": { "text": "right margin value", "internal": false, "type": "int", "defaultValue": "" }
-		},
-
-		"Methods": {
-			"constructor": { "text": "", "internal": true },
-			"_scheduleUpdate": { "text": "", "internal": false },
-			"_grab": { "text": "", "internal": false },
-			"_getAnchor": { "text": "", "internal": false },
-			"_updateAll": { "text": "@private", "params": [], "internal": true },
-			"_subscribe": { "text": "@private", "params": [], "internal": true },
-			"onLeftChanged": { "text": "", "internal": true },
-			"onRightChanged": { "text": "", "internal": true },
-			"onHorizontalCenterChanged": { "text": "", "internal": true },
-			"onTopChanged": { "text": "", "internal": true },
-			"onBottomChanged": { "text": "", "internal": true },
-			"onVerticalCenterChanged": { "text": "", "internal": true },
-			"onFillChanged": { "text": "", "internal": true },
-			"onCenterInChanged": { "text": "", "internal": true },
-			"onLeftMarginChanged": { "text": "", "internal": true }
-		}
-	}
+    "content": {
+        "Methods": {
+            "_getAnchor": {
+                "internal": "false", 
+                "text": ""
+            }, 
+            "_grab": {
+                "internal": "false", 
+                "text": ""
+            }, 
+            "_scheduleUpdate": {
+                "internal": "false", 
+                "text": ""
+            }, 
+            "_subscribe": {
+                "internal": "true", 
+                "params": [], 
+                "text": "@private"
+            }, 
+            "_updateAll": {
+                "internal": "true", 
+                "params": [], 
+                "text": "@private"
+            }, 
+            "constructor": {
+                "internal": "true", 
+                "text": ""
+            }, 
+            "onBottomChanged": {
+                "internal": "true", 
+                "text": ""
+            }, 
+            "onCenterInChanged": {
+                "internal": "true", 
+                "text": ""
+            }, 
+            "onFillChanged": {
+                "internal": "true", 
+                "text": ""
+            }, 
+            "onHorizontalCenterChanged": {
+                "internal": "true", 
+                "text": ""
+            }, 
+            "onLeftChanged": {
+                "internal": "true", 
+                "text": ""
+            }, 
+            "onLeftMarginChanged": {
+                "internal": "true", 
+                "text": ""
+            }, 
+            "onRightChanged": {
+                "internal": "true", 
+                "text": ""
+            }, 
+            "onTopChanged": {
+                "internal": "true", 
+                "text": ""
+            }, 
+            "onVerticalCenterChanged": {
+                "internal": "true", 
+                "text": ""
+            }
+        }, 
+        "Properties": {
+            "bottom": {
+                "defaultValue": "", 
+                "internal": "false", 
+                "text": "bottom anchor line", 
+                "type": "AnchorLine"
+            }, 
+            "bottomMargin": {
+                "defaultValue": "", 
+                "internal": "false", 
+                "text": "bottom margin value", 
+                "type": "int"
+            }, 
+            "centerIn": {
+                "defaultValue": "", 
+                "internal": "false", 
+                "text": "target to place in center of it", 
+                "type": "Item"
+            }, 
+            "fill": {
+                "defaultValue": "", 
+                "internal": "false", 
+                "text": "target to fill", 
+                "type": "Item"
+            }, 
+            "horizontalCenter": {
+                "defaultValue": "", 
+                "internal": "false", 
+                "text": "target for horizontal center", 
+                "type": "AnchorLine"
+            }, 
+            "left": {
+                "defaultValue": "", 
+                "internal": "false", 
+                "text": "left anchor line", 
+                "type": "AnchorLine"
+            }, 
+            "leftMargin": {
+                "defaultValue": "", 
+                "internal": "false", 
+                "text": "left margin value", 
+                "type": "int"
+            }, 
+            "margins": {
+                "defaultValue": "", 
+                "internal": "false", 
+                "text": "set all margins to same value", 
+                "type": "int"
+            }, 
+            "right": {
+                "defaultValue": "", 
+                "internal": "false", 
+                "text": "right anchor line", 
+                "type": "AnchorLine"
+            }, 
+            "rightMargin": {
+                "defaultValue": "", 
+                "internal": "false", 
+                "text": "right margin value", 
+                "type": "int"
+            }, 
+            "top": {
+                "defaultValue": "", 
+                "internal": "false", 
+                "text": "top anchor line", 
+                "type": "AnchorLine"
+            }, 
+            "topMargin": {
+                "defaultValue": "", 
+                "internal": "false", 
+                "text": "top margin value", 
+                "type": "int"
+            }, 
+            "verticalCenter": {
+                "defaultValue": "", 
+                "internal": "false", 
+                "text": "target for vertical center", 
+                "type": "AnchorLine"
+            }
+        }
+    }, 
+    "name": "core.Anchors", 
+    "text": "Anchors, generic class to handle auto-adjusting positioning, used in Item"
 }
