@@ -1,18 +1,1 @@
-{
-	"name": "controls.input.DateInput",
-	"text": "date selecting input",
-
-	"content": {
-		"Properties": {
-			"max": { "text": "maximum date value", "internal": false, "type": "string", "defaultValue": "" },
-			"min": { "text": "minimal date value", "internal": false, "type": "string", "defaultValue": "" },
-			"value": { "text": "current date value", "internal": false, "type": "string", "defaultValue": "" }
-		},
-
-		"Methods": {
-			"onMinChanged": { "text": "", "internal": true },
-			"onMaxChanged": { "text": "", "internal": true },
-			"constructor": { "text": "", "internal": true }
-		}
-	}
-}
+{"content": {"Methods": {"constructor": {"internal": "true", "text": ""}, "onMaxChanged": {"internal": "true", "text": ""}, "onMinChanged": {"internal": "true", "text": ""}}, "Properties": {"max": {"defaultValue": "", "internal": "false", "text": "maximum date value", "type": "string"}, "min": {"defaultValue": "", "internal": "false", "text": "minimal date value", "type": "string"}, "value": {"defaultValue": "", "internal": "false", "text": "current date value", "type": "string"}}}, "name": "controls.input.DateInput", "text": "date selecting input"}

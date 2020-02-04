@@ -1,16 +1,1 @@
-{
-	"name": "controls.core.Highlighter",
-	"text": "@private",
-
-	"content": {
-		"Properties": {
-			"target": { "text": "target view for highlighter", "internal": false, "type": "Object", "defaultValue": "" },
-			"updatePositionProperty": { "text": "which property must changed to update highlighter position", "internal": false, "type": "string", "defaultValue": "currentIndex" }
-		},
-
-		"Methods": {
-			"_updatePos": { "text": "@private", "params": [], "internal": true },
-			"onCompleted": { "text": "", "internal": true }
-		}
-	}
-}
+{"content": {"Methods": {"_updatePos": {"internal": "true", "params": [], "text": "@private"}, "onCompleted": {"internal": "true", "text": ""}}, "Properties": {"target": {"defaultValue": "", "internal": "false", "text": "target view for highlighter", "type": "Object"}, "updatePositionProperty": {"defaultValue": "currentIndex", "internal": "false", "text": "which property must changed to update highlighter position", "type": "string"}}}, "name": "controls.core.Highlighter", "text": "@private"}

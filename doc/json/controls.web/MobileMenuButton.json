@@ -1,11 +1,1 @@
-{
-	"name": "controls.web.MobileMenuButton",
-	"text": "",
-
-	"content": {
-		"Properties": {
-			"back": { "text": "", "internal": false, "type": "bool", "defaultValue": "" },
-			"barColor": { "text": "", "internal": false, "type": "color", "defaultValue": "white" }
-		}
-	}
-}
+{"content": {"Properties": {"back": {"defaultValue": "", "internal": "false", "text": "", "type": "bool"}, "barColor": {"defaultValue": "white", "internal": "false", "text": "", "type": "color"}}}, "name": "controls.web.MobileMenuButton", "text": ""}

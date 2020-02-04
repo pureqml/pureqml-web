@@ -1,10 +1,1 @@
-{
-	"name": "src.DocViewer",
-	"text": "",
-
-	"content": {
-		"Methods": {
-			"fill": { "text": "", "internal": false }
-		}
-	}
-}
+{"content": {"Methods": {"fill": {"internal": "false", "text": ""}}}, "name": "src.DocViewer", "text": ""}

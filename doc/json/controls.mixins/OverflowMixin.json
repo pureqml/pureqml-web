@@ -1,12 +1,1 @@
-{
-	"name": "controls.mixins.OverflowMixin",
-	"text": "setup parents overflow mode",
-
-	"content": {
-		"Methods": {
-			"_updateOverflow": { "text": "@internal", "params": [], "internal": true },
-			"onValueChanged": { "text": "", "internal": true },
-			"onCompleted": { "text": "", "internal": true }
-		}
-	}
-}
+{"content": {"Methods": {"_updateOverflow": {"internal": "true", "params": [], "text": "@internal"}, "onCompleted": {"internal": "true", "text": ""}, "onValueChanged": {"internal": "true", "text": ""}}}, "name": "controls.mixins.OverflowMixin", "text": "setup parents overflow mode"}

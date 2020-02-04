@@ -1,15 +1,1 @@
-{
-	"name": "controls.input.CheckboxInput",
-	"text": "web browser checkbox",
-
-	"content": {
-		"Properties": {
-			"checked": { "text": "checked flag value", "internal": false, "type": "bool", "defaultValue": "false" }
-		},
-
-		"Methods": {
-			"onCheckedChanged": { "text": "", "internal": true },
-			"constructor": { "text": "", "internal": true }
-		}
-	}
-}
+{"content": {"Methods": {"constructor": {"internal": "true", "text": ""}, "onCheckedChanged": {"internal": "true", "text": ""}}, "Properties": {"checked": {"defaultValue": "false", "internal": "false", "text": "checked flag value", "type": "bool"}}}, "name": "controls.input.CheckboxInput", "text": "web browser checkbox"}

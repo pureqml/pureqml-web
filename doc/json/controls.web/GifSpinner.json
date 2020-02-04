@@ -1,11 +1,1 @@
-{
-	"name": "controls.web.GifSpinner",
-	"text": "",
-
-	"content": {
-		"Methods": {
-			"start": { "text": "", "internal": false },
-			"stop": { "text": "", "internal": false }
-		}
-	}
-}
+{"content": {"Methods": {"start": {"internal": "false", "text": ""}, "stop": {"internal": "false", "text": ""}}}, "name": "controls.web.GifSpinner", "text": ""}

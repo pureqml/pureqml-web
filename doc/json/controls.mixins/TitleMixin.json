@@ -1,14 +1,1 @@
-{
-	"name": "controls.mixins.TitleMixin",
-	"text": "",
-
-	"content": {
-		"Properties": {
-			"value": { "text": "", "internal": false, "type": "string", "defaultValue": "" }
-		},
-
-		"Methods": {
-			"onValueChanged": { "text": "", "internal": true }
-		}
-	}
-}
+{"content": {"Methods": {"onValueChanged": {"internal": "true", "text": ""}}, "Properties": {"value": {"defaultValue": "", "internal": "false", "text": "", "type": "string"}}}, "name": "controls.mixins.TitleMixin", "text": ""}

@@ -1,18 +1,1 @@
-{
-	"name": "src.SearchResults",
-	"text": "",
-
-	"content": {
-		"Properties": {
-			"active": { "text": "", "internal": false, "type": "bool", "defaultValue": "" }
-		},
-
-		"Signals": {
-			"clear": { "text": "", "internal": false }
-		},
-
-		"Methods": {
-			"fill": { "text": "", "internal": false }
-		}
-	}
-}
+{"content": {"Methods": {"fill": {"internal": "false", "text": ""}}, "Properties": {"active": {"defaultValue": "", "internal": "false", "text": "", "type": "bool"}}, "Signals": {"clear": {"internal": "false", "text": ""}}}, "name": "src.SearchResults", "text": ""}

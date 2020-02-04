@@ -1,17 +1,1 @@
-{
-	"name": "controls.pure.keyboard.KeyboardModel",
-	"text": "",
-
-	"content": {
-		"Methods": {
-			"onModeChanged": { "text": "", "internal": true },
-			"onLanguageChanged": { "text": "", "internal": true },
-			"fill": { "text": "", "internal": false },
-			"switchLanguage": { "text": "", "internal": false },
-			"switchCase": { "text": "", "internal": false },
-			"getCaseIndex": { "text": "", "internal": false },
-			"updateLetters": { "text": "", "internal": false },
-			"onCompleted": { "text": "", "internal": true }
-		}
-	}
-}
+{"content": {"Methods": {"fill": {"internal": "false", "text": ""}, "getCaseIndex": {"internal": "false", "text": ""}, "onCompleted": {"internal": "true", "text": ""}, "onLanguageChanged": {"internal": "true", "text": ""}, "onModeChanged": {"internal": "true", "text": ""}, "switchCase": {"internal": "false", "text": ""}, "switchLanguage": {"internal": "false", "text": ""}, "updateLetters": {"internal": "false", "text": ""}}}, "name": "controls.pure.keyboard.KeyboardModel", "text": ""}

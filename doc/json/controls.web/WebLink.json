@@ -1,18 +1,1 @@
-{
-	"name": "controls.web.WebLink",
-	"text": "",
-
-	"content": {
-		"Properties": {
-			"href": { "text": "", "internal": false, "type": "string", "defaultValue": "" },
-			"target": { "text": "", "internal": false, "type": "string", "defaultValue": "" }
-		},
-
-		"Methods": {
-			"onHrefChanged": { "text": "", "internal": true },
-			"onTargetChanged": { "text": "", "internal": true },
-			"getTag": { "text": "", "internal": false },
-			"registerStyle": { "text": "", "internal": false }
-		}
-	}
-}
+{"content": {"Methods": {"getTag": {"internal": "false", "text": ""}, "onHrefChanged": {"internal": "true", "text": ""}, "onTargetChanged": {"internal": "true", "text": ""}, "registerStyle": {"internal": "false", "text": ""}}, "Properties": {"href": {"defaultValue": "", "internal": "false", "text": "", "type": "string"}, "target": {"defaultValue": "", "internal": "false", "text": "", "type": "string"}}}, "name": "controls.web.WebLink", "text": ""}
