@@ -1,14 +1,27 @@
 {
-	"name": "core.Request",
-	"text": "object for handling XML/HTTP requests",
-
-	"content": {
-		"Properties": {
-			"loading": { "text": "loading flag, is true when request was send and false when answer was recieved or error occured", "internal": false, "type": "bool", "defaultValue": "false" }
-		},
-
-		"Methods": {
-			"ajax": { "text": "send request using 'XMLHttpRequest' object", "params": [{ "name": "request", "type": "Object", "text": "request object" }], "internal": false }
-		}
-	}
+    "content": {
+        "Methods": {
+            "ajax": {
+                "internal": false, 
+                "params": [
+                    {
+                        "name": "request", 
+                        "text": "request object", 
+                        "type": "Object"
+                    }
+                ], 
+                "text": "\tsend request using 'XMLHttpRequest' object"
+            }
+        }, 
+        "Properties": {
+            "loading": {
+                "defaultValue": "false", 
+                "internal": false, 
+                "text": "loading flag, is true when request was send and false when answer was recieved or error occured", 
+                "type": "bool"
+            }
+        }
+    }, 
+    "name": "core.Request", 
+    "text": "object for handling XML/HTTP requests"
 }

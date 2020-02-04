@@ -1,17 +1,32 @@
 {
-	"name": "controls.web.gl.GlContext",
-	"text": "Canvas with initialized WebGl indeside",
-
-	"content": {
-		"Signals": {
-			"drawScene": { "text": "triggered on scene rendering with time delta argument", "internal": false }
-		},
-
-		"Methods": {
-			"constructor": { "text": "", "internal": true },
-			"render": { "text": "@private", "params": [], "internal": true },
-			"onWidthChanged": { "text": "", "internal": true },
-			"startRender": { "text": "@private", "params": [], "internal": true }
-		}
-	}
+    "content": {
+        "Methods": {
+            "constructor": {
+                "internal": true, 
+                "text": ""
+            }, 
+            "onWidthChanged": {
+                "internal": true, 
+                "text": ""
+            }, 
+            "render": {
+                "internal": true, 
+                "params": [], 
+                "text": "@private"
+            }, 
+            "startRender": {
+                "internal": true, 
+                "params": [], 
+                "text": "@private"
+            }
+        }, 
+        "Signals": {
+            "drawScene": {
+                "internal": false, 
+                "text": "triggered on scene rendering with time delta argument"
+            }
+        }
+    }, 
+    "name": "controls.web.gl.GlContext", 
+    "text": "Canvas with initialized WebGl indeside"
 }

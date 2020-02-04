@@ -1,19 +1,47 @@
 {
-	"name": "controls.google.YouTube",
-	"text": "item for embedded youtube video",
-
-	"content": {
-		"Properties": {
-			"source": { "text": "video source URL", "internal": false, "type": "string", "defaultValue": "" },
-			"allowFullScreen": { "text": "allow fullscreen flag", "internal": false, "type": "bool", "defaultValue": "" }
-		},
-
-		"Methods": {
-			"onWidthChanged": { "text": "@private", "params": [], "internal": true },
-			"onSourceChanged": { "text": "@private", "params": [], "internal": true },
-			"onAllowFullScreenChanged": { "text": "@private", "params": [], "internal": true },
-			"getTag": { "text": "@private", "params": [], "internal": true },
-			"_updateSize": { "text": "@private", "params": [], "internal": true }
-		}
-	}
+    "content": {
+        "Methods": {
+            "_updateSize": {
+                "internal": true, 
+                "params": [], 
+                "text": "@private"
+            }, 
+            "getTag": {
+                "internal": true, 
+                "params": [], 
+                "text": "@private"
+            }, 
+            "onAllowFullScreenChanged": {
+                "internal": true, 
+                "params": [], 
+                "text": "@private"
+            }, 
+            "onSourceChanged": {
+                "internal": true, 
+                "params": [], 
+                "text": "@private"
+            }, 
+            "onWidthChanged": {
+                "internal": true, 
+                "params": [], 
+                "text": "@private"
+            }
+        }, 
+        "Properties": {
+            "allowFullScreen": {
+                "defaultValue": "", 
+                "internal": false, 
+                "text": "allow fullscreen flag", 
+                "type": "bool"
+            }, 
+            "source": {
+                "defaultValue": "", 
+                "internal": false, 
+                "text": "video source URL", 
+                "type": "string"
+            }
+        }
+    }, 
+    "name": "controls.google.YouTube", 
+    "text": "item for embedded youtube video"
 }

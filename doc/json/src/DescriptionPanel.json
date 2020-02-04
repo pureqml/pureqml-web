@@ -1,12 +1,26 @@
 {
-	"name": "src.DescriptionPanel",
-	"text": "",
-
-	"content": {
-		"Properties": {
-			"icon": { "text": "", "internal": false, "type": "string", "defaultValue": "" },
-			"title": { "text": "", "internal": false, "type": "string", "defaultValue": "" },
-			"text": { "text": "", "internal": false, "type": "string", "defaultValue": "" }
-		}
-	}
+    "content": {
+        "Properties": {
+            "icon": {
+                "defaultValue": "", 
+                "internal": false, 
+                "text": "", 
+                "type": "string"
+            }, 
+            "text": {
+                "defaultValue": "", 
+                "internal": false, 
+                "text": "", 
+                "type": "string"
+            }, 
+            "title": {
+                "defaultValue": "", 
+                "internal": false, 
+                "text": "", 
+                "type": "string"
+            }
+        }
+    }, 
+    "name": "src.DescriptionPanel", 
+    "text": ""
 }

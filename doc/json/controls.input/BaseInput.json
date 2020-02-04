@@ -1,46 +1,177 @@
 {
-	"name": "controls.input.BaseInput",
-	"text": "base class for all inputs",
-
-	"content": {
-		"Properties": {
-			"paddings": { "text": "inner text paddings", "internal": false, "type": "lazy", "defaultValue": "Paddings" },
-			"color": { "text": "text color", "internal": false, "type": "Color", "defaultValue": "#000" },
-			"backgroundColor": { "text": "background color", "internal": false, "type": "Color", "defaultValue": "#fff" },
-			"font": { "text": "object holding properties of text font", "ref": "qmlcore.core/Font", "internal": false, "type": "Font", "defaultValue": "Font" },
-			"border": { "text": "object holding properties of the border", "ref": "qmlcore.core/Border", "internal": false, "type": "Border", "defaultValue": "Border" },
-			"type": { "text": "input type value, must override in inheriting component", "internal": false, "type": "string", "defaultValue": "text" },
-			"placeholder": { "text": "input placeholder object", "ref": "controls.core/PlaceHolder", "internal": false, "type": "PlaceHolder", "defaultValue": "PlaceHolder" },
-			"enabled": { "text": "input enabled", "internal": false, "type": "bool", "defaultValue": "true" },
-			"nativeFocus": { "text": "use native focus for input (may trigger IME)", "internal": false, "type": "bool", "defaultValue": "${manifest.useNativeFocusForInput}" },
-			"inputMode": { "text": "inputmode attribute, numeric keyboard, etc", "internal": false, "type": "string", "defaultValue": "" },
-			"autocomplete": { "text": "autocomplete variants (username, current-password, etc)", "internal": false, "type": "string", "defaultValue": "" }
-		},
-
-		"Signals": {
-			"change": { "text": "emit signal when input loses focus or IME closes", "internal": false }
-		},
-
-		"Methods": {
-			"constructor": { "text": "@private", "params": [], "internal": true },
-			"onActiveFocusChanged": { "text": "@private", "params": [], "internal": true },
-			"onRecursiveVisibleChanged": { "text": "@private", "params": [], "internal": true },
-			"onWidthChanged": { "text": "@private", "params": [], "internal": true },
-			"onTypeChanged": { "text": "@private", "params": [], "internal": true },
-			"onColorChanged": { "text": "@private", "params": [], "internal": true },
-			"onBackgroundColorChanged": { "text": "@private", "params": [], "internal": true },
-			"onHorizontalAlignmentChanged": { "text": "@private", "params": [], "internal": true },
-			"onEnabledChanged": { "text": "", "internal": true },
-			"onAutocompleteChanged": { "text": "", "internal": true },
-			"getTag": { "text": "returns tag for corresponding element", "params": [], "internal": false },
-			"registerStyle": { "text": "@private", "params": [], "internal": true },
-			"_updateSize": { "text": "@private", "params": [], "internal": true },
-			"focusBrowser": { "text": "focus browser", "params": [], "internal": false },
-			"blurBrowser": { "text": "blur browser", "params": [], "internal": false },
-			"_getValue": { "text": "gets element native value", "params": [], "internal": false },
-			"_setValue": { "text": "sets element native value", "params": [], "internal": false },
-			"_updateValue": { "text": "@private", "params": [], "internal": true },
-			"onInputModeChanged": { "text": "", "internal": true }
-		}
-	}
+    "content": {
+        "Methods": {
+            "_getValue": {
+                "internal": false, 
+                "params": [], 
+                "text": "gets element native value"
+            }, 
+            "_setValue": {
+                "internal": false, 
+                "params": [], 
+                "text": "sets element native value"
+            }, 
+            "_updateSize": {
+                "internal": true, 
+                "params": [], 
+                "text": "@private"
+            }, 
+            "_updateValue": {
+                "internal": true, 
+                "params": [], 
+                "text": "@private"
+            }, 
+            "blurBrowser": {
+                "internal": false, 
+                "params": [], 
+                "text": "blur browser"
+            }, 
+            "constructor": {
+                "internal": true, 
+                "params": [], 
+                "text": "@private"
+            }, 
+            "focusBrowser": {
+                "internal": false, 
+                "params": [], 
+                "text": "focus browser"
+            }, 
+            "getTag": {
+                "internal": false, 
+                "params": [], 
+                "text": "returns tag for corresponding element"
+            }, 
+            "onActiveFocusChanged": {
+                "internal": true, 
+                "params": [], 
+                "text": "@private"
+            }, 
+            "onAutocompleteChanged": {
+                "internal": true, 
+                "text": ""
+            }, 
+            "onBackgroundColorChanged": {
+                "internal": true, 
+                "params": [], 
+                "text": "@private"
+            }, 
+            "onColorChanged": {
+                "internal": true, 
+                "params": [], 
+                "text": "@private"
+            }, 
+            "onEnabledChanged": {
+                "internal": true, 
+                "text": ""
+            }, 
+            "onHorizontalAlignmentChanged": {
+                "internal": true, 
+                "params": [], 
+                "text": "@private"
+            }, 
+            "onInputModeChanged": {
+                "internal": true, 
+                "text": ""
+            }, 
+            "onRecursiveVisibleChanged": {
+                "internal": true, 
+                "params": [], 
+                "text": "@private"
+            }, 
+            "onTypeChanged": {
+                "internal": true, 
+                "params": [], 
+                "text": "@private"
+            }, 
+            "onWidthChanged": {
+                "internal": true, 
+                "params": [], 
+                "text": "@private"
+            }, 
+            "registerStyle": {
+                "internal": true, 
+                "params": [], 
+                "text": "@private"
+            }
+        }, 
+        "Properties": {
+            "autocomplete": {
+                "defaultValue": "", 
+                "internal": false, 
+                "text": "autocomplete variants (username, current-password, etc)", 
+                "type": "string"
+            }, 
+            "backgroundColor": {
+                "defaultValue": "#fff", 
+                "internal": false, 
+                "text": "background color", 
+                "type": "Color"
+            }, 
+            "border": {
+                "defaultValue": "Border", 
+                "internal": false, 
+                "ref": "qmlcore.core/Border", 
+                "text": "object holding properties of the border", 
+                "type": "Border"
+            }, 
+            "color": {
+                "defaultValue": "#000", 
+                "internal": false, 
+                "text": "text color", 
+                "type": "Color"
+            }, 
+            "enabled": {
+                "defaultValue": "true", 
+                "internal": false, 
+                "text": "input enabled", 
+                "type": "bool"
+            }, 
+            "font": {
+                "defaultValue": "Font", 
+                "internal": false, 
+                "ref": "qmlcore.core/Font", 
+                "text": "object holding properties of text font", 
+                "type": "Font"
+            }, 
+            "inputMode": {
+                "defaultValue": "", 
+                "internal": false, 
+                "text": "inputmode attribute, numeric keyboard, etc", 
+                "type": "string"
+            }, 
+            "nativeFocus": {
+                "defaultValue": "${manifest.useNativeFocusForInput}", 
+                "internal": false, 
+                "text": "use native focus for input (may trigger IME)", 
+                "type": "bool"
+            }, 
+            "paddings": {
+                "defaultValue": "Paddings", 
+                "internal": false, 
+                "text": "inner text paddings", 
+                "type": "lazy"
+            }, 
+            "placeholder": {
+                "defaultValue": "PlaceHolder", 
+                "internal": false, 
+                "ref": "controls.core/PlaceHolder", 
+                "text": "input placeholder object", 
+                "type": "PlaceHolder"
+            }, 
+            "type": {
+                "defaultValue": "text", 
+                "internal": false, 
+                "text": "input type value, must override in inheriting component", 
+                "type": "string"
+            }
+        }, 
+        "Signals": {
+            "change": {
+                "internal": false, 
+                "text": "emit signal when input loses focus or IME closes"
+            }
+        }
+    }, 
+    "name": "controls.input.BaseInput", 
+    "text": "base class for all inputs"
 }

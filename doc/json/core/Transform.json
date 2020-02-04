@@ -1,38 +1,139 @@
 {
-	"name": "core.Transform",
-	"text": "class controlling object transformation",
-
-	"content": {
-		"Properties": {
-			"perspective": { "text": "perspective transformation", "internal": false, "type": "int", "defaultValue": "" },
-			"translateX": { "text": "x-translate", "internal": false, "type": "int", "defaultValue": "" },
-			"translateY": { "text": "y-translate", "internal": false, "type": "int", "defaultValue": "" },
-			"translateZ": { "text": "z-translate", "internal": false, "type": "int", "defaultValue": "" },
-			"rotateX": { "text": "x-axis rotation", "internal": false, "type": "real", "defaultValue": "" },
-			"rotateY": { "text": "y-axis rotation", "internal": false, "type": "real", "defaultValue": "" },
-			"rotateZ": { "text": "z-axis rotation", "internal": false, "type": "real", "defaultValue": "" },
-			"rotate": { "text": "rotate relative transform point", "internal": false, "type": "real", "defaultValue": "" },
-			"scaleX": { "text": "horizontal scale", "internal": false, "type": "real", "defaultValue": "" },
-			"scaleY": { "text": "vertical scale", "internal": false, "type": "real", "defaultValue": "" },
-			"skewX": { "text": "horizontal skew", "internal": false, "type": "real", "defaultValue": "" },
-			"skewY": { "text": "vertical skew", "internal": false, "type": "real", "defaultValue": "" }
-		},
-
-		"Methods": {
-			"constructor": { "text": "@private", "params": [], "internal": true },
-			"onPerspectiveChanged": { "text": "", "internal": true },
-			"onTranslateXChanged": { "text": "", "internal": true },
-			"onTranslateYChanged": { "text": "", "internal": true },
-			"onTranslateZChanged": { "text": "", "internal": true },
-			"onRotateXChanged": { "text": "", "internal": true },
-			"onRotateYChanged": { "text": "", "internal": true },
-			"onRotateZChanged": { "text": "", "internal": true },
-			"onRotateChanged": { "text": "", "internal": true },
-			"onScaleXChanged": { "text": "", "internal": true },
-			"onScaleYChanged": { "text": "", "internal": true },
-			"onSkewXChanged": { "text": "", "internal": true },
-			"onSkewYChanged": { "text": "", "internal": true },
-			"_updateTransform": { "text": "", "internal": false }
-		}
-	}
+    "content": {
+        "Methods": {
+            "_updateTransform": {
+                "internal": false, 
+                "text": ""
+            }, 
+            "constructor": {
+                "internal": true, 
+                "params": [], 
+                "text": "@private"
+            }, 
+            "onPerspectiveChanged": {
+                "internal": true, 
+                "text": ""
+            }, 
+            "onRotateChanged": {
+                "internal": true, 
+                "text": ""
+            }, 
+            "onRotateXChanged": {
+                "internal": true, 
+                "text": ""
+            }, 
+            "onRotateYChanged": {
+                "internal": true, 
+                "text": ""
+            }, 
+            "onRotateZChanged": {
+                "internal": true, 
+                "text": ""
+            }, 
+            "onScaleXChanged": {
+                "internal": true, 
+                "text": ""
+            }, 
+            "onScaleYChanged": {
+                "internal": true, 
+                "text": ""
+            }, 
+            "onSkewXChanged": {
+                "internal": true, 
+                "text": ""
+            }, 
+            "onSkewYChanged": {
+                "internal": true, 
+                "text": ""
+            }, 
+            "onTranslateXChanged": {
+                "internal": true, 
+                "text": ""
+            }, 
+            "onTranslateYChanged": {
+                "internal": true, 
+                "text": ""
+            }, 
+            "onTranslateZChanged": {
+                "internal": true, 
+                "text": ""
+            }
+        }, 
+        "Properties": {
+            "perspective": {
+                "defaultValue": "", 
+                "internal": false, 
+                "text": "perspective transformation", 
+                "type": "int"
+            }, 
+            "rotate": {
+                "defaultValue": "", 
+                "internal": false, 
+                "text": "rotate relative transform point", 
+                "type": "real"
+            }, 
+            "rotateX": {
+                "defaultValue": "", 
+                "internal": false, 
+                "text": "x-axis rotation", 
+                "type": "real"
+            }, 
+            "rotateY": {
+                "defaultValue": "", 
+                "internal": false, 
+                "text": "y-axis rotation", 
+                "type": "real"
+            }, 
+            "rotateZ": {
+                "defaultValue": "", 
+                "internal": false, 
+                "text": "z-axis rotation", 
+                "type": "real"
+            }, 
+            "scaleX": {
+                "defaultValue": "", 
+                "internal": false, 
+                "text": "horizontal scale", 
+                "type": "real"
+            }, 
+            "scaleY": {
+                "defaultValue": "", 
+                "internal": false, 
+                "text": "vertical scale", 
+                "type": "real"
+            }, 
+            "skewX": {
+                "defaultValue": "", 
+                "internal": false, 
+                "text": "horizontal skew", 
+                "type": "real"
+            }, 
+            "skewY": {
+                "defaultValue": "", 
+                "internal": false, 
+                "text": "vertical skew", 
+                "type": "real"
+            }, 
+            "translateX": {
+                "defaultValue": "", 
+                "internal": false, 
+                "text": "x-translate", 
+                "type": "int"
+            }, 
+            "translateY": {
+                "defaultValue": "", 
+                "internal": false, 
+                "text": "y-translate", 
+                "type": "int"
+            }, 
+            "translateZ": {
+                "defaultValue": "", 
+                "internal": false, 
+                "text": "z-translate", 
+                "type": "int"
+            }
+        }
+    }, 
+    "name": "core.Transform", 
+    "text": "class controlling object transformation"
 }

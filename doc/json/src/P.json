@@ -1,11 +1,16 @@
 {
-	"name": "src.P",
-	"text": "",
-
-	"content": {
-		"Methods": {
-			"getTag": { "text": "", "internal": false },
-			"registerStyle": { "text": "", "internal": false }
-		}
-	}
+    "content": {
+        "Methods": {
+            "getTag": {
+                "internal": false, 
+                "text": ""
+            }, 
+            "registerStyle": {
+                "internal": false, 
+                "text": ""
+            }
+        }
+    }, 
+    "name": "src.P", 
+    "text": ""
 }

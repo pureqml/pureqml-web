@@ -1,20 +1,48 @@
 {
-	"name": "controls.web.Navbar",
-	"text": "",
-
-	"content": {
-		"Properties": {
-			"position": { "text": "", "internal": false, "type": "string", "defaultValue": "" },
-			"vertical": { "text": "", "internal": false, "type": "bool", "defaultValue": "${width} < 600" },
-			"collapsed": { "text": "", "internal": false, "type": "bool", "defaultValue": "true" }
-		},
-
-		"Methods": {
-			"onPositionChanged": { "text": "", "internal": true },
-			"addChild": { "text": "", "internal": false },
-			"_layout": { "text": "", "internal": false },
-			"onSpacingChanged": { "text": "", "internal": true },
-			"onVerticalChanged": { "text": "", "internal": true }
-		}
-	}
+    "content": {
+        "Methods": {
+            "_layout": {
+                "internal": false, 
+                "text": ""
+            }, 
+            "addChild": {
+                "internal": false, 
+                "text": ""
+            }, 
+            "onPositionChanged": {
+                "internal": true, 
+                "text": ""
+            }, 
+            "onSpacingChanged": {
+                "internal": true, 
+                "text": ""
+            }, 
+            "onVerticalChanged": {
+                "internal": true, 
+                "text": ""
+            }
+        }, 
+        "Properties": {
+            "collapsed": {
+                "defaultValue": "true", 
+                "internal": false, 
+                "text": "", 
+                "type": "bool"
+            }, 
+            "position": {
+                "defaultValue": "", 
+                "internal": false, 
+                "text": "", 
+                "type": "string"
+            }, 
+            "vertical": {
+                "defaultValue": "${width} < 600", 
+                "internal": false, 
+                "text": "", 
+                "type": "bool"
+            }
+        }
+    }, 
+    "name": "controls.web.Navbar", 
+    "text": ""
 }

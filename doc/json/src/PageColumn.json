@@ -1,11 +1,20 @@
 {
-	"name": "src.PageColumn",
-	"text": "",
-
-	"content": {
-		"Properties": {
-			"text": { "text": "", "internal": false, "type": "string", "defaultValue": "" },
-			"title": { "text": "", "internal": false, "type": "string", "defaultValue": "" }
-		}
-	}
+    "content": {
+        "Properties": {
+            "text": {
+                "defaultValue": "", 
+                "internal": false, 
+                "text": "", 
+                "type": "string"
+            }, 
+            "title": {
+                "defaultValue": "", 
+                "internal": false, 
+                "text": "", 
+                "type": "string"
+            }
+        }
+    }, 
+    "name": "src.PageColumn", 
+    "text": ""
 }

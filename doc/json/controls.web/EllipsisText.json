@@ -1,16 +1,28 @@
 {
-	"name": "controls.web.EllipsisText",
-	"text": "",
-
-	"content": {
-		"Properties": {
-			"active": { "text": "", "internal": false, "type": "bool", "defaultValue": "true" }
-		},
-
-		"Methods": {
-			"updateStyle": { "text": "", "internal": false },
-			"onActiveChanged": { "text": "", "internal": true },
-			"onCompleted": { "text": "", "internal": true }
-		}
-	}
+    "content": {
+        "Methods": {
+            "onActiveChanged": {
+                "internal": true, 
+                "text": ""
+            }, 
+            "onCompleted": {
+                "internal": true, 
+                "text": ""
+            }, 
+            "updateStyle": {
+                "internal": false, 
+                "text": ""
+            }
+        }, 
+        "Properties": {
+            "active": {
+                "defaultValue": "true", 
+                "internal": false, 
+                "text": "", 
+                "type": "bool"
+            }
+        }
+    }, 
+    "name": "controls.web.EllipsisText", 
+    "text": ""
 }

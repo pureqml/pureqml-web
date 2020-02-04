@@ -1,19 +1,102 @@
 {
-	"name": "controls.core.JsonStorage",
-	"text": "LocalStorage wrapper with signals and simple interface",
-
-	"content": {
-		"Signals": {
-			"loaded": { "text": "json was loaded", "internal": false },
-			"optionUpdated": { "text": "option changed signal", "internal": false }
-		},
-
-		"Methods": {
-			"getValue": { "text": "Returns JSON propeprty value by name", "params": [{ "name": "name", "type": "string", "text": "property name" }, { "name": "callback", "type": "function", "text": "callback to return value" }, { "name": "error", "type": "function", "text": "callback to report non-existing value or some kind of error" }], "internal": false },
-			"getValueOrDefault": { "text": "Returns JSON propeprty value by name or default value if not exists", "params": [{ "name": "name", "type": "string", "text": "property name" }, { "name": "callback", "type": "function", "text": "callback to return value" }, { "name": "defaultValue", "type": "Object", "text": "default value" }], "internal": false },
-			"setValue": { "text": "Save named JSON property", "params": [{ "name": "name", "type": "string", "text": "property name" }, { "name": "value", "type": "Object", "text": "property value" }, { "name": "error", "type": "function", "text": "callback to report error" }], "internal": false },
-			"eraseValue": { "text": "Remove property from storage", "params": [{ "name": "name", "type": "string", "text": "property name" }, { "name": "error", "type": "function", "text": "callback to report error" }], "internal": false },
-			"onCompleted": { "text": "@private", "params": [], "internal": true }
-		}
-	}
+    "content": {
+        "Methods": {
+            "eraseValue": {
+                "internal": false, 
+                "params": [
+                    {
+                        "name": "name", 
+                        "text": "property name", 
+                        "type": "string"
+                    }, 
+                    {
+                        "name": "error", 
+                        "text": "callback to report error", 
+                        "type": "function"
+                    }
+                ], 
+                "text": "Remove property from storage"
+            }, 
+            "getValue": {
+                "internal": false, 
+                "params": [
+                    {
+                        "name": "name", 
+                        "text": "property name", 
+                        "type": "string"
+                    }, 
+                    {
+                        "name": "callback", 
+                        "text": "callback to return value", 
+                        "type": "function"
+                    }, 
+                    {
+                        "name": "error", 
+                        "text": "callback to report non-existing value or some kind of error", 
+                        "type": "function"
+                    }
+                ], 
+                "text": "Returns JSON propeprty value by name"
+            }, 
+            "getValueOrDefault": {
+                "internal": false, 
+                "params": [
+                    {
+                        "name": "name", 
+                        "text": "property name", 
+                        "type": "string"
+                    }, 
+                    {
+                        "name": "callback", 
+                        "text": "callback to return value", 
+                        "type": "function"
+                    }, 
+                    {
+                        "name": "defaultValue", 
+                        "text": "default value", 
+                        "type": "Object"
+                    }
+                ], 
+                "text": "Returns JSON propeprty value by name or default value if not exists"
+            }, 
+            "onCompleted": {
+                "internal": true, 
+                "params": [], 
+                "text": "@private"
+            }, 
+            "setValue": {
+                "internal": false, 
+                "params": [
+                    {
+                        "name": "name", 
+                        "text": "property name", 
+                        "type": "string"
+                    }, 
+                    {
+                        "name": "value", 
+                        "text": "property value", 
+                        "type": "Object"
+                    }, 
+                    {
+                        "name": "error", 
+                        "text": "callback to report error", 
+                        "type": "function"
+                    }
+                ], 
+                "text": "Save named JSON property"
+            }
+        }, 
+        "Signals": {
+            "loaded": {
+                "internal": false, 
+                "text": "json was loaded"
+            }, 
+            "optionUpdated": {
+                "internal": false, 
+                "text": "option changed signal"
+            }
+        }
+    }, 
+    "name": "controls.core.JsonStorage", 
+    "text": "LocalStorage wrapper with signals and simple interface"
 }

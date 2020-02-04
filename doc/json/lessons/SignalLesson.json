@@ -1,7 +1,5 @@
 {
-	"name": "lessons.SignalLesson",
-	"text": "",
-
-	"content": {
-	}
+    "content": {}, 
+    "name": "lessons.SignalLesson", 
+    "text": ""
 }

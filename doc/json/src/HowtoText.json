@@ -1,11 +1,20 @@
 {
-	"name": "src.HowtoText",
-	"text": "",
-
-	"content": {
-		"Properties": {
-			"text": { "text": "", "internal": false, "type": "string", "defaultValue": "" },
-			"code": { "text": "", "internal": false, "type": "string", "defaultValue": "" }
-		}
-	}
+    "content": {
+        "Properties": {
+            "code": {
+                "defaultValue": "", 
+                "internal": false, 
+                "text": "", 
+                "type": "string"
+            }, 
+            "text": {
+                "defaultValue": "", 
+                "internal": false, 
+                "text": "", 
+                "type": "string"
+            }
+        }
+    }, 
+    "name": "src.HowtoText", 
+    "text": ""
 }

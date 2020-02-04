@@ -1,18 +1,44 @@
 {
-	"name": "core.BorderSide",
-	"text": "@private Component aimed to adjust individual preferences of each border side",
-
-	"content": {
-		"Properties": {
-			"name": { "text": "@private Component aimed to adjust individual preferences of each border side", "internal": true, "type": "string", "defaultValue": "" },
-			"width": { "text": "", "internal": false, "type": "int", "defaultValue": "${parent.width}" },
-			"color": { "text": "", "internal": false, "type": "color", "defaultValue": "${parent.color}" },
-			"style": { "text": "", "internal": false, "type": "int", "defaultValue": "${parent.style}" }
-		},
-
-		"Methods": {
-			"_updateStyle": { "text": "@private", "params": [], "internal": true },
-			"onWidthChanged": { "text": "@private", "params": [], "internal": true }
-		}
-	}
+    "content": {
+        "Methods": {
+            "_updateStyle": {
+                "internal": true, 
+                "params": [], 
+                "text": "@private"
+            }, 
+            "onWidthChanged": {
+                "internal": true, 
+                "params": [], 
+                "text": "@private"
+            }
+        }, 
+        "Properties": {
+            "color": {
+                "defaultValue": "${parent.color}", 
+                "internal": false, 
+                "text": "", 
+                "type": "color"
+            }, 
+            "name": {
+                "defaultValue": "", 
+                "internal": true, 
+                "text": "@private\nComponent aimed to adjust individual preferences of each border side", 
+                "type": "string"
+            }, 
+            "style": {
+                "defaultValue": "${parent.style}", 
+                "internal": false, 
+                "text": "", 
+                "type": "int"
+            }, 
+            "width": {
+                "defaultValue": "${parent.width}", 
+                "internal": false, 
+                "text": "", 
+                "type": "int"
+            }
+        }
+    }, 
+    "name": "core.BorderSide", 
+    "text": "@private\nComponent aimed to adjust individual preferences of each border side"
 }

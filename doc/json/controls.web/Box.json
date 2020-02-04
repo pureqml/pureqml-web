@@ -1,21 +1,56 @@
 {
-	"name": "controls.web.Box",
-	"text": "",
-
-	"content": {
-		"Properties": {
-			"top": { "text": "", "internal": false, "type": "string", "defaultValue": "" },
-			"left": { "text": "", "internal": false, "type": "string", "defaultValue": "" },
-			"right": { "text": "", "internal": false, "type": "string", "defaultValue": "" },
-			"bottom": { "text": "", "internal": false, "type": "string", "defaultValue": "" },
-			"prefix": { "text": "", "internal": false, "type": "string", "defaultValue": "" }
-		},
-
-		"Methods": {
-			"onTopChanged": { "text": "", "internal": true },
-			"onLeftChanged": { "text": "", "internal": true },
-			"onRightChanged": { "text": "", "internal": true },
-			"onBottomChanged": { "text": "", "internal": true }
-		}
-	}
+    "content": {
+        "Methods": {
+            "onBottomChanged": {
+                "internal": true, 
+                "text": ""
+            }, 
+            "onLeftChanged": {
+                "internal": true, 
+                "text": ""
+            }, 
+            "onRightChanged": {
+                "internal": true, 
+                "text": ""
+            }, 
+            "onTopChanged": {
+                "internal": true, 
+                "text": ""
+            }
+        }, 
+        "Properties": {
+            "bottom": {
+                "defaultValue": "", 
+                "internal": false, 
+                "text": "", 
+                "type": "string"
+            }, 
+            "left": {
+                "defaultValue": "", 
+                "internal": false, 
+                "text": "", 
+                "type": "string"
+            }, 
+            "prefix": {
+                "defaultValue": "", 
+                "internal": false, 
+                "text": "", 
+                "type": "string"
+            }, 
+            "right": {
+                "defaultValue": "", 
+                "internal": false, 
+                "text": "", 
+                "type": "string"
+            }, 
+            "top": {
+                "defaultValue": "", 
+                "internal": false, 
+                "text": "", 
+                "type": "string"
+            }
+        }
+    }, 
+    "name": "controls.web.Box", 
+    "text": ""
 }

@@ -1,30 +1,106 @@
 {
-	"name": "core.Animation",
-	"text": "controls property animation behavior in declarative way Animation class works only for integral types, please use ColorAnimation for animating color properties",
-
-	"content": {
-		"Properties": {
-			"delay": { "text": "delay in ms", "internal": false, "type": "int", "defaultValue": "0" },
-			"duration": { "text": "duration in ms", "internal": false, "type": "int", "defaultValue": "200" },
-			"cssTransition": { "text": "use css transition if possible", "internal": false, "type": "bool", "defaultValue": "true" },
-			"running": { "text": "currently running", "internal": false, "type": "bool", "defaultValue": "false" },
-			"easing": { "text": "easing function", "internal": false, "type": "string", "defaultValue": "ease" },
-			"target": { "text": "target object", "internal": false, "type": "Object", "defaultValue": "" },
-			"property": { "text": "target object property", "internal": false, "type": "string", "defaultValue": "" },
-			"from": { "text": "used in declarative animation inside SequentialAnimation, starting value", "internal": false, "type": "variant", "defaultValue": "" },
-			"to": { "text": "used in declarative animation inside SequentialAnimation, destination value", "internal": false, "type": "variant", "defaultValue": "" }
-		},
-
-		"Methods": {
-			"constructor": { "text": "", "internal": true },
-			"disable": { "text": "disable animation.", "params": [], "internal": false },
-			"enable": { "text": "enable animation.", "params": [], "internal": false },
-			"enabled": { "text": "returns true if animation is enabled", "params": [], "internal": false },
-			"onDelayChanged": { "text": "@private", "params": [], "internal": true },
-			"active": { "text": "", "internal": false },
-			"_updateAnimation": { "text": "", "internal": false },
-			"interpolate": { "text": "@private", "params": [], "internal": true },
-			"complete": { "text": "@private", "params": [], "internal": true }
-		}
-	}
+    "content": {
+        "Methods": {
+            "_updateAnimation": {
+                "internal": false, 
+                "text": ""
+            }, 
+            "active": {
+                "internal": false, 
+                "text": ""
+            }, 
+            "complete": {
+                "internal": true, 
+                "params": [], 
+                "text": "@private"
+            }, 
+            "constructor": {
+                "internal": true, 
+                "text": ""
+            }, 
+            "disable": {
+                "internal": false, 
+                "params": [], 
+                "text": "disable animation."
+            }, 
+            "enable": {
+                "internal": false, 
+                "params": [], 
+                "text": "enable animation."
+            }, 
+            "enabled": {
+                "internal": false, 
+                "params": [], 
+                "text": "returns true if animation is enabled"
+            }, 
+            "interpolate": {
+                "internal": true, 
+                "params": [], 
+                "text": "@private"
+            }, 
+            "onDelayChanged": {
+                "internal": true, 
+                "params": [], 
+                "text": "@private"
+            }
+        }, 
+        "Properties": {
+            "cssTransition": {
+                "defaultValue": "true", 
+                "internal": false, 
+                "text": "use css transition if possible", 
+                "type": "bool"
+            }, 
+            "delay": {
+                "defaultValue": "0", 
+                "internal": false, 
+                "text": "delay in ms", 
+                "type": "int"
+            }, 
+            "duration": {
+                "defaultValue": "200", 
+                "internal": false, 
+                "text": "duration in ms", 
+                "type": "int"
+            }, 
+            "easing": {
+                "defaultValue": "ease", 
+                "internal": false, 
+                "text": "easing function", 
+                "type": "string"
+            }, 
+            "from": {
+                "defaultValue": "", 
+                "internal": false, 
+                "text": "used in declarative animation inside SequentialAnimation, starting value", 
+                "type": "variant"
+            }, 
+            "property": {
+                "defaultValue": "", 
+                "internal": false, 
+                "text": "target object property", 
+                "type": "string"
+            }, 
+            "running": {
+                "defaultValue": "false", 
+                "internal": false, 
+                "text": "currently running", 
+                "type": "bool"
+            }, 
+            "target": {
+                "defaultValue": "", 
+                "internal": false, 
+                "text": "target object", 
+                "type": "Object"
+            }, 
+            "to": {
+                "defaultValue": "", 
+                "internal": false, 
+                "text": "used in declarative animation inside SequentialAnimation, destination value", 
+                "type": "variant"
+            }
+        }
+    }, 
+    "name": "core.Animation", 
+    "text": "controls property animation behavior in declarative way\nAnimation class works only for integral types, please use ColorAnimation for animating color properties"
 }

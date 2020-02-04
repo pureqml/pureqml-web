@@ -1,25 +1,58 @@
 {
-	"name": "controls.pure.TextEdit",
-	"text": "",
-
-	"content": {
-		"Properties": {
-			"paddings": { "text": "", "internal": false, "type": "lazy", "defaultValue": "Paddings" },
-			"placeholder": { "text": "", "internal": false, "type": "string", "defaultValue": "" },
-			"cursorVisible": { "text": "", "internal": false, "type": "bool", "defaultValue": "true" }
-		},
-
-		"Alias Properties": {
-			"horizontalAlignment": { "text": "", "internal": false },
-			"backgroundColor": { "text": "", "internal": false },
-			"text": { "text": "", "internal": false },
-			"font": { "text": "", "internal": false },
-			"color": { "text": "", "internal": false }
-		},
-
-		"Methods": {
-			"removeChar": { "text": "", "internal": false },
-			"onPlaceholderChanged": { "text": "", "internal": true }
-		}
-	}
+    "content": {
+        "Alias Properties": {
+            "backgroundColor": {
+                "internal": false, 
+                "text": ""
+            }, 
+            "color": {
+                "internal": false, 
+                "text": ""
+            }, 
+            "font": {
+                "internal": false, 
+                "text": ""
+            }, 
+            "horizontalAlignment": {
+                "internal": false, 
+                "text": ""
+            }, 
+            "text": {
+                "internal": false, 
+                "text": ""
+            }
+        }, 
+        "Methods": {
+            "onPlaceholderChanged": {
+                "internal": true, 
+                "text": ""
+            }, 
+            "removeChar": {
+                "internal": false, 
+                "text": ""
+            }
+        }, 
+        "Properties": {
+            "cursorVisible": {
+                "defaultValue": "true", 
+                "internal": false, 
+                "text": "", 
+                "type": "bool"
+            }, 
+            "paddings": {
+                "defaultValue": "Paddings", 
+                "internal": false, 
+                "text": "", 
+                "type": "lazy"
+            }, 
+            "placeholder": {
+                "defaultValue": "", 
+                "internal": false, 
+                "text": "", 
+                "type": "string"
+            }
+        }
+    }, 
+    "name": "controls.pure.TextEdit", 
+    "text": ""
 }

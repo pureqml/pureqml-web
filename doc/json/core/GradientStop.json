@@ -1,16 +1,32 @@
 {
-	"name": "core.GradientStop",
-	"text": "this object is used for customizing Gradient",
-
-	"content": {
-		"Properties": {
-			"position": { "text": "realative position ot the stop must be in range [0:1]", "internal": false, "type": "real", "defaultValue": "" },
-			"color": { "text": "color of this stop", "internal": false, "type": "Color", "defaultValue": "" }
-		},
-
-		"Methods": {
-			"onPositionChanged": { "text": "@private", "params": [], "internal": true },
-			"_getDeclaration": { "text": "@private", "params": [], "internal": true }
-		}
-	}
+    "content": {
+        "Methods": {
+            "_getDeclaration": {
+                "internal": true, 
+                "params": [], 
+                "text": "@private"
+            }, 
+            "onPositionChanged": {
+                "internal": true, 
+                "params": [], 
+                "text": "@private"
+            }
+        }, 
+        "Properties": {
+            "color": {
+                "defaultValue": "", 
+                "internal": false, 
+                "text": "color of this stop", 
+                "type": "Color"
+            }, 
+            "position": {
+                "defaultValue": "", 
+                "internal": false, 
+                "text": "realative position ot the stop must be in range [0:1]", 
+                "type": "real"
+            }
+        }
+    }, 
+    "name": "core.GradientStop", 
+    "text": "this object is used for customizing Gradient"
 }

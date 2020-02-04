@@ -1,7 +1,5 @@
 {
-	"name": "lessons.BasicLesson",
-	"text": "",
-
-	"content": {
-	}
+    "content": {}, 
+    "name": "lessons.BasicLesson", 
+    "text": ""
 }

@@ -1,18 +1,42 @@
 {
-	"name": "controls.core.LazyPage",
-	"text": "Page for LazyPageStack",
-
-	"content": {
-		"Properties": {
-			"name": { "text": "page name", "internal": false, "type": "string", "defaultValue": "" },
-			"component": { "text": "page component path", "internal": false, "type": "string", "defaultValue": "" },
-			"manager": { "text": "reference to PageStack item", "internal": false, "type": "Item", "defaultValue": "${parent}" }
-		},
-
-		"Methods": {
-			"createPage": { "text": "create page", "params": [], "internal": false },
-			"getPage": { "text": "get page content item", "params": [], "internal": false },
-			"onActiveFocusChanged": { "text": "", "internal": true }
-		}
-	}
+    "content": {
+        "Methods": {
+            "createPage": {
+                "internal": false, 
+                "params": [], 
+                "text": "create page"
+            }, 
+            "getPage": {
+                "internal": false, 
+                "params": [], 
+                "text": "get page content item"
+            }, 
+            "onActiveFocusChanged": {
+                "internal": true, 
+                "text": ""
+            }
+        }, 
+        "Properties": {
+            "component": {
+                "defaultValue": "", 
+                "internal": false, 
+                "text": "page component path", 
+                "type": "string"
+            }, 
+            "manager": {
+                "defaultValue": "${parent}", 
+                "internal": false, 
+                "text": "reference to PageStack item", 
+                "type": "Item"
+            }, 
+            "name": {
+                "defaultValue": "", 
+                "internal": false, 
+                "text": "page name", 
+                "type": "string"
+            }
+        }
+    }, 
+    "name": "controls.core.LazyPage", 
+    "text": "Page for LazyPageStack"
 }

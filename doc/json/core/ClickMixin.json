@@ -1,16 +1,31 @@
 {
-	"name": "core.ClickMixin",
-	"text": "This mixin provides mouse click event detecting",
-
-	"content": {
-		"Properties": {
-			"enabled": { "text": "turn mixin on", "internal": false, "type": "bool", "defaultValue": "true" }
-		},
-
-		"Methods": {
-			"constructor": { "text": "@private", "params": [], "internal": true },
-			"_bindClick": { "text": "@private", "params": [], "internal": true },
-			"onEnabledChanged": { "text": "@private", "params": [], "internal": true }
-		}
-	}
+    "content": {
+        "Methods": {
+            "_bindClick": {
+                "internal": true, 
+                "params": [], 
+                "text": "@private"
+            }, 
+            "constructor": {
+                "internal": true, 
+                "params": [], 
+                "text": "@private"
+            }, 
+            "onEnabledChanged": {
+                "internal": true, 
+                "params": [], 
+                "text": "@private"
+            }
+        }, 
+        "Properties": {
+            "enabled": {
+                "defaultValue": "true", 
+                "internal": false, 
+                "text": "turn mixin on", 
+                "type": "bool"
+            }
+        }
+    }, 
+    "name": "core.ClickMixin", 
+    "text": "This mixin provides mouse click event detecting"
 }

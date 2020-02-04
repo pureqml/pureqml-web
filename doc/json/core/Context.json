@@ -1,43 +1,180 @@
 {
-	"name": "core.Context",
-	"text": "root item",
-
-	"content": {
-		"Properties": {
-			"scrollY": { "text": "scrolled page vertical offset value", "internal": false, "type": "int", "defaultValue": "" },
-			"keyProcessDelay": { "text": "key pressed handling delay timeout in millisecnods", "internal": false, "type": "int", "defaultValue": "" },
-			"fullscreen": { "text": "fullscreen mode enabled / disabled", "internal": false, "type": "bool", "defaultValue": "" },
-			"language": { "text": "localisation language", "internal": false, "type": "string", "defaultValue": "" },
-			"system": { "text": "system info object", "ref": "qmlcore.core/System", "internal": false, "type": "System", "defaultValue": "System" },
-			"location": { "text": "web-page location object", "ref": "qmlcore.core/Location", "internal": false, "type": "Location", "defaultValue": "Location" },
-			"stylesheet": { "text": "@private", "ref": "qmlcore.platform.html5/Stylesheet", "internal": true, "type": "Stylesheet", "defaultValue": "Stylesheet" },
-			"buildIdentifier": { "text": "@private", "internal": true, "type": "string", "defaultValue": "owered by PureQML No-Partnership Edition Engin" },
-			"virtualWidth": { "text": "virtual viewport width", "internal": false, "type": "int", "defaultValue": "${manifest.virtual.width}" },
-			"virtualHeight": { "text": "virtual viewport height", "internal": false, "type": "int", "defaultValue": "${manifest.virtual.height}" },
-			"virtualScale": { "text": "@private", "internal": true, "type": "real", "defaultValue": "Math.min(((${system.resolutionWidth} || ${width}) / ${virtualWidth}),((${system.resolutionHeight} || ${height}) / ${virtualHeight}))" }
-		},
-
-		"Methods": {
-			"constructor": { "text": "@private", "params": [], "internal": true },
-			"mangleClass": { "text": "@private", "params": [], "internal": true },
-			"registerStyle": { "text": "@private", "params": [], "internal": true },
-			"createElement": { "text": "@private", "params": [], "internal": true },
-			"_init": { "text": "@private", "params": [], "internal": true },
-			"init": { "text": "@private", "params": [], "internal": true },
-			"__onCompleted": { "text": "@private", "params": [], "internal": true },
-			"onFullscreenChanged": { "text": "", "internal": true },
-			"scheduleComplete": { "text": "@internal", "params": [], "internal": true },
-			"start": { "text": "@private", "params": [], "internal": true },
-			"wrapNativeCallback": { "text": "", "internal": false },
-			"_processActions": { "text": "if you need to call it from native callback, use wrapNativeCallback method", "params": [], "internal": false },
-			"scheduleAction": { "text": "@private", "params": [], "internal": true },
-			"delayedAction": { "text": "@private", "params": [], "internal": true },
-			"qsTr": { "text": "Returns input text translation", "params": [{ "name": "text", "type": "string", "text": "text that must be translated" }], "internal": false },
-			"tr": { "text": "", "internal": false },
-			"updateL10n": { "text": "", "internal": false },
-			"processKey": { "text": "", "internal": false },
-			"run": { "text": "@private", "params": [], "internal": true },
-			"_run": { "text": "@private", "params": [], "internal": true }
-		}
-	}
+    "content": {
+        "Methods": {
+            "__onCompleted": {
+                "internal": true, 
+                "params": [], 
+                "text": "@private"
+            }, 
+            "_init": {
+                "internal": true, 
+                "params": [], 
+                "text": "@private"
+            }, 
+            "_processActions": {
+                "internal": false, 
+                "params": [], 
+                "text": "if you need to call it from native callback, use wrapNativeCallback method"
+            }, 
+            "_run": {
+                "internal": true, 
+                "params": [], 
+                "text": "@private"
+            }, 
+            "constructor": {
+                "internal": true, 
+                "params": [], 
+                "text": "@private"
+            }, 
+            "createElement": {
+                "internal": true, 
+                "params": [], 
+                "text": "@private"
+            }, 
+            "delayedAction": {
+                "internal": true, 
+                "params": [], 
+                "text": "@private"
+            }, 
+            "init": {
+                "internal": true, 
+                "params": [], 
+                "text": "@private"
+            }, 
+            "mangleClass": {
+                "internal": true, 
+                "params": [], 
+                "text": "@private"
+            }, 
+            "onFullscreenChanged": {
+                "internal": true, 
+                "text": ""
+            }, 
+            "processKey": {
+                "internal": false, 
+                "text": ""
+            }, 
+            "qsTr": {
+                "internal": false, 
+                "params": [
+                    {
+                        "name": "text", 
+                        "text": "text that must be translated", 
+                        "type": "string"
+                    }
+                ], 
+                "text": "\tReturns input text translation"
+            }, 
+            "registerStyle": {
+                "internal": true, 
+                "params": [], 
+                "text": "@private"
+            }, 
+            "run": {
+                "internal": true, 
+                "params": [], 
+                "text": "@private"
+            }, 
+            "scheduleAction": {
+                "internal": true, 
+                "params": [], 
+                "text": "@private"
+            }, 
+            "scheduleComplete": {
+                "internal": true, 
+                "params": [], 
+                "text": "@internal"
+            }, 
+            "start": {
+                "internal": true, 
+                "params": [], 
+                "text": "@private"
+            }, 
+            "tr": {
+                "internal": false, 
+                "text": ""
+            }, 
+            "updateL10n": {
+                "internal": false, 
+                "text": ""
+            }, 
+            "wrapNativeCallback": {
+                "internal": false, 
+                "text": ""
+            }
+        }, 
+        "Properties": {
+            "buildIdentifier": {
+                "defaultValue": "owered by PureQML No-Partnership Edition Engin", 
+                "internal": true, 
+                "text": "@private", 
+                "type": "string"
+            }, 
+            "fullscreen": {
+                "defaultValue": "", 
+                "internal": false, 
+                "text": "fullscreen mode enabled / disabled", 
+                "type": "bool"
+            }, 
+            "keyProcessDelay": {
+                "defaultValue": "", 
+                "internal": false, 
+                "text": "key pressed handling delay timeout in millisecnods", 
+                "type": "int"
+            }, 
+            "language": {
+                "defaultValue": "", 
+                "internal": false, 
+                "text": "localisation language", 
+                "type": "string"
+            }, 
+            "location": {
+                "defaultValue": "Location", 
+                "internal": false, 
+                "ref": "qmlcore.core/Location", 
+                "text": "web-page location object", 
+                "type": "Location"
+            }, 
+            "scrollY": {
+                "defaultValue": "", 
+                "internal": false, 
+                "text": "scrolled page vertical offset value", 
+                "type": "int"
+            }, 
+            "stylesheet": {
+                "defaultValue": "Stylesheet", 
+                "internal": true, 
+                "ref": "qmlcore.platform.html5/Stylesheet", 
+                "text": "@private", 
+                "type": "Stylesheet"
+            }, 
+            "system": {
+                "defaultValue": "System", 
+                "internal": false, 
+                "ref": "qmlcore.core/System", 
+                "text": "system info object", 
+                "type": "System"
+            }, 
+            "virtualHeight": {
+                "defaultValue": "${manifest.virtual.height}", 
+                "internal": false, 
+                "text": "virtual viewport height", 
+                "type": "int"
+            }, 
+            "virtualScale": {
+                "defaultValue": "Math.min(((${system.resolutionWidth} || ${width}) / ${virtualWidth}),((${system.resolutionHeight} || ${height}) / ${virtualHeight}))", 
+                "internal": true, 
+                "text": "@private", 
+                "type": "real"
+            }, 
+            "virtualWidth": {
+                "defaultValue": "${manifest.virtual.width}", 
+                "internal": false, 
+                "text": "virtual viewport width", 
+                "type": "int"
+            }
+        }
+    }, 
+    "name": "core.Context", 
+    "text": "root item"
 }

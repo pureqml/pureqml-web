@@ -1,15 +1,24 @@
 {
-	"name": "controls.core.SwapImage",
-	"text": "",
-
-	"content": {
-		"Properties": {
-			"swapDuration": { "text": "", "internal": false, "type": "int", "defaultValue": "500" }
-		},
-
-		"Methods": {
-			"swapLayers": { "text": "", "internal": false },
-			"swap": { "text": "", "internal": false }
-		}
-	}
+    "content": {
+        "Methods": {
+            "swap": {
+                "internal": false, 
+                "text": ""
+            }, 
+            "swapLayers": {
+                "internal": false, 
+                "text": ""
+            }
+        }, 
+        "Properties": {
+            "swapDuration": {
+                "defaultValue": "500", 
+                "internal": false, 
+                "text": "", 
+                "type": "int"
+            }
+        }
+    }, 
+    "name": "controls.core.SwapImage", 
+    "text": ""
 }

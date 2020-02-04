@@ -1,7 +1,5 @@
 {
-	"name": "lessons.VideoPlayerLesson",
-	"text": "",
-
-	"content": {
-	}
+    "content": {}, 
+    "name": "lessons.VideoPlayerLesson", 
+    "text": ""
 }

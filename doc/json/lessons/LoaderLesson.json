@@ -1,7 +1,5 @@
 {
-	"name": "lessons.LoaderLesson",
-	"text": "",
-
-	"content": {
-	}
+    "content": {}, 
+    "name": "lessons.LoaderLesson", 
+    "text": ""
 }

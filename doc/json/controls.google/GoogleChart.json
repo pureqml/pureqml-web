@@ -1,11 +1,29 @@
 {
-	"name": "controls.google.GoogleChart",
-	"text": "google chart item",
-
-	"content": {
-		"Methods": {
-			"fill": { "text": "Fill google chart function", "params": [{ "name": "data", "type": "Object", "text": "data for chart building" }, { "name": "opt", "type": "Object", "text": "chart displaying properties" }], "internal": false },
-			"registerStyle": { "text": "@private", "params": [], "internal": true }
-		}
-	}
+    "content": {
+        "Methods": {
+            "fill": {
+                "internal": false, 
+                "params": [
+                    {
+                        "name": "data", 
+                        "text": "data for chart building", 
+                        "type": "Object"
+                    }, 
+                    {
+                        "name": "opt", 
+                        "text": "chart displaying properties", 
+                        "type": "Object"
+                    }
+                ], 
+                "text": "\tFill google chart function"
+            }, 
+            "registerStyle": {
+                "internal": true, 
+                "params": [], 
+                "text": "@private"
+            }
+        }
+    }, 
+    "name": "controls.google.GoogleChart", 
+    "text": "google chart item"
 }

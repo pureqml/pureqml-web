@@ -1,13 +1,32 @@
 {
-	"name": "controls.web.ResizableBox",
-	"text": "",
-
-	"content": {
-		"Properties": {
-			"maxWidth": { "text": "", "internal": false, "type": "int", "defaultValue": "" },
-			"maxHeight": { "text": "", "internal": false, "type": "int", "defaultValue": "" },
-			"minHeight": { "text": "", "internal": false, "type": "int", "defaultValue": "1" },
-			"minWidth": { "text": "", "internal": false, "type": "int", "defaultValue": "1" }
-		}
-	}
+    "content": {
+        "Properties": {
+            "maxHeight": {
+                "defaultValue": "", 
+                "internal": false, 
+                "text": "", 
+                "type": "int"
+            }, 
+            "maxWidth": {
+                "defaultValue": "", 
+                "internal": false, 
+                "text": "", 
+                "type": "int"
+            }, 
+            "minHeight": {
+                "defaultValue": "1", 
+                "internal": false, 
+                "text": "", 
+                "type": "int"
+            }, 
+            "minWidth": {
+                "defaultValue": "1", 
+                "internal": false, 
+                "text": "", 
+                "type": "int"
+            }
+        }
+    }, 
+    "name": "controls.web.ResizableBox", 
+    "text": ""
 }

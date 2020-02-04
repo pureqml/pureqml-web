@@ -1,15 +1,26 @@
 {
-	"name": "controls.core.Sprite",
-	"text": "base sprite object",
-
-	"content": {
-		"Properties": {
-			"offsetX": { "text": "sprite horizontal offset", "internal": false, "type": "int", "defaultValue": "" },
-			"offsetY": { "text": "sprite vertical offset", "internal": false, "type": "int", "defaultValue": "" }
-		},
-
-		"Methods": {
-			"onOffsetYChanged": { "text": "", "internal": true }
-		}
-	}
+    "content": {
+        "Methods": {
+            "onOffsetYChanged": {
+                "internal": true, 
+                "text": ""
+            }
+        }, 
+        "Properties": {
+            "offsetX": {
+                "defaultValue": "", 
+                "internal": false, 
+                "text": "sprite horizontal offset", 
+                "type": "int"
+            }, 
+            "offsetY": {
+                "defaultValue": "", 
+                "internal": false, 
+                "text": "sprite vertical offset", 
+                "type": "int"
+            }
+        }
+    }, 
+    "name": "controls.core.Sprite", 
+    "text": "base sprite object"
 }

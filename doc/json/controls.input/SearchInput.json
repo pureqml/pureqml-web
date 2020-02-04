@@ -1,15 +1,24 @@
 {
-	"name": "controls.input.SearchInput",
-	"text": "HTML5 search input item",
-
-	"content": {
-		"Properties": {
-			"text": { "text": "input text string property", "internal": false, "type": "string", "defaultValue": "" }
-		},
-
-		"Methods": {
-			"onTextChanged": { "text": "", "internal": true },
-			"constructor": { "text": "", "internal": true }
-		}
-	}
+    "content": {
+        "Methods": {
+            "constructor": {
+                "internal": true, 
+                "text": ""
+            }, 
+            "onTextChanged": {
+                "internal": true, 
+                "text": ""
+            }
+        }, 
+        "Properties": {
+            "text": {
+                "defaultValue": "", 
+                "internal": false, 
+                "text": "input text string property", 
+                "type": "string"
+            }
+        }
+    }, 
+    "name": "controls.input.SearchInput", 
+    "text": "HTML5 search input item"
 }

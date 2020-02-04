@@ -1,21 +1,40 @@
 {
-	"name": "src.SearchPanel",
-	"text": "",
-
-	"content": {
-		"Properties": {
-			"searchFocused": { "text": "", "internal": false, "type": "bool", "defaultValue": "${searchText.activeFocus} || ${searchResults.visible}" },
-			"hover": { "text": "", "internal": false, "type": "Mixin", "defaultValue": "HoverClickMixin" }
-		},
-
-		"Signals": {
-			"search": { "text": "", "internal": false }
-		},
-
-		"Methods": {
-			"onClicked": { "text": "", "internal": false },
-			"onSearch": { "text": "", "internal": false },
-			"searchCall": { "text": "", "internal": false }
-		}
-	}
+    "content": {
+        "Methods": {
+            "onClicked": {
+                "internal": false, 
+                "text": ""
+            }, 
+            "onSearch": {
+                "internal": false, 
+                "text": ""
+            }, 
+            "searchCall": {
+                "internal": false, 
+                "text": ""
+            }
+        }, 
+        "Properties": {
+            "hover": {
+                "defaultValue": "HoverClickMixin", 
+                "internal": false, 
+                "text": "", 
+                "type": "Mixin"
+            }, 
+            "searchFocused": {
+                "defaultValue": "${searchText.activeFocus} || ${searchResults.visible}", 
+                "internal": false, 
+                "text": "", 
+                "type": "bool"
+            }
+        }, 
+        "Signals": {
+            "search": {
+                "internal": false, 
+                "text": ""
+            }
+        }
+    }, 
+    "name": "src.SearchPanel", 
+    "text": ""
 }

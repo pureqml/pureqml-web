@@ -1,6 +1,6 @@
 {
-	"controls.google": {
-		"YouTube": "controls.google/YouTube.json",
-		"GoogleChart": "controls.google/GoogleChart.json"
-	}
+    "controls.google": {
+        "GoogleChart": "controls.google/GoogleChart.json", 
+        "YouTube": "controls.google/YouTube.json"
+    }
 }
