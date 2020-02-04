@@ -1,1 +1,26 @@
-{"content": {"Methods": {"connect": {"internal": "false", "text": ""}, "pressKey": {"internal": "false", "text": ""}, "send": {"internal": "false", "text": ""}}, "Properties": {"connected": {"defaultValue": "", "internal": "false", "text": "", "type": "bool"}, "emulateKeyPressing": {"defaultValue": "true", "internal": "false", "text": "", "type": "bool"}, "host": {"defaultValue": "ws://\" + ${ip} + \":\" + ${port}", "internal": "false", "text": "", "type": "string"}, "ip": {"defaultValue": "", "internal": "false", "text": "", "type": "string"}, "port": {"defaultValue": "", "internal": "false", "text": "", "type": "string"}}, "Signals": {"closed": {"internal": "false", "text": ""}, "error": {"internal": "false", "text": ""}, "message": {"internal": "false", "text": ""}}}, "name": "controls.web.websocket.WebSocketClient", "text": ""}
+{
+	"name": "controls.web.websocket.WebSocketClient",
+	"text": "",
+
+	"content": {
+		"Properties": {
+			"connected": { "text": "", "internal": false, "type": "bool", "defaultValue": "" },
+			"emulateKeyPressing": { "text": "", "internal": false, "type": "bool", "defaultValue": "true" },
+			"ip": { "text": "", "internal": false, "type": "string", "defaultValue": "" },
+			"port": { "text": "", "internal": false, "type": "string", "defaultValue": "" },
+			"host": { "text": "", "internal": false, "type": "string", "defaultValue": "ws://" + ${ip} + ":" + ${port}" }
+		},
+
+		"Signals": {
+			"error": { "text": "", "internal": false },
+			"closed": { "text": "", "internal": false },
+			"message": { "text": "", "internal": false }
+		},
+
+		"Methods": {
+			"pressKey": { "text": "", "internal": false },
+			"send": { "text": "", "internal": false },
+			"connect": { "text": "", "internal": false }
+		}
+	}
+}

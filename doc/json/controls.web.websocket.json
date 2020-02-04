@@ -1,1 +1,6 @@
-{"WebSocketClient": "controls.web.websocket/WebSocketClient.json", "WebSocketServer": "controls.web.websocket/WebSocketServer.json", "controls.web.websocket": {}}
+{
+	"controls.web.websocket": {
+		"WebSocketServer": "controls.web.websocket/WebSocketServer.json",
+		"WebSocketClient": "controls.web.websocket/WebSocketClient.json"
+	}
+}

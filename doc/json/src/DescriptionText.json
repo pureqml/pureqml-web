@@ -1,1 +1,7 @@
-{"content": {}, "name": "src.DescriptionText", "text": ""}
+{
+	"name": "src.DescriptionText",
+	"text": "",
+
+	"content": {
+	}
+}

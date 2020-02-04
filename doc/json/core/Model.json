@@ -1,1 +1,17 @@
-{"content": {"Properties": {"count": {"defaultValue": "", "internal": "false", "text": "model rows count. Please note that you can't directly/indirectly modify model from onChanged handler. Use view.onCountChanged instead", "type": "int"}}, "Signals": {"reset": {"internal": "false", "text": "model reset signal"}, "rowsChanged": {"internal": "false", "text": "rows changed signal"}, "rowsInserted": {"internal": "false", "text": "rows inserted signal"}, "rowsRemoved": {"internal": "false", "text": "rows removed signal"}}}, "name": "core.Model", "text": ""}
+{
+	"name": "core.Model",
+	"text": "",
+
+	"content": {
+		"Properties": {
+			"count": { "text": "model rows count. Please note that you can't directly/indirectly modify model from onChanged handler. Use view.onCountChanged instead", "internal": false, "type": "int", "defaultValue": "" }
+		},
+
+		"Signals": {
+			"reset": { "text": "model reset signal", "internal": false },
+			"rowsInserted": { "text": "rows inserted signal", "internal": false },
+			"rowsChanged": { "text": "rows changed signal", "internal": false },
+			"rowsRemoved": { "text": "rows removed signal", "internal": false }
+		}
+	}
+}

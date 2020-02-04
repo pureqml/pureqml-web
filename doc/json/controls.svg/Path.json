@@ -1,1 +1,25 @@
-{"content": {"Methods": {"buildPath": {"internal": "false", "text": ""}, "getTag": {"internal": "false", "params": [], "text": "returns tag for corresponding element"}, "onColorChanged": {"internal": "true", "text": ""}, "onFillChanged": {"internal": "true", "text": ""}, "onWidthChanged": {"internal": "true", "text": ""}, "onX1Changed": {"internal": "true", "text": ""}}, "Properties": {"color": {"defaultValue": "red", "internal": "false", "text": "", "type": "Color"}, "fill": {"defaultValue": "none", "internal": "false", "text": "", "type": "string"}, "width": {"defaultValue": "2", "internal": "false", "text": "", "type": "int"}, "x1": {"defaultValue": "", "internal": "false", "text": "", "type": "int"}, "x2": {"defaultValue": "", "internal": "false", "text": "", "type": "int"}, "y1": {"defaultValue": "", "internal": "false", "text": "", "type": "int"}, "y2": {"defaultValue": "", "internal": "false", "text": "", "type": "int"}}}, "name": "controls.svg.Path", "text": "returns tag for corresponding element"}
+{
+	"name": "controls.svg.Path",
+	"text": "returns tag for corresponding element",
+
+	"content": {
+		"Properties": {
+			"x1": { "text": "", "internal": false, "type": "int", "defaultValue": "" },
+			"x2": { "text": "", "internal": false, "type": "int", "defaultValue": "" },
+			"y1": { "text": "", "internal": false, "type": "int", "defaultValue": "" },
+			"y2": { "text": "", "internal": false, "type": "int", "defaultValue": "" },
+			"color": { "text": "", "internal": false, "type": "Color", "defaultValue": "red" },
+			"fill": { "text": "", "internal": false, "type": "string", "defaultValue": "none" },
+			"width": { "text": "", "internal": false, "type": "int", "defaultValue": "2" }
+		},
+
+		"Methods": {
+			"getTag": { "text": "returns tag for corresponding element", "params": [], "internal": false },
+			"onColorChanged": { "text": "", "internal": true },
+			"onFillChanged": { "text": "", "internal": true },
+			"onWidthChanged": { "text": "", "internal": true },
+			"onX1Changed": { "text": "", "internal": true },
+			"buildPath": { "text": "", "internal": false }
+		}
+	}
+}

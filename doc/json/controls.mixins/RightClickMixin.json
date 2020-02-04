@@ -1,1 +1,20 @@
-{"content": {"Methods": {"_bindClicked": {"internal": "true", "params": [], "text": "@private"}, "constructor": {"internal": "true", "text": ""}, "onEnabledChanged": {"internal": "true", "params": [], "text": "@private"}}, "Properties": {"enabled": {"defaultValue": "true", "internal": "false", "text": "", "type": "bool"}}, "Signals": {"clicked": {"internal": "false", "text": ""}}}, "name": "controls.mixins.RightClickMixin", "text": "@private"}
+{
+	"name": "controls.mixins.RightClickMixin",
+	"text": "@private",
+
+	"content": {
+		"Properties": {
+			"enabled": { "text": "", "internal": false, "type": "bool", "defaultValue": "true" }
+		},
+
+		"Signals": {
+			"clicked": { "text": "", "internal": false }
+		},
+
+		"Methods": {
+			"constructor": { "text": "", "internal": true },
+			"_bindClicked": { "text": "@private", "params": [], "internal": true },
+			"onEnabledChanged": { "text": "@private", "params": [], "internal": true }
+		}
+	}
+}

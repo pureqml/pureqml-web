@@ -1,1 +1,20 @@
-{"content": {"Methods": {"_bindClicked": {"internal": "true", "params": [], "text": "@private"}, "constructor": {"internal": "true", "text": ""}, "onEnabledChanged": {"internal": "true", "params": [], "text": "@private"}}, "Properties": {"enabled": {"defaultValue": "true", "internal": "false", "text": "", "type": "bool"}}, "Signals": {"doubleClicked": {"internal": "false", "text": ""}}}, "name": "controls.mixins.DoubleClickMixin", "text": "@private"}
+{
+	"name": "controls.mixins.DoubleClickMixin",
+	"text": "@private",
+
+	"content": {
+		"Properties": {
+			"enabled": { "text": "", "internal": false, "type": "bool", "defaultValue": "true" }
+		},
+
+		"Signals": {
+			"doubleClicked": { "text": "", "internal": false }
+		},
+
+		"Methods": {
+			"constructor": { "text": "", "internal": true },
+			"_bindClicked": { "text": "@private", "params": [], "internal": true },
+			"onEnabledChanged": { "text": "@private", "params": [], "internal": true }
+		}
+	}
+}

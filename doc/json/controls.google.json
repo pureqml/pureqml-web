@@ -1,1 +1,6 @@
-{"GoogleChart": "controls.google/GoogleChart.json", "YouTube": "controls.google/YouTube.json", "controls.google": {}}
+{
+	"controls.google": {
+		"YouTube": "controls.google/YouTube.json",
+		"GoogleChart": "controls.google/GoogleChart.json"
+	}
+}

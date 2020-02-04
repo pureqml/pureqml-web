@@ -1,1 +1,59 @@
-{"content": {"Methods": {"_attach": {"internal": "true", "params": [], "text": "@private"}, "_createDelegate": {"internal": "true", "params": [], "text": "@private creates delegate in given item slot"}, "_detach": {"internal": "true", "params": [], "text": "@private"}, "_discardItem": {"internal": "true", "params": [], "text": "@private"}, "_insertItems": {"internal": "true", "params": [], "text": "@private"}, "_onReset": {"internal": "true", "params": [], "text": "@private"}, "_onRowsChanged": {"internal": "true", "params": [], "text": "@private"}, "_onRowsInserted": {"internal": "true", "params": [], "text": "@private"}, "_onRowsRemoved": {"internal": "true", "params": [], "text": "@private"}, "_processUpdates": {"internal": "true", "params": [], "text": "@private"}, "_removeItems": {"internal": "true", "params": [], "text": "@private"}, "_updateDelegate": {"internal": "true", "params": [], "text": "@private"}, "_updateDelegateIndex": {"internal": "true", "params": [], "text": "@private"}, "_updateItems": {"internal": "true", "params": [], "text": "@private"}, "_updateScrollPositions": {"internal": "true", "params": [], "text": "@private silently updates scroll positions, because browser animates scroll"}, "constructor": {"internal": "true", "params": [], "text": "@private"}, "discard": {"internal": "false", "text": ""}, "focusCurrent": {"internal": "true", "params": [], "text": "@private focuses current item"}, "itemAt": {"internal": "false", "params": [], "text": "returns index of item by x,y coordinates"}, "onCompleted": {"internal": "true", "text": ""}, "onContentXChanged": {"internal": "true", "text": ""}, "onContentYChanged": {"internal": "true", "text": ""}, "onCurrentIndexChanged": {"internal": "true", "text": ""}, "onDelegateChanged": {"internal": "true", "text": ""}, "onFocusedChildChanged": {"internal": "true", "text": ""}, "onHeightChanged": {"internal": "true", "text": ""}, "onModelChanged": {"internal": "true", "text": ""}, "onRecursiveVisibleChanged": {"internal": "true", "text": ""}, "onWidthChanged": {"internal": "true", "text": ""}, "positionViewAtItemHorizontally": {"internal": "false", "text": ""}, "positionViewAtItemVertically": {"internal": "false", "text": ""}}, "Properties": {"animationDuration": {"defaultValue": "0", "internal": "false", "text": "", "type": "int"}, "animationEasing": {"defaultValue": "ease", "internal": "false", "text": "", "type": "string"}, "content": {"defaultValue": "BaseViewContent", "internal": "false", "ref": "qmlcore.core/BaseViewContent", "text": "", "type": "BaseViewContent"}, "contentFollowsCurrentItem": {"defaultValue": "true", "internal": "false", "text": "auto-scroll content to current focused item", "type": "bool"}, "contentX": {"defaultValue": "", "internal": "false", "text": "x offset to visible part of the content surface", "type": "int"}, "contentY": {"defaultValue": "", "internal": "false", "text": "y offset to visible part of the content surface", "type": "int"}, "delegate": {"defaultValue": "", "internal": "false", "text": "delegate - template object, filled with model row", "type": "Item"}, "model": {"defaultValue": "", "internal": "false", "text": "model object to attach to", "type": "Object"}, "nativeScrolling": {"defaultValue": "${context.system.device} === ${context.system.Mobile}", "internal": "false", "text": "allows native scrolling on mobile targets and shows native scrollbars", "type": "bool"}, "prerender": {"defaultValue": "0.5", "internal": "false", "text": "allocate additional delegates by viewport (prerender * horizontal/vertical view size) px", "type": "real"}, "scrollingStep": {"defaultValue": "0", "internal": "false", "text": "scrolling step", "type": "int"}, "visibilityProperty": {"defaultValue": "", "internal": "false", "text": "if this property is false, delegate is not created at all", "type": "string"}}, "Signals": {"layoutFinished": {"internal": "false", "text": "base class for all views, holds content, creates delegates and provides common api"}}}, "name": "core.BaseView", "text": "base class for all views, holds content, creates delegates and provides common api"}
+{
+	"name": "core.BaseView",
+	"text": "base class for all views, holds content, creates delegates and provides common api",
+
+	"content": {
+		"Properties": {
+			"model": { "text": "model object to attach to", "internal": false, "type": "Object", "defaultValue": "" },
+			"delegate": { "text": "delegate - template object, filled with model row", "internal": false, "type": "Item", "defaultValue": "" },
+			"contentX": { "text": "x offset to visible part of the content surface", "internal": false, "type": "int", "defaultValue": "" },
+			"contentY": { "text": "y offset to visible part of the content surface", "internal": false, "type": "int", "defaultValue": "" },
+			"scrollingStep": { "text": "scrolling step", "internal": false, "type": "int", "defaultValue": "0" },
+			"animationDuration": { "text": "", "internal": false, "type": "int", "defaultValue": "0" },
+			"animationEasing": { "text": "", "internal": false, "type": "string", "defaultValue": "ease" },
+			"contentFollowsCurrentItem": { "text": "auto-scroll content to current focused item", "internal": false, "type": "bool", "defaultValue": "true" },
+			"nativeScrolling": { "text": "allows native scrolling on mobile targets and shows native scrollbars", "internal": false, "type": "bool", "defaultValue": "${context.system.device} === ${context.system.Mobile}" },
+			"prerender": { "text": "allocate additional delegates by viewport (prerender * horizontal/vertical view size) px", "internal": false, "type": "real", "defaultValue": "0.5" },
+			"visibilityProperty": { "text": "if this property is false, delegate is not created at all", "internal": false, "type": "string", "defaultValue": "" },
+			"content": { "text": "", "ref": "qmlcore.core/BaseViewContent", "internal": false, "type": "BaseViewContent", "defaultValue": "BaseViewContent" }
+		},
+
+		"Signals": {
+			"layoutFinished": { "text": "base class for all views, holds content, creates delegates and provides common api", "internal": false }
+		},
+
+		"Methods": {
+			"onContentXChanged": { "text": "", "internal": true },
+			"onContentYChanged": { "text": "", "internal": true },
+			"constructor": { "text": "@private", "params": [], "internal": true },
+			"itemAt": { "text": "returns index of item by x,y coordinates", "params": [], "internal": false },
+			"focusCurrent": { "text": "@private focuses current item", "params": [], "internal": true },
+			"onFocusedChildChanged": { "text": "", "internal": true },
+			"onCurrentIndexChanged": { "text": "", "internal": true },
+			"onModelChanged": { "text": "", "internal": true },
+			"_onReset": { "text": "@private", "params": [], "internal": true },
+			"_onRowsInserted": { "text": "@private", "params": [], "internal": true },
+			"_onRowsChanged": { "text": "@private", "params": [], "internal": true },
+			"_onRowsRemoved": { "text": "@private", "params": [], "internal": true },
+			"_attach": { "text": "@private", "params": [], "internal": true },
+			"_detach": { "text": "@private", "params": [], "internal": true },
+			"onDelegateChanged": { "text": "", "internal": true },
+			"_createDelegate": { "text": "@private creates delegate in given item slot", "params": [], "internal": true },
+			"_updateDelegate": { "text": "@private", "params": [], "internal": true },
+			"_updateDelegateIndex": { "text": "@private", "params": [], "internal": true },
+			"discard": { "text": "", "internal": false },
+			"_discardItem": { "text": "@private", "params": [], "internal": true },
+			"_insertItems": { "text": "@private", "params": [], "internal": true },
+			"_removeItems": { "text": "@private", "params": [], "internal": true },
+			"_updateItems": { "text": "@private", "params": [], "internal": true },
+			"_processUpdates": { "text": "@private", "params": [], "internal": true },
+			"onRecursiveVisibleChanged": { "text": "", "internal": true },
+			"onWidthChanged": { "text": "", "internal": true },
+			"onHeightChanged": { "text": "", "internal": true },
+			"_updateScrollPositions": { "text": "@private silently updates scroll positions, because browser animates scroll", "params": [], "internal": true },
+			"positionViewAtItemHorizontally": { "text": "", "internal": false },
+			"positionViewAtItemVertically": { "text": "", "internal": false },
+			"onCompleted": { "text": "", "internal": true }
+		}
+	}
+}

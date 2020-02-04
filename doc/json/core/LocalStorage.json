@@ -1,1 +1,17 @@
-{"content": {"Methods": {"_checkNameValid": {"internal": "true", "params": [], "text": "@private"}, "_ensureCallback": {"internal": "true", "params": [], "text": "@private"}, "_ensureErrCallback": {"internal": "true", "params": [], "text": "@private"}, "constructor": {"internal": "true", "params": [], "text": "simple proxy to underlying storage"}, "erase": {"internal": "false", "params": [{"name": "name", "text": "item name", "type": "string"}, {"name": "error", "text": "callback to report error", "type": "function"}], "text": "Remove item"}, "get": {"internal": "false", "params": [{"name": "name", "text": "stored item name", "type": "string"}, {"name": "callback", "text": "callback to return value", "type": "function"}, {"name": "error", "text": "callback to report non-existing value or some kind of error", "type": "function"}], "text": "Return stored item by name"}, "getOrDefault": {"internal": "false", "params": [{"name": "name", "text": "stored item name", "type": "string"}, {"name": "callback", "text": "callback to return value", "type": "function"}, {"name": "defaultValue", "text": "default value", "type": "Object"}], "text": "Return stored item by name or default value if not exists"}, "set": {"internal": "false", "params": [{"name": "name", "text": "item name", "type": "string"}, {"name": "value", "text": "item value", "type": "string"}, {"name": "error", "text": "callback to report error", "type": "function"}], "text": "Save named item"}}}, "name": "core.LocalStorage", "text": "simple proxy to underlying storage"}
+{
+	"name": "core.LocalStorage",
+	"text": "simple proxy to underlying storage",
+
+	"content": {
+		"Methods": {
+			"constructor": { "text": "simple proxy to underlying storage", "params": [], "internal": true },
+			"_checkNameValid": { "text": "@private", "params": [], "internal": true },
+			"_ensureCallback": { "text": "@private", "params": [], "internal": true },
+			"_ensureErrCallback": { "text": "@private", "params": [], "internal": true },
+			"get": { "text": "Return stored item by name", "params": [{ "name": "name", "type": "string", "text": "stored item name" }, { "name": "callback", "type": "function", "text": "callback to return value" }, { "name": "error", "type": "function", "text": "callback to report non-existing value or some kind of error" }], "internal": false },
+			"getOrDefault": { "text": "Return stored item by name or default value if not exists", "params": [{ "name": "name", "type": "string", "text": "stored item name" }, { "name": "callback", "type": "function", "text": "callback to return value" }, { "name": "defaultValue", "type": "Object", "text": "default value" }], "internal": false },
+			"set": { "text": "Save named item", "params": [{ "name": "name", "type": "string", "text": "item name" }, { "name": "value", "type": "string", "text": "item value" }, { "name": "error", "type": "function", "text": "callback to report error" }], "internal": false },
+			"erase": { "text": "Remove item", "params": [{ "name": "name", "type": "string", "text": "item name" }, { "name": "error", "type": "function", "text": "callback to report error" }], "internal": false }
+		}
+	}
+}

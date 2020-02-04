@@ -1,1 +1,10 @@
-{"content": {"Properties": {"title": {"defaultValue": "", "internal": "false", "text": "", "type": "string"}}}, "name": "src.SectionHead", "text": ""}
+{
+	"name": "src.SectionHead",
+	"text": "",
+
+	"content": {
+		"Properties": {
+			"title": { "text": "", "internal": false, "type": "string", "defaultValue": "" }
+		}
+	}
+}

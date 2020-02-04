@@ -1,1 +1,5 @@
-{"YandexMap": "controls.yandex/YandexMap.json", "controls.yandex": {}}
+{
+	"controls.yandex": {
+		"YandexMap": "controls.yandex/YandexMap.json"
+	}
+}

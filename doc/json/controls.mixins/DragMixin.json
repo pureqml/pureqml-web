@@ -1,1 +1,24 @@
-{"content": {"Methods": {"_bindPressed": {"internal": "true", "params": [], "text": "@private"}, "_downHandler": {"internal": "true", "params": [], "text": "@private"}, "_moveHandler": {"internal": "true", "params": [], "text": "@private"}, "constructor": {"internal": "true", "params": [], "text": "@private"}, "onEnabledChanged": {"internal": "true", "params": [], "text": "@private"}}, "Properties": {"bottom": {"defaultValue": "", "internal": "false", "text": "bottom border", "type": "int"}, "enabled": {"defaultValue": "true", "internal": "false", "text": "enable/disable mixin", "type": "bool"}, "left": {"defaultValue": "", "internal": "false", "text": "left border", "type": "int"}, "moved": {"defaultValue": "", "internal": "false", "text": "is moved flag", "type": "bool"}, "pressed": {"defaultValue": "", "internal": "false", "text": "is mouse pressed flag", "type": "bool"}, "right": {"defaultValue": "", "internal": "false", "text": "right border", "type": "int"}, "top": {"defaultValue": "", "internal": "false", "text": "top border", "type": "int"}}}, "name": "controls.mixins.DragMixin", "text": "makes parent item dragable"}
+{
+	"name": "controls.mixins.DragMixin",
+	"text": "makes parent item dragable",
+
+	"content": {
+		"Properties": {
+			"moved": { "text": "is moved flag", "internal": false, "type": "bool", "defaultValue": "" },
+			"pressed": { "text": "is mouse pressed flag", "internal": false, "type": "bool", "defaultValue": "" },
+			"enabled": { "text": "enable/disable mixin", "internal": false, "type": "bool", "defaultValue": "true" },
+			"top": { "text": "top border", "internal": false, "type": "int", "defaultValue": "" },
+			"left": { "text": "left border", "internal": false, "type": "int", "defaultValue": "" },
+			"right": { "text": "right border", "internal": false, "type": "int", "defaultValue": "" },
+			"bottom": { "text": "bottom border", "internal": false, "type": "int", "defaultValue": "" }
+		},
+
+		"Methods": {
+			"constructor": { "text": "@private", "params": [], "internal": true },
+			"_moveHandler": { "text": "@private", "params": [], "internal": true },
+			"_downHandler": { "text": "@private", "params": [], "internal": true },
+			"_bindPressed": { "text": "@private", "params": [], "internal": true },
+			"onEnabledChanged": { "text": "@private", "params": [], "internal": true }
+		}
+	}
+}

@@ -1,1 +1,20 @@
-{"content": {"Methods": {"_bindOrientation": {"internal": "true", "params": [], "text": "@private"}, "constructor": {"internal": "true", "text": ""}, "onEnabledChanged": {"internal": "true", "params": [], "text": "@private"}}, "Properties": {"absolute": {"defaultValue": "", "internal": "false", "text": "Indicates whether or not the device is providing orientation data absolutely (that is, in reference to the Earth's coordinate frame) or using some arbitrary frame determined by the device.", "type": "bool"}, "alpha": {"defaultValue": "", "internal": "false", "text": "The rotation of the device around the Z axis; that is, the number of degrees by which the device is being twisted around the center of the screen.", "type": "real"}, "beta": {"defaultValue": "", "internal": "false", "text": "The rotation of the device around the X axis; that is, the number of degrees, ranged between -180 and 180,  by which the device is tipped forward or backward.", "type": "real"}, "enabled": {"defaultValue": "true", "internal": "false", "text": "enable/disable mixin", "type": "bool"}, "gamma": {"defaultValue": "", "internal": "false", "text": "The rotation of the device around the Y axis; that is, the number of degrees, ranged between -90 and 90, by which the device is turned left or right.", "type": "real"}}}, "name": "controls.mixins.OrientationMixin", "text": "The mixin provides information from the physical orientation of the device."}
+{
+	"name": "controls.mixins.OrientationMixin",
+	"text": "The mixin provides information from the physical orientation of the device.",
+
+	"content": {
+		"Properties": {
+			"alpha": { "text": "The rotation of the device around the Z axis; that is, the number of degrees by which the device is being twisted around the center of the screen.", "internal": false, "type": "real", "defaultValue": "" },
+			"beta": { "text": "The rotation of the device around the X axis; that is, the number of degrees, ranged between -180 and 180,  by which the device is tipped forward or backward.", "internal": false, "type": "real", "defaultValue": "" },
+			"gamma": { "text": "The rotation of the device around the Y axis; that is, the number of degrees, ranged between -90 and 90, by which the device is turned left or right.", "internal": false, "type": "real", "defaultValue": "" },
+			"absolute": { "text": "Indicates whether or not the device is providing orientation data absolutely (that is, in reference to the Earth's coordinate frame) or using some arbitrary frame determined by the device.", "internal": false, "type": "bool", "defaultValue": "" },
+			"enabled": { "text": "enable/disable mixin", "internal": false, "type": "bool", "defaultValue": "true" }
+		},
+
+		"Methods": {
+			"constructor": { "text": "", "internal": true },
+			"_bindOrientation": { "text": "@private", "params": [], "internal": true },
+			"onEnabledChanged": { "text": "@private", "params": [], "internal": true }
+		}
+	}
+}

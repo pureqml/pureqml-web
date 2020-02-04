@@ -1,1 +1,10 @@
-{"content": {"Properties": {"shift": {"defaultValue": "150", "internal": "false", "text": "", "type": "int"}}}, "name": "src.KeyValueView", "text": ""}
+{
+	"name": "src.KeyValueView",
+	"text": "",
+
+	"content": {
+		"Properties": {
+			"shift": { "text": "", "internal": false, "type": "int", "defaultValue": "150" }
+		}
+	}
+}

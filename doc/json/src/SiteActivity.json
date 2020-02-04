@@ -1,1 +1,15 @@
-{"content": {"Methods": {"onStarted": {"internal": "false", "text": ""}, "onStopped": {"internal": "false", "text": ""}}, "Properties": {"active": {"defaultValue": "", "internal": "false", "text": "", "type": "bool"}}}, "name": "src.SiteActivity", "text": ""}
+{
+	"name": "src.SiteActivity",
+	"text": "",
+
+	"content": {
+		"Properties": {
+			"active": { "text": "", "internal": false, "type": "bool", "defaultValue": "" }
+		},
+
+		"Methods": {
+			"onStarted": { "text": "", "internal": false },
+			"onStopped": { "text": "", "internal": false }
+		}
+	}
+}

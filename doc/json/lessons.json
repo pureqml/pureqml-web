@@ -1,1 +1,24 @@
-{"ActivityLesson": "lessons/ActivityLesson.json", "AnchorsLesson": "lessons/AnchorsLesson.json", "BasicLesson": "lessons/BasicLesson.json", "DrmLesson": "lessons/DrmLesson.json", "EffectsLesson": "lessons/EffectsLesson.json", "FocusLesson": "lessons/FocusLesson.json", "GamepadLesson": "lessons/GamepadLesson.json", "GlobalsLesson": "lessons/GlobalsLesson.json", "InputsLesson": "lessons/InputsLesson.json", "KeyboardLesson": "lessons/KeyboardLesson.json", "LayoutsLesson": "lessons/LayoutsLesson.json", "Lesson": "lessons/Lesson.json", "LoaderLesson": "lessons/LoaderLesson.json", "LocalizationLesson": "lessons/LocalizationLesson.json", "MixinLesson": "lessons/MixinLesson.json", "SignalLesson": "lessons/SignalLesson.json", "SpriteLesson": "lessons/SpriteLesson.json", "TransformLesson": "lessons/TransformLesson.json", "VideoPlayerLesson": "lessons/VideoPlayerLesson.json", "ViewAndModelsLesson": "lessons/ViewAndModelsLesson.json", "lessons": {}}
+{
+	"lessons": {
+		"Lesson": "lessons/Lesson.json",
+		"GamepadLesson": "lessons/GamepadLesson.json",
+		"EffectsLesson": "lessons/EffectsLesson.json",
+		"InputsLesson": "lessons/InputsLesson.json",
+		"LayoutsLesson": "lessons/LayoutsLesson.json",
+		"DrmLesson": "lessons/DrmLesson.json",
+		"ActivityLesson": "lessons/ActivityLesson.json",
+		"FocusLesson": "lessons/FocusLesson.json",
+		"KeyboardLesson": "lessons/KeyboardLesson.json",
+		"SignalLesson": "lessons/SignalLesson.json",
+		"BasicLesson": "lessons/BasicLesson.json",
+		"SpriteLesson": "lessons/SpriteLesson.json",
+		"ViewAndModelsLesson": "lessons/ViewAndModelsLesson.json",
+		"LocalizationLesson": "lessons/LocalizationLesson.json",
+		"VideoPlayerLesson": "lessons/VideoPlayerLesson.json",
+		"AnchorsLesson": "lessons/AnchorsLesson.json",
+		"TransformLesson": "lessons/TransformLesson.json",
+		"MixinLesson": "lessons/MixinLesson.json",
+		"GlobalsLesson": "lessons/GlobalsLesson.json",
+		"LoaderLesson": "lessons/LoaderLesson.json"
+	}
+}

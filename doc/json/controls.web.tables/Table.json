@@ -1,1 +1,18 @@
-{"content": {"Methods": {"assign": {"internal": "false", "text": ""}, "getTag": {"internal": "false", "text": ""}, "onTextColorChanged": {"internal": "true", "text": ""}}, "Properties": {"headerModel": {"defaultValue": "ListModel", "internal": "false", "ref": "qmlcore.core/Object", "text": "", "type": "Object"}, "model": {"defaultValue": "ListModel", "internal": "false", "ref": "qmlcore.core/Object", "text": "", "type": "Object"}, "textColor": {"defaultValue": "", "internal": "false", "text": "", "type": "Color"}}}, "name": "controls.web.tables.Table", "text": ""}
+{
+	"name": "controls.web.tables.Table",
+	"text": "",
+
+	"content": {
+		"Properties": {
+			"model": { "text": "", "ref": "qmlcore.core/Object", "internal": false, "type": "Object", "defaultValue": "ListModel" },
+			"headerModel": { "text": "", "ref": "qmlcore.core/Object", "internal": false, "type": "Object", "defaultValue": "ListModel" },
+			"textColor": { "text": "", "internal": false, "type": "Color", "defaultValue": "" }
+		},
+
+		"Methods": {
+			"getTag": { "text": "", "internal": false },
+			"onTextColorChanged": { "text": "", "internal": true },
+			"assign": { "text": "", "internal": false }
+		}
+	}
+}

@@ -1,1 +1,12 @@
-{"content": {"Methods": {"getActivity": {"internal": "false", "params": [], "text": "get activity item"}, "start": {"internal": "false", "params": [], "text": "start activity"}, "stop": {"internal": "false", "params": [], "text": "stop activity"}}}, "name": "controls.core.Activity", "text": "simple activity control"}
+{
+	"name": "controls.core.Activity",
+	"text": "simple activity control",
+
+	"content": {
+		"Methods": {
+			"start": { "text": "start activity", "params": [], "internal": false },
+			"stop": { "text": "stop activity", "params": [], "internal": false },
+			"getActivity": { "text": "get activity item", "params": [], "internal": false }
+		}
+	}
+}

@@ -1,1 +1,24 @@
-{"content": {"Methods": {"addLanguage": {"internal": "false", "text": ""}, "onClicked": {"internal": "false", "text": ""}, "onCompleted": {"internal": "true", "text": ""}, "onCountChanged": {"internal": "true", "text": ""}, "onCurrentIndexChanged": {"internal": "true", "text": ""}}, "Properties": {"count": {"defaultValue": "", "internal": "false", "text": "", "type": "int"}, "currentIndex": {"defaultValue": "", "internal": "false", "text": "", "type": "int"}, "languges": {"defaultValue": "", "internal": "false", "text": "", "type": "variant"}}, "Signals": {"languageChanged": {"internal": "false", "text": ""}}}, "name": "controls.web.LanguageSwitcher", "text": ""}
+{
+	"name": "controls.web.LanguageSwitcher",
+	"text": "",
+
+	"content": {
+		"Properties": {
+			"languges": { "text": "", "internal": false, "type": "variant", "defaultValue": "" },
+			"currentIndex": { "text": "", "internal": false, "type": "int", "defaultValue": "" },
+			"count": { "text": "", "internal": false, "type": "int", "defaultValue": "" }
+		},
+
+		"Signals": {
+			"languageChanged": { "text": "", "internal": false }
+		},
+
+		"Methods": {
+			"addLanguage": { "text": "", "internal": false },
+			"onCountChanged": { "text": "", "internal": true },
+			"onClicked": { "text": "", "internal": false },
+			"onCurrentIndexChanged": { "text": "", "internal": true },
+			"onCompleted": { "text": "", "internal": true }
+		}
+	}
+}

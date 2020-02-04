@@ -1,1 +1,25 @@
-{"content": {"Methods": {"_checkNameValid": {"internal": "true", "params": [], "text": "@private"}, "_read": {"internal": "true", "params": [], "text": "@private"}, "_write": {"internal": "true", "params": [], "text": "@private"}, "onCompleted": {"internal": "true", "text": ""}, "onNameChanged": {"internal": "true", "params": [], "text": "@private"}, "onValueChanged": {"internal": "true", "params": [], "text": "@private"}}, "Properties": {"defaultValue": {"defaultValue": "", "internal": "false", "text": "default init value", "type": "string"}, "name": {"defaultValue": "", "internal": "false", "text": "stored property key name", "type": "string"}, "value": {"defaultValue": "", "internal": "false", "text": "stored property value", "type": "string"}}, "Signals": {"ready": {"internal": "false", "text": "the value now in a sync state with underlying storage"}}}, "name": "core.PropertyStorage", "text": "object to hold named property synced with underlying storage"}
+{
+	"name": "core.PropertyStorage",
+	"text": "object to hold named property synced with underlying storage",
+
+	"content": {
+		"Properties": {
+			"name": { "text": "stored property key name", "internal": false, "type": "string", "defaultValue": "" },
+			"value": { "text": "stored property value", "internal": false, "type": "string", "defaultValue": "" },
+			"defaultValue": { "text": "default init value", "internal": false, "type": "string", "defaultValue": "" }
+		},
+
+		"Signals": {
+			"ready": { "text": "the value now in a sync state with underlying storage", "internal": false }
+		},
+
+		"Methods": {
+			"_checkNameValid": { "text": "@private", "params": [], "internal": true },
+			"_read": { "text": "@private", "params": [], "internal": true },
+			"_write": { "text": "@private", "params": [], "internal": true },
+			"onValueChanged": { "text": "@private", "params": [], "internal": true },
+			"onNameChanged": { "text": "@private", "params": [], "internal": true },
+			"onCompleted": { "text": "", "internal": true }
+		}
+	}
+}

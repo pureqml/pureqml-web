@@ -1,1 +1,14 @@
-{"content": {"Methods": {"onClicked": {"internal": "false", "text": ""}}, "Signals": {"mySignalOccured": {"internal": "false", "text": ""}}}, "name": "code_samples.SignalTestItem", "text": ""}
+{
+	"name": "code_samples.SignalTestItem",
+	"text": "",
+
+	"content": {
+		"Signals": {
+			"mySignalOccured": { "text": "", "internal": false }
+		},
+
+		"Methods": {
+			"onClicked": { "text": "", "internal": false }
+		}
+	}
+}

@@ -1,1 +1,32 @@
-{"content": {"Methods": {"getClass": {"internal": "true", "params": [], "text": "@private"}, "onBoldChanged": {"internal": "true", "params": [], "text": "@private"}, "onFamilyChanged": {"internal": "true", "params": [], "text": "@private"}, "onItalicChanged": {"internal": "true", "params": [], "text": "@private"}, "onLineHeightChanged": {"internal": "true", "params": [], "text": "@private"}, "onPixelSizeChanged": {"internal": "true", "params": [], "text": "@private"}, "onPointSizeChanged": {"internal": "true", "params": [], "text": "@private"}, "onStrikeChanged": {"internal": "true", "params": [], "text": "@private"}, "onUnderlineChanged": {"internal": "true", "params": [], "text": "@private"}, "onWeightChanged": {"internal": "true", "params": [], "text": "@private"}, "updateProperty": {"internal": "true", "params": [], "text": "@private"}}, "Properties": {"bold": {"defaultValue": "", "internal": "false", "text": "applies bold style", "type": "bool"}, "family": {"defaultValue": "", "internal": "false", "text": "font family", "type": "string"}, "italic": {"defaultValue": "", "internal": "false", "text": "applies italic style", "type": "bool"}, "lineHeight": {"defaultValue": "", "internal": "false", "text": "font line height in pixels", "type": "int"}, "pixelSize": {"defaultValue": "", "internal": "false", "text": "font size in pixels", "type": "int"}, "pointSize": {"defaultValue": "", "internal": "false", "text": "font size in points", "type": "int"}, "strike": {"defaultValue": "", "internal": "false", "text": "line throw text flag", "type": "bool"}, "underline": {"defaultValue": "", "internal": "false", "text": "applies underline style", "type": "bool"}, "weight": {"defaultValue": "", "internal": "false", "text": "font weight value", "type": "int"}}}, "name": "controls.core.PlaceholderFont", "text": "@private"}
+{
+	"name": "controls.core.PlaceholderFont",
+	"text": "@private",
+
+	"content": {
+		"Properties": {
+			"family": { "text": "font family", "internal": false, "type": "string", "defaultValue": "" },
+			"italic": { "text": "applies italic style", "internal": false, "type": "bool", "defaultValue": "" },
+			"bold": { "text": "applies bold style", "internal": false, "type": "bool", "defaultValue": "" },
+			"underline": { "text": "applies underline style", "internal": false, "type": "bool", "defaultValue": "" },
+			"strike": { "text": "line throw text flag", "internal": false, "type": "bool", "defaultValue": "" },
+			"pixelSize": { "text": "font size in pixels", "internal": false, "type": "int", "defaultValue": "" },
+			"pointSize": { "text": "font size in points", "internal": false, "type": "int", "defaultValue": "" },
+			"lineHeight": { "text": "font line height in pixels", "internal": false, "type": "int", "defaultValue": "" },
+			"weight": { "text": "font weight value", "internal": false, "type": "int", "defaultValue": "" }
+		},
+
+		"Methods": {
+			"onBoldChanged": { "text": "@private", "params": [], "internal": true },
+			"onWeightChanged": { "text": "@private", "params": [], "internal": true },
+			"onFamilyChanged": { "text": "@private", "params": [], "internal": true },
+			"onItalicChanged": { "text": "@private", "params": [], "internal": true },
+			"onStrikeChanged": { "text": "@private", "params": [], "internal": true },
+			"onPointSizeChanged": { "text": "@private", "params": [], "internal": true },
+			"onPixelSizeChanged": { "text": "@private", "params": [], "internal": true },
+			"onUnderlineChanged": { "text": "@private", "params": [], "internal": true },
+			"onLineHeightChanged": { "text": "@private", "params": [], "internal": true },
+			"getClass": { "text": "@private", "params": [], "internal": true },
+			"updateProperty": { "text": "@private", "params": [], "internal": true }
+		}
+	}
+}

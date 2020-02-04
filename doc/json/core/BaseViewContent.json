@@ -1,1 +1,13 @@
-{"content": {"Methods": {"_updateScrollPositions": {"internal": "true", "params": [], "text": "@private silently updates scroll positions, because browser animates scroll"}, "constructor": {"internal": "true", "text": ""}, "onXChanged": {"internal": "true", "params": [], "text": "@private content for base view scrolling area"}, "onYChanged": {"internal": "true", "text": ""}}}, "name": "core.BaseViewContent", "text": "@private content for base view scrolling area"}
+{
+	"name": "core.BaseViewContent",
+	"text": "@private content for base view scrolling area",
+
+	"content": {
+		"Methods": {
+			"onXChanged": { "text": "@private content for base view scrolling area", "params": [], "internal": true },
+			"onYChanged": { "text": "", "internal": true },
+			"constructor": { "text": "", "internal": true },
+			"_updateScrollPositions": { "text": "@private silently updates scroll positions, because browser animates scroll", "params": [], "internal": true }
+		}
+	}
+}

@@ -1,1 +1,31 @@
-{"content": {"Methods": {"_start": {"internal": "true", "params": [], "text": "@private"}, "onCompleted": {"internal": "true", "params": [], "text": "@private"}, "onCurrentFrameChanged": {"internal": "true", "params": [], "text": "@private"}, "onRepeatChanged": {"internal": "true", "params": [], "text": "@private"}, "pause": {"internal": "false", "params": [], "text": "pause animation"}, "restart": {"internal": "false", "params": [], "text": "restarts animation from the beginning"}, "start": {"internal": "false", "params": [], "text": "start animation or continue if paused"}, "stop": {"internal": "false", "params": [], "text": "stop animation"}}, "Properties": {"currentFrame": {"defaultValue": "", "internal": "false", "text": "displayed frame index", "type": "int"}, "duration": {"defaultValue": "", "internal": "false", "text": "animation time interval in milliseconds", "type": "int"}, "frameCount": {"defaultValue": "", "internal": "false", "text": "frames in duration value", "type": "int"}, "interval": {"defaultValue": "${duration} / ${frameCount}", "internal": "false", "text": "read only property, time interval between each frames", "type": "int"}, "repeat": {"defaultValue": "", "internal": "false", "text": "repeat animation flag", "type": "bool"}, "running": {"defaultValue": "", "internal": "false", "text": "animation is running flag", "type": "bool"}}, "Signals": {"finished": {"internal": "false", "text": "animation was ended signal"}, "triggered": {"internal": "false", "text": "frame changed signal"}}}, "name": "controls.core.AnimatedSprite", "text": "sprite image animation item"}
+{
+	"name": "controls.core.AnimatedSprite",
+	"text": "sprite image animation item",
+
+	"content": {
+		"Properties": {
+			"frameCount": { "text": "frames in duration value", "internal": false, "type": "int", "defaultValue": "" },
+			"currentFrame": { "text": "displayed frame index", "internal": false, "type": "int", "defaultValue": "" },
+			"duration": { "text": "animation time interval in milliseconds", "internal": false, "type": "int", "defaultValue": "" },
+			"interval": { "text": "read only property, time interval between each frames", "internal": false, "type": "int", "defaultValue": "${duration} / ${frameCount}" },
+			"repeat": { "text": "repeat animation flag", "internal": false, "type": "bool", "defaultValue": "" },
+			"running": { "text": "animation is running flag", "internal": false, "type": "bool", "defaultValue": "" }
+		},
+
+		"Signals": {
+			"finished": { "text": "animation was ended signal", "internal": false },
+			"triggered": { "text": "frame changed signal", "internal": false }
+		},
+
+		"Methods": {
+			"start": { "text": "start animation or continue if paused", "params": [], "internal": false },
+			"restart": { "text": "restarts animation from the beginning", "params": [], "internal": false },
+			"pause": { "text": "pause animation", "params": [], "internal": false },
+			"stop": { "text": "stop animation", "params": [], "internal": false },
+			"onCompleted": { "text": "@private", "params": [], "internal": true },
+			"onRepeatChanged": { "text": "@private", "params": [], "internal": true },
+			"onCurrentFrameChanged": { "text": "@private", "params": [], "internal": true },
+			"_start": { "text": "@private", "params": [], "internal": true }
+		}
+	}
+}

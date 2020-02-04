@@ -1,1 +1,18 @@
-{"content": {"Methods": {"_layout": {"internal": "true", "params": [], "text": "@private"}, "addChild": {"internal": "true", "params": [], "text": "@private"}, "onActiveFocusChanged": {"internal": "true", "params": [], "text": "@private"}, "onCurrentIndexChanged": {"internal": "true", "params": [], "text": "@private"}}, "Properties": {"count": {"defaultValue": "0", "internal": "false", "text": "childrens count", "type": "int"}, "currentIndex": {"defaultValue": "0", "internal": "false", "text": "index of displaying child", "type": "int"}}}, "name": "core.PageStack", "text": "layout for displaying one of its children at the time"}
+{
+	"name": "core.PageStack",
+	"text": "layout for displaying one of its children at the time",
+
+	"content": {
+		"Properties": {
+			"currentIndex": { "text": "index of displaying child", "internal": false, "type": "int", "defaultValue": "0" },
+			"count": { "text": "childrens count", "internal": false, "type": "int", "defaultValue": "0" }
+		},
+
+		"Methods": {
+			"onCurrentIndexChanged": { "text": "@private", "params": [], "internal": true },
+			"onActiveFocusChanged": { "text": "@private", "params": [], "internal": true },
+			"_layout": { "text": "@private", "params": [], "internal": true },
+			"addChild": { "text": "@private", "params": [], "internal": true }
+		}
+	}
+}

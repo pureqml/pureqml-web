@@ -1,1 +1,17 @@
-{"content": {"Methods": {"onRunningChanged": {"internal": "true", "text": ""}, "start": {"internal": "false", "text": ""}, "stop": {"internal": "false", "text": ""}}, "Properties": {"running": {"defaultValue": "", "internal": "false", "text": "", "type": "bool"}, "squize": {"defaultValue": "0", "internal": "false", "text": "", "type": "int"}}}, "name": "controls.web.Spinner", "text": ""}
+{
+	"name": "controls.web.Spinner",
+	"text": "",
+
+	"content": {
+		"Properties": {
+			"running": { "text": "", "internal": false, "type": "bool", "defaultValue": "" },
+			"squize": { "text": "", "internal": false, "type": "int", "defaultValue": "0" }
+		},
+
+		"Methods": {
+			"start": { "text": "", "internal": false },
+			"stop": { "text": "", "internal": false },
+			"onRunningChanged": { "text": "", "internal": true }
+		}
+	}
+}

@@ -1,1 +1,6 @@
-{"AudioBuffer": "controls.web.audio/AudioBuffer.json", "Oscillator": "controls.web.audio/Oscillator.json", "controls.web.audio": {}}
+{
+	"controls.web.audio": {
+		"AudioBuffer": "controls.web.audio/AudioBuffer.json",
+		"Oscillator": "controls.web.audio/Oscillator.json"
+	}
+}

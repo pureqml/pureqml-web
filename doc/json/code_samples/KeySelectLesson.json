@@ -1,1 +1,10 @@
-{"content": {"Methods": {"onClicked": {"internal": "false", "text": ""}}}, "name": "code_samples.KeySelectLesson", "text": ""}
+{
+	"name": "code_samples.KeySelectLesson",
+	"text": "",
+
+	"content": {
+		"Methods": {
+			"onClicked": { "text": "", "internal": false }
+		}
+	}
+}

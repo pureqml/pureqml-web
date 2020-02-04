@@ -1,1 +1,18 @@
-{"content": {"Methods": {"onHorizontalSwiped": {"internal": "true", "params": [], "text": "@private"}, "onMouseMove": {"internal": "true", "params": [], "text": "@private"}}, "Properties": {"checked": {"defaultValue": "", "internal": "false", "text": "is checkbox checked or not", "type": "bool"}, "checkedColor": {"defaultValue": "#8BC34A", "internal": "false", "text": "button color if checked", "type": "color"}, "panelColor": {"defaultValue": "#ccc", "internal": "false", "text": "panel color", "type": "color"}, "uncheckedColor": {"defaultValue": "#F44336", "internal": "false", "text": "button color if not checked", "type": "color"}}}, "name": "controls.pure.Checkbox", "text": "simple checkbox control with swipable button"}
+{
+	"name": "controls.pure.Checkbox",
+	"text": "simple checkbox control with swipable button",
+
+	"content": {
+		"Properties": {
+			"checked": { "text": "is checkbox checked or not", "internal": false, "type": "bool", "defaultValue": "" },
+			"panelColor": { "text": "panel color", "internal": false, "type": "color", "defaultValue": "#ccc" },
+			"checkedColor": { "text": "button color if checked", "internal": false, "type": "color", "defaultValue": "#8BC34A" },
+			"uncheckedColor": { "text": "button color if not checked", "internal": false, "type": "color", "defaultValue": "#F44336" }
+		},
+
+		"Methods": {
+			"onHorizontalSwiped": { "text": "@private", "params": [], "internal": true },
+			"onMouseMove": { "text": "@private", "params": [], "internal": true }
+		}
+	}
+}

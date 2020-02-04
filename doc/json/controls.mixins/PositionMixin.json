@@ -1,1 +1,10 @@
-{"content": {"Methods": {"onValueChanged": {"internal": "true", "text": ""}}}, "name": "controls.mixins.PositionMixin", "text": "setup position mode of its parent"}
+{
+	"name": "controls.mixins.PositionMixin",
+	"text": "setup position mode of its parent",
+
+	"content": {
+		"Methods": {
+			"onValueChanged": { "text": "", "internal": true }
+		}
+	}
+}

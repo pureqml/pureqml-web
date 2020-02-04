@@ -1,1 +1,26 @@
-{"content": {"Methods": {"onCompleted": {"internal": "true", "text": ""}, "send": {"internal": "false", "text": ""}, "sendMessage": {"internal": "false", "text": ""}, "start": {"internal": "false", "text": ""}}, "Properties": {"autostart": {"defaultValue": "", "internal": "false", "text": "", "type": "bool"}, "ip": {"defaultValue": "", "internal": "false", "text": "", "type": "string"}, "port": {"defaultValue": "", "internal": "false", "text": "", "type": "string"}, "started": {"defaultValue": "", "internal": "false", "text": "", "type": "bool"}}, "Signals": {"message": {"internal": "false", "text": ""}, "userConnected": {"internal": "false", "text": ""}, "userDisconnected": {"internal": "false", "text": ""}}}, "name": "controls.web.websocket.WebSocketServer", "text": ""}
+{
+	"name": "controls.web.websocket.WebSocketServer",
+	"text": "",
+
+	"content": {
+		"Properties": {
+			"started": { "text": "", "internal": false, "type": "bool", "defaultValue": "" },
+			"autostart": { "text": "", "internal": false, "type": "bool", "defaultValue": "" },
+			"ip": { "text": "", "internal": false, "type": "string", "defaultValue": "" },
+			"port": { "text": "", "internal": false, "type": "string", "defaultValue": "" }
+		},
+
+		"Signals": {
+			"message": { "text": "", "internal": false },
+			"userConnected": { "text": "", "internal": false },
+			"userDisconnected": { "text": "", "internal": false }
+		},
+
+		"Methods": {
+			"sendMessage": { "text": "", "internal": false },
+			"start": { "text": "", "internal": false },
+			"send": { "text": "", "internal": false },
+			"onCompleted": { "text": "", "internal": true }
+		}
+	}
+}

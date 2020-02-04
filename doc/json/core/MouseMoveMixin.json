@@ -1,1 +1,23 @@
-{"content": {"Methods": {"_bindMove": {"internal": "true", "params": [], "text": "@private"}, "_updatePosition": {"internal": "true", "params": [], "text": "@private"}, "constructor": {"internal": "true", "params": [], "text": "@private"}, "onEnabledChanged": {"internal": "true", "text": ""}}, "Properties": {"enabled": {"defaultValue": "true", "internal": "false", "text": "enable/disable mixin", "type": "bool"}, "mouseX": {"defaultValue": "", "internal": "false", "text": "", "type": "int"}, "mouseY": {"defaultValue": "", "internal": "false", "text": "", "type": "int"}}, "Signals": {"mouseMove": {"internal": "false", "text": ""}}}, "name": "core.MouseMoveMixin", "text": "this mixin provides mouse press events handling"}
+{
+	"name": "core.MouseMoveMixin",
+	"text": "this mixin provides mouse press events handling",
+
+	"content": {
+		"Properties": {
+			"enabled": { "text": "enable/disable mixin", "internal": false, "type": "bool", "defaultValue": "true" },
+			"mouseX": { "text": "", "internal": false, "type": "int", "defaultValue": "" },
+			"mouseY": { "text": "", "internal": false, "type": "int", "defaultValue": "" }
+		},
+
+		"Signals": {
+			"mouseMove": { "text": "", "internal": false }
+		},
+
+		"Methods": {
+			"constructor": { "text": "@private", "params": [], "internal": true },
+			"_updatePosition": { "text": "@private", "params": [], "internal": true },
+			"_bindMove": { "text": "@private", "params": [], "internal": true },
+			"onEnabledChanged": { "text": "", "internal": true }
+		}
+	}
+}

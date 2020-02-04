@@ -1,1 +1,10 @@
-{"content": {"Methods": {"getTag": {"internal": "false", "text": ""}}}, "name": "controls.web.tables.TableHeader", "text": ""}
+{
+	"name": "controls.web.tables.TableHeader",
+	"text": "",
+
+	"content": {
+		"Methods": {
+			"getTag": { "text": "", "internal": false }
+		}
+	}
+}

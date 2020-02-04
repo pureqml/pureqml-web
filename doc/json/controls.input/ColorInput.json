@@ -1,1 +1,11 @@
-{"content": {"Methods": {"constructor": {"internal": "true", "text": ""}, "onColorChanged": {"internal": "true", "text": ""}}}, "name": "controls.input.ColorInput", "text": "color selecting input"}
+{
+	"name": "controls.input.ColorInput",
+	"text": "color selecting input",
+
+	"content": {
+		"Methods": {
+			"onColorChanged": { "text": "", "internal": true },
+			"constructor": { "text": "", "internal": true }
+		}
+	}
+}

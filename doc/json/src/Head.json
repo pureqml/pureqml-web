@@ -1,1 +1,15 @@
-{"content": {"Methods": {"onCompleted": {"internal": "true", "text": ""}}, "Properties": {"newWindow": {"defaultValue": "", "internal": "false", "text": "", "type": "bool"}, "open": {"defaultValue": "", "internal": "false", "text": "", "type": "bool"}}}, "name": "src.Head", "text": ""}
+{
+	"name": "src.Head",
+	"text": "",
+
+	"content": {
+		"Properties": {
+			"open": { "text": "", "internal": false, "type": "bool", "defaultValue": "" },
+			"newWindow": { "text": "", "internal": false, "type": "bool", "defaultValue": "" }
+		},
+
+		"Methods": {
+			"onCompleted": { "text": "", "internal": true }
+		}
+	}
+}

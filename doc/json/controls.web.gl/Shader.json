@@ -1,1 +1,11 @@
-{"content": {"Methods": {"constructor": {"internal": "true", "text": ""}, "createImpl": {"internal": "false", "params": [{"name": "sourceCode", "text": "shader source code", "type": "string"}, {"name": "type", "text": "shader type to create", "type": "string"}], "text": "@param {string} sourceCode - shader source code"}}}, "name": "controls.web.gl.Shader", "text": "@param {string} sourceCode - shader source code\n\t@param {string} type - shader type to create\n\tshader creation function implementaion"}
+{
+	"name": "controls.web.gl.Shader",
+	"text": "@param {string} sourceCode - shader source code     @param {string} type - shader type to create     shader creation function implementaion",
+
+	"content": {
+		"Methods": {
+			"constructor": { "text": "", "internal": true },
+			"createImpl": { "text": "@param {string} sourceCode - shader source code", "params": [{ "name": "sourceCode", "type": "string", "text": "shader source code" }, { "name": "type", "type": "string", "text": "shader type to create" }], "internal": false }
+		}
+	}
+}

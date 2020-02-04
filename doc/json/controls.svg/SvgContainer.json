@@ -1,1 +1,17 @@
-{"content": {"Methods": {"_createElement": {"internal": "false", "params": [], "text": "specialized implementation of element creation in a certain namespace."}, "getTag": {"internal": "false", "params": [], "text": "returns tag for corresponding element"}, "onClipChanged": {"internal": "true", "text": ""}, "onHeightChanged": {"internal": "true", "text": ""}, "onWidthChanged": {"internal": "true", "text": ""}, "onXChanged": {"internal": "true", "text": ""}, "onYChanged": {"internal": "true", "text": ""}, "registerStyle": {"internal": "true", "params": [], "text": "@private"}}}, "name": "controls.svg.SvgContainer", "text": "returns tag for corresponding element"}
+{
+	"name": "controls.svg.SvgContainer",
+	"text": "returns tag for corresponding element",
+
+	"content": {
+		"Methods": {
+			"getTag": { "text": "returns tag for corresponding element", "params": [], "internal": false },
+			"registerStyle": { "text": "@private", "params": [], "internal": true },
+			"_createElement": { "text": "specialized implementation of element creation in a certain namespace.", "params": [], "internal": false },
+			"onWidthChanged": { "text": "", "internal": true },
+			"onHeightChanged": { "text": "", "internal": true },
+			"onYChanged": { "text": "", "internal": true },
+			"onXChanged": { "text": "", "internal": true },
+			"onClipChanged": { "text": "", "internal": true }
+		}
+	}
+}

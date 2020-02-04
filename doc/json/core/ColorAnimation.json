@@ -1,1 +1,10 @@
-{"content": {"Methods": {"interpolate": {"internal": "true", "params": [], "text": "@private"}}}, "name": "core.ColorAnimation", "text": "Animation for color-typed properties"}
+{
+	"name": "core.ColorAnimation",
+	"text": "Animation for color-typed properties",
+
+	"content": {
+		"Methods": {
+			"interpolate": { "text": "@private", "params": [], "internal": true }
+		}
+	}
+}

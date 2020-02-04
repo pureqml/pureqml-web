@@ -1,1 +1,12 @@
-{"content": {"Methods": {"focusNextChild": {"internal": "false", "params": [], "text": "move focus to the next child"}, "focusPrevChild": {"internal": "false", "params": [], "text": "move focus to the previous child"}, "onCurrentIndexChanged": {"internal": "true", "text": ""}}}, "name": "core.Layout", "text": "base layout component."}
+{
+	"name": "core.Layout",
+	"text": "base layout component.",
+
+	"content": {
+		"Methods": {
+			"focusNextChild": { "text": "move focus to the next child", "params": [], "internal": false },
+			"focusPrevChild": { "text": "move focus to the previous child", "params": [], "internal": false },
+			"onCurrentIndexChanged": { "text": "", "internal": true }
+		}
+	}
+}

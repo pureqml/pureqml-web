@@ -1,1 +1,22 @@
-{"content": {"Methods": {"hide": {"internal": "false", "text": ""}, "onShowChanged": {"internal": "true", "text": ""}, "toggleShow": {"internal": "false", "text": ""}}, "Properties": {"content": {"defaultValue": "", "internal": "false", "text": "", "type": "Item"}, "contentX": {"defaultValue": "", "internal": "false", "text": "", "type": "int"}, "contentY": {"defaultValue": "", "internal": "false", "text": "", "type": "int"}, "icon": {"defaultValue": "", "internal": "false", "text": "", "type": "string"}, "panel": {"defaultValue": "Rectangle", "internal": "false", "ref": "qmlcore.core/Rectangle", "text": "", "type": "Rectangle"}, "scrollable": {"defaultValue": "false", "internal": "false", "text": "", "type": "bool"}, "show": {"defaultValue": "false", "internal": "false", "text": "", "type": "bool"}}}, "name": "controls.web.NavigationMenuButton", "text": ""}
+{
+	"name": "controls.web.NavigationMenuButton",
+	"text": "",
+
+	"content": {
+		"Properties": {
+			"icon": { "text": "", "internal": false, "type": "string", "defaultValue": "" },
+			"scrollable": { "text": "", "internal": false, "type": "bool", "defaultValue": "false" },
+			"show": { "text": "", "internal": false, "type": "bool", "defaultValue": "false" },
+			"content": { "text": "", "internal": false, "type": "Item", "defaultValue": "" },
+			"contentX": { "text": "", "internal": false, "type": "int", "defaultValue": "" },
+			"contentY": { "text": "", "internal": false, "type": "int", "defaultValue": "" },
+			"panel": { "text": "", "ref": "qmlcore.core/Rectangle", "internal": false, "type": "Rectangle", "defaultValue": "Rectangle" }
+		},
+
+		"Methods": {
+			"hide": { "text": "", "internal": false },
+			"toggleShow": { "text": "", "internal": false },
+			"onShowChanged": { "text": "", "internal": true }
+		}
+	}
+}

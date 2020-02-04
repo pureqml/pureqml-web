@@ -1,1 +1,10 @@
-{"content": {"Methods": {"create": {"internal": "false", "params": [{"name": "sourceCode", "text": "shader source code", "type": "string"}], "text": "@param {string} sourceCode - shader source code"}}}, "name": "controls.web.gl.FragmentShader", "text": "@param {string} sourceCode - shader source code\n\tfragment shader creation function"}
+{
+	"name": "controls.web.gl.FragmentShader",
+	"text": "@param {string} sourceCode - shader source code     fragment shader creation function",
+
+	"content": {
+		"Methods": {
+			"create": { "text": "@param {string} sourceCode - shader source code", "params": [{ "name": "sourceCode", "type": "string", "text": "shader source code" }], "internal": false }
+		}
+	}
+}

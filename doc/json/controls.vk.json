@@ -1,1 +1,6 @@
-{"VkApi": "controls.vk/VkApi.json", "VkWallModel": "controls.vk/VkWallModel.json", "controls.vk": {}}
+{
+	"controls.vk": {
+		"VkApi": "controls.vk/VkApi.json",
+		"VkWallModel": "controls.vk/VkWallModel.json"
+	}
+}
