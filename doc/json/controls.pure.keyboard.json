@@ -1,1 +1,1 @@
-{"controls.pure.keyboard": {"Keyboard": "controls.pure.keyboard/Keyboard.json", "KeyboardDelegate": "controls.pure.keyboard/KeyboardDelegate.json", "KeyboardModel": "controls.pure.keyboard/KeyboardModel.json", "KeyboardRowModel": "controls.pure.keyboard/KeyboardRowModel.json"}}
+{"Keyboard": "controls.pure.keyboard/Keyboard.json", "KeyboardDelegate": "controls.pure.keyboard/KeyboardDelegate.json", "KeyboardModel": "controls.pure.keyboard/KeyboardModel.json", "KeyboardRowModel": "controls.pure.keyboard/KeyboardRowModel.json", "controls.pure.keyboard": {}}
