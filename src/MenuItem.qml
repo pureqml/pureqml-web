@@ -4,6 +4,7 @@ WebLink {
 	href: "https://pureqml.com/" + (page? page + ".html": "");
 	width: menuItemText.paintedWidth + 40;
 	height: 50;
+	radius: 12;
 	color: hover ? "#AED581" : "transparent";
 
 	onClicked(e): {
