@@ -22,7 +22,9 @@ Item {
 		anchors.verticalCenter: parent.verticalCenter;
 		font.pixelSize: 18;
 		font.weight: 300;
-		color: colorTheme.textColor;
+		backgroundColor: colorTheme.panelColor;
+		color: colorTheme.hTextColor;
+		placeholder.color: colorTheme.hTextColor;
 		placeholder.text: "Documentation search";
 
 		onTextChanged: {

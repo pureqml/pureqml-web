@@ -3,7 +3,7 @@ Object {
 	property color textColor:			"#424242";
 	property color backgroundColor:		"#FAFAFA";
 	property color primaryTextColor:	"#618468";
-	property color panelColor:			"#FFFFFF";
+	property color panelColor:			"#424242";
 	property color leftMenuColor:		"#FAFAFA";
 
 	property color accentColor:			"#673AB7";

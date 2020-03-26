@@ -23,7 +23,7 @@ WebLink {
 		horizontalAlignment: Text.AlignHCenter;
 		text: parent.text;
 		font.pointSize: 15;
-		color: parent.hover ? "#242424" : "#616161";
+		color: parent.hover ? "#242424" : "#fff";
 
 		Behavior on color { Animation { duration: 300; } }
 	}

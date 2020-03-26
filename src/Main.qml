@@ -11,8 +11,17 @@ SiteActivity {
 				orientation: Gradient.Custom;
 				angle: 120;
 
-				GradientStop { position: 0; color: "#8BC34A"; }
-				GradientStop { position: 1; color: "#00BCD4"; }
+				GradientStop { position: 0; color: "#80DEEA"; }
+				GradientStop { position: 0.5; color: "#E91E63"; }
+				GradientStop { position: 1; color: "#9C27B0"; }
+			}
+
+			Image {
+				y: 50;
+				height: 100;
+				fillMode: Image.PreserveAspectFit;
+				anchors.horizontalCenter: parent.horizontalCenter;
+				source: "logo.png";
 			}
 
 			H1 {
@@ -24,7 +33,7 @@ SiteActivity {
 				color: colorTheme.hTextColor;
 				font.pixelSize: 48;
 				font.weight: 100;
-				text: "<b>PureQML</b><br>QML-inspired declarative JS-framework for web (and other platforms).";
+				text: "<br>QML-inspired declarative JS-framework for web (and other platforms).";
 			}
 
 			Behavior on background { Animation { duration: 2000; easing: "linear"; }}
