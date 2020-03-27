@@ -8,9 +8,6 @@ WebLink {
 	color: hover ? "#AED581" : "transparent";
 
 	onClicked(e): {
-		if (this.parent.parent.newWindow)
-			return;
-
 		this.parent.parent.open = false;
 		this._context.location.pushState({ page: this.page }, "PureQML - " + this.text, this.href)
 		e.preventDefault();

@@ -4,36 +4,62 @@ SiteActivity {
 	Column {
 		width: 100%;
 
-		Item {
+		Rectangle {
 			width: 100%;
-			height: 374;
+			height: context.height > 600 ? 300 : 600;
 			property Gradient gradient: Gradient {
 				orientation: Gradient.Custom;
 				angle: 120;
 
-				GradientStop { position: 0; color: "#80DEEA"; }
-				GradientStop { position: 0.5; color: "#E91E63"; }
-				GradientStop { position: 1; color: "#9C27B0"; }
+				GradientStop { position: 0; color: "#90A4AE"; }
+				GradientStop { position: 1; color: "#455A64"; }
 			}
 
 			Image {
-				y: 50;
-				height: 100;
+				y: 30;
+				height: context.height > 600 ? 100 : 60;
 				fillMode: Image.PreserveAspectFit;
 				anchors.horizontalCenter: parent.horizontalCenter;
 				source: "logo.png";
 			}
 
 			H1 {
+				id: descriptionText;
+				y: 100;
 				width: Math.min(100%, 1200) - 40;
-				height: 100%;
 				anchors.horizontalCenter: parent.horizontalCenter;
 				horizontalAlignment: Text.AlignHCenter;
-				verticalAlignment: Text.AlignVCenter;
 				color: colorTheme.hTextColor;
-				font.pixelSize: 48;
+				font.pixelSize: 24;
 				font.weight: 100;
 				text: "<br>QML-inspired declarative JS-framework for web (and other platforms).";
+			}
+
+			Grid {
+				id: platformsGrid;
+				y: descriptionText.height + descriptionText.y + 30;
+				height: 100;
+				width: descriptionText.width;
+				anchors.horizontalCenter: parent.horizontalCenter;
+				horizontalAlignment: Grid.AlignHCenter;
+				spacing: 20;
+
+				PlatformIcon { source: colorTheme.resPath + "/platforms/os/web.png"; }
+				PlatformIcon { source: colorTheme.resPath + "/platforms/os/android.png"; }
+				PlatformIcon { source: colorTheme.resPath + "/platforms/os/linux.png"; }
+				PlatformIcon { source: colorTheme.resPath + "/platforms/os/win.png"; }
+				PlatformIcon { source: colorTheme.resPath + "/platforms/os/ios.png"; }
+				PlatformIcon { source: colorTheme.resPath + "/platforms/os/lg.png"; }
+				PlatformIcon { source: colorTheme.resPath + "/platforms/os/operatv.png"; }
+				PlatformIcon { width: 100; source: colorTheme.resPath + "/platforms/os/samsung.png"; }
+				PlatformIcon { width: 100; source: colorTheme.resPath + "/platforms/os/hisense.png"; }
+			}
+
+			onCompleted: {
+				this.element.setAttribute("id", "particles-js")
+				particlesJS.load('particles-js', 'particles.json', this._context.wrapNativeCallback(function() {
+					log('callback - particles.js config loaded');
+				}));
 			}
 
 			Behavior on background { Animation { duration: 2000; easing: "linear"; }}

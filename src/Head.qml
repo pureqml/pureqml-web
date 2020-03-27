@@ -8,18 +8,15 @@ Rectangle {
 	effects.shadow.blur: 1;
 	effects.shadow.spread: 1;
 	transform.translateZ: 2;
-	property bool newWindow;
-	Behavior on height { Animation { duration: 300; }}
 
 	Grid {
 		id: menu;
-		width: Math.min(100%, 1200) - 40;
+		width: Math.min(100%, 1000) - 40;
 		y: rowsCount > 1 ? (parent.open ? (searchPanel.searchFocused ? 50 - rowsCount * 50 : 50) : -height) : 0;
 		x: (parent.width - width) / 2;
 
 		Behavior on y { Animation { duration: 300; }}
 
-		MenuItem { text: "PureQML"; page: ""; }
 		MenuItem { text: "Getting started"; page: "gettingstarted"; }
 		MenuItem { text: "Download"; page: "download"; }
 		MenuItem { text: "Showcases"; page: "showcases"; }
@@ -43,11 +40,13 @@ Rectangle {
 		color: colorTheme.iconColor;
 		opacity: parent.open;
 		visible: menu.rowsCount > 1;
-		Behavior on opacity, y { Animation { duration: 300; }}
-		HoverClickMixin { cursor: "pointer"; }
-		onClicked: { this.parent.open = false; }
-	}
 
+		HoverClickMixin { cursor: "pointer"; }
+
+		onClicked: { this.parent.open = false; }
+
+		Behavior on opacity, y { Animation { duration: 300; } }
+	}
 
 	MaterialIcon {
 		width: 100%;
@@ -60,13 +59,27 @@ Rectangle {
 		color: colorTheme.iconColor;
 		opacity: !parent.open;
 		visible: menu.rowsCount > 1;
-		Behavior on opacity, y { Animation { duration: 300; }}
+
 		HoverClickMixin { cursor: "pointer"; }
+
 		onClicked: { this.parent.open = true; }
+
+		Behavior on opacity, y { Animation { duration: 300; } }
 	}
 
+	Image {
+		width: height;
+		height: 100%;
+		fillMode: Image.PreserveAspectFit;
+		source: "logo_small.png";
+	}
+
+	PositionMixin { value: PositionMixin.Fixed; }
+
 	onCompleted: {
-		this.style('position', 'fixed')
+		// this.style('position', 'fixed')
 		this.style('will-change', 'transform')
 	}
+
+	Behavior on height { Animation { duration: 300; }}
 }

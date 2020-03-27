@@ -24,7 +24,7 @@ Item {
 		font.weight: 300;
 		backgroundColor: colorTheme.panelColor;
 		color: colorTheme.hTextColor;
-		placeholder.color: colorTheme.hTextColor;
+		placeholder.color: colorTheme.shadowColor;
 		placeholder.text: "Documentation search";
 
 		onTextChanged: {
