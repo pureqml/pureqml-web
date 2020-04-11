@@ -138,6 +138,12 @@ SiteActivity {
 					text: "DRM video playing";
 				}
 
+				PathPageColumn {
+					path: "lessons/rest";
+					title: "REST";
+					text: "How to implement REST API (or other XML HTTP) reqeusts";
+				}
+
 				onFillMenu(data): { leftMenu.fillModel(data) }
 
 				onCompleted: { log("main completed") }
@@ -185,7 +191,8 @@ SiteActivity {
 					sprite: "lessons.SpriteLesson",
 					activitylesson: "lessons.ActivityLesson",
 					videoplayer: "lessons.VideoPlayerLesson",
-					drm: "lessons.DrmLesson"
+					drm: "lessons.DrmLesson",
+					rest: "lessons.RestLesson"
 				}
 			}
 
