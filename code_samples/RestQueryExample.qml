@@ -1,17 +1,18 @@
 Rectangle {
-	width: 200;
-	height: 200;
+	width: 300;
+	height: 100;
 	color: "blue";
 
 	ClickMixin { }
 
 	Rest {
 		id: catApi;
-		baseUrl: "https://cat-fact.herokuapp.com";
+		baseUrl: "https://api.publicapis.org";
+
 
 		Method {
-			name: "getAnimalFacts";
-			path: "/facts/random?animal_type={type}&amount={amount}";
+			name: "getEntries";
+			path: "/entries?title={title}&cors={cors}";
 		}
 	}
 
@@ -19,15 +20,15 @@ Rectangle {
 		id: infoText;
 		color: "#fff";
 		font.pixelSize: 18;
-		text: "Click to get a cat fact";
+		text: "Click to get a cat open APIs count";
 	}
 
 	onClicked: {
-		catApi.getAnimalFacts(
+		catApi.getEntries(
 			"cat",
-			1,
-			function(info) { infoText.text = info.text },
-			function(err) { log("Failed to get price", err) }
+			"no",
+			function(info) { infoText.text = info.count },
+			function(err) { log("Request failed", err) }
 		)
 	}
 }
