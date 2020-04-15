@@ -5,22 +5,22 @@ Rectangle {
 
 	Rest {
 		id: headersApi;
-		baseUrl: "https://blockchain.info";
+		baseUrl: "https://api.publicapis.org";
 
 		// Set common headers for all methods
-		function headers(headers) { headers["Content-Type"] = "application/json" }
+		function headers(headers) { headers["Accept"] = "*/*" }
 
 		Method {
-			name: "getUsdValue";
-			path: "/tobtc?currency=USD&value=1";
+			name: "getEntries";
+			path: "/entries?title=cat&cors=no";
 
 			// Set headers for "getUsdValue" method
 			function headers(headers) { headers["Accept-Language"] = "en-US" }
 		}
 
 		Method {
-			name: "getRubValue";
-			path: "/tobtc?currency=RUB&value=1";
+			name: "getRandom";
+			path: "/random?title=cat&cors=no";
 
 			// Set headers for "getRubValue" method
 			function headers(headers) { headers["Accept-Language"] = "ru-RU" }
@@ -33,13 +33,12 @@ Rectangle {
 		color: "#fff";
 		font.pixelSize: 21;
 		horizontalAlignment: Text.AlignHCenter;
-		text: "Convert USD or RUB to Bitcoin";
+		text: "Try API requests";
 	}
 
 	WebItem {
-		x: 40;
 		y: 50;
-		width: 100;
+		width: 140;
 		height: 50;
 		color: "blue";
 
@@ -49,21 +48,21 @@ Rectangle {
 			horizontalAlignment: Text.AlignHCenter;
 			verticalAlignment: Text.AlignVCenter;
 			color: "#fff";
-			text: "1 USD";
+			text: "Get first API";
 		}
 
 		onClicked: {
-			headersApi.getUsdValue(
-				function(price) { btcText.text = price + " BTC" },
-				function(err) { log("Failed to get price", err) }
+			headersApi.getEntries(
+				function(res) { btcText.text = res.etries[0].title },
+				function(err) { log("Failed to get entries", err) }
 			)
 		}
 	}
 
 	WebItem {
-		x: 160;
+		x: 150;
 		y: 50;
-		width: 100;
+		width: 140;
 		height: 50;
 		color: "blue";
 
@@ -73,13 +72,13 @@ Rectangle {
 			horizontalAlignment: Text.AlignHCenter;
 			verticalAlignment: Text.AlignVCenter;
 			color: "#fff";
-			text: "1 RUB";
+			text: "Get random";
 		}
 
 		onClicked: {
-			headersApi.getRubValue(
-				function(price) { btcText.text = price + " BTC" },
-				function(err) { log("Failed to get price", err) }
+			headersApi.getRandom(
+				function(res) { btcText.text = res.entries[0].title },
+				function(err) { log("Failed to get random entry", err) }
 			)
 		}
 	}
