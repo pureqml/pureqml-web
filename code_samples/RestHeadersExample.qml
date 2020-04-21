@@ -53,7 +53,7 @@ Rectangle {
 
 		onClicked: {
 			headersApi.getEntries(
-				function(res) { btcText.text = res.etries[0].title },
+				function(res) { btcText.text = res.entries[0].Link },
 				function(err) { log("Failed to get entries", err) }
 			)
 		}
@@ -77,7 +77,7 @@ Rectangle {
 
 		onClicked: {
 			headersApi.getRandom(
-				function(res) { btcText.text = res.entries[0].title },
+				function(res) { btcText.text = res.entries[0].Link },
 				function(err) { log("Failed to get random entry", err) }
 			)
 		}
