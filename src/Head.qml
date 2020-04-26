@@ -68,8 +68,10 @@ Rectangle {
 	}
 
 	Image {
+		y: 10%;
+		x: y;
 		width: height;
-		height: 100%;
+		height: 80%;
 		fillMode: Image.PreserveAspectFit;
 		source: "logo_small.png";
 	}
