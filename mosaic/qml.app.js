@@ -38,6 +38,8 @@ if (!_globals.controls.core) /** @const */ _globals.controls.core = {}
 var $controls$core = _globals.controls.core
 if (!_globals.controls.experimental) /** @const */ _globals.controls.experimental = {}
 var $controls$experimental = _globals.controls.experimental
+if (!_globals.controls.mixins) /** @const */ _globals.controls.mixins = {}
+var $controls$mixins = _globals.controls.mixins
 if (!_globals.controls.pure) /** @const */ _globals.controls.pure = {}
 var $controls$pure = _globals.controls.pure
 if (!_globals.controls.web) /** @const */ _globals.controls.web = {}
@@ -2105,6 +2107,516 @@ $this.completed()
 }
 
 
+//=====[component controls.core.BaseActivity]=====================
+
+	var BaseActivityBaseComponent = $core.Item
+	var BaseActivityBasePrototype = BaseActivityBaseComponent.prototype
+
+/**
+ * @constructor
+ * @extends {$core.Item}
+ */
+	var BaseActivityComponent = $controls$core.BaseActivity = function(parent, row) {
+		BaseActivityBaseComponent.apply(this, arguments)
+
+	}
+	var BaseActivityPrototype = BaseActivityComponent.prototype = Object.create(BaseActivityBasePrototype)
+
+	BaseActivityPrototype.constructor = BaseActivityComponent
+
+	BaseActivityPrototype.componentName = 'controls.core.BaseActivity'
+	BaseActivityPrototype.stopped = $core.createSignal('stopped')
+	BaseActivityPrototype.started = $core.createSignal('started')
+	core.addProperty(BaseActivityPrototype, 'bool', 'active')
+	core.addProperty(BaseActivityPrototype, 'string', 'name')
+	core.addProperty(BaseActivityPrototype, 'Item', 'manager')
+	BaseActivityPrototype.clear = function() { this.manager.clear() }
+	BaseActivityPrototype.pop = function(count) { this.manager.pop(count) }
+	BaseActivityPrototype.init = function(intent,state) { }
+	BaseActivityPrototype.closeAllExcept = function(name) { this.manager.closeAllExcept(name) }
+	BaseActivityPrototype.removeActivity = function(name) { this.manager.removeActivity(name) }
+	BaseActivityPrototype.push = function(name,intent,state) { this.manager.push(name, intent, state) }
+	BaseActivityPrototype.replaceTopActivity = function(name,intent,state) { this.manager.replaceTopActivity(name, intent, state) }
+	BaseActivityPrototype.popWithState = function(state) { this.manager.popWithState(state) }
+	BaseActivityPrototype.setIntent = function(state,name) { this.manager.setIntent(state, name) }
+	BaseActivityPrototype.setState = function(state,name) { this.manager.setState(state, name) }
+	$core._protoOnKey(BaseActivityPrototype, 'Back', function(key,event) { this.manager.pop(); return true })
+
+	BaseActivityPrototype.$c = function($c) {
+		var $this = this;
+		BaseActivityBasePrototype.$c.call(this, $c.$b = { })
+
+	}
+	BaseActivityPrototype.$s = function($c) {
+		var $this = this;
+	BaseActivityBasePrototype.$s.call(this, $c.$b); delete $c.$b
+//assigning manager to (${parent})
+			$this._removeUpdater('manager'); $this.manager = ($this.parent);
+//assigning visible to (${active})
+			$this._replaceUpdater('visible', function() { $this.visible = ($this.active) }, [$this,'active'])
+
+			$this.completed()
+}
+
+
+//=====[component controls.core.Activity]=====================
+
+	var ActivityBaseComponent = $controls$core.BaseActivity
+	var ActivityBasePrototype = ActivityBaseComponent.prototype
+
+/**
+ * @constructor
+ * @extends {$controls$core.BaseActivity}
+ */
+	var ActivityComponent = $controls$core.Activity = function(parent, row) {
+		ActivityBaseComponent.apply(this, arguments)
+
+	}
+	var ActivityPrototype = ActivityComponent.prototype = Object.create(ActivityBasePrototype)
+
+	ActivityPrototype.constructor = ActivityComponent
+
+	ActivityPrototype.componentName = 'controls.core.Activity'
+	ActivityPrototype.getActivity = function() {
+		return this
+	}
+	ActivityPrototype.stop = function() {
+		this.active = false
+		this.stopped()
+	}
+	ActivityPrototype.start = function() {
+		this.active = true
+		this.started()
+	}
+
+	ActivityPrototype.$c = function($c) {
+		var $this = this;
+		ActivityBasePrototype.$c.call(this, $c.$b = { })
+
+	}
+	ActivityPrototype.$s = function($c) {
+		var $this = this;
+	ActivityBasePrototype.$s.call(this, $c.$b); delete $c.$b
+$this.completed()
+}
+
+
+//=====[component src.MosaicPage]=====================
+
+	var MosaicPageBaseComponent = $controls$core.Activity
+	var MosaicPageBasePrototype = MosaicPageBaseComponent.prototype
+
+/**
+ * @constructor
+ * @extends {$controls$core.Activity}
+ */
+	var MosaicPageComponent = $src.MosaicPage = function(parent, row) {
+		MosaicPageBaseComponent.apply(this, arguments)
+
+	}
+	var MosaicPagePrototype = MosaicPageComponent.prototype = Object.create(MosaicPageBasePrototype)
+
+	MosaicPagePrototype.constructor = MosaicPageComponent
+
+	MosaicPagePrototype.componentName = 'src.MosaicPage'
+	core.addProperty(MosaicPagePrototype, 'int', 'delegateRadius')
+	MosaicPagePrototype.init = function() {
+	var anotherApi = this._get('anotherApi', true), mosaicGrid = this._get('mosaicGrid', true), api = this._get('api', true)
+
+		// api.getMain(
+		// 	function(res) {
+		// 		mosaicGrid.fill(res[0].items, function(row) {
+		// 			if (row.thumbnail.image_15x) {
+		// 				return {
+		// 					video: api.baseUrl + row.video_cover,
+		// 					preview: api.baseUrl + row.thumbnail.image_15x,
+		// 					title: row.title,
+		// 					icon: api.baseUrl + row.logotype.image_15x
+		// 				}
+		// 			} else {
+		// 				return null
+		// 			}
+		// 		})
+		// 	},
+		// 	function(e) { log("Failed to get content", e) }
+		// )
+
+		anotherApi.getMain(
+			function(res) {
+				mosaicGrid.fill(res.element.collectionItems.items, function(row) {
+					if (row.element.basicCovers.items && row.element.basicCovers.items.length > 0) {
+						var videoUrl = ""
+						var trailers = row.element.trailers.items
+						for (var i in trailers) {
+							if (trailers[i].media.mimeType.indexOf("mp4") >= 0) {
+								videoUrl = trailers[i].url
+								break
+							}
+						}
+						return {
+							video: videoUrl,
+							preview: row.element.basicCovers.items[0].url,
+							title: row.element.name
+						}
+					} else {
+						return null
+					}
+				})
+			},
+			function(e) { log("Failed to get content", e) }
+		)
+	}
+
+	MosaicPagePrototype.$c = function($c) {
+		var $this = this;
+		MosaicPageBasePrototype.$c.call(this, $c.$b = { })
+var _this$child0 = new $core.Item($this)
+		$c._this$child0 = _this$child0
+
+//creating component Item
+		_this$child0.$c($c.$c$_this$child0 = { })
+		var _this_child0$child0 = new $controls$mixins.OverflowMixin(_this$child0)
+		$c._this_child0$child0 = _this_child0$child0
+
+//creating component OverflowMixin
+		_this_child0$child0.$c($c.$c$_this_child0$child0 = { })
+
+		_this$child0.addChild(_this_child0$child0)
+		var _this_child0$child1 = new $controls$experimental.Mosaic(_this$child0)
+		$c._this_child0$child1 = _this_child0$child1
+
+//creating component Mosaic
+		_this_child0$child1.$c($c.$c$_this_child0$child1 = { })
+		_this_child0$child1._setId('mosaicGrid')
+//creating component src.<anonymous>
+		var _this_child0_child1$highlight = new $controls$experimental.NestedVideo(_this_child0$child1)
+		$c._this_child0_child1$highlight = _this_child0_child1$highlight
+
+//creating component NestedVideo
+		_this_child0_child1$highlight.$c($c.$c$_this_child0_child1$highlight = { })
+		var _this_child0_child1_highlight$child0 = new $core.ClickMixin(_this_child0_child1$highlight)
+		$c._this_child0_child1_highlight$child0 = _this_child0_child1_highlight$child0
+
+//creating component ClickMixin
+		_this_child0_child1_highlight$child0.$c($c.$c$_this_child0_child1_highlight$child0 = { })
+
+		_this_child0_child1$highlight.addChild(_this_child0_child1_highlight$child0)
+		_this_child0$child1.highlight = _this_child0_child1$highlight
+		_this$child0.addChild(_this_child0$child1)
+		$this.addChild(_this$child0)
+		$this._setId('mosaicPageProto')
+	}
+	MosaicPagePrototype.$s = function($c) {
+		var $this = this;
+	MosaicPageBasePrototype.$s.call(this, $c.$b); delete $c.$b
+//assigning anchors.fill to (${parent})
+			$this.anchors._removeUpdater('fill'); $this.anchors.fill = ($this.parent);
+//assigning name to ("mosaic")
+			$this._removeUpdater('name'); $this.name = ("mosaic");
+//assigning delegateRadius to (((10) * ${context.virtualScale}))
+			$this._replaceUpdater('delegateRadius', function() { $this.delegateRadius = (((10) * $this._context.virtualScale)) }, [$this._context,'virtualScale'])
+
+//setting up component Item
+			var _this$child0 = $c._this$child0
+			_this$child0.$s($c.$c$_this$child0)
+			delete $c.$c$_this$child0
+
+//assigning width to ((${parent.width}))
+			_this$child0._replaceUpdater('width', function() { _this$child0.width = ((_this$child0.parent.width)) }, [_this$child0.parent,'width'])
+//assigning height to ((${parent.height}))
+			_this$child0._replaceUpdater('height', function() { _this$child0.height = ((_this$child0.parent.height)) }, [_this$child0.parent,'height'])
+
+//setting up component OverflowMixin
+			var _this_child0$child0 = $c._this_child0$child0
+			_this_child0$child0.$s($c.$c$_this_child0$child0)
+			delete $c.$c$_this_child0$child0
+
+//assigning value to (_globals.controls.mixins.OverflowMixin.prototype.ScrollY)
+			_this_child0$child0._removeUpdater('value'); _this_child0$child0.value = (_globals.controls.mixins.OverflowMixin.prototype.ScrollY);
+
+			_this_child0$child0.completed()
+
+//setting up component Mosaic
+			var _this_child0$child1 = $c._this_child0$child1
+			_this_child0$child1.$s($c.$c$_this_child0$child1)
+			delete $c.$c$_this_child0$child1
+
+//assigning y to (((5) / 100 * ${parent.height}))
+			_this_child0$child1._replaceUpdater('y', function() { _this_child0$child1.y = (((5) / 100 * _this_child0$child1.parent.height)) }, [_this_child0$child1.parent,'height'])
+//assigning x to (((5) / 100 * ${parent.width}))
+			_this_child0$child1._replaceUpdater('x', function() { _this_child0$child1.x = (((5) / 100 * _this_child0$child1.parent.width)) }, [_this_child0$child1.parent,'width'])
+//assigning width to (((90) / 100 * ${parent.width}))
+			_this_child0$child1._replaceUpdater('width', function() { _this_child0$child1.width = (((90) / 100 * _this_child0$child1.parent.width)) }, [_this_child0$child1.parent,'width'])
+//assigning height to (${contentHeight})
+			_this_child0$child1._replaceUpdater('height', function() { _this_child0$child1.height = (_this_child0$child1.contentHeight) }, [_this_child0$child1,'contentHeight'])
+//assigning animationDuration to (300)
+			_this_child0$child1._removeUpdater('animationDuration'); _this_child0$child1.animationDuration = (300);
+//assigning keyProcessDelay to (300)
+			_this_child0$child1._removeUpdater('keyProcessDelay'); _this_child0$child1.keyProcessDelay = (300);
+//assigning delegateRadius to (${mosaicPageProto.delegateRadius})
+			_this_child0$child1._replaceUpdater('delegateRadius', function() { _this_child0$child1.delegateRadius = (_this_child0$child1._get('mosaicPageProto').delegateRadius) }, [_this_child0$child1._get('mosaicPageProto'),'delegateRadius'])
+
+//setting up component NestedVideo
+			var _this_child0_child1$highlight = $c._this_child0_child1$highlight
+			_this_child0_child1$highlight.$s($c.$c$_this_child0_child1$highlight)
+			delete $c.$c$_this_child0_child1$highlight
+
+//assigning radius to (${parent.delegateRadius})
+			_this_child0_child1$highlight._replaceUpdater('radius', function() { _this_child0_child1$highlight.radius = (_this_child0_child1$highlight.parent.delegateRadius) }, [_this_child0_child1$highlight.parent,'delegateRadius'])
+//assigning z to (${display} ? 1 : 0)
+			_this_child0_child1$highlight._replaceUpdater('z', function() { _this_child0_child1$highlight.z = (_this_child0_child1$highlight.display ? 1 : 0) }, [_this_child0_child1$highlight,'display'])
+			_this_child0_child1$highlight.on('clicked', function() {
+	var mosaicGrid = this._get('mosaicGrid', true)
+ mosaicGrid.play(mosaicGrid.currentIndex) }.bind(_this_child0_child1$highlight))
+
+//setting up component ClickMixin
+			var _this_child0_child1_highlight$child0 = $c._this_child0_child1_highlight$child0
+			_this_child0_child1_highlight$child0.$s($c.$c$_this_child0_child1_highlight$child0)
+			delete $c.$c$_this_child0_child1_highlight$child0
+
+
+			_this_child0_child1_highlight$child0.completed()
+	var behavior__this_child0_child1_highlight_on_x = new $core.Animation(_this_child0_child1$highlight)
+	var behavior__this_child0_child1_highlight_on_x$c = { behavior__this_child0_child1_highlight_on_x: behavior__this_child0_child1_highlight_on_x }
+
+//creating component Animation
+	behavior__this_child0_child1_highlight_on_x.$c(behavior__this_child0_child1_highlight_on_x$c.$c$behavior__this_child0_child1_highlight_on_x = { })
+
+
+//setting up component Animation
+	var behavior__this_child0_child1_highlight_on_x = behavior__this_child0_child1_highlight_on_x$c.behavior__this_child0_child1_highlight_on_x
+	behavior__this_child0_child1_highlight_on_x.$s(behavior__this_child0_child1_highlight_on_x$c.$c$behavior__this_child0_child1_highlight_on_x)
+	delete behavior__this_child0_child1_highlight_on_x$c.$c$behavior__this_child0_child1_highlight_on_x
+
+//assigning duration to (300)
+	behavior__this_child0_child1_highlight_on_x._removeUpdater('duration'); behavior__this_child0_child1_highlight_on_x.duration = (300);
+
+	behavior__this_child0_child1_highlight_on_x.completed()
+	_this_child0_child1$highlight.setAnimation('x', behavior__this_child0_child1_highlight_on_x);
+
+	var behavior__this_child0_child1_highlight_on_y = new $core.Animation(_this_child0_child1$highlight)
+	var behavior__this_child0_child1_highlight_on_y$c = { behavior__this_child0_child1_highlight_on_y: behavior__this_child0_child1_highlight_on_y }
+
+//creating component Animation
+	behavior__this_child0_child1_highlight_on_y.$c(behavior__this_child0_child1_highlight_on_y$c.$c$behavior__this_child0_child1_highlight_on_y = { })
+
+
+//setting up component Animation
+	var behavior__this_child0_child1_highlight_on_y = behavior__this_child0_child1_highlight_on_y$c.behavior__this_child0_child1_highlight_on_y
+	behavior__this_child0_child1_highlight_on_y.$s(behavior__this_child0_child1_highlight_on_y$c.$c$behavior__this_child0_child1_highlight_on_y)
+	delete behavior__this_child0_child1_highlight_on_y$c.$c$behavior__this_child0_child1_highlight_on_y
+
+//assigning duration to (300)
+	behavior__this_child0_child1_highlight_on_y._removeUpdater('duration'); behavior__this_child0_child1_highlight_on_y.duration = (300);
+
+	behavior__this_child0_child1_highlight_on_y.completed()
+	_this_child0_child1$highlight.setAnimation('y', behavior__this_child0_child1_highlight_on_y);
+
+	var behavior__this_child0_child1_highlight_on_width = new $core.Animation(_this_child0_child1$highlight)
+	var behavior__this_child0_child1_highlight_on_width$c = { behavior__this_child0_child1_highlight_on_width: behavior__this_child0_child1_highlight_on_width }
+
+//creating component Animation
+	behavior__this_child0_child1_highlight_on_width.$c(behavior__this_child0_child1_highlight_on_width$c.$c$behavior__this_child0_child1_highlight_on_width = { })
+
+
+//setting up component Animation
+	var behavior__this_child0_child1_highlight_on_width = behavior__this_child0_child1_highlight_on_width$c.behavior__this_child0_child1_highlight_on_width
+	behavior__this_child0_child1_highlight_on_width.$s(behavior__this_child0_child1_highlight_on_width$c.$c$behavior__this_child0_child1_highlight_on_width)
+	delete behavior__this_child0_child1_highlight_on_width$c.$c$behavior__this_child0_child1_highlight_on_width
+
+//assigning duration to (300)
+	behavior__this_child0_child1_highlight_on_width._removeUpdater('duration'); behavior__this_child0_child1_highlight_on_width.duration = (300);
+
+	behavior__this_child0_child1_highlight_on_width.completed()
+	_this_child0_child1$highlight.setAnimation('width', behavior__this_child0_child1_highlight_on_width);
+
+	var behavior__this_child0_child1_highlight_on_height = new $core.Animation(_this_child0_child1$highlight)
+	var behavior__this_child0_child1_highlight_on_height$c = { behavior__this_child0_child1_highlight_on_height: behavior__this_child0_child1_highlight_on_height }
+
+//creating component Animation
+	behavior__this_child0_child1_highlight_on_height.$c(behavior__this_child0_child1_highlight_on_height$c.$c$behavior__this_child0_child1_highlight_on_height = { })
+
+
+//setting up component Animation
+	var behavior__this_child0_child1_highlight_on_height = behavior__this_child0_child1_highlight_on_height$c.behavior__this_child0_child1_highlight_on_height
+	behavior__this_child0_child1_highlight_on_height.$s(behavior__this_child0_child1_highlight_on_height$c.$c$behavior__this_child0_child1_highlight_on_height)
+	delete behavior__this_child0_child1_highlight_on_height$c.$c$behavior__this_child0_child1_highlight_on_height
+
+//assigning duration to (300)
+	behavior__this_child0_child1_highlight_on_height._removeUpdater('duration'); behavior__this_child0_child1_highlight_on_height.duration = (300);
+
+	behavior__this_child0_child1_highlight_on_height.completed()
+	_this_child0_child1$highlight.setAnimation('height', behavior__this_child0_child1_highlight_on_height);
+
+			_this_child0_child1$highlight.completed()
+			_this_child0$child1.focusIndex = function(idx) {
+				var row = this.model.get(idx)
+				this.highlight.showAndPlay(row.video)
+			}.bind(_this_child0$child1)
+			_this_child0$child1.on('itemFocused', function(idx) { this.focusIndex(idx) }.bind(_this_child0$child1))
+			_this_child0$child1.onChanged('currentIndex', function(value) { this.highlight.hide() }.bind(_this_child0$child1))
+			_this_child0$child1.onPressed('Back', function(key,event) { this.focusIndex(this.currentIndex) }.bind(_this_child0$child1))
+
+			_this_child0$child1.completed()
+
+			_this$child0.completed()
+
+			$this.completed()
+}
+
+
+//=====[component controls.core.LazyActivity]=====================
+
+	var LazyActivityBaseComponent = $controls$core.BaseActivity
+	var LazyActivityBasePrototype = LazyActivityBaseComponent.prototype
+
+/**
+ * @constructor
+ * @extends {$controls$core.BaseActivity}
+ */
+	var LazyActivityComponent = $controls$core.LazyActivity = function(parent, row) {
+		LazyActivityBaseComponent.apply(this, arguments)
+
+	}
+	var LazyActivityPrototype = LazyActivityComponent.prototype = Object.create(LazyActivityBasePrototype)
+
+	LazyActivityPrototype.constructor = LazyActivityComponent
+
+	LazyActivityPrototype.componentName = 'controls.core.LazyActivity'
+	core.addProperty(LazyActivityPrototype, 'string', 'component')
+	LazyActivityPrototype.init = function() {
+		_globals.controls.core.BaseActivity.prototype.init.apply(this, arguments)
+		var activity = this.createActivity()
+		if (activity)
+			activity.init.apply(activity, arguments)
+	}
+	LazyActivityPrototype.start = function() {
+		this.createActivity().start()
+		this.visible = true
+	}
+	LazyActivityPrototype.stop = function() {
+		this.visible = false
+		var item = this.getActivity()
+		if (item)
+			item.stop()
+	}
+	LazyActivityPrototype.getActivity = function() {
+	var loader = this._get('loader', true)
+
+		return loader.item
+	}
+	LazyActivityPrototype.createActivity = function() {
+	var loader = this._get('loader', true)
+
+		var item = loader.item
+		if (!item) {
+			loader.source = this.component
+			item = loader.item
+			item.anchors.fill = this
+			this._context._processActions() //we have to process all actions before starting setting up items
+			item.manager = this.manager
+			if (!item)
+				throw new Error("can't create component " + this.component)
+
+			var activity = this
+			item.on('started', function() { activity.started() })
+			item.on('stopped', function() { activity.stopped() })
+		}
+		return loader.item
+	}
+
+	LazyActivityPrototype.$c = function($c) {
+		var $this = this;
+		LazyActivityBasePrototype.$c.call(this, $c.$b = { })
+var _this$child0 = new $core.Loader($this)
+		$c._this$child0 = _this$child0
+
+//creating component Loader
+		_this$child0.$c($c.$c$_this$child0 = { })
+		_this$child0._setId('loader')
+		$this.addChild(_this$child0)
+	}
+	LazyActivityPrototype.$s = function($c) {
+		var $this = this;
+	LazyActivityBasePrototype.$s.call(this, $c.$b); delete $c.$b
+//assigning anchors.fill to (${manager})
+			$this.anchors._replaceUpdater('fill', function() { $this.anchors.fill = ($this.manager) }, [$this,'manager'])
+
+//setting up component Loader
+			var _this$child0 = $c._this$child0
+			_this$child0.$s($c.$c$_this$child0)
+			delete $c.$c$_this$child0
+
+//assigning anchors.fill to (${parent.manager})
+			_this$child0.anchors._replaceUpdater('fill', function() { _this$child0.anchors.fill = (_this$child0.parent.manager) }, [_this$child0.parent,'manager'])
+
+			_this$child0.completed()
+
+			$this.completed()
+}
+
+
+//=====[component core.RAIIEventEmitter]=====================
+
+	var RAIIEventEmitterBaseComponent = $core.EventEmitter
+	var RAIIEventEmitterBasePrototype = RAIIEventEmitterBaseComponent.prototype
+
+/**
+ * @constructor
+ * @extends {$core.EventEmitter}
+ */
+	var RAIIEventEmitterComponent = $core.RAIIEventEmitter = function(parent, row) {
+		RAIIEventEmitterBaseComponent.apply(this, arguments)
+	//custom constructor:
+	{
+		this._onListener = {}
+	}
+
+	}
+	var RAIIEventEmitterPrototype = RAIIEventEmitterComponent.prototype = Object.create(RAIIEventEmitterBasePrototype)
+
+	RAIIEventEmitterPrototype.constructor = RAIIEventEmitterComponent
+
+	RAIIEventEmitterPrototype.componentName = 'core.RAIIEventEmitter'
+	RAIIEventEmitterPrototype.removeAllListeners = function(name) {
+		$core.EventEmitter.prototype.removeAllListeners.call(this, name)
+		if (name in this._onListener)
+			this._onListener[name][1](name)
+		else if ('' in this._onListener) {
+			//log('first listener to', name)
+			this._onListener[''][1](name)
+		}
+	}
+	RAIIEventEmitterPrototype.on = function(name,callback) {
+		if (!(name in this._eventHandlers)) {
+			if (name in this._onListener) {
+				//log('first listener to', name)
+				this._onListener[name][0](name)
+			} else if ('' in this._onListener) {
+				//log('first listener to', name)
+				this._onListener[''][0](name)
+			}
+			if (this._eventHandlers[name])
+				throw new Error('listener callback added event handler')
+		}
+		$core.EventEmitter.prototype.on.call(this, name, callback)
+	}
+	RAIIEventEmitterPrototype.onListener = function(name,first,last) {
+		this._onListener[name] = [first, last]
+	}
+
+	RAIIEventEmitterPrototype.$c = function($c) {
+		var $this = this;
+		RAIIEventEmitterBasePrototype.$c.call(this, $c.$b = { })
+
+	}
+	RAIIEventEmitterPrototype.$s = function($c) {
+		var $this = this;
+	RAIIEventEmitterBasePrototype.$s.call(this, $c.$b); delete $c.$b
+$this.completed()
+}
+
+
 //=====[component controls.core.ActivityManager]=====================
 
 	var ActivityManagerBaseComponent = $core.Item
@@ -2437,480 +2949,6 @@ var _this$child0 = new $core.Rectangle($this)
 }
 
 
-//=====[component controls.core.BaseActivity]=====================
-
-	var BaseActivityBaseComponent = $core.Item
-	var BaseActivityBasePrototype = BaseActivityBaseComponent.prototype
-
-/**
- * @constructor
- * @extends {$core.Item}
- */
-	var BaseActivityComponent = $controls$core.BaseActivity = function(parent, row) {
-		BaseActivityBaseComponent.apply(this, arguments)
-
-	}
-	var BaseActivityPrototype = BaseActivityComponent.prototype = Object.create(BaseActivityBasePrototype)
-
-	BaseActivityPrototype.constructor = BaseActivityComponent
-
-	BaseActivityPrototype.componentName = 'controls.core.BaseActivity'
-	BaseActivityPrototype.started = $core.createSignal('started')
-	BaseActivityPrototype.stopped = $core.createSignal('stopped')
-	core.addProperty(BaseActivityPrototype, 'bool', 'active')
-	core.addProperty(BaseActivityPrototype, 'string', 'name')
-	core.addProperty(BaseActivityPrototype, 'Item', 'manager')
-	BaseActivityPrototype.clear = function() { this.manager.clear() }
-	BaseActivityPrototype.pop = function(count) { this.manager.pop(count) }
-	BaseActivityPrototype.init = function(intent,state) { }
-	BaseActivityPrototype.closeAllExcept = function(name) { this.manager.closeAllExcept(name) }
-	BaseActivityPrototype.removeActivity = function(name) { this.manager.removeActivity(name) }
-	BaseActivityPrototype.push = function(name,intent,state) { this.manager.push(name, intent, state) }
-	BaseActivityPrototype.replaceTopActivity = function(name,intent,state) { this.manager.replaceTopActivity(name, intent, state) }
-	BaseActivityPrototype.popWithState = function(state) { this.manager.popWithState(state) }
-	BaseActivityPrototype.setIntent = function(state,name) { this.manager.setIntent(state, name) }
-	BaseActivityPrototype.setState = function(state,name) { this.manager.setState(state, name) }
-	$core._protoOnKey(BaseActivityPrototype, 'Back', function(key,event) { this.manager.pop(); return true })
-
-	BaseActivityPrototype.$c = function($c) {
-		var $this = this;
-		BaseActivityBasePrototype.$c.call(this, $c.$b = { })
-
-	}
-	BaseActivityPrototype.$s = function($c) {
-		var $this = this;
-	BaseActivityBasePrototype.$s.call(this, $c.$b); delete $c.$b
-//assigning manager to (${parent})
-			$this._removeUpdater('manager'); $this.manager = ($this.parent);
-//assigning visible to (${active})
-			$this._replaceUpdater('visible', function() { $this.visible = ($this.active) }, [$this,'active'])
-
-			$this.completed()
-}
-
-
-//=====[component controls.core.LazyActivity]=====================
-
-	var LazyActivityBaseComponent = $controls$core.BaseActivity
-	var LazyActivityBasePrototype = LazyActivityBaseComponent.prototype
-
-/**
- * @constructor
- * @extends {$controls$core.BaseActivity}
- */
-	var LazyActivityComponent = $controls$core.LazyActivity = function(parent, row) {
-		LazyActivityBaseComponent.apply(this, arguments)
-
-	}
-	var LazyActivityPrototype = LazyActivityComponent.prototype = Object.create(LazyActivityBasePrototype)
-
-	LazyActivityPrototype.constructor = LazyActivityComponent
-
-	LazyActivityPrototype.componentName = 'controls.core.LazyActivity'
-	core.addProperty(LazyActivityPrototype, 'string', 'component')
-	LazyActivityPrototype.init = function() {
-		_globals.controls.core.BaseActivity.prototype.init.apply(this, arguments)
-		var activity = this.createActivity()
-		if (activity)
-			activity.init.apply(activity, arguments)
-	}
-	LazyActivityPrototype.start = function() {
-		this.createActivity().start()
-		this.visible = true
-	}
-	LazyActivityPrototype.stop = function() {
-		this.visible = false
-		var item = this.getActivity()
-		if (item)
-			item.stop()
-	}
-	LazyActivityPrototype.getActivity = function() {
-	var loader = this._get('loader', true)
-
-		return loader.item
-	}
-	LazyActivityPrototype.createActivity = function() {
-	var loader = this._get('loader', true)
-
-		var item = loader.item
-		if (!item) {
-			loader.source = this.component
-			item = loader.item
-			item.anchors.fill = this
-			this._context._processActions() //we have to process all actions before starting setting up items
-			item.manager = this.manager
-			if (!item)
-				throw new Error("can't create component " + this.component)
-
-			var activity = this
-			item.on('started', function() { activity.started() })
-			item.on('stopped', function() { activity.stopped() })
-		}
-		return loader.item
-	}
-
-	LazyActivityPrototype.$c = function($c) {
-		var $this = this;
-		LazyActivityBasePrototype.$c.call(this, $c.$b = { })
-var _this$child0 = new $core.Loader($this)
-		$c._this$child0 = _this$child0
-
-//creating component Loader
-		_this$child0.$c($c.$c$_this$child0 = { })
-		_this$child0._setId('loader')
-		$this.addChild(_this$child0)
-	}
-	LazyActivityPrototype.$s = function($c) {
-		var $this = this;
-	LazyActivityBasePrototype.$s.call(this, $c.$b); delete $c.$b
-//assigning anchors.fill to (${manager})
-			$this.anchors._replaceUpdater('fill', function() { $this.anchors.fill = ($this.manager) }, [$this,'manager'])
-
-//setting up component Loader
-			var _this$child0 = $c._this$child0
-			_this$child0.$s($c.$c$_this$child0)
-			delete $c.$c$_this$child0
-
-//assigning anchors.fill to (${parent.manager})
-			_this$child0.anchors._replaceUpdater('fill', function() { _this$child0.anchors.fill = (_this$child0.parent.manager) }, [_this$child0.parent,'manager'])
-
-			_this$child0.completed()
-
-			$this.completed()
-}
-
-
-//=====[component controls.core.Activity]=====================
-
-	var ActivityBaseComponent = $controls$core.BaseActivity
-	var ActivityBasePrototype = ActivityBaseComponent.prototype
-
-/**
- * @constructor
- * @extends {$controls$core.BaseActivity}
- */
-	var ActivityComponent = $controls$core.Activity = function(parent, row) {
-		ActivityBaseComponent.apply(this, arguments)
-
-	}
-	var ActivityPrototype = ActivityComponent.prototype = Object.create(ActivityBasePrototype)
-
-	ActivityPrototype.constructor = ActivityComponent
-
-	ActivityPrototype.componentName = 'controls.core.Activity'
-	ActivityPrototype.getActivity = function() {
-		return this
-	}
-	ActivityPrototype.stop = function() {
-		this.active = false
-		this.stopped()
-	}
-	ActivityPrototype.start = function() {
-		this.active = true
-		this.started()
-	}
-
-	ActivityPrototype.$c = function($c) {
-		var $this = this;
-		ActivityBasePrototype.$c.call(this, $c.$b = { })
-
-	}
-	ActivityPrototype.$s = function($c) {
-		var $this = this;
-	ActivityBasePrototype.$s.call(this, $c.$b); delete $c.$b
-$this.completed()
-}
-
-
-//=====[component core.RAIIEventEmitter]=====================
-
-	var RAIIEventEmitterBaseComponent = $core.EventEmitter
-	var RAIIEventEmitterBasePrototype = RAIIEventEmitterBaseComponent.prototype
-
-/**
- * @constructor
- * @extends {$core.EventEmitter}
- */
-	var RAIIEventEmitterComponent = $core.RAIIEventEmitter = function(parent, row) {
-		RAIIEventEmitterBaseComponent.apply(this, arguments)
-	//custom constructor:
-	{
-		this._onListener = {}
-	}
-
-	}
-	var RAIIEventEmitterPrototype = RAIIEventEmitterComponent.prototype = Object.create(RAIIEventEmitterBasePrototype)
-
-	RAIIEventEmitterPrototype.constructor = RAIIEventEmitterComponent
-
-	RAIIEventEmitterPrototype.componentName = 'core.RAIIEventEmitter'
-	RAIIEventEmitterPrototype.removeAllListeners = function(name) {
-		$core.EventEmitter.prototype.removeAllListeners.call(this, name)
-		if (name in this._onListener)
-			this._onListener[name][1](name)
-		else if ('' in this._onListener) {
-			//log('first listener to', name)
-			this._onListener[''][1](name)
-		}
-	}
-	RAIIEventEmitterPrototype.on = function(name,callback) {
-		if (!(name in this._eventHandlers)) {
-			if (name in this._onListener) {
-				//log('first listener to', name)
-				this._onListener[name][0](name)
-			} else if ('' in this._onListener) {
-				//log('first listener to', name)
-				this._onListener[''][0](name)
-			}
-			if (this._eventHandlers[name])
-				throw new Error('listener callback added event handler')
-		}
-		$core.EventEmitter.prototype.on.call(this, name, callback)
-	}
-	RAIIEventEmitterPrototype.onListener = function(name,first,last) {
-		this._onListener[name] = [first, last]
-	}
-
-	RAIIEventEmitterPrototype.$c = function($c) {
-		var $this = this;
-		RAIIEventEmitterBasePrototype.$c.call(this, $c.$b = { })
-
-	}
-	RAIIEventEmitterPrototype.$s = function($c) {
-		var $this = this;
-	RAIIEventEmitterBasePrototype.$s.call(this, $c.$b); delete $c.$b
-$this.completed()
-}
-
-
-//=====[component src.MosaicPage]=====================
-
-	var MosaicPageBaseComponent = $controls$core.Activity
-	var MosaicPageBasePrototype = MosaicPageBaseComponent.prototype
-
-/**
- * @constructor
- * @extends {$controls$core.Activity}
- */
-	var MosaicPageComponent = $src.MosaicPage = function(parent, row) {
-		MosaicPageBaseComponent.apply(this, arguments)
-
-	}
-	var MosaicPagePrototype = MosaicPageComponent.prototype = Object.create(MosaicPageBasePrototype)
-
-	MosaicPagePrototype.constructor = MosaicPageComponent
-
-	MosaicPagePrototype.componentName = 'src.MosaicPage'
-	core.addProperty(MosaicPagePrototype, 'int', 'delegateRadius')
-	MosaicPagePrototype.init = function() {
-	var mosaicGrid = this._get('mosaicGrid', true), api = this._get('api', true), anotherApi = this._get('anotherApi', true)
-
-		// api.getMain(
-		// 	function(res) {
-		// 		mosaicGrid.fill(res[0].items, function(row) {
-		// 			if (row.thumbnail.image_15x) {
-		// 				return {
-		// 					video: api.baseUrl + row.video_cover,
-		// 					preview: api.baseUrl + row.thumbnail.image_15x,
-		// 					title: row.title,
-		// 					icon: api.baseUrl + row.logotype.image_15x
-		// 				}
-		// 			} else {
-		// 				return null
-		// 			}
-		// 		})
-		// 	},
-		// 	function(e) { log("Failed to get content", e) }
-		// )
-
-		anotherApi.getMain(
-			function(res) {
-				mosaicGrid.fill(res.element.collectionItems.items, function(row) {
-					if (row.element.basicCovers.items && row.element.basicCovers.items.length > 0) {
-						var videoUrl = ""
-						var trailers = row.element.trailers.items
-						for (var i in trailers) {
-							if (trailers[i].media.mimeType.indexOf("mp4") >= 0) {
-								videoUrl = trailers[i].url
-								break
-							}
-						}
-						return {
-							video: videoUrl,
-							preview: row.element.basicCovers.items[0].url,
-							title: row.element.name
-						}
-					} else {
-						return null
-					}
-				})
-			},
-			function(e) { log("Failed to get content", e) }
-		)
-	}
-
-	MosaicPagePrototype.$c = function($c) {
-		var $this = this;
-		MosaicPageBasePrototype.$c.call(this, $c.$b = { })
-var _this$child0 = new $controls$experimental.Mosaic($this)
-		$c._this$child0 = _this$child0
-
-//creating component Mosaic
-		_this$child0.$c($c.$c$_this$child0 = { })
-		_this$child0._setId('mosaicGrid')
-//creating component src.<anonymous>
-		var _this_child0$highlight = new $controls$experimental.NestedVideo(_this$child0)
-		$c._this_child0$highlight = _this_child0$highlight
-
-//creating component NestedVideo
-		_this_child0$highlight.$c($c.$c$_this_child0$highlight = { })
-		var _this_child0_highlight$child0 = new $core.ClickMixin(_this_child0$highlight)
-		$c._this_child0_highlight$child0 = _this_child0_highlight$child0
-
-//creating component ClickMixin
-		_this_child0_highlight$child0.$c($c.$c$_this_child0_highlight$child0 = { })
-
-		_this_child0$highlight.addChild(_this_child0_highlight$child0)
-		_this$child0.highlight = _this_child0$highlight
-		$this.addChild(_this$child0)
-	}
-	MosaicPagePrototype.$s = function($c) {
-		var $this = this;
-	MosaicPageBasePrototype.$s.call(this, $c.$b); delete $c.$b
-//assigning anchors.fill to (${parent})
-			$this.anchors._removeUpdater('fill'); $this.anchors.fill = ($this.parent);
-//assigning name to ("mosaic")
-			$this._removeUpdater('name'); $this.name = ("mosaic");
-//assigning delegateRadius to (((10) * ${context.virtualScale}))
-			$this._replaceUpdater('delegateRadius', function() { $this.delegateRadius = (((10) * $this._context.virtualScale)) }, [$this._context,'virtualScale'])
-
-//setting up component Mosaic
-			var _this$child0 = $c._this$child0
-			_this$child0.$s($c.$c$_this$child0)
-			delete $c.$c$_this$child0
-
-//assigning x to (((5) / 100 * ${parent.width}))
-			_this$child0._replaceUpdater('x', function() { _this$child0.x = (((5) / 100 * _this$child0.parent.width)) }, [_this$child0.parent,'width'])
-//assigning y to (((5) / 100 * ${parent.height}))
-			_this$child0._replaceUpdater('y', function() { _this$child0.y = (((5) / 100 * _this$child0.parent.height)) }, [_this$child0.parent,'height'])
-//assigning width to (((90) / 100 * ${parent.width}))
-			_this$child0._replaceUpdater('width', function() { _this$child0.width = (((90) / 100 * _this$child0.parent.width)) }, [_this$child0.parent,'width'])
-//assigning height to (((95) / 100 * ${parent.height}))
-			_this$child0._replaceUpdater('height', function() { _this$child0.height = (((95) / 100 * _this$child0.parent.height)) }, [_this$child0.parent,'height'])
-//assigning animationDuration to (300)
-			_this$child0._removeUpdater('animationDuration'); _this$child0.animationDuration = (300);
-//assigning keyProcessDelay to (300)
-			_this$child0._removeUpdater('keyProcessDelay'); _this$child0.keyProcessDelay = (300);
-//assigning delegateRadius to (${parent.delegateRadius})
-			_this$child0._replaceUpdater('delegateRadius', function() { _this$child0.delegateRadius = (_this$child0.parent.delegateRadius) }, [_this$child0.parent,'delegateRadius'])
-
-//setting up component NestedVideo
-			var _this_child0$highlight = $c._this_child0$highlight
-			_this_child0$highlight.$s($c.$c$_this_child0$highlight)
-			delete $c.$c$_this_child0$highlight
-
-//assigning radius to (${parent.delegateRadius})
-			_this_child0$highlight._replaceUpdater('radius', function() { _this_child0$highlight.radius = (_this_child0$highlight.parent.delegateRadius) }, [_this_child0$highlight.parent,'delegateRadius'])
-//assigning z to (${display} ? 1 : 0)
-			_this_child0$highlight._replaceUpdater('z', function() { _this_child0$highlight.z = (_this_child0$highlight.display ? 1 : 0) }, [_this_child0$highlight,'display'])
-			_this_child0$highlight.on('clicked', function() {
-	var mosaicGrid = this._get('mosaicGrid', true)
- mosaicGrid.play(mosaicGrid.currentIndex) }.bind(_this_child0$highlight))
-
-//setting up component ClickMixin
-			var _this_child0_highlight$child0 = $c._this_child0_highlight$child0
-			_this_child0_highlight$child0.$s($c.$c$_this_child0_highlight$child0)
-			delete $c.$c$_this_child0_highlight$child0
-
-
-			_this_child0_highlight$child0.completed()
-	var behavior__this_child0_highlight_on_x = new $core.Animation(_this_child0$highlight)
-	var behavior__this_child0_highlight_on_x$c = { behavior__this_child0_highlight_on_x: behavior__this_child0_highlight_on_x }
-
-//creating component Animation
-	behavior__this_child0_highlight_on_x.$c(behavior__this_child0_highlight_on_x$c.$c$behavior__this_child0_highlight_on_x = { })
-
-
-//setting up component Animation
-	var behavior__this_child0_highlight_on_x = behavior__this_child0_highlight_on_x$c.behavior__this_child0_highlight_on_x
-	behavior__this_child0_highlight_on_x.$s(behavior__this_child0_highlight_on_x$c.$c$behavior__this_child0_highlight_on_x)
-	delete behavior__this_child0_highlight_on_x$c.$c$behavior__this_child0_highlight_on_x
-
-//assigning duration to (300)
-	behavior__this_child0_highlight_on_x._removeUpdater('duration'); behavior__this_child0_highlight_on_x.duration = (300);
-
-	behavior__this_child0_highlight_on_x.completed()
-	_this_child0$highlight.setAnimation('x', behavior__this_child0_highlight_on_x);
-
-	var behavior__this_child0_highlight_on_y = new $core.Animation(_this_child0$highlight)
-	var behavior__this_child0_highlight_on_y$c = { behavior__this_child0_highlight_on_y: behavior__this_child0_highlight_on_y }
-
-//creating component Animation
-	behavior__this_child0_highlight_on_y.$c(behavior__this_child0_highlight_on_y$c.$c$behavior__this_child0_highlight_on_y = { })
-
-
-//setting up component Animation
-	var behavior__this_child0_highlight_on_y = behavior__this_child0_highlight_on_y$c.behavior__this_child0_highlight_on_y
-	behavior__this_child0_highlight_on_y.$s(behavior__this_child0_highlight_on_y$c.$c$behavior__this_child0_highlight_on_y)
-	delete behavior__this_child0_highlight_on_y$c.$c$behavior__this_child0_highlight_on_y
-
-//assigning duration to (300)
-	behavior__this_child0_highlight_on_y._removeUpdater('duration'); behavior__this_child0_highlight_on_y.duration = (300);
-
-	behavior__this_child0_highlight_on_y.completed()
-	_this_child0$highlight.setAnimation('y', behavior__this_child0_highlight_on_y);
-
-	var behavior__this_child0_highlight_on_width = new $core.Animation(_this_child0$highlight)
-	var behavior__this_child0_highlight_on_width$c = { behavior__this_child0_highlight_on_width: behavior__this_child0_highlight_on_width }
-
-//creating component Animation
-	behavior__this_child0_highlight_on_width.$c(behavior__this_child0_highlight_on_width$c.$c$behavior__this_child0_highlight_on_width = { })
-
-
-//setting up component Animation
-	var behavior__this_child0_highlight_on_width = behavior__this_child0_highlight_on_width$c.behavior__this_child0_highlight_on_width
-	behavior__this_child0_highlight_on_width.$s(behavior__this_child0_highlight_on_width$c.$c$behavior__this_child0_highlight_on_width)
-	delete behavior__this_child0_highlight_on_width$c.$c$behavior__this_child0_highlight_on_width
-
-//assigning duration to (300)
-	behavior__this_child0_highlight_on_width._removeUpdater('duration'); behavior__this_child0_highlight_on_width.duration = (300);
-
-	behavior__this_child0_highlight_on_width.completed()
-	_this_child0$highlight.setAnimation('width', behavior__this_child0_highlight_on_width);
-
-	var behavior__this_child0_highlight_on_height = new $core.Animation(_this_child0$highlight)
-	var behavior__this_child0_highlight_on_height$c = { behavior__this_child0_highlight_on_height: behavior__this_child0_highlight_on_height }
-
-//creating component Animation
-	behavior__this_child0_highlight_on_height.$c(behavior__this_child0_highlight_on_height$c.$c$behavior__this_child0_highlight_on_height = { })
-
-
-//setting up component Animation
-	var behavior__this_child0_highlight_on_height = behavior__this_child0_highlight_on_height$c.behavior__this_child0_highlight_on_height
-	behavior__this_child0_highlight_on_height.$s(behavior__this_child0_highlight_on_height$c.$c$behavior__this_child0_highlight_on_height)
-	delete behavior__this_child0_highlight_on_height$c.$c$behavior__this_child0_highlight_on_height
-
-//assigning duration to (300)
-	behavior__this_child0_highlight_on_height._removeUpdater('duration'); behavior__this_child0_highlight_on_height.duration = (300);
-
-	behavior__this_child0_highlight_on_height.completed()
-	_this_child0$highlight.setAnimation('height', behavior__this_child0_highlight_on_height);
-
-			_this_child0$highlight.completed()
-			_this$child0.focusIndex = function(idx) {
-			var row = this.model.get(idx)
-			this.highlight.showAndPlay(row.video)
-		}.bind(_this$child0)
-			_this$child0.on('itemFocused', function(idx) { this.focusIndex(idx) }.bind(_this$child0))
-			_this$child0.onChanged('currentIndex', function(value) { this.highlight.hide() }.bind(_this$child0))
-			_this$child0.onPressed('Back', function(key,event) { this.focusIndex(this.currentIndex) }.bind(_this$child0))
-
-			_this$child0.completed()
-
-			$this.completed()
-}
-
-
 //=====[component core.Location]=====================
 
 	var LocationBaseComponent = $core.Object
@@ -2961,6 +2999,89 @@ var _this$child0 = new $controls$experimental.Mosaic($this)
 	LocationPrototype.$s = function($c) {
 		var $this = this;
 	LocationBasePrototype.$s.call(this, $c.$b); delete $c.$b
+$this.completed()
+}
+
+
+//=====[component html5.Stylesheet]=====================
+
+	var StylesheetBaseComponent = $core.Object
+	var StylesheetBasePrototype = StylesheetBaseComponent.prototype
+
+/**
+ * @constructor
+ * @extends {$core.Object}
+ */
+	var StylesheetComponent = $html5.Stylesheet = function(parent, row) {
+		StylesheetBaseComponent.apply(this, arguments)
+	//custom constructor:
+	{
+		var context = this._context
+		var options = context.options
+
+		var style = this.style = context.createElement('style')
+		style.dom.type = 'text/css'
+
+		this.prefix = options.prefix
+		var divId = options.id
+
+		var div = document.getElementById(context, divId)
+		var topLevel = div === null
+
+		var userSelect = window.Modernizr.prefixedCSS('user-select') + ": none; "
+		var os = _globals.core.os
+		var tapHighlightedPlatform = (os === "android" || os === "androidttk" || os === "hisense")
+
+		//var textAdjust = window.Modernizr.prefixedCSS('text-size-adjust') + ": 100%; "
+		style.setHtml(
+			//"html { " + textAdjust + " }" +
+			"div#" + divId + " { position: absolute; visibility: hidden; left: 0px; top: 0px; }" +
+			(os === "webOS" || tapHighlightedPlatform ? this.mangleRule('div', "{ " + userSelect + " }") : "") +
+			(tapHighlightedPlatform ? this.mangleRule('div', "{ -webkit-tap-highlight-color: rgba(255, 255, 255, 0); -webkit-focus-ring-color: rgba(255, 255, 255, 0); outline: none; }") : "") +
+			(topLevel? "body { padding: 0; margin: 0; border: 0px; overflow: hidden; }": "") + //fixme: do we need style here in non-top-level mode?
+			this.mangleRule('video', "{ position: absolute; }") + //fixme: do we need position rule if it's item?
+			this.mangleRule('img', "{ position: absolute; -webkit-touch-callout: none; " + userSelect + " }")
+		)
+		var head = _globals.html5.html.getElement(context, 'head')
+		head.append(style)
+		head.updateStyle()
+
+		this._addRule = _globals.html5.html.createAddRule(style.dom).bind(this)
+		this._lastId = 0
+	}
+
+	}
+	var StylesheetPrototype = StylesheetComponent.prototype = Object.create(StylesheetBasePrototype)
+
+	StylesheetPrototype.constructor = StylesheetComponent
+
+	StylesheetPrototype.componentName = 'html5.Stylesheet'
+	StylesheetPrototype.allocateClass = function(prefix) {
+		var globalPrefix = this.prefix
+		return (globalPrefix? globalPrefix: '') + prefix + '-' + this._lastId++
+	}
+	StylesheetPrototype.mangleSelector = function(selector) {
+		var prefix = this.prefix
+		if (prefix)
+			return selector + '.' + prefix + 'core-item'
+		else
+			return selector
+	}
+	StylesheetPrototype.mangleRule = function(selector,rule) {
+		return this.mangleSelector(selector) + ' ' + rule + ' '
+	}
+	StylesheetPrototype.addRule = function(selector,rule) {
+		this._addRule(selector, rule)
+	}
+
+	StylesheetPrototype.$c = function($c) {
+		var $this = this;
+		StylesheetBasePrototype.$c.call(this, $c.$b = { })
+
+	}
+	StylesheetPrototype.$s = function($c) {
+		var $this = this;
+	StylesheetBasePrototype.$s.call(this, $c.$b); delete $c.$b
 $this.completed()
 }
 
@@ -3098,7 +3219,7 @@ $this.completed()
 		var $this = this;
 	SystemBasePrototype.$s.call(this, $c.$b); delete $c.$b
 //assigning portrait to (${parent.width} < ${parent.height})
-			$this._replaceUpdater('portrait', function() { $this.portrait = ($this.parent.width < $this.parent.height) }, [$this.parent,'width',$this.parent,'height'])
+			$this._replaceUpdater('portrait', function() { $this.portrait = ($this.parent.width < $this.parent.height) }, [$this.parent,'height',$this.parent,'width'])
 //assigning landscape to (! ${portrait})
 			$this._replaceUpdater('landscape', function() { $this.landscape = (! $this.portrait) }, [$this,'portrait'])
 //assigning contextWidth to (${context.width})
@@ -3107,624 +3228,6 @@ $this.completed()
 			$this._replaceUpdater('contextHeight', function() { $this.contextHeight = ($this._context.height) }, [$this._context,'height'])
 //assigning virtualKeyboard to (${device} === _globals.core.System.prototype.Tv || ${device} === _globals.core.System.prototype.Mobile)
 			$this._replaceUpdater('virtualKeyboard', function() { $this.virtualKeyboard = ($this.device === _globals.core.System.prototype.Tv || $this.device === _globals.core.System.prototype.Mobile) }, [$this,'device'])
-
-			$this.completed()
-}
-
-
-//=====[component html5.Stylesheet]=====================
-
-	var StylesheetBaseComponent = $core.Object
-	var StylesheetBasePrototype = StylesheetBaseComponent.prototype
-
-/**
- * @constructor
- * @extends {$core.Object}
- */
-	var StylesheetComponent = $html5.Stylesheet = function(parent, row) {
-		StylesheetBaseComponent.apply(this, arguments)
-	//custom constructor:
-	{
-		var context = this._context
-		var options = context.options
-
-		var style = this.style = context.createElement('style')
-		style.dom.type = 'text/css'
-
-		this.prefix = options.prefix
-		var divId = options.id
-
-		var div = document.getElementById(context, divId)
-		var topLevel = div === null
-
-		var userSelect = window.Modernizr.prefixedCSS('user-select') + ": none; "
-		var os = _globals.core.os
-		var tapHighlightedPlatform = (os === "android" || os === "androidttk" || os === "hisense")
-
-		//var textAdjust = window.Modernizr.prefixedCSS('text-size-adjust') + ": 100%; "
-		style.setHtml(
-			//"html { " + textAdjust + " }" +
-			"div#" + divId + " { position: absolute; visibility: hidden; left: 0px; top: 0px; }" +
-			(os === "webOS" || tapHighlightedPlatform ? this.mangleRule('div', "{ " + userSelect + " }") : "") +
-			(tapHighlightedPlatform ? this.mangleRule('div', "{ -webkit-tap-highlight-color: rgba(255, 255, 255, 0); -webkit-focus-ring-color: rgba(255, 255, 255, 0); outline: none; }") : "") +
-			(topLevel? "body { padding: 0; margin: 0; border: 0px; overflow: hidden; }": "") + //fixme: do we need style here in non-top-level mode?
-			this.mangleRule('video', "{ position: absolute; }") + //fixme: do we need position rule if it's item?
-			this.mangleRule('img', "{ position: absolute; -webkit-touch-callout: none; " + userSelect + " }")
-		)
-		var head = _globals.html5.html.getElement(context, 'head')
-		head.append(style)
-		head.updateStyle()
-
-		this._addRule = _globals.html5.html.createAddRule(style.dom).bind(this)
-		this._lastId = 0
-	}
-
-	}
-	var StylesheetPrototype = StylesheetComponent.prototype = Object.create(StylesheetBasePrototype)
-
-	StylesheetPrototype.constructor = StylesheetComponent
-
-	StylesheetPrototype.componentName = 'html5.Stylesheet'
-	StylesheetPrototype.allocateClass = function(prefix) {
-		var globalPrefix = this.prefix
-		return (globalPrefix? globalPrefix: '') + prefix + '-' + this._lastId++
-	}
-	StylesheetPrototype.mangleSelector = function(selector) {
-		var prefix = this.prefix
-		if (prefix)
-			return selector + '.' + prefix + 'core-item'
-		else
-			return selector
-	}
-	StylesheetPrototype.mangleRule = function(selector,rule) {
-		return this.mangleSelector(selector) + ' ' + rule + ' '
-	}
-	StylesheetPrototype.addRule = function(selector,rule) {
-		this._addRule(selector, rule)
-	}
-
-	StylesheetPrototype.$c = function($c) {
-		var $this = this;
-		StylesheetBasePrototype.$c.call(this, $c.$b = { })
-
-	}
-	StylesheetPrototype.$s = function($c) {
-		var $this = this;
-	StylesheetBasePrototype.$s.call(this, $c.$b); delete $c.$b
-$this.completed()
-}
-
-
-//=====[component controls.web.api.Rest]=====================
-
-	var RestBaseComponent = $core.Object
-	var RestBasePrototype = RestBaseComponent.prototype
-
-/**
- * @constructor
- * @extends {$core.Object}
- */
-	var RestComponent = $controls$web$api.Rest = function(parent, row) {
-		RestBaseComponent.apply(this, arguments)
-	//custom constructor:
-	{
-		this._methods = {}
-	}
-
-	}
-	var RestPrototype = RestComponent.prototype = Object.create(RestBasePrototype)
-
-	RestPrototype.constructor = RestComponent
-
-	RestPrototype.componentName = 'controls.web.api.Rest'
-	RestPrototype.internetConnectionLost = $core.createSignal('internetConnectionLost')
-	RestPrototype.error = $core.createSignal('error')
-	core.addProperty(RestPrototype, 'string', 'baseUrl')
-	RestPrototype.args = function(args) {
-		return args
-	}
-	RestPrototype.headers = function(headers) {
-	}
-	RestPrototype.call = function(name,callback,error,method,data,head) {
-		if (name.indexOf('://') < 0) {
-			var baseUrl = this.baseUrl
-			if (baseUrl[baseUrl.length - 1] === '/' || name[0] === '/')
-				name = baseUrl + name
-			else
-				name = baseUrl + '/' + name
-		}
-		this._call(name, callback, error, method, JSON.stringify(data), head)
-	}
-	RestPrototype._call = function(name,callback,error,method,data,head) {
-	var apiRequest = this._get('apiRequest', true)
-
-		var headers = head || {}
-
-		if (data) {
-			data = this.args(data)
-			headers["Content-Type"] = "application/json"
-		}
-
-		var newHeaders = this.headers(headers)
-		if (newHeaders !== undefined)
-			headers = newHeaders
-
-		var url = name
-		var self = this
-
-		apiRequest.ajax({
-			method: method || "GET",
-			headers: headers,
-			contentType: 'application/json',
-			url: url,
-			data: data,
-			done: function(res) {
-				if (res.target && res.target.status >= 400) {
-					log("Error in request", res)
-					if (error)
-						error(res)
-					self.error({"url": url, "method": method, "response": res})
-					return
-				}
-
-				var text = res.target.responseText
-				if (!text) {
-					callback("")
-					return
-				}
-				var res
-				try {
-					res = JSON.parse(text)
-				} catch (e) {
-					res = text
-				}
-				callback(res)
-			},
-			error: function(res) {
-				if (error)
-					error(res)
-				self.error({"url": url, "method": method, "response": res})
-			}
-		})
-	}
-	RestPrototype._registerMethod = function(name,method) {
-	var api = this._get('api', true)
-
-		if (!name)
-			return
-
-		var api = this
-		this[name] = function() {
-			method.call(api, arguments)
-		}
-	}
-	$core._protoOn(RestPrototype, 'error', function(url,method,response) {
-		if ((typeof window !== 'undefined' && !window.navigator.onLine) || response && response.target && response.target.status === 0 && response.target.response === "") {
-			this.internetConnectionLost({ "url": url, "method": method, "response": response })
-		}
-	})
-
-	RestPrototype.$c = function($c) {
-		var $this = this;
-		RestBasePrototype.$c.call(this, $c.$b = { })
-var _this$child0 = new $core.Request($this)
-		$c._this$child0 = _this$child0
-
-//creating component Request
-		_this$child0.$c($c.$c$_this$child0 = { })
-		_this$child0._setId('apiRequest')
-		$this.addChild(_this$child0)
-	}
-	RestPrototype.$s = function($c) {
-		var $this = this;
-	RestBasePrototype.$s.call(this, $c.$b); delete $c.$b
-//setting up component Request
-			var _this$child0 = $c._this$child0
-			_this$child0.$s($c.$c$_this$child0)
-			delete $c.$c$_this$child0
-
-
-			_this$child0.completed()
-
-			$this.completed()
-}
-
-
-//=====[component src.AppApi]=====================
-
-	var AppApiBaseComponent = $controls$web$api.Rest
-	var AppApiBasePrototype = AppApiBaseComponent.prototype
-
-/**
- * @constructor
- * @extends {$controls$web$api.Rest}
- */
-	var AppApiComponent = $src.AppApi = function(parent, row) {
-		AppApiBaseComponent.apply(this, arguments)
-
-	}
-	var AppApiPrototype = AppApiComponent.prototype = Object.create(AppApiBasePrototype)
-
-	AppApiPrototype.constructor = AppApiComponent
-
-	AppApiPrototype.componentName = 'src.AppApi'
-	core.addProperty(AppApiPrototype, 'string', 'apiKey', ("a20b12b279f744f2b3c7b5c5400c4eb5"))
-
-	AppApiPrototype.$c = function($c) {
-		var $this = this;
-		AppApiBasePrototype.$c.call(this, $c.$b = { })
-var _this$child0 = new $controls$web$api.Method($this)
-		$c._this$child0 = _this$child0
-
-//creating component Method
-		_this$child0.$c($c.$c$_this$child0 = { })
-
-		$this.addChild(_this$child0)
-	}
-	AppApiPrototype.$s = function($c) {
-		var $this = this;
-	AppApiBasePrototype.$s.call(this, $c.$b); delete $c.$b
-//assigning baseUrl to ("https://api.start.ru")
-			$this._removeUpdater('baseUrl'); $this.baseUrl = ("https://api.start.ru");
-
-//setting up component Method
-			var _this$child0 = $c._this$child0
-			_this$child0.$s($c.$c$_this$child0)
-			delete $c.$c$_this$child0
-
-//assigning name to ("getMain")
-			_this$child0._removeUpdater('name'); _this$child0.name = ("getMain");
-//assigning path to ("/web/main?apikey=" + ${parent.apiKey})
-			_this$child0._replaceUpdater('path', function() { _this$child0.path = ("/web/main?apikey=" + _this$child0.parent.apiKey) }, [_this$child0.parent,'apiKey'])
-
-			_this$child0.completed()
-
-			$this.completed()
-}
-
-
-//=====[component src.AnotherApi]=====================
-
-	var AnotherApiBaseComponent = $controls$web$api.Rest
-	var AnotherApiBasePrototype = AnotherApiBaseComponent.prototype
-
-/**
- * @constructor
- * @extends {$controls$web$api.Rest}
- */
-	var AnotherApiComponent = $src.AnotherApi = function(parent, row) {
-		AnotherApiBaseComponent.apply(this, arguments)
-
-	}
-	var AnotherApiPrototype = AnotherApiComponent.prototype = Object.create(AnotherApiBasePrototype)
-
-	AnotherApiPrototype.constructor = AnotherApiComponent
-
-	AnotherApiPrototype.componentName = 'src.AnotherApi'
-
-	AnotherApiPrototype.$c = function($c) {
-		var $this = this;
-		AnotherApiBasePrototype.$c.call(this, $c.$b = { })
-var _this$child0 = new $controls$web$api.Method($this)
-		$c._this$child0 = _this$child0
-
-//creating component Method
-		_this$child0.$c($c.$c$_this$child0 = { })
-
-		$this.addChild(_this$child0)
-	}
-	AnotherApiPrototype.$s = function($c) {
-		var $this = this;
-	AnotherApiBasePrototype.$s.call(this, $c.$b); delete $c.$b
-//assigning baseUrl to ("https://ctx.playfamily.ru")
-			$this._removeUpdater('baseUrl'); $this.baseUrl = ("https://ctx.playfamily.ru");
-
-//setting up component Method
-			var _this$child0 = $c._this$child0
-			_this$child0.$s($c.$c$_this$child0)
-			delete $c.$c$_this$child0
-
-//assigning name to ("getMain")
-			_this$child0._removeUpdater('name'); _this$child0.name = ("getMain");
-//assigning path to ("/screenapi/v1/noauth/collection/web/1?elementAlias=topfilms&elementType=COLLECTION&limit=16&offset=0&withInnerCollections=true")
-			_this$child0._removeUpdater('path'); _this$child0.path = ("/screenapi/v1/noauth/collection/web/1?elementAlias=topfilms&elementType=COLLECTION&limit=16&offset=0&withInnerCollections=true");
-
-			_this$child0.completed()
-
-			$this.completed()
-}
-
-
-//=====[component core.Rectangle]=====================
-
-	var RectangleBaseComponent = $core.Item
-	var RectangleBasePrototype = RectangleBaseComponent.prototype
-
-/**
- * @constructor
- * @extends {$core.Item}
- */
-	var RectangleComponent = $core.Rectangle = function(parent, row) {
-		RectangleBaseComponent.apply(this, arguments)
-	//custom constructor:
-	{
-		this._context.backend.initRectangle(this)
-	}
-
-	}
-	var RectanglePrototype = RectangleComponent.prototype = Object.create(RectangleBasePrototype)
-
-	{
-		var styleMap = RectanglePrototype._propertyToStyle = Object.create(RectangleBasePrototype._propertyToStyle)
-		styleMap['color'] = 'background-color'
-	}
-
-	RectanglePrototype.constructor = RectangleComponent
-
-	RectanglePrototype.componentName = 'core.Rectangle'
-	core.addProperty(RectanglePrototype, 'color', 'color', ("#0000"))
-	core.addLazyProperty(RectanglePrototype, 'border', (function(__parent, __row) {
-		var lazy$border = new $core.Border(__parent, __row)
-		var $c = { lazy$border : lazy$border }
-
-//creating component Border
-			lazy$border.$c($c.$c$lazy$border = { })
-
-
-//setting up component Border
-			var lazy$border = $c.lazy$border
-			lazy$border.$s($c.$c$lazy$border)
-			delete $c.$c$lazy$border
-
-
-			lazy$border.completed()
-
-		return lazy$border
-}))
-	core.addProperty(RectanglePrototype, 'Gradient', 'gradient')
-	$core._protoOnChanged(RectanglePrototype, 'color', function(value) {
-		this.style('background-color', $core.Color.normalize(value))
-	})
-
-	RectanglePrototype.$c = function($c) {
-		var $this = this;
-		RectangleBasePrototype.$c.call(this, $c.$b = { })
-
-	}
-	RectanglePrototype.$s = function($c) {
-		var $this = this;
-	RectangleBasePrototype.$s.call(this, $c.$b); delete $c.$b
-$this.completed()
-}
-
-
-//=====[component core.Loader]=====================
-
-	var LoaderBaseComponent = $core.Item
-	var LoaderBasePrototype = LoaderBaseComponent.prototype
-
-/**
- * @constructor
- * @extends {$core.Item}
- */
-	var LoaderComponent = $core.Loader = function(parent, row) {
-		LoaderBaseComponent.apply(this, arguments)
-
-	}
-	var LoaderPrototype = LoaderComponent.prototype = Object.create(LoaderBasePrototype)
-
-	LoaderPrototype.constructor = LoaderComponent
-
-	LoaderPrototype.componentName = 'core.Loader'
-	LoaderPrototype.loaded = $core.createSignal('loaded')
-	core.addProperty(LoaderPrototype, 'string', 'source')
-	core.addProperty(LoaderPrototype, 'Object', 'item')
-	LoaderPrototype.discard = function() {
-		this.discardItem()
-		$core.Item.prototype.discard.call(this)
-	}
-	LoaderPrototype.discardItem = function() {
-		var item = this.item
-		if (item) {
-			item.discard()
-			item = null
-		}
-	}
-	LoaderPrototype._load = function() {
-		var source = this.source
-		if (!source)
-			return
-
-		log('loading ' + source + '…')
-		var path = source.split('.')
-		var ctor = _globals
-		while(path.length) {
-			var ns = path.shift()
-			ctor = ctor[ns]
-			if (ctor === undefined)
-				throw new Error('unknown component used: ' + source)
-		}
-
-		this.item = new ctor(this)
-		$core.core.createObject(this.item)
-		this.loaded()
-	}
-	LoaderPrototype.__complete = function() { LoaderBasePrototype.__complete.call(this)
-if (!this.item && this.source)
-			this._load()
-}
-	$core._protoOnChanged(LoaderPrototype, 'recursiveVisible', function(value) {
-		if (this.item)
-			this._updateVisibilityForChild(this.item, value)
-	})
-	$core._protoOnChanged(LoaderPrototype, 'source', function(value) {
-		this.discardItem()
-		this._load()
-	})
-
-	LoaderPrototype.$c = function($c) {
-		var $this = this;
-		LoaderBasePrototype.$c.call(this, $c.$b = { })
-
-	}
-	LoaderPrototype.$s = function($c) {
-		var $this = this;
-	LoaderBasePrototype.$s.call(this, $c.$b); delete $c.$b
-$this.completed()
-}
-
-
-//=====[component core.Animation]=====================
-
-	var AnimationBaseComponent = $core.Object
-	var AnimationBasePrototype = AnimationBaseComponent.prototype
-
-/**
- * @constructor
- * @extends {$core.Object}
- */
-	var AnimationComponent = $core.Animation = function(parent, row) {
-		AnimationBaseComponent.apply(this, arguments)
-	//custom constructor:
-	{ this._disabled = 0; this._native = false }
-
-	}
-	var AnimationPrototype = AnimationComponent.prototype = Object.create(AnimationBasePrototype)
-
-	AnimationPrototype.constructor = AnimationComponent
-
-	AnimationPrototype.componentName = 'core.Animation'
-	core.addProperty(AnimationPrototype, 'int', 'delay', (0))
-	core.addProperty(AnimationPrototype, 'int', 'duration', (200))
-	core.addProperty(AnimationPrototype, 'bool', 'cssTransition', (true))
-	core.addProperty(AnimationPrototype, 'bool', 'running', (false))
-	core.addProperty(AnimationPrototype, 'string', 'easing', ("ease"))
-	core.addProperty(AnimationPrototype, 'Object', 'target')
-	core.addProperty(AnimationPrototype, 'string', 'property')
-	core.addProperty(AnimationPrototype, 'variant', 'from')
-	core.addProperty(AnimationPrototype, 'variant', 'to')
-	AnimationPrototype._updateAnimation = function() {
-		if (this.target)
-			this.target.updateAnimation(this.property, this)
-	}
-	AnimationPrototype.active = function() {
-		return this.enabled() && this.duration > 0
-	}
-	AnimationPrototype.disable = function() { ++this._disabled; this._updateAnimation() }
-	AnimationPrototype.enable = function() { --this._disabled; this._updateAnimation() }
-	AnimationPrototype.enabled = function() { return this._disabled === 0 }
-	AnimationPrototype.complete = function() { }
-	AnimationPrototype.interpolate = function(dst,src,t) {
-		return t * (dst - src) + src;
-	}
-	var $code$0 = function(value) { this._updateAnimation() }
-	$core._protoOnChanged(AnimationPrototype, 'delay', $code$0)
-	$core._protoOnChanged(AnimationPrototype, 'duration', $code$0)
-	$core._protoOnChanged(AnimationPrototype, 'cssTransition', $code$0)
-	$core._protoOnChanged(AnimationPrototype, 'running', $code$0)
-	$core._protoOnChanged(AnimationPrototype, 'easing', $code$0)
-
-	AnimationPrototype.$c = function($c) {
-		var $this = this;
-		AnimationBasePrototype.$c.call(this, $c.$b = { })
-
-	}
-	AnimationPrototype.$s = function($c) {
-		var $this = this;
-	AnimationBasePrototype.$s.call(this, $c.$b); delete $c.$b
-$this.completed()
-}
-
-
-//=====[component controls.experimental.NestedVideo]=====================
-
-	var NestedVideoBaseComponent = $core.Rectangle
-	var NestedVideoBasePrototype = NestedVideoBaseComponent.prototype
-
-/**
- * @constructor
- * @extends {$core.Rectangle}
- */
-	var NestedVideoComponent = $controls$experimental.NestedVideo = function(parent, row) {
-		NestedVideoBaseComponent.apply(this, arguments)
-
-	}
-	var NestedVideoPrototype = NestedVideoComponent.prototype = Object.create(NestedVideoBasePrototype)
-
-	NestedVideoPrototype.constructor = NestedVideoComponent
-
-	NestedVideoPrototype.componentName = 'controls.experimental.NestedVideo'
-	core.addProperty(NestedVideoPrototype, 'bool', 'display')
-	NestedVideoPrototype.hide = function() {
-	var videoPlayer = this._get('videoPlayer', true)
-
-		this.visible = false
-		this.display = false
-		videoPlayer.stop()
-	}
-	NestedVideoPrototype.showAndPlay = function(source) {
-	var videoPlayer = this._get('videoPlayer', true)
-
-		this.visible = true
-		this.display = true
-		videoPlayer.source = source
-	}
-
-	NestedVideoPrototype.$c = function($c) {
-		var $this = this;
-		NestedVideoBasePrototype.$c.call(this, $c.$b = { })
-var _this$child0 = new $core.VideoPlayer($this)
-		$c._this$child0 = _this$child0
-
-//creating component VideoPlayer
-		_this$child0.$c($c.$c$_this$child0 = { })
-		_this$child0._setId('videoPlayer')
-		$this.addChild(_this$child0)
-	}
-	NestedVideoPrototype.$s = function($c) {
-		var $this = this;
-	NestedVideoBasePrototype.$s.call(this, $c.$b); delete $c.$b
-//assigning transform.scaleX to (${display} ? 1.1 : 0.001)
-			$this.transform._replaceUpdater('scaleX', function() { $this.transform.scaleX = ($this.display ? 1.1 : 0.001) }, [$this,'display'])
-//assigning transform.scaleY to (1.1)
-			$this.transform._removeUpdater('scaleY'); $this.transform.scaleY = (1.1);
-//assigning visible to (false)
-			$this._removeUpdater('visible'); $this.visible = (false);
-//assigning clip to (true)
-			$this._removeUpdater('clip'); $this.clip = (true);
-//assigning color to ("transparent")
-			$this._removeUpdater('color'); $this.color = ("transparent");
-
-//setting up component VideoPlayer
-			var _this$child0 = $c._this$child0
-			_this$child0.$s($c.$c$_this$child0)
-			delete $c.$c$_this$child0
-
-//assigning anchors.fill to (${parent})
-			_this$child0.anchors._removeUpdater('fill'); _this$child0.anchors.fill = (_this$child0.parent);
-//assigning autoPlay to (true)
-			_this$child0._removeUpdater('autoPlay'); _this$child0.autoPlay = (true);
-
-			_this$child0.completed()
-	var behavior__this_on_transform = new $core.Animation($this)
-	var behavior__this_on_transform$c = { behavior__this_on_transform: behavior__this_on_transform }
-
-//creating component Animation
-	behavior__this_on_transform.$c(behavior__this_on_transform$c.$c$behavior__this_on_transform = { })
-
-
-//setting up component Animation
-	var behavior__this_on_transform = behavior__this_on_transform$c.behavior__this_on_transform
-	behavior__this_on_transform.$s(behavior__this_on_transform$c.$c$behavior__this_on_transform)
-	delete behavior__this_on_transform$c.$c$behavior__this_on_transform
-
-//assigning duration to (300)
-	behavior__this_on_transform._removeUpdater('duration'); behavior__this_on_transform.duration = (300);
-//assigning delay to (300)
-	behavior__this_on_transform._removeUpdater('delay'); behavior__this_on_transform.delay = (300);
-
-	behavior__this_on_transform.completed()
-	$this.setAnimation('transform', behavior__this_on_transform);
 
 			$this.completed()
 }
@@ -3842,8 +3345,8 @@ this._scheduleLayout()
 	BaseViewPrototype.constructor = BaseViewComponent
 
 	BaseViewPrototype.componentName = 'core.BaseView'
-	BaseViewPrototype.scrollEvent = $core.createSignal('scrollEvent')
 	BaseViewPrototype.layoutFinished = $core.createSignal('layoutFinished')
+	BaseViewPrototype.scrollEvent = $core.createSignal('scrollEvent')
 	core.addProperty(BaseViewPrototype, 'Item', 'highlight')
 	core.addProperty(BaseViewPrototype, 'Object', 'model')
 	core.addProperty(BaseViewPrototype, 'Item', 'delegate')
@@ -4616,52 +4119,6 @@ $this.completed()
 }
 
 
-//=====[component core.ClickMixin]=====================
-
-	var ClickMixinBaseComponent = $core.Object
-	var ClickMixinBasePrototype = ClickMixinBaseComponent.prototype
-
-/**
- * @constructor
- * @extends {$core.Object}
- */
-	var ClickMixinComponent = $core.ClickMixin = function(parent, row) {
-		ClickMixinBaseComponent.apply(this, arguments)
-	//custom constructor:
-	{
-		this.element = this.parent.element;
-		this._bindClick(this.enabled)
-	}
-
-	}
-	var ClickMixinPrototype = ClickMixinComponent.prototype = Object.create(ClickMixinBasePrototype)
-
-	ClickMixinPrototype.constructor = ClickMixinComponent
-
-	ClickMixinPrototype.componentName = 'core.ClickMixin'
-	core.addProperty(ClickMixinPrototype, 'bool', 'enabled', (true))
-	ClickMixinPrototype._bindClick = function(value) {
-		if (value && !this._cmClickBinder) {
-			this._cmClickBinder = new $core.EventBinder(this.element)
-			this._cmClickBinder.on('click', $core.createSignalForwarder(this.parent, 'clicked').bind(this))
-		}
-		if (this._cmClickBinder)
-			this._cmClickBinder.enable(value)
-	}
-	$core._protoOnChanged(ClickMixinPrototype, 'enabled', function(value) { this._bindClick(value) })
-
-	ClickMixinPrototype.$c = function($c) {
-		var $this = this;
-		ClickMixinBasePrototype.$c.call(this, $c.$b = { })
-
-	}
-	ClickMixinPrototype.$s = function($c) {
-		var $this = this;
-	ClickMixinBasePrototype.$s.call(this, $c.$b); delete $c.$b
-$this.completed()
-}
-
-
 //=====[component controls.experimental.Mosaic]=====================
 
 	var MosaicBaseComponent = $core.GridView
@@ -4680,8 +4137,8 @@ $this.completed()
 	MosaicPrototype.constructor = MosaicComponent
 
 	MosaicPrototype.componentName = 'controls.experimental.Mosaic'
-	MosaicPrototype.itemFocused = $core.createSignal('itemFocused')
 	MosaicPrototype.play = $core.createSignal('play')
+	MosaicPrototype.itemFocused = $core.createSignal('itemFocused')
 	core.addProperty(MosaicPrototype, 'bool', 'hoverMode')
 	core.addProperty(MosaicPrototype, 'bool', 'mobile')
 	core.addProperty(MosaicPrototype, 'int', 'offset')
@@ -4843,7 +4300,7 @@ $this._setId('nowonTvGrid')
 //assigning clip to (true)
 			delegate._removeUpdater('clip'); delegate.clip = (true);
 //assigning z to (${active} ? ${parent.z} + 1 : ${parent.z})
-			delegate._replaceUpdater('z', function() { delegate.z = (delegate.active ? delegate.parent.z + 1 : delegate.parent.z) }, [delegate,'active',delegate.parent,'z'])
+			delegate._replaceUpdater('z', function() { delegate.z = (delegate.active ? delegate.parent.z + 1 : delegate.parent.z) }, [delegate.parent,'z',delegate,'active'])
 			delegate.on('clicked', function() {
 	var model = this._get('model', true)
  this.parent.currentIndex = model.index; this.pressed() }.bind(delegate))
@@ -4866,7 +4323,7 @@ $this._setId('nowonTvGrid')
 			delete $c.$c$delegate$child0
 
 			delegate$child0.on('mouseMove', function() {
-	var nowonTvGrid = this._get('nowonTvGrid', true), model = this._get('model', true)
+	var model = this._get('model', true), nowonTvGrid = this._get('nowonTvGrid', true)
 
 				nowonTvGrid.hoverMode = true
 				nowonTvGrid.currentIndex = model.index
@@ -5013,7 +4470,7 @@ $this._setId('nowonTvGrid')
 //assigning height to ((${parent.height}))
 			delegate_child5$child0._replaceUpdater('height', function() { delegate_child5$child0.height = ((delegate_child5$child0.parent.height)) }, [delegate_child5$child0.parent,'height'])
 //assigning width to (${parent.width} * ${model.progress})
-			delegate_child5$child0._replaceUpdater('width', function() { delegate_child5$child0.width = (delegate_child5$child0.parent.width * delegate_child5$child0._get('model').progress) }, [delegate_child5$child0._get('_delegate'),'_row',delegate_child5$child0.parent,'width'])
+			delegate_child5$child0._replaceUpdater('width', function() { delegate_child5$child0.width = (delegate_child5$child0.parent.width * delegate_child5$child0._get('model').progress) }, [delegate_child5$child0.parent,'width',delegate_child5$child0._get('_delegate'),'_row'])
 //assigning color to ("#e53935")
 			delegate_child5$child0._removeUpdater('color'); delegate_child5$child0.color = ("#e53935");
 
@@ -5029,7 +4486,7 @@ $this._setId('nowonTvGrid')
 //assigning interval to (3000)
 			delegate$child6._removeUpdater('interval'); delegate$child6.interval = (3000);
 			delegate$child6.on('triggered', function() {
-	var nowonTvGrid = this._get('nowonTvGrid', true), model = this._get('model', true)
+	var model = this._get('model', true), nowonTvGrid = this._get('nowonTvGrid', true)
 
 				if (!this.parent.active)
 					return
@@ -5071,7 +4528,7 @@ $this._setId('nowonTvGrid')
 //assigning height to ((${parent.height}))
 			$this._replaceUpdater('height', function() { $this.height = (($this.parent.height)) }, [$this.parent,'height'])
 //assigning cellWidth to ((${context.width} > ${context.height} ? 0.25 : 0.5) * ${width} - ${spacing})
-			$this._replaceUpdater('cellWidth', function() { $this.cellWidth = (($this._context.width > $this._context.height ? 0.25 : 0.5) * $this.width - $this.spacing) }, [$this,'spacing',$this._context,'width',$this._context,'height',$this,'width'])
+			$this._replaceUpdater('cellWidth', function() { $this.cellWidth = (($this._context.width > $this._context.height ? 0.25 : 0.5) * $this.width - $this.spacing) }, [$this,'spacing',$this._context,'width',$this,'width',$this._context,'height'])
 //assigning cellHeight to (${cellWidth} * 0.625)
 			$this._replaceUpdater('cellHeight', function() { $this.cellHeight = ($this.cellWidth * 0.625) }, [$this,'cellWidth'])
 //assigning spacing to (((10) * ${context.virtualScale}))
@@ -5095,84 +4552,700 @@ $this._setId('nowonTvGrid')
 }
 
 
-//=====[component core.Transform]=====================
+//=====[component controls.mixins.BaseMixin]=====================
 
-	var TransformBaseComponent = $core.Object
-	var TransformBasePrototype = TransformBaseComponent.prototype
+	var BaseMixinBaseComponent = $core.Object
+	var BaseMixinBasePrototype = BaseMixinBaseComponent.prototype
 
 /**
  * @constructor
  * @extends {$core.Object}
  */
-	var TransformComponent = $core.Transform = function(parent, row) {
-		TransformBaseComponent.apply(this, arguments)
-	//custom constructor:
-	{ this._transforms = new $core.transform.Transform() }
+	var BaseMixinComponent = $controls$mixins.BaseMixin = function(parent, row) {
+		BaseMixinBaseComponent.apply(this, arguments)
 
 	}
-	var TransformPrototype = TransformComponent.prototype = Object.create(TransformBasePrototype)
+	var BaseMixinPrototype = BaseMixinComponent.prototype = Object.create(BaseMixinBasePrototype)
 
-	TransformPrototype.constructor = TransformComponent
+	BaseMixinPrototype.constructor = BaseMixinComponent
 
-	TransformPrototype.componentName = 'core.Transform'
-	core.addProperty(TransformPrototype, 'int', 'perspective')
-	core.addProperty(TransformPrototype, 'int', 'translateX')
-	core.addProperty(TransformPrototype, 'int', 'translateY')
-	core.addProperty(TransformPrototype, 'int', 'translateZ')
-	core.addProperty(TransformPrototype, 'real', 'rotateX')
-	core.addProperty(TransformPrototype, 'real', 'rotateY')
-	core.addProperty(TransformPrototype, 'real', 'rotateZ')
-	core.addProperty(TransformPrototype, 'real', 'rotate')
-	core.addProperty(TransformPrototype, 'real', 'scaleX')
-	core.addProperty(TransformPrototype, 'real', 'scaleY')
-	core.addProperty(TransformPrototype, 'real', 'skewX')
-	core.addProperty(TransformPrototype, 'real', 'skewY')
-	TransformPrototype._updateTransform = function() {
-		this.parent.style('transform', this._transforms)
+	BaseMixinPrototype.componentName = 'controls.mixins.BaseMixin'
+	BaseMixinPrototype.stopPropagation = function(event) {
+	var context = this._get('context', true)
+
+		if (!event)
+			context.window.event.cancelBubble = true;
+		else if (event.stopPropagation)
+			event.stopPropagation();
 	}
-	TransformPrototype._animateAll = function(animation) {
-		var transform = this
-		var transform_properties = [
-			'perspective',
-			'translateX', 'translateY', 'translateZ',
-			'rotateX', 'rotateY', 'rotateZ', 'rotate',
-			'scaleX', 'scaleY',
-			'skewX', 'skewY'
-		]
-		transform_properties.forEach(function(transform_property) {
-			var property_animation = new $core.Animation(transform)
-			$core.core.createObject(property_animation)
-			property_animation.delay = animation.delay
-			property_animation.duration = animation.duration
-			property_animation.cssTransition = false
-			property_animation.easing = animation.easing
 
-			transform.setAnimation(transform_property, property_animation)
-		})
-		this._context._processActions()
-	}
-	$core._protoOnChanged(TransformPrototype, 'perspective', function(value) { this._transforms.add('perspective', value, 'px'); this._updateTransform() })
-	$core._protoOnChanged(TransformPrototype, 'rotate', function(value) { this._transforms.add('rotate', value, 'deg'); this._updateTransform() })
-	$core._protoOnChanged(TransformPrototype, 'rotateX', function(value) { this._transforms.add('rotateX', value, 'deg'); this._updateTransform() })
-	$core._protoOnChanged(TransformPrototype, 'rotateY', function(value) { this._transforms.add('rotateY', value, 'deg'); this._updateTransform() })
-	$core._protoOnChanged(TransformPrototype, 'rotateZ', function(value) { this._transforms.add('rotateZ', value, 'deg'); this._updateTransform() })
-	$core._protoOnChanged(TransformPrototype, 'scaleX', function(value) { this._transforms.add('scaleX', value); this._updateTransform() })
-	$core._protoOnChanged(TransformPrototype, 'scaleY', function(value) { this._transforms.add('scaleY', value); this._updateTransform() })
-	$core._protoOnChanged(TransformPrototype, 'skewX', function(value) { this._transforms.add('skewX', value, 'deg'); this._updateTransform() })
-	$core._protoOnChanged(TransformPrototype, 'skewY', function(value) { this._transforms.add('skewY', value, 'deg'); this._updateTransform() })
-	$core._protoOnChanged(TransformPrototype, 'translateX', function(value) { this._transforms.add('translateX', value, 'px'); this._updateTransform() })
-	$core._protoOnChanged(TransformPrototype, 'translateY', function(value) { this._transforms.add('translateY', value, 'px'); this._updateTransform() })
-	$core._protoOnChanged(TransformPrototype, 'translateZ', function(value) { this._transforms.add('translateZ', value, 'px'); this._updateTransform() })
-
-	TransformPrototype.$c = function($c) {
+	BaseMixinPrototype.$c = function($c) {
 		var $this = this;
-		TransformBasePrototype.$c.call(this, $c.$b = { })
+		BaseMixinBasePrototype.$c.call(this, $c.$b = { })
 
 	}
-	TransformPrototype.$s = function($c) {
+	BaseMixinPrototype.$s = function($c) {
 		var $this = this;
-	TransformBasePrototype.$s.call(this, $c.$b); delete $c.$b
+	BaseMixinBasePrototype.$s.call(this, $c.$b); delete $c.$b
 $this.completed()
+}
+
+
+//=====[component controls.mixins.OverflowMixin]=====================
+
+	var OverflowMixinBaseComponent = $controls$mixins.BaseMixin
+	var OverflowMixinBasePrototype = OverflowMixinBaseComponent.prototype
+
+/**
+ * @constructor
+ * @extends {$controls$mixins.BaseMixin}
+ */
+	var OverflowMixinComponent = $controls$mixins.OverflowMixin = function(parent, row) {
+		OverflowMixinBaseComponent.apply(this, arguments)
+
+	}
+	var OverflowMixinPrototype = OverflowMixinComponent.prototype = Object.create(OverflowMixinBasePrototype)
+
+	OverflowMixinPrototype.constructor = OverflowMixinComponent
+
+	OverflowMixinPrototype.componentName = 'controls.mixins.OverflowMixin'
+/** @const @type {number} */
+	OverflowMixinPrototype.Visible = 0
+/** @const @type {number} */
+	OverflowMixinComponent.Visible = 0
+/** @const @type {number} */
+	OverflowMixinPrototype.Hidden = 1
+/** @const @type {number} */
+	OverflowMixinComponent.Hidden = 1
+/** @const @type {number} */
+	OverflowMixinPrototype.Scroll = 2
+/** @const @type {number} */
+	OverflowMixinComponent.Scroll = 2
+/** @const @type {number} */
+	OverflowMixinPrototype.ScrollX = 3
+/** @const @type {number} */
+	OverflowMixinComponent.ScrollX = 3
+/** @const @type {number} */
+	OverflowMixinPrototype.ScrollY = 4
+/** @const @type {number} */
+	OverflowMixinComponent.ScrollY = 4
+	core.addProperty(OverflowMixinPrototype, 'enum', 'value')
+	OverflowMixinPrototype.__complete = function() { OverflowMixinBasePrototype.__complete.call(this)
+this._updateOverflow(this.value)
+}
+	OverflowMixinPrototype._updateOverflow = function(value) {
+		switch(value) {
+			case this.Visible:
+				this.parent.style('overflow', 'visible');
+				break;
+			case this.Hidden:
+				this.parent.style('overflow', 'hidden');
+				break;
+			case this.Scroll:
+				this.parent.style('overflow', 'auto');
+				break;
+			case this.ScrollX:
+				this.parent.style('overflow', 'auto');
+				this.parent.style('overflow-y', 'hidden');
+				break;
+			case this.ScrollY:
+				this.parent.style('overflow', 'auto');
+				this.parent.style('overflow-x', 'hidden');
+				break;
+		}
+	}
+	$core._protoOnChanged(OverflowMixinPrototype, 'value', function(value) { this._updateOverflow(value) })
+
+	OverflowMixinPrototype.$c = function($c) {
+		var $this = this;
+		OverflowMixinBasePrototype.$c.call(this, $c.$b = { })
+
+	}
+	OverflowMixinPrototype.$s = function($c) {
+		var $this = this;
+	OverflowMixinBasePrototype.$s.call(this, $c.$b); delete $c.$b
+$this.completed()
+}
+
+
+//=====[component core.Rectangle]=====================
+
+	var RectangleBaseComponent = $core.Item
+	var RectangleBasePrototype = RectangleBaseComponent.prototype
+
+/**
+ * @constructor
+ * @extends {$core.Item}
+ */
+	var RectangleComponent = $core.Rectangle = function(parent, row) {
+		RectangleBaseComponent.apply(this, arguments)
+	//custom constructor:
+	{
+		this._context.backend.initRectangle(this)
+	}
+
+	}
+	var RectanglePrototype = RectangleComponent.prototype = Object.create(RectangleBasePrototype)
+
+	{
+		var styleMap = RectanglePrototype._propertyToStyle = Object.create(RectangleBasePrototype._propertyToStyle)
+		styleMap['color'] = 'background-color'
+	}
+
+	RectanglePrototype.constructor = RectangleComponent
+
+	RectanglePrototype.componentName = 'core.Rectangle'
+	core.addProperty(RectanglePrototype, 'color', 'color', ("#0000"))
+	core.addLazyProperty(RectanglePrototype, 'border', (function(__parent, __row) {
+		var lazy$border = new $core.Border(__parent, __row)
+		var $c = { lazy$border : lazy$border }
+
+//creating component Border
+			lazy$border.$c($c.$c$lazy$border = { })
+
+
+//setting up component Border
+			var lazy$border = $c.lazy$border
+			lazy$border.$s($c.$c$lazy$border)
+			delete $c.$c$lazy$border
+
+
+			lazy$border.completed()
+
+		return lazy$border
+}))
+	core.addProperty(RectanglePrototype, 'Gradient', 'gradient')
+	$core._protoOnChanged(RectanglePrototype, 'color', function(value) {
+		this.style('background-color', $core.Color.normalize(value))
+	})
+
+	RectanglePrototype.$c = function($c) {
+		var $this = this;
+		RectangleBasePrototype.$c.call(this, $c.$b = { })
+
+	}
+	RectanglePrototype.$s = function($c) {
+		var $this = this;
+	RectangleBasePrototype.$s.call(this, $c.$b); delete $c.$b
+$this.completed()
+}
+
+
+//=====[component controls.experimental.NestedVideo]=====================
+
+	var NestedVideoBaseComponent = $core.Rectangle
+	var NestedVideoBasePrototype = NestedVideoBaseComponent.prototype
+
+/**
+ * @constructor
+ * @extends {$core.Rectangle}
+ */
+	var NestedVideoComponent = $controls$experimental.NestedVideo = function(parent, row) {
+		NestedVideoBaseComponent.apply(this, arguments)
+
+	}
+	var NestedVideoPrototype = NestedVideoComponent.prototype = Object.create(NestedVideoBasePrototype)
+
+	NestedVideoPrototype.constructor = NestedVideoComponent
+
+	NestedVideoPrototype.componentName = 'controls.experimental.NestedVideo'
+	core.addProperty(NestedVideoPrototype, 'bool', 'display')
+	NestedVideoPrototype.hide = function() {
+	var videoPlayer = this._get('videoPlayer', true)
+
+		this.visible = false
+		this.display = false
+		videoPlayer.stop()
+	}
+	NestedVideoPrototype.showAndPlay = function(source) {
+	var videoPlayer = this._get('videoPlayer', true)
+
+		this.visible = true
+		this.display = true
+		videoPlayer.source = source
+	}
+
+	NestedVideoPrototype.$c = function($c) {
+		var $this = this;
+		NestedVideoBasePrototype.$c.call(this, $c.$b = { })
+var _this$child0 = new $core.VideoPlayer($this)
+		$c._this$child0 = _this$child0
+
+//creating component VideoPlayer
+		_this$child0.$c($c.$c$_this$child0 = { })
+		_this$child0._setId('videoPlayer')
+		$this.addChild(_this$child0)
+	}
+	NestedVideoPrototype.$s = function($c) {
+		var $this = this;
+	NestedVideoBasePrototype.$s.call(this, $c.$b); delete $c.$b
+//assigning transform.scaleX to (${display} ? 1.1 : 0.001)
+			$this.transform._replaceUpdater('scaleX', function() { $this.transform.scaleX = ($this.display ? 1.1 : 0.001) }, [$this,'display'])
+//assigning transform.scaleY to (1.1)
+			$this.transform._removeUpdater('scaleY'); $this.transform.scaleY = (1.1);
+//assigning visible to (false)
+			$this._removeUpdater('visible'); $this.visible = (false);
+//assigning clip to (true)
+			$this._removeUpdater('clip'); $this.clip = (true);
+//assigning color to ("transparent")
+			$this._removeUpdater('color'); $this.color = ("transparent");
+
+//setting up component VideoPlayer
+			var _this$child0 = $c._this$child0
+			_this$child0.$s($c.$c$_this$child0)
+			delete $c.$c$_this$child0
+
+//assigning anchors.fill to (${parent})
+			_this$child0.anchors._removeUpdater('fill'); _this$child0.anchors.fill = (_this$child0.parent);
+//assigning autoPlay to (true)
+			_this$child0._removeUpdater('autoPlay'); _this$child0.autoPlay = (true);
+
+			_this$child0.completed()
+	var behavior__this_on_transform = new $core.Animation($this)
+	var behavior__this_on_transform$c = { behavior__this_on_transform: behavior__this_on_transform }
+
+//creating component Animation
+	behavior__this_on_transform.$c(behavior__this_on_transform$c.$c$behavior__this_on_transform = { })
+
+
+//setting up component Animation
+	var behavior__this_on_transform = behavior__this_on_transform$c.behavior__this_on_transform
+	behavior__this_on_transform.$s(behavior__this_on_transform$c.$c$behavior__this_on_transform)
+	delete behavior__this_on_transform$c.$c$behavior__this_on_transform
+
+//assigning duration to (300)
+	behavior__this_on_transform._removeUpdater('duration'); behavior__this_on_transform.duration = (300);
+//assigning delay to (300)
+	behavior__this_on_transform._removeUpdater('delay'); behavior__this_on_transform.delay = (300);
+
+	behavior__this_on_transform.completed()
+	$this.setAnimation('transform', behavior__this_on_transform);
+
+			$this.completed()
+}
+
+
+//=====[component core.ClickMixin]=====================
+
+	var ClickMixinBaseComponent = $core.Object
+	var ClickMixinBasePrototype = ClickMixinBaseComponent.prototype
+
+/**
+ * @constructor
+ * @extends {$core.Object}
+ */
+	var ClickMixinComponent = $core.ClickMixin = function(parent, row) {
+		ClickMixinBaseComponent.apply(this, arguments)
+	//custom constructor:
+	{
+		this.element = this.parent.element;
+		this._bindClick(this.enabled)
+	}
+
+	}
+	var ClickMixinPrototype = ClickMixinComponent.prototype = Object.create(ClickMixinBasePrototype)
+
+	ClickMixinPrototype.constructor = ClickMixinComponent
+
+	ClickMixinPrototype.componentName = 'core.ClickMixin'
+	core.addProperty(ClickMixinPrototype, 'bool', 'enabled', (true))
+	ClickMixinPrototype._bindClick = function(value) {
+		if (value && !this._cmClickBinder) {
+			this._cmClickBinder = new $core.EventBinder(this.element)
+			this._cmClickBinder.on('click', $core.createSignalForwarder(this.parent, 'clicked').bind(this))
+		}
+		if (this._cmClickBinder)
+			this._cmClickBinder.enable(value)
+	}
+	$core._protoOnChanged(ClickMixinPrototype, 'enabled', function(value) { this._bindClick(value) })
+
+	ClickMixinPrototype.$c = function($c) {
+		var $this = this;
+		ClickMixinBasePrototype.$c.call(this, $c.$b = { })
+
+	}
+	ClickMixinPrototype.$s = function($c) {
+		var $this = this;
+	ClickMixinBasePrototype.$s.call(this, $c.$b); delete $c.$b
+$this.completed()
+}
+
+
+//=====[component core.Animation]=====================
+
+	var AnimationBaseComponent = $core.Object
+	var AnimationBasePrototype = AnimationBaseComponent.prototype
+
+/**
+ * @constructor
+ * @extends {$core.Object}
+ */
+	var AnimationComponent = $core.Animation = function(parent, row) {
+		AnimationBaseComponent.apply(this, arguments)
+	//custom constructor:
+	{ this._disabled = 0; this._native = false }
+
+	}
+	var AnimationPrototype = AnimationComponent.prototype = Object.create(AnimationBasePrototype)
+
+	AnimationPrototype.constructor = AnimationComponent
+
+	AnimationPrototype.componentName = 'core.Animation'
+	core.addProperty(AnimationPrototype, 'int', 'delay', (0))
+	core.addProperty(AnimationPrototype, 'int', 'duration', (200))
+	core.addProperty(AnimationPrototype, 'bool', 'cssTransition', (true))
+	core.addProperty(AnimationPrototype, 'bool', 'running', (false))
+	core.addProperty(AnimationPrototype, 'string', 'easing', ("ease"))
+	core.addProperty(AnimationPrototype, 'Object', 'target')
+	core.addProperty(AnimationPrototype, 'string', 'property')
+	core.addProperty(AnimationPrototype, 'variant', 'from')
+	core.addProperty(AnimationPrototype, 'variant', 'to')
+	AnimationPrototype._updateAnimation = function() {
+		if (this.target)
+			this.target.updateAnimation(this.property, this)
+	}
+	AnimationPrototype.active = function() {
+		return this.enabled() && this.duration > 0
+	}
+	AnimationPrototype.disable = function() { ++this._disabled; this._updateAnimation() }
+	AnimationPrototype.enable = function() { --this._disabled; this._updateAnimation() }
+	AnimationPrototype.enabled = function() { return this._disabled === 0 }
+	AnimationPrototype.complete = function() { }
+	AnimationPrototype.interpolate = function(dst,src,t) {
+		return t * (dst - src) + src;
+	}
+	var $code$0 = function(value) { this._updateAnimation() }
+	$core._protoOnChanged(AnimationPrototype, 'delay', $code$0)
+	$core._protoOnChanged(AnimationPrototype, 'duration', $code$0)
+	$core._protoOnChanged(AnimationPrototype, 'cssTransition', $code$0)
+	$core._protoOnChanged(AnimationPrototype, 'running', $code$0)
+	$core._protoOnChanged(AnimationPrototype, 'easing', $code$0)
+
+	AnimationPrototype.$c = function($c) {
+		var $this = this;
+		AnimationBasePrototype.$c.call(this, $c.$b = { })
+
+	}
+	AnimationPrototype.$s = function($c) {
+		var $this = this;
+	AnimationBasePrototype.$s.call(this, $c.$b); delete $c.$b
+$this.completed()
+}
+
+
+//=====[component core.Loader]=====================
+
+	var LoaderBaseComponent = $core.Item
+	var LoaderBasePrototype = LoaderBaseComponent.prototype
+
+/**
+ * @constructor
+ * @extends {$core.Item}
+ */
+	var LoaderComponent = $core.Loader = function(parent, row) {
+		LoaderBaseComponent.apply(this, arguments)
+
+	}
+	var LoaderPrototype = LoaderComponent.prototype = Object.create(LoaderBasePrototype)
+
+	LoaderPrototype.constructor = LoaderComponent
+
+	LoaderPrototype.componentName = 'core.Loader'
+	LoaderPrototype.loaded = $core.createSignal('loaded')
+	core.addProperty(LoaderPrototype, 'string', 'source')
+	core.addProperty(LoaderPrototype, 'Object', 'item')
+	LoaderPrototype.discard = function() {
+		this.discardItem()
+		$core.Item.prototype.discard.call(this)
+	}
+	LoaderPrototype.discardItem = function() {
+		var item = this.item
+		if (item) {
+			item.discard()
+			item = null
+		}
+	}
+	LoaderPrototype._load = function() {
+		var source = this.source
+		if (!source)
+			return
+
+		log('loading ' + source + '…')
+		var path = source.split('.')
+		var ctor = _globals
+		while(path.length) {
+			var ns = path.shift()
+			ctor = ctor[ns]
+			if (ctor === undefined)
+				throw new Error('unknown component used: ' + source)
+		}
+
+		this.item = new ctor(this)
+		$core.core.createObject(this.item)
+		this.loaded()
+	}
+	LoaderPrototype.__complete = function() { LoaderBasePrototype.__complete.call(this)
+if (!this.item && this.source)
+			this._load()
+}
+	$core._protoOnChanged(LoaderPrototype, 'recursiveVisible', function(value) {
+		if (this.item)
+			this._updateVisibilityForChild(this.item, value)
+	})
+	$core._protoOnChanged(LoaderPrototype, 'source', function(value) {
+		this.discardItem()
+		this._load()
+	})
+
+	LoaderPrototype.$c = function($c) {
+		var $this = this;
+		LoaderBasePrototype.$c.call(this, $c.$b = { })
+
+	}
+	LoaderPrototype.$s = function($c) {
+		var $this = this;
+	LoaderBasePrototype.$s.call(this, $c.$b); delete $c.$b
+$this.completed()
+}
+
+
+//=====[component controls.web.api.Rest]=====================
+
+	var RestBaseComponent = $core.Object
+	var RestBasePrototype = RestBaseComponent.prototype
+
+/**
+ * @constructor
+ * @extends {$core.Object}
+ */
+	var RestComponent = $controls$web$api.Rest = function(parent, row) {
+		RestBaseComponent.apply(this, arguments)
+	//custom constructor:
+	{
+		this._methods = {}
+	}
+
+	}
+	var RestPrototype = RestComponent.prototype = Object.create(RestBasePrototype)
+
+	RestPrototype.constructor = RestComponent
+
+	RestPrototype.componentName = 'controls.web.api.Rest'
+	RestPrototype.internetConnectionLost = $core.createSignal('internetConnectionLost')
+	RestPrototype.error = $core.createSignal('error')
+	core.addProperty(RestPrototype, 'string', 'baseUrl')
+	RestPrototype.args = function(args) {
+		return args
+	}
+	RestPrototype.headers = function(headers) {
+	}
+	RestPrototype.call = function(name,callback,error,method,data,head) {
+		if (name.indexOf('://') < 0) {
+			var baseUrl = this.baseUrl
+			if (baseUrl[baseUrl.length - 1] === '/' || name[0] === '/')
+				name = baseUrl + name
+			else
+				name = baseUrl + '/' + name
+		}
+		this._call(name, callback, error, method, JSON.stringify(data), head)
+	}
+	RestPrototype._call = function(name,callback,error,method,data,head) {
+	var apiRequest = this._get('apiRequest', true)
+
+		var headers = head || {}
+
+		if (data) {
+			data = this.args(data)
+			headers["Content-Type"] = "application/json"
+		}
+
+		var newHeaders = this.headers(headers)
+		if (newHeaders !== undefined)
+			headers = newHeaders
+
+		var url = name
+		var self = this
+
+		apiRequest.ajax({
+			method: method || "GET",
+			headers: headers,
+			contentType: 'application/json',
+			url: url,
+			data: data,
+			done: function(res) {
+				if (res.target && res.target.status >= 400) {
+					log("Error in request", res)
+					if (error)
+						error(res)
+					self.error({"url": url, "method": method, "response": res})
+					return
+				}
+
+				var text = res.target.responseText
+				if (!text) {
+					callback("")
+					return
+				}
+				var res
+				try {
+					res = JSON.parse(text)
+				} catch (e) {
+					res = text
+				}
+				callback(res)
+			},
+			error: function(res) {
+				if (error)
+					error(res)
+				self.error({"url": url, "method": method, "response": res})
+			}
+		})
+	}
+	RestPrototype._registerMethod = function(name,method) {
+	var api = this._get('api', true)
+
+		if (!name)
+			return
+
+		var api = this
+		this[name] = function() {
+			method.call(api, arguments)
+		}
+	}
+	$core._protoOn(RestPrototype, 'error', function(url,method,response) {
+		if ((typeof window !== 'undefined' && !window.navigator.onLine) || response && response.target && response.target.status === 0 && response.target.response === "") {
+			this.internetConnectionLost({ "url": url, "method": method, "response": response })
+		}
+	})
+
+	RestPrototype.$c = function($c) {
+		var $this = this;
+		RestBasePrototype.$c.call(this, $c.$b = { })
+var _this$child0 = new $core.Request($this)
+		$c._this$child0 = _this$child0
+
+//creating component Request
+		_this$child0.$c($c.$c$_this$child0 = { })
+		_this$child0._setId('apiRequest')
+		$this.addChild(_this$child0)
+	}
+	RestPrototype.$s = function($c) {
+		var $this = this;
+	RestBasePrototype.$s.call(this, $c.$b); delete $c.$b
+//setting up component Request
+			var _this$child0 = $c._this$child0
+			_this$child0.$s($c.$c$_this$child0)
+			delete $c.$c$_this$child0
+
+
+			_this$child0.completed()
+
+			$this.completed()
+}
+
+
+//=====[component src.AppApi]=====================
+
+	var AppApiBaseComponent = $controls$web$api.Rest
+	var AppApiBasePrototype = AppApiBaseComponent.prototype
+
+/**
+ * @constructor
+ * @extends {$controls$web$api.Rest}
+ */
+	var AppApiComponent = $src.AppApi = function(parent, row) {
+		AppApiBaseComponent.apply(this, arguments)
+
+	}
+	var AppApiPrototype = AppApiComponent.prototype = Object.create(AppApiBasePrototype)
+
+	AppApiPrototype.constructor = AppApiComponent
+
+	AppApiPrototype.componentName = 'src.AppApi'
+	core.addProperty(AppApiPrototype, 'string', 'apiKey', ("a20b12b279f744f2b3c7b5c5400c4eb5"))
+
+	AppApiPrototype.$c = function($c) {
+		var $this = this;
+		AppApiBasePrototype.$c.call(this, $c.$b = { })
+var _this$child0 = new $controls$web$api.Method($this)
+		$c._this$child0 = _this$child0
+
+//creating component Method
+		_this$child0.$c($c.$c$_this$child0 = { })
+
+		$this.addChild(_this$child0)
+	}
+	AppApiPrototype.$s = function($c) {
+		var $this = this;
+	AppApiBasePrototype.$s.call(this, $c.$b); delete $c.$b
+//assigning baseUrl to ("https://api.start.ru")
+			$this._removeUpdater('baseUrl'); $this.baseUrl = ("https://api.start.ru");
+
+//setting up component Method
+			var _this$child0 = $c._this$child0
+			_this$child0.$s($c.$c$_this$child0)
+			delete $c.$c$_this$child0
+
+//assigning name to ("getMain")
+			_this$child0._removeUpdater('name'); _this$child0.name = ("getMain");
+//assigning path to ("/web/main?apikey=" + ${parent.apiKey})
+			_this$child0._replaceUpdater('path', function() { _this$child0.path = ("/web/main?apikey=" + _this$child0.parent.apiKey) }, [_this$child0.parent,'apiKey'])
+
+			_this$child0.completed()
+
+			$this.completed()
+}
+
+
+//=====[component src.AnotherApi]=====================
+
+	var AnotherApiBaseComponent = $controls$web$api.Rest
+	var AnotherApiBasePrototype = AnotherApiBaseComponent.prototype
+
+/**
+ * @constructor
+ * @extends {$controls$web$api.Rest}
+ */
+	var AnotherApiComponent = $src.AnotherApi = function(parent, row) {
+		AnotherApiBaseComponent.apply(this, arguments)
+
+	}
+	var AnotherApiPrototype = AnotherApiComponent.prototype = Object.create(AnotherApiBasePrototype)
+
+	AnotherApiPrototype.constructor = AnotherApiComponent
+
+	AnotherApiPrototype.componentName = 'src.AnotherApi'
+
+	AnotherApiPrototype.$c = function($c) {
+		var $this = this;
+		AnotherApiBasePrototype.$c.call(this, $c.$b = { })
+var _this$child0 = new $controls$web$api.Method($this)
+		$c._this$child0 = _this$child0
+
+//creating component Method
+		_this$child0.$c($c.$c$_this$child0 = { })
+
+		$this.addChild(_this$child0)
+	}
+	AnotherApiPrototype.$s = function($c) {
+		var $this = this;
+	AnotherApiBasePrototype.$s.call(this, $c.$b); delete $c.$b
+//assigning baseUrl to ("https://ctx.playfamily.ru")
+			$this._removeUpdater('baseUrl'); $this.baseUrl = ("https://ctx.playfamily.ru");
+
+//setting up component Method
+			var _this$child0 = $c._this$child0
+			_this$child0.$s($c.$c$_this$child0)
+			delete $c.$c$_this$child0
+
+//assigning name to ("getMain")
+			_this$child0._removeUpdater('name'); _this$child0.name = ("getMain");
+//assigning path to ("/screenapi/v1/noauth/collection/web/1?elementAlias=topfilms&elementType=COLLECTION&limit=16&offset=0&withInnerCollections=true")
+			_this$child0._removeUpdater('path'); _this$child0.path = ("/screenapi/v1/noauth/collection/web/1?elementAlias=topfilms&elementType=COLLECTION&limit=16&offset=0&withInnerCollections=true");
+
+			_this$child0.completed()
+
+			$this.completed()
 }
 
 
@@ -5466,6 +5539,87 @@ $this.completed()
 }
 
 
+//=====[component core.Transform]=====================
+
+	var TransformBaseComponent = $core.Object
+	var TransformBasePrototype = TransformBaseComponent.prototype
+
+/**
+ * @constructor
+ * @extends {$core.Object}
+ */
+	var TransformComponent = $core.Transform = function(parent, row) {
+		TransformBaseComponent.apply(this, arguments)
+	//custom constructor:
+	{ this._transforms = new $core.transform.Transform() }
+
+	}
+	var TransformPrototype = TransformComponent.prototype = Object.create(TransformBasePrototype)
+
+	TransformPrototype.constructor = TransformComponent
+
+	TransformPrototype.componentName = 'core.Transform'
+	core.addProperty(TransformPrototype, 'int', 'perspective')
+	core.addProperty(TransformPrototype, 'int', 'translateX')
+	core.addProperty(TransformPrototype, 'int', 'translateY')
+	core.addProperty(TransformPrototype, 'int', 'translateZ')
+	core.addProperty(TransformPrototype, 'real', 'rotateX')
+	core.addProperty(TransformPrototype, 'real', 'rotateY')
+	core.addProperty(TransformPrototype, 'real', 'rotateZ')
+	core.addProperty(TransformPrototype, 'real', 'rotate')
+	core.addProperty(TransformPrototype, 'real', 'scaleX')
+	core.addProperty(TransformPrototype, 'real', 'scaleY')
+	core.addProperty(TransformPrototype, 'real', 'skewX')
+	core.addProperty(TransformPrototype, 'real', 'skewY')
+	TransformPrototype._updateTransform = function() {
+		this.parent.style('transform', this._transforms)
+	}
+	TransformPrototype._animateAll = function(animation) {
+		var transform = this
+		var transform_properties = [
+			'perspective',
+			'translateX', 'translateY', 'translateZ',
+			'rotateX', 'rotateY', 'rotateZ', 'rotate',
+			'scaleX', 'scaleY',
+			'skewX', 'skewY'
+		]
+		transform_properties.forEach(function(transform_property) {
+			var property_animation = new $core.Animation(transform)
+			$core.core.createObject(property_animation)
+			property_animation.delay = animation.delay
+			property_animation.duration = animation.duration
+			property_animation.cssTransition = false
+			property_animation.easing = animation.easing
+
+			transform.setAnimation(transform_property, property_animation)
+		})
+		this._context._processActions()
+	}
+	$core._protoOnChanged(TransformPrototype, 'perspective', function(value) { this._transforms.add('perspective', value, 'px'); this._updateTransform() })
+	$core._protoOnChanged(TransformPrototype, 'rotate', function(value) { this._transforms.add('rotate', value, 'deg'); this._updateTransform() })
+	$core._protoOnChanged(TransformPrototype, 'rotateX', function(value) { this._transforms.add('rotateX', value, 'deg'); this._updateTransform() })
+	$core._protoOnChanged(TransformPrototype, 'rotateY', function(value) { this._transforms.add('rotateY', value, 'deg'); this._updateTransform() })
+	$core._protoOnChanged(TransformPrototype, 'rotateZ', function(value) { this._transforms.add('rotateZ', value, 'deg'); this._updateTransform() })
+	$core._protoOnChanged(TransformPrototype, 'scaleX', function(value) { this._transforms.add('scaleX', value); this._updateTransform() })
+	$core._protoOnChanged(TransformPrototype, 'scaleY', function(value) { this._transforms.add('scaleY', value); this._updateTransform() })
+	$core._protoOnChanged(TransformPrototype, 'skewX', function(value) { this._transforms.add('skewX', value, 'deg'); this._updateTransform() })
+	$core._protoOnChanged(TransformPrototype, 'skewY', function(value) { this._transforms.add('skewY', value, 'deg'); this._updateTransform() })
+	$core._protoOnChanged(TransformPrototype, 'translateX', function(value) { this._transforms.add('translateX', value, 'px'); this._updateTransform() })
+	$core._protoOnChanged(TransformPrototype, 'translateY', function(value) { this._transforms.add('translateY', value, 'px'); this._updateTransform() })
+	$core._protoOnChanged(TransformPrototype, 'translateZ', function(value) { this._transforms.add('translateZ', value, 'px'); this._updateTransform() })
+
+	TransformPrototype.$c = function($c) {
+		var $this = this;
+		TransformBasePrototype.$c.call(this, $c.$b = { })
+
+	}
+	TransformPrototype.$s = function($c) {
+		var $this = this;
+	TransformBasePrototype.$s.call(this, $c.$b); delete $c.$b
+$this.completed()
+}
+
+
 //=====[component core.Radius]=====================
 
 	var RadiusBaseComponent = $core.Object
@@ -5619,715 +5773,6 @@ $this.completed()
 	EffectsPrototype.$s = function($c) {
 		var $this = this;
 	EffectsBasePrototype.$s.call(this, $c.$b); delete $c.$b
-$this.completed()
-}
-
-
-//=====[component controls.web.api.Method]=====================
-
-	var MethodBaseComponent = $core.Object
-	var MethodBasePrototype = MethodBaseComponent.prototype
-
-/**
- * @constructor
- * @extends {$core.Object}
- */
-	var MethodComponent = $controls$web$api.Method = function(parent, row) {
-		MethodBaseComponent.apply(this, arguments)
-
-	}
-	var MethodPrototype = MethodComponent.prototype = Object.create(MethodBasePrototype)
-
-	MethodPrototype.constructor = MethodComponent
-
-	MethodPrototype.componentName = 'controls.web.api.Method'
-	core.addProperty(MethodPrototype, 'string', 'type', ("GET"))
-	core.addProperty(MethodPrototype, 'string', 'name')
-	core.addProperty(MethodPrototype, 'string', 'path')
-	MethodPrototype.args = function() {
-	}
-	MethodPrototype.call = function(api,args) {
-		var nargs = this.args.length
-		if (args.length < nargs + 2)
-			throw new Error("not enough arguments for method " + this.name)
-		nargs = args.length - 2
-
-		var argsargs 	= Array.prototype.slice.call(args, 0, nargs)
-		var data 		= this.args.apply(this, argsargs)
-		var callback 	= args[nargs + 0]
-		var error 		= args[nargs + 1]
-		var headers 	= {}
-		var newHeaders  = this.headers(headers)
-		if (newHeaders !== undefined)
-			headers = newHeaders
-		var path = this.pathArgs(this.path, argsargs)
-
-		api.call(path, callback, error, this.type, data, headers)
-	}
-	MethodPrototype.headers = function(headers) {
-	}
-	MethodPrototype.pathArgs = function(path,args) {
-		var path = this.path
-		var re = /\{(\w+)\}/g
-		var index = 0
-		path = path.replace(re, function(m) {
-			return (index < args.length)? args[index++]: ''
-		})
-
-		return path
-	}
-	$core._protoOnChanged(MethodPrototype, 'name', function(value) {
-		this.parent._registerMethod(this.name, this)
-	})
-
-	MethodPrototype.$c = function($c) {
-		var $this = this;
-		MethodBasePrototype.$c.call(this, $c.$b = { })
-
-	}
-	MethodPrototype.$s = function($c) {
-		var $this = this;
-	MethodBasePrototype.$s.call(this, $c.$b); delete $c.$b
-$this.completed()
-}
-
-
-//=====[component core.Border]=====================
-
-	var BorderBaseComponent = $core.Object
-	var BorderBasePrototype = BorderBaseComponent.prototype
-
-/**
- * @constructor
- * @extends {$core.Object}
- */
-	var BorderComponent = $core.Border = function(parent, row) {
-		BorderBaseComponent.apply(this, arguments)
-
-	}
-	var BorderPrototype = BorderComponent.prototype = Object.create(BorderBasePrototype)
-
-	BorderPrototype.constructor = BorderComponent
-
-	BorderPrototype.componentName = 'core.Border'
-	core.addProperty(BorderPrototype, 'int', 'width')
-	core.addProperty(BorderPrototype, 'color', 'color', ("black"))
-	core.addLazyProperty(BorderPrototype, 'left', (function(__parent, __row) {
-		var lazy$left = new $core.BorderSide(__parent, __row)
-		var $c = { lazy$left : lazy$left }
-
-//creating component BorderSide
-			lazy$left.$c($c.$c$lazy$left = { })
-
-
-//setting up component BorderSide
-			var lazy$left = $c.lazy$left
-			lazy$left.$s($c.$c$lazy$left)
-			delete $c.$c$lazy$left
-
-//assigning name to ("left")
-			lazy$left._removeUpdater('name'); lazy$left.name = ("left");
-
-			lazy$left.completed()
-
-		return lazy$left
-}))
-	core.addLazyProperty(BorderPrototype, 'right', (function(__parent, __row) {
-		var lazy$right = new $core.BorderSide(__parent, __row)
-		var $c = { lazy$right : lazy$right }
-
-//creating component BorderSide
-			lazy$right.$c($c.$c$lazy$right = { })
-
-
-//setting up component BorderSide
-			var lazy$right = $c.lazy$right
-			lazy$right.$s($c.$c$lazy$right)
-			delete $c.$c$lazy$right
-
-//assigning name to ("right")
-			lazy$right._removeUpdater('name'); lazy$right.name = ("right");
-
-			lazy$right.completed()
-
-		return lazy$right
-}))
-	core.addLazyProperty(BorderPrototype, 'top', (function(__parent, __row) {
-		var lazy$top = new $core.BorderSide(__parent, __row)
-		var $c = { lazy$top : lazy$top }
-
-//creating component BorderSide
-			lazy$top.$c($c.$c$lazy$top = { })
-
-
-//setting up component BorderSide
-			var lazy$top = $c.lazy$top
-			lazy$top.$s($c.$c$lazy$top)
-			delete $c.$c$lazy$top
-
-//assigning name to ("top")
-			lazy$top._removeUpdater('name'); lazy$top.name = ("top");
-
-			lazy$top.completed()
-
-		return lazy$top
-}))
-	core.addLazyProperty(BorderPrototype, 'bottom', (function(__parent, __row) {
-		var lazy$bottom = new $core.BorderSide(__parent, __row)
-		var $c = { lazy$bottom : lazy$bottom }
-
-//creating component BorderSide
-			lazy$bottom.$c($c.$c$lazy$bottom = { })
-
-
-//setting up component BorderSide
-			var lazy$bottom = $c.lazy$bottom
-			lazy$bottom.$s($c.$c$lazy$bottom)
-			delete $c.$c$lazy$bottom
-
-//assigning name to ("bottom")
-			lazy$bottom._removeUpdater('name'); lazy$bottom.name = ("bottom");
-
-			lazy$bottom.completed()
-
-		return lazy$bottom
-}))
-/** @const @type {number} */
-	BorderPrototype.None = 0
-/** @const @type {number} */
-	BorderComponent.None = 0
-/** @const @type {number} */
-	BorderPrototype.Hidden = 1
-/** @const @type {number} */
-	BorderComponent.Hidden = 1
-/** @const @type {number} */
-	BorderPrototype.Dotted = 2
-/** @const @type {number} */
-	BorderComponent.Dotted = 2
-/** @const @type {number} */
-	BorderPrototype.Dashed = 3
-/** @const @type {number} */
-	BorderComponent.Dashed = 3
-/** @const @type {number} */
-	BorderPrototype.Solid = 4
-/** @const @type {number} */
-	BorderComponent.Solid = 4
-/** @const @type {number} */
-	BorderPrototype.Double = 5
-/** @const @type {number} */
-	BorderComponent.Double = 5
-/** @const @type {number} */
-	BorderPrototype.Groove = 6
-/** @const @type {number} */
-	BorderComponent.Groove = 6
-/** @const @type {number} */
-	BorderPrototype.Ridge = 7
-/** @const @type {number} */
-	BorderComponent.Ridge = 7
-/** @const @type {number} */
-	BorderPrototype.Inset = 8
-/** @const @type {number} */
-	BorderComponent.Inset = 8
-/** @const @type {number} */
-	BorderPrototype.Outset = 9
-/** @const @type {number} */
-	BorderComponent.Outset = 9
-	core.addProperty(BorderPrototype, 'enum', 'style', BorderComponent.Solid)
-/** @const @type {number} */
-	BorderPrototype.Inner = 0
-/** @const @type {number} */
-	BorderComponent.Inner = 0
-/** @const @type {number} */
-	BorderPrototype.Outer = 1
-/** @const @type {number} */
-	BorderComponent.Outer = 1
-/** @const @type {number} */
-	BorderPrototype.Center = 2
-/** @const @type {number} */
-	BorderComponent.Center = 2
-	core.addProperty(BorderPrototype, 'enum', 'type')
-	$core._protoOnChanged(BorderPrototype, 'color', function(value) {
-		var newColor = $core.Color.normalize(this.color)
-		this.parent.style('border-color', newColor)
-	})
-	$core._protoOnChanged(BorderPrototype, 'width', function(value) {
-		var parent = this.parent
-		parent.style('border-width', value)
-		switch(this.type) {
-		case this.Inner:
-			parent._borderXAdjust = 0
-			parent._borderYAdjust = 0
-			parent._borderInnerWidthAdjust = -2 * value
-			parent._borderInnerHeightAdjust = -2 * value
-			parent._setSizeAdjust()
-			break
-		case this.Outer:
-			parent._borderXAdjust = -value
-			parent._borderYAdjust = -value
-			parent._borderWidthAdjust = 0
-			parent._borderHeightAdjust = 0
-			parent._setSizeAdjust()
-			break
-		case this.Center:
-			parent._borderXAdjust = -value / 2
-			parent._borderYAdjust = -value / 2
-			parent._borderWidthAdjust = -value
-			parent._borderHeightAdjust = -value
-			parent._setSizeAdjust()
-			break
-		}
-	})
-	$core._protoOnChanged(BorderPrototype, 'type', function(value) {
-		var style
-		switch(value) {
-			case this.Inner:
-				style = 'border-box'; break;
-			case this.Outer:
-			case this.Center:
-				style = 'content-box'; break;
-		}
-		this.parent.style('box-sizing', style)
-	})
-	$core._protoOnChanged(BorderPrototype, 'style', function(value) {
-		var styleName
-		switch(value) {
-			case this.None: styleName = 'none'; break
-			case this.Hidden: styleName = 'hidden'; break
-			case this.Dotted: styleName = 'dotted'; break
-			case this.Dashed: styleName = 'dashed'; break
-			case this.Solid: styleName = 'solid'; break
-			case this.Double: styleName = 'double'; break
-			case this.Groove: styleName = 'groove'; break
-			case this.Ridge: styleName = 'ridge'; break
-			case this.Inset: styleName = 'inset'; break
-			case this.Outset: styleName = 'outset'; break
-		}
-
-		this.parent.style('border-style', styleName)
-	})
-
-	BorderPrototype.$c = function($c) {
-		var $this = this;
-		BorderBasePrototype.$c.call(this, $c.$b = { })
-
-	}
-	BorderPrototype.$s = function($c) {
-		var $this = this;
-	BorderBasePrototype.$s.call(this, $c.$b); delete $c.$b
-$this.completed()
-}
-
-
-//=====[component core.VideoPlayer]=====================
-
-	var VideoPlayerBaseComponent = $core.Item
-	var VideoPlayerBasePrototype = VideoPlayerBaseComponent.prototype
-
-/**
- * @constructor
- * @extends {$core.Item}
- */
-	var VideoPlayerComponent = $core.VideoPlayer = function(parent, row) {
-		VideoPlayerBaseComponent.apply(this, arguments)
-	//custom constructor:
-	{
-		this.impl = null
-		this._createPlayer()
-	}
-
-	}
-	var VideoPlayerPrototype = VideoPlayerComponent.prototype = Object.create(VideoPlayerBasePrototype)
-
-	VideoPlayerPrototype.constructor = VideoPlayerComponent
-
-	VideoPlayerPrototype.componentName = 'core.VideoPlayer'
-	VideoPlayerPrototype.finished = $core.createSignal('finished')
-	VideoPlayerPrototype.text = $core.createSignal('text')
-	VideoPlayerPrototype.error = $core.createSignal('error')
-	core.addProperty(VideoPlayerPrototype, 'string', 'backend')
-	core.addProperty(VideoPlayerPrototype, 'string', 'source')
-	core.addProperty(VideoPlayerPrototype, 'string', 'backgroundImage')
-	core.addProperty(VideoPlayerPrototype, 'color', 'backgroundColor', ("#000"))
-	core.addProperty(VideoPlayerPrototype, 'float', 'volume', (1.0))
-	core.addProperty(VideoPlayerPrototype, 'bool', 'loop')
-	core.addProperty(VideoPlayerPrototype, 'bool', 'ready')
-	core.addProperty(VideoPlayerPrototype, 'bool', 'muted')
-	core.addProperty(VideoPlayerPrototype, 'bool', 'paused')
-	core.addProperty(VideoPlayerPrototype, 'bool', 'waiting')
-	core.addProperty(VideoPlayerPrototype, 'bool', 'seeking')
-	core.addProperty(VideoPlayerPrototype, 'bool', 'stalled')
-	core.addProperty(VideoPlayerPrototype, 'bool', 'autoPlay')
-	core.addProperty(VideoPlayerPrototype, 'real', 'duration')
-	core.addProperty(VideoPlayerPrototype, 'real', 'progress')
-	core.addProperty(VideoPlayerPrototype, 'real', 'buffered')
-	core.addProperty(VideoPlayerPrototype, 'real', 'startPosition')
-	VideoPlayerPrototype.play = function() {
-		if (!this.source)
-			return
-
-		log("play", this.source)
-		var player = this._getPlayer()
-		if (player) {
-			this._scheduleLayout()
-			player.play()
-		}
-		this.applyVolume();
-	}
-	VideoPlayerPrototype._getPlayer = function() {
-		if (this.impl === null)
-			this._createPlayer()
-		return this.impl
-	}
-	VideoPlayerPrototype._createPlayer = function() {
-		if (this.impl)
-			return this.impl
-
-		var source = this.source
-		var preferred = this.backend
-		log('preferred backend: ' + preferred)
-		var backends = $core.__videoBackends
-		var results = []
-		if (preferred && backends[preferred]) {
-			var backend = backends[preferred]()
-			return this.impl = backend.createPlayer(this)
-		} else {
-			for (var i in backends) {
-				var backend = backends[i]()
-				var score = backend.probeUrl(source)
-				if (score > 0)
-					results.push({ backend: backend, score: score })
-			}
-			results.sort(function(a, b) { return b.score - a.score })
-			if (results.length === 0)
-				throw new Error('no backends for source ' + source)
-			return this.impl = results[0].backend.createPlayer(this)
-		}
-	}
-	VideoPlayerPrototype.applyVolume = function() {
-		if (this.volume > 1.0)
-			this.volume = 1.0;
-		else if (this.volume < 0.0)
-			this.volume = 0.0;
-
-		var player = this._getPlayer()
-		if (player)
-			player.setVolume(this.volume)
-	}
-	VideoPlayerPrototype._scheduleLayout = function() {
-		this._context.delayedAction('layout', this, this._doLayout)
-	}
-	VideoPlayerPrototype.pause = function() {
-		var player = this._getPlayer()
-		if (player)
-			player.pause()
-	}
-	VideoPlayerPrototype._doLayout = function() {
-		var player = this._getPlayer()
-		if (player)
-			player.setRect.apply(player, this.toScreen().slice(0, 4))
-	}
-	VideoPlayerPrototype.stop = function() {
-		var player = this._getPlayer()
-		if (player)
-			player.stop()
-	}
-	VideoPlayerPrototype.getAudioTracks = function() {
-		var player = this._getPlayer()
-		if (player)
-			return player.getAudioTracks()
-		else
-			return []
-	}
-	VideoPlayerPrototype.getSubtitles = function() {
-		var player = this._getPlayer()
-		if (player)
-			return player.getSubtitles()
-		else
-			return []
-	}
-	VideoPlayerPrototype.getVideoTracks = function() {
-		var player = this._getPlayer()
-		if (player)
-			return player.getVideoTracks()
-		else
-			return []
-	}
-	VideoPlayerPrototype.__complete = function() { VideoPlayerBasePrototype.__complete.call(this)
-var player = this._getPlayer()
-		if (player)
-			player.setBackgroundColor(this.backgroundColor)
-
-		if (this.autoPlay && this.source)
-			this.play()
-}
-	VideoPlayerPrototype.volumeUp = function() { this.volume += 0.1 }
-	VideoPlayerPrototype.volumeDown = function() { this.volume -= 0.1 }
-	VideoPlayerPrototype.toggleMute = function() { var player = this._getPlayer(); if (player) player.setMute(!this.muted) }
-	VideoPlayerPrototype.setOption = function(name,value) {
-		var player = this._getPlayer()
-		if (player)
-			player.setOption(name, value)
-	}
-	VideoPlayerPrototype.setAudioTrack = function(trackId) {
-		var player = this._getPlayer()
-		if (player)
-			player.setAudioTrack(trackId)
-	}
-	VideoPlayerPrototype.setSubtitles = function(trackId) {
-		var player = this._getPlayer()
-		if (player)
-			player.setSubtitles(trackId)
-	}
-	VideoPlayerPrototype.setVideoTrack = function(trackId) {
-		var player = this._getPlayer()
-		if (player)
-			player.setVideoTrack(trackId)
-	}
-	VideoPlayerPrototype.setupDrm = function(type,options,callback,error) {
-		var player = this._getPlayer()
-		if (player)
-			player.setupDrm(type, options, callback, error)
-	}
-	VideoPlayerPrototype.seek = function(value) {
-		var player = this._getPlayer()
-		if (player)
-			player.seek(value)
-	}
-	VideoPlayerPrototype.seekTo = function(value) {
-		var player = this._getPlayer()
-		if (player)
-			player.seekTo(value)
-	}
-	$core._protoOnChanged(VideoPlayerPrototype, 'backend', function(value) {
-		this.impl = null
-		this._createPlayer()
-	})
-	$core._protoOnChanged(VideoPlayerPrototype, 'backgroundColor', function(value) {
-		var player = this._getPlayer()
-		if (player)
-			player.setBackgroundColor(value)
-	})
-	$core._protoOnChanged(VideoPlayerPrototype, 'loop', function(value) {
-		var player = this._getPlayer()
-		if (player)
-			player.setLoop(value)
-	})
-	$core._protoOnChanged(VideoPlayerPrototype, 'source', function(value) {
-		var player = this._getPlayer()
-		if (player)
-			player.setSource(value)
-	})
-	$core._protoOnChanged(VideoPlayerPrototype, 'recursiveVisible', function(value) {
-		var player = this._getPlayer()
-		if (player)
-			player.setVisibility(value)
-	})
-	$core._protoOnChanged(VideoPlayerPrototype, 'ready', function(value) { log("ReadyState: " + this.ready) })
-	$core._protoOnChanged(VideoPlayerPrototype, 'volume', function(value) { this.applyVolume() })
-	$core._protoOnChanged(VideoPlayerPrototype, 'autoPlay', function(value) { this.setOption('autoplay', value) })
-	$core._protoOnChanged(VideoPlayerPrototype, 'backgroundImage', function(value) { this.setOption('poster', value) })
-	$core._protoOn(VideoPlayerPrototype, 'newBoundingBox', function() {
-		this._scheduleLayout()
-	})
-	$core._protoOn(VideoPlayerPrototype, 'error', function(error) {
-		this.paused = false
-		this.waiting = false
-	})
-
-	VideoPlayerPrototype.$c = function($c) {
-		var $this = this;
-		VideoPlayerBasePrototype.$c.call(this, $c.$b = { })
-
-	}
-	VideoPlayerPrototype.$s = function($c) {
-		var $this = this;
-	VideoPlayerBasePrototype.$s.call(this, $c.$b); delete $c.$b
-$this.completed()
-}
-
-
-//=====[component core.BaseViewContent]=====================
-
-	var BaseViewContentBaseComponent = $core.Item
-	var BaseViewContentBasePrototype = BaseViewContentBaseComponent.prototype
-
-/**
- * @constructor
- * @extends {$core.Item}
- */
-	var BaseViewContentComponent = $core.BaseViewContent = function(parent, row) {
-		BaseViewContentBaseComponent.apply(this, arguments)
-	//custom constructor:
-	{
-		this.style('will-change', 'scroll-position, transform, left, top')
-	}
-
-	}
-	var BaseViewContentPrototype = BaseViewContentComponent.prototype = Object.create(BaseViewContentBasePrototype)
-
-	BaseViewContentPrototype.constructor = BaseViewContentComponent
-
-	BaseViewContentPrototype.componentName = 'core.BaseViewContent'
-	BaseViewContentPrototype._updateScrollPositions = function(x,y,layout) {
-		this._setProperty('x', -x)
-		this._setProperty('y', -y)
-		if (layout === undefined || layout) //default true
-			this.parent._scheduleLayout()
-	}
-	var $code$0 = function(value) { this.parent._scheduleLayout() }
-	$core._protoOnChanged(BaseViewContentPrototype, 'x', $code$0)
-	$core._protoOnChanged(BaseViewContentPrototype, 'y', $code$0)
-
-	BaseViewContentPrototype.$c = function($c) {
-		var $this = this;
-		BaseViewContentBasePrototype.$c.call(this, $c.$b = { })
-
-	}
-	BaseViewContentPrototype.$s = function($c) {
-		var $this = this;
-	BaseViewContentBasePrototype.$s.call(this, $c.$b); delete $c.$b
-$this.completed()
-}
-
-
-//=====[component core.Model]=====================
-
-	var ModelBaseComponent = $core.Object
-	var ModelBasePrototype = ModelBaseComponent.prototype
-
-/**
- * @constructor
- * @extends {$core.Object}
- */
-	var ModelComponent = $core.Model = function(parent, row) {
-		ModelBaseComponent.apply(this, arguments)
-
-	}
-	var ModelPrototype = ModelComponent.prototype = Object.create(ModelBasePrototype)
-
-	ModelPrototype.constructor = ModelComponent
-
-	ModelPrototype.componentName = 'core.Model'
-	ModelPrototype.rowsRemoved = $core.createSignal('rowsRemoved')
-	ModelPrototype.rowsInserted = $core.createSignal('rowsInserted')
-	ModelPrototype.reset = $core.createSignal('reset')
-	ModelPrototype.rowsChanged = $core.createSignal('rowsChanged')
-	core.addProperty(ModelPrototype, 'int', 'count')
-
-	ModelPrototype.$c = function($c) {
-		var $this = this;
-		ModelBasePrototype.$c.call(this, $c.$b = { })
-
-	}
-	ModelPrototype.$s = function($c) {
-		var $this = this;
-	ModelBasePrototype.$s.call(this, $c.$b); delete $c.$b
-$this.completed()
-}
-
-
-//=====[component core.ListModel]=====================
-
-	var ListModelBaseComponent = $core.Model
-	var ListModelBasePrototype = ListModelBaseComponent.prototype
-
-/**
- * @constructor
- * @extends {$core.Model}
- */
-	var ListModelComponent = $core.ListModel = function(parent, row) {
-		ListModelBaseComponent.apply(this, arguments)
-	//custom constructor:
-	{
-		this._rows = []
-	}
-
-	}
-	var ListModelPrototype = ListModelComponent.prototype = Object.create(ListModelBasePrototype)
-
-	ListModelPrototype.constructor = ListModelComponent
-
-	ListModelPrototype.componentName = 'core.ListModel'
-	core.addProperty(ListModelPrototype, 'array', 'data')
-	ListModelPrototype.clear = function() { this.assign([]) }
-	ListModelPrototype.forEach = function(callback) {
-		return this._rows.forEach(callback)
-	}
-	ListModelPrototype.addChild = function(child) {
-		this.append(child)
-	}
-	ListModelPrototype.get = function(idx) {
-		if (idx < 0 || idx >= this._rows.length)
-			throw new Error('index ' + idx + ' out of bounds (' + this._rows.length + ')')
-		var row = this._rows[idx]
-		if (!(row instanceof Object))
-			throw new Error('row is non-object')
-		row.index = idx
-		return row
-	}
-	ListModelPrototype.remove = function(idx,n) {
-		if (idx < 0 || idx >= this._rows.length)
-			throw new Error('index ' + idx + ' out of bounds')
-		if (n === undefined)
-			n = 1
-		this._rows.splice(idx, n)
-		this.count = this._rows.length
-		this.rowsRemoved(idx, idx + n)
-	}
-	ListModelPrototype.setProperty = function(idx,name,value) {
-		if (idx < 0 || idx >= this._rows.length)
-			throw new Error('index ' + idx + ' out of bounds (' + this._rows.length + ')')
-		var row = this._rows[idx]
-		if (!(row instanceof Object))
-			throw new Error('row is non-object, invalid index? (' + idx + ')')
-
-		if (row[name] !== value) {
-			row[name] = value
-			this.rowsChanged(idx, idx + 1)
-		}
-	}
-	ListModelPrototype.insert = function(idx,row) {
-		if (idx < 0 || idx > this._rows.length)
-			throw new Error('index ' + idx + ' out of bounds (' + this._rows.length + ')')
-		this._rows.splice(idx, 0, row)
-		this.count = this._rows.length
-		this.rowsInserted(idx, idx + 1)
-	}
-	ListModelPrototype.set = function(idx,row) {
-		if (idx < 0 || idx >= this._rows.length)
-			throw new Error('index ' + idx + ' out of bounds (' + this._rows.length + ')')
-		if (!(row instanceof Object))
-			throw new Error('row is non-object')
-		this._rows[idx] = row
-		this.rowsChanged(idx, idx + 1)
-	}
-	ListModelPrototype.append = function(row) {
-		var l = this._rows.length
-		if (Array.isArray(row)) {
-			Array.prototype.push.apply(this._rows, row)
-			this.count = this._rows.length
-			this.rowsInserted(l, l + row.length)
-		} else {
-			this._rows.push(row)
-			this.count = this._rows.length
-			this.rowsInserted(l, l + 1)
-		}
-	}
-	ListModelPrototype.assign = function(rows) {
-		this._rows = rows
-		this.count = this._rows.length
-		this.reset()
-	}
-	$core._protoOnChanged(ListModelPrototype, 'data', function(value) { this.assign(value) })
-
-	ListModelPrototype.$c = function($c) {
-		var $this = this;
-		ListModelBasePrototype.$c.call(this, $c.$b = { })
-
-	}
-	ListModelPrototype.$s = function($c) {
-		var $this = this;
-	ListModelBasePrototype.$s.call(this, $c.$b); delete $c.$b
 $this.completed()
 }
 
@@ -6579,100 +6024,144 @@ $this.completed()
 }
 
 
-//=====[component core.Gradient]=====================
+//=====[component core.Model]=====================
 
-	var GradientBaseComponent = $core.Object
-	var GradientBasePrototype = GradientBaseComponent.prototype
+	var ModelBaseComponent = $core.Object
+	var ModelBasePrototype = ModelBaseComponent.prototype
 
 /**
  * @constructor
  * @extends {$core.Object}
  */
-	var GradientComponent = $core.Gradient = function(parent, row) {
-		GradientBaseComponent.apply(this, arguments)
+	var ModelComponent = $core.Model = function(parent, row) {
+		ModelBaseComponent.apply(this, arguments)
+
+	}
+	var ModelPrototype = ModelComponent.prototype = Object.create(ModelBasePrototype)
+
+	ModelPrototype.constructor = ModelComponent
+
+	ModelPrototype.componentName = 'core.Model'
+	ModelPrototype.rowsInserted = $core.createSignal('rowsInserted')
+	ModelPrototype.reset = $core.createSignal('reset')
+	ModelPrototype.rowsChanged = $core.createSignal('rowsChanged')
+	ModelPrototype.rowsRemoved = $core.createSignal('rowsRemoved')
+	core.addProperty(ModelPrototype, 'int', 'count')
+
+	ModelPrototype.$c = function($c) {
+		var $this = this;
+		ModelBasePrototype.$c.call(this, $c.$b = { })
+
+	}
+	ModelPrototype.$s = function($c) {
+		var $this = this;
+	ModelBasePrototype.$s.call(this, $c.$b); delete $c.$b
+$this.completed()
+}
+
+
+//=====[component core.ListModel]=====================
+
+	var ListModelBaseComponent = $core.Model
+	var ListModelBasePrototype = ListModelBaseComponent.prototype
+
+/**
+ * @constructor
+ * @extends {$core.Model}
+ */
+	var ListModelComponent = $core.ListModel = function(parent, row) {
+		ListModelBaseComponent.apply(this, arguments)
 	//custom constructor:
 	{
-		this.stops = []
+		this._rows = []
 	}
 
 	}
-	var GradientPrototype = GradientComponent.prototype = Object.create(GradientBasePrototype)
+	var ListModelPrototype = ListModelComponent.prototype = Object.create(ListModelBasePrototype)
 
-	GradientPrototype.constructor = GradientComponent
+	ListModelPrototype.constructor = ListModelComponent
 
-	GradientPrototype.componentName = 'core.Gradient'
-	core.addProperty(GradientPrototype, 'real', 'angle')
-/** @const @type {number} */
-	GradientPrototype.Vertical = 0
-/** @const @type {number} */
-	GradientComponent.Vertical = 0
-/** @const @type {number} */
-	GradientPrototype.Horizontal = 1
-/** @const @type {number} */
-	GradientComponent.Horizontal = 1
-/** @const @type {number} */
-	GradientPrototype.BottomRight = 2
-/** @const @type {number} */
-	GradientComponent.BottomRight = 2
-/** @const @type {number} */
-	GradientPrototype.TopRight = 3
-/** @const @type {number} */
-	GradientComponent.TopRight = 3
-/** @const @type {number} */
-	GradientPrototype.Custom = 4
-/** @const @type {number} */
-	GradientComponent.Custom = 4
-	core.addProperty(GradientPrototype, 'enum', 'orientation')
-	GradientPrototype._updateStyle = function() {
-		var decl = this._getDeclaration()
-		if (decl)
-			this.parent.style({ 'background-color': '', 'background': decl })
+	ListModelPrototype.componentName = 'core.ListModel'
+	core.addProperty(ListModelPrototype, 'array', 'data')
+	ListModelPrototype.clear = function() { this.assign([]) }
+	ListModelPrototype.forEach = function(callback) {
+		return this._rows.forEach(callback)
 	}
-	GradientPrototype._getDeclaration = function() {
-		var stops = this.stops
-		var n = stops.length
-		if (n < 2)
-			return
-
-		var orientation
-		switch(this.orientation) {
-			default:
-			case this.Vertical:	orientation = 'to bottom'; break
-			case this.Horizontal:	orientation = 'to left'; break
-			case this.BottomRight:	orientation = 'to bottom right'; break
-			case this.TopRight:	orientation = 'to top right'; break
-			case this.Custom:	orientation = this.angle + 'deg'; break
-		}
-
-		var grad = new $core.gradient.Gradient(orientation)
-
-		for(var i = 0; i < n; ++i) {
-			var stop = stops[i]
-			grad.add(stop._getDeclaration())
-		}
-
-		return grad
+	ListModelPrototype.addChild = function(child) {
+		this.append(child)
 	}
-	GradientPrototype.__complete = function() { GradientBasePrototype.__complete.call(this)
-this._updateStyle()
-}
-	GradientPrototype.addChild = function(child) {
-		$core.Object.prototype.addChild.apply(this, arguments)
-		if (child instanceof $core.GradientStop) {
-			this.stops.push(child)
-			this.stops.sort(function(a, b) { return a.position > b.position; })
-			this._updateStyle()
+	ListModelPrototype.get = function(idx) {
+		if (idx < 0 || idx >= this._rows.length)
+			throw new Error('index ' + idx + ' out of bounds (' + this._rows.length + ')')
+		var row = this._rows[idx]
+		if (!(row instanceof Object))
+			throw new Error('row is non-object')
+		row.index = idx
+		return row
+	}
+	ListModelPrototype.remove = function(idx,n) {
+		if (idx < 0 || idx >= this._rows.length)
+			throw new Error('index ' + idx + ' out of bounds')
+		if (n === undefined)
+			n = 1
+		this._rows.splice(idx, n)
+		this.count = this._rows.length
+		this.rowsRemoved(idx, idx + n)
+	}
+	ListModelPrototype.setProperty = function(idx,name,value) {
+		if (idx < 0 || idx >= this._rows.length)
+			throw new Error('index ' + idx + ' out of bounds (' + this._rows.length + ')')
+		var row = this._rows[idx]
+		if (!(row instanceof Object))
+			throw new Error('row is non-object, invalid index? (' + idx + ')')
+
+		if (row[name] !== value) {
+			row[name] = value
+			this.rowsChanged(idx, idx + 1)
 		}
 	}
+	ListModelPrototype.insert = function(idx,row) {
+		if (idx < 0 || idx > this._rows.length)
+			throw new Error('index ' + idx + ' out of bounds (' + this._rows.length + ')')
+		this._rows.splice(idx, 0, row)
+		this.count = this._rows.length
+		this.rowsInserted(idx, idx + 1)
+	}
+	ListModelPrototype.set = function(idx,row) {
+		if (idx < 0 || idx >= this._rows.length)
+			throw new Error('index ' + idx + ' out of bounds (' + this._rows.length + ')')
+		if (!(row instanceof Object))
+			throw new Error('row is non-object')
+		this._rows[idx] = row
+		this.rowsChanged(idx, idx + 1)
+	}
+	ListModelPrototype.append = function(row) {
+		var l = this._rows.length
+		if (Array.isArray(row)) {
+			Array.prototype.push.apply(this._rows, row)
+			this.count = this._rows.length
+			this.rowsInserted(l, l + row.length)
+		} else {
+			this._rows.push(row)
+			this.count = this._rows.length
+			this.rowsInserted(l, l + 1)
+		}
+	}
+	ListModelPrototype.assign = function(rows) {
+		this._rows = rows
+		this.count = this._rows.length
+		this.reset()
+	}
+	$core._protoOnChanged(ListModelPrototype, 'data', function(value) { this.assign(value) })
 
-	GradientPrototype.$c = function($c) {
+	ListModelPrototype.$c = function($c) {
 		var $this = this;
-		GradientBasePrototype.$c.call(this, $c.$b = { })
+		ListModelBasePrototype.$c.call(this, $c.$b = { })
 
 	}
-	GradientPrototype.$s = function($c) {
+	ListModelPrototype.$s = function($c) {
 		var $this = this;
-	GradientBasePrototype.$s.call(this, $c.$b); delete $c.$b
+	ListModelBasePrototype.$s.call(this, $c.$b); delete $c.$b
 $this.completed()
 }
 
@@ -6958,133 +6447,6 @@ this.updateStyle()
 }
 
 
-//=====[component controls.web.HoverClickMixin]=====================
-
-	var HoverClickMixinBaseComponent = $core.Object
-	var HoverClickMixinBasePrototype = HoverClickMixinBaseComponent.prototype
-
-/**
- * @constructor
- * @extends {$core.Object}
- */
-	var HoverClickMixinComponent = $controls$web.HoverClickMixin = function(parent, row) {
-		HoverClickMixinBaseComponent.apply(this, arguments)
-	//custom constructor:
-	{
-		this.element = this.parent.element;
-		this.parent.style('cursor', this.cursor)
-		this._bindClick(this.clickable)
-		this._bindHover(this.enabled)
-		this._bindActiveHover(this.activeHoverEnabled)
-	}
-
-	}
-	var HoverClickMixinPrototype = HoverClickMixinComponent.prototype = Object.create(HoverClickMixinBasePrototype)
-
-	HoverClickMixinPrototype.constructor = HoverClickMixinComponent
-
-	HoverClickMixinPrototype.componentName = 'controls.web.HoverClickMixin'
-	core.addProperty(HoverClickMixinPrototype, 'bool', 'enabled', (true))
-	core.addProperty(HoverClickMixinPrototype, 'bool', 'clickable', (true))
-	core.addProperty(HoverClickMixinPrototype, 'bool', 'activeHoverEnabled', (false))
-	core.addProperty(HoverClickMixinPrototype, 'bool', 'value')
-	core.addProperty(HoverClickMixinPrototype, 'bool', 'activeHover', (false))
-	core.addProperty(HoverClickMixinPrototype, 'string', 'cursor')
-	HoverClickMixinPrototype._bindActiveHover = function(value) {
-		if (value && !this._hmActiveHoverBinder) {
-			this._hmActiveHoverBinder = new _globals.core.EventBinder(this.parent.element)
-			this._hmActiveHoverBinder.on('mouseover', function() { this.activeHover = true }.bind(this))
-			this._hmActiveHoverBinder.on('mouseout', function() { this.activeHover = false }.bind(this))
-		}
-		if (this._hmActiveHoverBinder)
-		{
-			this._hmActiveHoverBinder.enable(value)
-		}
-	}
-	HoverClickMixinPrototype._bindClick = function(value) {
-		if (value && !this._hmClickBinder) {
-			this._hmClickBinder = new _globals.core.EventBinder(this.element)
-			this._hmClickBinder.on('click', _globals.core.createSignalForwarder(this.parent, 'clicked').bind(this))
-		}
-		if (this._hmClickBinder)
-			this._hmClickBinder.enable(value)
-	}
-	HoverClickMixinPrototype._bindHover = function(value) {
-		if (value && !this._hmHoverBinder) {
-			this._hmHoverBinder = new _globals.core.EventBinder(this.parent.element)
-			if (this._context.backend.capabilities.mouseEnterLeaveSupported) {
-				this._hmHoverBinder.on('mouseenter', function() { this.value = true }.bind(this))
-				this._hmHoverBinder.on('mouseleave', function() { this.value = false }.bind(this))
-			} else {
-				this._hmHoverBinder.on('mouseover', function() { this.value = true }.bind(this))
-				this._hmHoverBinder.on('mouseout', function() { this.value = false }.bind(this))
-			}
-		}
-		if (this._hmHoverBinder)
-			this._hmHoverBinder.enable(value)
-	}
-	$core._protoOnChanged(HoverClickMixinPrototype, 'cursor', function(value) {
-	var cursor = this._get('cursor', true)
-
-		this.parent.style('cursor', value)
-	})
-	$core._protoOnChanged(HoverClickMixinPrototype, 'activeHoverEnabled', function(value) { this._bindActiveHover(value) })
-	$core._protoOnChanged(HoverClickMixinPrototype, 'clickable', function(value) { this._bindClick(value) })
-	$core._protoOnChanged(HoverClickMixinPrototype, 'enabled', function(value) { this._bindHover(value) })
-
-	HoverClickMixinPrototype.$c = function($c) {
-		var $this = this;
-		HoverClickMixinBasePrototype.$c.call(this, $c.$b = { })
-
-	}
-	HoverClickMixinPrototype.$s = function($c) {
-		var $this = this;
-	HoverClickMixinBasePrototype.$s.call(this, $c.$b); delete $c.$b
-$this.completed()
-}
-
-
-//=====[component core.GradientStop]=====================
-
-	var GradientStopBaseComponent = $core.Object
-	var GradientStopBasePrototype = GradientStopBaseComponent.prototype
-
-/**
- * @constructor
- * @extends {$core.Object}
- */
-	var GradientStopComponent = $core.GradientStop = function(parent, row) {
-		GradientStopBaseComponent.apply(this, arguments)
-
-	}
-	var GradientStopPrototype = GradientStopComponent.prototype = Object.create(GradientStopBasePrototype)
-
-	GradientStopPrototype.constructor = GradientStopComponent
-
-	GradientStopPrototype.componentName = 'core.GradientStop'
-	core.addProperty(GradientStopPrototype, 'real', 'position')
-	core.addProperty(GradientStopPrototype, 'color', 'color')
-	GradientStopPrototype._getDeclaration = function() {
-		return new $core.gradient.GradientStop(this.color, this.position)
-	}
-	var $code$0 = function(value) {
-		this.parent._updateStyle()
-	}
-	$core._protoOnChanged(GradientStopPrototype, 'position', $code$0)
-	$core._protoOnChanged(GradientStopPrototype, 'color', $code$0)
-
-	GradientStopPrototype.$c = function($c) {
-		var $this = this;
-		GradientStopBasePrototype.$c.call(this, $c.$b = { })
-
-	}
-	GradientStopPrototype.$s = function($c) {
-		var $this = this;
-	GradientStopBasePrototype.$s.call(this, $c.$b); delete $c.$b
-$this.completed()
-}
-
-
 //=====[component core.MouseMoveMixin]=====================
 
 	var MouseMoveMixinBaseComponent = $core.Object
@@ -7235,6 +6597,798 @@ $this.completed()
 }
 
 
+//=====[component controls.web.HoverClickMixin]=====================
+
+	var HoverClickMixinBaseComponent = $core.Object
+	var HoverClickMixinBasePrototype = HoverClickMixinBaseComponent.prototype
+
+/**
+ * @constructor
+ * @extends {$core.Object}
+ */
+	var HoverClickMixinComponent = $controls$web.HoverClickMixin = function(parent, row) {
+		HoverClickMixinBaseComponent.apply(this, arguments)
+	//custom constructor:
+	{
+		this.element = this.parent.element;
+		this.parent.style('cursor', this.cursor)
+		this._bindClick(this.clickable)
+		this._bindHover(this.enabled)
+		this._bindActiveHover(this.activeHoverEnabled)
+	}
+
+	}
+	var HoverClickMixinPrototype = HoverClickMixinComponent.prototype = Object.create(HoverClickMixinBasePrototype)
+
+	HoverClickMixinPrototype.constructor = HoverClickMixinComponent
+
+	HoverClickMixinPrototype.componentName = 'controls.web.HoverClickMixin'
+	core.addProperty(HoverClickMixinPrototype, 'bool', 'enabled', (true))
+	core.addProperty(HoverClickMixinPrototype, 'bool', 'clickable', (true))
+	core.addProperty(HoverClickMixinPrototype, 'bool', 'activeHoverEnabled', (false))
+	core.addProperty(HoverClickMixinPrototype, 'bool', 'value')
+	core.addProperty(HoverClickMixinPrototype, 'bool', 'activeHover', (false))
+	core.addProperty(HoverClickMixinPrototype, 'string', 'cursor')
+	HoverClickMixinPrototype._bindActiveHover = function(value) {
+		if (value && !this._hmActiveHoverBinder) {
+			this._hmActiveHoverBinder = new _globals.core.EventBinder(this.parent.element)
+			this._hmActiveHoverBinder.on('mouseover', function() { this.activeHover = true }.bind(this))
+			this._hmActiveHoverBinder.on('mouseout', function() { this.activeHover = false }.bind(this))
+		}
+		if (this._hmActiveHoverBinder)
+		{
+			this._hmActiveHoverBinder.enable(value)
+		}
+	}
+	HoverClickMixinPrototype._bindClick = function(value) {
+		if (value && !this._hmClickBinder) {
+			this._hmClickBinder = new _globals.core.EventBinder(this.element)
+			this._hmClickBinder.on('click', _globals.core.createSignalForwarder(this.parent, 'clicked').bind(this))
+		}
+		if (this._hmClickBinder)
+			this._hmClickBinder.enable(value)
+	}
+	HoverClickMixinPrototype._bindHover = function(value) {
+		if (value && !this._hmHoverBinder) {
+			this._hmHoverBinder = new _globals.core.EventBinder(this.parent.element)
+			if (this._context.backend.capabilities.mouseEnterLeaveSupported) {
+				this._hmHoverBinder.on('mouseenter', function() { this.value = true }.bind(this))
+				this._hmHoverBinder.on('mouseleave', function() { this.value = false }.bind(this))
+			} else {
+				this._hmHoverBinder.on('mouseover', function() { this.value = true }.bind(this))
+				this._hmHoverBinder.on('mouseout', function() { this.value = false }.bind(this))
+			}
+		}
+		if (this._hmHoverBinder)
+			this._hmHoverBinder.enable(value)
+	}
+	$core._protoOnChanged(HoverClickMixinPrototype, 'cursor', function(value) {
+	var cursor = this._get('cursor', true)
+
+		this.parent.style('cursor', value)
+	})
+	$core._protoOnChanged(HoverClickMixinPrototype, 'activeHoverEnabled', function(value) { this._bindActiveHover(value) })
+	$core._protoOnChanged(HoverClickMixinPrototype, 'clickable', function(value) { this._bindClick(value) })
+	$core._protoOnChanged(HoverClickMixinPrototype, 'enabled', function(value) { this._bindHover(value) })
+
+	HoverClickMixinPrototype.$c = function($c) {
+		var $this = this;
+		HoverClickMixinBasePrototype.$c.call(this, $c.$b = { })
+
+	}
+	HoverClickMixinPrototype.$s = function($c) {
+		var $this = this;
+	HoverClickMixinBasePrototype.$s.call(this, $c.$b); delete $c.$b
+$this.completed()
+}
+
+
+//=====[component core.Gradient]=====================
+
+	var GradientBaseComponent = $core.Object
+	var GradientBasePrototype = GradientBaseComponent.prototype
+
+/**
+ * @constructor
+ * @extends {$core.Object}
+ */
+	var GradientComponent = $core.Gradient = function(parent, row) {
+		GradientBaseComponent.apply(this, arguments)
+	//custom constructor:
+	{
+		this.stops = []
+	}
+
+	}
+	var GradientPrototype = GradientComponent.prototype = Object.create(GradientBasePrototype)
+
+	GradientPrototype.constructor = GradientComponent
+
+	GradientPrototype.componentName = 'core.Gradient'
+	core.addProperty(GradientPrototype, 'real', 'angle')
+/** @const @type {number} */
+	GradientPrototype.Vertical = 0
+/** @const @type {number} */
+	GradientComponent.Vertical = 0
+/** @const @type {number} */
+	GradientPrototype.Horizontal = 1
+/** @const @type {number} */
+	GradientComponent.Horizontal = 1
+/** @const @type {number} */
+	GradientPrototype.BottomRight = 2
+/** @const @type {number} */
+	GradientComponent.BottomRight = 2
+/** @const @type {number} */
+	GradientPrototype.TopRight = 3
+/** @const @type {number} */
+	GradientComponent.TopRight = 3
+/** @const @type {number} */
+	GradientPrototype.Custom = 4
+/** @const @type {number} */
+	GradientComponent.Custom = 4
+	core.addProperty(GradientPrototype, 'enum', 'orientation')
+	GradientPrototype._updateStyle = function() {
+		var decl = this._getDeclaration()
+		if (decl)
+			this.parent.style({ 'background-color': '', 'background': decl })
+	}
+	GradientPrototype._getDeclaration = function() {
+		var stops = this.stops
+		var n = stops.length
+		if (n < 2)
+			return
+
+		var orientation
+		switch(this.orientation) {
+			default:
+			case this.Vertical:	orientation = 'to bottom'; break
+			case this.Horizontal:	orientation = 'to left'; break
+			case this.BottomRight:	orientation = 'to bottom right'; break
+			case this.TopRight:	orientation = 'to top right'; break
+			case this.Custom:	orientation = this.angle + 'deg'; break
+		}
+
+		var grad = new $core.gradient.Gradient(orientation)
+
+		for(var i = 0; i < n; ++i) {
+			var stop = stops[i]
+			grad.add(stop._getDeclaration())
+		}
+
+		return grad
+	}
+	GradientPrototype.__complete = function() { GradientBasePrototype.__complete.call(this)
+this._updateStyle()
+}
+	GradientPrototype.addChild = function(child) {
+		$core.Object.prototype.addChild.apply(this, arguments)
+		if (child instanceof $core.GradientStop) {
+			this.stops.push(child)
+			this.stops.sort(function(a, b) { return a.position > b.position; })
+			this._updateStyle()
+		}
+	}
+
+	GradientPrototype.$c = function($c) {
+		var $this = this;
+		GradientBasePrototype.$c.call(this, $c.$b = { })
+
+	}
+	GradientPrototype.$s = function($c) {
+		var $this = this;
+	GradientBasePrototype.$s.call(this, $c.$b); delete $c.$b
+$this.completed()
+}
+
+
+//=====[component core.GradientStop]=====================
+
+	var GradientStopBaseComponent = $core.Object
+	var GradientStopBasePrototype = GradientStopBaseComponent.prototype
+
+/**
+ * @constructor
+ * @extends {$core.Object}
+ */
+	var GradientStopComponent = $core.GradientStop = function(parent, row) {
+		GradientStopBaseComponent.apply(this, arguments)
+
+	}
+	var GradientStopPrototype = GradientStopComponent.prototype = Object.create(GradientStopBasePrototype)
+
+	GradientStopPrototype.constructor = GradientStopComponent
+
+	GradientStopPrototype.componentName = 'core.GradientStop'
+	core.addProperty(GradientStopPrototype, 'real', 'position')
+	core.addProperty(GradientStopPrototype, 'color', 'color')
+	GradientStopPrototype._getDeclaration = function() {
+		return new $core.gradient.GradientStop(this.color, this.position)
+	}
+	var $code$0 = function(value) {
+		this.parent._updateStyle()
+	}
+	$core._protoOnChanged(GradientStopPrototype, 'position', $code$0)
+	$core._protoOnChanged(GradientStopPrototype, 'color', $code$0)
+
+	GradientStopPrototype.$c = function($c) {
+		var $this = this;
+		GradientStopBasePrototype.$c.call(this, $c.$b = { })
+
+	}
+	GradientStopPrototype.$s = function($c) {
+		var $this = this;
+	GradientStopBasePrototype.$s.call(this, $c.$b); delete $c.$b
+$this.completed()
+}
+
+
+//=====[component core.BaseViewContent]=====================
+
+	var BaseViewContentBaseComponent = $core.Item
+	var BaseViewContentBasePrototype = BaseViewContentBaseComponent.prototype
+
+/**
+ * @constructor
+ * @extends {$core.Item}
+ */
+	var BaseViewContentComponent = $core.BaseViewContent = function(parent, row) {
+		BaseViewContentBaseComponent.apply(this, arguments)
+	//custom constructor:
+	{
+		this.style('will-change', 'scroll-position, transform, left, top')
+	}
+
+	}
+	var BaseViewContentPrototype = BaseViewContentComponent.prototype = Object.create(BaseViewContentBasePrototype)
+
+	BaseViewContentPrototype.constructor = BaseViewContentComponent
+
+	BaseViewContentPrototype.componentName = 'core.BaseViewContent'
+	BaseViewContentPrototype._updateScrollPositions = function(x,y,layout) {
+		this._setProperty('x', -x)
+		this._setProperty('y', -y)
+		if (layout === undefined || layout) //default true
+			this.parent._scheduleLayout()
+	}
+	var $code$0 = function(value) { this.parent._scheduleLayout() }
+	$core._protoOnChanged(BaseViewContentPrototype, 'x', $code$0)
+	$core._protoOnChanged(BaseViewContentPrototype, 'y', $code$0)
+
+	BaseViewContentPrototype.$c = function($c) {
+		var $this = this;
+		BaseViewContentBasePrototype.$c.call(this, $c.$b = { })
+
+	}
+	BaseViewContentPrototype.$s = function($c) {
+		var $this = this;
+	BaseViewContentBasePrototype.$s.call(this, $c.$b); delete $c.$b
+$this.completed()
+}
+
+
+//=====[component core.Border]=====================
+
+	var BorderBaseComponent = $core.Object
+	var BorderBasePrototype = BorderBaseComponent.prototype
+
+/**
+ * @constructor
+ * @extends {$core.Object}
+ */
+	var BorderComponent = $core.Border = function(parent, row) {
+		BorderBaseComponent.apply(this, arguments)
+
+	}
+	var BorderPrototype = BorderComponent.prototype = Object.create(BorderBasePrototype)
+
+	BorderPrototype.constructor = BorderComponent
+
+	BorderPrototype.componentName = 'core.Border'
+	core.addProperty(BorderPrototype, 'int', 'width')
+	core.addProperty(BorderPrototype, 'color', 'color', ("black"))
+	core.addLazyProperty(BorderPrototype, 'left', (function(__parent, __row) {
+		var lazy$left = new $core.BorderSide(__parent, __row)
+		var $c = { lazy$left : lazy$left }
+
+//creating component BorderSide
+			lazy$left.$c($c.$c$lazy$left = { })
+
+
+//setting up component BorderSide
+			var lazy$left = $c.lazy$left
+			lazy$left.$s($c.$c$lazy$left)
+			delete $c.$c$lazy$left
+
+//assigning name to ("left")
+			lazy$left._removeUpdater('name'); lazy$left.name = ("left");
+
+			lazy$left.completed()
+
+		return lazy$left
+}))
+	core.addLazyProperty(BorderPrototype, 'right', (function(__parent, __row) {
+		var lazy$right = new $core.BorderSide(__parent, __row)
+		var $c = { lazy$right : lazy$right }
+
+//creating component BorderSide
+			lazy$right.$c($c.$c$lazy$right = { })
+
+
+//setting up component BorderSide
+			var lazy$right = $c.lazy$right
+			lazy$right.$s($c.$c$lazy$right)
+			delete $c.$c$lazy$right
+
+//assigning name to ("right")
+			lazy$right._removeUpdater('name'); lazy$right.name = ("right");
+
+			lazy$right.completed()
+
+		return lazy$right
+}))
+	core.addLazyProperty(BorderPrototype, 'top', (function(__parent, __row) {
+		var lazy$top = new $core.BorderSide(__parent, __row)
+		var $c = { lazy$top : lazy$top }
+
+//creating component BorderSide
+			lazy$top.$c($c.$c$lazy$top = { })
+
+
+//setting up component BorderSide
+			var lazy$top = $c.lazy$top
+			lazy$top.$s($c.$c$lazy$top)
+			delete $c.$c$lazy$top
+
+//assigning name to ("top")
+			lazy$top._removeUpdater('name'); lazy$top.name = ("top");
+
+			lazy$top.completed()
+
+		return lazy$top
+}))
+	core.addLazyProperty(BorderPrototype, 'bottom', (function(__parent, __row) {
+		var lazy$bottom = new $core.BorderSide(__parent, __row)
+		var $c = { lazy$bottom : lazy$bottom }
+
+//creating component BorderSide
+			lazy$bottom.$c($c.$c$lazy$bottom = { })
+
+
+//setting up component BorderSide
+			var lazy$bottom = $c.lazy$bottom
+			lazy$bottom.$s($c.$c$lazy$bottom)
+			delete $c.$c$lazy$bottom
+
+//assigning name to ("bottom")
+			lazy$bottom._removeUpdater('name'); lazy$bottom.name = ("bottom");
+
+			lazy$bottom.completed()
+
+		return lazy$bottom
+}))
+/** @const @type {number} */
+	BorderPrototype.None = 0
+/** @const @type {number} */
+	BorderComponent.None = 0
+/** @const @type {number} */
+	BorderPrototype.Hidden = 1
+/** @const @type {number} */
+	BorderComponent.Hidden = 1
+/** @const @type {number} */
+	BorderPrototype.Dotted = 2
+/** @const @type {number} */
+	BorderComponent.Dotted = 2
+/** @const @type {number} */
+	BorderPrototype.Dashed = 3
+/** @const @type {number} */
+	BorderComponent.Dashed = 3
+/** @const @type {number} */
+	BorderPrototype.Solid = 4
+/** @const @type {number} */
+	BorderComponent.Solid = 4
+/** @const @type {number} */
+	BorderPrototype.Double = 5
+/** @const @type {number} */
+	BorderComponent.Double = 5
+/** @const @type {number} */
+	BorderPrototype.Groove = 6
+/** @const @type {number} */
+	BorderComponent.Groove = 6
+/** @const @type {number} */
+	BorderPrototype.Ridge = 7
+/** @const @type {number} */
+	BorderComponent.Ridge = 7
+/** @const @type {number} */
+	BorderPrototype.Inset = 8
+/** @const @type {number} */
+	BorderComponent.Inset = 8
+/** @const @type {number} */
+	BorderPrototype.Outset = 9
+/** @const @type {number} */
+	BorderComponent.Outset = 9
+	core.addProperty(BorderPrototype, 'enum', 'style', BorderComponent.Solid)
+/** @const @type {number} */
+	BorderPrototype.Inner = 0
+/** @const @type {number} */
+	BorderComponent.Inner = 0
+/** @const @type {number} */
+	BorderPrototype.Outer = 1
+/** @const @type {number} */
+	BorderComponent.Outer = 1
+/** @const @type {number} */
+	BorderPrototype.Center = 2
+/** @const @type {number} */
+	BorderComponent.Center = 2
+	core.addProperty(BorderPrototype, 'enum', 'type')
+	$core._protoOnChanged(BorderPrototype, 'color', function(value) {
+		var newColor = $core.Color.normalize(this.color)
+		this.parent.style('border-color', newColor)
+	})
+	$core._protoOnChanged(BorderPrototype, 'width', function(value) {
+		var parent = this.parent
+		parent.style('border-width', value)
+		switch(this.type) {
+		case this.Inner:
+			parent._borderXAdjust = 0
+			parent._borderYAdjust = 0
+			parent._borderInnerWidthAdjust = -2 * value
+			parent._borderInnerHeightAdjust = -2 * value
+			parent._setSizeAdjust()
+			break
+		case this.Outer:
+			parent._borderXAdjust = -value
+			parent._borderYAdjust = -value
+			parent._borderWidthAdjust = 0
+			parent._borderHeightAdjust = 0
+			parent._setSizeAdjust()
+			break
+		case this.Center:
+			parent._borderXAdjust = -value / 2
+			parent._borderYAdjust = -value / 2
+			parent._borderWidthAdjust = -value
+			parent._borderHeightAdjust = -value
+			parent._setSizeAdjust()
+			break
+		}
+	})
+	$core._protoOnChanged(BorderPrototype, 'type', function(value) {
+		var style
+		switch(value) {
+			case this.Inner:
+				style = 'border-box'; break;
+			case this.Outer:
+			case this.Center:
+				style = 'content-box'; break;
+		}
+		this.parent.style('box-sizing', style)
+	})
+	$core._protoOnChanged(BorderPrototype, 'style', function(value) {
+		var styleName
+		switch(value) {
+			case this.None: styleName = 'none'; break
+			case this.Hidden: styleName = 'hidden'; break
+			case this.Dotted: styleName = 'dotted'; break
+			case this.Dashed: styleName = 'dashed'; break
+			case this.Solid: styleName = 'solid'; break
+			case this.Double: styleName = 'double'; break
+			case this.Groove: styleName = 'groove'; break
+			case this.Ridge: styleName = 'ridge'; break
+			case this.Inset: styleName = 'inset'; break
+			case this.Outset: styleName = 'outset'; break
+		}
+
+		this.parent.style('border-style', styleName)
+	})
+
+	BorderPrototype.$c = function($c) {
+		var $this = this;
+		BorderBasePrototype.$c.call(this, $c.$b = { })
+
+	}
+	BorderPrototype.$s = function($c) {
+		var $this = this;
+	BorderBasePrototype.$s.call(this, $c.$b); delete $c.$b
+$this.completed()
+}
+
+
+//=====[component core.VideoPlayer]=====================
+
+	var VideoPlayerBaseComponent = $core.Item
+	var VideoPlayerBasePrototype = VideoPlayerBaseComponent.prototype
+
+/**
+ * @constructor
+ * @extends {$core.Item}
+ */
+	var VideoPlayerComponent = $core.VideoPlayer = function(parent, row) {
+		VideoPlayerBaseComponent.apply(this, arguments)
+	//custom constructor:
+	{
+		this.impl = null
+		this._createPlayer()
+	}
+
+	}
+	var VideoPlayerPrototype = VideoPlayerComponent.prototype = Object.create(VideoPlayerBasePrototype)
+
+	VideoPlayerPrototype.constructor = VideoPlayerComponent
+
+	VideoPlayerPrototype.componentName = 'core.VideoPlayer'
+	VideoPlayerPrototype.text = $core.createSignal('text')
+	VideoPlayerPrototype.finished = $core.createSignal('finished')
+	VideoPlayerPrototype.error = $core.createSignal('error')
+	core.addProperty(VideoPlayerPrototype, 'string', 'backend')
+	core.addProperty(VideoPlayerPrototype, 'string', 'source')
+	core.addProperty(VideoPlayerPrototype, 'string', 'backgroundImage')
+	core.addProperty(VideoPlayerPrototype, 'color', 'backgroundColor', ("#000"))
+	core.addProperty(VideoPlayerPrototype, 'float', 'volume', (1.0))
+	core.addProperty(VideoPlayerPrototype, 'bool', 'loop')
+	core.addProperty(VideoPlayerPrototype, 'bool', 'ready')
+	core.addProperty(VideoPlayerPrototype, 'bool', 'muted')
+	core.addProperty(VideoPlayerPrototype, 'bool', 'paused')
+	core.addProperty(VideoPlayerPrototype, 'bool', 'waiting')
+	core.addProperty(VideoPlayerPrototype, 'bool', 'seeking')
+	core.addProperty(VideoPlayerPrototype, 'bool', 'stalled')
+	core.addProperty(VideoPlayerPrototype, 'bool', 'autoPlay')
+	core.addProperty(VideoPlayerPrototype, 'real', 'duration')
+	core.addProperty(VideoPlayerPrototype, 'real', 'progress')
+	core.addProperty(VideoPlayerPrototype, 'real', 'buffered')
+	core.addProperty(VideoPlayerPrototype, 'real', 'startPosition')
+	VideoPlayerPrototype.play = function() {
+		if (!this.source)
+			return
+
+		log("play", this.source)
+		var player = this._getPlayer()
+		if (player) {
+			this._scheduleLayout()
+			player.play()
+		}
+		this.applyVolume();
+	}
+	VideoPlayerPrototype._getPlayer = function() {
+		if (this.impl === null)
+			this._createPlayer()
+		return this.impl
+	}
+	VideoPlayerPrototype._createPlayer = function() {
+		if (this.impl)
+			return this.impl
+
+		var source = this.source
+		var preferred = this.backend
+		log('preferred backend: ' + preferred)
+		var backends = $core.__videoBackends
+		var results = []
+		if (preferred && backends[preferred]) {
+			var backend = backends[preferred]()
+			return this.impl = backend.createPlayer(this)
+		} else {
+			for (var i in backends) {
+				var backend = backends[i]()
+				var score = backend.probeUrl(source)
+				if (score > 0)
+					results.push({ backend: backend, score: score })
+			}
+			results.sort(function(a, b) { return b.score - a.score })
+			if (results.length === 0)
+				throw new Error('no backends for source ' + source)
+			return this.impl = results[0].backend.createPlayer(this)
+		}
+	}
+	VideoPlayerPrototype.applyVolume = function() {
+		if (this.volume > 1.0)
+			this.volume = 1.0;
+		else if (this.volume < 0.0)
+			this.volume = 0.0;
+
+		var player = this._getPlayer()
+		if (player)
+			player.setVolume(this.volume)
+	}
+	VideoPlayerPrototype._scheduleLayout = function() {
+		this._context.delayedAction('layout', this, this._doLayout)
+	}
+	VideoPlayerPrototype.pause = function() {
+		var player = this._getPlayer()
+		if (player)
+			player.pause()
+	}
+	VideoPlayerPrototype._doLayout = function() {
+		var player = this._getPlayer()
+		if (player)
+			player.setRect.apply(player, this.toScreen().slice(0, 4))
+	}
+	VideoPlayerPrototype.stop = function() {
+		var player = this._getPlayer()
+		if (player)
+			player.stop()
+	}
+	VideoPlayerPrototype.getAudioTracks = function() {
+		var player = this._getPlayer()
+		if (player)
+			return player.getAudioTracks()
+		else
+			return []
+	}
+	VideoPlayerPrototype.getSubtitles = function() {
+		var player = this._getPlayer()
+		if (player)
+			return player.getSubtitles()
+		else
+			return []
+	}
+	VideoPlayerPrototype.getVideoTracks = function() {
+		var player = this._getPlayer()
+		if (player)
+			return player.getVideoTracks()
+		else
+			return []
+	}
+	VideoPlayerPrototype.__complete = function() { VideoPlayerBasePrototype.__complete.call(this)
+var player = this._getPlayer()
+		if (player)
+			player.setBackgroundColor(this.backgroundColor)
+
+		if (this.autoPlay && this.source)
+			this.play()
+}
+	VideoPlayerPrototype.volumeUp = function() { this.volume += 0.1 }
+	VideoPlayerPrototype.volumeDown = function() { this.volume -= 0.1 }
+	VideoPlayerPrototype.toggleMute = function() { var player = this._getPlayer(); if (player) player.setMute(!this.muted) }
+	VideoPlayerPrototype.setOption = function(name,value) {
+		var player = this._getPlayer()
+		if (player)
+			player.setOption(name, value)
+	}
+	VideoPlayerPrototype.setAudioTrack = function(trackId) {
+		var player = this._getPlayer()
+		if (player)
+			player.setAudioTrack(trackId)
+	}
+	VideoPlayerPrototype.setSubtitles = function(trackId) {
+		var player = this._getPlayer()
+		if (player)
+			player.setSubtitles(trackId)
+	}
+	VideoPlayerPrototype.setVideoTrack = function(trackId) {
+		var player = this._getPlayer()
+		if (player)
+			player.setVideoTrack(trackId)
+	}
+	VideoPlayerPrototype.setupDrm = function(type,options,callback,error) {
+		var player = this._getPlayer()
+		if (player)
+			player.setupDrm(type, options, callback, error)
+	}
+	VideoPlayerPrototype.seek = function(value) {
+		var player = this._getPlayer()
+		if (player)
+			player.seek(value)
+	}
+	VideoPlayerPrototype.seekTo = function(value) {
+		var player = this._getPlayer()
+		if (player)
+			player.seekTo(value)
+	}
+	$core._protoOnChanged(VideoPlayerPrototype, 'backend', function(value) {
+		this.impl = null
+		this._createPlayer()
+	})
+	$core._protoOnChanged(VideoPlayerPrototype, 'backgroundColor', function(value) {
+		var player = this._getPlayer()
+		if (player)
+			player.setBackgroundColor(value)
+	})
+	$core._protoOnChanged(VideoPlayerPrototype, 'loop', function(value) {
+		var player = this._getPlayer()
+		if (player)
+			player.setLoop(value)
+	})
+	$core._protoOnChanged(VideoPlayerPrototype, 'source', function(value) {
+		var player = this._getPlayer()
+		if (player)
+			player.setSource(value)
+	})
+	$core._protoOnChanged(VideoPlayerPrototype, 'recursiveVisible', function(value) {
+		var player = this._getPlayer()
+		if (player)
+			player.setVisibility(value)
+	})
+	$core._protoOnChanged(VideoPlayerPrototype, 'ready', function(value) { log("ReadyState: " + this.ready) })
+	$core._protoOnChanged(VideoPlayerPrototype, 'volume', function(value) { this.applyVolume() })
+	$core._protoOnChanged(VideoPlayerPrototype, 'autoPlay', function(value) { this.setOption('autoplay', value) })
+	$core._protoOnChanged(VideoPlayerPrototype, 'backgroundImage', function(value) { this.setOption('poster', value) })
+	$core._protoOn(VideoPlayerPrototype, 'newBoundingBox', function() {
+		this._scheduleLayout()
+	})
+	$core._protoOn(VideoPlayerPrototype, 'error', function(error) {
+		this.paused = false
+		this.waiting = false
+	})
+
+	VideoPlayerPrototype.$c = function($c) {
+		var $this = this;
+		VideoPlayerBasePrototype.$c.call(this, $c.$b = { })
+
+	}
+	VideoPlayerPrototype.$s = function($c) {
+		var $this = this;
+	VideoPlayerBasePrototype.$s.call(this, $c.$b); delete $c.$b
+$this.completed()
+}
+
+
+//=====[component controls.web.api.Method]=====================
+
+	var MethodBaseComponent = $core.Object
+	var MethodBasePrototype = MethodBaseComponent.prototype
+
+/**
+ * @constructor
+ * @extends {$core.Object}
+ */
+	var MethodComponent = $controls$web$api.Method = function(parent, row) {
+		MethodBaseComponent.apply(this, arguments)
+
+	}
+	var MethodPrototype = MethodComponent.prototype = Object.create(MethodBasePrototype)
+
+	MethodPrototype.constructor = MethodComponent
+
+	MethodPrototype.componentName = 'controls.web.api.Method'
+	core.addProperty(MethodPrototype, 'string', 'type', ("GET"))
+	core.addProperty(MethodPrototype, 'string', 'name')
+	core.addProperty(MethodPrototype, 'string', 'path')
+	MethodPrototype.args = function() {
+	}
+	MethodPrototype.call = function(api,args) {
+		var nargs = this.args.length
+		if (args.length < nargs + 2)
+			throw new Error("not enough arguments for method " + this.name)
+		nargs = args.length - 2
+
+		var argsargs 	= Array.prototype.slice.call(args, 0, nargs)
+		var data 		= this.args.apply(this, argsargs)
+		var callback 	= args[nargs + 0]
+		var error 		= args[nargs + 1]
+		var headers 	= {}
+		var newHeaders  = this.headers(headers)
+		if (newHeaders !== undefined)
+			headers = newHeaders
+		var path = this.pathArgs(this.path, argsargs)
+
+		api.call(path, callback, error, this.type, data, headers)
+	}
+	MethodPrototype.headers = function(headers) {
+	}
+	MethodPrototype.pathArgs = function(path,args) {
+		var path = this.path
+		var re = /\{(\w+)\}/g
+		var index = 0
+		path = path.replace(re, function(m) {
+			return (index < args.length)? args[index++]: ''
+		})
+
+		return path
+	}
+	$core._protoOnChanged(MethodPrototype, 'name', function(value) {
+		this.parent._registerMethod(this.name, this)
+	})
+
+	MethodPrototype.$c = function($c) {
+		var $this = this;
+		MethodBasePrototype.$c.call(this, $c.$b = { })
+
+	}
+	MethodPrototype.$s = function($c) {
+		var $this = this;
+	MethodBasePrototype.$s.call(this, $c.$b); delete $c.$b
+$this.completed()
+}
+
+
 //=====[component core.Shadow]=====================
 
 	var ShadowBaseComponent = $core.Object
@@ -7286,113 +7440,6 @@ $this.completed()
 		var $this = this;
 	ShadowBasePrototype.$s.call(this, $c.$b); delete $c.$b
 $this.completed()
-}
-
-
-//=====[component core.Request]=====================
-
-	var RequestBaseComponent = $core.Object
-	var RequestBasePrototype = RequestBaseComponent.prototype
-
-/**
- * @constructor
- * @extends {$core.Object}
- */
-	var RequestComponent = $core.Request = function(parent, row) {
-		RequestBaseComponent.apply(this, arguments)
-
-	}
-	var RequestPrototype = RequestComponent.prototype = Object.create(RequestBasePrototype)
-
-	RequestPrototype.constructor = RequestComponent
-
-	RequestPrototype.componentName = 'core.Request'
-	core.addProperty(RequestPrototype, 'bool', 'loading', (false))
-	RequestPrototype.ajax = function(request) {
-		if (request.done)
-			request.done = this._context.wrapNativeCallback(request.done)
-		if (request.error)
-			request.error = this._context.wrapNativeCallback(request.error)
-		this._context.backend.ajax(this, request)
-	}
-
-	RequestPrototype.$c = function($c) {
-		var $this = this;
-		RequestBasePrototype.$c.call(this, $c.$b = { })
-
-	}
-	RequestPrototype.$s = function($c) {
-		var $this = this;
-	RequestBasePrototype.$s.call(this, $c.$b); delete $c.$b
-$this.completed()
-}
-
-
-//=====[component core.BorderSide]=====================
-
-	var BorderSideBaseComponent = $core.Object
-	var BorderSideBasePrototype = BorderSideBaseComponent.prototype
-
-/**
- * @constructor
- * @extends {$core.Object}
- */
-	var BorderSideComponent = $core.BorderSide = function(parent, row) {
-		BorderSideBaseComponent.apply(this, arguments)
-
-	}
-	var BorderSidePrototype = BorderSideComponent.prototype = Object.create(BorderSideBasePrototype)
-
-	BorderSidePrototype.constructor = BorderSideComponent
-
-	BorderSidePrototype.componentName = 'core.BorderSide'
-	core.addProperty(BorderSidePrototype, 'string', 'name')
-	core.addProperty(BorderSidePrototype, 'int', 'width')
-	core.addProperty(BorderSidePrototype, 'color', 'color')
-	core.addProperty(BorderSidePrototype, 'int', 'style')
-	BorderSidePrototype._updateStyle = function() {
-		if (!this.parent || !this.parent.parent || !this.name)
-			return
-
-		var Border = $core.Border
-		var styleName
-		switch(this.style) {
-		case _globals.core.Border.prototype.None: styleName = 'none'; break
-		case _globals.core.Border.prototype.Hidden: styleName = 'hidden'; break
-		case _globals.core.Border.prototype.Dotted: styleName = 'dotted'; break
-		case _globals.core.Border.prototype.Dashed: styleName = 'dashed'; break
-		case _globals.core.Border.prototype.Solid: styleName = 'solid'; break
-		case _globals.core.Border.prototype.Double: styleName = 'double'; break
-		case _globals.core.Border.prototype.Groove: styleName = 'groove'; break
-		case _globals.core.Border.prototype.Ridge: styleName = 'ridge'; break
-		case _globals.core.Border.prototype.Inset: styleName = 'inset'; break
-		case _globals.core.Border.prototype.Outset: styleName = 'outset'; break
-		}
-
-		var borderCss = this.width + "px " + styleName + " " + $core.Color.normalize(this.color)
-		this.parent.parent.style('border-' + this.name, borderCss)
-	}
-	var $code$0 = function(value) { this._updateStyle() }
-	$core._protoOnChanged(BorderSidePrototype, 'width', $code$0)
-	$core._protoOnChanged(BorderSidePrototype, 'color', $code$0)
-	$core._protoOnChanged(BorderSidePrototype, 'style', $code$0)
-
-	BorderSidePrototype.$c = function($c) {
-		var $this = this;
-		BorderSideBasePrototype.$c.call(this, $c.$b = { })
-
-	}
-	BorderSidePrototype.$s = function($c) {
-		var $this = this;
-	BorderSideBasePrototype.$s.call(this, $c.$b); delete $c.$b
-//assigning width to (${parent.width})
-			$this._replaceUpdater('width', function() { $this.width = ($this.parent.width) }, [$this.parent,'width'])
-//assigning color to (${parent.color})
-			$this._replaceUpdater('color', function() { $this.color = ($this.parent.color) }, [$this.parent,'color'])
-//assigning style to (${parent.style})
-			$this._replaceUpdater('style', function() { $this.style = ($this.parent.style) }, [$this.parent,'style'])
-
-			$this.completed()
 }
 
 
@@ -7488,6 +7535,113 @@ $this.completed()
 	FontPrototype.$s = function($c) {
 		var $this = this;
 	FontBasePrototype.$s.call(this, $c.$b); delete $c.$b
+$this.completed()
+}
+
+
+//=====[component core.BorderSide]=====================
+
+	var BorderSideBaseComponent = $core.Object
+	var BorderSideBasePrototype = BorderSideBaseComponent.prototype
+
+/**
+ * @constructor
+ * @extends {$core.Object}
+ */
+	var BorderSideComponent = $core.BorderSide = function(parent, row) {
+		BorderSideBaseComponent.apply(this, arguments)
+
+	}
+	var BorderSidePrototype = BorderSideComponent.prototype = Object.create(BorderSideBasePrototype)
+
+	BorderSidePrototype.constructor = BorderSideComponent
+
+	BorderSidePrototype.componentName = 'core.BorderSide'
+	core.addProperty(BorderSidePrototype, 'string', 'name')
+	core.addProperty(BorderSidePrototype, 'int', 'width')
+	core.addProperty(BorderSidePrototype, 'color', 'color')
+	core.addProperty(BorderSidePrototype, 'int', 'style')
+	BorderSidePrototype._updateStyle = function() {
+		if (!this.parent || !this.parent.parent || !this.name)
+			return
+
+		var Border = $core.Border
+		var styleName
+		switch(this.style) {
+		case _globals.core.Border.prototype.None: styleName = 'none'; break
+		case _globals.core.Border.prototype.Hidden: styleName = 'hidden'; break
+		case _globals.core.Border.prototype.Dotted: styleName = 'dotted'; break
+		case _globals.core.Border.prototype.Dashed: styleName = 'dashed'; break
+		case _globals.core.Border.prototype.Solid: styleName = 'solid'; break
+		case _globals.core.Border.prototype.Double: styleName = 'double'; break
+		case _globals.core.Border.prototype.Groove: styleName = 'groove'; break
+		case _globals.core.Border.prototype.Ridge: styleName = 'ridge'; break
+		case _globals.core.Border.prototype.Inset: styleName = 'inset'; break
+		case _globals.core.Border.prototype.Outset: styleName = 'outset'; break
+		}
+
+		var borderCss = this.width + "px " + styleName + " " + $core.Color.normalize(this.color)
+		this.parent.parent.style('border-' + this.name, borderCss)
+	}
+	var $code$0 = function(value) { this._updateStyle() }
+	$core._protoOnChanged(BorderSidePrototype, 'width', $code$0)
+	$core._protoOnChanged(BorderSidePrototype, 'color', $code$0)
+	$core._protoOnChanged(BorderSidePrototype, 'style', $code$0)
+
+	BorderSidePrototype.$c = function($c) {
+		var $this = this;
+		BorderSideBasePrototype.$c.call(this, $c.$b = { })
+
+	}
+	BorderSidePrototype.$s = function($c) {
+		var $this = this;
+	BorderSideBasePrototype.$s.call(this, $c.$b); delete $c.$b
+//assigning width to (${parent.width})
+			$this._replaceUpdater('width', function() { $this.width = ($this.parent.width) }, [$this.parent,'width'])
+//assigning color to (${parent.color})
+			$this._replaceUpdater('color', function() { $this.color = ($this.parent.color) }, [$this.parent,'color'])
+//assigning style to (${parent.style})
+			$this._replaceUpdater('style', function() { $this.style = ($this.parent.style) }, [$this.parent,'style'])
+
+			$this.completed()
+}
+
+
+//=====[component core.Request]=====================
+
+	var RequestBaseComponent = $core.Object
+	var RequestBasePrototype = RequestBaseComponent.prototype
+
+/**
+ * @constructor
+ * @extends {$core.Object}
+ */
+	var RequestComponent = $core.Request = function(parent, row) {
+		RequestBaseComponent.apply(this, arguments)
+
+	}
+	var RequestPrototype = RequestComponent.prototype = Object.create(RequestBasePrototype)
+
+	RequestPrototype.constructor = RequestComponent
+
+	RequestPrototype.componentName = 'core.Request'
+	core.addProperty(RequestPrototype, 'bool', 'loading', (false))
+	RequestPrototype.ajax = function(request) {
+		if (request.done)
+			request.done = this._context.wrapNativeCallback(request.done)
+		if (request.error)
+			request.error = this._context.wrapNativeCallback(request.error)
+		this._context.backend.ajax(this, request)
+	}
+
+	RequestPrototype.$c = function($c) {
+		var $this = this;
+		RequestBasePrototype.$c.call(this, $c.$b = { })
+
+	}
+	RequestPrototype.$s = function($c) {
+		var $this = this;
+	RequestBasePrototype.$s.call(this, $c.$b); delete $c.$b
 $this.completed()
 }
 
