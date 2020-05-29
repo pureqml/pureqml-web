@@ -3451,8 +3451,8 @@ var _this$child0 = new $core.Rectangle($this)
 			_this$child0.$s($c.$c$_this$child0)
 			delete $c.$c$_this$child0
 
-//assigning color to ("#424242")
-			_this$child0._removeUpdater('color'); _this$child0.color = ("#424242");
+//assigning color to ("#141414")
+			_this$child0._removeUpdater('color'); _this$child0.color = ("#141414");
 //assigning anchors.fill to (${parent})
 			_this$child0.anchors._removeUpdater('fill'); _this$child0.anchors.fill = (_this$child0.parent);
 
@@ -3845,6 +3845,7 @@ $this.completed()
 	var videoPlayer = this._get('videoPlayer', true)
 
 		this.visible = false
+		this.display = false
 		videoPlayer.source = ""
 		videoPlayer.stop()
 	}
@@ -3870,16 +3871,18 @@ var _this$child0 = new $core.VideoPlayer($this)
 	NestedVideoPrototype.$s = function($c) {
 		var $this = this;
 	NestedVideoBasePrototype.$s.call(this, $c.$b); delete $c.$b
-//assigning color to ("transparent")
-			$this._removeUpdater('color'); $this.color = ("transparent");
-//assigning visible to (false)
-			$this._removeUpdater('visible'); $this.visible = (false);
-//assigning transform.scaleX to (${display} ? 1.1 : 0.001)
-			$this.transform._replaceUpdater('scaleX', function() { $this.transform.scaleX = ($this.display ? 1.1 : 0.001) }, [$this,'display'])
-//assigning transform.scaleY to (1.1)
-			$this.transform._removeUpdater('scaleY'); $this.transform.scaleY = (1.1);
 //assigning clip to (true)
 			$this._removeUpdater('clip'); $this.clip = (true);
+//assigning color to ("transparent")
+			$this._removeUpdater('color'); $this.color = ("transparent");
+//assigning transform.rotateZ to (${display} ? 0 : - 180)
+			$this.transform._replaceUpdater('rotateZ', function() { $this.transform.rotateZ = ($this.display ? 0 : - 180) }, [$this,'display'])
+//assigning visible to (false)
+			$this._removeUpdater('visible'); $this.visible = (false);
+//assigning transform.scaleX to (${display} ? 1.05 : 0.001)
+			$this.transform._replaceUpdater('scaleX', function() { $this.transform.scaleX = ($this.display ? 1.05 : 0.001) }, [$this,'display'])
+//assigning transform.scaleY to (${display} ? 1.05 : 0.001)
+			$this.transform._replaceUpdater('scaleY', function() { $this.transform.scaleY = ($this.display ? 1.05 : 0.001) }, [$this,'display'])
 
 //setting up component VideoPlayer
 			var _this$child0 = $c._this$child0
@@ -3904,10 +3907,10 @@ var _this$child0 = new $core.VideoPlayer($this)
 	behavior__this_on_transform.$s(behavior__this_on_transform$c.$c$behavior__this_on_transform)
 	delete behavior__this_on_transform$c.$c$behavior__this_on_transform
 
-//assigning duration to (300)
-	behavior__this_on_transform._removeUpdater('duration'); behavior__this_on_transform.duration = (300);
-//assigning delay to (300)
-	behavior__this_on_transform._removeUpdater('delay'); behavior__this_on_transform.delay = (300);
+//assigning duration to (400)
+	behavior__this_on_transform._removeUpdater('duration'); behavior__this_on_transform.duration = (400);
+//assigning delay to (400)
+	behavior__this_on_transform._removeUpdater('delay'); behavior__this_on_transform.delay = (400);
 
 	behavior__this_on_transform.completed()
 	$this.setAnimation('transform', behavior__this_on_transform);
@@ -5093,6 +5096,10 @@ $this.delegate = (function(__parent, __row) {
 			delegate.$s($c.$c$delegate)
 			delete $c.$c$delegate
 
+//assigning border.color to (${activeFocus} ? "#8AF" : "#0000")
+			delegate.border._replaceUpdater('color', function() { delegate.border.color = (delegate.activeFocus ? "#8AF" : "#0000") }, [delegate,'activeFocus'])
+//assigning border.width to (${activeFocus} ? 1 : 0)
+			delegate.border._replaceUpdater('width', function() { delegate.border.width = (delegate.activeFocus ? 1 : 0) }, [delegate,'activeFocus'])
 //assigning clip to (true)
 			delegate._removeUpdater('clip'); delegate.clip = (true);
 //assigning color to ("#464646")
@@ -5113,29 +5120,31 @@ $this.delegate = (function(__parent, __row) {
 			delegate._replaceUpdater('width', function() { delegate.width = (delegate.parent.cellWidth) }, [delegate.parent,'cellWidth'])
 //assigning radius to (${nowonTvGrid.delegateRadius})
 			delegate._replaceUpdater('radius', function() { delegate.radius = (delegate._get('nowonTvGrid').delegateRadius) }, [delegate._get('nowonTvGrid'),'delegateRadius'])
-//assigning effects.shadow.color to (${active} ? "#00f" : "#0000")
-			delegate.effects.shadow._replaceUpdater('color', function() { delegate.effects.shadow.color = (delegate.active ? "#00f" : "#0000") }, [delegate,'active'])
+//assigning effects.shadow.color to (${activeFocus} ? "#8AF" : "#0000")
+			delegate.effects.shadow._replaceUpdater('color', function() { delegate.effects.shadow.color = (delegate.activeFocus ? "#8AF" : "#0000") }, [delegate,'activeFocus'])
 //assigning active to (${activeFocus})
 			delegate._replaceUpdater('active', function() { delegate.active = (delegate.activeFocus) }, [delegate,'activeFocus'])
-//assigning effects.shadow.spread to (1)
-			delegate.effects.shadow._removeUpdater('spread'); delegate.effects.shadow.spread = (1);
-//assigning z to (${active} ? ${parent.z} + 1 : ${parent.z})
-			delegate._replaceUpdater('z', function() { delegate.z = (delegate.active ? delegate.parent.z + 1 : delegate.parent.z) }, [delegate.parent,'z',delegate,'active'])
-//assigning transform.scaleX to (${active} ? 1.05 : 1)
-			delegate.transform._replaceUpdater('scaleX', function() { delegate.transform.scaleX = (delegate.active ? 1.05 : 1) }, [delegate,'active'])
-//assigning transform.scaleY to (${active} ? 1.05 : 1)
-			delegate.transform._replaceUpdater('scaleY', function() { delegate.transform.scaleY = (delegate.active ? 1.05 : 1) }, [delegate,'active'])
+//assigning effects.shadow.spread to (2)
+			delegate.effects.shadow._removeUpdater('spread'); delegate.effects.shadow.spread = (2);
+//assigning z to (${activeFocus} ? ${parent.z} + 1 : ${parent.z})
+			delegate._replaceUpdater('z', function() { delegate.z = (delegate.activeFocus ? delegate.parent.z + 1 : delegate.parent.z) }, [delegate.parent,'z',delegate,'activeFocus'])
+//assigning transform.scaleX to (${activeFocus} ? 1.05 : 1)
+			delegate.transform._replaceUpdater('scaleX', function() { delegate.transform.scaleX = (delegate.activeFocus ? 1.05 : 1) }, [delegate,'activeFocus'])
+//assigning transform.scaleY to (${activeFocus} ? 1.05 : 1)
+			delegate.transform._replaceUpdater('scaleY', function() { delegate.transform.scaleY = (delegate.activeFocus ? 1.05 : 1) }, [delegate,'activeFocus'])
 			delegate.on('clicked', function() {
 	var model = this._get('model', true)
  this.parent.currentIndex = model.index; this.pressed() }.bind(delegate))
 			delegate.on('pressed', function() {
 	var model = this._get('model', true)
  this.parent.play(model.index) }.bind(delegate))
-			delegate.onChanged('active', function(value) {
+			delegate.onChanged('activeFocus', function(value) {
 	var flipTimer = this._get('flipTimer', true)
 
-			if (!value)
+			if (!value) {
+				this.transform.rotateZ = 0
 				return
+			}
 
 			flipTimer.restart()
 		}.bind(delegate))
@@ -5312,9 +5321,11 @@ $this.delegate = (function(__parent, __row) {
 			delegate$child6.on('triggered', function() {
 	var model = this._get('model', true), nowonTvGrid = this._get('nowonTvGrid', true)
 
-				if (!this.parent.active)
+				if (!this.parent.activeFocus)
 					return
 				this.parent.transform.scaleX = 0
+				this.parent.transform.scaleY = 0
+				this.parent.transform.rotateZ = 180
 				nowonTvGrid.itemFocused(model.index)
 			}.bind(delegate$child6))
 
@@ -5331,8 +5342,8 @@ $this.delegate = (function(__parent, __row) {
 	behavior_delegate_on_transform.$s(behavior_delegate_on_transform$c.$c$behavior_delegate_on_transform)
 	delete behavior_delegate_on_transform$c.$c$behavior_delegate_on_transform
 
-//assigning duration to (300)
-	behavior_delegate_on_transform._removeUpdater('duration'); behavior_delegate_on_transform.duration = (300);
+//assigning duration to (400)
+	behavior_delegate_on_transform._removeUpdater('duration'); behavior_delegate_on_transform.duration = (400);
 
 	behavior_delegate_on_transform.completed()
 	delegate.setAnimation('transform', behavior_delegate_on_transform);
@@ -5349,8 +5360,8 @@ $this.delegate = (function(__parent, __row) {
 	behavior_delegate_on_boxshadow.$s(behavior_delegate_on_boxshadow$c.$c$behavior_delegate_on_boxshadow)
 	delete behavior_delegate_on_boxshadow$c.$c$behavior_delegate_on_boxshadow
 
-//assigning duration to (300)
-	behavior_delegate_on_boxshadow._removeUpdater('duration'); behavior_delegate_on_boxshadow.duration = (300);
+//assigning duration to (400)
+	behavior_delegate_on_boxshadow._removeUpdater('duration'); behavior_delegate_on_boxshadow.duration = (400);
 
 	behavior_delegate_on_boxshadow.completed()
 	delegate.setAnimation('boxshadow', behavior_delegate_on_boxshadow);
@@ -5905,16 +5916,28 @@ var _this$child0 = new $core.Item($this)
 			_this_child0$child1._removeUpdater('keyProcessDelay'); _this_child0$child1.keyProcessDelay = (300);
 //assigning delegateRadius to (${mosaicPageProto.delegateRadius})
 			_this_child0$child1._replaceUpdater('delegateRadius', function() { _this_child0$child1.delegateRadius = (_this_child0$child1._get('mosaicPageProto').delegateRadius) }, [_this_child0$child1._get('mosaicPageProto'),'delegateRadius'])
+//assigning spacing to (((20) * ${context.virtualScale}))
+			_this_child0$child1._replaceUpdater('spacing', function() { _this_child0$child1.spacing = (((20) * _this_child0$child1._context.virtualScale)) }, [_this_child0$child1._context,'virtualScale'])
 
 //setting up component NestedVideo
 			var _this_child0_child1$highlight = $c._this_child0_child1$highlight
 			_this_child0_child1$highlight.$s($c.$c$_this_child0_child1$highlight)
 			delete $c.$c$_this_child0_child1$highlight
 
-//assigning z to (${display} ? 1 : 0)
-			_this_child0_child1$highlight._replaceUpdater('z', function() { _this_child0_child1$highlight.z = (_this_child0_child1$highlight.display ? 1 : 0) }, [_this_child0_child1$highlight,'display'])
+//assigning border.color to ("#8AF")
+			_this_child0_child1$highlight.border._removeUpdater('color'); _this_child0_child1$highlight.border.color = ("#8AF");
+//assigning effects.shadow.blur to (10)
+			_this_child0_child1$highlight.effects.shadow._removeUpdater('blur'); _this_child0_child1$highlight.effects.shadow.blur = (10);
 //assigning radius to (${parent.delegateRadius})
 			_this_child0_child1$highlight._replaceUpdater('radius', function() { _this_child0_child1$highlight.radius = (_this_child0_child1$highlight.parent.delegateRadius) }, [_this_child0_child1$highlight.parent,'delegateRadius'])
+//assigning effects.shadow.color to ("#8AF")
+			_this_child0_child1$highlight.effects.shadow._removeUpdater('color'); _this_child0_child1$highlight.effects.shadow.color = ("#8AF");
+//assigning border.width to (1)
+			_this_child0_child1$highlight.border._removeUpdater('width'); _this_child0_child1$highlight.border.width = (1);
+//assigning effects.shadow.spread to (2)
+			_this_child0_child1$highlight.effects.shadow._removeUpdater('spread'); _this_child0_child1$highlight.effects.shadow.spread = (2);
+//assigning z to (${display} ? 1 : 0)
+			_this_child0_child1$highlight._replaceUpdater('z', function() { _this_child0_child1$highlight.z = (_this_child0_child1$highlight.display ? 1 : 0) }, [_this_child0_child1$highlight,'display'])
 			_this_child0_child1$highlight.on('clicked', function() {
 	var mosaicGrid = this._get('mosaicGrid', true)
  mosaicGrid.play(mosaicGrid.currentIndex) }.bind(_this_child0_child1$highlight))
