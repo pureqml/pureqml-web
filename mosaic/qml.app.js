@@ -5141,6 +5141,11 @@ $this.delegate = (function(__parent, __row) {
 			delegate.onChanged('activeFocus', function(value) {
 	var flipTimer = this._get('flipTimer', true)
 
+			if (!this.parent._firstTimeFlag) {
+				this.parent._firstTimeFlag = true
+				return
+			}
+
 			if (!value) {
 				this.transform.rotateZ = 0
 				return
