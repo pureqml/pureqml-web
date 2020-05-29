@@ -3845,7 +3845,7 @@ $this.completed()
 	var videoPlayer = this._get('videoPlayer', true)
 
 		this.visible = false
-		this.display = false
+		videoPlayer.source = ""
 		videoPlayer.stop()
 	}
 	NestedVideoPrototype.showAndPlay = function(source) {
@@ -5396,8 +5396,8 @@ $this.delegate = (function(__parent, __row) {
 
 
 			_this$model.completed()
-//assigning cellHeight to (${cellWidth} * 0.625)
-			$this._replaceUpdater('cellHeight', function() { $this.cellHeight = ($this.cellWidth * 0.625) }, [$this,'cellWidth'])
+//assigning cellHeight to (${cellWidth} * 0.5625)
+			$this._replaceUpdater('cellHeight', function() { $this.cellHeight = ($this.cellWidth * 0.5625) }, [$this,'cellWidth'])
 
 			$this.completed()
 }
@@ -6015,7 +6015,10 @@ var _this$child0 = new $core.Item($this)
 			}.bind(_this_child0$child1)
 			_this_child0$child1.on('play', function(idx) {
 	var videoPlayer = this._get('videoPlayer', true)
- Modernizr.prefixed('requestFullscreen', videoPlayer.element.dom)() }.bind(_this_child0$child1))
+
+				if (videoPlayer.ready)
+					Modernizr.prefixed('requestFullscreen', videoPlayer.element.dom)()
+			}.bind(_this_child0$child1))
 			_this_child0$child1.on('itemFocused', function(idx) { this.focusIndex(idx) }.bind(_this_child0$child1))
 			_this_child0$child1.onChanged('currentIndex', function(value) { this.highlight.hide() }.bind(_this_child0$child1))
 			_this_child0$child1.onPressed('Back', function(key,event) { this.focusIndex(this.currentIndex) }.bind(_this_child0$child1))
