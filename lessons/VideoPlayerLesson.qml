@@ -115,8 +115,6 @@ Lesson {
 						{ "title": "paused", "value": false, "type": "bool" },
 						{ "title": "waiting", "value": false, "type": "bool" },
 						{ "title": "autoPlay", "value": false, "type": "bool" },
-						{ "title": "seeking", "value": false, "type": "bool" },
-						{ "title": "stalled", "value": false, "type": "bool" },
 						{ "title": "duration", "value": 0.0 },
 						{ "title": "progress", "value": 0.0 },
 						{ "title": "buffered", "value": 0.0 }
