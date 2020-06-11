@@ -4212,8 +4212,8 @@ var _this$child0 = new $core.MouseMoveMixin($this)
 	behavior__this_on_opacity.$s(behavior__this_on_opacity$c.$c$behavior__this_on_opacity)
 	delete behavior__this_on_opacity$c.$c$behavior__this_on_opacity
 
-//assigning duration to (400)
-	behavior__this_on_opacity._removeUpdater('duration'); behavior__this_on_opacity.duration = (400);
+//assigning duration to (900)
+	behavior__this_on_opacity._removeUpdater('duration'); behavior__this_on_opacity.duration = (900);
 
 	behavior__this_on_opacity.completed()
 	$this.setAnimation('opacity', behavior__this_on_opacity);
@@ -4313,6 +4313,10 @@ var _this$child0 = new $core.VideoPlayer($this)
 			$this._removeUpdater('color'); $this.color = ("transparent");
 //assigning visible to (false)
 			$this._removeUpdater('visible'); $this.visible = (false);
+//assigning transform.scaleX to (${display} ? 1.05 : 1.0)
+			$this.transform._replaceUpdater('scaleX', function() { $this.transform.scaleX = ($this.display ? 1.05 : 1.0) }, [$this,'display'])
+//assigning transform.scaleY to (${display} ? 1.05 : 1.0)
+			$this.transform._replaceUpdater('scaleY', function() { $this.transform.scaleY = ($this.display ? 1.05 : 1.0) }, [$this,'display'])
 //assigning clip to (true)
 			$this._removeUpdater('clip'); $this.clip = (true);
 
@@ -4327,6 +4331,23 @@ var _this$child0 = new $core.VideoPlayer($this)
 			_this$child0.anchors._removeUpdater('fill'); _this$child0.anchors.fill = (_this$child0.parent);
 
 			_this$child0.completed()
+	var behavior__this_on_transform = new $core.Animation($this)
+	var behavior__this_on_transform$c = { behavior__this_on_transform: behavior__this_on_transform }
+
+//creating component Animation
+	behavior__this_on_transform.$c(behavior__this_on_transform$c.$c$behavior__this_on_transform = { })
+
+
+//setting up component Animation
+	var behavior__this_on_transform = behavior__this_on_transform$c.behavior__this_on_transform
+	behavior__this_on_transform.$s(behavior__this_on_transform$c.$c$behavior__this_on_transform)
+	delete behavior__this_on_transform$c.$c$behavior__this_on_transform
+
+//assigning duration to (400)
+	behavior__this_on_transform._removeUpdater('duration'); behavior__this_on_transform.duration = (400);
+
+	behavior__this_on_transform.completed()
+	$this.setAnimation('transform', behavior__this_on_transform);
 
 			$this.completed()
 }
