@@ -40,8 +40,6 @@ if (!_globals.controls) /** @const */ _globals.controls = {}
 var $controls = _globals.controls
 if (!_globals.controls.core) /** @const */ _globals.controls.core = {}
 var $controls$core = _globals.controls.core
-if (!_globals.controls.mixins) /** @const */ _globals.controls.mixins = {}
-var $controls$mixins = _globals.controls.mixins
 if (!_globals.controls.pure) /** @const */ _globals.controls.pure = {}
 var $controls$pure = _globals.controls.pure
 if (!_globals.controls.experimental) /** @const */ _globals.controls.experimental = {}
@@ -867,6 +865,10 @@ exports.addProperty = function(proto, type, name, defaultValue) {
 					backend.cancelAnimationFrame(storage.frameRequest)
 					storage.frameRequest = undefined
 				}
+				if (storage.frameRequestDelayed) {
+					clearTimeout(storage.frameRequestDelayed)
+					storage.frameRequestDelayed = undefined
+				}
 				animation.complete = function() { }
 				storage.interpolatedValue = undefined
 				storage.started = undefined
@@ -888,7 +890,11 @@ exports.addProperty = function(proto, type, name, defaultValue) {
 				}
 			})
 
-			storage.frameRequest = backend.requestAnimationFrame(nextFrame)
+			if (animation.delay <= 0)
+				storage.frameRequest = backend.requestAnimationFrame(nextFrame)
+			else {
+				storage.frameRequestDelayed = setTimeout(nextFrame, animation.delay)
+			}
 
 			animation.running = true
 			animation.complete = complete
@@ -1356,8 +1362,17 @@ $this.completed()
 		animation.property = name
 		var storage = this._createPropertyStorage(name)
 		storage.animation = animation
-		if (backend.setAnimation(this, name, animation))
+		if (backend.setAnimation(this, name, animation)) {
 			animation._native = true
+		} else {
+			var target = this[name]
+			//this is special fallback for combined css animation, e.g transform
+			//if native backend refuse to animate, we call _animateAll()
+			//see Transform._animateAll for details
+			if (target && (typeof target === 'object') && ('_animateAll' in target)) {
+				target._animateAll(animation)
+			}
+		}
 	}
 	ObjectPrototype.removeOnChanged = function(name,callback) {
 		var storage = this.__properties[name]
@@ -1853,6 +1868,7 @@ $this.completed()
 
 		return lazy$radius
 }))
+	core.addProperty(ItemPrototype, 'bool', 'fullscreen')
 	core.addProperty(ItemPrototype, 'bool', 'focus')
 	core.addProperty(ItemPrototype, 'bool', 'focused')
 	core.addProperty(ItemPrototype, 'bool', 'activeFocus')
@@ -2188,6 +2204,17 @@ $this.completed()
 	$core._protoOnChanged(ItemPrototype, 'width', function(value) {
 		this.style('width', value + (this._borderWidthAdjust || 0))
 		this.newBoundingBox()
+	})
+	$core._protoOnChanged(ItemPrototype, 'fullscreen', function(value) {
+		var backend = this._context.backend
+		if (!('enterFullscreenMode' in backend)) {
+			log('enterFullscreenMode is not available in current backend, fullscreen: ' + value)
+			return
+		}
+		if (value)
+			backend.enterFullscreenMode(this.element);
+		else
+			backend.exitFullscreenMode();
 	})
 	$core._protoOnChanged(ItemPrototype, 'recursiveVisible', function(value) {
 		var children = this.children
@@ -2568,6 +2595,248 @@ this.updateStyle()
 	BaseViewContentPrototype.$s = function($c) {
 		var $this = this;
 	BaseViewContentBasePrototype.$s.call(this, $c.$b); delete $c.$b
+$this.completed()
+}
+
+
+//=====[component core.VideoPlayer]=====================
+
+	var VideoPlayerBaseComponent = $core.Item
+	var VideoPlayerBasePrototype = VideoPlayerBaseComponent.prototype
+
+/**
+ * @constructor
+ * @extends {$core.Item}
+ */
+	var VideoPlayerComponent = $core.VideoPlayer = function(parent, row) {
+		VideoPlayerBaseComponent.apply(this, arguments)
+	//custom constructor:
+	{
+		this.impl = null
+		this._createPlayer()
+
+		//see explanations in BaseView.onHighlightChanged:
+		var p = parent
+		var handler = this._scheduleLayout.bind(this)
+		while(p) {
+			this.connectOn(p, 'scrollEvent', handler)
+			p = p.parent
+		}
+	}
+
+	}
+	var VideoPlayerPrototype = VideoPlayerComponent.prototype = Object.create(VideoPlayerBasePrototype)
+
+	VideoPlayerPrototype.constructor = VideoPlayerComponent
+
+	VideoPlayerPrototype.componentName = 'core.VideoPlayer'
+	VideoPlayerPrototype.text = $core.createSignal('text')
+	VideoPlayerPrototype.finished = $core.createSignal('finished')
+	VideoPlayerPrototype.error = $core.createSignal('error')
+	core.addProperty(VideoPlayerPrototype, 'string', 'backend')
+	core.addProperty(VideoPlayerPrototype, 'string', 'source')
+	core.addProperty(VideoPlayerPrototype, 'string', 'backgroundImage')
+	core.addProperty(VideoPlayerPrototype, 'color', 'backgroundColor', ("#000"))
+	core.addProperty(VideoPlayerPrototype, 'float', 'volume', (1.0))
+	core.addProperty(VideoPlayerPrototype, 'bool', 'loop')
+	core.addProperty(VideoPlayerPrototype, 'bool', 'ready')
+	core.addProperty(VideoPlayerPrototype, 'bool', 'muted')
+	core.addProperty(VideoPlayerPrototype, 'bool', 'paused')
+	core.addProperty(VideoPlayerPrototype, 'bool', 'waiting')
+	core.addProperty(VideoPlayerPrototype, 'bool', 'seeking')
+	core.addProperty(VideoPlayerPrototype, 'bool', 'stalled')
+	core.addProperty(VideoPlayerPrototype, 'bool', 'autoPlay')
+	core.addProperty(VideoPlayerPrototype, 'real', 'duration')
+	core.addProperty(VideoPlayerPrototype, 'real', 'progress')
+	core.addProperty(VideoPlayerPrototype, 'real', 'buffered')
+	core.addProperty(VideoPlayerPrototype, 'real', 'startPosition')
+	VideoPlayerPrototype.play = function() {
+		if (!this.source)
+			return
+
+		log("play", this.source)
+		var player = this._getPlayer()
+		if (player) {
+			this._scheduleLayout()
+			player.play()
+		}
+		this.applyVolume();
+	}
+	VideoPlayerPrototype._getPlayer = function() {
+		if (this.impl === null)
+			this._createPlayer()
+		return this.impl
+	}
+	VideoPlayerPrototype._createPlayer = function() {
+		if (this.impl)
+			return this.impl
+
+		var source = this.source
+		var preferred = this.backend
+		log('preferred backend: ' + preferred)
+		var backends = $core.__videoBackends
+		var results = []
+		if (preferred && backends[preferred]) {
+			var backend = backends[preferred]()
+			return this.impl = backend.createPlayer(this)
+		} else {
+			for (var i in backends) {
+				var backend = backends[i]()
+				var score = backend.probeUrl(source)
+				if (score > 0)
+					results.push({ backend: backend, score: score })
+			}
+			results.sort(function(a, b) { return b.score - a.score })
+			if (results.length === 0)
+				throw new Error('no backends for source ' + source)
+			return this.impl = results[0].backend.createPlayer(this)
+		}
+	}
+	VideoPlayerPrototype.applyVolume = function() {
+		if (this.volume > 1.0)
+			this.volume = 1.0;
+		else if (this.volume < 0.0)
+			this.volume = 0.0;
+
+		var player = this._getPlayer()
+		if (player)
+			player.setVolume(this.volume)
+	}
+	VideoPlayerPrototype._scheduleLayout = function() {
+		this._context.delayedAction('layout', this, this._doLayout)
+	}
+	VideoPlayerPrototype.pause = function() {
+		var player = this._getPlayer()
+		if (player)
+			player.pause()
+	}
+	VideoPlayerPrototype._doLayout = function() {
+		var player = this._getPlayer()
+		if (player)
+			player.setRect.apply(player, this.toScreen().slice(0, 4))
+	}
+	VideoPlayerPrototype.stop = function() {
+		var player = this._getPlayer()
+		if (player)
+			player.stop()
+	}
+	VideoPlayerPrototype.getAudioTracks = function() {
+		var player = this._getPlayer()
+		if (player)
+			return player.getAudioTracks()
+		else
+			return []
+	}
+	VideoPlayerPrototype.getSubtitles = function() {
+		var player = this._getPlayer()
+		if (player)
+			return player.getSubtitles()
+		else
+			return []
+	}
+	VideoPlayerPrototype.getVideoTracks = function() {
+		var player = this._getPlayer()
+		if (player)
+			return player.getVideoTracks()
+		else
+			return []
+	}
+	VideoPlayerPrototype.__complete = function() { VideoPlayerBasePrototype.__complete.call(this)
+this._scheduleLayout()
+		var player = this._getPlayer()
+		if (player)
+			player.setBackgroundColor(this.backgroundColor)
+
+		if (this.autoPlay && this.source)
+			this.play()
+}
+	VideoPlayerPrototype.volumeUp = function() { this.volume += 0.1 }
+	VideoPlayerPrototype.volumeDown = function() { this.volume -= 0.1 }
+	VideoPlayerPrototype.toggleMute = function() { var player = this._getPlayer(); if (player) player.setMute(!this.muted) }
+	VideoPlayerPrototype.setOption = function(name,value) {
+		var player = this._getPlayer()
+		if (player)
+			player.setOption(name, value)
+	}
+	VideoPlayerPrototype.setAudioTrack = function(trackId) {
+		var player = this._getPlayer()
+		if (player)
+			player.setAudioTrack(trackId)
+	}
+	VideoPlayerPrototype.setSubtitles = function(trackId) {
+		var player = this._getPlayer()
+		if (player)
+			player.setSubtitles(trackId)
+	}
+	VideoPlayerPrototype.setVideoTrack = function(trackId) {
+		var player = this._getPlayer()
+		if (player)
+			player.setVideoTrack(trackId)
+	}
+	VideoPlayerPrototype.setupDrm = function(type,options,callback,error) {
+		var player = this._getPlayer()
+		if (player)
+			player.setupDrm(type, options, callback, error)
+	}
+	VideoPlayerPrototype.seek = function(value) {
+		var player = this._getPlayer()
+		if (player)
+			player.seek(value)
+	}
+	VideoPlayerPrototype.seekTo = function(value) {
+		var player = this._getPlayer()
+		if (player)
+			player.seekTo(value)
+	}
+	$core._protoOnChanged(VideoPlayerPrototype, 'backend', function(value) {
+		this.impl = null
+		this._createPlayer()
+	})
+	$core._protoOnChanged(VideoPlayerPrototype, 'backgroundColor', function(value) {
+		var player = this._getPlayer()
+		if (player)
+			player.setBackgroundColor(value)
+	})
+	$core._protoOnChanged(VideoPlayerPrototype, 'loop', function(value) {
+		var player = this._getPlayer()
+		if (player)
+			player.setLoop(value)
+	})
+	$core._protoOnChanged(VideoPlayerPrototype, 'source', function(value) {
+		var player = this._getPlayer()
+		if (player) {
+			log('setting source to', value)
+			player.setSource(value)
+		} else
+			log('WARNING: skipping VideoPlayer.setSource')
+	})
+	$core._protoOnChanged(VideoPlayerPrototype, 'recursiveVisible', function(value) {
+		var player = this._getPlayer()
+		if (value)
+			this._scheduleLayout()
+		if (player)
+			player.setVisibility(value)
+	})
+	$core._protoOnChanged(VideoPlayerPrototype, 'ready', function(value) { log("ReadyState: " + this.ready) })
+	$core._protoOnChanged(VideoPlayerPrototype, 'volume', function(value) { this.applyVolume() })
+	$core._protoOnChanged(VideoPlayerPrototype, 'autoPlay', function(value) { this.setOption('autoplay', value) })
+	$core._protoOnChanged(VideoPlayerPrototype, 'backgroundImage', function(value) { this.setOption('poster', value) })
+	$core._protoOn(VideoPlayerPrototype, 'newBoundingBox', function() {
+		this._scheduleLayout()
+	})
+	$core._protoOn(VideoPlayerPrototype, 'error', function(error) {
+		this.paused = false
+		this.waiting = false
+	})
+
+	VideoPlayerPrototype.$c = function($c) {
+		var $this = this;
+		VideoPlayerBasePrototype.$c.call(this, $c.$b = { })
+
+	}
+	VideoPlayerPrototype.$s = function($c) {
+		var $this = this;
+	VideoPlayerBasePrototype.$s.call(this, $c.$b); delete $c.$b
 $this.completed()
 }
 
@@ -3131,45 +3400,6 @@ $this.completed()
 }
 
 
-//=====[component controls.mixins.BaseMixin]=====================
-
-	var BaseMixinBaseComponent = $core.Object
-	var BaseMixinBasePrototype = BaseMixinBaseComponent.prototype
-
-/**
- * @constructor
- * @extends {$core.Object}
- */
-	var BaseMixinComponent = $controls$mixins.BaseMixin = function(parent, row) {
-		BaseMixinBaseComponent.apply(this, arguments)
-
-	}
-	var BaseMixinPrototype = BaseMixinComponent.prototype = Object.create(BaseMixinBasePrototype)
-
-	BaseMixinPrototype.constructor = BaseMixinComponent
-
-	BaseMixinPrototype.componentName = 'controls.mixins.BaseMixin'
-	BaseMixinPrototype.stopPropagation = function(event) {
-	var context = this._get('context', true)
-
-		if (!event)
-			context.window.event.cancelBubble = true;
-		else if (event.stopPropagation)
-			event.stopPropagation();
-	}
-
-	BaseMixinPrototype.$c = function($c) {
-		var $this = this;
-		BaseMixinBasePrototype.$c.call(this, $c.$b = { })
-
-	}
-	BaseMixinPrototype.$s = function($c) {
-		var $this = this;
-	BaseMixinBasePrototype.$s.call(this, $c.$b); delete $c.$b
-$this.completed()
-}
-
-
 //=====[component core.BaseLayout]=====================
 
 	var BaseLayoutBaseComponent = $core.Item
@@ -3184,6 +3414,7 @@ $this.completed()
 	//custom constructor:
 	{
 		this.count = 0
+		this._padding = {}
 	}
 
 	}
@@ -3203,6 +3434,24 @@ $this.completed()
 	core.addProperty(BaseLayoutPrototype, 'int', 'layoutDelay')
 	core.addProperty(BaseLayoutPrototype, 'int', 'prerenderDelay')
 	core.addProperty(BaseLayoutPrototype, 'bool', 'offlineLayout')
+	core.addLazyProperty(BaseLayoutPrototype, 'padding', (function(__parent, __row) {
+		var lazy$padding = new $core.BaseLayoutContentPadding(__parent, __row)
+		var $c = { lazy$padding : lazy$padding }
+
+//creating component BaseLayoutContentPadding
+			lazy$padding.$c($c.$c$lazy$padding = { })
+
+
+//setting up component BaseLayoutContentPadding
+			var lazy$padding = $c.lazy$padding
+			lazy$padding.$s($c.$c$lazy$padding)
+			delete $c.$c$lazy$padding
+
+
+			lazy$padding.completed()
+
+		return lazy$padding
+}))
 	BaseLayoutPrototype._scheduleLayout = function() {
 		if (!this.recursiveVisible && !this.offlineLayout)
 			return
@@ -3531,234 +3780,6 @@ $this.completed()
 }
 
 
-//=====[component core.VideoPlayer]=====================
-
-	var VideoPlayerBaseComponent = $core.Item
-	var VideoPlayerBasePrototype = VideoPlayerBaseComponent.prototype
-
-/**
- * @constructor
- * @extends {$core.Item}
- */
-	var VideoPlayerComponent = $core.VideoPlayer = function(parent, row) {
-		VideoPlayerBaseComponent.apply(this, arguments)
-	//custom constructor:
-	{
-		this.impl = null
-		this._createPlayer()
-	}
-
-	}
-	var VideoPlayerPrototype = VideoPlayerComponent.prototype = Object.create(VideoPlayerBasePrototype)
-
-	VideoPlayerPrototype.constructor = VideoPlayerComponent
-
-	VideoPlayerPrototype.componentName = 'core.VideoPlayer'
-	VideoPlayerPrototype.text = $core.createSignal('text')
-	VideoPlayerPrototype.finished = $core.createSignal('finished')
-	VideoPlayerPrototype.error = $core.createSignal('error')
-	core.addProperty(VideoPlayerPrototype, 'string', 'backend')
-	core.addProperty(VideoPlayerPrototype, 'string', 'source')
-	core.addProperty(VideoPlayerPrototype, 'string', 'backgroundImage')
-	core.addProperty(VideoPlayerPrototype, 'color', 'backgroundColor', ("#000"))
-	core.addProperty(VideoPlayerPrototype, 'float', 'volume', (1.0))
-	core.addProperty(VideoPlayerPrototype, 'bool', 'loop')
-	core.addProperty(VideoPlayerPrototype, 'bool', 'ready')
-	core.addProperty(VideoPlayerPrototype, 'bool', 'muted')
-	core.addProperty(VideoPlayerPrototype, 'bool', 'paused')
-	core.addProperty(VideoPlayerPrototype, 'bool', 'waiting')
-	core.addProperty(VideoPlayerPrototype, 'bool', 'seeking')
-	core.addProperty(VideoPlayerPrototype, 'bool', 'stalled')
-	core.addProperty(VideoPlayerPrototype, 'bool', 'autoPlay')
-	core.addProperty(VideoPlayerPrototype, 'real', 'duration')
-	core.addProperty(VideoPlayerPrototype, 'real', 'progress')
-	core.addProperty(VideoPlayerPrototype, 'real', 'buffered')
-	core.addProperty(VideoPlayerPrototype, 'real', 'startPosition')
-	VideoPlayerPrototype.play = function() {
-		if (!this.source)
-			return
-
-		log("play", this.source)
-		var player = this._getPlayer()
-		if (player) {
-			this._scheduleLayout()
-			player.play()
-		}
-		this.applyVolume();
-	}
-	VideoPlayerPrototype._getPlayer = function() {
-		if (this.impl === null)
-			this._createPlayer()
-		return this.impl
-	}
-	VideoPlayerPrototype._createPlayer = function() {
-		if (this.impl)
-			return this.impl
-
-		var source = this.source
-		var preferred = this.backend
-		log('preferred backend: ' + preferred)
-		var backends = $core.__videoBackends
-		var results = []
-		if (preferred && backends[preferred]) {
-			var backend = backends[preferred]()
-			return this.impl = backend.createPlayer(this)
-		} else {
-			for (var i in backends) {
-				var backend = backends[i]()
-				var score = backend.probeUrl(source)
-				if (score > 0)
-					results.push({ backend: backend, score: score })
-			}
-			results.sort(function(a, b) { return b.score - a.score })
-			if (results.length === 0)
-				throw new Error('no backends for source ' + source)
-			return this.impl = results[0].backend.createPlayer(this)
-		}
-	}
-	VideoPlayerPrototype.applyVolume = function() {
-		if (this.volume > 1.0)
-			this.volume = 1.0;
-		else if (this.volume < 0.0)
-			this.volume = 0.0;
-
-		var player = this._getPlayer()
-		if (player)
-			player.setVolume(this.volume)
-	}
-	VideoPlayerPrototype._scheduleLayout = function() {
-		this._context.delayedAction('layout', this, this._doLayout)
-	}
-	VideoPlayerPrototype.pause = function() {
-		var player = this._getPlayer()
-		if (player)
-			player.pause()
-	}
-	VideoPlayerPrototype._doLayout = function() {
-		var player = this._getPlayer()
-		if (player)
-			player.setRect.apply(player, this.toScreen().slice(0, 4))
-	}
-	VideoPlayerPrototype.stop = function() {
-		var player = this._getPlayer()
-		if (player)
-			player.stop()
-	}
-	VideoPlayerPrototype.getAudioTracks = function() {
-		var player = this._getPlayer()
-		if (player)
-			return player.getAudioTracks()
-		else
-			return []
-	}
-	VideoPlayerPrototype.getSubtitles = function() {
-		var player = this._getPlayer()
-		if (player)
-			return player.getSubtitles()
-		else
-			return []
-	}
-	VideoPlayerPrototype.getVideoTracks = function() {
-		var player = this._getPlayer()
-		if (player)
-			return player.getVideoTracks()
-		else
-			return []
-	}
-	VideoPlayerPrototype.__complete = function() { VideoPlayerBasePrototype.__complete.call(this)
-var player = this._getPlayer()
-		if (player)
-			player.setBackgroundColor(this.backgroundColor)
-
-		if (this.autoPlay && this.source)
-			this.play()
-}
-	VideoPlayerPrototype.volumeUp = function() { this.volume += 0.1 }
-	VideoPlayerPrototype.volumeDown = function() { this.volume -= 0.1 }
-	VideoPlayerPrototype.toggleMute = function() { var player = this._getPlayer(); if (player) player.setMute(!this.muted) }
-	VideoPlayerPrototype.setOption = function(name,value) {
-		var player = this._getPlayer()
-		if (player)
-			player.setOption(name, value)
-	}
-	VideoPlayerPrototype.setAudioTrack = function(trackId) {
-		var player = this._getPlayer()
-		if (player)
-			player.setAudioTrack(trackId)
-	}
-	VideoPlayerPrototype.setSubtitles = function(trackId) {
-		var player = this._getPlayer()
-		if (player)
-			player.setSubtitles(trackId)
-	}
-	VideoPlayerPrototype.setVideoTrack = function(trackId) {
-		var player = this._getPlayer()
-		if (player)
-			player.setVideoTrack(trackId)
-	}
-	VideoPlayerPrototype.setupDrm = function(type,options,callback,error) {
-		var player = this._getPlayer()
-		if (player)
-			player.setupDrm(type, options, callback, error)
-	}
-	VideoPlayerPrototype.seek = function(value) {
-		var player = this._getPlayer()
-		if (player)
-			player.seek(value)
-	}
-	VideoPlayerPrototype.seekTo = function(value) {
-		var player = this._getPlayer()
-		if (player)
-			player.seekTo(value)
-	}
-	$core._protoOnChanged(VideoPlayerPrototype, 'backend', function(value) {
-		this.impl = null
-		this._createPlayer()
-	})
-	$core._protoOnChanged(VideoPlayerPrototype, 'backgroundColor', function(value) {
-		var player = this._getPlayer()
-		if (player)
-			player.setBackgroundColor(value)
-	})
-	$core._protoOnChanged(VideoPlayerPrototype, 'loop', function(value) {
-		var player = this._getPlayer()
-		if (player)
-			player.setLoop(value)
-	})
-	$core._protoOnChanged(VideoPlayerPrototype, 'source', function(value) {
-		var player = this._getPlayer()
-		if (player)
-			player.setSource(value)
-	})
-	$core._protoOnChanged(VideoPlayerPrototype, 'recursiveVisible', function(value) {
-		var player = this._getPlayer()
-		if (player)
-			player.setVisibility(value)
-	})
-	$core._protoOnChanged(VideoPlayerPrototype, 'ready', function(value) { log("ReadyState: " + this.ready) })
-	$core._protoOnChanged(VideoPlayerPrototype, 'volume', function(value) { this.applyVolume() })
-	$core._protoOnChanged(VideoPlayerPrototype, 'autoPlay', function(value) { this.setOption('autoplay', value) })
-	$core._protoOnChanged(VideoPlayerPrototype, 'backgroundImage', function(value) { this.setOption('poster', value) })
-	$core._protoOn(VideoPlayerPrototype, 'newBoundingBox', function() {
-		this._scheduleLayout()
-	})
-	$core._protoOn(VideoPlayerPrototype, 'error', function(error) {
-		this.paused = false
-		this.waiting = false
-	})
-
-	VideoPlayerPrototype.$c = function($c) {
-		var $this = this;
-		VideoPlayerBasePrototype.$c.call(this, $c.$b = { })
-
-	}
-	VideoPlayerPrototype.$s = function($c) {
-		var $this = this;
-	VideoPlayerBasePrototype.$s.call(this, $c.$b); delete $c.$b
-$this.completed()
-}
-
-
 //=====[component core.Rectangle]=====================
 
 	var RectangleBaseComponent = $core.Item
@@ -3822,6 +3843,421 @@ $this.completed()
 }
 
 
+//=====[component controls.experimental.MosaicDelegate]=====================
+
+	var MosaicDelegateBaseComponent = $core.Rectangle
+	var MosaicDelegateBasePrototype = MosaicDelegateBaseComponent.prototype
+
+/**
+ * @constructor
+ * @extends {$core.Rectangle}
+ */
+	var MosaicDelegateComponent = $controls$experimental.MosaicDelegate = function(parent, row) {
+		MosaicDelegateBaseComponent.apply(this, arguments)
+
+	}
+	var MosaicDelegatePrototype = MosaicDelegateComponent.prototype = Object.create(MosaicDelegateBasePrototype)
+
+	MosaicDelegatePrototype.constructor = MosaicDelegateComponent
+
+	MosaicDelegatePrototype.componentName = 'controls.experimental.MosaicDelegate'
+	MosaicDelegatePrototype.pressed = $core.createSignal('pressed')
+	core.addProperty(MosaicDelegatePrototype, 'bool', 'allowOpacity')
+	core.addProperty(MosaicDelegatePrototype, 'bool', 'playing')
+	core.addProperty(MosaicDelegatePrototype, 'bool', 'active')
+	core.addProperty(MosaicDelegatePrototype, 'Mixin', 'hoverMixin')
+	$core._protoOnChanged(MosaicDelegatePrototype, 'active', function(value) {
+	var flipTimer = this._get('flipTimer', true), mosaicGrid = this._get('mosaicGrid', true)
+
+        if (!mosaicGrid._firstTimeFlag) {
+            mosaicGrid._firstTimeFlag = true
+            return
+        }
+
+        if (!value) {
+            this.playing = false
+            return
+        }
+
+        flipTimer.restart()
+    })
+	$core._protoOn(MosaicDelegatePrototype, 'clicked', function() {
+	var mosaicGrid = this._get('mosaicGrid', true), model = this._get('model', true)
+ mosaicGrid.currentIndex = model.index; this.pressed() })
+	$core._protoOn(MosaicDelegatePrototype, 'pressed', function() {
+	var mosaicGrid = this._get('mosaicGrid', true), model = this._get('model', true)
+ mosaicGrid.play(model.index) })
+	$core._protoOnKey(MosaicDelegatePrototype, 'Select', function(key,event) { this.pressed() })
+
+	MosaicDelegatePrototype.$c = function($c) {
+		var $this = this;
+		MosaicDelegateBasePrototype.$c.call(this, $c.$b = { })
+var _this$child0 = new $core.MouseMoveMixin($this)
+		$c._this$child0 = _this$child0
+
+//creating component MouseMoveMixin
+		_this$child0.$c($c.$c$_this$child0 = { })
+
+		$this.addChild(_this$child0)
+		var _this$child1 = new $core.Image($this)
+		$c._this$child1 = _this$child1
+
+//creating component Image
+		_this$child1.$c($c.$c$_this$child1 = { })
+	core.addProperty(_this$child1, 'bool', 'display')
+		_this$child1._setId('programImage')
+		$this.addChild(_this$child1)
+		var _this$child2 = new $core.Rectangle($this)
+		$c._this$child2 = _this$child2
+
+//creating component Rectangle
+		_this$child2.$c($c.$c$_this$child2 = { })
+//creating component controls.experimental.<anonymous>
+		var _this_child2$gradient = new $core.Gradient(_this$child2)
+		$c._this_child2$gradient = _this_child2$gradient
+
+//creating component Gradient
+		_this_child2$gradient.$c($c.$c$_this_child2$gradient = { })
+		var _this_child2_gradient$child0 = new $core.GradientStop(_this_child2$gradient)
+		$c._this_child2_gradient$child0 = _this_child2_gradient$child0
+
+//creating component GradientStop
+		_this_child2_gradient$child0.$c($c.$c$_this_child2_gradient$child0 = { })
+
+		_this_child2$gradient.addChild(_this_child2_gradient$child0)
+		var _this_child2_gradient$child1 = new $core.GradientStop(_this_child2$gradient)
+		$c._this_child2_gradient$child1 = _this_child2_gradient$child1
+
+//creating component GradientStop
+		_this_child2_gradient$child1.$c($c.$c$_this_child2_gradient$child1 = { })
+
+		_this_child2$gradient.addChild(_this_child2_gradient$child1)
+		_this$child2.gradient = _this_child2$gradient
+		$this.addChild(_this$child2)
+		var _this$child3 = new $core.Image($this)
+		$c._this$child3 = _this$child3
+
+//creating component Image
+		_this$child3.$c($c.$c$_this$child3 = { })
+
+		$this.addChild(_this$child3)
+		var _this$child4 = new $controls$web.EllipsisText($this)
+		$c._this$child4 = _this$child4
+
+//creating component EllipsisText
+		_this$child4.$c($c.$c$_this$child4 = { })
+
+		$this.addChild(_this$child4)
+		var _this$child5 = new $core.Rectangle($this)
+		$c._this$child5 = _this$child5
+
+//creating component Rectangle
+		_this$child5.$c($c.$c$_this$child5 = { })
+		var _this_child5$child0 = new $core.Rectangle(_this$child5)
+		$c._this_child5$child0 = _this_child5$child0
+
+//creating component Rectangle
+		_this_child5$child0.$c($c.$c$_this_child5$child0 = { })
+
+		_this$child5.addChild(_this_child5$child0)
+		$this.addChild(_this$child5)
+		var _this$child6 = new $core.Timer($this)
+		$c._this$child6 = _this$child6
+
+//creating component Timer
+		_this$child6.$c($c.$c$_this$child6 = { })
+		_this$child6._setId('flipTimer')
+		$this.addChild(_this$child6)
+//creating component controls.experimental.<anonymous>
+		var _this$hoverMixin = new $controls$web.HoverClickMixin($this)
+		$c._this$hoverMixin = _this$hoverMixin
+
+//creating component HoverClickMixin
+		_this$hoverMixin.$c($c.$c$_this$hoverMixin = { })
+
+		$this.hoverMixin = _this$hoverMixin
+		core.addAliasProperty($this, 'hover', function() { return $this.hoverMixin }, 'value')
+	}
+	MosaicDelegatePrototype.$s = function($c) {
+		var $this = this;
+	MosaicDelegateBasePrototype.$s.call(this, $c.$b); delete $c.$b
+//assigning opacity to (${playing} && ${allowOpacity} ? 0.0 : 1.0)
+			$this._replaceUpdater('opacity', function() { $this.opacity = ($this.playing && $this.allowOpacity ? 0.0 : 1.0) }, [$this,'allowOpacity',$this,'playing'])
+//assigning border.color to (${active} ? "#8AF" : "#0000")
+			$this.border._replaceUpdater('color', function() { $this.border.color = ($this.active ? "#8AF" : "#0000") }, [$this,'active'])
+//assigning border.width to (${active} ? 1 : 0)
+			$this.border._replaceUpdater('width', function() { $this.border.width = ($this.active ? 1 : 0) }, [$this,'active'])
+//assigning clip to (true)
+			$this._removeUpdater('clip'); $this.clip = (true);
+//assigning color to ("#464646")
+			$this._removeUpdater('color'); $this.color = ("#464646");
+//assigning anchors.margins to (${mosaicGrid.delegateRadius})
+			$this.anchors._replaceUpdater('margins', function() { $this.anchors.margins = ($this._get('mosaicGrid').delegateRadius) }, [$this._get('mosaicGrid'),'delegateRadius'])
+
+//setting up component HoverClickMixin
+			var _this$hoverMixin = $c._this$hoverMixin
+			_this$hoverMixin.$s($c.$c$_this$hoverMixin)
+			delete $c.$c$_this$hoverMixin
+
+
+			_this$hoverMixin.completed()
+//assigning effects.shadow.blur to (10)
+			$this.effects.shadow._removeUpdater('blur'); $this.effects.shadow.blur = (10);
+//assigning height to (${parent.cellHeight})
+			$this._replaceUpdater('height', function() { $this.height = ($this.parent.cellHeight) }, [$this.parent,'cellHeight'])
+//assigning width to (${parent.cellWidth})
+			$this._replaceUpdater('width', function() { $this.width = ($this.parent.cellWidth) }, [$this.parent,'cellWidth'])
+//assigning radius to (${mosaicGrid.delegateRadius})
+			$this._replaceUpdater('radius', function() { $this.radius = ($this._get('mosaicGrid').delegateRadius) }, [$this._get('mosaicGrid'),'delegateRadius'])
+//assigning effects.shadow.color to (${active} ? "#8AF" : "#0000")
+			$this.effects.shadow._replaceUpdater('color', function() { $this.effects.shadow.color = ($this.active ? "#8AF" : "#0000") }, [$this,'active'])
+//assigning active to (${activeFocus})
+			$this._replaceUpdater('active', function() { $this.active = ($this.activeFocus) }, [$this,'activeFocus'])
+//assigning effects.shadow.spread to (2)
+			$this.effects.shadow._removeUpdater('spread'); $this.effects.shadow.spread = (2);
+//assigning z to (${active} ? ${parent.z} + 1 : ${parent.z})
+			$this._replaceUpdater('z', function() { $this.z = ($this.active ? $this.parent.z + 1 : $this.parent.z) }, [$this.parent,'z',$this,'active'])
+//assigning transform.scaleX to (${active} ? 1.05 : 1)
+			$this.transform._replaceUpdater('scaleX', function() { $this.transform.scaleX = ($this.active ? 1.05 : 1) }, [$this,'active'])
+//assigning transform.scaleY to (${active} ? 1.05 : 1)
+			$this.transform._replaceUpdater('scaleY', function() { $this.transform.scaleY = ($this.active ? 1.05 : 1) }, [$this,'active'])
+
+//setting up component MouseMoveMixin
+			var _this$child0 = $c._this$child0
+			_this$child0.$s($c.$c$_this$child0)
+			delete $c.$c$_this$child0
+
+			_this$child0.on('mouseMove', function() {
+	var mosaicGrid = this._get('mosaicGrid', true), model = this._get('model', true)
+
+            mosaicGrid.hoverMode = true
+            mosaicGrid.currentIndex = model.index
+        }.bind(_this$child0))
+
+			_this$child0.completed()
+
+//setting up component Image
+			var _this$child1 = $c._this$child1
+			_this$child1.$s($c.$c$_this$child1)
+			delete $c.$c$_this$child1
+
+//assigning source to (${model.preview} ? ${model.preview} : '')
+			_this$child1._replaceUpdater('source', function() { _this$child1.source = (_this$child1._get('model').preview ? _this$child1._get('model').preview : '') }, [_this$child1._get('_delegate'),'_row'])
+//assigning fillMode to (_globals.core.Image.prototype.PreserveAspectCrop)
+			_this$child1._removeUpdater('fillMode'); _this$child1.fillMode = (_globals.core.Image.prototype.PreserveAspectCrop);
+//assigning visible to (${source})
+			_this$child1._replaceUpdater('visible', function() { _this$child1.visible = (_this$child1.source) }, [_this$child1,'source'])
+//assigning anchors.fill to (${parent})
+			_this$child1.anchors._removeUpdater('fill'); _this$child1.anchors.fill = (_this$child1.parent);
+			_this$child1.onChanged('status', function(value) {
+            this.display = this.status == this.Ready
+        }.bind(_this$child1))
+
+			_this$child1.completed()
+
+//setting up component Rectangle
+			var _this$child2 = $c._this$child2
+			_this$child2.$s($c.$c$_this$child2)
+			delete $c.$c$_this$child2
+
+//assigning anchors.bottomMargin to (((2) * ${context.virtualScale}))
+			_this$child2.anchors._replaceUpdater('bottomMargin', function() { _this$child2.anchors.bottomMargin = (((2) * _this$child2._context.virtualScale)) }, [_this$child2._context,'virtualScale'])
+//assigning width to ((${parent.width}))
+			_this$child2._replaceUpdater('width', function() { _this$child2.width = ((_this$child2.parent.width)) }, [_this$child2.parent,'width'])
+
+//setting up component Gradient
+			var _this_child2$gradient = $c._this_child2$gradient
+			_this_child2$gradient.$s($c.$c$_this_child2$gradient)
+			delete $c.$c$_this_child2$gradient
+
+
+//setting up component GradientStop
+			var _this_child2_gradient$child0 = $c._this_child2_gradient$child0
+			_this_child2_gradient$child0.$s($c.$c$_this_child2_gradient$child0)
+			delete $c.$c$_this_child2_gradient$child0
+
+//assigning color to ("#0000")
+			_this_child2_gradient$child0._removeUpdater('color'); _this_child2_gradient$child0.color = ("#0000");
+//assigning position to (0.0)
+			_this_child2_gradient$child0._removeUpdater('position'); _this_child2_gradient$child0.position = (0.0);
+
+			_this_child2_gradient$child0.completed()
+
+//setting up component GradientStop
+			var _this_child2_gradient$child1 = $c._this_child2_gradient$child1
+			_this_child2_gradient$child1.$s($c.$c$_this_child2_gradient$child1)
+			delete $c.$c$_this_child2_gradient$child1
+
+//assigning color to ("#000")
+			_this_child2_gradient$child1._removeUpdater('color'); _this_child2_gradient$child1.color = ("#000");
+//assigning position to (1.0)
+			_this_child2_gradient$child1._removeUpdater('position'); _this_child2_gradient$child1.position = (1.0);
+
+			_this_child2_gradient$child1.completed()
+
+			_this_child2$gradient.completed()
+//assigning anchors.bottom to (${parent.bottom})
+			_this$child2.anchors._replaceUpdater('bottom', function() { _this$child2.anchors.bottom = (_this$child2.parent.bottom) }, [_this$child2.parent,'bottom'])
+//assigning height to (((70) * ${context.virtualScale}))
+			_this$child2._replaceUpdater('height', function() { _this$child2.height = (((70) * _this$child2._context.virtualScale)) }, [_this$child2._context,'virtualScale'])
+
+			_this$child2.completed()
+
+//setting up component Image
+			var _this$child3 = $c._this$child3
+			_this$child3.$s($c.$c$_this$child3)
+			delete $c.$c$_this$child3
+
+//assigning horizontalAlignment to (_globals.core.Image.prototype.AlignRight)
+			_this$child3._removeUpdater('horizontalAlignment'); _this$child3.horizontalAlignment = (_globals.core.Image.prototype.AlignRight);
+//assigning source to (${model.icon} ? ${model.icon} : '')
+			_this$child3._replaceUpdater('source', function() { _this$child3.source = (_this$child3._get('model').icon ? _this$child3._get('model').icon : '') }, [_this$child3._get('_delegate'),'_row'])
+//assigning anchors.bottomMargin to (((21) * ${context.virtualScale}))
+			_this$child3.anchors._replaceUpdater('bottomMargin', function() { _this$child3.anchors.bottomMargin = (((21) * _this$child3._context.virtualScale)) }, [_this$child3._context,'virtualScale'])
+//assigning height to (((70) * ${context.virtualScale}))
+			_this$child3._replaceUpdater('height', function() { _this$child3.height = (((70) * _this$child3._context.virtualScale)) }, [_this$child3._context,'virtualScale'])
+//assigning width to (((100) * ${context.virtualScale}))
+			_this$child3._replaceUpdater('width', function() { _this$child3.width = (((100) * _this$child3._context.virtualScale)) }, [_this$child3._context,'virtualScale'])
+//assigning fillMode to (_globals.core.Image.prototype.PreserveAspectFit)
+			_this$child3._removeUpdater('fillMode'); _this$child3.fillMode = (_globals.core.Image.prototype.PreserveAspectFit);
+//assigning verticalAlignment to (_globals.core.Image.prototype.AlignTop)
+			_this$child3._removeUpdater('verticalAlignment'); _this$child3.verticalAlignment = (_globals.core.Image.prototype.AlignTop);
+//assigning anchors.bottom to (${parent.bottom})
+			_this$child3.anchors._replaceUpdater('bottom', function() { _this$child3.anchors.bottom = (_this$child3.parent.bottom) }, [_this$child3.parent,'bottom'])
+//assigning x to (((10) * ${context.virtualScale}))
+			_this$child3._replaceUpdater('x', function() { _this$child3.x = (((10) * _this$child3._context.virtualScale)) }, [_this$child3._context,'virtualScale'])
+
+			_this$child3.completed()
+
+//setting up component EllipsisText
+			var _this$child4 = $c._this$child4
+			_this$child4.$s($c.$c$_this$child4)
+			delete $c.$c$_this$child4
+
+//assigning color to ("#fff")
+			_this$child4._removeUpdater('color'); _this$child4.color = ("#fff");
+//assigning text to (${model.title})
+			_this$child4._replaceUpdater('text', function() { _this$child4.text = (_this$child4._get('model').title) }, [_this$child4._get('_delegate'),'_row'])
+//assigning anchors.bottomMargin to (((6) * ${context.virtualScale}))
+			_this$child4.anchors._replaceUpdater('bottomMargin', function() { _this$child4.anchors.bottomMargin = (((6) * _this$child4._context.virtualScale)) }, [_this$child4._context,'virtualScale'])
+//assigning width to (((270) * ${context.virtualScale}))
+			_this$child4._replaceUpdater('width', function() { _this$child4.width = (((270) * _this$child4._context.virtualScale)) }, [_this$child4._context,'virtualScale'])
+//assigning anchors.bottom to (${parent.bottom})
+			_this$child4.anchors._replaceUpdater('bottom', function() { _this$child4.anchors.bottom = (_this$child4.parent.bottom) }, [_this$child4.parent,'bottom'])
+//assigning font.pixelSize to (${mosaicGrid.mobile} ? ((9) * ${context.virtualScale}) : ((18) * ${context.virtualScale}))
+			_this$child4.font._replaceUpdater('pixelSize', function() { _this$child4.font.pixelSize = (_this$child4._get('mosaicGrid').mobile ? ((9) * _this$child4._context.virtualScale) : ((18) * _this$child4._context.virtualScale)) }, [_this$child4._get('mosaicGrid'),'mobile',_this$child4._context,'virtualScale'])
+//assigning x to (((10) * ${context.virtualScale}))
+			_this$child4._replaceUpdater('x', function() { _this$child4.x = (((10) * _this$child4._context.virtualScale)) }, [_this$child4._context,'virtualScale'])
+
+			_this$child4.completed()
+
+//setting up component Rectangle
+			var _this$child5 = $c._this$child5
+			_this$child5.$s($c.$c$_this$child5)
+			delete $c.$c$_this$child5
+
+//assigning color to ("#000c")
+			_this$child5._removeUpdater('color'); _this$child5.color = ("#000c");
+//assigning width to ((${parent.width}))
+			_this$child5._replaceUpdater('width', function() { _this$child5.width = ((_this$child5.parent.width)) }, [_this$child5.parent,'width'])
+//assigning anchors.bottom to (${parent.bottom})
+			_this$child5.anchors._replaceUpdater('bottom', function() { _this$child5.anchors.bottom = (_this$child5.parent.bottom) }, [_this$child5.parent,'bottom'])
+//assigning clip to (true)
+			_this$child5._removeUpdater('clip'); _this$child5.clip = (true);
+//assigning height to (((2) * ${context.virtualScale}))
+			_this$child5._replaceUpdater('height', function() { _this$child5.height = (((2) * _this$child5._context.virtualScale)) }, [_this$child5._context,'virtualScale'])
+
+//setting up component Rectangle
+			var _this_child5$child0 = $c._this_child5$child0
+			_this_child5$child0.$s($c.$c$_this_child5$child0)
+			delete $c.$c$_this_child5$child0
+
+//assigning color to ("#e53935")
+			_this_child5$child0._removeUpdater('color'); _this_child5$child0.color = ("#e53935");
+//assigning width to (${parent.width} * ${model.progress})
+			_this_child5$child0._replaceUpdater('width', function() { _this_child5$child0.width = (_this_child5$child0.parent.width * _this_child5$child0._get('model').progress) }, [_this_child5$child0._get('_delegate'),'_row',_this_child5$child0.parent,'width'])
+//assigning height to ((${parent.height}))
+			_this_child5$child0._replaceUpdater('height', function() { _this_child5$child0.height = ((_this_child5$child0.parent.height)) }, [_this_child5$child0.parent,'height'])
+
+			_this_child5$child0.completed()
+
+			_this$child5.completed()
+
+//setting up component Timer
+			var _this$child6 = $c._this$child6
+			_this$child6.$s($c.$c$_this$child6)
+			delete $c.$c$_this$child6
+
+//assigning interval to (3000)
+			_this$child6._removeUpdater('interval'); _this$child6.interval = (3000);
+			_this$child6.on('triggered', function() {
+	var mosaicGrid = this._get('mosaicGrid', true), model = this._get('model', true)
+
+            if (!this.parent.active)
+                return
+            this.parent.playing = true
+            mosaicGrid.itemFocused(model.index)
+        }.bind(_this$child6))
+
+			_this$child6.completed()
+	var behavior__this_on_opacity = new $core.Animation($this)
+	var behavior__this_on_opacity$c = { behavior__this_on_opacity: behavior__this_on_opacity }
+
+//creating component Animation
+	behavior__this_on_opacity.$c(behavior__this_on_opacity$c.$c$behavior__this_on_opacity = { })
+
+
+//setting up component Animation
+	var behavior__this_on_opacity = behavior__this_on_opacity$c.behavior__this_on_opacity
+	behavior__this_on_opacity.$s(behavior__this_on_opacity$c.$c$behavior__this_on_opacity)
+	delete behavior__this_on_opacity$c.$c$behavior__this_on_opacity
+
+//assigning duration to (400)
+	behavior__this_on_opacity._removeUpdater('duration'); behavior__this_on_opacity.duration = (400);
+
+	behavior__this_on_opacity.completed()
+	$this.setAnimation('opacity', behavior__this_on_opacity);
+
+	var behavior__this_on_transform = new $core.Animation($this)
+	var behavior__this_on_transform$c = { behavior__this_on_transform: behavior__this_on_transform }
+
+//creating component Animation
+	behavior__this_on_transform.$c(behavior__this_on_transform$c.$c$behavior__this_on_transform = { })
+
+
+//setting up component Animation
+	var behavior__this_on_transform = behavior__this_on_transform$c.behavior__this_on_transform
+	behavior__this_on_transform.$s(behavior__this_on_transform$c.$c$behavior__this_on_transform)
+	delete behavior__this_on_transform$c.$c$behavior__this_on_transform
+
+//assigning duration to (400)
+	behavior__this_on_transform._removeUpdater('duration'); behavior__this_on_transform.duration = (400);
+
+	behavior__this_on_transform.completed()
+	$this.setAnimation('transform', behavior__this_on_transform);
+
+	var behavior__this_on_boxshadow = new $core.Animation($this)
+	var behavior__this_on_boxshadow$c = { behavior__this_on_boxshadow: behavior__this_on_boxshadow }
+
+//creating component Animation
+	behavior__this_on_boxshadow.$c(behavior__this_on_boxshadow$c.$c$behavior__this_on_boxshadow = { })
+
+
+//setting up component Animation
+	var behavior__this_on_boxshadow = behavior__this_on_boxshadow$c.behavior__this_on_boxshadow
+	behavior__this_on_boxshadow.$s(behavior__this_on_boxshadow$c.$c$behavior__this_on_boxshadow)
+	delete behavior__this_on_boxshadow$c.$c$behavior__this_on_boxshadow
+
+//assigning duration to (400)
+	behavior__this_on_boxshadow._removeUpdater('duration'); behavior__this_on_boxshadow.duration = (400);
+
+	behavior__this_on_boxshadow.completed()
+	$this.setAnimation('boxshadow', behavior__this_on_boxshadow);
+
+			$this.completed()
+}
+
+
 //=====[component controls.experimental.NestedVideo]=====================
 
 	var NestedVideoBaseComponent = $core.Rectangle
@@ -3844,6 +4280,7 @@ $this.completed()
 	NestedVideoPrototype.hide = function() {
 	var videoPlayer = this._get('videoPlayer', true)
 
+		log('VideoPlayer hide')
 		this.visible = false
 		this.display = false
 		videoPlayer.source = ""
@@ -3852,6 +4289,7 @@ $this.completed()
 	NestedVideoPrototype.showAndPlay = function(source) {
 	var videoPlayer = this._get('videoPlayer', true)
 
+		log('VideoPlayer showAndPlay', source)
 		this.visible = true
 		this.display = true
 		videoPlayer.source = source
@@ -3871,18 +4309,12 @@ var _this$child0 = new $core.VideoPlayer($this)
 	NestedVideoPrototype.$s = function($c) {
 		var $this = this;
 	NestedVideoBasePrototype.$s.call(this, $c.$b); delete $c.$b
-//assigning clip to (true)
-			$this._removeUpdater('clip'); $this.clip = (true);
 //assigning color to ("transparent")
 			$this._removeUpdater('color'); $this.color = ("transparent");
-//assigning transform.rotateZ to (${display} ? 0 : - 180)
-			$this.transform._replaceUpdater('rotateZ', function() { $this.transform.rotateZ = ($this.display ? 0 : - 180) }, [$this,'display'])
 //assigning visible to (false)
 			$this._removeUpdater('visible'); $this.visible = (false);
-//assigning transform.scaleX to (${display} ? 1.05 : 0.001)
-			$this.transform._replaceUpdater('scaleX', function() { $this.transform.scaleX = ($this.display ? 1.05 : 0.001) }, [$this,'display'])
-//assigning transform.scaleY to (${display} ? 1.05 : 0.001)
-			$this.transform._replaceUpdater('scaleY', function() { $this.transform.scaleY = ($this.display ? 1.05 : 0.001) }, [$this,'display'])
+//assigning clip to (true)
+			$this._removeUpdater('clip'); $this.clip = (true);
 
 //setting up component VideoPlayer
 			var _this$child0 = $c._this$child0
@@ -3895,25 +4327,6 @@ var _this$child0 = new $core.VideoPlayer($this)
 			_this$child0.anchors._removeUpdater('fill'); _this$child0.anchors.fill = (_this$child0.parent);
 
 			_this$child0.completed()
-	var behavior__this_on_transform = new $core.Animation($this)
-	var behavior__this_on_transform$c = { behavior__this_on_transform: behavior__this_on_transform }
-
-//creating component Animation
-	behavior__this_on_transform.$c(behavior__this_on_transform$c.$c$behavior__this_on_transform = { })
-
-
-//setting up component Animation
-	var behavior__this_on_transform = behavior__this_on_transform$c.behavior__this_on_transform
-	behavior__this_on_transform.$s(behavior__this_on_transform$c.$c$behavior__this_on_transform)
-	delete behavior__this_on_transform$c.$c$behavior__this_on_transform
-
-//assigning duration to (400)
-	behavior__this_on_transform._removeUpdater('duration'); behavior__this_on_transform.duration = (400);
-//assigning delay to (400)
-	behavior__this_on_transform._removeUpdater('delay'); behavior__this_on_transform.delay = (400);
-
-	behavior__this_on_transform.completed()
-	$this.setAnimation('transform', behavior__this_on_transform);
 
 			$this.completed()
 }
@@ -3983,6 +4396,89 @@ var _this$child0 = new $core.VideoPlayer($this)
 		var $this = this;
 	MouseMoveMixinBasePrototype.$s.call(this, $c.$b); delete $c.$b
 $this.completed()
+}
+
+
+//=====[component src.MosaicHighlight]=====================
+
+	var MosaicHighlightBaseComponent = $controls$experimental.NestedVideo
+	var MosaicHighlightBasePrototype = MosaicHighlightBaseComponent.prototype
+
+/**
+ * @constructor
+ * @extends {$controls$experimental.NestedVideo}
+ */
+	var MosaicHighlightComponent = $src.MosaicHighlight = function(parent, row) {
+		MosaicHighlightBaseComponent.apply(this, arguments)
+
+	}
+	var MosaicHighlightPrototype = MosaicHighlightComponent.prototype = Object.create(MosaicHighlightBasePrototype)
+
+	MosaicHighlightPrototype.constructor = MosaicHighlightComponent
+
+	MosaicHighlightPrototype.componentName = 'src.MosaicHighlight'
+	$core._protoOn(MosaicHighlightPrototype, 'clicked', function() {
+	var mosaicGrid = this._get('mosaicGrid', true)
+ mosaicGrid.play(mosaicGrid.currentIndex) })
+
+	MosaicHighlightPrototype.$c = function($c) {
+		var $this = this;
+		MosaicHighlightBasePrototype.$c.call(this, $c.$b = { })
+var _this$child0 = new $core.ClickMixin($this)
+		$c._this$child0 = _this$child0
+
+//creating component ClickMixin
+		_this$child0.$c($c.$c$_this$child0 = { })
+
+		$this.addChild(_this$child0)
+		$this._setId('highlightVideo')
+	}
+	MosaicHighlightPrototype.$s = function($c) {
+		var $this = this;
+	MosaicHighlightBasePrototype.$s.call(this, $c.$b); delete $c.$b
+//assigning opacity to (${videoPlayer.ready} ? 1.0 : 0.0)
+			$this._replaceUpdater('opacity', function() { $this.opacity = ($this._get('videoPlayer').ready ? 1.0 : 0.0) }, [$this._get('videoPlayer'),'ready'])
+//assigning border.color to ("#8AF")
+			$this.border._removeUpdater('color'); $this.border.color = ("#8AF");
+//assigning effects.shadow.blur to (10)
+			$this.effects.shadow._removeUpdater('blur'); $this.effects.shadow.blur = (10);
+//assigning radius to (${mosaicGrid.delegateRadius})
+			$this._replaceUpdater('radius', function() { $this.radius = ($this._get('mosaicGrid').delegateRadius) }, [$this._get('mosaicGrid'),'delegateRadius'])
+//assigning effects.shadow.color to ("#8AF")
+			$this.effects.shadow._removeUpdater('color'); $this.effects.shadow.color = ("#8AF");
+//assigning border.width to (1)
+			$this.border._removeUpdater('width'); $this.border.width = (1);
+//assigning effects.shadow.spread to (2)
+			$this.effects.shadow._removeUpdater('spread'); $this.effects.shadow.spread = (2);
+//assigning z to (${display} ? 1 : 0)
+			$this._replaceUpdater('z', function() { $this.z = ($this.display ? 1 : 0) }, [$this,'display'])
+
+//setting up component ClickMixin
+			var _this$child0 = $c._this$child0
+			_this$child0.$s($c.$c$_this$child0)
+			delete $c.$c$_this$child0
+
+
+			_this$child0.completed()
+	var behavior__this_on_opacity = new $core.Animation($this)
+	var behavior__this_on_opacity$c = { behavior__this_on_opacity: behavior__this_on_opacity }
+
+//creating component Animation
+	behavior__this_on_opacity.$c(behavior__this_on_opacity$c.$c$behavior__this_on_opacity = { })
+
+
+//setting up component Animation
+	var behavior__this_on_opacity = behavior__this_on_opacity$c.behavior__this_on_opacity
+	behavior__this_on_opacity.$s(behavior__this_on_opacity$c.$c$behavior__this_on_opacity)
+	delete behavior__this_on_opacity$c.$c$behavior__this_on_opacity
+
+//assigning duration to (300)
+	behavior__this_on_opacity._removeUpdater('duration'); behavior__this_on_opacity.duration = (300);
+
+	behavior__this_on_opacity.completed()
+	$this.setAnimation('opacity', behavior__this_on_opacity);
+
+			$this.completed()
 }
 
 
@@ -4230,6 +4726,9 @@ $this.completed()
 		qml.core.BaseLayout.prototype._processUpdates.apply(this)
 		this.count = this._items.length
 	}
+	BaseViewPrototype._updateHighlightForCurrentItem = function() {
+		this._updateHighlight(this.itemAtIndex(this.currentIndex))
+	}
 	BaseViewPrototype.focusCurrent = function() {
 		var n = this.count
 		if (n === 0)
@@ -4311,13 +4810,7 @@ $this.completed()
 		this._scheduleLayout()
 	}
 	BaseViewPrototype.__complete = function() { BaseViewBasePrototype.__complete.call(this)
-var highlight = this.highlight
-		if (highlight) {
-			highlight.element.remove()
-			this.content.element.prepend(highlight.element)
-		}
-
-		var self = this
+var self = this
 		this.element.on('scroll', function() {
 			var x = self.element.getScrollX(), y = self.element.getScrollY()
 			self._updateScrollPositions(x, y)
@@ -4424,12 +4917,15 @@ var highlight = this.highlight
 	}
 	BaseViewPrototype._updateHighlight = function(item) {
 		var highlight = this.highlight
-		if (highlight) {
-			highlight.viewX = item.viewX
-			highlight.viewY = item.viewY
-			highlight.width = item.width
-			highlight.height = item.height
-		}
+		if (!highlight || !item)
+			return
+
+		highlight.viewX = item.viewX
+		highlight.viewY = item.viewY
+		highlight.width = item.width
+		highlight.height = item.height
+		//see explanations in onHighlightChanged
+		highlight.newBoundingBox()
 	}
 	BaseViewPrototype.positionViewAtItemHorizontally = function(itemBox,center,centerOversized) {
 		var cx = this.contentX, cy = this.contentY
@@ -4503,6 +4999,21 @@ var highlight = this.highlight
 	$core._protoOnChanged(BaseViewPrototype, 'currentIndex', function(value) {
 		this.focusCurrent()
 	})
+	$core._protoOnChanged(BaseViewPrototype, 'highlight', function(value) {
+		var highlight = value
+		if (highlight) {
+			/*
+			* FIXME: highlight is a child of BaseView in QML hierarchy, at the same time
+			* it's a child of content in element hierarchy.
+			* This results in toScreen() return coordinates relative to BaseView. It renders
+			* impossible to follow natively scrollable surfaces with something like VideoPlayer
+			*/
+			highlight.view = this //this makes toScreen adjust position according to scroll position
+
+			highlight.element.remove()
+			this.content.element.prepend(highlight.element)
+		}
+	})
 	$core._protoOnChanged(BaseViewPrototype, 'focusedChild', function(value) {
 		var idx = this._items.indexOf(this.focusedChild)
 		if (idx >= 0)
@@ -4514,9 +5025,7 @@ var highlight = this.highlight
 	$core._protoOnChanged(BaseViewPrototype, 'contentX', function(value) { this.content.x = -value; })
 	$core._protoOnChanged(BaseViewPrototype, 'contentY', function(value) { this.content.y = -value; })
 	$core._protoOn(BaseViewPrototype, 'layoutFinished', function() {
-		var item = this.itemAtIndex(this.currentIndex)
-		if (item)
-			this._updateHighlight(item)
+		this._updateHighlightForCurrentItem()
 	})
 
 	BaseViewPrototype.$c = function($c) {
@@ -4763,12 +5272,17 @@ var highlight = this.highlight
 		var horizontal = this.flow === this.FlowLeftToRight
 
 		var items = this._items
+		var padding = this._padding
+		var paddingLeft = padding.left || 0, paddingTop = padding.top || 0
+		var paddingRight = padding.right || 0, paddingBottom = padding.bottom || 0
+
 		var n = items.length
-		var w = this.width, h = this.height
+		var w = this.width - paddingLeft - paddingTop, h = this.height - paddingTop - paddingBottom
 		if (this.trace)
 			log("layout " + n + " into " + w + "x" + h + " @ " + this.content.x + "," + this.content.y)
+
 		var created = false
-		var x = 0, y = 0
+		var x = padding.left || 0, y = padding.top || 0
 		var cx = this.content.x, cy = this.content.y
 
 		var atEnd = horizontal? function() { return cy + y >= h }: function() { return cx + x >= w }
@@ -4806,13 +5320,13 @@ var highlight = this.highlight
 			if (horizontal) {
 				x += stepX
 				if (x > 0 && x + cellWidth > w) {
-					x = 0
+					x = paddingLeft
 					y += stepY
 				}
 			} else {
 				y += stepY
 				if (y > 0 && y + cellHeight > h) {
-					y = 0
+					y = paddingTop
 					x += stepX
 				}
 			}
@@ -4826,13 +5340,13 @@ var highlight = this.highlight
 		if (!horizontal) {
 			this.rows = Math.floor((h + this.spacing) / (this.cellHeight + this.spacing))
 			this.columns = Math.floor((n + this.rows - 1) / this.rows)
-			this.contentWidth = this.content.width = this.columns * (this.cellWidth + this.spacing) - this.spacing
-			this.contentHeight = this.content.height = this.rows * (this.cellHeight + this.spacing) - this.spacing
+			this.contentWidth = this.content.width = this.columns * (this.cellWidth + this.spacing) - this.spacing + paddingLeft + paddingRight
+			this.contentHeight = this.content.height = this.rows * (this.cellHeight + this.spacing) - this.spacing + paddingTop + paddingBottom
 		} else {
 			this.columns = Math.floor((w + this.spacing ) / (this.cellWidth + this.spacing))
 			this.rows = Math.floor((n + this.columns - 1) / this.columns)
-			this.contentWidth = this.content.width = this.columns * (this.cellWidth + this.spacing) - this.spacing
-			this.contentHeight = this.content.height = this.rows * (this.cellHeight + this.spacing) - this.spacing
+			this.contentWidth = this.content.width = this.columns * (this.cellWidth + this.spacing) - this.spacing + paddingLeft + paddingRight
+			this.contentHeight = this.content.height = this.rows * (this.cellHeight + this.spacing) - this.spacing + paddingTop + paddingBottom
 		}
 		//log(horizontal, w, h, this.rows, this.columns, this.currentIndex, this.contentWidth + "x" + this.contentHeight)
 		this.layoutFinished()
@@ -4975,6 +5489,7 @@ $this.completed()
 	MosaicPrototype.componentName = 'controls.experimental.Mosaic'
 	MosaicPrototype.play = $core.createSignal('play')
 	MosaicPrototype.itemFocused = $core.createSignal('itemFocused')
+	core.addProperty(MosaicPrototype, 'bool', 'playing')
 	core.addProperty(MosaicPrototype, 'bool', 'hoverMode')
 	core.addProperty(MosaicPrototype, 'bool', 'mobile')
 	core.addProperty(MosaicPrototype, 'int', 'offset')
@@ -4997,379 +5512,20 @@ $this.completed()
 		var $this = this;
 		MosaicBasePrototype.$c.call(this, $c.$b = { })
 $this.delegate = (function(__parent, __row) {
-		var delegate = new $core.Rectangle(__parent, __row)
+		var delegate = new $controls$experimental.MosaicDelegate(__parent, __row)
 		var $c = { delegate : delegate }
 
-//creating component Rectangle
+//creating component MosaicDelegate
 			delegate.$c($c.$c$delegate = { })
-			delegate.pressed = $core.createSignal('pressed').bind(delegate)
-	core.addProperty(delegate, 'bool', 'active')
-	core.addProperty(delegate, 'Mixin', 'hoverMixin')
-			var delegate$child0 = new $core.MouseMoveMixin(delegate)
-			$c.delegate$child0 = delegate$child0
 
-//creating component MouseMoveMixin
-			delegate$child0.$c($c.$c$delegate$child0 = { })
 
-			delegate.addChild(delegate$child0)
-			var delegate$child1 = new $core.Image(delegate)
-			$c.delegate$child1 = delegate$child1
-
-//creating component Image
-			delegate$child1.$c($c.$c$delegate$child1 = { })
-	core.addProperty(delegate$child1, 'bool', 'display')
-			delegate$child1._setId('programImage')
-			delegate.addChild(delegate$child1)
-			var delegate$child2 = new $core.Rectangle(delegate)
-			$c.delegate$child2 = delegate$child2
-
-//creating component Rectangle
-			delegate$child2.$c($c.$c$delegate$child2 = { })
-//creating component controls.experimental.<anonymous>
-			var delegate_child2$gradient = new $core.Gradient(delegate$child2)
-			$c.delegate_child2$gradient = delegate_child2$gradient
-
-//creating component Gradient
-			delegate_child2$gradient.$c($c.$c$delegate_child2$gradient = { })
-			var delegate_child2_gradient$child0 = new $core.GradientStop(delegate_child2$gradient)
-			$c.delegate_child2_gradient$child0 = delegate_child2_gradient$child0
-
-//creating component GradientStop
-			delegate_child2_gradient$child0.$c($c.$c$delegate_child2_gradient$child0 = { })
-
-			delegate_child2$gradient.addChild(delegate_child2_gradient$child0)
-			var delegate_child2_gradient$child1 = new $core.GradientStop(delegate_child2$gradient)
-			$c.delegate_child2_gradient$child1 = delegate_child2_gradient$child1
-
-//creating component GradientStop
-			delegate_child2_gradient$child1.$c($c.$c$delegate_child2_gradient$child1 = { })
-
-			delegate_child2$gradient.addChild(delegate_child2_gradient$child1)
-			delegate$child2.gradient = delegate_child2$gradient
-			delegate.addChild(delegate$child2)
-			var delegate$child3 = new $core.Image(delegate)
-			$c.delegate$child3 = delegate$child3
-
-//creating component Image
-			delegate$child3.$c($c.$c$delegate$child3 = { })
-
-			delegate.addChild(delegate$child3)
-			var delegate$child4 = new $controls$web.EllipsisText(delegate)
-			$c.delegate$child4 = delegate$child4
-
-//creating component EllipsisText
-			delegate$child4.$c($c.$c$delegate$child4 = { })
-
-			delegate.addChild(delegate$child4)
-			var delegate$child5 = new $core.Rectangle(delegate)
-			$c.delegate$child5 = delegate$child5
-
-//creating component Rectangle
-			delegate$child5.$c($c.$c$delegate$child5 = { })
-			var delegate_child5$child0 = new $core.Rectangle(delegate$child5)
-			$c.delegate_child5$child0 = delegate_child5$child0
-
-//creating component Rectangle
-			delegate_child5$child0.$c($c.$c$delegate_child5$child0 = { })
-
-			delegate$child5.addChild(delegate_child5$child0)
-			delegate.addChild(delegate$child5)
-			var delegate$child6 = new $core.Timer(delegate)
-			$c.delegate$child6 = delegate$child6
-
-//creating component Timer
-			delegate$child6.$c($c.$c$delegate$child6 = { })
-			delegate$child6._setId('flipTimer')
-			delegate.addChild(delegate$child6)
-//creating component controls.experimental.<anonymous>
-			var delegate$hoverMixin = new $controls$web.HoverClickMixin(delegate)
-			$c.delegate$hoverMixin = delegate$hoverMixin
-
-//creating component HoverClickMixin
-			delegate$hoverMixin.$c($c.$c$delegate$hoverMixin = { })
-
-			delegate.hoverMixin = delegate$hoverMixin
-			core.addAliasProperty(delegate, 'hover', function() { return delegate.hoverMixin }, 'value')
-
-//setting up component Rectangle
+//setting up component MosaicDelegate
 			var delegate = $c.delegate
 			delegate.$s($c.$c$delegate)
 			delete $c.$c$delegate
 
-//assigning border.color to (${activeFocus} ? "#8AF" : "#0000")
-			delegate.border._replaceUpdater('color', function() { delegate.border.color = (delegate.activeFocus ? "#8AF" : "#0000") }, [delegate,'activeFocus'])
-//assigning border.width to (${activeFocus} ? 1 : 0)
-			delegate.border._replaceUpdater('width', function() { delegate.border.width = (delegate.activeFocus ? 1 : 0) }, [delegate,'activeFocus'])
-//assigning clip to (true)
-			delegate._removeUpdater('clip'); delegate.clip = (true);
-//assigning color to ("#464646")
-			delegate._removeUpdater('color'); delegate.color = ("#464646");
-
-//setting up component HoverClickMixin
-			var delegate$hoverMixin = $c.delegate$hoverMixin
-			delegate$hoverMixin.$s($c.$c$delegate$hoverMixin)
-			delete $c.$c$delegate$hoverMixin
-
-
-			delegate$hoverMixin.completed()
-//assigning effects.shadow.blur to (10)
-			delegate.effects.shadow._removeUpdater('blur'); delegate.effects.shadow.blur = (10);
-//assigning height to (${parent.cellHeight})
-			delegate._replaceUpdater('height', function() { delegate.height = (delegate.parent.cellHeight) }, [delegate.parent,'cellHeight'])
-//assigning width to (${parent.cellWidth})
-			delegate._replaceUpdater('width', function() { delegate.width = (delegate.parent.cellWidth) }, [delegate.parent,'cellWidth'])
-//assigning radius to (${nowonTvGrid.delegateRadius})
-			delegate._replaceUpdater('radius', function() { delegate.radius = (delegate._get('nowonTvGrid').delegateRadius) }, [delegate._get('nowonTvGrid'),'delegateRadius'])
-//assigning effects.shadow.color to (${activeFocus} ? "#8AF" : "#0000")
-			delegate.effects.shadow._replaceUpdater('color', function() { delegate.effects.shadow.color = (delegate.activeFocus ? "#8AF" : "#0000") }, [delegate,'activeFocus'])
-//assigning active to (${activeFocus})
-			delegate._replaceUpdater('active', function() { delegate.active = (delegate.activeFocus) }, [delegate,'activeFocus'])
-//assigning effects.shadow.spread to (2)
-			delegate.effects.shadow._removeUpdater('spread'); delegate.effects.shadow.spread = (2);
-//assigning z to (${activeFocus} ? ${parent.z} + 1 : ${parent.z})
-			delegate._replaceUpdater('z', function() { delegate.z = (delegate.activeFocus ? delegate.parent.z + 1 : delegate.parent.z) }, [delegate.parent,'z',delegate,'activeFocus'])
-//assigning transform.scaleX to (${activeFocus} ? 1.05 : 1)
-			delegate.transform._replaceUpdater('scaleX', function() { delegate.transform.scaleX = (delegate.activeFocus ? 1.05 : 1) }, [delegate,'activeFocus'])
-//assigning transform.scaleY to (${activeFocus} ? 1.05 : 1)
-			delegate.transform._replaceUpdater('scaleY', function() { delegate.transform.scaleY = (delegate.activeFocus ? 1.05 : 1) }, [delegate,'activeFocus'])
-			delegate.on('clicked', function() {
-	var model = this._get('model', true)
- this.parent.currentIndex = model.index; this.pressed() }.bind(delegate))
-			delegate.on('pressed', function() {
-	var model = this._get('model', true)
- this.parent.play(model.index) }.bind(delegate))
-			delegate.onChanged('activeFocus', function(value) {
-	var flipTimer = this._get('flipTimer', true)
-
-			if (!this.parent._firstTimeFlag) {
-				this.parent._firstTimeFlag = true
-				return
-			}
-
-			if (!value) {
-				this.transform.rotateZ = 0
-				return
-			}
-
-			flipTimer.restart()
-		}.bind(delegate))
-			delegate.onPressed('Select', function(key,event) { this.pressed() }.bind(delegate))
-
-//setting up component MouseMoveMixin
-			var delegate$child0 = $c.delegate$child0
-			delegate$child0.$s($c.$c$delegate$child0)
-			delete $c.$c$delegate$child0
-
-			delegate$child0.on('mouseMove', function() {
-	var model = this._get('model', true), nowonTvGrid = this._get('nowonTvGrid', true)
-
-				nowonTvGrid.hoverMode = true
-				nowonTvGrid.currentIndex = model.index
-			}.bind(delegate$child0))
-
-			delegate$child0.completed()
-
-//setting up component Image
-			var delegate$child1 = $c.delegate$child1
-			delegate$child1.$s($c.$c$delegate$child1)
-			delete $c.$c$delegate$child1
-
-//assigning source to (${model.preview} ? ${model.preview} : '')
-			delegate$child1._replaceUpdater('source', function() { delegate$child1.source = (delegate$child1._get('model').preview ? delegate$child1._get('model').preview : '') }, [delegate$child1._get('_delegate'),'_row'])
-//assigning fillMode to (_globals.core.Image.prototype.PreserveAspectCrop)
-			delegate$child1._removeUpdater('fillMode'); delegate$child1.fillMode = (_globals.core.Image.prototype.PreserveAspectCrop);
-//assigning visible to (${source})
-			delegate$child1._replaceUpdater('visible', function() { delegate$child1.visible = (delegate$child1.source) }, [delegate$child1,'source'])
-//assigning anchors.fill to (${parent})
-			delegate$child1.anchors._removeUpdater('fill'); delegate$child1.anchors.fill = (delegate$child1.parent);
-			delegate$child1.onChanged('status', function(value) {
-				this.display = this.status == this.Ready
-			}.bind(delegate$child1))
-
-			delegate$child1.completed()
-
-//setting up component Rectangle
-			var delegate$child2 = $c.delegate$child2
-			delegate$child2.$s($c.$c$delegate$child2)
-			delete $c.$c$delegate$child2
-
-//assigning anchors.bottomMargin to (((2) * ${context.virtualScale}))
-			delegate$child2.anchors._replaceUpdater('bottomMargin', function() { delegate$child2.anchors.bottomMargin = (((2) * delegate$child2._context.virtualScale)) }, [delegate$child2._context,'virtualScale'])
-//assigning width to ((${parent.width}))
-			delegate$child2._replaceUpdater('width', function() { delegate$child2.width = ((delegate$child2.parent.width)) }, [delegate$child2.parent,'width'])
-
-//setting up component Gradient
-			var delegate_child2$gradient = $c.delegate_child2$gradient
-			delegate_child2$gradient.$s($c.$c$delegate_child2$gradient)
-			delete $c.$c$delegate_child2$gradient
-
-
-//setting up component GradientStop
-			var delegate_child2_gradient$child0 = $c.delegate_child2_gradient$child0
-			delegate_child2_gradient$child0.$s($c.$c$delegate_child2_gradient$child0)
-			delete $c.$c$delegate_child2_gradient$child0
-
-//assigning color to ("#0000")
-			delegate_child2_gradient$child0._removeUpdater('color'); delegate_child2_gradient$child0.color = ("#0000");
-//assigning position to (0.0)
-			delegate_child2_gradient$child0._removeUpdater('position'); delegate_child2_gradient$child0.position = (0.0);
-
-			delegate_child2_gradient$child0.completed()
-
-//setting up component GradientStop
-			var delegate_child2_gradient$child1 = $c.delegate_child2_gradient$child1
-			delegate_child2_gradient$child1.$s($c.$c$delegate_child2_gradient$child1)
-			delete $c.$c$delegate_child2_gradient$child1
-
-//assigning color to ("#000")
-			delegate_child2_gradient$child1._removeUpdater('color'); delegate_child2_gradient$child1.color = ("#000");
-//assigning position to (1.0)
-			delegate_child2_gradient$child1._removeUpdater('position'); delegate_child2_gradient$child1.position = (1.0);
-
-			delegate_child2_gradient$child1.completed()
-
-			delegate_child2$gradient.completed()
-//assigning anchors.bottom to (${parent.bottom})
-			delegate$child2.anchors._replaceUpdater('bottom', function() { delegate$child2.anchors.bottom = (delegate$child2.parent.bottom) }, [delegate$child2.parent,'bottom'])
-//assigning height to (((70) * ${context.virtualScale}))
-			delegate$child2._replaceUpdater('height', function() { delegate$child2.height = (((70) * delegate$child2._context.virtualScale)) }, [delegate$child2._context,'virtualScale'])
-
-			delegate$child2.completed()
-
-//setting up component Image
-			var delegate$child3 = $c.delegate$child3
-			delegate$child3.$s($c.$c$delegate$child3)
-			delete $c.$c$delegate$child3
-
-//assigning horizontalAlignment to (_globals.core.Image.prototype.AlignRight)
-			delegate$child3._removeUpdater('horizontalAlignment'); delegate$child3.horizontalAlignment = (_globals.core.Image.prototype.AlignRight);
-//assigning source to (${model.icon} ? ${model.icon} : '')
-			delegate$child3._replaceUpdater('source', function() { delegate$child3.source = (delegate$child3._get('model').icon ? delegate$child3._get('model').icon : '') }, [delegate$child3._get('_delegate'),'_row'])
-//assigning anchors.bottomMargin to (((21) * ${context.virtualScale}))
-			delegate$child3.anchors._replaceUpdater('bottomMargin', function() { delegate$child3.anchors.bottomMargin = (((21) * delegate$child3._context.virtualScale)) }, [delegate$child3._context,'virtualScale'])
-//assigning height to (((70) * ${context.virtualScale}))
-			delegate$child3._replaceUpdater('height', function() { delegate$child3.height = (((70) * delegate$child3._context.virtualScale)) }, [delegate$child3._context,'virtualScale'])
-//assigning width to (((100) * ${context.virtualScale}))
-			delegate$child3._replaceUpdater('width', function() { delegate$child3.width = (((100) * delegate$child3._context.virtualScale)) }, [delegate$child3._context,'virtualScale'])
-//assigning fillMode to (_globals.core.Image.prototype.PreserveAspectFit)
-			delegate$child3._removeUpdater('fillMode'); delegate$child3.fillMode = (_globals.core.Image.prototype.PreserveAspectFit);
-//assigning verticalAlignment to (_globals.core.Image.prototype.AlignTop)
-			delegate$child3._removeUpdater('verticalAlignment'); delegate$child3.verticalAlignment = (_globals.core.Image.prototype.AlignTop);
-//assigning anchors.bottom to (${parent.bottom})
-			delegate$child3.anchors._replaceUpdater('bottom', function() { delegate$child3.anchors.bottom = (delegate$child3.parent.bottom) }, [delegate$child3.parent,'bottom'])
-//assigning x to (((10) * ${context.virtualScale}))
-			delegate$child3._replaceUpdater('x', function() { delegate$child3.x = (((10) * delegate$child3._context.virtualScale)) }, [delegate$child3._context,'virtualScale'])
-
-			delegate$child3.completed()
-
-//setting up component EllipsisText
-			var delegate$child4 = $c.delegate$child4
-			delegate$child4.$s($c.$c$delegate$child4)
-			delete $c.$c$delegate$child4
-
-//assigning color to ("#fff")
-			delegate$child4._removeUpdater('color'); delegate$child4.color = ("#fff");
-//assigning text to (${model.title})
-			delegate$child4._replaceUpdater('text', function() { delegate$child4.text = (delegate$child4._get('model').title) }, [delegate$child4._get('_delegate'),'_row'])
-//assigning anchors.bottomMargin to (((6) * ${context.virtualScale}))
-			delegate$child4.anchors._replaceUpdater('bottomMargin', function() { delegate$child4.anchors.bottomMargin = (((6) * delegate$child4._context.virtualScale)) }, [delegate$child4._context,'virtualScale'])
-//assigning width to (((270) * ${context.virtualScale}))
-			delegate$child4._replaceUpdater('width', function() { delegate$child4.width = (((270) * delegate$child4._context.virtualScale)) }, [delegate$child4._context,'virtualScale'])
-//assigning anchors.bottom to (${parent.bottom})
-			delegate$child4.anchors._replaceUpdater('bottom', function() { delegate$child4.anchors.bottom = (delegate$child4.parent.bottom) }, [delegate$child4.parent,'bottom'])
-//assigning font.pixelSize to (${nowonTvGrid.mobile} ? ((9) * ${context.virtualScale}) : ((18) * ${context.virtualScale}))
-			delegate$child4.font._replaceUpdater('pixelSize', function() { delegate$child4.font.pixelSize = (delegate$child4._get('nowonTvGrid').mobile ? ((9) * delegate$child4._context.virtualScale) : ((18) * delegate$child4._context.virtualScale)) }, [delegate$child4._get('nowonTvGrid'),'mobile',delegate$child4._context,'virtualScale'])
-//assigning x to (((10) * ${context.virtualScale}))
-			delegate$child4._replaceUpdater('x', function() { delegate$child4.x = (((10) * delegate$child4._context.virtualScale)) }, [delegate$child4._context,'virtualScale'])
-
-			delegate$child4.completed()
-
-//setting up component Rectangle
-			var delegate$child5 = $c.delegate$child5
-			delegate$child5.$s($c.$c$delegate$child5)
-			delete $c.$c$delegate$child5
-
-//assigning color to ("#000c")
-			delegate$child5._removeUpdater('color'); delegate$child5.color = ("#000c");
-//assigning width to ((${parent.width}))
-			delegate$child5._replaceUpdater('width', function() { delegate$child5.width = ((delegate$child5.parent.width)) }, [delegate$child5.parent,'width'])
-//assigning anchors.bottom to (${parent.bottom})
-			delegate$child5.anchors._replaceUpdater('bottom', function() { delegate$child5.anchors.bottom = (delegate$child5.parent.bottom) }, [delegate$child5.parent,'bottom'])
-//assigning clip to (true)
-			delegate$child5._removeUpdater('clip'); delegate$child5.clip = (true);
-//assigning height to (((2) * ${context.virtualScale}))
-			delegate$child5._replaceUpdater('height', function() { delegate$child5.height = (((2) * delegate$child5._context.virtualScale)) }, [delegate$child5._context,'virtualScale'])
-
-//setting up component Rectangle
-			var delegate_child5$child0 = $c.delegate_child5$child0
-			delegate_child5$child0.$s($c.$c$delegate_child5$child0)
-			delete $c.$c$delegate_child5$child0
-
-//assigning color to ("#e53935")
-			delegate_child5$child0._removeUpdater('color'); delegate_child5$child0.color = ("#e53935");
-//assigning width to (${parent.width} * ${model.progress})
-			delegate_child5$child0._replaceUpdater('width', function() { delegate_child5$child0.width = (delegate_child5$child0.parent.width * delegate_child5$child0._get('model').progress) }, [delegate_child5$child0._get('_delegate'),'_row',delegate_child5$child0.parent,'width'])
-//assigning height to ((${parent.height}))
-			delegate_child5$child0._replaceUpdater('height', function() { delegate_child5$child0.height = ((delegate_child5$child0.parent.height)) }, [delegate_child5$child0.parent,'height'])
-
-			delegate_child5$child0.completed()
-
-			delegate$child5.completed()
-
-//setting up component Timer
-			var delegate$child6 = $c.delegate$child6
-			delegate$child6.$s($c.$c$delegate$child6)
-			delete $c.$c$delegate$child6
-
-//assigning interval to (3000)
-			delegate$child6._removeUpdater('interval'); delegate$child6.interval = (3000);
-			delegate$child6.on('triggered', function() {
-	var model = this._get('model', true), nowonTvGrid = this._get('nowonTvGrid', true)
-
-				if (!this.parent.activeFocus)
-					return
-				this.parent.transform.scaleX = 0
-				this.parent.transform.scaleY = 0
-				this.parent.transform.rotateZ = 180
-				nowonTvGrid.itemFocused(model.index)
-			}.bind(delegate$child6))
-
-			delegate$child6.completed()
-	var behavior_delegate_on_transform = new $core.Animation(delegate)
-	var behavior_delegate_on_transform$c = { behavior_delegate_on_transform: behavior_delegate_on_transform }
-
-//creating component Animation
-	behavior_delegate_on_transform.$c(behavior_delegate_on_transform$c.$c$behavior_delegate_on_transform = { })
-
-
-//setting up component Animation
-	var behavior_delegate_on_transform = behavior_delegate_on_transform$c.behavior_delegate_on_transform
-	behavior_delegate_on_transform.$s(behavior_delegate_on_transform$c.$c$behavior_delegate_on_transform)
-	delete behavior_delegate_on_transform$c.$c$behavior_delegate_on_transform
-
-//assigning duration to (400)
-	behavior_delegate_on_transform._removeUpdater('duration'); behavior_delegate_on_transform.duration = (400);
-
-	behavior_delegate_on_transform.completed()
-	delegate.setAnimation('transform', behavior_delegate_on_transform);
-
-	var behavior_delegate_on_boxshadow = new $core.Animation(delegate)
-	var behavior_delegate_on_boxshadow$c = { behavior_delegate_on_boxshadow: behavior_delegate_on_boxshadow }
-
-//creating component Animation
-	behavior_delegate_on_boxshadow.$c(behavior_delegate_on_boxshadow$c.$c$behavior_delegate_on_boxshadow = { })
-
-
-//setting up component Animation
-	var behavior_delegate_on_boxshadow = behavior_delegate_on_boxshadow$c.behavior_delegate_on_boxshadow
-	behavior_delegate_on_boxshadow.$s(behavior_delegate_on_boxshadow$c.$c$behavior_delegate_on_boxshadow)
-	delete behavior_delegate_on_boxshadow$c.$c$behavior_delegate_on_boxshadow
-
-//assigning duration to (400)
-	behavior_delegate_on_boxshadow._removeUpdater('duration'); behavior_delegate_on_boxshadow.duration = (400);
-
-	behavior_delegate_on_boxshadow.completed()
-	delegate.setAnimation('boxshadow', behavior_delegate_on_boxshadow);
+//assigning allowOpacity to (${parent.playing})
+			delegate._replaceUpdater('allowOpacity', function() { delegate.allowOpacity = (delegate.parent.playing) }, [delegate.parent,'playing'])
 
 			delegate.completed()
 
@@ -5383,13 +5539,13 @@ $this.delegate = (function(__parent, __row) {
 		_this$model.$c($c.$c$_this$model = { })
 
 		$this.model = _this$model
-		$this._setId('nowonTvGrid')
+		$this._setId('mosaicGrid')
 	}
 	MosaicPrototype.$s = function($c) {
 		var $this = this;
 	MosaicBasePrototype.$s.call(this, $c.$b); delete $c.$b
-//assigning cellWidth to ((${context.width} > ${context.height} ? 0.25 : 0.5) * ${width} - ${spacing})
-			$this._replaceUpdater('cellWidth', function() { $this.cellWidth = (($this._context.width > $this._context.height ? 0.25 : 0.5) * $this.width - $this.spacing) }, [$this,'width',$this._context,'height',$this._context,'width',$this,'spacing'])
+//assigning cellWidth to ((${context.width} > ${context.height} ? 0.25 : 0.5) * (${width} - ${padding.left} - ${padding.right}) - ${spacing})
+			$this._replaceUpdater('cellWidth', function() { $this.cellWidth = (($this._context.width > $this._context.height ? 0.25 : 0.5) * ($this.width - $this.padding.left - $this.padding.right) - $this.spacing) }, [$this,'spacing',$this,'width',$this.padding,'right',$this._context,'height',$this._context,'width',$this.padding,'left'])
 //assigning mobile to (${context.system.device} === ${context.system.Mobile})
 			$this._replaceUpdater('mobile', function() { $this.mobile = ($this._context.system.device === $this._context.system.Mobile) }, [$this._context.system,'device',$this._context.system,'Mobile'])
 //assigning keyNavigationWraps to (false)
@@ -5400,6 +5556,8 @@ $this.delegate = (function(__parent, __row) {
 			$this._replaceUpdater('contentFollowsCurrentItem', function() { $this.contentFollowsCurrentItem = (! $this.hoverMode) }, [$this,'hoverMode'])
 //assigning height to ((${parent.height}))
 			$this._replaceUpdater('height', function() { $this.height = (($this.parent.height)) }, [$this.parent,'height'])
+//assigning padding to (((15) * ${context.virtualScale}))
+			$this._replaceUpdater('padding', function() { $this.padding = (((15) * $this._context.virtualScale)) }, [$this._context,'virtualScale'])
 //assigning width to ((${parent.width}))
 			$this._replaceUpdater('width', function() { $this.width = (($this.parent.width)) }, [$this.parent,'width'])
 //assigning content.cssTranslatePositioning to (true)
@@ -5844,41 +6002,20 @@ var _this$child0 = new $core.Item($this)
 
 //creating component Item
 		_this$child0.$c($c.$c$_this$child0 = { })
-		var _this_child0$child0 = new $controls$mixins.OverflowMixin(_this$child0)
+		var _this_child0$child0 = new $controls$experimental.Mosaic(_this$child0)
 		$c._this_child0$child0 = _this_child0$child0
 
-//creating component OverflowMixin
-		_this_child0$child0.$c($c.$c$_this_child0$child0 = { })
-
-		_this$child0.addChild(_this_child0$child0)
-		var _this_child0$child1 = new $controls$experimental.Mosaic(_this$child0)
-		$c._this_child0$child1 = _this_child0$child1
-
 //creating component Mosaic
-		_this_child0$child1.$c($c.$c$_this_child0$child1 = { })
-		var _this_child0_child1$child0 = new $controls$mixins.OverflowMixin(_this_child0$child1)
-		$c._this_child0_child1$child0 = _this_child0_child1$child0
-
-//creating component OverflowMixin
-		_this_child0_child1$child0.$c($c.$c$_this_child0_child1$child0 = { })
-
-		_this_child0$child1.addChild(_this_child0_child1$child0)
+		_this_child0$child0.$c($c.$c$_this_child0$child0 = { })
 //creating component src.<anonymous>
-		var _this_child0_child1$highlight = new $controls$experimental.NestedVideo(_this_child0$child1)
-		$c._this_child0_child1$highlight = _this_child0_child1$highlight
+		var _this_child0_child0$highlight = new $src.MosaicHighlight(_this_child0$child0)
+		$c._this_child0_child0$highlight = _this_child0_child0$highlight
 
-//creating component NestedVideo
-		_this_child0_child1$highlight.$c($c.$c$_this_child0_child1$highlight = { })
-		var _this_child0_child1_highlight$child0 = new $core.ClickMixin(_this_child0_child1$highlight)
-		$c._this_child0_child1_highlight$child0 = _this_child0_child1_highlight$child0
+//creating component MosaicHighlight
+		_this_child0_child0$highlight.$c($c.$c$_this_child0_child0$highlight = { })
 
-//creating component ClickMixin
-		_this_child0_child1_highlight$child0.$c($c.$c$_this_child0_child1_highlight$child0 = { })
-
-		_this_child0_child1$highlight.addChild(_this_child0_child1_highlight$child0)
-		_this_child0$child1.highlight = _this_child0_child1$highlight
-		_this_child0$child1._setId('mosaicGrid')
-		_this$child0.addChild(_this_child0$child1)
+		_this_child0$child0.highlight = _this_child0_child0$highlight
+		_this$child0.addChild(_this_child0$child0)
 		$this.addChild(_this$child0)
 		$this._setId('mosaicPageProto')
 	}
@@ -5902,166 +6039,55 @@ var _this$child0 = new $core.Item($this)
 //assigning height to ((${parent.height}))
 			_this$child0._replaceUpdater('height', function() { _this$child0.height = ((_this$child0.parent.height)) }, [_this$child0.parent,'height'])
 
-//setting up component OverflowMixin
+//setting up component Mosaic
 			var _this_child0$child0 = $c._this_child0$child0
 			_this_child0$child0.$s($c.$c$_this_child0$child0)
 			delete $c.$c$_this_child0$child0
 
-//assigning value to (_globals.controls.mixins.OverflowMixin.prototype.ScrollY)
-			_this_child0$child0._removeUpdater('value'); _this_child0$child0.value = (_globals.controls.mixins.OverflowMixin.prototype.ScrollY);
-
-			_this_child0$child0.completed()
-
-//setting up component Mosaic
-			var _this_child0$child1 = $c._this_child0$child1
-			_this_child0$child1.$s($c.$c$_this_child0$child1)
-			delete $c.$c$_this_child0$child1
-
 //assigning keyProcessDelay to (300)
-			_this_child0$child1._removeUpdater('keyProcessDelay'); _this_child0$child1.keyProcessDelay = (300);
+			_this_child0$child0._removeUpdater('keyProcessDelay'); _this_child0$child0.keyProcessDelay = (300);
 //assigning delegateRadius to (${mosaicPageProto.delegateRadius})
-			_this_child0$child1._replaceUpdater('delegateRadius', function() { _this_child0$child1.delegateRadius = (_this_child0$child1._get('mosaicPageProto').delegateRadius) }, [_this_child0$child1._get('mosaicPageProto'),'delegateRadius'])
+			_this_child0$child0._replaceUpdater('delegateRadius', function() { _this_child0$child0.delegateRadius = (_this_child0$child0._get('mosaicPageProto').delegateRadius) }, [_this_child0$child0._get('mosaicPageProto'),'delegateRadius'])
 //assigning spacing to (((20) * ${context.virtualScale}))
-			_this_child0$child1._replaceUpdater('spacing', function() { _this_child0$child1.spacing = (((20) * _this_child0$child1._context.virtualScale)) }, [_this_child0$child1._context,'virtualScale'])
+			_this_child0$child0._replaceUpdater('spacing', function() { _this_child0$child0.spacing = (((20) * _this_child0$child0._context.virtualScale)) }, [_this_child0$child0._context,'virtualScale'])
 
-//setting up component NestedVideo
-			var _this_child0_child1$highlight = $c._this_child0_child1$highlight
-			_this_child0_child1$highlight.$s($c.$c$_this_child0_child1$highlight)
-			delete $c.$c$_this_child0_child1$highlight
-
-//assigning border.color to ("#8AF")
-			_this_child0_child1$highlight.border._removeUpdater('color'); _this_child0_child1$highlight.border.color = ("#8AF");
-//assigning effects.shadow.blur to (10)
-			_this_child0_child1$highlight.effects.shadow._removeUpdater('blur'); _this_child0_child1$highlight.effects.shadow.blur = (10);
-//assigning radius to (${parent.delegateRadius})
-			_this_child0_child1$highlight._replaceUpdater('radius', function() { _this_child0_child1$highlight.radius = (_this_child0_child1$highlight.parent.delegateRadius) }, [_this_child0_child1$highlight.parent,'delegateRadius'])
-//assigning effects.shadow.color to ("#8AF")
-			_this_child0_child1$highlight.effects.shadow._removeUpdater('color'); _this_child0_child1$highlight.effects.shadow.color = ("#8AF");
-//assigning border.width to (1)
-			_this_child0_child1$highlight.border._removeUpdater('width'); _this_child0_child1$highlight.border.width = (1);
-//assigning effects.shadow.spread to (2)
-			_this_child0_child1$highlight.effects.shadow._removeUpdater('spread'); _this_child0_child1$highlight.effects.shadow.spread = (2);
-//assigning z to (${display} ? 1 : 0)
-			_this_child0_child1$highlight._replaceUpdater('z', function() { _this_child0_child1$highlight.z = (_this_child0_child1$highlight.display ? 1 : 0) }, [_this_child0_child1$highlight,'display'])
-			_this_child0_child1$highlight.on('clicked', function() {
-	var mosaicGrid = this._get('mosaicGrid', true)
- mosaicGrid.play(mosaicGrid.currentIndex) }.bind(_this_child0_child1$highlight))
-
-//setting up component ClickMixin
-			var _this_child0_child1_highlight$child0 = $c._this_child0_child1_highlight$child0
-			_this_child0_child1_highlight$child0.$s($c.$c$_this_child0_child1_highlight$child0)
-			delete $c.$c$_this_child0_child1_highlight$child0
+//setting up component MosaicHighlight
+			var _this_child0_child0$highlight = $c._this_child0_child0$highlight
+			_this_child0_child0$highlight.$s($c.$c$_this_child0_child0$highlight)
+			delete $c.$c$_this_child0_child0$highlight
 
 
-			_this_child0_child1_highlight$child0.completed()
-	var behavior__this_child0_child1_highlight_on_y = new $core.Animation(_this_child0_child1$highlight)
-	var behavior__this_child0_child1_highlight_on_y$c = { behavior__this_child0_child1_highlight_on_y: behavior__this_child0_child1_highlight_on_y }
-
-//creating component Animation
-	behavior__this_child0_child1_highlight_on_y.$c(behavior__this_child0_child1_highlight_on_y$c.$c$behavior__this_child0_child1_highlight_on_y = { })
-
-
-//setting up component Animation
-	var behavior__this_child0_child1_highlight_on_y = behavior__this_child0_child1_highlight_on_y$c.behavior__this_child0_child1_highlight_on_y
-	behavior__this_child0_child1_highlight_on_y.$s(behavior__this_child0_child1_highlight_on_y$c.$c$behavior__this_child0_child1_highlight_on_y)
-	delete behavior__this_child0_child1_highlight_on_y$c.$c$behavior__this_child0_child1_highlight_on_y
-
-//assigning duration to (300)
-	behavior__this_child0_child1_highlight_on_y._removeUpdater('duration'); behavior__this_child0_child1_highlight_on_y.duration = (300);
-
-	behavior__this_child0_child1_highlight_on_y.completed()
-	_this_child0_child1$highlight.setAnimation('y', behavior__this_child0_child1_highlight_on_y);
-
-	var behavior__this_child0_child1_highlight_on_x = new $core.Animation(_this_child0_child1$highlight)
-	var behavior__this_child0_child1_highlight_on_x$c = { behavior__this_child0_child1_highlight_on_x: behavior__this_child0_child1_highlight_on_x }
-
-//creating component Animation
-	behavior__this_child0_child1_highlight_on_x.$c(behavior__this_child0_child1_highlight_on_x$c.$c$behavior__this_child0_child1_highlight_on_x = { })
-
-
-//setting up component Animation
-	var behavior__this_child0_child1_highlight_on_x = behavior__this_child0_child1_highlight_on_x$c.behavior__this_child0_child1_highlight_on_x
-	behavior__this_child0_child1_highlight_on_x.$s(behavior__this_child0_child1_highlight_on_x$c.$c$behavior__this_child0_child1_highlight_on_x)
-	delete behavior__this_child0_child1_highlight_on_x$c.$c$behavior__this_child0_child1_highlight_on_x
-
-//assigning duration to (300)
-	behavior__this_child0_child1_highlight_on_x._removeUpdater('duration'); behavior__this_child0_child1_highlight_on_x.duration = (300);
-
-	behavior__this_child0_child1_highlight_on_x.completed()
-	_this_child0_child1$highlight.setAnimation('x', behavior__this_child0_child1_highlight_on_x);
-
-	var behavior__this_child0_child1_highlight_on_height = new $core.Animation(_this_child0_child1$highlight)
-	var behavior__this_child0_child1_highlight_on_height$c = { behavior__this_child0_child1_highlight_on_height: behavior__this_child0_child1_highlight_on_height }
-
-//creating component Animation
-	behavior__this_child0_child1_highlight_on_height.$c(behavior__this_child0_child1_highlight_on_height$c.$c$behavior__this_child0_child1_highlight_on_height = { })
-
-
-//setting up component Animation
-	var behavior__this_child0_child1_highlight_on_height = behavior__this_child0_child1_highlight_on_height$c.behavior__this_child0_child1_highlight_on_height
-	behavior__this_child0_child1_highlight_on_height.$s(behavior__this_child0_child1_highlight_on_height$c.$c$behavior__this_child0_child1_highlight_on_height)
-	delete behavior__this_child0_child1_highlight_on_height$c.$c$behavior__this_child0_child1_highlight_on_height
-
-//assigning duration to (300)
-	behavior__this_child0_child1_highlight_on_height._removeUpdater('duration'); behavior__this_child0_child1_highlight_on_height.duration = (300);
-
-	behavior__this_child0_child1_highlight_on_height.completed()
-	_this_child0_child1$highlight.setAnimation('height', behavior__this_child0_child1_highlight_on_height);
-
-	var behavior__this_child0_child1_highlight_on_width = new $core.Animation(_this_child0_child1$highlight)
-	var behavior__this_child0_child1_highlight_on_width$c = { behavior__this_child0_child1_highlight_on_width: behavior__this_child0_child1_highlight_on_width }
-
-//creating component Animation
-	behavior__this_child0_child1_highlight_on_width.$c(behavior__this_child0_child1_highlight_on_width$c.$c$behavior__this_child0_child1_highlight_on_width = { })
-
-
-//setting up component Animation
-	var behavior__this_child0_child1_highlight_on_width = behavior__this_child0_child1_highlight_on_width$c.behavior__this_child0_child1_highlight_on_width
-	behavior__this_child0_child1_highlight_on_width.$s(behavior__this_child0_child1_highlight_on_width$c.$c$behavior__this_child0_child1_highlight_on_width)
-	delete behavior__this_child0_child1_highlight_on_width$c.$c$behavior__this_child0_child1_highlight_on_width
-
-//assigning duration to (300)
-	behavior__this_child0_child1_highlight_on_width._removeUpdater('duration'); behavior__this_child0_child1_highlight_on_width.duration = (300);
-
-	behavior__this_child0_child1_highlight_on_width.completed()
-	_this_child0_child1$highlight.setAnimation('width', behavior__this_child0_child1_highlight_on_width);
-
-			_this_child0_child1$highlight.completed()
-//assigning height to (${contentHeight})
-			_this_child0$child1._replaceUpdater('height', function() { _this_child0$child1.height = (_this_child0$child1.contentHeight) }, [_this_child0$child1,'contentHeight'])
+			_this_child0_child0$highlight.completed()
 //assigning width to (((90) / 100 * ${parent.width}))
-			_this_child0$child1._replaceUpdater('width', function() { _this_child0$child1.width = (((90) / 100 * _this_child0$child1.parent.width)) }, [_this_child0$child1.parent,'width'])
+			_this_child0$child0._replaceUpdater('width', function() { _this_child0$child0.width = (((90) / 100 * _this_child0$child0.parent.width)) }, [_this_child0$child0.parent,'width'])
 //assigning animationDuration to (300)
-			_this_child0$child1._removeUpdater('animationDuration'); _this_child0$child1.animationDuration = (300);
+			_this_child0$child0._removeUpdater('animationDuration'); _this_child0$child0.animationDuration = (300);
 //assigning y to (((5) / 100 * ${parent.height}))
-			_this_child0$child1._replaceUpdater('y', function() { _this_child0$child1.y = (((5) / 100 * _this_child0$child1.parent.height)) }, [_this_child0$child1.parent,'height'])
+			_this_child0$child0._replaceUpdater('y', function() { _this_child0$child0.y = (((5) / 100 * _this_child0$child0.parent.height)) }, [_this_child0$child0.parent,'height'])
 //assigning x to (((5) / 100 * ${parent.width}))
-			_this_child0$child1._replaceUpdater('x', function() { _this_child0$child1.x = (((5) / 100 * _this_child0$child1.parent.width)) }, [_this_child0$child1.parent,'width'])
-			_this_child0$child1.focusIndex = function(idx) {
+			_this_child0$child0._replaceUpdater('x', function() { _this_child0$child0.x = (((5) / 100 * _this_child0$child0.parent.width)) }, [_this_child0$child0.parent,'width'])
+//assigning playing to (${videoPlayer.ready})
+			_this_child0$child0._replaceUpdater('playing', function() { _this_child0$child0.playing = (_this_child0$child0._get('videoPlayer').ready) }, [_this_child0$child0._get('videoPlayer'),'ready'])
+			_this_child0$child0.focusIndex = function(idx) {
+	var highlightVideo = this._get('highlightVideo', true)
+
 				var row = this.model.get(idx)
-				this.highlight.showAndPlay(row.video)
-			}.bind(_this_child0$child1)
-			_this_child0$child1.on('play', function(idx) {
+				highlightVideo.showAndPlay(row.video)
+			}.bind(_this_child0$child0)
+			_this_child0$child0.on('play', function(idx) {
 	var videoPlayer = this._get('videoPlayer', true)
 
+				this.focusIndex(idx)
 				if (videoPlayer.ready)
-					Modernizr.prefixed('requestFullscreen', videoPlayer.element.dom)()
-			}.bind(_this_child0$child1))
-			_this_child0$child1.on('itemFocused', function(idx) { this.focusIndex(idx) }.bind(_this_child0$child1))
-			_this_child0$child1.onChanged('currentIndex', function(value) { this.highlight.hide() }.bind(_this_child0$child1))
-			_this_child0$child1.onPressed('Back', function(key,event) { this.focusIndex(this.currentIndex) }.bind(_this_child0$child1))
+					videoPlayer.fullscreen = true
+			}.bind(_this_child0$child0))
+			_this_child0$child0.on('itemFocused', function(idx) { this.focusIndex(idx) }.bind(_this_child0$child0))
+			_this_child0$child0.onChanged('currentIndex', function(value) {
+	var highlightVideo = this._get('highlightVideo', true)
+ highlightVideo.hide() }.bind(_this_child0$child0))
+			_this_child0$child0.onPressed('Back', function(key,event) { this.focusIndex(this.currentIndex) }.bind(_this_child0$child0))
 
-//setting up component OverflowMixin
-			var _this_child0_child1$child0 = $c._this_child0_child1$child0
-			_this_child0_child1$child0.$s($c.$c$_this_child0_child1$child0)
-			delete $c.$c$_this_child0_child1$child0
-
-//assigning value to (_globals.controls.mixins.OverflowMixin.prototype.Visible)
-			_this_child0_child1$child0._removeUpdater('value'); _this_child0_child1$child0.value = (_globals.controls.mixins.OverflowMixin.prototype.Visible);
-
-			_this_child0_child1$child0.completed()
-
-			_this_child0$child1.completed()
+			_this_child0$child0.completed()
 
 			_this$child0.completed()
 
@@ -6207,7 +6233,6 @@ $this.completed()
 	ContextPrototype.message = $core.createSignal('message')
 	core.addProperty(ContextPrototype, 'int', 'scrollY')
 	core.addProperty(ContextPrototype, 'int', 'keyProcessDelay')
-	core.addProperty(ContextPrototype, 'bool', 'fullscreen')
 	core.addProperty(ContextPrototype, 'string', 'language')
 	core.addProperty(ContextPrototype, 'System', 'system')
 	core.addProperty(ContextPrototype, 'Location', 'location')
@@ -6351,7 +6376,6 @@ $this.completed()
 		}
 		return text.replace(/%(\d+)/, function(text, index) { return args[index] })
 	}
-	$core._protoOnChanged(ContextPrototype, 'fullscreen', function(value) { if (value) this.backend.enterFullscreenMode(this.element); else this.backend.exitFullscreenMode(); })
 
 	ContextPrototype.$c = function($c) {
 		var $this = this;
@@ -6493,83 +6517,6 @@ $this.completed()
 	TransformPrototype.$s = function($c) {
 		var $this = this;
 	TransformBasePrototype.$s.call(this, $c.$b); delete $c.$b
-$this.completed()
-}
-
-
-//=====[component controls.mixins.OverflowMixin]=====================
-
-	var OverflowMixinBaseComponent = $controls$mixins.BaseMixin
-	var OverflowMixinBasePrototype = OverflowMixinBaseComponent.prototype
-
-/**
- * @constructor
- * @extends {$controls$mixins.BaseMixin}
- */
-	var OverflowMixinComponent = $controls$mixins.OverflowMixin = function(parent, row) {
-		OverflowMixinBaseComponent.apply(this, arguments)
-
-	}
-	var OverflowMixinPrototype = OverflowMixinComponent.prototype = Object.create(OverflowMixinBasePrototype)
-
-	OverflowMixinPrototype.constructor = OverflowMixinComponent
-
-	OverflowMixinPrototype.componentName = 'controls.mixins.OverflowMixin'
-/** @const @type {number} */
-	OverflowMixinPrototype.Visible = 0
-/** @const @type {number} */
-	OverflowMixinComponent.Visible = 0
-/** @const @type {number} */
-	OverflowMixinPrototype.Hidden = 1
-/** @const @type {number} */
-	OverflowMixinComponent.Hidden = 1
-/** @const @type {number} */
-	OverflowMixinPrototype.Scroll = 2
-/** @const @type {number} */
-	OverflowMixinComponent.Scroll = 2
-/** @const @type {number} */
-	OverflowMixinPrototype.ScrollX = 3
-/** @const @type {number} */
-	OverflowMixinComponent.ScrollX = 3
-/** @const @type {number} */
-	OverflowMixinPrototype.ScrollY = 4
-/** @const @type {number} */
-	OverflowMixinComponent.ScrollY = 4
-	core.addProperty(OverflowMixinPrototype, 'enum', 'value')
-	OverflowMixinPrototype.__complete = function() { OverflowMixinBasePrototype.__complete.call(this)
-this._updateOverflow(this.value)
-}
-	OverflowMixinPrototype._updateOverflow = function(value) {
-		switch(value) {
-			case this.Visible:
-				this.parent.style('overflow', 'visible');
-				break;
-			case this.Hidden:
-				this.parent.style('overflow', 'hidden');
-				break;
-			case this.Scroll:
-				this.parent.style('overflow', 'auto');
-				break;
-			case this.ScrollX:
-				this.parent.style('overflow', 'auto');
-				this.parent.style('overflow-y', 'hidden');
-				break;
-			case this.ScrollY:
-				this.parent.style('overflow', 'auto');
-				this.parent.style('overflow-x', 'hidden');
-				break;
-		}
-	}
-	$core._protoOnChanged(OverflowMixinPrototype, 'value', function(value) { this._updateOverflow(value) })
-
-	OverflowMixinPrototype.$c = function($c) {
-		var $this = this;
-		OverflowMixinBasePrototype.$c.call(this, $c.$b = { })
-
-	}
-	OverflowMixinPrototype.$s = function($c) {
-		var $this = this;
-	OverflowMixinBasePrototype.$s.call(this, $c.$b); delete $c.$b
 $this.completed()
 }
 
@@ -7516,6 +7463,64 @@ $this.completed()
 		var $this = this;
 	ClickMixinBasePrototype.$s.call(this, $c.$b); delete $c.$b
 $this.completed()
+}
+
+
+//=====[component core.BaseLayoutContentPadding]=====================
+
+	var BaseLayoutContentPaddingBaseComponent = $core.Object
+	var BaseLayoutContentPaddingBasePrototype = BaseLayoutContentPaddingBaseComponent.prototype
+
+/**
+ * @constructor
+ * @extends {$core.Object}
+ */
+	var BaseLayoutContentPaddingComponent = $core.BaseLayoutContentPadding = function(parent, row) {
+		BaseLayoutContentPaddingBaseComponent.apply(this, arguments)
+	//custom constructor:
+	{
+		this.parent._padding = this
+	}
+
+	}
+	var BaseLayoutContentPaddingPrototype = BaseLayoutContentPaddingComponent.prototype = Object.create(BaseLayoutContentPaddingBasePrototype)
+
+	{
+		BaseLayoutContentPaddingPrototype.defaultProperty = 'all'
+	}
+
+	BaseLayoutContentPaddingPrototype.constructor = BaseLayoutContentPaddingComponent
+
+	BaseLayoutContentPaddingPrototype.componentName = 'core.BaseLayoutContentPadding'
+	core.addProperty(BaseLayoutContentPaddingPrototype, 'int', 'top')
+	core.addProperty(BaseLayoutContentPaddingPrototype, 'int', 'left')
+	core.addProperty(BaseLayoutContentPaddingPrototype, 'int', 'right')
+	core.addProperty(BaseLayoutContentPaddingPrototype, 'int', 'bottom')
+	core.addProperty(BaseLayoutContentPaddingPrototype, 'int', 'all')
+	var $code$0 = function(value) { this.parent._scheduleLayout(); }
+	$core._protoOnChanged(BaseLayoutContentPaddingPrototype, 'right', $code$0)
+	$core._protoOnChanged(BaseLayoutContentPaddingPrototype, 'left', $code$0)
+	$core._protoOnChanged(BaseLayoutContentPaddingPrototype, 'top', $code$0)
+	$core._protoOnChanged(BaseLayoutContentPaddingPrototype, 'bottom', $code$0)
+
+	BaseLayoutContentPaddingPrototype.$c = function($c) {
+		var $this = this;
+		BaseLayoutContentPaddingBasePrototype.$c.call(this, $c.$b = { })
+
+	}
+	BaseLayoutContentPaddingPrototype.$s = function($c) {
+		var $this = this;
+	BaseLayoutContentPaddingBasePrototype.$s.call(this, $c.$b); delete $c.$b
+//assigning top to (${all})
+			$this._replaceUpdater('top', function() { $this.top = ($this.all) }, [$this,'all'])
+//assigning right to (${all})
+			$this._replaceUpdater('right', function() { $this.right = ($this.all) }, [$this,'all'])
+//assigning bottom to (${all})
+			$this._replaceUpdater('bottom', function() { $this.bottom = ($this.all) }, [$this,'all'])
+//assigning left to (${all})
+			$this._replaceUpdater('left', function() { $this.left = ($this.all) }, [$this,'all'])
+
+			$this.completed()
 }
 
 
@@ -8923,8 +8928,20 @@ exports.setAnimation = function (component, name, animation) {
 exports.requestAnimationFrame = Modernizr.prefixed('requestAnimationFrame', window)	|| function(callback) { return setTimeout(callback, 0) }
 exports.cancelAnimationFrame = Modernizr.prefixed('cancelAnimationFrame', window)	|| function(id) { return clearTimeout(id) }
 
-exports.enterFullscreenMode = function(el) { return Modernizr.prefixed('requestFullscreen', el.dom)() }
-exports.exitFullscreenMode = function() { return window.Modernizr.prefixed('exitFullscreen', document)() }
+exports.enterFullscreenMode = function(el) {
+	try {
+		return Modernizr.prefixed('requestFullscreen', el.dom)()
+	} catch(ex) {
+		log('enterFullscreenMode failed', ex)
+	}
+}
+exports.exitFullscreenMode = function() {
+	try {
+		return window.Modernizr.prefixed('exitFullscreen', document)()
+	} catch(ex) {
+		log('exitFullscreenMode failed', ex)
+	}
+}
 exports.inFullscreenMode = function () { return !!window.Modernizr.prefixed('fullscreenElement', document) }
 
 exports.ajax = function(ui, request) {
@@ -9152,6 +9169,7 @@ Player.prototype.setEventListeners = function() {
 	player.on('emptied', function() { log("Was emptied", dom.networkState); }.bind(ui))
 	player.on('volumechange', function() { ui.muted = dom.muted }.bind(ui))
 	player.on('canplaythrough', function() { log("ready to play"); ui.paused = dom.paused }.bind(ui))
+	player.on('suspend', function() { log('suspended'); ui.paused = true })
 
 	player.on('error', function() {
 		log("Player error occurred", dom.error, "src", ui.source)
