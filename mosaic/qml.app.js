@@ -4212,8 +4212,8 @@ var _this$child0 = new $core.MouseMoveMixin($this)
 	behavior__this_on_opacity.$s(behavior__this_on_opacity$c.$c$behavior__this_on_opacity)
 	delete behavior__this_on_opacity$c.$c$behavior__this_on_opacity
 
-//assigning duration to (900)
-	behavior__this_on_opacity._removeUpdater('duration'); behavior__this_on_opacity.duration = (900);
+//assigning duration to (1200)
+	behavior__this_on_opacity._removeUpdater('duration'); behavior__this_on_opacity.duration = (1200);
 
 	behavior__this_on_opacity.completed()
 	$this.setAnimation('opacity', behavior__this_on_opacity);
