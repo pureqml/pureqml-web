@@ -9,6 +9,7 @@ ActivityManager {
 	Main { }
 	GettingStarted { }
 	Download { }
+	Showcases { }
 	Lessons { }
 	Docs { }
 
