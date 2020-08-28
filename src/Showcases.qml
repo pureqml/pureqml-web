@@ -14,15 +14,15 @@ SiteActivity {
 		}
 
 		MainH2 { text: "Amediateka"; }
-		ShowcaseImage { source: "res/showcases/amedia.jpg"; }
+		ShowcaseImage { source: colorTheme.resPath + "/showcases/amedia.jpg"; }
 
 		MainH2 { text: "START"; }
-		ShowcaseImage { source: "res/showcases/start.jpg"; }
+		ShowcaseImage { source: colorTheme.resPath + "/showcases/start.jpg"; }
 
 		MainH2 { text: "PLINQ"; }
-		ShowcaseImage { source: "res/showcases/plinq.png"; }
+		ShowcaseImage { source: colorTheme.resPath + "/showcases/plinq.png"; }
 
 		MainH2 { text: "Tvigle"; }
-		ShowcaseImage { source: "res/showcases/tvigle.jpg"; }
+		ShowcaseImage { source: colorTheme.resPath + "/showcases/tvigle.jpg"; }
 	}
 }
