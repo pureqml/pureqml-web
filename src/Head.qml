@@ -1,5 +1,6 @@
 Rectangle {
 	property bool open;
+	property bool mobileMode: menu.rowsCount > 1;
 	height: menu.rowsCount > 1 ? (open && !searchPanel.searchFocused ? menu.height : 0) + 50 : menu.height;
 	width: 100%;
 	color: colorTheme.panelColor;
@@ -47,7 +48,6 @@ Rectangle {
 		HoverClickMixin { cursor: "pointer"; }
 		onClicked: { this.parent.open = false; }
 	}
-
 
 	MaterialIcon {
 		width: 100%;
