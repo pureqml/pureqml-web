@@ -19,9 +19,6 @@ SiteActivity {
 		MainH2 { text: "START"; }
 		ShowcaseImage { source: colorTheme.resPath + "/showcases/start.jpg"; }
 
-		MainH2 { text: "PLINQ"; }
-		ShowcaseImage { source: colorTheme.resPath + "/showcases/plinq.png"; }
-
 		MainH2 { text: "Tvigle"; }
 		ShowcaseImage { source: colorTheme.resPath + "/showcases/tvigle.jpg"; }
 	}
