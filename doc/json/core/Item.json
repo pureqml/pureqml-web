@@ -112,7 +112,15 @@
                 "internal": true, 
                 "text": ""
             }, 
+            "onCssPointerTouchEventsChanged": {
+                "internal": true, 
+                "text": ""
+            }, 
             "onFocusChanged": {
+                "internal": true, 
+                "text": ""
+            }, 
+            "onFullscreenChanged": {
                 "internal": true, 
                 "text": ""
             }, 
@@ -215,6 +223,12 @@
                 "text": "", 
                 "type": "bool"
             }, 
+            "cssPointerTouchEvents": {
+                "defaultValue": "false", 
+                "internal": false, 
+                "text": "", 
+                "type": "bool"
+            }, 
             "cssTranslatePositioning": {
                 "defaultValue": "", 
                 "internal": false, 
@@ -244,6 +258,12 @@
                 "internal": false, 
                 "text": "current focused item (this item only)", 
                 "type": "Item"
+            }, 
+            "fullscreen": {
+                "defaultValue": "", 
+                "internal": false, 
+                "text": "fullscreen mode enabled / disabled", 
+                "type": "bool"
             }, 
             "height": {
                 "defaultValue": "", 

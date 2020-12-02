@@ -1,0 +1,52 @@
+{
+    "content": {
+        "Methods": {
+            "constructor": {
+                "internal": true, 
+                "text": ""
+            }, 
+            "onTopChanged": {
+                "internal": true, 
+                "text": ""
+            }, 
+            "prototypeConstructor": {
+                "internal": false, 
+                "text": ""
+            }
+        }, 
+        "Properties": {
+            "all": {
+                "defaultValue": "", 
+                "internal": false, 
+                "text": "a value for all sides", 
+                "type": "int"
+            }, 
+            "bottom": {
+                "defaultValue": "${all}", 
+                "internal": false, 
+                "text": "bottom padding", 
+                "type": "int"
+            }, 
+            "left": {
+                "defaultValue": "${all}", 
+                "internal": false, 
+                "text": "left padding", 
+                "type": "int"
+            }, 
+            "right": {
+                "defaultValue": "${all}", 
+                "internal": false, 
+                "text": "right padding", 
+                "type": "int"
+            }, 
+            "top": {
+                "defaultValue": "${all}", 
+                "internal": false, 
+                "text": "top padding", 
+                "type": "int"
+            }
+        }
+    }, 
+    "name": "core.BaseLayoutContentPadding", 
+    "text": "class controlling internal paddings of BaseLayout content"
+}

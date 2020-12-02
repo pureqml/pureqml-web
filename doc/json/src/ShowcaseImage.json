@@ -1,0 +1,14 @@
+{
+    "content": {
+        "Properties": {
+            "source": {
+                "defaultValue": "", 
+                "internal": false, 
+                "text": "", 
+                "type": "string"
+            }
+        }
+    }, 
+    "name": "src.ShowcaseImage", 
+    "text": ""
+}

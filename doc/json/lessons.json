@@ -15,6 +15,7 @@
         "LoaderLesson": "lessons/LoaderLesson.json", 
         "LocalizationLesson": "lessons/LocalizationLesson.json", 
         "MixinLesson": "lessons/MixinLesson.json", 
+        "RestLesson": "lessons/RestLesson.json", 
         "SignalLesson": "lessons/SignalLesson.json", 
         "SpriteLesson": "lessons/SpriteLesson.json", 
         "TransformLesson": "lessons/TransformLesson.json", 

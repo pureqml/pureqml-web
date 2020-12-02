@@ -46,10 +46,6 @@
                 "params": [], 
                 "text": "@private"
             }, 
-            "onFullscreenChanged": {
-                "internal": true, 
-                "text": ""
-            }, 
             "processKey": {
                 "internal": false, 
                 "text": ""
@@ -110,12 +106,6 @@
                 "text": "@private", 
                 "type": "string"
             }, 
-            "fullscreen": {
-                "defaultValue": "", 
-                "internal": false, 
-                "text": "fullscreen mode enabled / disabled", 
-                "type": "bool"
-            }, 
             "keyProcessDelay": {
                 "defaultValue": "", 
                 "internal": false, 
@@ -172,6 +162,12 @@
                 "internal": false, 
                 "text": "virtual viewport width", 
                 "type": "int"
+            }
+        }, 
+        "Signals": {
+            "message": {
+                "internal": false, 
+                "text": "incoming postMessage"
             }
         }
     }, 

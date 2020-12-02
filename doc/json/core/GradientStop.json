@@ -17,7 +17,7 @@
                 "defaultValue": "", 
                 "internal": false, 
                 "text": "color of this stop", 
-                "type": "Color"
+                "type": "color"
             }, 
             "position": {
                 "defaultValue": "", 

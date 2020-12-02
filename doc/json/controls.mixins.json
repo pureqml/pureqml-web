@@ -2,6 +2,7 @@
     "controls.mixins": {
         "BaseMixin": "controls.mixins/BaseMixin.json", 
         "CssMixin": "controls.mixins/CssMixin.json", 
+        "DisableHoverByTimeoutMixin": "controls.mixins/DisableHoverByTimeoutMixin.json", 
         "DoubleClickMixin": "controls.mixins/DoubleClickMixin.json", 
         "DragMixin": "controls.mixins/DragMixin.json", 
         "DropZoneMixin": "controls.mixins/DropZoneMixin.json", 

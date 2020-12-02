@@ -244,7 +244,7 @@
                 "defaultValue": "#000", 
                 "internal": false, 
                 "text": "default background color", 
-                "type": "Color"
+                "type": "color"
             }, 
             "backgroundImage": {
                 "defaultValue": "", 

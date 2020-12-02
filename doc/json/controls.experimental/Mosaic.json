@@ -1,0 +1,58 @@
+{
+    "content": {
+        "Methods": {
+            "fill": {
+                "internal": false, 
+                "text": ""
+            }, 
+            "onKeyPressed": {
+                "internal": false, 
+                "text": ""
+            }
+        }, 
+        "Properties": {
+            "delegateRadius": {
+                "defaultValue": "", 
+                "internal": false, 
+                "text": "", 
+                "type": "int"
+            }, 
+            "hoverMode": {
+                "defaultValue": "", 
+                "internal": false, 
+                "text": "", 
+                "type": "bool"
+            }, 
+            "mobile": {
+                "defaultValue": "${context.system.device} === ${context.system.Mobile}", 
+                "internal": false, 
+                "text": "", 
+                "type": "bool"
+            }, 
+            "offset": {
+                "defaultValue": "", 
+                "internal": false, 
+                "text": "", 
+                "type": "int"
+            }, 
+            "playing": {
+                "defaultValue": "", 
+                "internal": false, 
+                "text": "", 
+                "type": "bool"
+            }
+        }, 
+        "Signals": {
+            "itemFocused": {
+                "internal": false, 
+                "text": ""
+            }, 
+            "play": {
+                "internal": false, 
+                "text": ""
+            }
+        }
+    }, 
+    "name": "controls.experimental.Mosaic", 
+    "text": ""
+}

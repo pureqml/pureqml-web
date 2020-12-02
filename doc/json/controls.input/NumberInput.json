@@ -1,6 +1,11 @@
 {
     "content": {
         "Methods": {
+            "_setValueWithLimits": {
+                "internal": true, 
+                "params": [], 
+                "text": "@private - sets element native value while applying min/max limits. if called externally, onValueChanged will not fire"
+            }, 
             "constructor": {
                 "internal": true, 
                 "text": ""

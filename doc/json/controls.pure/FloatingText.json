@@ -1,40 +1,46 @@
 {
     "content": {
         "Methods": {
-            "constructor": {
+            "onRunningChanged": {
                 "internal": true, 
                 "text": ""
             }, 
-            "onCursorColorChanged": {
-                "internal": true, 
+            "resetPosition": {
+                "internal": false, 
                 "text": ""
             }, 
-            "onTextChanged": {
-                "internal": true, 
+            "startFloatingText": {
+                "internal": false, 
                 "text": ""
             }
         }, 
         "Properties": {
-            "cursorColor": {
+            "color": {
                 "defaultValue": "#fff", 
                 "internal": false, 
-                "text": "cursor color", 
+                "text": "", 
                 "type": "Color"
             }, 
-            "passwordMode": {
-                "defaultValue": "false", 
+            "pixelSize": {
+                "defaultValue": "21", 
                 "internal": false, 
-                "text": "show password chars instead of input text flag property", 
+                "text": "", 
+                "type": "int"
+            }, 
+            "running": {
+                "defaultValue": "", 
+                "internal": false, 
+                "text": "", 
                 "type": "bool"
             }, 
             "text": {
                 "defaultValue": "", 
                 "internal": false, 
-                "text": "input text string property", 
+                "text": "", 
                 "type": "string"
             }
         }
     }, 
-    "name": "controls.input.TextInput", 
-    "text": "HTML text input item"
+    "name": "controls.pure.FloatingText", 
+    "text": ""
 }

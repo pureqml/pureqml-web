@@ -90,6 +90,12 @@
                 "text": "layout delegates even if view's invisible", 
                 "type": "bool"
             }, 
+            "padding": {
+                "defaultValue": "BaseLayoutContentPadding", 
+                "internal": false, 
+                "text": "", 
+                "type": "lazy"
+            }, 
             "prerenderDelay": {
                 "defaultValue": "- 1", 
                 "internal": false, 

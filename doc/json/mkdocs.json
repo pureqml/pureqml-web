@@ -39,6 +39,10 @@
                 "ProxyMessages": "code_samples/ProxyMessages.json", 
                 "RangeInputExample": "code_samples/RangeInputExample.json", 
                 "RectanglesExample": "code_samples/RectanglesExample.json", 
+                "RestExample": "code_samples/RestExample.json", 
+                "RestGetExample": "code_samples/RestGetExample.json", 
+                "RestHeadersExample": "code_samples/RestHeadersExample.json", 
+                "RestQueryExample": "code_samples/RestQueryExample.json", 
                 "SearchInputExample": "code_samples/SearchInputExample.json", 
                 "ShadowExample": "code_samples/ShadowExample.json", 
                 "SignalArgsHandling": "code_samples/SignalArgsHandling.json", 
@@ -84,6 +88,14 @@
             }, 
             "file": "controls.core.json"
         }, 
+        "controls.experimental": {
+            "content": {
+                "Mosaic": "controls.experimental/Mosaic.json", 
+                "MosaicDelegate": "controls.experimental/MosaicDelegate.json", 
+                "NestedVideo": "controls.experimental/NestedVideo.json"
+            }, 
+            "file": "controls.experimental.json"
+        }, 
         "controls.google": {
             "content": {
                 "GoogleChart": "controls.google/GoogleChart.json", 
@@ -112,6 +124,7 @@
             "content": {
                 "BaseMixin": "controls.mixins/BaseMixin.json", 
                 "CssMixin": "controls.mixins/CssMixin.json", 
+                "DisableHoverByTimeoutMixin": "controls.mixins/DisableHoverByTimeoutMixin.json", 
                 "DoubleClickMixin": "controls.mixins/DoubleClickMixin.json", 
                 "DragMixin": "controls.mixins/DragMixin.json", 
                 "DropZoneMixin": "controls.mixins/DropZoneMixin.json", 
@@ -131,6 +144,7 @@
         "controls.pure": {
             "content": {
                 "Checkbox": "controls.pure/Checkbox.json", 
+                "FloatingText": "controls.pure/FloatingText.json", 
                 "ProgressBar": "controls.pure/ProgressBar.json", 
                 "ScrollBar": "controls.pure/ScrollBar.json", 
                 "Subtitles": "controls.pure/Subtitles.json", 
@@ -254,6 +268,7 @@
                 "Anchors": "core/Anchors.json", 
                 "Animation": "core/Animation.json", 
                 "BaseLayout": "core/BaseLayout.json", 
+                "BaseLayoutContentPadding": "core/BaseLayoutContentPadding.json", 
                 "BaseView": "core/BaseView.json", 
                 "BaseViewContent": "core/BaseViewContent.json", 
                 "Binding": "core/Binding.json", 
@@ -263,6 +278,7 @@
                 "ColorAnimation": "core/ColorAnimation.json", 
                 "Column": "core/Column.json", 
                 "Connection": "core/Connection.json", 
+                "ContentMargin": "core/ContentMargin.json", 
                 "Context": "core/Context.json", 
                 "Device": "core/Device.json", 
                 "Effects": "core/Effects.json", 
@@ -332,6 +348,7 @@
                 "LoaderLesson": "lessons/LoaderLesson.json", 
                 "LocalizationLesson": "lessons/LocalizationLesson.json", 
                 "MixinLesson": "lessons/MixinLesson.json", 
+                "RestLesson": "lessons/RestLesson.json", 
                 "SignalLesson": "lessons/SignalLesson.json", 
                 "SpriteLesson": "lessons/SpriteLesson.json", 
                 "TransformLesson": "lessons/TransformLesson.json", 
@@ -373,6 +390,8 @@
                 "SearchPanel": "src/SearchPanel.json", 
                 "SearchResults": "src/SearchResults.json", 
                 "SectionHead": "src/SectionHead.json", 
+                "ShowcaseImage": "src/ShowcaseImage.json", 
+                "Showcases": "src/Showcases.json", 
                 "SiteActivity": "src/SiteActivity.json", 
                 "StateButton": "src/StateButton.json"
             }, 

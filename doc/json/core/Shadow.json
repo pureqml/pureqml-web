@@ -27,7 +27,7 @@
                 "defaultValue": "black", 
                 "internal": false, 
                 "text": "color of the shadow", 
-                "type": "Color"
+                "type": "color"
             }, 
             "spread": {
                 "defaultValue": "", 

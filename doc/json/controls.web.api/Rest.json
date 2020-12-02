@@ -2,20 +2,24 @@
     "content": {
         "Methods": {
             "_call": {
-                "internal": false, 
-                "text": ""
+                "internal": true, 
+                "params": [], 
+                "text": "@private calls invokes args, headers and ajax, then processes result"
             }, 
             "_registerMethod": {
-                "internal": false, 
-                "text": ""
+                "internal": true, 
+                "params": [], 
+                "text": "@private method registration"
             }, 
             "args": {
                 "internal": false, 
-                "text": ""
+                "params": [], 
+                "text": "args function allows to override arguments for all methods, e.g. adding session token"
             }, 
             "call": {
-                "internal": false, 
-                "text": ""
+                "internal": true, 
+                "params": [], 
+                "text": "@internal top-level call implementation"
             }, 
             "constructor": {
                 "internal": true, 
@@ -23,7 +27,8 @@
             }, 
             "headers": {
                 "internal": false, 
-                "text": ""
+                "params": [], 
+                "text": "headers function allows to override headers for all methods, e.g. adding session token"
             }, 
             "onError": {
                 "internal": false, 
@@ -34,21 +39,21 @@
             "baseUrl": {
                 "defaultValue": "", 
                 "internal": false, 
-                "text": "", 
+                "text": "base url for all requests", 
                 "type": "string"
             }
         }, 
         "Signals": {
             "error": {
                 "internal": false, 
-                "text": ""
+                "text": "all errors signalled here"
             }, 
             "internetConnectionLost": {
                 "internal": false, 
-                "text": ""
+                "text": "some platforms signal when internet connection lost, see onError"
             }
         }
     }, 
     "name": "controls.web.api.Rest", 
-    "text": ""
+    "text": "Root component for REST API declaration.\n\tNormally Rest component contains one or more Method instances.\n\t<pre>\n\t\tRest {\n\t\t\tid: api;\n\t\t\tbaseUrl: \"https://example.com/v1\";\n\n\t\t\tfunction headers(headers) { headers.token = 'secret'; }\n\n\t\t\tMethod { name: \"getList\"; path: \"list/{name}\"; }\n\t\t}\n\t\t//in js:\n\t\tapi.getList(name, function() {...}, function () { ... })\n\t</pre>"
 }

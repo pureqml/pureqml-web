@@ -20,17 +20,11 @@
             "enabled": {
                 "defaultValue": "true", 
                 "internal": false, 
-                "text": "", 
+                "text": "turn mixin on or off", 
                 "type": "bool"
-            }
-        }, 
-        "Signals": {
-            "doubleClicked": {
-                "internal": false, 
-                "text": ""
             }
         }
     }, 
     "name": "controls.mixins.DoubleClickMixin", 
-    "text": "@private"
+    "text": "This mixin provides mouse double click event detecting"
 }

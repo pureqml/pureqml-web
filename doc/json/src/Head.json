@@ -7,6 +7,12 @@
             }
         }, 
         "Properties": {
+            "mobileMode": {
+                "defaultValue": "${menu.rowsCount} > 1", 
+                "internal": false, 
+                "text": "", 
+                "type": "bool"
+            }, 
             "newWindow": {
                 "defaultValue": "", 
                 "internal": false, 

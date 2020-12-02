@@ -1,0 +1,62 @@
+{
+    "content": {
+        "Alias Properties": {
+            "hover": {
+                "internal": false, 
+                "text": ""
+            }
+        }, 
+        "Methods": {
+            "onActiveChanged": {
+                "internal": true, 
+                "text": ""
+            }, 
+            "onClicked": {
+                "internal": false, 
+                "text": ""
+            }, 
+            "onPressed": {
+                "internal": false, 
+                "text": ""
+            }, 
+            "onSelectPressed": {
+                "internal": false, 
+                "text": ""
+            }
+        }, 
+        "Properties": {
+            "active": {
+                "defaultValue": "${activeFocus}", 
+                "internal": false, 
+                "text": "", 
+                "type": "bool"
+            }, 
+            "allowOpacity": {
+                "defaultValue": "", 
+                "internal": false, 
+                "text": "", 
+                "type": "bool"
+            }, 
+            "hoverMixin": {
+                "defaultValue": "HoverClickMixin", 
+                "internal": false, 
+                "text": "", 
+                "type": "Mixin"
+            }, 
+            "playing": {
+                "defaultValue": "", 
+                "internal": false, 
+                "text": "", 
+                "type": "bool"
+            }
+        }, 
+        "Signals": {
+            "pressed": {
+                "internal": false, 
+                "text": ""
+            }
+        }
+    }, 
+    "name": "controls.experimental.MosaicDelegate", 
+    "text": ""
+}

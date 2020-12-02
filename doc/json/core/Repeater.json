@@ -1,10 +1,28 @@
 {
     "content": {
         "Methods": {
+            "_createDelegate": {
+                "internal": true, 
+                "params": [], 
+                "text": "@private creates delegate in given item slot"
+            }, 
+            "_discardItem": {
+                "internal": false, 
+                "text": ""
+            }, 
             "_layout": {
                 "internal": true, 
                 "params": [], 
                 "text": "@private"
+            }, 
+            "constructor": {
+                "internal": true, 
+                "params": [], 
+                "text": "The simplest view implementation, creates elements without positioning"
+            }, 
+            "onLayoutFinished": {
+                "internal": false, 
+                "text": ""
             }, 
             "positionViewAtIndex": {
                 "internal": true, 

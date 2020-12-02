@@ -1,12 +1,22 @@
 {
     "content": {
         "Methods": {
+            "_imageLoaded": {
+                "internal": true, 
+                "params": [], 
+                "text": "@private"
+            }, 
             "_load": {
                 "internal": true, 
                 "params": [], 
                 "text": "@private"
             }, 
             "_onError": {
+                "internal": true, 
+                "params": [], 
+                "text": "@private"
+            }, 
+            "_resetImage": {
                 "internal": true, 
                 "params": [], 
                 "text": "@private"

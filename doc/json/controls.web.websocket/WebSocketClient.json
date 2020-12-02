@@ -1,66 +1,54 @@
 {
     "content": {
         "Methods": {
+            "bufferedAmount": {
+                "internal": false, 
+                "params": [], 
+                "text": "Returns the number of bytes of data that have been queued using calls to send() but not yet transmitted to the network."
+            }, 
+            "close": {
+                "internal": false, 
+                "params": [], 
+                "text": "Closes the WebSocket connection or connection attempt, if any."
+            }, 
             "connect": {
                 "internal": false, 
-                "text": ""
-            }, 
-            "pressKey": {
-                "internal": false, 
-                "text": ""
+                "params": [], 
+                "text": "Initiate connect to the provided url"
             }, 
             "send": {
                 "internal": false, 
-                "text": ""
+                "params": [], 
+                "text": "Method enqueues the specified data to be transmitted to the server over the WebSocket connection."
             }
         }, 
         "Properties": {
-            "connected": {
+            "url": {
                 "defaultValue": "", 
                 "internal": false, 
-                "text": "", 
-                "type": "bool"
-            }, 
-            "emulateKeyPressing": {
-                "defaultValue": "true", 
-                "internal": false, 
-                "text": "", 
-                "type": "bool"
-            }, 
-            "host": {
-                "defaultValue": "ws://\" + ${ip} + \":\" + ${port}", 
-                "internal": false, 
-                "text": "", 
-                "type": "string"
-            }, 
-            "ip": {
-                "defaultValue": "", 
-                "internal": false, 
-                "text": "", 
-                "type": "string"
-            }, 
-            "port": {
-                "defaultValue": "", 
-                "internal": false, 
-                "text": "", 
+                "text": "The url needs to start with either 'ws://' or 'wss://'", 
                 "type": "string"
             }
         }, 
         "Signals": {
             "closed": {
                 "internal": false, 
-                "text": ""
+                "text": "Emitted when the socket was closed, the event has at least the following three members code, reason and wasClean"
             }, 
             "error": {
                 "internal": false, 
-                "text": ""
+                "text": "Emitted when an error occurs on the WebSocket."
             }, 
             "message": {
                 "internal": false, 
-                "text": ""
+                "text": "Emitted when a message is received from the server."
+            }, 
+            "opened": {
+                "internal": false, 
+                "text": "Emitted when the state changes to 1 (Open); this indicates that the connection is ready to send and receive data."
             }
         }
     }, 
     "name": "controls.web.websocket.WebSocketClient", 
-    "text": ""
+    "text": "Wrapper for a WebSocket"
 }

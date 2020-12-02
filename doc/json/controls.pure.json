@@ -1,6 +1,7 @@
 {
     "controls.pure": {
         "Checkbox": "controls.pure/Checkbox.json", 
+        "FloatingText": "controls.pure/FloatingText.json", 
         "ProgressBar": "controls.pure/ProgressBar.json", 
         "ScrollBar": "controls.pure/ScrollBar.json", 
         "Subtitles": "controls.pure/Subtitles.json", 

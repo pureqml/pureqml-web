@@ -66,6 +66,15 @@
                 "params": [], 
                 "text": "@private"
             }, 
+            "_updateHighlight": {
+                "internal": true, 
+                "params": [], 
+                "text": "@private updates highlight"
+            }, 
+            "_updateHighlightForCurrentItem": {
+                "internal": false, 
+                "text": ""
+            }, 
             "_updateItems": {
                 "internal": true, 
                 "params": [], 
@@ -95,6 +104,10 @@
                 "params": [], 
                 "text": "returns index of item by x,y coordinates"
             }, 
+            "itemAtIndex": {
+                "internal": false, 
+                "text": ""
+            }, 
             "onCompleted": {
                 "internal": true, 
                 "text": ""
@@ -121,6 +134,14 @@
             }, 
             "onHeightChanged": {
                 "internal": true, 
+                "text": ""
+            }, 
+            "onHighlightChanged": {
+                "internal": true, 
+                "text": ""
+            }, 
+            "onLayoutFinished": {
+                "internal": false, 
                 "text": ""
             }, 
             "onModelChanged": {
@@ -165,10 +186,17 @@
                 "type": "BaseViewContent"
             }, 
             "contentFollowsCurrentItem": {
-                "defaultValue": "true", 
+                "defaultValue": "! ${nativeScrolling}", 
                 "internal": false, 
                 "text": "auto-scroll content to current focused item", 
                 "type": "bool"
+            }, 
+            "contentMargin": {
+                "defaultValue": "ContentMargin", 
+                "internal": false, 
+                "ref": "qmlcore.core/ContentMargin", 
+                "text": "", 
+                "type": "ContentMargin"
             }, 
             "contentX": {
                 "defaultValue": "", 
@@ -186,6 +214,12 @@
                 "defaultValue": "", 
                 "internal": false, 
                 "text": "delegate - template object, filled with model row", 
+                "type": "Item"
+            }, 
+            "highlight": {
+                "defaultValue": "", 
+                "internal": false, 
+                "text": "an object that follows currentIndex and placed below other elements", 
                 "type": "Item"
             }, 
             "model": {
@@ -223,6 +257,10 @@
             "layoutFinished": {
                 "internal": false, 
                 "text": "base class for all views, holds content, creates delegates and provides common api"
+            }, 
+            "scrollEvent": {
+                "internal": false, 
+                "text": ""
             }
         }
     }, 

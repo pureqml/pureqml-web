@@ -31,6 +31,8 @@
         "SearchPanel": "src/SearchPanel.json", 
         "SearchResults": "src/SearchResults.json", 
         "SectionHead": "src/SectionHead.json", 
+        "ShowcaseImage": "src/ShowcaseImage.json", 
+        "Showcases": "src/Showcases.json", 
         "SiteActivity": "src/SiteActivity.json", 
         "StateButton": "src/StateButton.json"
     }

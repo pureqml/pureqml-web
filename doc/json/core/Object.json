@@ -34,7 +34,7 @@
             "_setProperty": {
                 "internal": true, 
                 "params": [], 
-                "text": "@private patch property storage directly without signalling."
+                "text": "@internal update property storage directly without animation and with or without signalling."
             }, 
             "_tryFocus": {
                 "internal": true, 
@@ -71,6 +71,11 @@
                 "params": [], 
                 "text": "discard object"
             }, 
+            "getAnimation": {
+                "internal": false, 
+                "params": [], 
+                "text": "gets animation on given property"
+            }, 
             "getComponentPath": {
                 "internal": false, 
                 "params": [], 
@@ -90,6 +95,17 @@
                 "params": [], 
                 "text": "@private removes all on changes connections"
             }, 
+            "removeChild": {
+                "internal": false, 
+                "params": [
+                    {
+                        "name": "child", 
+                        "text": "object to remove", 
+                        "type": "Object"
+                    }
+                ], 
+                "text": "\tremoves child object from children"
+            }, 
             "removeOnChanged": {
                 "internal": true, 
                 "params": [], 
@@ -97,17 +113,18 @@
             }, 
             "resetAnimation": {
                 "internal": false, 
-                "text": ""
+                "params": [], 
+                "text": "resets current animation if any"
             }, 
             "setAnimation": {
-                "internal": true, 
+                "internal": false, 
                 "params": [], 
-                "text": "@private sets animation on given property"
+                "text": "sets animation on given property"
             }, 
             "updateAnimation": {
-                "internal": true, 
+                "internal": false, 
                 "params": [], 
-                "text": "@private updates animation properties on given property"
+                "text": "updates animation properties on given property"
             }
         }
     }, 

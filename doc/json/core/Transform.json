@@ -1,11 +1,21 @@
 {
     "content": {
         "Methods": {
+            "_animateAll": {
+                "internal": false, 
+                "params": [], 
+                "text": "see backend.js in platform/pure.femto for details"
+            }, 
             "_updateTransform": {
                 "internal": false, 
                 "text": ""
             }, 
             "constructor": {
+                "internal": true, 
+                "params": [], 
+                "text": "@private"
+            }, 
+            "getAnimation": {
                 "internal": true, 
                 "params": [], 
                 "text": "@private"

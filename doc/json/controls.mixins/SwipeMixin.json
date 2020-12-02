@@ -38,6 +38,10 @@
                 "internal": false, 
                 "text": "emitted on horizontal swipe"
             }, 
+            "touchEnd": {
+                "internal": true, 
+                "text": "@private"
+            }, 
             "touchMove": {
                 "internal": true, 
                 "text": "@private"

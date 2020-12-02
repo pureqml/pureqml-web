@@ -53,6 +53,12 @@
                 "text": "device model name", 
                 "type": "string"
             }, 
+            "runtime": {
+                "defaultValue": "", 
+                "internal": false, 
+                "text": "pureqml specific runtime provider, cordova/native", 
+                "type": "string"
+            }, 
             "sdk": {
                 "defaultValue": "", 
                 "internal": false, 

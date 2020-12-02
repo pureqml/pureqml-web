@@ -1,0 +1,32 @@
+{
+    "content": {
+        "Properties": {
+            "bottom": {
+                "defaultValue": "", 
+                "internal": false, 
+                "text": "", 
+                "type": "int"
+            }, 
+            "left": {
+                "defaultValue": "", 
+                "internal": false, 
+                "text": "", 
+                "type": "int"
+            }, 
+            "right": {
+                "defaultValue": "", 
+                "internal": false, 
+                "text": "", 
+                "type": "int"
+            }, 
+            "top": {
+                "defaultValue": "", 
+                "internal": false, 
+                "text": "", 
+                "type": "int"
+            }
+        }
+    }, 
+    "name": "core.ContentMargin", 
+    "text": ""
+}

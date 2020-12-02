@@ -3,30 +3,34 @@
         "Methods": {
             "args": {
                 "internal": false, 
-                "text": ""
+                "params": [], 
+                "text": "additional arguments provided for method"
             }, 
             "call": {
-                "internal": false, 
-                "text": ""
+                "internal": true, 
+                "params": [], 
+                "text": "@private call implementation"
             }, 
             "headers": {
                 "internal": false, 
-                "text": ""
+                "params": [], 
+                "text": "headers override"
             }, 
             "onNameChanged": {
                 "internal": true, 
                 "text": ""
             }, 
             "pathArgs": {
-                "internal": false, 
-                "text": ""
+                "internal": true, 
+                "params": [], 
+                "text": "@internal replace path arguments ({} by default)"
             }
         }, 
         "Properties": {
             "name": {
                 "defaultValue": "", 
                 "internal": false, 
-                "text": "", 
+                "text": "method name", 
                 "type": "string"
             }, 
             "path": {
@@ -38,11 +42,11 @@
             "type": {
                 "defaultValue": "GET", 
                 "internal": false, 
-                "text": "", 
+                "text": "method type, could be any of supported HTTP request types", 
                 "type": "string"
             }
         }
     }, 
     "name": "controls.web.api.Method", 
-    "text": ""
+    "text": "Declarative REST API method declaration component.\nEach instance registered as javascript method with name specified in name property.\nYou have to override args function if you need to provide json body for your request (normally needed for POST/PUT)\n\nThis is to hide specific API details from method arguments.\nE.g. if you have login method with name/password, you can specify it as\nfunction args(name, password) { return { username: name, password: password}}\nmethod registered with args functions will have additional arguments, e.g login(name, pass, done, error)"
 }

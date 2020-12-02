@@ -40,6 +40,10 @@
                 "internal": true, 
                 "text": ""
             }, 
+            "onCurrentIndexChanged": {
+                "internal": true, 
+                "text": ""
+            }, 
             "onWidthChanged": {
                 "internal": true, 
                 "params": [], 

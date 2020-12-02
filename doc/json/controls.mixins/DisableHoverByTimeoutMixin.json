@@ -1,0 +1,69 @@
+{
+    "content": {
+        "Methods": {
+            "_bindMove": {
+                "internal": true, 
+                "params": [], 
+                "text": "@private"
+            }, 
+            "_setHover": {
+                "internal": true, 
+                "params": [], 
+                "text": "@private"
+            }, 
+            "_updatePosition": {
+                "internal": true, 
+                "params": [], 
+                "text": "@private"
+            }, 
+            "constructor": {
+                "internal": true, 
+                "params": [], 
+                "text": "@private"
+            }, 
+            "onEnabledChanged": {
+                "internal": true, 
+                "params": [], 
+                "text": "@private"
+            }, 
+            "onMouseMove": {
+                "internal": true, 
+                "params": [], 
+                "text": "@private"
+            }, 
+            "onValueChanged": {
+                "internal": true, 
+                "params": [], 
+                "text": "@private"
+            }
+        }, 
+        "Properties": {
+            "mouseX": {
+                "defaultValue": "", 
+                "internal": false, 
+                "text": "", 
+                "type": "int"
+            }, 
+            "mouseY": {
+                "defaultValue": "", 
+                "internal": false, 
+                "text": "", 
+                "type": "int"
+            }, 
+            "timeout": {
+                "defaultValue": "5000", 
+                "internal": false, 
+                "text": "timeout delay", 
+                "type": "int"
+            }
+        }, 
+        "Signals": {
+            "mouseMove": {
+                "internal": false, 
+                "text": ""
+            }
+        }
+    }, 
+    "name": "controls.mixins.DisableHoverByTimeoutMixin", 
+    "text": "this mixin turns off hover and activeHover by timeout and could be used for SmartTV's with autohiding cursor"
+}

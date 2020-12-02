@@ -1,0 +1,7 @@
+{
+    "controls.experimental": {
+        "Mosaic": "controls.experimental/Mosaic.json", 
+        "MosaicDelegate": "controls.experimental/MosaicDelegate.json", 
+        "NestedVideo": "controls.experimental/NestedVideo.json"
+    }
+}

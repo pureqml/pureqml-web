@@ -1,0 +1,24 @@
+{
+    "content": {
+        "Methods": {
+            "hide": {
+                "internal": false, 
+                "text": ""
+            }, 
+            "showAndPlay": {
+                "internal": false, 
+                "text": ""
+            }
+        }, 
+        "Properties": {
+            "display": {
+                "defaultValue": "", 
+                "internal": false, 
+                "text": "", 
+                "type": "bool"
+            }
+        }
+    }, 
+    "name": "controls.experimental.NestedVideo", 
+    "text": ""
+}
