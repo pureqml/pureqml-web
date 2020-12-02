@@ -45,6 +45,10 @@ https://pureqml.com/docs/controls.core/Resource.html
 https://pureqml.com/docs/controls.core/RollerView.html
 https://pureqml.com/docs/controls.core/Sprite.html
 https://pureqml.com/docs/controls.core/SwapImage.html
+https://pureqml.com/docs/controls.experimental.html
+https://pureqml.com/docs/controls.experimental/MosaicDelegate.html
+https://pureqml.com/docs/controls.experimental/Mosaic.html
+https://pureqml.com/docs/controls.experimental/NestedVideo.html
 https://pureqml.com/docs/controls.google/GoogleChart.html
 https://pureqml.com/docs/controls.google.html
 https://pureqml.com/docs/controls.google/YouTube.html
@@ -63,6 +67,7 @@ https://pureqml.com/docs/controls.input/TextInput.html
 https://pureqml.com/docs/controls.input/TimeInput.html
 https://pureqml.com/docs/controls.mixins/BaseMixin.html
 https://pureqml.com/docs/controls.mixins/CssMixin.html
+https://pureqml.com/docs/controls.mixins/DisableHoverByTimeoutMixin.html
 https://pureqml.com/docs/controls.mixins/DoubleClickMixin.html
 https://pureqml.com/docs/controls.mixins/DragMixin.html
 https://pureqml.com/docs/controls.mixins/DropZoneMixin.html
@@ -78,6 +83,7 @@ https://pureqml.com/docs/controls.mixins/TextMixin.html
 https://pureqml.com/docs/controls.mixins/TitleMixin.html
 https://pureqml.com/docs/controls.mixins/UserSelectMixin.html
 https://pureqml.com/docs/controls.pure/Checkbox.html
+https://pureqml.com/docs/controls.pure/FloatingText.html
 https://pureqml.com/docs/controls.pure.html
 https://pureqml.com/docs/controls.pure.keyboard.html
 https://pureqml.com/docs/controls.pure.keyboard/KeyboardDelegate.html
@@ -156,6 +162,7 @@ https://pureqml.com/docs/controls.yandex.html
 https://pureqml.com/docs/controls.yandex/YandexMap.html
 https://pureqml.com/docs/core/Anchors.html
 https://pureqml.com/docs/core/Animation.html
+https://pureqml.com/docs/core/BaseLayoutContentPadding.html
 https://pureqml.com/docs/core/BaseLayout.html
 https://pureqml.com/docs/core/BaseViewContent.html
 https://pureqml.com/docs/core/BaseView.html
@@ -166,6 +173,7 @@ https://pureqml.com/docs/core/ClickMixin.html
 https://pureqml.com/docs/core/ColorAnimation.html
 https://pureqml.com/docs/core/Column.html
 https://pureqml.com/docs/core/Connection.html
+https://pureqml.com/docs/core/ContentMargin.html
 https://pureqml.com/docs/core/Context.html
 https://pureqml.com/docs/core/Device.html
 https://pureqml.com/docs/core/Effects.html
