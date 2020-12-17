@@ -15,11 +15,20 @@ SiteActivity {
 
 		MainH2 { text: "Amediateka"; }
 		ShowcaseImage { source: colorTheme.resPath + "/showcases/amedia.jpg"; }
+		MainP {
+			text: "Amediateka is a premium VOD service, nicknamed as home of HBO, for very demanding users.";
+		}
 
 		MainH2 { text: "START"; }
 		ShowcaseImage { source: colorTheme.resPath + "/showcases/start.jpg"; }
+		MainP {
+			text: "START - ambitious subscription video service, focused on Russian content for local and international audience.";
+		}
 
 		MainH2 { text: "Tvigle"; }
 		ShowcaseImage { source: colorTheme.resPath + "/showcases/tvigle.jpg"; }
+		MainP {
+			text: "Tvigle is one of the old-timers of ad sponsored video streaming services, recently revamped their technological stack with PureQML.";
+		}
 	}
 }
