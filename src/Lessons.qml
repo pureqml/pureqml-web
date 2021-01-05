@@ -31,6 +31,12 @@ SiteActivity {
 				}
 
 				PathPageColumn {
+					path: "lessons/animation";
+					title: "Animation";
+					text: "Animation usage examples";
+				}
+
+				PathPageColumn {
 					path: "lessons/anchors";
 					title: "Anchors";
 					text: "Each item can can be positionated with anchors. The PureqQML anchors are simillar to the Qt anchors. But have one more value...";
@@ -174,6 +180,7 @@ SiteActivity {
 			if (!this._content) {
 				this._content = {
 					basics: "lessons.BasicLesson",
+					animation: "lessons.AnimationLesson",
 					anchors: "lessons.AnchorsLesson",
 					globals: "lessons.GlobalsLesson",
 					layouts: "lessons.LayoutsLesson",
