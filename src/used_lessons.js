@@ -1,4 +1,5 @@
 /*** @using { lessons.AnchorsLesson } **/
+/*** @using { lessons.AnimationLesson } **/
 /*** @using { lessons.BasicLesson } **/
 /*** @using { lessons.EffectsLesson } **/
 /*** @using { lessons.FocusLesson } **/
