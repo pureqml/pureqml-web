@@ -5,6 +5,7 @@ https://pureqml.com/lessons.html
 https://pureqml.com/docs.html
 https://pureqml.com/lessons/activitylesson.html
 https://pureqml.com/lessons/anchors.html
+https://pureqml.com/lessons/animation.html
 https://pureqml.com/lessons/basics.html
 https://pureqml.com/lessons/drm.html
 https://pureqml.com/lessons/effects.html
