@@ -6,7 +6,7 @@ SiteActivity {
 
 		Item {
 			width: 100%;
-			height: 374;
+			height: mainHeader.height;
 			property Gradient gradient: Gradient {
 				orientation: Gradient.Custom;
 				angle: 120;
@@ -16,13 +16,12 @@ SiteActivity {
 			}
 
 			H1 {
+				id: mainHeader;
 				width: Math.min(100%, 1200) - 40;
-				height: 100%;
 				anchors.horizontalCenter: parent.horizontalCenter;
 				horizontalAlignment: Text.AlignHCenter;
-				verticalAlignment: Text.AlignVCenter;
 				color: colorTheme.hTextColor;
-				font.pixelSize: 48;
+				font.pixelSize: Math.min(parent.width / 12, 48);
 				font.weight: 100;
 				text: "<b>PureQML</b><br>QML-inspired declarative JS-framework for web (and other platforms).";
 			}
