@@ -6,24 +6,33 @@ SiteActivity {
 
 		Item {
 			width: 100%;
-			height: mainHeader.height;
+			height: mainHeader.height + 120;
 			property Gradient gradient: Gradient {
 				orientation: Gradient.Custom;
 				angle: 120;
 
-				GradientStop { position: 0; color: "#8BC34A"; }
-				GradientStop { position: 1; color: "#00BCD4"; }
+				GradientStop { position: 0; color: "#f44336"; }
+				GradientStop { position: 1; color: "#607d8b"; }
+			}
+
+			Image {
+				y: 10;
+				height: 100;
+				anchors.horizontalCenter: parent;
+				fillMode: Image.PreserveAspectFit;
+				source: "res/logo.png";
 			}
 
 			H1 {
 				id: mainHeader;
+				y: 100;
 				width: Math.min(100%, 1200) - 40;
 				anchors.horizontalCenter: parent.horizontalCenter;
 				horizontalAlignment: Text.AlignHCenter;
 				color: colorTheme.hTextColor;
-				font.pixelSize: Math.min(parent.width / 12, 48);
+				font.pixelSize: Math.min(parent.width / 12, 36);
 				font.weight: 100;
-				text: "<b>PureQML</b><br>QML-inspired declarative JS-framework for web (and other platforms).";
+				text: "QML-inspired declarative JS-framework for web (and other platforms).";
 			}
 
 			Behavior on background { Animation { duration: 2000; easing: "linear"; }}
