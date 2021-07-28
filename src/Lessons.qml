@@ -139,6 +139,12 @@ SiteActivity {
 				}
 
 				PathPageColumn {
+					path: "lessons/thirdparty";
+					title: "Third-party scripts";
+					text: "This lesson is about how to add third-party scripts or any other resources to your project";
+				}
+
+				PathPageColumn {
 					path: "lessons/drm";
 					title: "DRM";
 					text: "DRM video playing";
