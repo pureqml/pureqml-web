@@ -7,7 +7,7 @@ Object {
 	property color leftMenuColor:		"#FAFAFA";
 
 	property color accentColor:			"#673AB7";
-	property color primaryColor:		"#f44336";
+	property color primaryColor:		"#8bc34a";
 	property color darkerPrimaryColor:	"#F5F5F5";
 	property color lighterPrimaryColor:	"#388E3C";
 

@@ -11,8 +11,8 @@ SiteActivity {
 				orientation: Gradient.Custom;
 				angle: 120;
 
-				GradientStop { position: 0; color: "#f44336"; }
-				GradientStop { position: 1; color: "#607d8b"; }
+				GradientStop { position: 0; color: "#8BC34A"; }
+				GradientStop { position: 1; color: "#00BCD4"; }
 			}
 
 			Image {
