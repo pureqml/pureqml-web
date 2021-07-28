@@ -3,7 +3,7 @@ Lesson {
 
 	PageColumn {
 		title: "Resource files";
-		text: "To add any files in your project (images, scripts etc) create directory named <i>\"dist\"</i> in your project root and put any file you wanted. All files from this directory will be copied to the result build directory after running <i>\"./qmlcore/build\"</i> command.<br>For example if you want to add a local image to your app you can move it to location like that: <i>\"./dist/lessons/image.png\" after build you will see the <i>./lessons/image.png</i> file in the build directory and now you can use it by corresponded file path:<i>";
+		text: "To add any files in your project (images, scripts etc) create directory named <i>\"dist\"</i> in your project root and put any file you wanted. All files from <i>\"dist\"</i> directory will be copied to the result build directory after running <i>\"./qmlcore/build\"</i> command.<br>For example if you want to add a local image to your app you can move it to location like that: <i>\"./dist/lessons/image.png\" after build you will see the <i>./lessons/image.png</i> file in the build directory and now you can use it by the path relative to the dist directory:<i>";
 
 		CodeHighlighter {
 			width: contentWidth + 20;
@@ -16,7 +16,7 @@ Lesson {
 
 	PageColumn {
 		title: "Thirdparty libraries";
-		text: "To add third-party js-file to your app you need not only add it to the <i>\"dist\"</i> directory you need to add the corresponded link in the <i>index.html</i> file. Because all files from the <i>\"dist\"</i> directory are copied only after app building you can override default output files like <i>\"index.html\"</i> by placing them in the <i>\"dist\"</i> diectory too.<br>To simplify index.html customization it was based on jinja templates. To add new library (<i>\"my_favorite_lib.js\"</i> for example) in the <i>\"index.html\"</i> file you need to add it to the head block like that:";
+		text: "To add third-party js-file to your app you need not only add it to the <i>\"dist\"</i> directory you need to add a link in the <i>index.html</i> file. Because all files from the <i>\"dist\"</i> directory are copied only after app building you can override default output files like <i>\"index.html\"</i> by placing them in the <i>\"dist\"</i> diectory too.<br>To simplify index.html customization it was based on jinja templates. To add new library (<i>\"my_favorite_lib.js\"</i> for example) in the <i>\"index.html\"</i> file you need to add it to the head block like that:";
 
 		CodeHighlighter {
 			width: contentWidth + 20;
@@ -29,7 +29,7 @@ Lesson {
 
 	PageColumn {
 		title: "Platform specific resources";
-		text: "If you want to add some resources only for specific platforms you can create <i>\"dist.PLATFORM_NAME\"</i><br> Where <i>PLATFORM_NAME</i> is desired platform name in lower case:<br>web | webos | tizen | netcast | orsay | androidtv | android | ios<br><br>Some smart TV platforms have specific resources like icons or splashscreens to override it you can place files with corresponded names in specific dist platform directory. The list of specific files for all platforms is below:";
+		text: "If you want to add some resources only for specific platforms you can create <i>\"dist.PLATFORM_NAME\"</i><br> Where <i>PLATFORM_NAME</i> is desired platform name in lower case:<br>web | webos | tizen | netcast | orsay | androidtv | android | ios<br><br>Some smart TV platforms have specific resources like icons or splashscreens to override it you can place files with corresponded names in specific dist platform directory. Please find the list of the platform specific files below:";
 
 		H3 {
 			anchors.topMargin: 50;
