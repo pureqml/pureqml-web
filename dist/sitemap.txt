@@ -21,6 +21,7 @@ https://pureqml.com/lessons/mixins.html
 https://pureqml.com/lessons/restapi.html
 https://pureqml.com/lessons/signals.html
 https://pureqml.com/lessons/sprite.html
+https://pureqml.com/lessons/thirdparty.html
 https://pureqml.com/lessons/transform.html
 https://pureqml.com/lessons/videoplayer.html
 https://pureqml.com/lessons/views.html
