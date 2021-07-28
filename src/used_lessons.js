@@ -19,3 +19,4 @@
 /*** @using { lessons.VideoPlayerLesson } **/
 /*** @using { lessons.DrmLesson } **/
 /*** @using { lessons.RestLesson } **/
+/*** @using { lessons.ThirdPartyLesson } **/
