@@ -204,6 +204,7 @@ SiteActivity {
 					sprite: "lessons.SpriteLesson",
 					activitylesson: "lessons.ActivityLesson",
 					videoplayer: "lessons.VideoPlayerLesson",
+					thirdparty: "lessons.ThirdPartyLesson",
 					drm: "lessons.DrmLesson",
 					rest: "lessons.RestLesson"
 				}
