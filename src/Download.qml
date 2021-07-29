@@ -27,7 +27,7 @@ SiteActivity {
 				anchors.margins: 30;
 				icon: "win.png";
 				text: "Win32 Snapshot";
-				href: "https://github.com/pureqml/qmlcore/releases/tag/v1.2.1";
+				href: "https://github.com/pureqml/qmlcore/releases/tag/1.3.0";
 			}
 		}
 	}
