@@ -28,6 +28,11 @@ Lesson {
 	}
 
 	PageColumn {
+		title: "Add js files without index.html modifying";
+		text: "There is an easy way to add js source code without modifying <i>index.html</i> file. You can just place any js file into the <i>./src</i> directory and its code will be added to the compiled qml js file as is.";
+	}
+
+	PageColumn {
 		title: "Platform specific resources";
 		text: "If you want to add some resources only for specific platforms you can create <i>\"dist.PLATFORM_NAME\"</i><br> Where <i>PLATFORM_NAME</i> is desired platform name in lower case:<br>web | webos | tizen | netcast | orsay | androidtv | android | ios<br><br>Some smart TV platforms have specific resources like icons or splashscreens to override it you can place files with corresponded names in specific dist platform directory. Please find the list of the platform specific files below:";
 
