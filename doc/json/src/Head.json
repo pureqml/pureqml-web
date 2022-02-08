@@ -2,25 +2,34 @@
     "content": {
         "Methods": {
             "onCompleted": {
-                "internal": false, 
+                "internal": true,
                 "text": ""
             }
-        }, 
+        },
         "Properties": {
             "mobileMode": {
-                "internal": false, 
-                "text": ""
-            }, 
+                "defaultValue": "${menu.rowsCount} > 1",
+                "internal": false,
+                "ref": null,
+                "text": "",
+                "type": "bool"
+            },
             "newWindow": {
-                "internal": false, 
-                "text": ""
-            }, 
+                "defaultValue": "",
+                "internal": false,
+                "ref": null,
+                "text": "",
+                "type": "bool"
+            },
             "open": {
-                "internal": false, 
-                "text": ""
+                "defaultValue": "",
+                "internal": false,
+                "ref": null,
+                "text": "",
+                "type": "bool"
             }
         }
-    }, 
-    "name": "src.Head", 
+    },
+    "name": "src.Head",
     "text": ""
 }

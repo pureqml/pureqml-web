@@ -2,33 +2,39 @@
     "content": {
         "Methods": {
             "getTag": {
-                "internal": false, 
+                "internal": false,
                 "text": ""
-            }, 
+            },
             "onHrefChanged": {
-                "internal": false, 
+                "internal": true,
                 "text": ""
-            }, 
+            },
             "onTargetChanged": {
-                "internal": false, 
+                "internal": true,
                 "text": ""
-            }, 
+            },
             "registerStyle": {
-                "internal": false, 
+                "internal": false,
                 "text": ""
             }
-        }, 
+        },
         "Properties": {
             "href": {
-                "internal": false, 
-                "text": ""
-            }, 
+                "defaultValue": "",
+                "internal": false,
+                "ref": null,
+                "text": "",
+                "type": "string"
+            },
             "target": {
-                "internal": false, 
-                "text": ""
+                "defaultValue": "",
+                "internal": false,
+                "ref": null,
+                "text": "",
+                "type": "string"
             }
         }
-    }, 
-    "name": "controls.web.WebLink", 
+    },
+    "name": "controls.web.WebLink",
     "text": ""
 }

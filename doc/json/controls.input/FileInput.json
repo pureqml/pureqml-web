@@ -2,25 +2,31 @@
     "content": {
         "Methods": {
             "constructor": {
-                "internal": false, 
+                "internal": true,
                 "text": ""
-            }, 
+            },
             "onFilterChanged": {
-                "internal": false, 
+                "internal": true,
                 "text": ""
             }
-        }, 
+        },
         "Properties": {
             "filter": {
-                "internal": false, 
-                "text": "filter for file selecting"
-            }, 
+                "defaultValue": "",
+                "internal": false,
+                "ref": null,
+                "text": " filter for file selecting",
+                "type": "string"
+            },
             "value": {
-                "internal": false, 
-                "text": "selected filename"
+                "defaultValue": "",
+                "internal": false,
+                "ref": null,
+                "text": " selected filename",
+                "type": "string"
             }
         }
-    }, 
-    "name": "controls.input.FileInput", 
+    },
+    "name": "controls.input.FileInput",
     "text": "file selected input"
 }

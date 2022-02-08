@@ -2,75 +2,101 @@
     "content": {
         "Methods": {
             "_start": {
-                "internal": true, 
+                "internal": true,
+                "params": [],
                 "text": "@private"
-            }, 
+            },
             "onCompleted": {
-                "internal": true, 
+                "internal": true,
+                "params": [],
                 "text": "@private"
-            }, 
+            },
             "onCurrentFrameChanged": {
-                "internal": true, 
+                "internal": true,
+                "params": [],
                 "text": "@private"
-            }, 
+            },
             "onRepeatChanged": {
-                "internal": true, 
+                "internal": true,
+                "params": [],
                 "text": "@private"
-            }, 
+            },
             "pause": {
-                "internal": false, 
+                "internal": false,
+                "params": [],
                 "text": "pause animation"
-            }, 
+            },
             "restart": {
-                "internal": false, 
+                "internal": false,
+                "params": [],
                 "text": "restarts animation from the beginning"
-            }, 
+            },
             "start": {
-                "internal": false, 
+                "internal": false,
+                "params": [],
                 "text": "start animation or continue if paused"
-            }, 
+            },
             "stop": {
-                "internal": false, 
+                "internal": false,
+                "params": [],
                 "text": "stop animation"
             }
-        }, 
+        },
         "Properties": {
             "currentFrame": {
-                "internal": false, 
-                "text": "displayed frame index"
-            }, 
+                "defaultValue": "",
+                "internal": false,
+                "ref": null,
+                "text": " displayed frame index",
+                "type": "int"
+            },
             "duration": {
-                "internal": false, 
-                "text": "animation time interval in milliseconds"
-            }, 
+                "defaultValue": "",
+                "internal": false,
+                "ref": null,
+                "text": " animation time interval in milliseconds",
+                "type": "int"
+            },
             "frameCount": {
-                "internal": false, 
-                "text": "frames in duration value"
-            }, 
+                "defaultValue": "",
+                "internal": false,
+                "ref": null,
+                "text": " frames in duration value",
+                "type": "int"
+            },
             "interval": {
-                "internal": false, 
-                "text": "read only property, time interval between each frames"
-            }, 
+                "defaultValue": "${duration} / ${frameCount}",
+                "internal": false,
+                "ref": null,
+                "text": " read only property, time interval between each frames",
+                "type": "int"
+            },
             "repeat": {
-                "internal": false, 
-                "text": "repeat animation flag"
-            }, 
+                "defaultValue": "",
+                "internal": false,
+                "ref": null,
+                "text": " repeat animation flag",
+                "type": "bool"
+            },
             "running": {
-                "internal": false, 
-                "text": "animation is running flag"
+                "defaultValue": "",
+                "internal": false,
+                "ref": null,
+                "text": " animation is running flag",
+                "type": "bool"
             }
-        }, 
+        },
         "Signals": {
             "finished": {
-                "internal": false, 
-                "text": "animation was ended signal"
-            }, 
+                "internal": false,
+                "text": " animation was ended signal"
+            },
             "triggered": {
-                "internal": false, 
-                "text": "frame changed signal"
+                "internal": false,
+                "text": " frame changed signal"
             }
         }
-    }, 
-    "name": "controls.core.AnimatedSprite", 
-    "text": "sprite image animation item"
+    },
+    "name": "controls.core.AnimatedSprite",
+    "text": " sprite image animation item"
 }

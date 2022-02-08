@@ -2,25 +2,30 @@
     "content": {
         "Methods": {
             "onSocailNetworkChanged": {
-                "internal": false, 
+                "internal": true,
                 "text": ""
-            }, 
+            },
             "open": {
-                "internal": false, 
+                "internal": false,
+                "params": [],
                 "text": "load URL"
-            }, 
+            },
             "redirect": {
-                "internal": false, 
+                "internal": false,
+                "params": [],
                 "text": "set location to corresponded URL"
             }
-        }, 
+        },
         "Properties": {
             "url": {
-                "internal": false, 
-                "text": "URL you want to share"
+                "defaultValue": "",
+                "internal": false,
+                "ref": null,
+                "text": " URL you want to share",
+                "type": "string"
             }
         }
-    }, 
-    "name": "controls.web.Sharer", 
+    },
+    "name": "controls.web.Sharer",
     "text": "object for sharing URL in corresponded social network"
 }

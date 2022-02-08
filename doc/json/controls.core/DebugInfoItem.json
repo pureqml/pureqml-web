@@ -2,15 +2,21 @@
     "content": {
         "Properties": {
             "label": {
-                "internal": false, 
-                "text": ""
-            }, 
+                "defaultValue": "",
+                "internal": false,
+                "ref": null,
+                "text": "",
+                "type": "string"
+            },
             "value": {
-                "internal": false, 
-                "text": ""
+                "defaultValue": "",
+                "internal": false,
+                "ref": null,
+                "text": "",
+                "type": "string"
             }
         }
-    }, 
-    "name": "controls.core.DebugInfoItem", 
+    },
+    "name": "controls.core.DebugInfoItem",
     "text": ""
 }

@@ -2,19 +2,21 @@
     "content": {
         "Methods": {
             "focusNextChild": {
-                "internal": false, 
+                "internal": false,
+                "params": [],
                 "text": "move focus to the next child"
-            }, 
+            },
             "focusPrevChild": {
-                "internal": false, 
+                "internal": false,
+                "params": [],
                 "text": "move focus to the previous child"
-            }, 
+            },
             "onCurrentIndexChanged": {
-                "internal": false, 
+                "internal": true,
                 "text": ""
             }
         }
-    }, 
-    "name": "core.Layout", 
-    "text": "base layout component."
+    },
+    "name": "core.Layout",
+    "text": " base layout component."
 }

@@ -2,27 +2,27 @@
     "content": {
         "Methods": {
             "getContext": {
-                "internal": false, 
+                "internal": false,
                 "text": ""
-            }, 
+            },
             "getTag": {
-                "internal": false, 
+                "internal": false,
                 "text": ""
-            }, 
+            },
             "onHeightChanged": {
-                "internal": false, 
+                "internal": true,
                 "text": ""
-            }, 
+            },
             "onWidthChanged": {
-                "internal": false, 
+                "internal": true,
                 "text": ""
-            }, 
+            },
             "registerStyle": {
-                "internal": false, 
+                "internal": false,
                 "text": ""
             }
         }
-    }, 
-    "name": "controls.web.Canvas", 
+    },
+    "name": "controls.web.Canvas",
     "text": ""
 }

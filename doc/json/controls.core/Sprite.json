@@ -2,21 +2,27 @@
     "content": {
         "Methods": {
             "onOffsetYChanged": {
-                "internal": false, 
+                "internal": true,
                 "text": ""
             }
-        }, 
+        },
         "Properties": {
             "offsetX": {
-                "internal": false, 
-                "text": "sprite horizontal offset"
-            }, 
+                "defaultValue": "",
+                "internal": false,
+                "ref": null,
+                "text": " sprite horizontal offset",
+                "type": "int"
+            },
             "offsetY": {
-                "internal": false, 
-                "text": "sprite vertical offset"
+                "defaultValue": "",
+                "internal": false,
+                "ref": null,
+                "text": " sprite vertical offset",
+                "type": "int"
             }
         }
-    }, 
-    "name": "controls.core.Sprite", 
-    "text": "base sprite object"
+    },
+    "name": "controls.core.Sprite",
+    "text": " base sprite object"
 }

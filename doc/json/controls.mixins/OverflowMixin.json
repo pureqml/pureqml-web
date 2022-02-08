@@ -2,19 +2,20 @@
     "content": {
         "Methods": {
             "_updateOverflow": {
-                "internal": true, 
+                "internal": true,
+                "params": [],
                 "text": "@internal"
-            }, 
+            },
             "onCompleted": {
-                "internal": false, 
+                "internal": true,
                 "text": ""
-            }, 
+            },
             "onValueChanged": {
-                "internal": false, 
+                "internal": true,
                 "text": ""
             }
         }
-    }, 
-    "name": "controls.mixins.OverflowMixin", 
+    },
+    "name": "controls.mixins.OverflowMixin",
     "text": "setup parents overflow mode"
 }

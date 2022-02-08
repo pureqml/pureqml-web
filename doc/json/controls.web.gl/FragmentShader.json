@@ -2,11 +2,18 @@
     "content": {
         "Methods": {
             "create": {
-                "internal": false, 
-                "text": "@param {string} sourceCode - shader source code\n\tfragment shader creation function"
+                "internal": false,
+                "params": [
+                    {
+                        "name": "sourceCode",
+                        "text": "shader source code",
+                        "type": "string"
+                    }
+                ],
+                "text": "@param {string} sourceCode - shader source code"
             }
         }
-    }, 
-    "name": "controls.web.gl.FragmentShader", 
-    "text": "@param {string} sourceCode - shader source code\n\tfragment shader creation function"
+    },
+    "name": "controls.web.gl.FragmentShader",
+    "text": ""
 }

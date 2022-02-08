@@ -2,33 +2,47 @@
     "content": {
         "Methods": {
             "onHorizontalSwiped": {
-                "internal": true, 
+                "internal": true,
+                "params": [],
                 "text": "@private"
-            }, 
+            },
             "onMouseMove": {
-                "internal": true, 
+                "internal": true,
+                "params": [],
                 "text": "@private"
             }
-        }, 
+        },
         "Properties": {
             "checked": {
-                "internal": false, 
-                "text": "is checkbox checked or not"
-            }, 
+                "defaultValue": "",
+                "internal": false,
+                "ref": null,
+                "text": " is checkbox checked or not",
+                "type": "bool"
+            },
             "checkedColor": {
-                "internal": false, 
-                "text": "button color if checked"
-            }, 
+                "defaultValue": "#8BC34A",
+                "internal": false,
+                "ref": null,
+                "text": " button color if checked",
+                "type": "color"
+            },
             "panelColor": {
-                "internal": false, 
-                "text": "panel color"
-            }, 
+                "defaultValue": "#ccc",
+                "internal": false,
+                "ref": null,
+                "text": " panel color",
+                "type": "color"
+            },
             "uncheckedColor": {
-                "internal": false, 
-                "text": "button color if not checked"
+                "defaultValue": "#F44336",
+                "internal": false,
+                "ref": null,
+                "text": " button color if not checked",
+                "type": "color"
             }
         }
-    }, 
-    "name": "controls.pure.Checkbox", 
-    "text": "simple checkbox control with swipable button"
+    },
+    "name": "controls.pure.Checkbox",
+    "text": " simple checkbox control with swipable button"
 }

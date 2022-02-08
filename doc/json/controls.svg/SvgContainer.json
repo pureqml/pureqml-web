@@ -2,39 +2,42 @@
     "content": {
         "Methods": {
             "_createElement": {
-                "internal": false, 
+                "internal": false,
+                "params": [],
                 "text": "specialized implementation of element creation in a certain namespace."
-            }, 
+            },
             "getTag": {
-                "internal": false, 
+                "internal": false,
+                "params": [],
                 "text": "returns tag for corresponding element"
-            }, 
+            },
             "onClipChanged": {
-                "internal": false, 
+                "internal": true,
                 "text": ""
-            }, 
+            },
             "onHeightChanged": {
-                "internal": false, 
+                "internal": true,
                 "text": ""
-            }, 
+            },
             "onWidthChanged": {
-                "internal": false, 
+                "internal": true,
                 "text": ""
-            }, 
+            },
             "onXChanged": {
-                "internal": false, 
+                "internal": true,
                 "text": ""
-            }, 
+            },
             "onYChanged": {
-                "internal": false, 
+                "internal": true,
                 "text": ""
-            }, 
+            },
             "registerStyle": {
-                "internal": true, 
+                "internal": true,
+                "params": [],
                 "text": "@private"
             }
         }
-    }, 
-    "name": "controls.svg.SvgContainer", 
-    "text": "returns tag for corresponding element"
+    },
+    "name": "controls.svg.SvgContainer",
+    "text": ""
 }

@@ -2,21 +2,24 @@
     "content": {
         "Methods": {
             "swap": {
-                "internal": false, 
+                "internal": false,
                 "text": ""
-            }, 
+            },
             "swapLayers": {
-                "internal": false, 
+                "internal": false,
                 "text": ""
             }
-        }, 
+        },
         "Properties": {
             "swapDuration": {
-                "internal": false, 
-                "text": ""
+                "defaultValue": "0",
+                "internal": false,
+                "ref": null,
+                "text": "",
+                "type": "int"
             }
         }
-    }, 
-    "name": "controls.core.SwapImage", 
+    },
+    "name": "controls.core.SwapImage",
     "text": ""
 }

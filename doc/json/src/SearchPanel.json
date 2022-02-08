@@ -2,35 +2,41 @@
     "content": {
         "Methods": {
             "onClicked": {
-                "internal": false, 
+                "internal": false,
                 "text": ""
-            }, 
+            },
             "onSearch": {
-                "internal": false, 
+                "internal": false,
                 "text": ""
-            }, 
+            },
             "searchCall": {
-                "internal": false, 
+                "internal": false,
                 "text": ""
             }
-        }, 
+        },
         "Properties": {
             "hover": {
-                "internal": false, 
-                "text": ""
-            }, 
+                "defaultValue": "HoverClickMixin",
+                "internal": false,
+                "ref": null,
+                "text": "",
+                "type": "Mixin"
+            },
             "searchFocused": {
-                "internal": false, 
-                "text": ""
+                "defaultValue": "${searchText.activeFocus} || ${searchResults.visible}",
+                "internal": false,
+                "ref": null,
+                "text": "",
+                "type": "bool"
             }
-        }, 
+        },
         "Signals": {
             "search": {
-                "internal": false, 
+                "internal": false,
                 "text": ""
             }
         }
-    }, 
-    "name": "src.SearchPanel", 
+    },
+    "name": "src.SearchPanel",
     "text": ""
 }

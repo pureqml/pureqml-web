@@ -2,47 +2,62 @@
     "content": {
         "Methods": {
             "fill": {
-                "internal": false, 
+                "internal": false,
                 "text": ""
-            }, 
+            },
             "onKeyPressed": {
-                "internal": false, 
+                "internal": false,
                 "text": ""
             }
-        }, 
+        },
         "Properties": {
             "delegateRadius": {
-                "internal": false, 
-                "text": ""
-            }, 
+                "defaultValue": "",
+                "internal": false,
+                "ref": null,
+                "text": "",
+                "type": "int"
+            },
             "hoverMode": {
-                "internal": false, 
-                "text": ""
-            }, 
+                "defaultValue": "",
+                "internal": false,
+                "ref": null,
+                "text": "",
+                "type": "bool"
+            },
             "mobile": {
-                "internal": false, 
-                "text": ""
-            }, 
+                "defaultValue": "${context.system.device} === ${context.system.Mobile}",
+                "internal": false,
+                "ref": null,
+                "text": "",
+                "type": "bool"
+            },
             "offset": {
-                "internal": false, 
-                "text": ""
-            }, 
+                "defaultValue": "",
+                "internal": false,
+                "ref": null,
+                "text": "",
+                "type": "int"
+            },
             "playing": {
-                "internal": false, 
-                "text": ""
+                "defaultValue": "",
+                "internal": false,
+                "ref": null,
+                "text": "",
+                "type": "bool"
             }
-        }, 
+        },
         "Signals": {
             "itemFocused": {
-                "internal": false, 
+                "internal": false,
                 "text": ""
-            }, 
+            },
             "play": {
-                "internal": false, 
+                "internal": false,
                 "text": ""
             }
         }
-    }, 
-    "name": "controls.experimental.Mosaic", 
+    },
+    "name": "controls.experimental.Mosaic",
     "text": ""
 }

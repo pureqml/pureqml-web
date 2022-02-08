@@ -2,21 +2,24 @@
     "content": {
         "Methods": {
             "constructor": {
-                "internal": false, 
+                "internal": true,
                 "text": ""
-            }, 
+            },
             "onTextChanged": {
-                "internal": false, 
+                "internal": true,
                 "text": ""
             }
-        }, 
+        },
         "Properties": {
             "text": {
-                "internal": false, 
-                "text": "input text string property"
+                "defaultValue": "",
+                "internal": false,
+                "ref": null,
+                "text": " input text string property",
+                "type": "string"
             }
         }
-    }, 
-    "name": "controls.input.SearchInput", 
-    "text": "HTML5 search input item"
+    },
+    "name": "controls.input.SearchInput",
+    "text": " HTML5 search input item"
 }

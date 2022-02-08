@@ -2,47 +2,55 @@
     "content": {
         "Methods": {
             "constructor": {
-                "internal": false, 
+                "internal": true,
                 "text": ""
-            }, 
+            },
             "context.onMessage": {
-                "internal": false, 
+                "internal": false,
                 "text": ""
-            }, 
+            },
             "getTag": {
-                "internal": true, 
+                "internal": true,
+                "params": [],
                 "text": "@private"
-            }, 
+            },
             "onSourceChanged": {
-                "internal": false, 
+                "internal": true,
                 "text": ""
-            }, 
+            },
             "postMessage": {
-                "internal": false, 
+                "internal": false,
+                "params": [],
                 "text": "Sends message to window"
             }
-        }, 
+        },
         "Properties": {
             "origin": {
-                "internal": false, 
-                "text": "readonly property of source's origin for message matching"
-            }, 
+                "defaultValue": "",
+                "internal": false,
+                "ref": null,
+                "text": " readonly property of source's origin for message matching",
+                "type": "string"
+            },
             "source": {
-                "internal": false, 
-                "text": "another page source URL"
+                "defaultValue": "",
+                "internal": false,
+                "ref": null,
+                "text": " another page source URL",
+                "type": "string"
             }
-        }, 
+        },
         "Signals": {
             "loaded": {
-                "internal": false, 
-                "text": "page was loaded signal"
-            }, 
+                "internal": false,
+                "text": " page was loaded signal"
+            },
             "message": {
-                "internal": false, 
-                "text": "message from window opened in this IFrame"
+                "internal": false,
+                "text": " message from window opened in this IFrame"
             }
         }
-    }, 
-    "name": "controls.web.IFrame", 
-    "text": "iframe item to embed other page"
+    },
+    "name": "controls.web.IFrame",
+    "text": " iframe item to embed other page"
 }

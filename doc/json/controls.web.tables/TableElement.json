@@ -2,25 +2,28 @@
     "content": {
         "Methods": {
             "onCompleted": {
-                "internal": false, 
+                "internal": true,
                 "text": ""
-            }, 
+            },
             "onTextChanged": {
-                "internal": false, 
+                "internal": true,
                 "text": ""
-            }, 
+            },
             "registerStyle": {
-                "internal": false, 
+                "internal": false,
                 "text": ""
             }
-        }, 
+        },
         "Properties": {
             "text": {
-                "internal": false, 
-                "text": ""
+                "defaultValue": "",
+                "internal": false,
+                "ref": null,
+                "text": "",
+                "type": "string"
             }
         }
-    }, 
-    "name": "controls.web.tables.TableElement", 
+    },
+    "name": "controls.web.tables.TableElement",
     "text": ""
 }

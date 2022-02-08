@@ -2,61 +2,91 @@
     "content": {
         "Methods": {
             "_addStyle": {
-                "internal": true, 
+                "internal": true,
+                "params": [],
                 "text": "@private"
-            }, 
+            },
             "_getFilterStyle": {
-                "internal": true, 
+                "internal": true,
+                "params": [],
                 "text": "@private"
-            }, 
+            },
             "_updateStyle": {
-                "internal": true, 
+                "internal": true,
+                "params": [],
                 "text": "@private"
-            }, 
+            },
             "onBlurChanged": {
-                "internal": false, 
+                "internal": true,
                 "text": ""
             }
-        }, 
+        },
         "Properties": {
             "blur": {
-                "internal": false, 
-                "text": "applies a blur effect to the image"
-            }, 
+                "defaultValue": "",
+                "internal": false,
+                "ref": null,
+                "text": " applies a blur effect to the image",
+                "type": "real"
+            },
             "brightness": {
-                "internal": false, 
-                "text": "adjusts the brightness of the image"
-            }, 
+                "defaultValue": "",
+                "internal": false,
+                "ref": null,
+                "text": " adjusts the brightness of the image",
+                "type": "real"
+            },
             "contrast": {
-                "internal": false, 
-                "text": "adjusts the contrast of the image"
-            }, 
+                "defaultValue": "",
+                "internal": false,
+                "ref": null,
+                "text": " adjusts the contrast of the image",
+                "type": "real"
+            },
             "grayscale": {
-                "internal": false, 
-                "text": "converts the image to grayscale"
-            }, 
+                "defaultValue": "",
+                "internal": false,
+                "ref": null,
+                "text": " converts the image to grayscale",
+                "type": "real"
+            },
             "hueRotate": {
-                "internal": false, 
-                "text": "applies a hue rotation on the image. The value defines the number of degrees around the color circle the image samples will be adjusted"
-            }, 
+                "defaultValue": "",
+                "internal": false,
+                "ref": null,
+                "text": " applies a hue rotation on the image. The value defines the number of degrees around the color circle the image samples will be adjusted",
+                "type": "real"
+            },
             "invert": {
-                "internal": false, 
-                "text": "inverts the samples in the image"
-            }, 
+                "defaultValue": "",
+                "internal": false,
+                "ref": null,
+                "text": " inverts the samples in the image",
+                "type": "real"
+            },
             "saturate": {
-                "internal": false, 
-                "text": "saturates the image"
-            }, 
+                "defaultValue": "",
+                "internal": false,
+                "ref": null,
+                "text": " saturates the image",
+                "type": "real"
+            },
             "sepia": {
-                "internal": false, 
-                "text": "converts the image to sepia"
-            }, 
+                "defaultValue": "",
+                "internal": false,
+                "ref": null,
+                "text": " converts the image to sepia",
+                "type": "real"
+            },
             "shadow": {
-                "internal": false, 
-                "text": "object property for the shadow adjusting"
+                "defaultValue": "Shadow",
+                "internal": false,
+                "ref": null,
+                "text": " object property for the shadow adjusting",
+                "type": "lazy"
             }
         }
-    }, 
-    "name": "core.Effects", 
+    },
+    "name": "core.Effects",
     "text": "provides various visual effects"
 }

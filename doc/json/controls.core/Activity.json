@@ -2,19 +2,22 @@
     "content": {
         "Methods": {
             "getActivity": {
-                "internal": false, 
+                "internal": false,
+                "params": [],
                 "text": "get activity item"
-            }, 
+            },
             "start": {
-                "internal": false, 
+                "internal": false,
+                "params": [],
                 "text": "start activity"
-            }, 
+            },
             "stop": {
-                "internal": false, 
+                "internal": false,
+                "params": [],
                 "text": "stop activity"
             }
         }
-    }, 
-    "name": "controls.core.Activity", 
+    },
+    "name": "controls.core.Activity",
     "text": "simple activity control"
 }

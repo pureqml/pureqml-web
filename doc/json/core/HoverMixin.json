@@ -2,29 +2,34 @@
     "content": {
         "Methods": {
             "_bindHover": {
-                "internal": true, 
+                "internal": true,
+                "params": [],
                 "text": "@private"
-            }, 
+            },
             "constructor": {
-                "internal": true, 
+                "internal": true,
+                "params": [],
                 "text": "@private"
-            }, 
+            },
             "onEnabledChanged": {
-                "internal": false, 
+                "internal": true,
                 "text": ""
-            }, 
+            },
             "onValueChanged": {
-                "internal": false, 
+                "internal": true,
                 "text": ""
             }
-        }, 
+        },
         "Properties": {
             "value": {
-                "internal": false, 
-                "text": "is 'true' if item if hovered, 'false' otherwise"
+                "defaultValue": "",
+                "internal": false,
+                "ref": null,
+                "text": " is 'true' if item if hovered, 'false' otherwise",
+                "type": "bool"
             }
         }
-    }, 
-    "name": "core.HoverMixin", 
-    "text": "this mixin provides mouse hover events handling"
+    },
+    "name": "core.HoverMixin",
+    "text": " this mixin provides mouse hover events handling"
 }

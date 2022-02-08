@@ -2,53 +2,69 @@
     "content": {
         "Methods": {
             "_setValueWithLimits": {
-                "internal": true, 
+                "internal": true,
+                "params": [],
                 "text": "@private - sets element native value while applying min/max limits. if called externally, onValueChanged will not fire"
-            }, 
+            },
             "constructor": {
-                "internal": false, 
+                "internal": true,
                 "text": ""
-            }, 
+            },
             "onMaxChanged": {
-                "internal": false, 
+                "internal": true,
                 "text": ""
-            }, 
+            },
             "onMinChanged": {
-                "internal": false, 
+                "internal": true,
                 "text": ""
-            }, 
+            },
             "onStepChanged": {
-                "internal": false, 
+                "internal": true,
                 "text": ""
-            }, 
+            },
             "onValueChanged": {
-                "internal": false, 
+                "internal": true,
                 "text": ""
             }
-        }, 
+        },
         "Properties": {
             "debounceTimeout": {
-                "internal": false, 
-                "text": "set to non zero to debounce input allowing user time to type characters (suggest 500)"
-            }, 
+                "defaultValue": "",
+                "internal": false,
+                "ref": null,
+                "text": " set to non zero to debounce input allowing user time to type characters (suggest 500)",
+                "type": "float"
+            },
             "max": {
-                "internal": false, 
-                "text": "maximum number value"
-            }, 
+                "defaultValue": "",
+                "internal": false,
+                "ref": null,
+                "text": " maximum number value",
+                "type": "float"
+            },
             "min": {
-                "internal": false, 
-                "text": "minimum number value"
-            }, 
+                "defaultValue": "",
+                "internal": false,
+                "ref": null,
+                "text": " minimum number value",
+                "type": "float"
+            },
             "step": {
-                "internal": false, 
-                "text": "number step value"
-            }, 
+                "defaultValue": "",
+                "internal": false,
+                "ref": null,
+                "text": " number step value",
+                "type": "float"
+            },
             "value": {
-                "internal": false, 
-                "text": "number value - suggested to use onValueChanged not onChange signal in instantiated component"
+                "defaultValue": "",
+                "internal": false,
+                "ref": null,
+                "text": " number value - suggested to use onValueChanged not onChange signal in instantiated component",
+                "type": "float"
             }
         }
-    }, 
-    "name": "controls.input.NumberInput", 
+    },
+    "name": "controls.input.NumberInput",
     "text": "number input"
 }

@@ -2,51 +2,65 @@
     "content": {
         "Methods": {
             "_checkNameValid": {
-                "internal": true, 
+                "internal": true,
+                "params": [],
                 "text": "@private"
-            }, 
+            },
             "_read": {
-                "internal": true, 
+                "internal": true,
+                "params": [],
                 "text": "@private"
-            }, 
+            },
             "_write": {
-                "internal": true, 
+                "internal": true,
+                "params": [],
                 "text": "@private"
-            }, 
+            },
             "onCompleted": {
-                "internal": false, 
+                "internal": true,
                 "text": ""
-            }, 
+            },
             "onNameChanged": {
-                "internal": true, 
+                "internal": true,
+                "params": [],
                 "text": "@private"
-            }, 
+            },
             "onValueChanged": {
-                "internal": true, 
+                "internal": true,
+                "params": [],
                 "text": "@private"
             }
-        }, 
+        },
         "Properties": {
             "defaultValue": {
-                "internal": false, 
-                "text": "default init value"
-            }, 
+                "defaultValue": "",
+                "internal": false,
+                "ref": null,
+                "text": " default init value",
+                "type": "string"
+            },
             "name": {
-                "internal": false, 
-                "text": "stored property key name"
-            }, 
+                "defaultValue": "",
+                "internal": false,
+                "ref": null,
+                "text": " stored property key name",
+                "type": "string"
+            },
             "value": {
-                "internal": false, 
-                "text": "stored property value"
+                "defaultValue": "",
+                "internal": false,
+                "ref": null,
+                "text": " stored property value",
+                "type": "string"
             }
-        }, 
+        },
         "Signals": {
             "ready": {
-                "internal": false, 
-                "text": "the value now in a sync state with underlying storage"
+                "internal": false,
+                "text": " the value now in a sync state with underlying storage"
             }
         }
-    }, 
-    "name": "core.PropertyStorage", 
-    "text": "object to hold named property synced with underlying storage"
+    },
+    "name": "core.PropertyStorage",
+    "text": " object to hold named property synced with underlying storage"
 }

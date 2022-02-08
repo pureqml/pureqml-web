@@ -2,101 +2,162 @@
     "content": {
         "Methods": {
             "_updateLayoutType": {
-                "internal": true, 
+                "internal": true,
+                "params": [],
                 "text": "@private"
-            }, 
+            },
             "constructor": {
-                "internal": true, 
+                "internal": true,
+                "params": [],
                 "text": "@private"
-            }, 
+            },
             "onContextHeightChanged": {
-                "internal": true, 
+                "internal": true,
+                "params": [],
                 "text": "@private"
-            }, 
+            },
             "onContextWidthChanged": {
-                "internal": true, 
+                "internal": true,
+                "params": [],
                 "text": "@private"
             }
-        }, 
+        },
         "Properties": {
             "browser": {
-                "internal": false, 
-                "text": "browser name"
-            }, 
+                "defaultValue": "",
+                "internal": false,
+                "ref": null,
+                "text": " browser name",
+                "type": "string"
+            },
             "contextHeight": {
-                "internal": true, 
-                "text": "@private"
-            }, 
+                "defaultValue": "{context.height",
+                "internal": true,
+                "ref": null,
+                "text": " @private",
+                "type": "int"
+            },
             "contextWidth": {
-                "internal": true, 
-                "text": "@private"
-            }, 
+                "defaultValue": "{context.width",
+                "internal": true,
+                "ref": null,
+                "text": " @private",
+                "type": "int"
+            },
             "landscape": {
-                "internal": false, 
-                "text": "landscape oriented screen flag"
-            }, 
+                "defaultValue": "! ${portrait}",
+                "internal": false,
+                "ref": null,
+                "text": " landscape oriented screen flag",
+                "type": "bool"
+            },
             "language": {
-                "internal": false, 
-                "text": "platform language"
-            }, 
+                "defaultValue": "",
+                "internal": false,
+                "ref": null,
+                "text": " platform language",
+                "type": "string"
+            },
             "os": {
-                "internal": false, 
-                "text": "operation system name"
-            }, 
+                "defaultValue": "",
+                "internal": false,
+                "ref": null,
+                "text": " operation system name",
+                "type": "string"
+            },
             "pageActive": {
-                "internal": false, 
-                "text": "page active flag"
-            }, 
+                "defaultValue": "ru",
+                "internal": false,
+                "ref": null,
+                "text": " page active flag",
+                "type": "bool"
+            },
             "portrait": {
-                "internal": false, 
-                "text": "portrait oriented screen flag"
-            }, 
+                "defaultValue": "${parent.width} < ${parent.height}",
+                "internal": false,
+                "ref": null,
+                "text": " portrait oriented screen flag",
+                "type": "bool"
+            },
             "resolutionHeight": {
-                "internal": false, 
-                "text": "app screen height from manifest"
-            }, 
+                "defaultValue": "",
+                "internal": false,
+                "ref": null,
+                "text": " app screen height from manifest",
+                "type": "int"
+            },
             "resolutionWidth": {
-                "internal": false, 
-                "text": "app screen width from manifest"
-            }, 
+                "defaultValue": "",
+                "internal": false,
+                "ref": null,
+                "text": " app screen width from manifest",
+                "type": "int"
+            },
             "screenHeight": {
-                "internal": false, 
-                "text": "device screen height value"
-            }, 
+                "defaultValue": "",
+                "internal": false,
+                "ref": null,
+                "text": " device screen height value",
+                "type": "int"
+            },
             "screenWidth": {
-                "internal": false, 
-                "text": "device screen width value"
-            }, 
+                "defaultValue": "",
+                "internal": false,
+                "ref": null,
+                "text": " device screen width value",
+                "type": "int"
+            },
             "support3dTransforms": {
-                "internal": false, 
-                "text": "CSS transforms3d supported flag"
-            }, 
+                "defaultValue": "",
+                "internal": false,
+                "ref": null,
+                "text": " CSS transforms3d supported flag",
+                "type": "bool"
+            },
             "supportTransforms": {
-                "internal": false, 
-                "text": "CSS transforms supported flag"
-            }, 
+                "defaultValue": "",
+                "internal": false,
+                "ref": null,
+                "text": " CSS transforms supported flag",
+                "type": "bool"
+            },
             "supportTransitions": {
-                "internal": false, 
-                "text": "CSS transitions supported flag"
-            }, 
+                "defaultValue": "",
+                "internal": false,
+                "ref": null,
+                "text": " CSS transitions supported flag",
+                "type": "bool"
+            },
             "userAgent": {
-                "internal": false, 
-                "text": "browser userAgent value"
-            }, 
+                "defaultValue": "",
+                "internal": false,
+                "ref": null,
+                "text": " browser userAgent value",
+                "type": "string"
+            },
             "vendor": {
-                "internal": false, 
-                "text": "current vendor name"
-            }, 
+                "defaultValue": "",
+                "internal": false,
+                "ref": null,
+                "text": " current vendor name",
+                "type": "string"
+            },
             "virtualKeyboard": {
-                "internal": false, 
-                "text": "used to tweak components which use on-screen keyboard"
-            }, 
+                "defaultValue": "(${device} === System.Tv) || (${device} === System.Mobile)",
+                "internal": false,
+                "ref": null,
+                "text": " used to tweak components which use on-screen keyboard",
+                "type": "bool"
+            },
             "webkit": {
-                "internal": false, 
-                "text": "webkit supported flag"
+                "defaultValue": "",
+                "internal": false,
+                "ref": null,
+                "text": " webkit supported flag",
+                "type": "bool"
             }
         }
-    }, 
-    "name": "core.System", 
+    },
+    "name": "core.System",
     "text": "object for storing general info about device and platform"
 }

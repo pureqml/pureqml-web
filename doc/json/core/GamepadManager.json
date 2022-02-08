@@ -2,59 +2,79 @@
     "content": {
         "Methods": {
             "gamepadConnectedHandler": {
-                "internal": true, 
+                "internal": true,
+                "params": [],
                 "text": "@private"
-            }, 
+            },
             "gamepadDisconnectedHandler": {
-                "internal": true, 
+                "internal": true,
+                "params": [],
                 "text": "@private"
-            }, 
+            },
             "gpButtonCheckLoop": {
-                "internal": true, 
+                "internal": true,
+                "params": [],
                 "text": "@private"
-            }, 
+            },
             "onCompleted": {
-                "internal": true, 
+                "internal": true,
+                "params": [],
                 "text": "@private"
-            }, 
+            },
             "pollGamepads": {
-                "internal": true, 
+                "internal": true,
+                "params": [],
                 "text": "@private"
             }
-        }, 
+        },
         "Properties": {
             "_gamepads": {
-                "internal": true, 
-                "text": "@private"
-            }, 
+                "defaultValue": "",
+                "internal": true,
+                "ref": null,
+                "text": " @private",
+                "type": "variant"
+            },
             "count": {
-                "internal": false, 
-                "text": "count of the all connected gamepad devices"
-            }, 
+                "defaultValue": "",
+                "internal": false,
+                "ref": null,
+                "text": " count of the all connected gamepad devices",
+                "type": "int"
+            },
             "eventPollingInterval": {
-                "internal": false, 
-                "text": "gamepad event polling timer interval default value is 8ms (for 120fps) because there is no gamepad events"
-            }, 
+                "defaultValue": "",
+                "internal": false,
+                "ref": null,
+                "text": " gamepad event polling timer interval default value is 8ms (for 120fps) because there is no gamepad events",
+                "type": "int"
+            },
             "gamepadChildrensCount": {
-                "internal": false, 
-                "text": "count of Gamepad instances inside scope"
-            }, 
+                "defaultValue": "",
+                "internal": false,
+                "ref": null,
+                "text": " count of Gamepad instances inside scope",
+                "type": "int"
+            },
             "gamepadPollingInterval": {
-                "internal": false, 
-                "text": "startup delay before gamepads polling because there is no gamepad events"
+                "defaultValue": "00",
+                "internal": false,
+                "ref": null,
+                "text": " startup delay before gamepads polling because there is no gamepad events",
+                "type": "int"
             }
-        }, 
+        },
         "Signals": {
             "connected": {
-                "internal": false, 
-                "text": "emitted when any gamepad is connected"
-            }, 
+                "internal": false,
+                "text": " emitted when any gamepad is connected"
+            },
             "disconnected": {
-                "internal": false, 
-                "text": "emitted when gamepad is disconnected"
+                "internal": false,
+                "text": " emitted when gamepad is disconnected"
             }
         }
-    }, 
-    "name": "core.GamepadManager", 
+    },
+    "name": "core.GamepadManager",
     "text": "gamepad manager item holds Gamepad items and provide common API"
 }

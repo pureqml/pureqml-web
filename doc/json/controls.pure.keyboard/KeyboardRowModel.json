@@ -2,25 +2,34 @@
     "content": {
         "Methods": {
             "onCompleted": {
-                "internal": false, 
+                "internal": true,
                 "text": ""
             }
-        }, 
+        },
         "Properties": {
             "begin": {
-                "internal": false, 
-                "text": ""
-            }, 
+                "defaultValue": "",
+                "internal": false,
+                "ref": null,
+                "text": "",
+                "type": "int"
+            },
             "end": {
-                "internal": false, 
-                "text": ""
-            }, 
+                "defaultValue": "",
+                "internal": false,
+                "ref": null,
+                "text": "",
+                "type": "int"
+            },
             "parentModel": {
-                "internal": false, 
-                "text": ""
+                "defaultValue": "",
+                "internal": false,
+                "ref": null,
+                "text": "",
+                "type": "Object"
             }
         }
-    }, 
-    "name": "controls.pure.keyboard.KeyboardRowModel", 
+    },
+    "name": "controls.pure.keyboard.KeyboardRowModel",
     "text": ""
 }

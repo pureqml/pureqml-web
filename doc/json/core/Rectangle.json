@@ -2,33 +2,42 @@
     "content": {
         "Methods": {
             "constructor": {
-                "internal": false, 
+                "internal": true,
                 "text": ""
-            }, 
+            },
             "onColorChanged": {
-                "internal": false, 
+                "internal": true,
                 "text": ""
-            }, 
+            },
             "prototypeConstructor": {
-                "internal": false, 
+                "internal": false,
                 "text": ""
             }
-        }, 
+        },
         "Properties": {
             "border": {
-                "internal": false, 
-                "text": "object holding properties of the border"
-            }, 
+                "defaultValue": "Border",
+                "internal": false,
+                "ref": null,
+                "text": " object holding properties of the border",
+                "type": "lazy"
+            },
             "color": {
-                "internal": false, 
-                "text": "rectangle background color"
-            }, 
+                "defaultValue": "#0000",
+                "internal": false,
+                "ref": null,
+                "text": " rectangle background color",
+                "type": "color"
+            },
             "gradient": {
-                "internal": false, 
-                "text": "if gradient object was set, it displays gradient instead of solid color"
+                "defaultValue": "",
+                "internal": false,
+                "ref": null,
+                "text": " if gradient object was set, it displays gradient instead of solid color",
+                "type": "Gradient"
             }
         }
-    }, 
-    "name": "core.Rectangle", 
-    "text": "Colored rectangle with optional rounded corners, border and/or gradient."
+    },
+    "name": "core.Rectangle",
+    "text": " Colored rectangle with optional rounded corners, border and/or gradient."
 }

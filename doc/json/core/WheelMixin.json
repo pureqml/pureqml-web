@@ -2,19 +2,22 @@
     "content": {
         "Methods": {
             "_bindWheel": {
-                "internal": true, 
+                "internal": true,
+                "params": [],
                 "text": "@private"
-            }, 
+            },
             "constructor": {
-                "internal": true, 
+                "internal": true,
+                "params": [],
                 "text": "@private"
-            }, 
+            },
             "onEnabledChanged": {
-                "internal": true, 
+                "internal": true,
+                "params": [],
                 "text": "@private"
             }
         }
-    }, 
-    "name": "core.WheelMixin", 
-    "text": "mixin for wheel events"
+    },
+    "name": "core.WheelMixin",
+    "text": " mixin for wheel events"
 }

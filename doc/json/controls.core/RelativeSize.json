@@ -2,41 +2,57 @@
     "content": {
         "Methods": {
             "_calculate": {
-                "internal": true, 
+                "internal": true,
+                "params": [],
                 "text": "/@private"
-            }, 
+            },
             "onCompleted": {
-                "internal": false, 
+                "internal": true,
                 "text": ""
-            }, 
+            },
             "onGlobalWidthChanged": {
-                "internal": false, 
+                "internal": true,
                 "text": ""
             }
-        }, 
+        },
         "Properties": {
             "globalWidth": {
-                "internal": true, 
-                "text": "@private"
-            }, 
+                "defaultValue": "{context.width",
+                "internal": true,
+                "ref": null,
+                "text": "@private",
+                "type": "int"
+            },
             "lg": {
-                "internal": false, 
-                "text": "large devices, desktops (>=1200px)"
-            }, 
+                "defaultValue": "",
+                "internal": false,
+                "ref": null,
+                "text": " large devices, desktops (>=1200px)",
+                "type": "real"
+            },
             "md": {
-                "internal": false, 
-                "text": "medium devices, desktops (>=992px)"
-            }, 
+                "defaultValue": "",
+                "internal": false,
+                "ref": null,
+                "text": " medium devices, desktops (>=992px)",
+                "type": "real"
+            },
             "sm": {
-                "internal": false, 
-                "text": "small devices, tablets (>=768px)"
-            }, 
+                "defaultValue": "",
+                "internal": false,
+                "ref": null,
+                "text": " small devices, tablets (>=768px)",
+                "type": "real"
+            },
             "xs": {
-                "internal": false, 
-                "text": "extra small devices, phones (<768px)"
+                "defaultValue": "0",
+                "internal": false,
+                "ref": null,
+                "text": " extra small devices, phones (<768px)",
+                "type": "real"
             }
         }
-    }, 
-    "name": "controls.core.RelativeSize", 
+    },
+    "name": "controls.core.RelativeSize",
     "text": "object for geting relative size values"
 }

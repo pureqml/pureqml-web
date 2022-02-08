@@ -2,39 +2,44 @@
     "content": {
         "Methods": {
             "attachTo": {
-                "internal": true, 
+                "internal": true,
+                "params": [],
                 "text": "@private"
-            }, 
+            },
             "detachFrom": {
-                "internal": true, 
+                "internal": true,
+                "params": [],
                 "text": "@private"
             }
-        }, 
+        },
         "Properties": {
             "count": {
-                "internal": false, 
-                "text": "model rows count. Please note that you can't directly/indirectly modify model from onChanged handler. Use view.onCountChanged instead"
+                "defaultValue": "",
+                "internal": false,
+                "ref": null,
+                "text": " model rows count. Please note that you can't directly/indirectly modify model from onChanged handler. Use view.onCountChanged instead",
+                "type": "int"
             }
-        }, 
+        },
         "Signals": {
             "reset": {
-                "internal": false, 
-                "text": "model reset signal"
-            }, 
+                "internal": false,
+                "text": " model reset signal"
+            },
             "rowsChanged": {
-                "internal": false, 
-                "text": "rows changed signal"
-            }, 
+                "internal": false,
+                "text": " rows changed signal"
+            },
             "rowsInserted": {
-                "internal": false, 
-                "text": "rows inserted signal"
-            }, 
+                "internal": false,
+                "text": " rows inserted signal"
+            },
             "rowsRemoved": {
-                "internal": false, 
-                "text": "rows removed signal"
+                "internal": false,
+                "text": " rows removed signal"
             }
         }
-    }, 
-    "name": "core.Model", 
-    "text": "@private"
+    },
+    "name": "core.Model",
+    "text": ""
 }

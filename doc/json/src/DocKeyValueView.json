@@ -2,21 +2,27 @@
     "content": {
         "Methods": {
             "fill": {
-                "internal": false, 
+                "internal": false,
                 "text": ""
             }
-        }, 
+        },
         "Properties": {
             "shift": {
-                "internal": false, 
-                "text": ""
-            }, 
+                "defaultValue": "0",
+                "internal": false,
+                "ref": null,
+                "text": "",
+                "type": "int"
+            },
             "wide": {
-                "internal": false, 
-                "text": ""
+                "defaultValue": "${context.width} > 800",
+                "internal": false,
+                "ref": null,
+                "text": "",
+                "type": "bool"
             }
         }
-    }, 
-    "name": "src.DocKeyValueView", 
+    },
+    "name": "src.DocKeyValueView",
     "text": ""
 }

@@ -2,37 +2,49 @@
     "content": {
         "Methods": {
             "onRunningChanged": {
-                "internal": false, 
+                "internal": true,
                 "text": ""
-            }, 
+            },
             "start": {
-                "internal": false, 
+                "internal": false,
                 "text": ""
-            }, 
+            },
             "stop": {
-                "internal": false, 
+                "internal": false,
                 "text": ""
             }
-        }, 
+        },
         "Properties": {
             "running": {
-                "internal": false, 
-                "text": ""
-            }, 
+                "defaultValue": "",
+                "internal": false,
+                "ref": null,
+                "text": "",
+                "type": "bool"
+            },
             "squeeze": {
-                "internal": false, 
-                "text": ""
-            }, 
+                "defaultValue": "",
+                "internal": false,
+                "ref": null,
+                "text": "",
+                "type": "int"
+            },
             "squeezeX": {
-                "internal": false, 
-                "text": ""
-            }, 
+                "defaultValue": "((${squeeze} * ${width}) * 5) / 80",
+                "internal": false,
+                "ref": null,
+                "text": "",
+                "type": "int"
+            },
             "squeezeY": {
-                "internal": false, 
-                "text": ""
+                "defaultValue": "((${squeeze} * ${height}) * 5) / 80",
+                "internal": false,
+                "ref": null,
+                "text": "",
+                "type": "int"
             }
         }
-    }, 
-    "name": "controls.web.Spinner", 
+    },
+    "name": "controls.web.Spinner",
     "text": ""
 }

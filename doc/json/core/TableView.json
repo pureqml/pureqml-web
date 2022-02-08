@@ -2,81 +2,99 @@
     "content": {
         "Methods": {
             "_createDelegate": {
-                "internal": false, 
+                "internal": false,
                 "text": ""
-            }, 
+            },
             "_getTablePosition": {
-                "internal": false, 
+                "internal": false,
                 "text": ""
-            }, 
+            },
             "_invalidateSize": {
-                "internal": false, 
+                "internal": false,
                 "text": ""
-            }, 
+            },
             "_layout": {
-                "internal": true, 
+                "internal": true,
+                "params": [],
                 "text": "@private"
-            }, 
+            },
             "_updateOverflow": {
-                "internal": true, 
+                "internal": true,
+                "params": [],
                 "text": "@private"
-            }, 
+            },
             "constructor": {
-                "internal": false, 
+                "internal": true,
                 "text": ""
-            }, 
+            },
             "getItemPosition": {
-                "internal": false, 
+                "internal": false,
                 "text": ""
-            }, 
+            },
             "indexAt": {
-                "internal": false, 
+                "internal": false,
                 "text": ""
-            }, 
+            },
             "onColumnsChanged": {
-                "internal": false, 
+                "internal": true,
                 "text": ""
-            }, 
+            },
             "onCompleted": {
-                "internal": false, 
+                "internal": true,
                 "text": ""
-            }, 
+            },
             "onKeyPressed": {
-                "internal": false, 
+                "internal": false,
                 "text": ""
-            }, 
+            },
             "onNativeScrollingChanged": {
-                "internal": false, 
+                "internal": true,
                 "text": ""
-            }, 
+            },
             "positionViewAtIndex": {
-                "internal": true, 
+                "internal": true,
+                "params": [],
                 "text": "@private"
             }
-        }, 
+        },
         "Properties": {
             "columnSpacing": {
-                "internal": false, 
-                "text": ""
-            }, 
+                "defaultValue": "",
+                "internal": false,
+                "ref": null,
+                "text": "",
+                "type": "int"
+            },
             "columns": {
-                "internal": false, 
-                "text": ""
-            }, 
+                "defaultValue": "",
+                "internal": false,
+                "ref": null,
+                "text": "",
+                "type": "int"
+            },
             "referenceHeight": {
-                "internal": true, 
-                "text": "@internal"
-            }, 
+                "defaultValue": "",
+                "internal": true,
+                "ref": null,
+                "text": " @internal",
+                "type": "int"
+            },
             "referenceWidth": {
-                "internal": true, 
-                "text": "@internal"
-            }, 
+                "defaultValue": "",
+                "internal": true,
+                "ref": null,
+                "text": " @internal",
+                "type": "int"
+            },
             "rowSpacing": {
-                "internal": false, 
-                "text": ""
+                "defaultValue": "",
+                "internal": false,
+                "ref": null,
+                "text": "",
+                "type": "int"
             }
         }
-    }, 
-    "name": "core.TableView", 
-    "text": "@private"
+    },
+    "name": "core.TableView",
+    "text": ""
 }

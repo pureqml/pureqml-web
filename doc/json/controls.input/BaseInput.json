@@ -2,135 +2,184 @@
     "content": {
         "Methods": {
             "_getValue": {
-                "internal": false, 
+                "internal": false,
+                "params": [],
                 "text": "gets element native value"
-            }, 
+            },
             "_setValue": {
-                "internal": false, 
+                "internal": false,
+                "params": [],
                 "text": "sets element native value"
-            }, 
+            },
             "_updateSize": {
-                "internal": true, 
+                "internal": true,
+                "params": [],
                 "text": "@private"
-            }, 
+            },
             "_updateValue": {
-                "internal": true, 
+                "internal": true,
+                "params": [],
                 "text": "@private"
-            }, 
+            },
             "blurBrowser": {
-                "internal": false, 
+                "internal": false,
+                "params": [],
                 "text": "blur browser"
-            }, 
+            },
             "constructor": {
-                "internal": true, 
+                "internal": true,
+                "params": [],
                 "text": "@private"
-            }, 
+            },
             "focusBrowser": {
-                "internal": false, 
+                "internal": false,
+                "params": [],
                 "text": "focus browser"
-            }, 
+            },
             "getTag": {
-                "internal": false, 
+                "internal": false,
+                "params": [],
                 "text": "returns tag for corresponding element"
-            }, 
+            },
             "onActiveFocusChanged": {
-                "internal": true, 
+                "internal": true,
+                "params": [],
                 "text": "@private"
-            }, 
+            },
             "onAutocompleteChanged": {
-                "internal": false, 
+                "internal": true,
                 "text": ""
-            }, 
+            },
             "onBackgroundColorChanged": {
-                "internal": true, 
+                "internal": true,
+                "params": [],
                 "text": "@private"
-            }, 
+            },
             "onColorChanged": {
-                "internal": true, 
+                "internal": true,
+                "params": [],
                 "text": "@private"
-            }, 
+            },
             "onEnabledChanged": {
-                "internal": false, 
+                "internal": true,
                 "text": ""
-            }, 
+            },
             "onHorizontalAlignmentChanged": {
-                "internal": true, 
+                "internal": true,
+                "params": [],
                 "text": "@private"
-            }, 
+            },
             "onInputModeChanged": {
-                "internal": false, 
+                "internal": true,
                 "text": ""
-            }, 
+            },
             "onRecursiveVisibleChanged": {
-                "internal": true, 
+                "internal": true,
+                "params": [],
                 "text": "@private"
-            }, 
+            },
             "onTypeChanged": {
-                "internal": true, 
+                "internal": true,
+                "params": [],
                 "text": "@private"
-            }, 
+            },
             "onWidthChanged": {
-                "internal": true, 
+                "internal": true,
+                "params": [],
                 "text": "@private"
-            }, 
+            },
             "registerStyle": {
-                "internal": true, 
+                "internal": true,
+                "params": [],
                 "text": "@private"
             }
-        }, 
+        },
         "Properties": {
             "autocomplete": {
-                "internal": false, 
-                "text": "autocomplete variants (username, current-password, etc)"
-            }, 
+                "defaultValue": "",
+                "internal": false,
+                "ref": null,
+                "text": " autocomplete variants (username, current-password, etc)",
+                "type": "string"
+            },
             "backgroundColor": {
-                "internal": false, 
-                "text": "background color"
-            }, 
+                "defaultValue": "#fff",
+                "internal": false,
+                "ref": null,
+                "text": " background color",
+                "type": "Color"
+            },
             "border": {
-                "internal": false, 
-                "text": "object holding properties of the border"
-            }, 
+                "defaultValue": "Border",
+                "internal": false,
+                "ref": "qmlcore.core/Border",
+                "text": " object holding properties of the border",
+                "type": "Border"
+            },
             "color": {
-                "internal": false, 
-                "text": "text color"
-            }, 
+                "defaultValue": "#000",
+                "internal": false,
+                "ref": null,
+                "text": " text color",
+                "type": "Color"
+            },
             "enabled": {
-                "internal": false, 
-                "text": "input enabled"
-            }, 
+                "defaultValue": "ru",
+                "internal": false,
+                "ref": null,
+                "text": " input enabled",
+                "type": "bool"
+            },
             "font": {
-                "internal": false, 
-                "text": "object holding properties of text font"
-            }, 
+                "defaultValue": "Font",
+                "internal": false,
+                "ref": "qmlcore.core/Font",
+                "text": " object holding properties of text font",
+                "type": "Font"
+            },
             "inputMode": {
-                "internal": false, 
-                "text": "inputmode attribute, numeric keyboard, etc"
-            }, 
+                "defaultValue": "",
+                "internal": false,
+                "ref": null,
+                "text": " inputmode attribute, numeric keyboard, etc",
+                "type": "string"
+            },
             "nativeFocus": {
-                "internal": false, 
-                "text": "use native focus for input (may trigger IME)"
-            }, 
+                "defaultValue": "{manifest.useNativeFocusForInput",
+                "internal": false,
+                "ref": null,
+                "text": " use native focus for input (may trigger IME)",
+                "type": "bool"
+            },
             "paddings": {
-                "internal": false, 
-                "text": "inner text paddings"
-            }, 
+                "defaultValue": "Paddings",
+                "internal": false,
+                "ref": null,
+                "text": " inner text paddings",
+                "type": "lazy"
+            },
             "placeholder": {
-                "internal": false, 
-                "text": "input placeholder object"
-            }, 
+                "defaultValue": "PlaceHolder",
+                "internal": false,
+                "ref": "controls.core/PlaceHolder",
+                "text": " input placeholder object",
+                "type": "PlaceHolder"
+            },
             "type": {
-                "internal": false, 
-                "text": "input type value, must override in inheriting component"
+                "defaultValue": "text",
+                "internal": false,
+                "ref": null,
+                "text": " input type value, must override in inheriting component",
+                "type": "string"
             }
-        }, 
+        },
         "Signals": {
             "change": {
-                "internal": false, 
-                "text": "emit signal when input loses focus or IME closes"
+                "internal": false,
+                "text": " emit signal when input loses focus or IME closes"
             }
         }
-    }, 
-    "name": "controls.input.BaseInput", 
+    },
+    "name": "controls.input.BaseInput",
     "text": "base class for all inputs"
 }

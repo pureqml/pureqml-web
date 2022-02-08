@@ -2,11 +2,11 @@
     "content": {
         "Methods": {
             "onKeyPressed": {
-                "internal": false, 
+                "internal": false,
                 "text": ""
             }
         }
-    }, 
-    "name": "code_samples.KeyLesson", 
+    },
+    "name": "code_samples.KeyLesson",
     "text": ""
 }

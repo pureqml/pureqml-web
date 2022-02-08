@@ -2,41 +2,49 @@
     "content": {
         "Methods": {
             "_createElement": {
-                "internal": true, 
+                "internal": true,
+                "params": [],
                 "text": "@private specialized implementation of element creation in a certain namespace."
-            }, 
+            },
             "constructor": {
-                "internal": false, 
+                "internal": true,
                 "text": ""
-            }, 
+            },
             "externalTarget": {
-                "internal": true, 
+                "internal": true,
+                "params": [],
                 "text": "@private"
-            }, 
+            },
             "getTag": {
-                "internal": true, 
+                "internal": true,
+                "params": [],
                 "text": "@private returns tag for corresponding element"
-            }, 
+            },
             "onTargetChanged": {
-                "internal": false, 
+                "internal": true,
                 "text": ""
-            }, 
+            },
             "registerStyle": {
-                "internal": true, 
+                "internal": true,
+                "params": [],
                 "text": "@private"
-            }, 
+            },
             "style": {
-                "internal": true, 
+                "internal": true,
+                "params": [],
                 "text": "@private"
             }
-        }, 
+        },
         "Properties": {
             "target": {
-                "internal": false, 
-                "text": ""
+                "defaultValue": "",
+                "internal": false,
+                "ref": null,
+                "text": "",
+                "type": "Object"
             }
         }
-    }, 
-    "name": "controls.svg.SvgBase", 
-    "text": "@private specialized implementation of element creation in a certain namespace."
+    },
+    "name": "controls.svg.SvgBase",
+    "text": ""
 }

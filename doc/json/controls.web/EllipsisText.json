@@ -2,25 +2,28 @@
     "content": {
         "Methods": {
             "onActiveChanged": {
-                "internal": false, 
+                "internal": true,
                 "text": ""
-            }, 
+            },
             "onCompleted": {
-                "internal": false, 
+                "internal": true,
                 "text": ""
-            }, 
+            },
             "updateStyle": {
-                "internal": false, 
+                "internal": false,
                 "text": ""
             }
-        }, 
+        },
         "Properties": {
             "active": {
-                "internal": false, 
-                "text": ""
+                "defaultValue": "ru",
+                "internal": false,
+                "ref": null,
+                "text": "",
+                "type": "bool"
             }
         }
-    }, 
-    "name": "controls.web.EllipsisText", 
+    },
+    "name": "controls.web.EllipsisText",
     "text": ""
 }

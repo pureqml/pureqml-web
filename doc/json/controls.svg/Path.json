@@ -2,61 +2,83 @@
     "content": {
         "Methods": {
             "buildPath": {
-                "internal": false, 
+                "internal": false,
                 "text": ""
-            }, 
+            },
             "getTag": {
-                "internal": false, 
+                "internal": false,
+                "params": [],
                 "text": "returns tag for corresponding element"
-            }, 
+            },
             "onColorChanged": {
-                "internal": false, 
+                "internal": true,
                 "text": ""
-            }, 
+            },
             "onFillChanged": {
-                "internal": false, 
+                "internal": true,
                 "text": ""
-            }, 
+            },
             "onWidthChanged": {
-                "internal": false, 
+                "internal": true,
                 "text": ""
-            }, 
+            },
             "onX1Changed": {
-                "internal": false, 
+                "internal": true,
                 "text": ""
             }
-        }, 
+        },
         "Properties": {
             "color": {
-                "internal": false, 
-                "text": ""
-            }, 
+                "defaultValue": "red",
+                "internal": false,
+                "ref": null,
+                "text": "",
+                "type": "Color"
+            },
             "fill": {
-                "internal": false, 
-                "text": ""
-            }, 
+                "defaultValue": "none",
+                "internal": false,
+                "ref": null,
+                "text": "",
+                "type": "string"
+            },
             "width": {
-                "internal": false, 
-                "text": ""
-            }, 
+                "defaultValue": "",
+                "internal": false,
+                "ref": null,
+                "text": "",
+                "type": "int"
+            },
             "x1": {
-                "internal": false, 
-                "text": ""
-            }, 
+                "defaultValue": "",
+                "internal": false,
+                "ref": null,
+                "text": "",
+                "type": "int"
+            },
             "x2": {
-                "internal": false, 
-                "text": ""
-            }, 
+                "defaultValue": "",
+                "internal": false,
+                "ref": null,
+                "text": "",
+                "type": "int"
+            },
             "y1": {
-                "internal": false, 
-                "text": ""
-            }, 
+                "defaultValue": "",
+                "internal": false,
+                "ref": null,
+                "text": "",
+                "type": "int"
+            },
             "y2": {
-                "internal": false, 
-                "text": ""
+                "defaultValue": "",
+                "internal": false,
+                "ref": null,
+                "text": "",
+                "type": "int"
             }
         }
-    }, 
-    "name": "controls.svg.Path", 
-    "text": "returns tag for corresponding element"
+    },
+    "name": "controls.svg.Path",
+    "text": ""
 }

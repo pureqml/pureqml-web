@@ -2,21 +2,27 @@
     "content": {
         "Methods": {
             "onClicked": {
-                "internal": false, 
+                "internal": false,
                 "text": ""
             }
-        }, 
+        },
         "Properties": {
             "page": {
-                "internal": false, 
-                "text": ""
-            }, 
+                "defaultValue": "",
+                "internal": false,
+                "ref": null,
+                "text": "",
+                "type": "string"
+            },
             "text": {
-                "internal": false, 
-                "text": ""
+                "defaultValue": "",
+                "internal": false,
+                "ref": null,
+                "text": "",
+                "type": "string"
             }
         }
-    }, 
-    "name": "src.MenuItem", 
+    },
+    "name": "src.MenuItem",
     "text": ""
 }

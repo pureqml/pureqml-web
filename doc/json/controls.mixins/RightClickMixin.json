@@ -2,23 +2,26 @@
     "content": {
         "Methods": {
             "_bindClicked": {
-                "internal": true, 
+                "internal": true,
+                "params": [],
                 "text": "@private"
-            }, 
+            },
             "_emit": {
-                "internal": true, 
+                "internal": true,
+                "params": [],
                 "text": "@private"
-            }, 
+            },
             "constructor": {
-                "internal": false, 
+                "internal": true,
                 "text": ""
-            }, 
+            },
             "onEnabledChanged": {
-                "internal": true, 
+                "internal": true,
+                "params": [],
                 "text": "@private"
             }
         }
-    }, 
-    "name": "controls.mixins.RightClickMixin", 
-    "text": "@private"
+    },
+    "name": "controls.mixins.RightClickMixin",
+    "text": ""
 }

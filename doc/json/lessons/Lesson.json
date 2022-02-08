@@ -2,11 +2,14 @@
     "content": {
         "Properties": {
             "url": {
-                "internal": false, 
-                "text": ""
+                "defaultValue": "",
+                "internal": false,
+                "ref": null,
+                "text": "",
+                "type": "string"
             }
         }
-    }, 
-    "name": "lessons.Lesson", 
+    },
+    "name": "lessons.Lesson",
     "text": ""
 }

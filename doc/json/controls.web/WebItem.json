@@ -2,47 +2,54 @@
     "content": {
         "Alias Properties": {
             "activeHover": {
-                "internal": false, 
-                "text": "flag which becames 'true' on 'mouseover' event and becames 'false' on 'mouseout' event"
-            }, 
+                "internal": false,
+                "text": " flag which becames 'true' on 'mouseover' event and becames 'false' on 'mouseout' event"
+            },
             "activeHoverEnabled": {
-                "internal": false, 
-                "text": "flag which enables or disables 'mouseover' and 'mouseout' event handling"
-            }, 
+                "internal": false,
+                "text": " flag which enables or disables 'mouseover' and 'mouseout' event handling"
+            },
             "clickable": {
-                "internal": false, 
-                "text": "flag which enables or disables mouse click event handling"
-            }, 
+                "internal": false,
+                "text": " flag which enables or disables mouse click event handling"
+            },
             "cursor": {
-                "internal": false, 
-                "text": "mouse cursor property"
-            }, 
+                "internal": false,
+                "text": " mouse cursor property"
+            },
             "hover": {
-                "internal": false, 
-                "text": "mouse hovered flag"
-            }, 
+                "internal": false,
+                "text": " mouse hovered flag"
+            },
             "hoverable": {
-                "internal": false, 
-                "text": "flag which enables or disables mouse hover event handling"
+                "internal": false,
+                "text": " flag which enables or disables mouse hover event handling"
             }
-        }, 
+        },
         "Methods": {
             "onPositionChanged": {
-                "internal": true, 
+                "internal": true,
+                "params": [],
                 "text": "@private"
             }
-        }, 
+        },
         "Properties": {
             "hoverMixin": {
-                "internal": false, 
-                "text": "hover mixin object proveds common API for mouse properties"
-            }, 
+                "defaultValue": "HoverClickMixin",
+                "internal": false,
+                "ref": null,
+                "text": " hover mixin object proveds common API for mouse properties",
+                "type": "Mixin"
+            },
             "position": {
-                "internal": false, 
-                "text": "position mode property"
+                "defaultValue": "",
+                "internal": false,
+                "ref": null,
+                "text": " position mode property",
+                "type": "string"
             }
         }
-    }, 
-    "name": "controls.web.WebItem", 
+    },
+    "name": "controls.web.WebItem",
     "text": "clickable and hoverable rectangle for mouse supportings applications"
 }

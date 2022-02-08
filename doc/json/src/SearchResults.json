@@ -2,23 +2,26 @@
     "content": {
         "Methods": {
             "fill": {
-                "internal": false, 
+                "internal": false,
                 "text": ""
             }
-        }, 
+        },
         "Properties": {
             "active": {
-                "internal": false, 
-                "text": ""
+                "defaultValue": "",
+                "internal": false,
+                "ref": null,
+                "text": "",
+                "type": "bool"
             }
-        }, 
+        },
         "Signals": {
             "clear": {
-                "internal": false, 
+                "internal": false,
                 "text": ""
             }
         }
-    }, 
-    "name": "src.SearchResults", 
+    },
+    "name": "src.SearchResults",
     "text": ""
 }

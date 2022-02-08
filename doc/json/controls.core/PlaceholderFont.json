@@ -2,89 +2,127 @@
     "content": {
         "Methods": {
             "getClass": {
-                "internal": true, 
+                "internal": true,
+                "params": [],
                 "text": "@private"
-            }, 
+            },
             "onBoldChanged": {
-                "internal": true, 
+                "internal": true,
+                "params": [],
                 "text": "@private"
-            }, 
+            },
             "onFamilyChanged": {
-                "internal": true, 
+                "internal": true,
+                "params": [],
                 "text": "@private"
-            }, 
+            },
             "onItalicChanged": {
-                "internal": true, 
+                "internal": true,
+                "params": [],
                 "text": "@private"
-            }, 
+            },
             "onLineHeightChanged": {
-                "internal": true, 
+                "internal": true,
+                "params": [],
                 "text": "@private"
-            }, 
+            },
             "onPixelSizeChanged": {
-                "internal": true, 
+                "internal": true,
+                "params": [],
                 "text": "@private"
-            }, 
+            },
             "onPointSizeChanged": {
-                "internal": true, 
+                "internal": true,
+                "params": [],
                 "text": "@private"
-            }, 
+            },
             "onStrikeChanged": {
-                "internal": true, 
+                "internal": true,
+                "params": [],
                 "text": "@private"
-            }, 
+            },
             "onUnderlineChanged": {
-                "internal": true, 
+                "internal": true,
+                "params": [],
                 "text": "@private"
-            }, 
+            },
             "onWeightChanged": {
-                "internal": true, 
+                "internal": true,
+                "params": [],
                 "text": "@private"
-            }, 
+            },
             "updateProperty": {
-                "internal": true, 
+                "internal": true,
+                "params": [],
                 "text": "@private"
             }
-        }, 
+        },
         "Properties": {
             "bold": {
-                "internal": false, 
-                "text": "applies bold style"
-            }, 
+                "defaultValue": "",
+                "internal": false,
+                "ref": null,
+                "text": " applies bold style",
+                "type": "bool"
+            },
             "family": {
-                "internal": false, 
-                "text": "font family"
-            }, 
+                "defaultValue": "",
+                "internal": false,
+                "ref": null,
+                "text": " font family",
+                "type": "string"
+            },
             "italic": {
-                "internal": false, 
-                "text": "applies italic style"
-            }, 
+                "defaultValue": "",
+                "internal": false,
+                "ref": null,
+                "text": " applies italic style",
+                "type": "bool"
+            },
             "lineHeight": {
-                "internal": false, 
-                "text": "font line height in pixels"
-            }, 
+                "defaultValue": "",
+                "internal": false,
+                "ref": null,
+                "text": " font line height in pixels",
+                "type": "int"
+            },
             "pixelSize": {
-                "internal": false, 
-                "text": "font size in pixels"
-            }, 
+                "defaultValue": "",
+                "internal": false,
+                "ref": null,
+                "text": " font size in pixels",
+                "type": "int"
+            },
             "pointSize": {
-                "internal": false, 
-                "text": "font size in points"
-            }, 
+                "defaultValue": "",
+                "internal": false,
+                "ref": null,
+                "text": " font size in points",
+                "type": "int"
+            },
             "strike": {
-                "internal": false, 
-                "text": "line throw text flag"
-            }, 
+                "defaultValue": "",
+                "internal": false,
+                "ref": null,
+                "text": " line throw text flag",
+                "type": "bool"
+            },
             "underline": {
-                "internal": false, 
-                "text": "applies underline style"
-            }, 
+                "defaultValue": "",
+                "internal": false,
+                "ref": null,
+                "text": " applies underline style",
+                "type": "bool"
+            },
             "weight": {
-                "internal": false, 
-                "text": "font weight value"
+                "defaultValue": "",
+                "internal": false,
+                "ref": null,
+                "text": " font weight value",
+                "type": "int"
             }
         }
-    }, 
-    "name": "controls.core.PlaceholderFont", 
-    "text": "@private"
+    },
+    "name": "controls.core.PlaceholderFont",
+    "text": ""
 }

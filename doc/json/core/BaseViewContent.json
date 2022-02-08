@@ -2,23 +2,24 @@
     "content": {
         "Methods": {
             "_updateScrollPositions": {
-                "internal": true, 
+                "internal": true,
+                "params": [],
                 "text": "@private silently updates scroll positions, because browser animates scroll"
-            }, 
+            },
             "constructor": {
-                "internal": false, 
+                "internal": true,
                 "text": ""
-            }, 
+            },
             "onXChanged": {
-                "internal": true, 
-                "text": "@private content for base view scrolling area"
-            }, 
+                "internal": true,
+                "text": ""
+            },
             "onYChanged": {
-                "internal": false, 
+                "internal": true,
                 "text": ""
             }
         }
-    }, 
-    "name": "core.BaseViewContent", 
-    "text": "@private content for base view scrolling area"
+    },
+    "name": "core.BaseViewContent",
+    "text": " @private content for base view scrolling area"
 }

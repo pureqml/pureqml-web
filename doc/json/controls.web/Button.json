@@ -2,75 +2,104 @@
     "content": {
         "Methods": {
             "_updateSize": {
-                "internal": true, 
+                "internal": true,
+                "params": [],
                 "text": "@private"
-            }, 
+            },
             "constructor": {
-                "internal": true, 
+                "internal": true,
+                "params": [],
                 "text": "@private"
-            }, 
+            },
             "getTag": {
-                "internal": true, 
+                "internal": true,
+                "params": [],
                 "text": "@private returns tag for corresponding element"
-            }, 
+            },
             "onHeightChanged": {
-                "internal": true, 
+                "internal": true,
+                "params": [],
                 "text": "@private"
-            }, 
+            },
             "onTextChanged": {
-                "internal": true, 
+                "internal": true,
+                "params": [],
                 "text": "@private"
-            }, 
+            },
             "onTextColorChanged": {
-                "internal": true, 
+                "internal": true,
+                "params": [],
                 "text": "@private"
-            }, 
+            },
             "onWidthChanged": {
-                "internal": true, 
+                "internal": true,
+                "params": [],
                 "text": "@private"
-            }, 
+            },
             "registerStyle": {
-                "internal": true, 
+                "internal": true,
+                "params": [],
                 "text": "@private"
             }
-        }, 
+        },
         "Properties": {
             "font": {
-                "internal": false, 
-                "text": "button texts font"
-            }, 
+                "defaultValue": "Font",
+                "internal": false,
+                "ref": "qmlcore.core/Font",
+                "text": " button texts font",
+                "type": "Font"
+            },
             "hover": {
-                "internal": false, 
-                "text": ""
-            }, 
+                "defaultValue": "HoverMixin",
+                "internal": false,
+                "ref": "qmlcore.core/HoverMixin",
+                "text": "",
+                "type": "HoverMixin"
+            },
             "paddings": {
-                "internal": false, 
-                "text": "inner text paddings"
-            }, 
+                "defaultValue": "Paddings",
+                "internal": false,
+                "ref": null,
+                "text": " inner text paddings",
+                "type": "lazy"
+            },
             "paintedHeight": {
-                "internal": false, 
-                "text": ""
-            }, 
+                "defaultValue": "",
+                "internal": false,
+                "ref": null,
+                "text": "",
+                "type": "int"
+            },
             "paintedWidth": {
-                "internal": false, 
-                "text": ""
-            }, 
+                "defaultValue": "",
+                "internal": false,
+                "ref": null,
+                "text": "",
+                "type": "int"
+            },
             "text": {
-                "internal": false, 
-                "text": "button inner text"
-            }, 
+                "defaultValue": "",
+                "internal": false,
+                "ref": null,
+                "text": " button inner text",
+                "type": "string"
+            },
             "textColor": {
-                "internal": false, 
-                "text": ""
+                "defaultValue": "",
+                "internal": false,
+                "ref": null,
+                "text": "",
+                "type": "color"
             }
-        }, 
+        },
         "Signals": {
             "clicked": {
-                "internal": false, 
-                "text": "button clicked signal"
+                "internal": false,
+                "text": " button clicked signal"
             }
         }
-    }, 
-    "name": "controls.web.Button", 
-    "text": "HTML button controls"
+    },
+    "name": "controls.web.Button",
+    "text": " HTML button controls"
 }

@@ -2,57 +2,79 @@
     "content": {
         "Methods": {
             "_updateSize": {
-                "internal": true, 
+                "internal": true,
+                "params": [],
                 "text": "@private"
-            }, 
+            },
             "constructor": {
-                "internal": true, 
+                "internal": true,
+                "params": [],
                 "text": "@private"
-            }, 
+            },
             "getTag": {
-                "internal": true, 
+                "internal": true,
+                "params": [],
                 "text": "@private returns tag for corresponding element"
-            }, 
+            },
             "onCodeChanged": {
-                "internal": true, 
+                "internal": true,
+                "params": [],
                 "text": "@private"
-            }, 
+            },
             "onLanguageChanged": {
-                "internal": true, 
+                "internal": true,
+                "params": [],
                 "text": "@private"
-            }, 
+            },
             "onWidthChanged": {
-                "internal": true, 
+                "internal": true,
+                "params": [],
                 "text": "@private"
-            }, 
+            },
             "registerStyle": {
-                "internal": true, 
+                "internal": true,
+                "params": [],
                 "text": "@private"
             }
-        }, 
+        },
         "Properties": {
             "code": {
-                "internal": false, 
-                "text": "code string"
-            }, 
+                "defaultValue": "",
+                "internal": false,
+                "ref": null,
+                "text": " code string",
+                "type": "string"
+            },
             "contentHeight": {
-                "internal": false, 
-                "text": "content height"
-            }, 
+                "defaultValue": "",
+                "internal": false,
+                "ref": null,
+                "text": " content height",
+                "type": "int"
+            },
             "contentWidth": {
-                "internal": false, 
-                "text": "content width"
-            }, 
+                "defaultValue": "",
+                "internal": false,
+                "ref": null,
+                "text": " content width",
+                "type": "int"
+            },
             "font": {
-                "internal": false, 
-                "text": "code text font"
-            }, 
+                "defaultValue": "Font",
+                "internal": false,
+                "ref": "qmlcore.core/Font",
+                "text": " code text font",
+                "type": "Font"
+            },
             "language": {
-                "internal": false, 
-                "text": "programming language"
+                "defaultValue": "",
+                "internal": false,
+                "ref": null,
+                "text": " programming language",
+                "type": "string"
             }
         }
-    }, 
-    "name": "controls.web.CodeHighlighter", 
+    },
+    "name": "controls.web.CodeHighlighter",
     "text": "item for displaying code with syntax highlighting powered by highlight.js"
 }

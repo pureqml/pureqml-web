@@ -2,25 +2,32 @@
     "content": {
         "Methods": {
             "_updatePos": {
-                "internal": true, 
+                "internal": true,
+                "params": [],
                 "text": "@private"
-            }, 
+            },
             "onCompleted": {
-                "internal": false, 
+                "internal": true,
                 "text": ""
             }
-        }, 
+        },
         "Properties": {
             "target": {
-                "internal": false, 
-                "text": "target view for highlighter"
-            }, 
+                "defaultValue": "",
+                "internal": false,
+                "ref": null,
+                "text": " target view for highlighter",
+                "type": "Object"
+            },
             "updatePositionProperty": {
-                "internal": false, 
-                "text": "which property must changed to update highlighter position"
+                "defaultValue": "currentIndex",
+                "internal": false,
+                "ref": null,
+                "text": " which property must changed to update highlighter position",
+                "type": "string"
             }
         }
-    }, 
-    "name": "controls.core.Highlighter", 
-    "text": "@private"
+    },
+    "name": "controls.core.Highlighter",
+    "text": ""
 }

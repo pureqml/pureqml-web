@@ -2,37 +2,43 @@
     "content": {
         "Methods": {
             "_onAnimationRunningChanged": {
-                "internal": false, 
+                "internal": false,
                 "text": ""
-            }, 
+            },
             "_start": {
-                "internal": false, 
+                "internal": false,
                 "text": ""
-            }, 
+            },
             "addChild": {
-                "internal": false, 
+                "internal": false,
                 "text": ""
-            }, 
+            },
             "constructor": {
-                "internal": false, 
+                "internal": true,
                 "text": ""
-            }, 
+            },
             "onRunningChanged": {
-                "internal": false, 
+                "internal": true,
                 "text": ""
             }
-        }, 
+        },
         "Properties": {
             "running": {
-                "internal": false, 
-                "text": ""
-            }, 
+                "defaultValue": "als",
+                "internal": false,
+                "ref": null,
+                "text": "",
+                "type": "bool"
+            },
             "trace": {
-                "internal": false, 
-                "text": ""
+                "defaultValue": "als",
+                "internal": false,
+                "ref": null,
+                "text": "",
+                "type": "bool"
             }
         }
-    }, 
-    "name": "core.SequentialAnimation", 
+    },
+    "name": "core.SequentialAnimation",
     "text": ""
 }

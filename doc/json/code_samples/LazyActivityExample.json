@@ -2,11 +2,11 @@
     "content": {
         "Methods": {
             "onCompleted": {
-                "internal": false, 
+                "internal": true,
                 "text": ""
             }
         }
-    }, 
-    "name": "code_samples.LazyActivityExample", 
+    },
+    "name": "code_samples.LazyActivityExample",
     "text": ""
 }

@@ -2,31 +2,34 @@
     "content": {
         "Methods": {
             "_createDelegate": {
-                "internal": true, 
+                "internal": true,
+                "params": [],
                 "text": "@private creates delegate in given item slot"
-            }, 
+            },
             "_discardItem": {
-                "internal": false, 
+                "internal": false,
                 "text": ""
-            }, 
+            },
             "_layout": {
-                "internal": true, 
+                "internal": true,
+                "params": [],
                 "text": "@private"
-            }, 
+            },
             "constructor": {
-                "internal": false, 
-                "text": "The simplest view implementation, creates elements without positioning"
-            }, 
-            "onLayoutFinished": {
-                "internal": false, 
+                "internal": true,
                 "text": ""
-            }, 
+            },
+            "onLayoutFinished": {
+                "internal": false,
+                "text": ""
+            },
             "positionViewAtIndex": {
-                "internal": true, 
+                "internal": true,
+                "params": [],
                 "text": "@private"
             }
         }
-    }, 
-    "name": "core.Repeater", 
+    },
+    "name": "core.Repeater",
     "text": "The simplest view implementation, creates elements without positioning"
 }

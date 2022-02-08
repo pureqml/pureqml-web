@@ -2,11 +2,14 @@
     "content": {
         "Properties": {
             "icon": {
-                "internal": false, 
-                "text": ""
+                "defaultValue": "",
+                "internal": false,
+                "ref": null,
+                "text": "",
+                "type": "string"
             }
         }
-    }, 
-    "name": "src.PlatformImage", 
+    },
+    "name": "src.PlatformImage",
     "text": ""
 }

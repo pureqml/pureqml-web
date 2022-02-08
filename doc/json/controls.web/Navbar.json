@@ -2,41 +2,50 @@
     "content": {
         "Methods": {
             "_layout": {
-                "internal": false, 
+                "internal": false,
                 "text": ""
-            }, 
+            },
             "addChild": {
-                "internal": false, 
+                "internal": false,
                 "text": ""
-            }, 
+            },
             "onPositionChanged": {
-                "internal": false, 
+                "internal": true,
                 "text": ""
-            }, 
+            },
             "onSpacingChanged": {
-                "internal": false, 
+                "internal": true,
                 "text": ""
-            }, 
+            },
             "onVerticalChanged": {
-                "internal": false, 
+                "internal": true,
                 "text": ""
             }
-        }, 
+        },
         "Properties": {
             "collapsed": {
-                "internal": false, 
-                "text": ""
-            }, 
+                "defaultValue": "ru",
+                "internal": false,
+                "ref": null,
+                "text": "",
+                "type": "bool"
+            },
             "position": {
-                "internal": false, 
-                "text": ""
-            }, 
+                "defaultValue": "",
+                "internal": false,
+                "ref": null,
+                "text": "",
+                "type": "string"
+            },
             "vertical": {
-                "internal": false, 
-                "text": ""
+                "defaultValue": "${width} < 600",
+                "internal": false,
+                "ref": null,
+                "text": "",
+                "type": "bool"
             }
         }
-    }, 
-    "name": "controls.web.Navbar", 
+    },
+    "name": "controls.web.Navbar",
     "text": ""
 }

@@ -2,11 +2,14 @@
     "content": {
         "Properties": {
             "shift": {
-                "internal": false, 
-                "text": ""
+                "defaultValue": "5",
+                "internal": false,
+                "ref": null,
+                "text": "",
+                "type": "int"
             }
         }
-    }, 
-    "name": "src.KeyValueView", 
+    },
+    "name": "src.KeyValueView",
     "text": ""
 }

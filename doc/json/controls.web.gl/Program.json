@@ -2,23 +2,23 @@
     "content": {
         "Methods": {
             "attachShader": {
-                "internal": false, 
+                "internal": false,
                 "text": ""
-            }, 
+            },
             "constructor": {
-                "internal": false, 
+                "internal": true,
                 "text": ""
-            }, 
+            },
             "create": {
-                "internal": false, 
+                "internal": false,
                 "text": ""
-            }, 
+            },
             "linkProgram": {
-                "internal": false, 
+                "internal": false,
                 "text": ""
             }
         }
-    }, 
-    "name": "controls.web.gl.Program", 
+    },
+    "name": "controls.web.gl.Program",
     "text": ""
 }

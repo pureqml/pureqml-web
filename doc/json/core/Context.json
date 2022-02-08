@@ -2,131 +2,182 @@
     "content": {
         "Methods": {
             "__onCompleted": {
-                "internal": true, 
+                "internal": true,
+                "params": [],
                 "text": "@private"
-            }, 
+            },
             "_init": {
-                "internal": true, 
+                "internal": true,
+                "params": [],
                 "text": "@private"
-            }, 
+            },
             "_processActions": {
-                "internal": false, 
-                "text": "if you need to call it from native callback, use wrapNativeCallback method"
-            }, 
+                "internal": true,
+                "params": [],
+                "text": "@internal generally you don't need to call it yourself if you need to call it from native callback, use wrapNativeCallback method"
+            },
             "_run": {
-                "internal": true, 
+                "internal": true,
+                "params": [],
                 "text": "@private"
-            }, 
+            },
             "constructor": {
-                "internal": true, 
+                "internal": true,
+                "params": [],
                 "text": "@private"
-            }, 
+            },
             "createElement": {
-                "internal": true, 
+                "internal": true,
+                "params": [],
                 "text": "@private"
-            }, 
+            },
             "delayedAction": {
-                "internal": true, 
+                "internal": true,
+                "params": [],
                 "text": "@private"
-            }, 
+            },
             "init": {
-                "internal": true, 
+                "internal": true,
+                "params": [],
                 "text": "@private"
-            }, 
+            },
             "mangleClass": {
-                "internal": true, 
+                "internal": true,
+                "params": [],
                 "text": "@private"
-            }, 
+            },
             "processKey": {
-                "internal": false, 
+                "internal": false,
                 "text": ""
-            }, 
+            },
             "qsTr": {
-                "internal": false, 
-                "text": "@param text:string text that must be translated\n\tReturns input text translation"
-            }, 
+                "internal": false,
+                "params": [
+                    {
+                        "name": "text",
+                        "text": "text that must be translated",
+                        "type": "string"
+                    }
+                ],
+                "text": "\tReturns input text translation"
+            },
             "registerStyle": {
-                "internal": true, 
+                "internal": true,
+                "params": [],
                 "text": "@private"
-            }, 
+            },
             "run": {
-                "internal": true, 
+                "internal": true,
+                "params": [],
                 "text": "@private"
-            }, 
+            },
             "scheduleAction": {
-                "internal": true, 
+                "internal": true,
+                "params": [],
                 "text": "@private"
-            }, 
+            },
             "scheduleComplete": {
-                "internal": true, 
+                "internal": true,
+                "params": [],
                 "text": "@internal"
-            }, 
+            },
             "start": {
-                "internal": true, 
+                "internal": true,
+                "params": [],
                 "text": "@private"
-            }, 
+            },
             "tr": {
-                "internal": false, 
+                "internal": false,
                 "text": ""
-            }, 
+            },
             "updateL10n": {
-                "internal": false, 
+                "internal": false,
                 "text": ""
-            }, 
+            },
             "wrapNativeCallback": {
-                "internal": false, 
+                "internal": false,
                 "text": ""
             }
-        }, 
+        },
         "Properties": {
             "buildIdentifier": {
-                "internal": true, 
-                "text": "@private"
-            }, 
+                "defaultValue": "owered by PureQML No-Partnership Edition Engin",
+                "internal": true,
+                "ref": null,
+                "text": " @private",
+                "type": "string"
+            },
             "keyProcessDelay": {
-                "internal": false, 
-                "text": "key pressed handling delay timeout in millisecnods"
-            }, 
+                "defaultValue": "",
+                "internal": false,
+                "ref": null,
+                "text": " key pressed handling delay timeout in millisecnods",
+                "type": "int"
+            },
             "language": {
-                "internal": false, 
-                "text": "localisation language"
-            }, 
+                "defaultValue": "",
+                "internal": false,
+                "ref": null,
+                "text": " localisation language",
+                "type": "string"
+            },
             "location": {
-                "internal": false, 
-                "text": "web-page location object"
-            }, 
+                "defaultValue": "Location",
+                "internal": false,
+                "ref": "qmlcore.core/Location",
+                "text": " web-page location object",
+                "type": "Location"
+            },
             "scrollY": {
-                "internal": false, 
-                "text": "scrolled page vertical offset value"
-            }, 
+                "defaultValue": "",
+                "internal": false,
+                "ref": null,
+                "text": " scrolled page vertical offset value",
+                "type": "int"
+            },
             "stylesheet": {
-                "internal": true, 
-                "text": "@private"
-            }, 
+                "defaultValue": "Stylesheet",
+                "internal": true,
+                "ref": "qmlcore.platform.html5/Stylesheet",
+                "text": " @private",
+                "type": "Stylesheet"
+            },
             "system": {
-                "internal": false, 
-                "text": "system info object"
-            }, 
+                "defaultValue": "System",
+                "internal": false,
+                "ref": "qmlcore.core/System",
+                "text": " system info object",
+                "type": "System"
+            },
             "virtualHeight": {
-                "internal": false, 
-                "text": "virtual viewport height"
-            }, 
+                "defaultValue": "{manifest.virtual.height",
+                "internal": false,
+                "ref": null,
+                "text": " virtual viewport height",
+                "type": "int"
+            },
             "virtualScale": {
-                "internal": true, 
-                "text": "@private"
-            }, 
+                "defaultValue": "ath.min(((${system.resolutionWidth} || ${width}) / ${virtualWidth}),((${system.resolutionHeight} || ${height}) / ${virtualHeight})",
+                "internal": true,
+                "ref": null,
+                "text": " @private",
+                "type": "real"
+            },
             "virtualWidth": {
-                "internal": false, 
-                "text": "virtual viewport width"
+                "defaultValue": "{manifest.virtual.width",
+                "internal": false,
+                "ref": null,
+                "text": " virtual viewport width",
+                "type": "int"
             }
-        }, 
+        },
         "Signals": {
             "message": {
-                "internal": false, 
-                "text": "incoming postMessage"
+                "internal": false,
+                "text": " incoming postMessage"
             }
         }
-    }, 
-    "name": "core.Context", 
+    },
+    "name": "core.Context",
     "text": "root item"
 }

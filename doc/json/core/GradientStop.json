@@ -2,25 +2,33 @@
     "content": {
         "Methods": {
             "_getDeclaration": {
-                "internal": true, 
+                "internal": true,
+                "params": [],
                 "text": "@private"
-            }, 
+            },
             "onPositionChanged": {
-                "internal": true, 
+                "internal": true,
+                "params": [],
                 "text": "@private"
             }
-        }, 
+        },
         "Properties": {
             "color": {
-                "internal": false, 
-                "text": "color of this stop"
-            }, 
+                "defaultValue": "",
+                "internal": false,
+                "ref": null,
+                "text": " color of this stop",
+                "type": "color"
+            },
             "position": {
-                "internal": false, 
-                "text": "realative position ot the stop must be in range [0:1]"
+                "defaultValue": "",
+                "internal": false,
+                "ref": null,
+                "text": " realative position ot the stop must be in range [0:1]",
+                "type": "real"
             }
         }
-    }, 
-    "name": "core.GradientStop", 
-    "text": "this object is used for customizing Gradient"
+    },
+    "name": "core.GradientStop",
+    "text": " this object is used for customizing Gradient"
 }

@@ -2,33 +2,42 @@
     "content": {
         "Methods": {
             "constructor": {
-                "internal": false, 
+                "internal": true,
                 "text": ""
-            }, 
+            },
             "onMaxChanged": {
-                "internal": false, 
+                "internal": true,
                 "text": ""
-            }, 
+            },
             "onMinChanged": {
-                "internal": false, 
+                "internal": true,
                 "text": ""
             }
-        }, 
+        },
         "Properties": {
             "max": {
-                "internal": false, 
-                "text": "maximum time value"
-            }, 
+                "defaultValue": "",
+                "internal": false,
+                "ref": null,
+                "text": " maximum time value",
+                "type": "string"
+            },
             "min": {
-                "internal": false, 
-                "text": "minimal time value"
-            }, 
+                "defaultValue": "",
+                "internal": false,
+                "ref": null,
+                "text": " minimal time value",
+                "type": "string"
+            },
             "value": {
-                "internal": false, 
-                "text": "current value"
+                "defaultValue": "",
+                "internal": false,
+                "ref": null,
+                "text": " current value",
+                "type": "string"
             }
         }
-    }, 
-    "name": "controls.input.TimeInput", 
+    },
+    "name": "controls.input.TimeInput",
     "text": "time selecting input"
 }

@@ -2,117 +2,144 @@
     "content": {
         "Methods": {
             "_enableSizeUpdate": {
-                "internal": true, 
+                "internal": true,
+                "params": [],
                 "text": "@private"
-            }, 
+            },
             "_scheduleUpdateSize": {
-                "internal": true, 
+                "internal": true,
+                "params": [],
                 "text": "@private"
-            }, 
+            },
             "_setText": {
-                "internal": true, 
+                "internal": true,
+                "params": [],
                 "text": "@private"
-            }, 
+            },
             "_updateSize": {
-                "internal": true, 
+                "internal": true,
+                "params": [],
                 "text": "@private"
-            }, 
+            },
             "_updateSizeImpl": {
-                "internal": true, 
+                "internal": true,
+                "params": [],
                 "text": "@private"
-            }, 
+            },
             "_updateStyle": {
-                "internal": true, 
+                "internal": true,
+                "params": [],
                 "text": "@private"
-            }, 
+            },
             "_updateWSHandling": {
-                "internal": false, 
+                "internal": false,
                 "text": ""
-            }, 
+            },
             "constructor": {
-                "internal": true, 
+                "internal": true,
+                "params": [],
                 "text": "@private"
-            }, 
+            },
             "getClass": {
-                "internal": false, 
+                "internal": false,
                 "text": ""
-            }, 
+            },
             "on": {
-                "internal": true, 
+                "internal": true,
+                "params": [],
                 "text": "@private"
-            }, 
+            },
             "onChanged": {
-                "internal": true, 
+                "internal": true,
+                "params": [],
                 "text": "@private"
-            }, 
+            },
             "onColorChanged": {
-                "internal": false, 
+                "internal": true,
                 "text": ""
-            }, 
+            },
             "onHeightChanged": {
-                "internal": false, 
+                "internal": true,
                 "text": ""
-            }, 
+            },
             "onHorizontalAlignmentChanged": {
-                "internal": false, 
+                "internal": true,
                 "text": ""
-            }, 
+            },
             "onRecursiveVisibleChanged": {
-                "internal": false, 
+                "internal": true,
                 "text": ""
-            }, 
+            },
             "onTextChanged": {
-                "internal": false, 
+                "internal": true,
                 "text": ""
-            }, 
+            },
             "onTextFormatChanged": {
-                "internal": false, 
+                "internal": true,
                 "text": ""
-            }, 
+            },
             "onVerticalAlignmentChanged": {
-                "internal": false, 
+                "internal": true,
                 "text": ""
-            }, 
+            },
             "onWidthChanged": {
-                "internal": false, 
+                "internal": true,
                 "text": ""
-            }, 
+            },
             "onWrapModeChanged": {
-                "internal": false, 
+                "internal": true,
                 "text": ""
-            }, 
+            },
             "registerStyle": {
-                "internal": false, 
+                "internal": false,
                 "text": ""
             }
-        }, 
+        },
         "Properties": {
             "color": {
-                "internal": false, 
-                "text": "color of the text"
-            }, 
+                "defaultValue": "",
+                "internal": false,
+                "ref": null,
+                "text": " color of the text",
+                "type": "color"
+            },
             "font": {
-                "internal": false, 
-                "text": "text font object"
-            }, 
+                "defaultValue": "Font",
+                "internal": false,
+                "ref": null,
+                "text": " text font object",
+                "type": "lazy"
+            },
             "paintedHeight": {
-                "internal": false, 
-                "text": "real height of this text without any layout applied"
-            }, 
+                "defaultValue": "",
+                "internal": false,
+                "ref": null,
+                "text": " real height of this text without any layout applied",
+                "type": "int"
+            },
             "paintedWidth": {
-                "internal": false, 
-                "text": "real width of the text without any layout applied"
-            }, 
+                "defaultValue": "",
+                "internal": false,
+                "ref": null,
+                "text": " real width of the text without any layout applied",
+                "type": "int"
+            },
             "shadow": {
-                "internal": false, 
-                "text": "text shadow object"
-            }, 
+                "defaultValue": "Shadow",
+                "internal": false,
+                "ref": null,
+                "text": " text shadow object",
+                "type": "lazy"
+            },
             "text": {
-                "internal": false, 
-                "text": "text to be displayed"
+                "defaultValue": "",
+                "internal": false,
+                "ref": null,
+                "text": " text to be displayed",
+                "type": "string"
             }
         }
-    }, 
-    "name": "core.Text", 
-    "text": "item with text"
+    },
+    "name": "core.Text",
+    "text": " item with text"
 }

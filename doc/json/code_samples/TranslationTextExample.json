@@ -2,11 +2,11 @@
     "content": {
         "Methods": {
             "onClicked": {
-                "internal": false, 
+                "internal": false,
                 "text": ""
             }
         }
-    }, 
-    "name": "code_samples.TranslationTextExample", 
+    },
+    "name": "code_samples.TranslationTextExample",
     "text": ""
 }

@@ -2,53 +2,71 @@
     "content": {
         "Methods": {
             "_update": {
-                "internal": false, 
+                "internal": false,
                 "text": ""
-            }, 
+            },
             "onColorChanged": {
-                "internal": false, 
+                "internal": true,
                 "text": ""
-            }, 
+            },
             "onStyleChanged": {
-                "internal": false, 
+                "internal": true,
                 "text": ""
-            }, 
+            },
             "onTypeChanged": {
-                "internal": false, 
+                "internal": true,
                 "text": ""
-            }, 
+            },
             "onWidthChanged": {
-                "internal": false, 
+                "internal": true,
                 "text": ""
             }
-        }, 
+        },
         "Properties": {
             "bottom": {
-                "internal": false, 
-                "text": "bottom border side"
-            }, 
+                "defaultValue": "BorderSide",
+                "internal": false,
+                "ref": null,
+                "text": " bottom border side",
+                "type": "lazy"
+            },
             "color": {
-                "internal": false, 
-                "text": "color of the border"
-            }, 
+                "defaultValue": "black",
+                "internal": false,
+                "ref": null,
+                "text": " color of the border",
+                "type": "color"
+            },
             "left": {
-                "internal": false, 
-                "text": "left border side"
-            }, 
+                "defaultValue": "BorderSide",
+                "internal": false,
+                "ref": null,
+                "text": " left border side",
+                "type": "lazy"
+            },
             "right": {
-                "internal": false, 
-                "text": "right border side"
-            }, 
+                "defaultValue": "BorderSide",
+                "internal": false,
+                "ref": null,
+                "text": " right border side",
+                "type": "lazy"
+            },
             "top": {
-                "internal": false, 
-                "text": "top border side"
-            }, 
+                "defaultValue": "BorderSide",
+                "internal": false,
+                "ref": null,
+                "text": " top border side",
+                "type": "lazy"
+            },
             "width": {
-                "internal": false, 
-                "text": "width of the border"
+                "defaultValue": "",
+                "internal": false,
+                "ref": null,
+                "text": " width of the border",
+                "type": "int"
             }
         }
-    }, 
-    "name": "core.Border", 
-    "text": "class controlling border rendering"
+    },
+    "name": "core.Border",
+    "text": " class controlling border rendering"
 }

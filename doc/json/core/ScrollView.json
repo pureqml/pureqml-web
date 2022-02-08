@@ -2,23 +2,24 @@
     "content": {
         "Methods": {
             "_setStyle": {
-                "internal": true, 
+                "internal": true,
+                "params": [],
                 "text": "@private"
-            }, 
+            },
             "constructor": {
-                "internal": false, 
+                "internal": true,
                 "text": ""
-            }, 
+            },
             "onHorizontalScrollBarPolicyChanged": {
-                "internal": false, 
+                "internal": true,
                 "text": ""
-            }, 
+            },
             "onVerticalScrollBarPolicyChanged": {
-                "internal": false, 
+                "internal": true,
                 "text": ""
             }
         }
-    }, 
-    "name": "core.ScrollView", 
-    "text": "@private"
+    },
+    "name": "core.ScrollView",
+    "text": ""
 }

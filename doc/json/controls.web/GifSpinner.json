@@ -2,15 +2,15 @@
     "content": {
         "Methods": {
             "start": {
-                "internal": false, 
+                "internal": false,
                 "text": ""
-            }, 
+            },
             "stop": {
-                "internal": false, 
+                "internal": false,
                 "text": ""
             }
         }
-    }, 
-    "name": "controls.web.GifSpinner", 
+    },
+    "name": "controls.web.GifSpinner",
     "text": ""
 }

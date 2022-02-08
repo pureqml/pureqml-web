@@ -2,11 +2,14 @@
     "content": {
         "Properties": {
             "title": {
-                "internal": false, 
-                "text": ""
+                "defaultValue": "",
+                "internal": false,
+                "ref": null,
+                "text": "",
+                "type": "string"
             }
         }
-    }, 
-    "name": "src.SectionHead", 
+    },
+    "name": "src.SectionHead",
     "text": ""
 }

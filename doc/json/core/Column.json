@@ -2,19 +2,22 @@
     "content": {
         "Methods": {
             "_layout": {
-                "internal": true, 
+                "internal": true,
+                "params": [],
                 "text": "@private"
-            }, 
+            },
             "addChild": {
-                "internal": true, 
+                "internal": true,
+                "params": [],
                 "text": "@private"
-            }, 
+            },
             "onKeyPressed": {
-                "internal": true, 
+                "internal": true,
+                "params": [],
                 "text": "@private"
             }
         }
-    }, 
-    "name": "core.Column", 
-    "text": "Layout for vertical oriented content"
+    },
+    "name": "core.Column",
+    "text": " Layout for vertical oriented content"
 }

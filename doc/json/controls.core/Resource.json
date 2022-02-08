@@ -2,35 +2,42 @@
     "content": {
         "Methods": {
             "load": {
-                "internal": true, 
+                "internal": true,
+                "params": [],
                 "text": "@private"
-            }, 
+            },
             "onCompleted": {
-                "internal": false, 
+                "internal": true,
                 "text": ""
-            }, 
+            },
             "onUrlChanged": {
-                "internal": false, 
+                "internal": true,
                 "text": ""
             }
-        }, 
+        },
         "Properties": {
             "data": {
-                "internal": false, 
-                "text": "uploaded from URL data"
-            }, 
+                "defaultValue": "",
+                "internal": false,
+                "ref": null,
+                "text": "uploaded from URL data",
+                "type": "string"
+            },
             "url": {
-                "internal": false, 
-                "text": "resource URL"
+                "defaultValue": "",
+                "internal": false,
+                "ref": null,
+                "text": "resource URL",
+                "type": "string"
             }
-        }, 
+        },
         "Signals": {
             "error": {
-                "internal": false, 
+                "internal": false,
                 "text": "error signal"
             }
         }
-    }, 
-    "name": "controls.core.Resource", 
-    "text": "Object for getting remote resources"
+    },
+    "name": "controls.core.Resource",
+    "text": " Object for getting remote resources"
 }

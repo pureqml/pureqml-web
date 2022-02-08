@@ -2,33 +2,42 @@
     "content": {
         "Methods": {
             "constructor": {
-                "internal": false, 
+                "internal": true,
                 "text": ""
-            }, 
+            },
             "onMaxChanged": {
-                "internal": false, 
+                "internal": true,
                 "text": ""
-            }, 
+            },
             "onMinChanged": {
-                "internal": false, 
+                "internal": true,
                 "text": ""
             }
-        }, 
+        },
         "Properties": {
             "max": {
-                "internal": false, 
-                "text": "maximum date value"
-            }, 
+                "defaultValue": "",
+                "internal": false,
+                "ref": null,
+                "text": " maximum date value",
+                "type": "string"
+            },
             "min": {
-                "internal": false, 
-                "text": "minimal date value"
-            }, 
+                "defaultValue": "",
+                "internal": false,
+                "ref": null,
+                "text": " minimal date value",
+                "type": "string"
+            },
             "value": {
-                "internal": false, 
-                "text": "current date value"
+                "defaultValue": "",
+                "internal": false,
+                "ref": null,
+                "text": " current date value",
+                "type": "string"
             }
         }
-    }, 
-    "name": "controls.input.DateInput", 
+    },
+    "name": "controls.input.DateInput",
     "text": "date selecting input"
 }

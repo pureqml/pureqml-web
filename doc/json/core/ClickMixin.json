@@ -2,19 +2,22 @@
     "content": {
         "Methods": {
             "_bindClick": {
-                "internal": true, 
+                "internal": true,
+                "params": [],
                 "text": "@private"
-            }, 
+            },
             "constructor": {
-                "internal": true, 
+                "internal": true,
+                "params": [],
                 "text": "@private"
-            }, 
+            },
             "onEnabledChanged": {
-                "internal": true, 
+                "internal": true,
+                "params": [],
                 "text": "@private"
             }
         }
-    }, 
-    "name": "core.ClickMixin", 
-    "text": "This mixin provides mouse click event detecting"
+    },
+    "name": "core.ClickMixin",
+    "text": " This mixin provides mouse click event detecting"
 }

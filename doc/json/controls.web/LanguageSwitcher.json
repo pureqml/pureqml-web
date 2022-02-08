@@ -2,47 +2,56 @@
     "content": {
         "Methods": {
             "addLanguage": {
-                "internal": false, 
+                "internal": false,
                 "text": ""
-            }, 
+            },
             "onClicked": {
-                "internal": false, 
+                "internal": false,
                 "text": ""
-            }, 
+            },
             "onCompleted": {
-                "internal": false, 
+                "internal": true,
                 "text": ""
-            }, 
+            },
             "onCountChanged": {
-                "internal": false, 
+                "internal": true,
                 "text": ""
-            }, 
+            },
             "onCurrentIndexChanged": {
-                "internal": false, 
+                "internal": true,
                 "text": ""
             }
-        }, 
+        },
         "Properties": {
             "count": {
-                "internal": false, 
-                "text": ""
-            }, 
+                "defaultValue": "",
+                "internal": false,
+                "ref": null,
+                "text": "",
+                "type": "int"
+            },
             "currentIndex": {
-                "internal": false, 
-                "text": ""
-            }, 
+                "defaultValue": "",
+                "internal": false,
+                "ref": null,
+                "text": "",
+                "type": "int"
+            },
             "languges": {
-                "internal": false, 
-                "text": ""
+                "defaultValue": "",
+                "internal": false,
+                "ref": null,
+                "text": "",
+                "type": "variant"
             }
-        }, 
+        },
         "Signals": {
             "languageChanged": {
-                "internal": false, 
+                "internal": false,
                 "text": ""
             }
         }
-    }, 
-    "name": "controls.web.LanguageSwitcher", 
+    },
+    "name": "controls.web.LanguageSwitcher",
     "text": ""
 }

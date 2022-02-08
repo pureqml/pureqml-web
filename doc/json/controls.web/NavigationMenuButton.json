@@ -2,49 +2,70 @@
     "content": {
         "Methods": {
             "hide": {
-                "internal": false, 
+                "internal": false,
                 "text": ""
-            }, 
+            },
             "onShowChanged": {
-                "internal": false, 
+                "internal": true,
                 "text": ""
-            }, 
+            },
             "toggleShow": {
-                "internal": false, 
+                "internal": false,
                 "text": ""
             }
-        }, 
+        },
         "Properties": {
             "content": {
-                "internal": false, 
-                "text": ""
-            }, 
+                "defaultValue": "",
+                "internal": false,
+                "ref": null,
+                "text": "",
+                "type": "Item"
+            },
             "contentX": {
-                "internal": false, 
-                "text": ""
-            }, 
+                "defaultValue": "",
+                "internal": false,
+                "ref": null,
+                "text": "",
+                "type": "int"
+            },
             "contentY": {
-                "internal": false, 
-                "text": ""
-            }, 
+                "defaultValue": "",
+                "internal": false,
+                "ref": null,
+                "text": "",
+                "type": "int"
+            },
             "icon": {
-                "internal": false, 
-                "text": ""
-            }, 
+                "defaultValue": "",
+                "internal": false,
+                "ref": null,
+                "text": "",
+                "type": "string"
+            },
             "panel": {
-                "internal": false, 
-                "text": ""
-            }, 
+                "defaultValue": "Rectangle",
+                "internal": false,
+                "ref": "qmlcore.core/Rectangle",
+                "text": "",
+                "type": "Rectangle"
+            },
             "scrollable": {
-                "internal": false, 
-                "text": ""
-            }, 
+                "defaultValue": "als",
+                "internal": false,
+                "ref": null,
+                "text": "",
+                "type": "bool"
+            },
             "show": {
-                "internal": false, 
-                "text": ""
+                "defaultValue": "als",
+                "internal": false,
+                "ref": null,
+                "text": "",
+                "type": "bool"
             }
         }
-    }, 
-    "name": "controls.web.NavigationMenuButton", 
+    },
+    "name": "controls.web.NavigationMenuButton",
     "text": ""
 }

@@ -2,71 +2,99 @@
     "content": {
         "Methods": {
             "_set": {
-                "internal": true, 
+                "internal": true,
+                "params": [],
                 "text": "@private"
-            }, 
+            },
             "constructor": {
-                "internal": true, 
+                "internal": true,
+                "params": [],
                 "text": "@private"
-            }, 
+            },
             "get": {
-                "internal": true, 
+                "internal": true,
+                "params": [],
                 "text": "@private"
-            }, 
+            },
             "onStandartMappingChanged": {
-                "internal": false, 
+                "internal": true,
                 "text": ""
-            }, 
+            },
             "poll": {
-                "internal": true, 
+                "internal": true,
+                "params": [],
                 "text": "@private"
             }
-        }, 
+        },
         "Properties": {
             "axesCount": {
-                "internal": false, 
-                "text": "supported axes count"
-            }, 
+                "defaultValue": "",
+                "internal": false,
+                "ref": null,
+                "text": " supported axes count",
+                "type": "int"
+            },
             "buttonsCount": {
-                "internal": false, 
-                "text": "supported buttons count"
-            }, 
+                "defaultValue": "",
+                "internal": false,
+                "ref": null,
+                "text": " supported buttons count",
+                "type": "int"
+            },
             "connected": {
-                "internal": false, 
-                "text": "is gamepad connected or not"
-            }, 
+                "defaultValue": "",
+                "internal": false,
+                "ref": null,
+                "text": " is gamepad connected or not",
+                "type": "bool"
+            },
             "deviceInfo": {
-                "internal": false, 
-                "text": "gamepad device info string"
-            }, 
+                "defaultValue": "",
+                "internal": false,
+                "ref": null,
+                "text": " gamepad device info string",
+                "type": "string"
+            },
             "index": {
-                "internal": false, 
-                "text": "gamepad index in order of appearance"
-            }, 
+                "defaultValue": "",
+                "internal": false,
+                "ref": null,
+                "text": " gamepad index in order of appearance",
+                "type": "int"
+            },
             "productId": {
-                "internal": false, 
-                "text": "product ID"
-            }, 
+                "defaultValue": "",
+                "internal": false,
+                "ref": null,
+                "text": " product ID",
+                "type": "int"
+            },
             "standartMapping": {
-                "internal": false, 
-                "text": "gamepad use standart buttons and axes mapping"
-            }, 
+                "defaultValue": "ru",
+                "internal": false,
+                "ref": null,
+                "text": " gamepad use standart buttons and axes mapping",
+                "type": "bool"
+            },
             "vendorId": {
-                "internal": false, 
-                "text": "vendor ID"
+                "defaultValue": "",
+                "internal": false,
+                "ref": null,
+                "text": " vendor ID",
+                "type": "int"
             }
-        }, 
+        },
         "Signals": {
             "axes": {
-                "internal": false, 
-                "text": "emitted when one of the axes is changed"
-            }, 
+                "internal": false,
+                "text": " emitted when one of the axes is changed"
+            },
             "button": {
-                "internal": false, 
-                "text": "emitted when any button is pressed"
+                "internal": false,
+                "text": " emitted when any button is pressed"
             }
         }
-    }, 
-    "name": "core.Gamepad", 
+    },
+    "name": "core.Gamepad",
     "text": "item for gamepad device instance, provide common API"
 }

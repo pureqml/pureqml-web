@@ -2,11 +2,11 @@
     "content": {
         "Methods": {
             "getTag": {
-                "internal": false, 
+                "internal": false,
                 "text": ""
             }
         }
-    }, 
-    "name": "controls.web.tables.TableHeaderCell", 
+    },
+    "name": "controls.web.tables.TableHeaderCell",
     "text": ""
 }

@@ -2,65 +2,96 @@
     "content": {
         "Methods": {
             "changeHref": {
-                "internal": false, 
+                "internal": false,
                 "text": ""
-            }, 
+            },
             "constructor": {
-                "internal": true, 
+                "internal": true,
+                "params": [],
                 "text": "@private"
-            }, 
+            },
             "pushState": {
-                "internal": false, 
+                "internal": false,
                 "text": ""
-            }, 
+            },
             "reload": {
-                "internal": false, 
+                "internal": false,
                 "text": ""
             }
-        }, 
+        },
         "Properties": {
             "hash": {
-                "internal": false, 
-                "text": "contains current hash value (after '#' charachter)"
-            }, 
+                "defaultValue": "",
+                "internal": false,
+                "ref": null,
+                "text": " contains current hash value (after '#' charachter)",
+                "type": "string"
+            },
             "host": {
-                "internal": false, 
-                "text": "current host with port number"
-            }, 
+                "defaultValue": "",
+                "internal": false,
+                "ref": null,
+                "text": " current host with port number",
+                "type": "string"
+            },
             "hostname": {
-                "internal": false, 
-                "text": "current host name"
-            }, 
+                "defaultValue": "",
+                "internal": false,
+                "ref": null,
+                "text": " current host name",
+                "type": "string"
+            },
             "href": {
-                "internal": false, 
-                "text": "whole current URL"
-            }, 
+                "defaultValue": "",
+                "internal": false,
+                "ref": null,
+                "text": " whole current URL",
+                "type": "string"
+            },
             "origin": {
-                "internal": false, 
-                "text": "current protocol, hostname and port number of a URL"
-            }, 
+                "defaultValue": "",
+                "internal": false,
+                "ref": null,
+                "text": " current protocol, hostname and port number of a URL",
+                "type": "string"
+            },
             "pathname": {
-                "internal": false, 
-                "text": "path name of the current URL"
-            }, 
+                "defaultValue": "",
+                "internal": false,
+                "ref": null,
+                "text": " path name of the current URL",
+                "type": "string"
+            },
             "port": {
-                "internal": false, 
-                "text": "current port number"
-            }, 
+                "defaultValue": "",
+                "internal": false,
+                "ref": null,
+                "text": " current port number",
+                "type": "string"
+            },
             "protocol": {
-                "internal": false, 
-                "text": "current protocol"
-            }, 
+                "defaultValue": "",
+                "internal": false,
+                "ref": null,
+                "text": " current protocol",
+                "type": "string"
+            },
             "search": {
-                "internal": false, 
-                "text": "query string of the URL"
-            }, 
+                "defaultValue": "",
+                "internal": false,
+                "ref": null,
+                "text": " query string of the URL",
+                "type": "string"
+            },
             "state": {
-                "internal": false, 
-                "text": "current history state"
+                "defaultValue": "",
+                "internal": false,
+                "ref": null,
+                "text": " current history state",
+                "type": "Object"
             }
         }
-    }, 
-    "name": "core.Location", 
-    "text": "Window location object"
+    },
+    "name": "core.Location",
+    "text": " Window location object"
 }

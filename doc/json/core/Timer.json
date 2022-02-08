@@ -2,67 +2,85 @@
     "content": {
         "Methods": {
             "_restart": {
-                "internal": true, 
+                "internal": true,
+                "params": [],
                 "text": "@private"
-            }, 
+            },
             "constructor": {
-                "internal": false, 
+                "internal": true,
                 "text": ""
-            }, 
+            },
             "onCompleted": {
-                "internal": true, 
+                "internal": true,
+                "params": [],
                 "text": "@private"
-            }, 
+            },
             "onIntervalChanged": {
-                "internal": false, 
+                "internal": true,
                 "text": ""
-            }, 
+            },
             "onRunningChanged": {
-                "internal": false, 
+                "internal": true,
                 "text": ""
-            }, 
+            },
             "onTriggered": {
-                "internal": true, 
+                "internal": true,
+                "params": [],
                 "text": "@private"
-            }, 
+            },
             "restart": {
-                "internal": false, 
+                "internal": false,
+                "params": [],
                 "text": "restart timer, activate if stopped"
-            }, 
+            },
             "start": {
-                "internal": false, 
+                "internal": false,
+                "params": [],
                 "text": "starts timer"
-            }, 
+            },
             "stop": {
-                "internal": false, 
+                "internal": false,
+                "params": [],
                 "text": "stops timer"
             }
-        }, 
+        },
         "Properties": {
             "interval": {
-                "internal": false, 
-                "text": "interval, ms"
-            }, 
+                "defaultValue": "00",
+                "internal": false,
+                "ref": null,
+                "text": " interval, ms",
+                "type": "int"
+            },
             "repeat": {
-                "internal": false, 
-                "text": "makes this timer periodic"
-            }, 
+                "defaultValue": "",
+                "internal": false,
+                "ref": null,
+                "text": " makes this timer periodic",
+                "type": "bool"
+            },
             "running": {
-                "internal": false, 
-                "text": "current timer status, true - running, false - paused"
-            }, 
+                "defaultValue": "",
+                "internal": false,
+                "ref": null,
+                "text": " current timer status, true - running, false - paused",
+                "type": "bool"
+            },
             "triggeredOnStart": {
-                "internal": false, 
-                "text": "fire timer's signal on start or activation"
+                "defaultValue": "",
+                "internal": false,
+                "ref": null,
+                "text": " fire timer's signal on start or activation",
+                "type": "bool"
             }
-        }, 
+        },
         "Signals": {
             "triggered": {
-                "internal": false, 
-                "text": "this signal triggered when timer fires"
+                "internal": false,
+                "text": " this signal triggered when timer fires"
             }
         }
-    }, 
-    "name": "core.Timer", 
-    "text": "class handles periodic tasks"
+    },
+    "name": "core.Timer",
+    "text": " class handles periodic tasks"
 }

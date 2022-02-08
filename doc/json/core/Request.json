@@ -2,17 +2,27 @@
     "content": {
         "Methods": {
             "ajax": {
-                "internal": false, 
-                "text": "@param request:Object request object\n\tsend request using 'XMLHttpRequest' object"
+                "internal": false,
+                "params": [
+                    {
+                        "name": "request",
+                        "text": "request object",
+                        "type": "Object"
+                    }
+                ],
+                "text": "\tsend request using 'XMLHttpRequest' object"
             }
-        }, 
+        },
         "Properties": {
             "loading": {
-                "internal": false, 
-                "text": "loading flag, is true when request was send and false when answer was recieved or error occured"
+                "defaultValue": "als",
+                "internal": false,
+                "ref": null,
+                "text": " loading flag, is true when request was send and false when answer was recieved or error occured",
+                "type": "bool"
             }
         }
-    }, 
-    "name": "core.Request", 
+    },
+    "name": "core.Request",
     "text": "object for handling XML/HTTP requests"
 }

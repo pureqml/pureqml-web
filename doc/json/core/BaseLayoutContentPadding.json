@@ -2,41 +2,56 @@
     "content": {
         "Methods": {
             "constructor": {
-                "internal": false, 
+                "internal": true,
                 "text": ""
-            }, 
+            },
             "onTopChanged": {
-                "internal": false, 
+                "internal": true,
                 "text": ""
-            }, 
+            },
             "prototypeConstructor": {
-                "internal": false, 
+                "internal": false,
                 "text": ""
             }
-        }, 
+        },
         "Properties": {
             "all": {
-                "internal": false, 
-                "text": "a value for all sides"
-            }, 
+                "defaultValue": "",
+                "internal": false,
+                "ref": null,
+                "text": " a value for all sides",
+                "type": "int"
+            },
             "bottom": {
-                "internal": false, 
-                "text": "bottom padding"
-            }, 
+                "defaultValue": "{all",
+                "internal": false,
+                "ref": null,
+                "text": " bottom padding",
+                "type": "int"
+            },
             "left": {
-                "internal": false, 
-                "text": "left padding"
-            }, 
+                "defaultValue": "{all",
+                "internal": false,
+                "ref": null,
+                "text": " left padding",
+                "type": "int"
+            },
             "right": {
-                "internal": false, 
-                "text": "right padding"
-            }, 
+                "defaultValue": "{all",
+                "internal": false,
+                "ref": null,
+                "text": " right padding",
+                "type": "int"
+            },
             "top": {
-                "internal": false, 
-                "text": "top padding"
+                "defaultValue": "{all",
+                "internal": false,
+                "ref": null,
+                "text": " top padding",
+                "type": "int"
             }
         }
-    }, 
-    "name": "core.BaseLayoutContentPadding", 
-    "text": "class controlling internal paddings of BaseLayout content"
+    },
+    "name": "core.BaseLayoutContentPadding",
+    "text": " class controlling internal paddings of BaseLayout content"
 }

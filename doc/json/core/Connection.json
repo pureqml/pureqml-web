@@ -2,37 +2,44 @@
     "content": {
         "Methods": {
             "_reconnect": {
-                "internal": true, 
+                "internal": true,
+                "params": [],
                 "text": "@private"
-            }, 
+            },
             "_scheduleReconnect": {
-                "internal": true, 
+                "internal": true,
+                "params": [],
                 "text": "@private"
-            }, 
+            },
             "constructor": {
-                "internal": false, 
+                "internal": true,
                 "text": ""
-            }, 
+            },
             "on": {
-                "internal": true, 
+                "internal": true,
+                "params": [],
                 "text": "@private"
-            }, 
+            },
             "onChanged": {
-                "internal": true, 
+                "internal": true,
+                "params": [],
                 "text": "@private"
-            }, 
+            },
             "onTargetChanged": {
-                "internal": false, 
+                "internal": true,
                 "text": ""
             }
-        }, 
+        },
         "Properties": {
             "target": {
-                "internal": false, 
-                "text": "target object to connect to"
+                "defaultValue": "",
+                "internal": false,
+                "ref": null,
+                "text": " target object to connect to",
+                "type": "Object"
             }
         }
-    }, 
-    "name": "core.Connection", 
-    "text": "Describes generalized connections to signals. However it's preferrable to use extended syntax, e.g. `myButton.onClicked: { }` instead of dynamic Connection. This class is useful if you want to switch your targets on the fly"
+    },
+    "name": "core.Connection",
+    "text": " Describes generalized connections to signals. However it's preferrable to use extended syntax, e.g. `myButton.onClicked: { }` instead of dynamic Connection. This class is useful if you want to switch your targets on the fly"
 }

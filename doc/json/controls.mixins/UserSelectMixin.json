@@ -2,19 +2,20 @@
     "content": {
         "Methods": {
             "_updateValue": {
-                "internal": true, 
+                "internal": true,
+                "params": [],
                 "text": "@private"
-            }, 
+            },
             "constructor": {
-                "internal": false, 
+                "internal": true,
                 "text": ""
-            }, 
+            },
             "onValueChanged": {
-                "internal": false, 
+                "internal": true,
                 "text": ""
             }
         }
-    }, 
-    "name": "controls.mixins.UserSelectMixin", 
+    },
+    "name": "controls.mixins.UserSelectMixin",
     "text": "This object controls how the text is allowed to be selected"
 }

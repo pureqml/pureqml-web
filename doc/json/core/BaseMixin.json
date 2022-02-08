@@ -2,17 +2,20 @@
     "content": {
         "Methods": {
             "constructor": {
-                "internal": false, 
+                "internal": true,
                 "text": ""
             }
-        }, 
+        },
         "Properties": {
             "enabled": {
-                "internal": false, 
-                "text": "enable/disable mixin"
+                "defaultValue": "ru",
+                "internal": false,
+                "ref": null,
+                "text": " enable/disable mixin",
+                "type": "bool"
             }
         }
-    }, 
-    "name": "core.BaseMixin", 
+    },
+    "name": "core.BaseMixin",
     "text": ""
 }

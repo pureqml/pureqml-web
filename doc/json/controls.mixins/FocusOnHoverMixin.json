@@ -2,11 +2,11 @@
     "content": {
         "Methods": {
             "onValueChanged": {
-                "internal": false, 
+                "internal": true,
                 "text": ""
             }
         }
-    }, 
-    "name": "controls.mixins.FocusOnHoverMixin", 
+    },
+    "name": "controls.mixins.FocusOnHoverMixin",
     "text": ""
 }

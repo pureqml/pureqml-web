@@ -2,45 +2,64 @@
     "content": {
         "Methods": {
             "onBottomChanged": {
-                "internal": true, 
+                "internal": true,
+                "params": [],
                 "text": "@private"
-            }, 
+            },
             "onLeftChanged": {
-                "internal": true, 
+                "internal": true,
+                "params": [],
                 "text": "@private"
-            }, 
+            },
             "onRightChanged": {
-                "internal": true, 
+                "internal": true,
+                "params": [],
                 "text": "@private"
-            }, 
+            },
             "onTopChanged": {
-                "internal": true, 
+                "internal": true,
+                "params": [],
                 "text": "@private"
             }
-        }, 
+        },
         "Properties": {
             "all": {
-                "internal": false, 
-                "text": "a value for all sides"
-            }, 
+                "defaultValue": "",
+                "internal": false,
+                "ref": null,
+                "text": " a value for all sides",
+                "type": "int"
+            },
             "bottom": {
-                "internal": false, 
-                "text": "bottom padding"
-            }, 
+                "defaultValue": "{all",
+                "internal": false,
+                "ref": null,
+                "text": " bottom padding",
+                "type": "int"
+            },
             "left": {
-                "internal": false, 
-                "text": "left padding"
-            }, 
+                "defaultValue": "{all",
+                "internal": false,
+                "ref": null,
+                "text": " left padding",
+                "type": "int"
+            },
             "right": {
-                "internal": false, 
-                "text": "right padding"
-            }, 
+                "defaultValue": "{all",
+                "internal": false,
+                "ref": null,
+                "text": " right padding",
+                "type": "int"
+            },
             "top": {
-                "internal": false, 
-                "text": "top padding"
+                "defaultValue": "{all",
+                "internal": false,
+                "ref": null,
+                "text": " top padding",
+                "type": "int"
             }
         }
-    }, 
-    "name": "controls.core.Paddings", 
-    "text": "class controlling internal paddings of the parent element"
+    },
+    "name": "controls.core.Paddings",
+    "text": " class controlling internal paddings of the parent element"
 }

@@ -2,31 +2,34 @@
     "content": {
         "Methods": {
             "switchCase": {
-                "internal": false, 
+                "internal": false,
                 "text": ""
-            }, 
+            },
             "switchLanguage": {
-                "internal": false, 
+                "internal": false,
                 "text": ""
             }
-        }, 
+        },
         "Properties": {
             "currentRow": {
-                "internal": false, 
-                "text": ""
+                "defaultValue": "",
+                "internal": false,
+                "ref": null,
+                "text": "",
+                "type": "int"
             }
-        }, 
+        },
         "Signals": {
             "backspase": {
-                "internal": false, 
+                "internal": false,
                 "text": ""
-            }, 
+            },
             "keySelected": {
-                "internal": false, 
+                "internal": false,
                 "text": ""
             }
         }
-    }, 
-    "name": "controls.pure.keyboard.Keyboard", 
+    },
+    "name": "controls.pure.keyboard.Keyboard",
     "text": ""
 }

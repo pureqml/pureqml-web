@@ -2,15 +2,21 @@
     "content": {
         "Properties": {
             "code": {
-                "internal": false, 
-                "text": ""
-            }, 
+                "defaultValue": "",
+                "internal": false,
+                "ref": null,
+                "text": "",
+                "type": "string"
+            },
             "text": {
-                "internal": false, 
-                "text": ""
+                "defaultValue": "",
+                "internal": false,
+                "ref": null,
+                "text": "",
+                "type": "string"
             }
         }
-    }, 
-    "name": "src.HowtoText", 
+    },
+    "name": "src.HowtoText",
     "text": ""
 }

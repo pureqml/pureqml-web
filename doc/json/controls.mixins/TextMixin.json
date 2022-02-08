@@ -2,15 +2,15 @@
     "content": {
         "Methods": {
             "_createElement": {
-                "internal": false, 
+                "internal": false,
                 "text": ""
-            }, 
+            },
             "prototypeConstructor": {
-                "internal": false, 
+                "internal": false,
                 "text": ""
             }
         }
-    }, 
-    "name": "controls.mixins.TextMixin", 
+    },
+    "name": "controls.mixins.TextMixin",
     "text": "mixin which instantiate text in component without creating extra entities"
 }

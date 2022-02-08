@@ -2,37 +2,49 @@
     "content": {
         "Methods": {
             "onRunningChanged": {
-                "internal": false, 
+                "internal": true,
                 "text": ""
-            }, 
+            },
             "resetPosition": {
-                "internal": false, 
+                "internal": false,
                 "text": ""
-            }, 
+            },
             "startFloatingText": {
-                "internal": false, 
+                "internal": false,
                 "text": ""
             }
-        }, 
+        },
         "Properties": {
             "color": {
-                "internal": false, 
-                "text": ""
-            }, 
+                "defaultValue": "#fff",
+                "internal": false,
+                "ref": null,
+                "text": "",
+                "type": "Color"
+            },
             "pixelSize": {
-                "internal": false, 
-                "text": ""
-            }, 
+                "defaultValue": "",
+                "internal": false,
+                "ref": null,
+                "text": "",
+                "type": "int"
+            },
             "running": {
-                "internal": false, 
-                "text": ""
-            }, 
+                "defaultValue": "",
+                "internal": false,
+                "ref": null,
+                "text": "",
+                "type": "bool"
+            },
             "text": {
-                "internal": false, 
-                "text": ""
+                "defaultValue": "",
+                "internal": false,
+                "ref": null,
+                "text": "",
+                "type": "string"
             }
         }
-    }, 
-    "name": "controls.pure.FloatingText", 
+    },
+    "name": "controls.pure.FloatingText",
     "text": ""
 }

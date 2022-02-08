@@ -2,17 +2,21 @@
     "content": {
         "Methods": {
             "onCompleted": {
-                "internal": true, 
+                "internal": true,
+                "params": [],
                 "text": "@private"
             }
-        }, 
+        },
         "Properties": {
             "rules": {
-                "internal": false, 
-                "text": ""
+                "defaultValue": "",
+                "internal": false,
+                "ref": null,
+                "text": "",
+                "type": "string"
             }
         }
-    }, 
-    "name": "controls.mixins.CssMixin", 
-    "text": "@private"
+    },
+    "name": "controls.mixins.CssMixin",
+    "text": ""
 }

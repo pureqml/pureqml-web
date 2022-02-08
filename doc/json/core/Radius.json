@@ -2,41 +2,56 @@
     "content": {
         "Methods": {
             "onCompleted": {
-                "internal": false, 
+                "internal": true,
                 "text": ""
-            }, 
+            },
             "onRadiusUpdate": {
-                "internal": false, 
+                "internal": false,
                 "text": ""
-            }, 
+            },
             "prototypeConstructor": {
-                "internal": false, 
+                "internal": false,
                 "text": ""
             }
-        }, 
+        },
         "Properties": {
             "bottomLeft": {
-                "internal": false, 
-                "text": "bottom left corner radius"
-            }, 
+                "defaultValue": "",
+                "internal": false,
+                "ref": null,
+                "text": " bottom left corner radius",
+                "type": "real"
+            },
             "bottomRight": {
-                "internal": false, 
-                "text": "bottom right corner radius"
-            }, 
+                "defaultValue": "",
+                "internal": false,
+                "ref": null,
+                "text": " bottom right corner radius",
+                "type": "real"
+            },
             "radius": {
-                "internal": false, 
-                "text": "radius for all corners"
-            }, 
+                "defaultValue": "",
+                "internal": false,
+                "ref": null,
+                "text": " radius for all corners",
+                "type": "real"
+            },
             "topLeft": {
-                "internal": false, 
-                "text": "top left corner radius"
-            }, 
+                "defaultValue": "",
+                "internal": false,
+                "ref": null,
+                "text": " top left corner radius",
+                "type": "real"
+            },
             "topRight": {
-                "internal": false, 
-                "text": "top right corner radius"
+                "defaultValue": "",
+                "internal": false,
+                "ref": null,
+                "text": " top right corner radius",
+                "type": "real"
             }
         }
-    }, 
-    "name": "core.Radius", 
+    },
+    "name": "core.Radius",
     "text": ""
 }

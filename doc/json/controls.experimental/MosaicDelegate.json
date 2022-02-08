@@ -2,53 +2,65 @@
     "content": {
         "Alias Properties": {
             "hover": {
-                "internal": false, 
+                "internal": false,
                 "text": ""
             }
-        }, 
+        },
         "Methods": {
             "onActiveChanged": {
-                "internal": false, 
+                "internal": true,
                 "text": ""
-            }, 
+            },
             "onClicked": {
-                "internal": false, 
+                "internal": false,
                 "text": ""
-            }, 
+            },
             "onPressed": {
-                "internal": false, 
+                "internal": false,
                 "text": ""
-            }, 
+            },
             "onSelectPressed": {
-                "internal": false, 
+                "internal": false,
                 "text": ""
             }
-        }, 
+        },
         "Properties": {
             "active": {
-                "internal": false, 
-                "text": ""
-            }, 
+                "defaultValue": "{activeFocus",
+                "internal": false,
+                "ref": null,
+                "text": "",
+                "type": "bool"
+            },
             "allowOpacity": {
-                "internal": false, 
-                "text": ""
-            }, 
+                "defaultValue": "",
+                "internal": false,
+                "ref": null,
+                "text": "",
+                "type": "bool"
+            },
             "hoverMixin": {
-                "internal": false, 
-                "text": ""
-            }, 
+                "defaultValue": "HoverClickMixin",
+                "internal": false,
+                "ref": null,
+                "text": "",
+                "type": "Mixin"
+            },
             "playing": {
-                "internal": false, 
-                "text": ""
+                "defaultValue": "",
+                "internal": false,
+                "ref": null,
+                "text": "",
+                "type": "bool"
             }
-        }, 
+        },
         "Signals": {
             "pressed": {
-                "internal": false, 
+                "internal": false,
                 "text": ""
             }
         }
-    }, 
-    "name": "controls.experimental.MosaicDelegate", 
+    },
+    "name": "controls.experimental.MosaicDelegate",
     "text": ""
 }

@@ -2,47 +2,54 @@
     "content": {
         "Methods": {
             "bufferedAmount": {
-                "internal": false, 
+                "internal": false,
+                "params": [],
                 "text": "Returns the number of bytes of data that have been queued using calls to send() but not yet transmitted to the network."
-            }, 
+            },
             "close": {
-                "internal": false, 
+                "internal": false,
+                "params": [],
                 "text": "Closes the WebSocket connection or connection attempt, if any."
-            }, 
+            },
             "connect": {
-                "internal": false, 
+                "internal": false,
+                "params": [],
                 "text": "Initiate connect to the provided url"
-            }, 
+            },
             "send": {
-                "internal": false, 
+                "internal": false,
+                "params": [],
                 "text": "Method enqueues the specified data to be transmitted to the server over the WebSocket connection."
             }
-        }, 
+        },
         "Properties": {
             "url": {
-                "internal": false, 
-                "text": "The url needs to start with either 'ws://' or 'wss://'"
+                "defaultValue": "",
+                "internal": false,
+                "ref": null,
+                "text": " The URL to which to connect; this should be the URL to which the WebSocket server will respond.  The url needs to start with either 'ws://' or 'wss://'",
+                "type": "string"
             }
-        }, 
+        },
         "Signals": {
             "closed": {
-                "internal": false, 
-                "text": "Emitted when the socket was closed, the event has at least the following three members code, reason and wasClean"
-            }, 
+                "internal": false,
+                "text": " Emitted when the socket was closed, the event has at least the following three members code, reason and wasClean"
+            },
             "error": {
-                "internal": false, 
-                "text": "Emitted when an error occurs on the WebSocket."
-            }, 
+                "internal": false,
+                "text": " Emitted when an error occurs on the WebSocket."
+            },
             "message": {
-                "internal": false, 
-                "text": "Emitted when a message is received from the server."
-            }, 
+                "internal": false,
+                "text": " Emitted when a message is received from the server."
+            },
             "opened": {
-                "internal": false, 
-                "text": "Emitted when the state changes to 1 (Open); this indicates that the connection is ready to send and receive data."
+                "internal": false,
+                "text": " Emitted when the state changes to 1 (Open); this indicates that the connection is ready to send and receive data."
             }
         }
-    }, 
-    "name": "controls.web.websocket.WebSocketClient", 
-    "text": "Wrapper for a WebSocket"
+    },
+    "name": "controls.web.websocket.WebSocketClient",
+    "text": " Wrapper for a WebSocket  The comments are copied or inspired by https://developer.mozilla.org/en-US/docs/Web/API/WebSocket"
 }

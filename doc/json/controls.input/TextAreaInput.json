@@ -2,29 +2,33 @@
     "content": {
         "Methods": {
             "constructor": {
-                "internal": false, 
+                "internal": true,
                 "text": ""
-            }, 
+            },
             "getTag": {
-                "internal": false, 
+                "internal": false,
+                "params": [],
                 "text": "returns tag for corresponding element"
-            }, 
+            },
             "onTextChanged": {
-                "internal": false, 
+                "internal": true,
                 "text": ""
-            }, 
+            },
             "registerStyle": {
-                "internal": false, 
+                "internal": false,
                 "text": ""
             }
-        }, 
+        },
         "Properties": {
             "text": {
-                "internal": false, 
-                "text": ""
+                "defaultValue": "",
+                "internal": false,
+                "ref": null,
+                "text": "",
+                "type": "string"
             }
         }
-    }, 
-    "name": "controls.input.TextAreaInput", 
-    "text": "returns tag for corresponding element"
+    },
+    "name": "controls.input.TextAreaInput",
+    "text": ""
 }

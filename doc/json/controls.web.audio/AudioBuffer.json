@@ -2,45 +2,62 @@
     "content": {
         "Methods": {
             "constructor": {
-                "internal": true, 
+                "internal": true,
+                "params": [],
                 "text": "@private"
-            }, 
+            },
             "onLengthChanged": {
-                "internal": true, 
+                "internal": true,
+                "params": [],
                 "text": "@private"
-            }, 
+            },
             "play": {
-                "internal": false, 
+                "internal": false,
+                "params": [],
                 "text": "Play audio buffer"
-            }, 
+            },
             "reset": {
-                "internal": true, 
+                "internal": true,
+                "params": [],
                 "text": "@private"
-            }, 
+            },
             "setBuffer": {
-                "internal": false, 
+                "internal": false,
+                "params": [],
                 "text": "Set audio buffer"
             }
-        }, 
+        },
         "Properties": {
             "channelsCount": {
-                "internal": false, 
-                "text": "Returns an integer representing the number of discrete audio channels described by the PCM data stored in the buffer."
-            }, 
+                "defaultValue": "",
+                "internal": false,
+                "ref": null,
+                "text": " Returns an integer representing the number of discrete audio channels described by the PCM data stored in the buffer.",
+                "type": "int"
+            },
             "duration": {
-                "internal": false, 
-                "text": "Read only real property representing the duration, in seconds, of the PCM data stored in the buffer."
-            }, 
+                "defaultValue": "",
+                "internal": false,
+                "ref": null,
+                "text": " Read only real property representing the duration, in seconds, of the PCM data stored in the buffer.",
+                "type": "real"
+            },
             "length": {
-                "internal": false, 
-                "text": "Read only integer property representing the length, in sample-frames, of the PCM data stored in the buffer."
-            }, 
+                "defaultValue": "",
+                "internal": false,
+                "ref": null,
+                "text": " Read only integer property representing the length, in sample-frames, of the PCM data stored in the buffer.",
+                "type": "int"
+            },
             "sampleRate": {
-                "internal": false, 
-                "text": "Read only real property representing the sample rate, in samples per second, of the PCM data stored in the buffer."
+                "defaultValue": "",
+                "internal": false,
+                "ref": null,
+                "text": " Read only real property representing the sample rate, in samples per second, of the PCM data stored in the buffer.",
+                "type": "real"
             }
         }
-    }, 
-    "name": "controls.web.audio.AudioBuffer", 
-    "text": "Object, which can then be populated by data, and played via an AudioBuffer"
+    },
+    "name": "controls.web.audio.AudioBuffer",
+    "text": " Object, which can then be populated by data, and played via an AudioBuffer"
 }

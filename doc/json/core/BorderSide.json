@@ -2,33 +2,47 @@
     "content": {
         "Methods": {
             "_updateStyle": {
-                "internal": true, 
+                "internal": true,
+                "params": [],
                 "text": "@private"
-            }, 
+            },
             "onWidthChanged": {
-                "internal": true, 
+                "internal": true,
+                "params": [],
                 "text": "@private"
             }
-        }, 
+        },
         "Properties": {
             "color": {
-                "internal": false, 
-                "text": ""
-            }, 
+                "defaultValue": "{parent.color",
+                "internal": false,
+                "ref": null,
+                "text": "",
+                "type": "color"
+            },
             "name": {
-                "internal": true, 
-                "text": "@private\nComponent aimed to adjust individual preferences of each border side"
-            }, 
+                "defaultValue": "",
+                "internal": false,
+                "ref": null,
+                "text": "",
+                "type": "string"
+            },
             "style": {
-                "internal": false, 
-                "text": ""
-            }, 
+                "defaultValue": "{parent.style",
+                "internal": false,
+                "ref": null,
+                "text": "",
+                "type": "int"
+            },
             "width": {
-                "internal": false, 
-                "text": ""
+                "defaultValue": "{parent.width",
+                "internal": false,
+                "ref": null,
+                "text": "",
+                "type": "int"
             }
         }
-    }, 
-    "name": "core.BorderSide", 
-    "text": "@private\nComponent aimed to adjust individual preferences of each border side"
+    },
+    "name": "core.BorderSide",
+    "text": "\n@private\nComponent aimed to adjust individual preferences of each border side\n"
 }

@@ -2,39 +2,105 @@
     "content": {
         "Methods": {
             "_checkNameValid": {
-                "internal": true, 
+                "internal": true,
+                "params": [],
                 "text": "@private"
-            }, 
+            },
             "_ensureCallback": {
-                "internal": true, 
+                "internal": true,
+                "params": [],
                 "text": "@private"
-            }, 
+            },
             "_ensureErrCallback": {
-                "internal": true, 
+                "internal": true,
+                "params": [],
                 "text": "@private"
-            }, 
+            },
             "constructor": {
-                "internal": false, 
-                "text": "simple proxy to underlying storage"
-            }, 
+                "internal": true,
+                "text": ""
+            },
             "erase": {
-                "internal": false, 
-                "text": "* Remove item\n\t * @param {string} name - item name\n\t * @param {function} error - callback to report error"
-            }, 
+                "internal": false,
+                "params": [
+                    {
+                        "name": "name",
+                        "text": "item name",
+                        "type": "string"
+                    },
+                    {
+                        "name": "error",
+                        "text": "callback to report error",
+                        "type": "function"
+                    }
+                ],
+                "text": ""
+            },
             "get": {
-                "internal": false, 
-                "text": "* Return stored item by name\n\t * @param {string} name - stored item name\n\t * @param {function} callback - callback to return value\n\t * @param {function} error - callback to report non-existing value or some kind of error"
-            }, 
+                "internal": false,
+                "params": [
+                    {
+                        "name": "name",
+                        "text": "stored item name",
+                        "type": "string"
+                    },
+                    {
+                        "name": "callback",
+                        "text": "callback to return value",
+                        "type": "function"
+                    },
+                    {
+                        "name": "error",
+                        "text": "callback to report non-existing value or some kind of error",
+                        "type": "function"
+                    }
+                ],
+                "text": ""
+            },
             "getOrDefault": {
-                "internal": false, 
-                "text": "* Return stored item by name or default value if not exists\n\t * @param {string} name - stored item name\n\t * @param {function} callback - callback to return value\n\t * @param {Object} defaultValue - default value"
-            }, 
+                "internal": false,
+                "params": [
+                    {
+                        "name": "name",
+                        "text": "stored item name",
+                        "type": "string"
+                    },
+                    {
+                        "name": "callback",
+                        "text": "callback to return value",
+                        "type": "function"
+                    },
+                    {
+                        "name": "defaultValue",
+                        "text": "default value",
+                        "type": "Object"
+                    }
+                ],
+                "text": ""
+            },
             "set": {
-                "internal": false, 
-                "text": "* Save named item\n\t * @param {string} name - item name\n\t * @param {string} value - item value\n\t * @param {function} error - callback to report error"
+                "internal": false,
+                "params": [
+                    {
+                        "name": "name",
+                        "text": "item name",
+                        "type": "string"
+                    },
+                    {
+                        "name": "value",
+                        "text": "item value",
+                        "type": "string"
+                    },
+                    {
+                        "name": "error",
+                        "text": "callback to report error",
+                        "type": "function"
+                    }
+                ],
+                "text": ""
             }
         }
-    }, 
-    "name": "core.LocalStorage", 
-    "text": "simple proxy to underlying storage"
+    },
+    "name": "core.LocalStorage",
+    "text": " simple proxy to underlying storage"
 }

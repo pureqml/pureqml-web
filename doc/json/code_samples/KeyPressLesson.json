@@ -2,11 +2,11 @@
     "content": {
         "Methods": {
             "onClicked": {
-                "internal": false, 
+                "internal": false,
                 "text": ""
             }
         }
-    }, 
-    "name": "code_samples.KeyPressLesson", 
+    },
+    "name": "code_samples.KeyPressLesson",
     "text": ""
 }

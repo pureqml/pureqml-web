@@ -2,11 +2,11 @@
     "content": {
         "Methods": {
             "getTag": {
-                "internal": false, 
+                "internal": false,
                 "text": ""
             }
         }
-    }, 
-    "name": "controls.web.tables.TableFooter", 
+    },
+    "name": "controls.web.tables.TableFooter",
     "text": ""
 }

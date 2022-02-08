@@ -2,121 +2,160 @@
     "content": {
         "Methods": {
             "_animateAll": {
-                "internal": false, 
-                "text": "see backend.js in platform/pure.femto for details"
-            }, 
+                "internal": true,
+                "params": [],
+                "text": "@private instead of animating transform property in Item, animate each property in Transform object unfortunately animations are not const, though it's a good idea to make them so (and save on animation instances) this function is meant to be called from non-html backends to animate transformations. see backend.js in platform/pure.femto for details"
+            },
             "_updateTransform": {
-                "internal": false, 
+                "internal": false,
                 "text": ""
-            }, 
+            },
             "constructor": {
-                "internal": true, 
+                "internal": true,
+                "params": [],
                 "text": "@private"
-            }, 
+            },
             "getAnimation": {
-                "internal": true, 
+                "internal": true,
+                "params": [],
                 "text": "@private"
-            }, 
+            },
             "onPerspectiveChanged": {
-                "internal": false, 
+                "internal": true,
                 "text": ""
-            }, 
+            },
             "onRotateChanged": {
-                "internal": false, 
+                "internal": true,
                 "text": ""
-            }, 
+            },
             "onRotateXChanged": {
-                "internal": false, 
+                "internal": true,
                 "text": ""
-            }, 
+            },
             "onRotateYChanged": {
-                "internal": false, 
+                "internal": true,
                 "text": ""
-            }, 
+            },
             "onRotateZChanged": {
-                "internal": false, 
+                "internal": true,
                 "text": ""
-            }, 
+            },
             "onScaleXChanged": {
-                "internal": false, 
+                "internal": true,
                 "text": ""
-            }, 
+            },
             "onScaleYChanged": {
-                "internal": false, 
+                "internal": true,
                 "text": ""
-            }, 
+            },
             "onSkewXChanged": {
-                "internal": false, 
+                "internal": true,
                 "text": ""
-            }, 
+            },
             "onSkewYChanged": {
-                "internal": false, 
+                "internal": true,
                 "text": ""
-            }, 
+            },
             "onTranslateXChanged": {
-                "internal": false, 
+                "internal": true,
                 "text": ""
-            }, 
+            },
             "onTranslateYChanged": {
-                "internal": false, 
+                "internal": true,
                 "text": ""
-            }, 
+            },
             "onTranslateZChanged": {
-                "internal": false, 
+                "internal": true,
                 "text": ""
             }
-        }, 
+        },
         "Properties": {
             "perspective": {
-                "internal": false, 
-                "text": "perspective transformation"
-            }, 
+                "defaultValue": "",
+                "internal": false,
+                "ref": null,
+                "text": " perspective transformation",
+                "type": "int"
+            },
             "rotate": {
-                "internal": false, 
-                "text": "rotate relative transform point"
-            }, 
+                "defaultValue": "",
+                "internal": false,
+                "ref": null,
+                "text": " rotate relative transform point",
+                "type": "real"
+            },
             "rotateX": {
-                "internal": false, 
-                "text": "x-axis rotation"
-            }, 
+                "defaultValue": "",
+                "internal": false,
+                "ref": null,
+                "text": " x-axis rotation",
+                "type": "real"
+            },
             "rotateY": {
-                "internal": false, 
-                "text": "y-axis rotation"
-            }, 
+                "defaultValue": "",
+                "internal": false,
+                "ref": null,
+                "text": " y-axis rotation",
+                "type": "real"
+            },
             "rotateZ": {
-                "internal": false, 
-                "text": "z-axis rotation"
-            }, 
+                "defaultValue": "",
+                "internal": false,
+                "ref": null,
+                "text": " z-axis rotation",
+                "type": "real"
+            },
             "scaleX": {
-                "internal": false, 
-                "text": "horizontal scale"
-            }, 
+                "defaultValue": "",
+                "internal": false,
+                "ref": null,
+                "text": " horizontal scale",
+                "type": "real"
+            },
             "scaleY": {
-                "internal": false, 
-                "text": "vertical scale"
-            }, 
+                "defaultValue": "",
+                "internal": false,
+                "ref": null,
+                "text": " vertical scale",
+                "type": "real"
+            },
             "skewX": {
-                "internal": false, 
-                "text": "horizontal skew"
-            }, 
+                "defaultValue": "",
+                "internal": false,
+                "ref": null,
+                "text": " horizontal skew",
+                "type": "real"
+            },
             "skewY": {
-                "internal": false, 
-                "text": "vertical skew"
-            }, 
+                "defaultValue": "",
+                "internal": false,
+                "ref": null,
+                "text": " vertical skew",
+                "type": "real"
+            },
             "translateX": {
-                "internal": false, 
-                "text": "x-translate"
-            }, 
+                "defaultValue": "",
+                "internal": false,
+                "ref": null,
+                "text": " x-translate",
+                "type": "int"
+            },
             "translateY": {
-                "internal": false, 
-                "text": "y-translate"
-            }, 
+                "defaultValue": "",
+                "internal": false,
+                "ref": null,
+                "text": " y-translate",
+                "type": "int"
+            },
             "translateZ": {
-                "internal": false, 
-                "text": "z-translate"
+                "defaultValue": "",
+                "internal": false,
+                "ref": null,
+                "text": " z-translate",
+                "type": "int"
             }
         }
-    }, 
-    "name": "core.Transform", 
-    "text": "class controlling object transformation"
+    },
+    "name": "core.Transform",
+    "text": " class controlling object transformation"
 }

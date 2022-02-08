@@ -2,11 +2,11 @@
     "content": {
         "Methods": {
             "fill": {
-                "internal": false, 
+                "internal": false,
                 "text": ""
             }
         }
-    }, 
-    "name": "src.DocViewer", 
+    },
+    "name": "src.DocViewer",
     "text": ""
 }

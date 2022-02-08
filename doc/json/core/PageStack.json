@@ -2,33 +2,43 @@
     "content": {
         "Methods": {
             "_layout": {
-                "internal": true, 
+                "internal": true,
+                "params": [],
                 "text": "@private"
-            }, 
+            },
             "addChild": {
-                "internal": true, 
+                "internal": true,
+                "params": [],
                 "text": "@private"
-            }, 
+            },
             "onActiveFocusChanged": {
-                "internal": true, 
+                "internal": true,
+                "params": [],
                 "text": "@private"
-            }, 
+            },
             "onCurrentIndexChanged": {
-                "internal": true, 
-                "text": "@private"
+                "internal": true,
+                "params": [],
+                "text": "@private  @private"
             }
-        }, 
+        },
         "Properties": {
             "count": {
-                "internal": false, 
-                "text": "childrens count"
-            }, 
+                "defaultValue": "",
+                "internal": false,
+                "ref": null,
+                "text": " childrens count",
+                "type": "int"
+            },
             "currentIndex": {
-                "internal": false, 
-                "text": "index of displaying child"
+                "defaultValue": "",
+                "internal": false,
+                "ref": null,
+                "text": " index of displaying child",
+                "type": "int"
             }
         }
-    }, 
-    "name": "core.PageStack", 
+    },
+    "name": "core.PageStack",
     "text": "layout for displaying one of its children at the time"
 }

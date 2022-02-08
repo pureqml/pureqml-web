@@ -2,63 +2,82 @@
     "content": {
         "Methods": {
             "closeAll": {
-                "internal": false, 
+                "internal": false,
+                "params": [],
                 "text": "close all child activities"
-            }, 
+            },
             "closeParentActivities": {
-                "internal": false, 
+                "internal": false,
+                "params": [],
                 "text": "stop all activities from one common parent"
-            }, 
+            },
             "isAnyActiveInContext": {
-                "internal": false, 
+                "internal": false,
+                "params": [],
                 "text": "checking child activities if there is at least one"
-            }, 
+            },
             "isFragmentActivity": {
-                "internal": true, 
+                "internal": true,
+                "params": [],
                 "text": "@private"
-            }, 
+            },
             "onBackPressed": {
-                "internal": true, 
+                "internal": true,
+                "params": [],
                 "text": "@private"
-            }, 
+            },
             "start": {
-                "internal": false, 
+                "internal": false,
+                "params": [],
                 "text": "start activity"
-            }, 
+            },
             "stop": {
-                "internal": false, 
+                "internal": false,
+                "params": [],
                 "text": "stop activity"
             }
-        }, 
+        },
         "Properties": {
             "active": {
-                "internal": false, 
-                "text": "is current FragmentActivity active or not"
-            }, 
+                "defaultValue": "",
+                "internal": false,
+                "ref": null,
+                "text": " is current FragmentActivity active or not",
+                "type": "bool"
+            },
             "currentActivity": {
-                "internal": false, 
-                "text": "displays current active activity name"
-            }, 
+                "defaultValue": "",
+                "internal": false,
+                "ref": null,
+                "text": " displays current active activity name",
+                "type": "string"
+            },
             "hasAnyActiveChild": {
-                "internal": false, 
-                "text": "is 'true' when corresponded activity has active child"
-            }, 
+                "defaultValue": "als",
+                "internal": false,
+                "ref": null,
+                "text": " is 'true' when corresponded activity has active child",
+                "type": "bool"
+            },
             "name": {
-                "internal": false, 
-                "text": "activity name"
+                "defaultValue": "",
+                "internal": false,
+                "ref": null,
+                "text": " activity name",
+                "type": "string"
             }
-        }, 
+        },
         "Signals": {
             "started": {
-                "internal": false, 
-                "text": "activity was started signal"
-            }, 
+                "internal": false,
+                "text": " activity was started signal"
+            },
             "stopped": {
-                "internal": false, 
-                "text": "activity was stopped signal"
+                "internal": false,
+                "text": " activity was stopped signal"
             }
         }
-    }, 
-    "name": "controls.core.FragmentActivity", 
-    "text": "very usefull for single page applications, aimed to simplify logic between root and children Activities"
+    },
+    "name": "controls.core.FragmentActivity",
+    "text": " very usefull for single page applications, aimed to simplify logic between root and children Activities"
 }

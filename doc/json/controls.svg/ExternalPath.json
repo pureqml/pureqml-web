@@ -2,11 +2,11 @@
     "content": {
         "Methods": {
             "externalTarget": {
-                "internal": false, 
+                "internal": false,
                 "text": ""
             }
         }
-    }, 
-    "name": "controls.svg.ExternalPath", 
+    },
+    "name": "controls.svg.ExternalPath",
     "text": ""
 }

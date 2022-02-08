@@ -2,21 +2,21 @@
     "content": {
         "Alias Properties": {
             "icon": {
-                "internal": false, 
-                "text": "material icon name"
-            }, 
+                "internal": false,
+                "text": " material icon name"
+            },
             "size": {
-                "internal": false, 
-                "text": "material icon size"
+                "internal": false,
+                "text": " material icon size"
             }
-        }, 
+        },
         "Methods": {
             "constructor": {
-                "internal": false, 
+                "internal": true,
                 "text": ""
             }
         }
-    }, 
-    "name": "controls.web.MaterialIcon", 
-    "text": "google material icon control"
+    },
+    "name": "controls.web.MaterialIcon",
+    "text": " google material icon control"
 }

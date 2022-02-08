@@ -2,69 +2,167 @@
     "content": {
         "Methods": {
             "addChild": {
-                "internal": false, 
-                "text": "@param row:Object inserted row object\n\tadd row to the model (alias for 'append' method)"
-            }, 
+                "internal": false,
+                "params": [
+                    {
+                        "name": "row",
+                        "text": "inserted row object",
+                        "type": "Object"
+                    }
+                ],
+                "text": "\tadd row to the model (alias for 'append' method)"
+            },
             "append": {
-                "internal": false, 
-                "text": "@param row:Object inserted row object\n\tadd row to the model"
-            }, 
+                "internal": false,
+                "params": [
+                    {
+                        "name": "row",
+                        "text": "inserted row object",
+                        "type": "Object"
+                    }
+                ],
+                "text": "\tadd row to the model"
+            },
             "assign": {
-                "internal": false, 
-                "text": "@param rows:Object raw rows array object\n\tsetup models row with raw array"
-            }, 
+                "internal": false,
+                "params": [
+                    {
+                        "name": "rows",
+                        "text": "raw rows array object",
+                        "type": "Object"
+                    }
+                ],
+                "text": "\tsetup models row with raw array"
+            },
             "clear": {
-                "internal": false, 
+                "internal": false,
+                "params": [],
                 "text": "clear whole model data"
-            }, 
+            },
             "constructor": {
-                "internal": true, 
+                "internal": true,
+                "params": [],
                 "text": "@private"
-            }, 
+            },
             "forEach": {
-                "internal": false, 
+                "internal": false,
                 "text": ""
-            }, 
+            },
             "get": {
-                "internal": false, 
-                "text": "@param idx:int row's position to get\n\tget row ad 'idx' position"
-            }, 
+                "internal": false,
+                "params": [
+                    {
+                        "name": "idx",
+                        "text": "row's position to get",
+                        "type": "int"
+                    }
+                ],
+                "text": "\tget row ad 'idx' position"
+            },
             "getProperty": {
-                "internal": false, 
-                "text": "@param idx:int row's position to get\n\t@param name:string property to get\n\tget property from row at 'idx' position"
-            }, 
+                "internal": false,
+                "params": [
+                    {
+                        "name": "idx",
+                        "text": "row's position to get",
+                        "type": "int"
+                    },
+                    {
+                        "name": "name",
+                        "text": "property to get",
+                        "type": "string"
+                    }
+                ],
+                "text": "\tget property from row at 'idx' position"
+            },
             "insert": {
-                "internal": false, 
-                "text": "@param row:Object inserted row object\n\t@param idx:int position\n\tinsert row to the model at the 'idx' position"
-            }, 
+                "internal": false,
+                "params": [
+                    {
+                        "name": "row",
+                        "text": "inserted row object",
+                        "type": "Object"
+                    },
+                    {
+                        "name": "idx",
+                        "text": "position",
+                        "type": "int"
+                    }
+                ],
+                "text": "\tinsert row to the model at the 'idx' position"
+            },
             "move": {
-                "internal": false, 
+                "internal": false,
                 "text": ""
-            }, 
+            },
             "onDataChanged": {
-                "internal": false, 
+                "internal": true,
                 "text": ""
-            }, 
+            },
             "remove": {
-                "internal": false, 
-                "text": "@param idx:int row's position to replace\n\t@param n:int rows count to remove\n\tremove 'n' rows from model start from 'idx' index"
-            }, 
+                "internal": false,
+                "params": [
+                    {
+                        "name": "idx",
+                        "text": "row's position to replace",
+                        "type": "int"
+                    },
+                    {
+                        "name": "n",
+                        "text": "rows count to remove",
+                        "type": "int"
+                    }
+                ],
+                "text": "\tremove 'n' rows from model start from 'idx' index"
+            },
             "set": {
-                "internal": false, 
-                "text": "@param row:Object new row value\n\t@param idx:int row's position to replace\n\tset new value to row at 'idx' position"
-            }, 
+                "internal": false,
+                "params": [
+                    {
+                        "name": "row",
+                        "text": "new row value",
+                        "type": "Object"
+                    },
+                    {
+                        "name": "idx",
+                        "text": "row's position to replace",
+                        "type": "int"
+                    }
+                ],
+                "text": "\tset new value to row at 'idx' position"
+            },
             "setProperty": {
-                "internal": false, 
-                "text": "@param idx:int row's position to replace\n\t@param name:string property's name\n\t@param value:Variant new value for the property\n\tchange row at 'idx' position property named 'name' with new 'value'"
+                "internal": false,
+                "params": [
+                    {
+                        "name": "idx",
+                        "text": "row's position to replace",
+                        "type": "int"
+                    },
+                    {
+                        "name": "name",
+                        "text": "property's name",
+                        "type": "string"
+                    },
+                    {
+                        "name": "value",
+                        "text": "new value for the property",
+                        "type": "Variant"
+                    }
+                ],
+                "text": "\tchange row at 'idx' position property named 'name' with new 'value'"
             }
-        }, 
+        },
         "Properties": {
             "data": {
-                "internal": false, 
-                "text": "declarative way of assigning data"
+                "defaultValue": "",
+                "internal": false,
+                "ref": null,
+                "text": " declarative way of assigning data",
+                "type": "array"
             }
         }
-    }, 
-    "name": "core.ListModel", 
+    },
+    "name": "core.ListModel",
     "text": "simple model implementation"
 }

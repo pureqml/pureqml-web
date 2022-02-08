@@ -2,25 +2,31 @@
     "content": {
         "Methods": {
             "_bindPress": {
-                "internal": true, 
+                "internal": true,
+                "params": [],
                 "text": "@private"
-            }, 
+            },
             "constructor": {
-                "internal": true, 
+                "internal": true,
+                "params": [],
                 "text": "@private"
-            }, 
+            },
             "onEnabledChanged": {
-                "internal": true, 
+                "internal": true,
+                "params": [],
                 "text": "@private"
             }
-        }, 
+        },
         "Properties": {
             "pressed": {
-                "internal": false, 
-                "text": "true if any buttons pressed"
+                "defaultValue": "",
+                "internal": false,
+                "ref": null,
+                "text": " true if any buttons pressed",
+                "type": "bool"
             }
         }
-    }, 
-    "name": "core.MousePressMixin", 
-    "text": "this mixin provides mouse press events handling"
+    },
+    "name": "core.MousePressMixin",
+    "text": " this mixin provides mouse press events handling"
 }

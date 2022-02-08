@@ -2,21 +2,24 @@
     "content": {
         "Methods": {
             "constructor": {
-                "internal": false, 
+                "internal": true,
                 "text": ""
-            }, 
+            },
             "onCheckedChanged": {
-                "internal": false, 
+                "internal": true,
                 "text": ""
             }
-        }, 
+        },
         "Properties": {
             "checked": {
-                "internal": false, 
-                "text": "checked flag value"
+                "defaultValue": "als",
+                "internal": false,
+                "ref": null,
+                "text": " checked flag value",
+                "type": "bool"
             }
         }
-    }, 
-    "name": "controls.input.CheckboxInput", 
-    "text": "web browser checkbox"
+    },
+    "name": "controls.input.CheckboxInput",
+    "text": " web browser checkbox"
 }

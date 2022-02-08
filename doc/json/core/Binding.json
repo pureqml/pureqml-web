@@ -2,41 +2,56 @@
     "content": {
         "Methods": {
             "_updateTarget": {
-                "internal": false, 
+                "internal": false,
                 "text": ""
-            }, 
+            },
             "_updateTargetImpl": {
-                "internal": false, 
+                "internal": false,
                 "text": ""
-            }, 
+            },
             "onTargetChanged": {
-                "internal": false, 
+                "internal": true,
                 "text": ""
             }
-        }, 
+        },
         "Properties": {
             "delayed": {
-                "internal": false, 
-                "text": "delays update to the next tick"
-            }, 
+                "defaultValue": "",
+                "internal": false,
+                "ref": null,
+                "text": " delays update to the next tick",
+                "type": "bool"
+            },
             "property": {
-                "internal": false, 
-                "text": "target property"
-            }, 
+                "defaultValue": "",
+                "internal": false,
+                "ref": null,
+                "text": " target property",
+                "type": "string"
+            },
             "target": {
-                "internal": false, 
-                "text": "target object"
-            }, 
+                "defaultValue": "",
+                "internal": false,
+                "ref": null,
+                "text": " target object",
+                "type": "Object"
+            },
             "value": {
-                "internal": false, 
-                "text": "any value"
-            }, 
+                "defaultValue": "",
+                "internal": false,
+                "ref": null,
+                "text": " any value",
+                "type": "var"
+            },
             "when": {
-                "internal": false, 
-                "text": "assign value to target when this condition met"
+                "defaultValue": "ru",
+                "internal": false,
+                "ref": null,
+                "text": " assign value to target when this condition met",
+                "type": "bool"
             }
         }
-    }, 
-    "name": "core.Binding", 
+    },
+    "name": "core.Binding",
     "text": ""
 }

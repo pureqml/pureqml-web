@@ -2,51 +2,59 @@
     "content": {
         "Methods": {
             "_call": {
-                "internal": true, 
+                "internal": true,
+                "params": [],
                 "text": "@private calls invokes args, headers and ajax, then processes result"
-            }, 
+            },
             "_registerMethod": {
-                "internal": true, 
+                "internal": true,
+                "params": [],
                 "text": "@private method registration"
-            }, 
+            },
             "args": {
-                "internal": false, 
+                "internal": false,
+                "params": [],
                 "text": "args function allows to override arguments for all methods, e.g. adding session token"
-            }, 
+            },
             "call": {
-                "internal": true, 
+                "internal": true,
+                "params": [],
                 "text": "@internal top-level call implementation"
-            }, 
+            },
             "constructor": {
-                "internal": false, 
+                "internal": true,
                 "text": ""
-            }, 
+            },
             "headers": {
-                "internal": false, 
+                "internal": false,
+                "params": [],
                 "text": "headers function allows to override headers for all methods, e.g. adding session token"
-            }, 
+            },
             "onError": {
-                "internal": false, 
+                "internal": false,
                 "text": ""
             }
-        }, 
+        },
         "Properties": {
             "baseUrl": {
-                "internal": false, 
-                "text": "base url for all requests"
+                "defaultValue": "",
+                "internal": false,
+                "ref": null,
+                "text": " base url for all requests",
+                "type": "string"
             }
-        }, 
+        },
         "Signals": {
             "error": {
-                "internal": false, 
-                "text": "all errors signalled here"
-            }, 
+                "internal": false,
+                "text": " all errors signalled here"
+            },
             "internetConnectionLost": {
-                "internal": false, 
-                "text": "some platforms signal when internet connection lost, see onError"
+                "internal": false,
+                "text": " some platforms signal when internet connection lost, see onError"
             }
         }
-    }, 
-    "name": "controls.web.api.Rest", 
-    "text": "Root component for REST API declaration.\n\tNormally Rest component contains one or more Method instances.\n\t<pre>\n\t\tRest {\n\t\t\tid: api;\n\t\t\tbaseUrl: \"https://example.com/v1\";\n\n\t\t\tfunction headers(headers) { headers.token = 'secret'; }\n\n\t\t\tMethod { name: \"getList\"; path: \"list/{name}\"; }\n\t\t}\n\t\t//in js:\n\t\tapi.getList(name, function() {...}, function () { ... })\n\t</pre>"
+    },
+    "name": "controls.web.api.Rest",
+    "text": "\n\tRoot component for REST API declaration.\n\tNormally Rest component contains one or more Method instances.\n\t<pre>\n\t\tRest {\n\t\t\tid: api;\n\t\t\tbaseUrl: \"https://example.com/v1\";\n\n\t\t\tfunction headers(headers) { headers.token = 'secret'; }\n\n\t\t\tMethod { name: \"getList\"; path: \"list/{name}\"; }\n\t\t}\n\t\t//in js:\n\t\tapi.getList(name, function() {...}, function () { ... })\n\t</pre>\n"
 }

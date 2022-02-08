@@ -2,103 +2,136 @@
     "content": {
         "Methods": {
             "_cancelDelayedAction": {
-                "internal": true, 
+                "internal": true,
+                "params": [],
                 "text": "@private"
-            }, 
+            },
             "_createPropertyStorage": {
-                "internal": true, 
+                "internal": true,
+                "params": [],
                 "text": "@private creates property storage"
-            }, 
+            },
             "_registerDelayedAction": {
-                "internal": true, 
+                "internal": true,
+                "params": [],
                 "text": "@private"
-            }, 
+            },
             "_removeUpdater": {
-                "internal": true, 
+                "internal": true,
+                "params": [],
                 "text": "@private removes dynamic value updater"
-            }, 
+            },
             "_replaceUpdater": {
-                "internal": true, 
+                "internal": true,
+                "params": [],
                 "text": "@private replaces dynamic value updater"
-            }, 
+            },
             "_setId": {
-                "internal": true, 
+                "internal": true,
+                "params": [],
                 "text": "@private sets id"
-            }, 
+            },
             "_setProperty": {
-                "internal": true, 
+                "internal": true,
+                "params": [],
                 "text": "@internal update property storage directly without animation and with or without signalling."
-            }, 
+            },
             "_tryFocus": {
-                "internal": true, 
+                "internal": true,
+                "params": [],
                 "text": "@private called to test if the component can have focus, generic object cannot be focused, so return false, override it to implement default focus policy"
-            }, 
+            },
             "addChild": {
-                "internal": false, 
-                "text": "@param child:Object object to add\n\tadds child object to children"
-            }, 
+                "internal": false,
+                "params": [
+                    {
+                        "name": "child",
+                        "text": "object to add",
+                        "type": "Object"
+                    }
+                ],
+                "text": "\tadds child object to children"
+            },
             "completed": {
-                "internal": false, 
+                "internal": false,
                 "text": ""
-            }, 
+            },
             "connectOnChanged": {
-                "internal": true, 
+                "internal": true,
+                "params": [],
                 "text": "@private"
-            }, 
+            },
             "constructor": {
-                "internal": false, 
-                "text": "the most basic QML Object, generic event emitter, properties and id links holder"
-            }, 
-            "discard": {
-                "internal": false, 
-                "text": "discard object"
-            }, 
-            "getAnimation": {
-                "internal": false, 
-                "text": "gets animation on given property"
-            }, 
-            "getComponentPath": {
-                "internal": false, 
-                "text": "outputs component path in qml (e.g Rectangle \u2192 Item \u2192 ListItem \u2192 Rectangle)"
-            }, 
-            "onChanged": {
-                "internal": true, 
-                "text": "@private register callback on property's value changed"
-            }, 
-            "prototypeConstructor": {
-                "internal": false, 
+                "internal": true,
                 "text": ""
-            }, 
+            },
+            "discard": {
+                "internal": false,
+                "params": [],
+                "text": "discard object"
+            },
+            "getAnimation": {
+                "internal": false,
+                "params": [],
+                "text": "gets animation on given property"
+            },
+            "getComponentPath": {
+                "internal": false,
+                "params": [],
+                "text": "outputs component path in qml (e.g Rectangle \u2192 Item \u2192 ListItem \u2192 Rectangle)"
+            },
+            "onChanged": {
+                "internal": true,
+                "params": [],
+                "text": "@private register callback on property's value changed"
+            },
+            "prototypeConstructor": {
+                "internal": false,
+                "text": ""
+            },
             "removeAllOnChanged": {
-                "internal": true, 
+                "internal": true,
+                "params": [],
                 "text": "@private removes all on changes connections"
-            }, 
+            },
             "removeChild": {
-                "internal": false, 
-                "text": "@param child:Object object to remove\n\tremoves child object from children"
-            }, 
+                "internal": false,
+                "params": [
+                    {
+                        "name": "child",
+                        "text": "object to remove",
+                        "type": "Object"
+                    }
+                ],
+                "text": "\tremoves child object from children"
+            },
             "removeOnChanged": {
-                "internal": true, 
+                "internal": true,
+                "params": [],
                 "text": "@private removes 'on changed' callback"
-            }, 
+            },
             "resetAnimation": {
-                "internal": false, 
+                "internal": false,
+                "params": [],
                 "text": "resets current animation if any"
-            }, 
+            },
             "setAnimation": {
-                "internal": false, 
+                "internal": false,
+                "params": [],
                 "text": "sets animation on given property"
-            }, 
+            },
             "stopEvent": {
-                "internal": false, 
+                "internal": false,
+                "params": [],
                 "text": "stops event propagation"
-            }, 
+            },
             "updateAnimation": {
-                "internal": false, 
+                "internal": false,
+                "params": [],
                 "text": "updates animation properties on given property"
             }
         }
-    }, 
-    "name": "core.Object", 
+    },
+    "name": "core.Object",
     "text": "the most basic QML Object, generic event emitter, properties and id links holder"
 }

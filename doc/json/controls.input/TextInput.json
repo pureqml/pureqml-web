@@ -2,33 +2,42 @@
     "content": {
         "Methods": {
             "constructor": {
-                "internal": false, 
+                "internal": true,
                 "text": ""
-            }, 
+            },
             "onCursorColorChanged": {
-                "internal": false, 
+                "internal": true,
                 "text": ""
-            }, 
+            },
             "onTextChanged": {
-                "internal": false, 
+                "internal": true,
                 "text": ""
             }
-        }, 
+        },
         "Properties": {
             "cursorColor": {
-                "internal": false, 
-                "text": "cursor color"
-            }, 
+                "defaultValue": "#fff",
+                "internal": false,
+                "ref": null,
+                "text": " cursor color",
+                "type": "Color"
+            },
             "passwordMode": {
-                "internal": false, 
-                "text": "show password chars instead of input text flag property"
-            }, 
+                "defaultValue": "als",
+                "internal": false,
+                "ref": null,
+                "text": " show password chars instead of input text flag property",
+                "type": "bool"
+            },
             "text": {
-                "internal": false, 
-                "text": "input text string property"
+                "defaultValue": "",
+                "internal": false,
+                "ref": null,
+                "text": " input text string property",
+                "type": "string"
             }
         }
-    }, 
-    "name": "controls.input.TextInput", 
+    },
+    "name": "controls.input.TextInput",
     "text": "HTML text input item"
 }

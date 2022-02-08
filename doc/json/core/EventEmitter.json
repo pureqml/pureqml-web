@@ -2,43 +2,44 @@
     "content": {
         "Methods": {
             "connectOn": {
-                "internal": false, 
+                "internal": false,
                 "text": ""
-            }, 
+            },
             "constructor": {
-                "internal": true, 
-                "text": "@private"
-            }, 
+                "internal": true,
+                "text": ""
+            },
             "discard": {
-                "internal": false, 
+                "internal": false,
                 "text": ""
-            }, 
+            },
             "emit": {
-                "internal": false, 
+                "internal": false,
                 "text": ""
-            }, 
+            },
             "emitWithArgs": {
-                "internal": false, 
+                "internal": false,
                 "text": ""
-            }, 
+            },
             "on": {
-                "internal": false, 
+                "internal": false,
                 "text": ""
-            }, 
+            },
             "removeAllListeners": {
-                "internal": false, 
+                "internal": false,
                 "text": ""
-            }, 
+            },
             "removeAllOn": {
-                "internal": true, 
+                "internal": true,
+                "params": [],
                 "text": "@private removes all on(signal) connections"
-            }, 
+            },
             "removeListener": {
-                "internal": false, 
+                "internal": false,
                 "text": ""
             }
         }
-    }, 
-    "name": "core.EventEmitter", 
+    },
+    "name": "core.EventEmitter",
     "text": "@private"
 }

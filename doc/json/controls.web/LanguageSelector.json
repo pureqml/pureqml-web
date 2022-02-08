@@ -2,29 +2,38 @@
     "content": {
         "Methods": {
             "addLanguage": {
-                "internal": false, 
+                "internal": false,
                 "text": ""
-            }, 
+            },
             "setLanguageByIndex": {
-                "internal": false, 
+                "internal": false,
                 "text": ""
             }
-        }, 
+        },
         "Properties": {
             "currentLangCode": {
-                "internal": false, 
-                "text": ""
-            }, 
+                "defaultValue": "",
+                "internal": false,
+                "ref": null,
+                "text": "",
+                "type": "string"
+            },
             "delegateColor": {
-                "internal": false, 
-                "text": ""
-            }, 
+                "defaultValue": "",
+                "internal": false,
+                "ref": null,
+                "text": "",
+                "type": "color"
+            },
             "delegateTextColor": {
-                "internal": false, 
-                "text": ""
+                "defaultValue": "",
+                "internal": false,
+                "ref": null,
+                "text": "",
+                "type": "color"
             }
         }
-    }, 
-    "name": "controls.web.LanguageSelector", 
+    },
+    "name": "controls.web.LanguageSelector",
     "text": ""
 }

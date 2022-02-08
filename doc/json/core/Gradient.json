@@ -2,33 +2,41 @@
     "content": {
         "Methods": {
             "_getDeclaration": {
-                "internal": true, 
+                "internal": true,
+                "params": [],
                 "text": "@private"
-            }, 
+            },
             "_updateStyle": {
-                "internal": true, 
+                "internal": true,
+                "params": [],
                 "text": "@private"
-            }, 
+            },
             "addChild": {
-                "internal": true, 
+                "internal": true,
+                "params": [],
                 "text": "@private"
-            }, 
+            },
             "constructor": {
-                "internal": true, 
+                "internal": true,
+                "params": [],
                 "text": "@private"
-            }, 
+            },
             "onCompleted": {
-                "internal": true, 
+                "internal": true,
+                "params": [],
                 "text": "@private"
             }
-        }, 
+        },
         "Properties": {
             "angle": {
-                "internal": false, 
-                "text": "angle for custom orientated gradient"
+                "defaultValue": "",
+                "internal": false,
+                "ref": null,
+                "text": " angle for custom orientated gradient",
+                "type": "real"
             }
         }
-    }, 
-    "name": "core.Gradient", 
-    "text": "gradient filled area, just place GradientStop in its scope"
+    },
+    "name": "core.Gradient",
+    "text": " gradient filled area, just place GradientStop in its scope"
 }

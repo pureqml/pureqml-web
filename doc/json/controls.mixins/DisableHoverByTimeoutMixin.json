@@ -2,55 +2,71 @@
     "content": {
         "Methods": {
             "_bindMove": {
-                "internal": true, 
+                "internal": true,
+                "params": [],
                 "text": "@private"
-            }, 
+            },
             "_setHover": {
-                "internal": true, 
+                "internal": true,
+                "params": [],
                 "text": "@private"
-            }, 
+            },
             "_updatePosition": {
-                "internal": true, 
+                "internal": true,
+                "params": [],
                 "text": "@private"
-            }, 
+            },
             "constructor": {
-                "internal": true, 
+                "internal": true,
+                "params": [],
                 "text": "@private"
-            }, 
+            },
             "onEnabledChanged": {
-                "internal": true, 
+                "internal": true,
+                "params": [],
                 "text": "@private"
-            }, 
+            },
             "onMouseMove": {
-                "internal": true, 
+                "internal": true,
+                "params": [],
                 "text": "@private"
-            }, 
+            },
             "onValueChanged": {
-                "internal": true, 
+                "internal": true,
+                "params": [],
                 "text": "@private"
             }
-        }, 
+        },
         "Properties": {
             "mouseX": {
-                "internal": false, 
-                "text": ""
-            }, 
+                "defaultValue": "",
+                "internal": false,
+                "ref": null,
+                "text": "",
+                "type": "int"
+            },
             "mouseY": {
-                "internal": false, 
-                "text": ""
-            }, 
+                "defaultValue": "",
+                "internal": false,
+                "ref": null,
+                "text": "",
+                "type": "int"
+            },
             "timeout": {
-                "internal": false, 
-                "text": "timeout delay"
+                "defaultValue": "00",
+                "internal": false,
+                "ref": null,
+                "text": " timeout delay",
+                "type": "int"
             }
-        }, 
+        },
         "Signals": {
             "mouseMove": {
-                "internal": false, 
+                "internal": false,
                 "text": ""
             }
         }
-    }, 
-    "name": "controls.mixins.DisableHoverByTimeoutMixin", 
-    "text": "this mixin turns off hover and activeHover by timeout and could be used for SmartTV's with autohiding cursor"
+    },
+    "name": "controls.mixins.DisableHoverByTimeoutMixin",
+    "text": " this mixin turns off hover and activeHover by timeout and could be used for SmartTV's with autohiding cursor"
 }

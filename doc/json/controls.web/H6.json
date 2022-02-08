@@ -2,15 +2,16 @@
     "content": {
         "Methods": {
             "getTag": {
-                "internal": false, 
+                "internal": false,
+                "params": [],
                 "text": "returns tag for corresponding element"
-            }, 
+            },
             "registerStyle": {
-                "internal": false, 
+                "internal": false,
                 "text": ""
             }
         }
-    }, 
-    "name": "controls.web.H6", 
-    "text": "returns tag for corresponding element"
+    },
+    "name": "controls.web.H6",
+    "text": ""
 }

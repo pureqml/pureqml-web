@@ -2,49 +2,52 @@
     "content": {
         "Methods": {
             "_bindTouch": {
-                "internal": true, 
+                "internal": true,
+                "params": [],
                 "text": "@private"
-            }, 
+            },
             "constructor": {
-                "internal": false, 
+                "internal": true,
                 "text": ""
-            }, 
+            },
             "onEnabledChanged": {
-                "internal": false, 
+                "internal": true,
                 "text": ""
-            }, 
+            },
             "onTouchMove": {
-                "internal": true, 
+                "internal": true,
+                "params": [],
                 "text": "@private"
-            }, 
+            },
             "onTouchStart": {
-                "internal": true, 
+                "internal": true,
+                "params": [],
                 "text": "@private"
             }
-        }, 
+        },
         "Signals": {
             "horizontalSwiped": {
-                "internal": false, 
-                "text": "emitted on horizontal swipe"
-            }, 
+                "internal": false,
+                "text": " emitted on horizontal swipe"
+            },
             "touchEnd": {
-                "internal": true, 
-                "text": "@private"
-            }, 
+                "internal": true,
+                "text": " @private"
+            },
             "touchMove": {
-                "internal": true, 
-                "text": "@private"
-            }, 
+                "internal": true,
+                "text": " @private"
+            },
             "touchStart": {
-                "internal": true, 
-                "text": "@private"
-            }, 
+                "internal": true,
+                "text": " @private"
+            },
             "verticalSwiped": {
-                "internal": false, 
-                "text": "emitted on vertical swipe"
+                "internal": false,
+                "text": " emitted on vertical swipe"
             }
         }
-    }, 
-    "name": "controls.mixins.SwipeMixin", 
-    "text": "mixin provides touch swipe events"
+    },
+    "name": "controls.mixins.SwipeMixin",
+    "text": " mixin provides touch swipe events"
 }

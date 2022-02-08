@@ -2,85 +2,105 @@
     "content": {
         "Methods": {
             "_buildIndexMap": {
-                "internal": true, 
+                "internal": true,
+                "params": [],
                 "text": "@private"
-            }, 
+            },
             "_findIndex": {
-                "internal": true, 
+                "internal": true,
+                "params": [],
                 "text": "@private"
-            }, 
+            },
             "_insertRows": {
-                "internal": true, 
+                "internal": true,
+                "params": [],
                 "text": "@private"
-            }, 
+            },
             "_removeRows": {
-                "internal": true, 
+                "internal": true,
+                "params": [],
                 "text": "@private"
-            }, 
+            },
             "_updateRows": {
-                "internal": true, 
+                "internal": true,
+                "params": [],
                 "text": "@private"
-            }, 
+            },
             "addChild": {
-                "internal": false, 
+                "internal": false,
+                "params": [],
                 "text": "this method is alias for 'append' method"
-            }, 
+            },
             "append": {
-                "internal": false, 
+                "internal": false,
+                "params": [],
                 "text": "append row to the model"
-            }, 
+            },
             "clear": {
-                "internal": false, 
+                "internal": false,
+                "params": [],
                 "text": "remove all rows"
-            }, 
+            },
             "constructor": {
-                "internal": true, 
+                "internal": true,
+                "params": [],
                 "text": "@private"
-            }, 
+            },
             "get": {
-                "internal": false, 
+                "internal": false,
+                "params": [],
                 "text": "returns a model's row by index, throw exception if index is out of range or if requested row is non-object"
-            }, 
+            },
             "getProperty": {
-                "internal": false, 
+                "internal": false,
+                "params": [],
                 "text": "returns a model's property by index, throw exception if index is out of range or if requested row is non-object"
-            }, 
+            },
             "onCompleted": {
-                "internal": true, 
+                "internal": true,
+                "params": [],
                 "text": "@private"
-            }, 
+            },
             "rebuild": {
-                "internal": false, 
+                "internal": false,
                 "text": ""
-            }, 
+            },
             "remove": {
-                "internal": false, 
+                "internal": false,
+                "params": [],
                 "text": "remove rows from model from 'idx' to 'idx' + 'n' position"
-            }, 
+            },
             "set": {
-                "internal": false, 
+                "internal": false,
+                "params": [],
                 "text": "replace row at 'idx' position by 'row' argument, throws exception if index is out of range or if 'row' isn't Object"
-            }, 
+            },
             "setCompare": {
-                "internal": false, 
+                "internal": false,
+                "params": [],
                 "text": "this method set a comparison function, target model rows are sorted in ascending order according to a comparison function 'cmp'"
-            }, 
+            },
             "setFilter": {
-                "internal": false, 
+                "internal": false,
+                "params": [],
                 "text": "this method set target model rows filter function, 'filter' function must return boolean value, 'true' - when row must be displayed, 'false' otherwise"
-            }, 
+            },
             "setProperty": {
-                "internal": false, 
+                "internal": false,
+                "params": [],
                 "text": "replace a row's property, throws exception if index is out of range or if 'row' isn't Object"
             }
-        }, 
+        },
         "Properties": {
             "target": {
-                "internal": false, 
-                "text": "target model object"
+                "defaultValue": "",
+                "internal": false,
+                "ref": null,
+                "text": " target model object",
+                "type": "Object"
             }
         }
-    }, 
-    "name": "core.ProxyModel", 
+    },
+    "name": "core.ProxyModel",
     "text": "provides target model's filtering and sorting"
 }

@@ -2,37 +2,48 @@
     "content": {
         "Methods": {
             "_updateSize": {
-                "internal": true, 
+                "internal": true,
+                "params": [],
                 "text": "@private"
-            }, 
+            },
             "getTag": {
-                "internal": true, 
+                "internal": true,
+                "params": [],
                 "text": "@private"
-            }, 
+            },
             "onAllowFullScreenChanged": {
-                "internal": true, 
+                "internal": true,
+                "params": [],
                 "text": "@private"
-            }, 
+            },
             "onSourceChanged": {
-                "internal": true, 
+                "internal": true,
+                "params": [],
                 "text": "@private"
-            }, 
+            },
             "onWidthChanged": {
-                "internal": true, 
+                "internal": true,
+                "params": [],
                 "text": "@private"
             }
-        }, 
+        },
         "Properties": {
             "allowFullScreen": {
-                "internal": false, 
-                "text": "allow fullscreen flag"
-            }, 
+                "defaultValue": "",
+                "internal": false,
+                "ref": null,
+                "text": " allow fullscreen flag",
+                "type": "bool"
+            },
             "source": {
-                "internal": false, 
-                "text": "video source URL"
+                "defaultValue": "",
+                "internal": false,
+                "ref": null,
+                "text": " video source URL",
+                "type": "string"
             }
         }
-    }, 
-    "name": "controls.google.YouTube", 
+    },
+    "name": "controls.google.YouTube",
     "text": "item for embedded youtube video"
 }

@@ -2,11 +2,12 @@
     "content": {
         "Methods": {
             "interpolate": {
-                "internal": true, 
+                "internal": true,
+                "params": [],
                 "text": "@private"
             }
         }
-    }, 
-    "name": "core.ColorAnimation", 
+    },
+    "name": "core.ColorAnimation",
     "text": "Animation for color-typed properties"
 }

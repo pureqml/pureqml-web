@@ -2,231 +2,292 @@
     "content": {
         "Methods": {
             "_attach": {
-                "internal": true, 
+                "internal": true,
+                "params": [],
                 "text": "@private"
-            }, 
+            },
             "_createDelegate": {
-                "internal": true, 
+                "internal": true,
+                "params": [],
                 "text": "@private creates delegate in given item slot"
-            }, 
+            },
             "_detach": {
-                "internal": true, 
+                "internal": true,
+                "params": [],
                 "text": "@private"
-            }, 
+            },
             "_discardItem": {
-                "internal": true, 
+                "internal": true,
+                "params": [],
                 "text": "@private"
-            }, 
+            },
             "_insertItems": {
-                "internal": true, 
+                "internal": true,
+                "params": [],
                 "text": "@private"
-            }, 
+            },
             "_onReset": {
-                "internal": true, 
+                "internal": true,
+                "params": [],
                 "text": "@private"
-            }, 
+            },
             "_onRowsChanged": {
-                "internal": true, 
+                "internal": true,
+                "params": [],
                 "text": "@private"
-            }, 
+            },
             "_onRowsInserted": {
-                "internal": true, 
+                "internal": true,
+                "params": [],
                 "text": "@private"
-            }, 
+            },
             "_onRowsRemoved": {
-                "internal": true, 
+                "internal": true,
+                "params": [],
                 "text": "@private"
-            }, 
+            },
             "_processUpdates": {
-                "internal": true, 
+                "internal": true,
+                "params": [],
                 "text": "@private"
-            }, 
+            },
             "_removeItems": {
-                "internal": true, 
+                "internal": true,
+                "params": [],
                 "text": "@private"
-            }, 
+            },
             "_updateDelegate": {
-                "internal": true, 
+                "internal": true,
+                "params": [],
                 "text": "@private"
-            }, 
+            },
             "_updateDelegateIndex": {
-                "internal": true, 
+                "internal": true,
+                "params": [],
                 "text": "@private"
-            }, 
+            },
             "_updateHighlight": {
-                "internal": true, 
+                "internal": true,
+                "params": [],
                 "text": "@private updates highlight"
-            }, 
+            },
             "_updateHighlightForCurrentItem": {
-                "internal": false, 
+                "internal": false,
                 "text": ""
-            }, 
+            },
             "_updateItems": {
-                "internal": true, 
+                "internal": true,
+                "params": [],
                 "text": "@private"
-            }, 
+            },
             "_updateScrollPositions": {
-                "internal": true, 
+                "internal": true,
+                "params": [],
                 "text": "@private silently updates scroll positions, because browser animates scroll"
-            }, 
+            },
             "constructor": {
-                "internal": true, 
+                "internal": true,
+                "params": [],
                 "text": "@private"
-            }, 
+            },
             "discard": {
-                "internal": false, 
+                "internal": false,
                 "text": ""
-            }, 
+            },
             "focusCurrent": {
-                "internal": true, 
+                "internal": true,
+                "params": [],
                 "text": "@private focuses current item"
-            }, 
+            },
             "itemAt": {
-                "internal": false, 
+                "internal": false,
+                "params": [],
                 "text": "returns index of item by x,y coordinates"
-            }, 
+            },
             "itemAtIndex": {
-                "internal": false, 
+                "internal": false,
                 "text": ""
-            }, 
+            },
             "onCompleted": {
-                "internal": false, 
+                "internal": true,
                 "text": ""
-            }, 
+            },
             "onContentXChanged": {
-                "internal": false, 
+                "internal": true,
                 "text": ""
-            }, 
+            },
             "onContentYChanged": {
-                "internal": false, 
+                "internal": true,
                 "text": ""
-            }, 
+            },
             "onCurrentIndexChanged": {
-                "internal": false, 
+                "internal": true,
                 "text": ""
-            }, 
+            },
             "onDelegateChanged": {
-                "internal": false, 
+                "internal": true,
                 "text": ""
-            }, 
+            },
             "onFocusedChildChanged": {
-                "internal": false, 
+                "internal": true,
                 "text": ""
-            }, 
+            },
             "onHeightChanged": {
-                "internal": false, 
+                "internal": true,
                 "text": ""
-            }, 
+            },
             "onHighlightChanged": {
-                "internal": false, 
+                "internal": true,
                 "text": ""
-            }, 
+            },
             "onLayoutFinished": {
-                "internal": false, 
+                "internal": false,
                 "text": ""
-            }, 
+            },
             "onModelChanged": {
-                "internal": false, 
+                "internal": true,
                 "text": ""
-            }, 
+            },
             "onRecursiveVisibleChanged": {
-                "internal": false, 
+                "internal": true,
                 "text": ""
-            }, 
+            },
             "onWidthChanged": {
-                "internal": false, 
+                "internal": true,
                 "text": ""
-            }, 
+            },
             "positionViewAtEndHorizontally": {
-                "internal": false, 
+                "internal": false,
                 "text": ""
-            }, 
+            },
             "positionViewAtEndVertically": {
-                "internal": false, 
+                "internal": false,
                 "text": ""
-            }, 
+            },
             "positionViewAtItemHorizontally": {
-                "internal": false, 
+                "internal": false,
                 "text": ""
-            }, 
+            },
             "positionViewAtItemVertically": {
-                "internal": false, 
+                "internal": false,
                 "text": ""
             }
-        }, 
+        },
         "Properties": {
             "animationDuration": {
-                "internal": false, 
-                "text": ""
-            }, 
+                "defaultValue": "",
+                "internal": false,
+                "ref": null,
+                "text": "",
+                "type": "int"
+            },
             "animationEasing": {
-                "internal": false, 
-                "text": ""
-            }, 
+                "defaultValue": "ease",
+                "internal": false,
+                "ref": null,
+                "text": "",
+                "type": "string"
+            },
             "content": {
-                "internal": false, 
-                "text": ""
-            }, 
+                "defaultValue": "BaseViewContent",
+                "internal": true,
+                "ref": "qmlcore.core/BaseViewContent",
+                "text": " @internal",
+                "type": "BaseViewContent"
+            },
             "contentFollowsCurrentItem": {
-                "internal": false, 
-                "text": "auto-scroll content to current focused item"
-            }, 
+                "defaultValue": "! ${nativeScrolling}",
+                "internal": false,
+                "ref": null,
+                "text": " auto-scroll content to current focused item",
+                "type": "bool"
+            },
             "contentMargin": {
-                "internal": false, 
-                "text": ""
-            }, 
+                "defaultValue": "ContentMargin",
+                "internal": false,
+                "ref": "qmlcore.core/ContentMargin",
+                "text": "",
+                "type": "ContentMargin"
+            },
             "contentX": {
-                "internal": false, 
-                "text": "x offset to visible part of the content surface"
-            }, 
+                "defaultValue": "",
+                "internal": false,
+                "ref": null,
+                "text": " x offset to visible part of the content surface",
+                "type": "int"
+            },
             "contentY": {
-                "internal": false, 
-                "text": "y offset to visible part of the content surface"
-            }, 
+                "defaultValue": "",
+                "internal": false,
+                "ref": null,
+                "text": " y offset to visible part of the content surface",
+                "type": "int"
+            },
             "delegate": {
-                "internal": false, 
-                "text": "delegate - template object, filled with model row"
-            }, 
+                "defaultValue": "",
+                "internal": false,
+                "ref": null,
+                "text": " delegate - template object, filled with model row",
+                "type": "Item"
+            },
             "highlight": {
-                "internal": false, 
-                "text": "an object that follows currentIndex and placed below other elements"
-            }, 
+                "defaultValue": "",
+                "internal": false,
+                "ref": null,
+                "text": " an object that follows currentIndex and placed below other elements",
+                "type": "Item"
+            },
             "model": {
-                "internal": false, 
-                "text": "model object to attach to"
-            }, 
+                "defaultValue": "",
+                "internal": false,
+                "ref": null,
+                "text": " model object to attach to",
+                "type": "Object"
+            },
             "nativeScrolling": {
-                "internal": false, 
-                "text": "allows native scrolling on mobile targets and shows native scrollbars"
-            }, 
+                "defaultValue": "${context.system.device} === ${context.system.Mobile}",
+                "internal": false,
+                "ref": null,
+                "text": " allows native scrolling on mobile targets and shows native scrollbars",
+                "type": "bool"
+            },
             "prerender": {
-                "internal": false, 
-                "text": "allocate additional delegates by viewport (prerender * horizontal/vertical view size) px"
-            }, 
+                "defaultValue": ".",
+                "internal": false,
+                "ref": null,
+                "text": " allocate additional delegates by viewport (prerender * horizontal/vertical view size) px",
+                "type": "real"
+            },
             "scrollingStep": {
-                "internal": false, 
-                "text": "scrolling step"
-            }, 
+                "defaultValue": "",
+                "internal": false,
+                "ref": null,
+                "text": " scrolling step",
+                "type": "int"
+            },
             "visibilityProperty": {
-                "internal": false, 
-                "text": "if this property is false, delegate is not created at all"
+                "defaultValue": "",
+                "internal": false,
+                "ref": null,
+                "text": " if this property is false, delegate is not created at all",
+                "type": "string"
             }
-        }, 
+        },
         "Signals": {
             "layoutFinished": {
-                "internal": false, 
-                "text": "base class for all views, holds content, creates delegates and provides common api"
-            }, 
-            "modelUpdated": {
-                "internal": false, 
+                "internal": false,
                 "text": ""
-            }, 
+            },
+            "modelUpdated": {
+                "internal": false,
+                "text": ""
+            },
             "scrollEvent": {
-                "internal": false, 
+                "internal": false,
                 "text": ""
             }
         }
-    }, 
-    "name": "core.BaseView", 
+    },
+    "name": "core.BaseView",
     "text": "base class for all views, holds content, creates delegates and provides common api"
 }

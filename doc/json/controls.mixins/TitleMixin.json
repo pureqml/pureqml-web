@@ -2,17 +2,20 @@
     "content": {
         "Methods": {
             "onValueChanged": {
-                "internal": false, 
+                "internal": true,
                 "text": ""
             }
-        }, 
+        },
         "Properties": {
             "value": {
-                "internal": false, 
-                "text": ""
+                "defaultValue": "",
+                "internal": false,
+                "ref": null,
+                "text": "",
+                "type": "string"
             }
         }
-    }, 
-    "name": "controls.mixins.TitleMixin", 
+    },
+    "name": "controls.mixins.TitleMixin",
     "text": ""
 }

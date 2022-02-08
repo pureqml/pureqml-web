@@ -2,51 +2,60 @@
     "content": {
         "Alias Properties": {
             "backgroundColor": {
-                "internal": false, 
+                "internal": false,
                 "text": ""
-            }, 
+            },
             "color": {
-                "internal": false, 
+                "internal": false,
                 "text": ""
-            }, 
+            },
             "font": {
-                "internal": false, 
+                "internal": false,
                 "text": ""
-            }, 
+            },
             "horizontalAlignment": {
-                "internal": false, 
+                "internal": false,
                 "text": ""
-            }, 
+            },
             "text": {
-                "internal": false, 
+                "internal": false,
                 "text": ""
             }
-        }, 
+        },
         "Methods": {
             "onPlaceholderChanged": {
-                "internal": false, 
+                "internal": true,
                 "text": ""
-            }, 
+            },
             "removeChar": {
-                "internal": false, 
+                "internal": false,
                 "text": ""
             }
-        }, 
+        },
         "Properties": {
             "cursorVisible": {
-                "internal": false, 
-                "text": ""
-            }, 
+                "defaultValue": "ru",
+                "internal": false,
+                "ref": null,
+                "text": "",
+                "type": "bool"
+            },
             "paddings": {
-                "internal": false, 
-                "text": ""
-            }, 
+                "defaultValue": "Paddings",
+                "internal": false,
+                "ref": null,
+                "text": "",
+                "type": "lazy"
+            },
             "placeholder": {
-                "internal": false, 
-                "text": ""
+                "defaultValue": "",
+                "internal": false,
+                "ref": null,
+                "text": "",
+                "type": "string"
             }
         }
-    }, 
-    "name": "controls.pure.TextEdit", 
+    },
+    "name": "controls.pure.TextEdit",
     "text": ""
 }

@@ -2,55 +2,69 @@
     "content": {
         "Methods": {
             "_load": {
-                "internal": true, 
+                "internal": true,
+                "params": [],
                 "text": "@internal"
-            }, 
+            },
             "discard": {
-                "internal": true, 
+                "internal": true,
+                "params": [],
                 "text": "@private"
-            }, 
+            },
             "discardItem": {
-                "internal": true, 
+                "internal": true,
+                "params": [],
                 "text": "@private"
-            }, 
+            },
             "onCompleted": {
-                "internal": true, 
+                "internal": true,
+                "params": [],
                 "text": "@internal"
-            }, 
+            },
             "onRecursiveVisibleChanged": {
-                "internal": false, 
+                "internal": true,
                 "text": ""
-            }, 
+            },
             "onSourceChanged": {
-                "internal": true, 
+                "internal": true,
+                "params": [],
                 "text": "@internal"
             }
-        }, 
+        },
         "Properties": {
             "item": {
-                "internal": false, 
-                "text": "item for storing requested component"
-            }, 
+                "defaultValue": "",
+                "internal": false,
+                "ref": null,
+                "text": " item for storing requested component",
+                "type": "Object"
+            },
             "source": {
-                "internal": false, 
-                "text": "component's URL"
-            }, 
+                "defaultValue": "",
+                "internal": false,
+                "ref": null,
+                "text": " component's URL",
+                "type": "string"
+            },
             "trace": {
-                "internal": false, 
-                "text": "log loading objects"
+                "defaultValue": "",
+                "internal": false,
+                "ref": null,
+                "text": " log loading objects",
+                "type": "bool"
             }
-        }, 
+        },
         "Signals": {
             "itemCompleted": {
-                "internal": false, 
-                "text": "fires after item onCompleted has been fired and item is fully constructed"
-            }, 
+                "internal": false,
+                "text": " fires after item onCompleted has been fired and item is fully constructed"
+            },
             "loaded": {
-                "internal": false, 
-                "text": "when requested component it loaded event signal"
+                "internal": false,
+                "text": " when requested component it loaded event signal"
             }
         }
-    }, 
-    "name": "core.Loader", 
-    "text": "object that helps loading components dynamically"
+    },
+    "name": "core.Loader",
+    "text": " object that helps loading components dynamically"
 }

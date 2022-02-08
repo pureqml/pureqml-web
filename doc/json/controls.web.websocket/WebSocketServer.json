@@ -2,55 +2,67 @@
     "content": {
         "Methods": {
             "onCompleted": {
-                "internal": false, 
+                "internal": true,
                 "text": ""
-            }, 
+            },
             "send": {
-                "internal": false, 
+                "internal": false,
                 "text": ""
-            }, 
+            },
             "sendMessage": {
-                "internal": false, 
+                "internal": false,
                 "text": ""
-            }, 
+            },
             "start": {
-                "internal": false, 
+                "internal": false,
                 "text": ""
             }
-        }, 
+        },
         "Properties": {
             "autostart": {
-                "internal": false, 
-                "text": ""
-            }, 
+                "defaultValue": "",
+                "internal": false,
+                "ref": null,
+                "text": "",
+                "type": "bool"
+            },
             "ip": {
-                "internal": false, 
-                "text": ""
-            }, 
+                "defaultValue": "",
+                "internal": false,
+                "ref": null,
+                "text": "",
+                "type": "string"
+            },
             "port": {
-                "internal": false, 
-                "text": ""
-            }, 
+                "defaultValue": "",
+                "internal": false,
+                "ref": null,
+                "text": "",
+                "type": "string"
+            },
             "started": {
-                "internal": false, 
-                "text": ""
+                "defaultValue": "",
+                "internal": false,
+                "ref": null,
+                "text": "",
+                "type": "bool"
             }
-        }, 
+        },
         "Signals": {
             "message": {
-                "internal": false, 
+                "internal": false,
                 "text": ""
-            }, 
+            },
             "userConnected": {
-                "internal": false, 
+                "internal": false,
                 "text": ""
-            }, 
+            },
             "userDisconnected": {
-                "internal": false, 
+                "internal": false,
                 "text": ""
             }
         }
-    }, 
-    "name": "controls.web.websocket.WebSocketServer", 
+    },
+    "name": "controls.web.websocket.WebSocketServer",
     "text": ""
 }

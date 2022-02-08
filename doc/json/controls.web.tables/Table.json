@@ -2,33 +2,42 @@
     "content": {
         "Methods": {
             "assign": {
-                "internal": false, 
+                "internal": false,
                 "text": ""
-            }, 
+            },
             "getTag": {
-                "internal": false, 
+                "internal": false,
                 "text": ""
-            }, 
+            },
             "onTextColorChanged": {
-                "internal": false, 
+                "internal": true,
                 "text": ""
             }
-        }, 
+        },
         "Properties": {
             "headerModel": {
-                "internal": false, 
-                "text": ""
-            }, 
+                "defaultValue": "ListModel",
+                "internal": false,
+                "ref": "qmlcore.core/Object",
+                "text": "",
+                "type": "Object"
+            },
             "model": {
-                "internal": false, 
-                "text": ""
-            }, 
+                "defaultValue": "ListModel",
+                "internal": false,
+                "ref": "qmlcore.core/Object",
+                "text": "",
+                "type": "Object"
+            },
             "textColor": {
-                "internal": false, 
-                "text": ""
+                "defaultValue": "",
+                "internal": false,
+                "ref": null,
+                "text": "",
+                "type": "Color"
             }
         }
-    }, 
-    "name": "controls.web.tables.Table", 
+    },
+    "name": "controls.web.tables.Table",
     "text": ""
 }

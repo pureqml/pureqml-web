@@ -2,59 +2,66 @@
     "content": {
         "Methods": {
             "_createDelegate": {
-                "internal": true, 
-                "text": "@private creates delegate in given item slot"
-            }, 
+                "internal": true,
+                "params": [],
+                "text": "fixme: override model update api to make sizes stable  @private creates delegate in given item slot"
+            },
             "_layout": {
-                "internal": false, 
-                "text": "fixme: override model update api to make sizes stable"
-            }, 
+                "internal": true,
+                "params": [],
+                "text": "@private"
+            },
             "_updateOverflow": {
-                "internal": true, 
+                "internal": true,
+                "params": [],
                 "text": "@private"
-            }, 
+            },
             "constructor": {
-                "internal": false, 
+                "internal": true,
                 "text": ""
-            }, 
+            },
             "getItemPosition": {
-                "internal": true, 
+                "internal": true,
+                "params": [],
                 "text": "@private"
-            }, 
+            },
             "indexAt": {
-                "internal": true, 
+                "internal": true,
+                "params": [],
                 "text": "@private"
-            }, 
+            },
             "move": {
-                "internal": true, 
+                "internal": true,
+                "params": [],
                 "text": "@private"
-            }, 
+            },
             "onCompleted": {
-                "internal": false, 
+                "internal": true,
                 "text": ""
-            }, 
+            },
             "onKeyPressed": {
-                "internal": true, 
+                "internal": true,
+                "params": [],
                 "text": "@private"
-            }, 
+            },
             "onNativeScrollingChanged": {
-                "internal": false, 
+                "internal": true,
                 "text": ""
-            }, 
+            },
             "onOrientationChanged": {
-                "internal": false, 
+                "internal": true,
                 "text": ""
-            }, 
+            },
             "positionViewAtEnd": {
-                "internal": false, 
+                "internal": false,
                 "text": ""
-            }, 
+            },
             "positionViewAtIndex": {
-                "internal": false, 
+                "internal": false,
                 "text": ""
             }
         }
-    }, 
-    "name": "core.ListView", 
+    },
+    "name": "core.ListView",
     "text": "single direction (vertical or horizontal) oriented view"
 }

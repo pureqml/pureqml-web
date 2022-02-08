@@ -2,41 +2,55 @@
     "content": {
         "Methods": {
             "constructor": {
-                "internal": true, 
+                "internal": true,
+                "params": [],
                 "text": "@private"
-            }, 
+            },
             "getClass": {
-                "internal": true, 
+                "internal": true,
+                "params": [],
                 "text": "@private"
-            }, 
+            },
             "onColorChanged": {
-                "internal": true, 
+                "internal": true,
+                "params": [],
                 "text": "@private"
-            }, 
+            },
             "onTextChanged": {
-                "internal": true, 
+                "internal": true,
+                "params": [],
                 "text": "@private"
-            }, 
+            },
             "setPlaceholderColor": {
-                "internal": true, 
+                "internal": true,
+                "params": [],
                 "text": "@private"
             }
-        }, 
+        },
         "Properties": {
             "color": {
-                "internal": false, 
-                "text": "placeholder color"
-            }, 
+                "defaultValue": "",
+                "internal": false,
+                "ref": null,
+                "text": " placeholder color",
+                "type": "Color"
+            },
             "font": {
-                "internal": false, 
-                "text": "placeholder font"
-            }, 
+                "defaultValue": "PlaceholderFont",
+                "internal": false,
+                "ref": "qmlcore.core/Font",
+                "text": " placeholder font",
+                "type": "Font"
+            },
             "text": {
-                "internal": false, 
-                "text": "inner text placeholder"
+                "defaultValue": "",
+                "internal": false,
+                "ref": null,
+                "text": " inner text placeholder",
+                "type": "string"
             }
         }
-    }, 
-    "name": "controls.core.PlaceHolder", 
+    },
+    "name": "controls.core.PlaceHolder",
     "text": "placeholder adjustment object for inputs"
 }

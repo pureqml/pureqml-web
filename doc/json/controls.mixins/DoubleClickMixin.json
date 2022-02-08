@@ -2,19 +2,21 @@
     "content": {
         "Methods": {
             "_bindClicked": {
-                "internal": true, 
+                "internal": true,
+                "params": [],
                 "text": "@private"
-            }, 
+            },
             "constructor": {
-                "internal": false, 
-                "text": "This mixin provides mouse double click event detecting"
-            }, 
+                "internal": true,
+                "text": ""
+            },
             "onEnabledChanged": {
-                "internal": true, 
+                "internal": true,
+                "params": [],
                 "text": "@private"
             }
         }
-    }, 
-    "name": "controls.mixins.DoubleClickMixin", 
-    "text": "This mixin provides mouse double click event detecting"
+    },
+    "name": "controls.mixins.DoubleClickMixin",
+    "text": " This mixin provides mouse double click event detecting"
 }

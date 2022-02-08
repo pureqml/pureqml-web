@@ -2,21 +2,24 @@
     "content": {
         "Methods": {
             "onStarted": {
-                "internal": false, 
+                "internal": false,
                 "text": ""
-            }, 
+            },
             "onStopped": {
-                "internal": false, 
+                "internal": false,
                 "text": ""
             }
-        }, 
+        },
         "Properties": {
             "active": {
-                "internal": false, 
-                "text": ""
+                "defaultValue": "",
+                "internal": false,
+                "ref": null,
+                "text": "",
+                "type": "bool"
             }
         }
-    }, 
-    "name": "src.SiteActivity", 
+    },
+    "name": "src.SiteActivity",
     "text": ""
 }

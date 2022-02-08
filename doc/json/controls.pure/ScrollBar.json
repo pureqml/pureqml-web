@@ -2,65 +2,101 @@
     "content": {
         "Methods": {
             "onHeightChanged": {
-                "internal": false, 
+                "internal": true,
                 "text": ""
-            }, 
+            },
             "show": {
-                "internal": false, 
+                "internal": false,
                 "text": ""
             }
-        }, 
+        },
         "Properties": {
             "animationDuration": {
-                "internal": false, 
-                "text": ""
-            }, 
+                "defaultValue": "0",
+                "internal": false,
+                "ref": null,
+                "text": "",
+                "type": "int"
+            },
             "barColor": {
-                "internal": false, 
-                "text": ""
-            }, 
+                "defaultValue": "#fff",
+                "internal": false,
+                "ref": null,
+                "text": "",
+                "type": "Color"
+            },
             "contentHeight": {
-                "internal": false, 
-                "text": ""
-            }, 
+                "defaultValue": "",
+                "internal": false,
+                "ref": null,
+                "text": "",
+                "type": "int"
+            },
             "contentY": {
-                "internal": false, 
-                "text": ""
-            }, 
+                "defaultValue": "",
+                "internal": false,
+                "ref": null,
+                "text": "",
+                "type": "int"
+            },
             "display": {
-                "internal": false, 
-                "text": ""
-            }, 
+                "defaultValue": "als",
+                "internal": false,
+                "ref": null,
+                "text": "",
+                "type": "bool"
+            },
             "displayHeight": {
-                "internal": false, 
-                "text": ""
-            }, 
+                "defaultValue": "",
+                "internal": false,
+                "ref": null,
+                "text": "",
+                "type": "int"
+            },
             "displaySeconds": {
-                "internal": false, 
-                "text": ""
-            }, 
+                "defaultValue": "00",
+                "internal": false,
+                "ref": null,
+                "text": "",
+                "type": "int"
+            },
             "maxContentY": {
-                "internal": false, 
-                "text": ""
-            }, 
+                "defaultValue": "${displayHeight} - ${movingBar.height}",
+                "internal": false,
+                "ref": null,
+                "text": "",
+                "type": "int"
+            },
             "minHeight": {
-                "internal": false, 
-                "text": ""
-            }, 
+                "defaultValue": "",
+                "internal": false,
+                "ref": null,
+                "text": "",
+                "type": "int"
+            },
             "realContentY": {
-                "internal": false, 
-                "text": ""
-            }, 
+                "defaultValue": "${contentHeight} ? ((((- ${contentY}) * 1.0) / ${contentHeight}) * ${displayHeight}) : 0",
+                "internal": false,
+                "ref": null,
+                "text": "",
+                "type": "int"
+            },
             "realHeight": {
-                "internal": false, 
-                "text": ""
-            }, 
+                "defaultValue": "${contentHeight} ? (((${displayHeight} * 1.0) / ${contentHeight}) * ${displayHeight}) : 0",
+                "internal": false,
+                "ref": null,
+                "text": "",
+                "type": "int"
+            },
             "shift": {
-                "internal": false, 
-                "text": ""
+                "defaultValue": "(${realContentY} > ${maxContentY}) ? ${maxContentY} : ${realContentY}",
+                "internal": false,
+                "ref": null,
+                "text": "",
+                "type": "int"
             }
         }
-    }, 
-    "name": "controls.pure.ScrollBar", 
+    },
+    "name": "controls.pure.ScrollBar",
     "text": ""
 }

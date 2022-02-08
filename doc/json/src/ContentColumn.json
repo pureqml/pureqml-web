@@ -2,17 +2,17 @@
     "content": {
         "Methods": {
             "onCompleted": {
-                "internal": false, 
+                "internal": true,
                 "text": ""
             }
-        }, 
+        },
         "Signals": {
             "fillMenu": {
-                "internal": false, 
+                "internal": false,
                 "text": ""
             }
         }
-    }, 
-    "name": "src.ContentColumn", 
+    },
+    "name": "src.ContentColumn",
     "text": ""
 }

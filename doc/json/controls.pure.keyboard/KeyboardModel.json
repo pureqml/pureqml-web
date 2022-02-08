@@ -2,39 +2,39 @@
     "content": {
         "Methods": {
             "fill": {
-                "internal": false, 
+                "internal": false,
                 "text": ""
-            }, 
+            },
             "getCaseIndex": {
-                "internal": false, 
+                "internal": false,
                 "text": ""
-            }, 
+            },
             "onCompleted": {
-                "internal": false, 
+                "internal": true,
                 "text": ""
-            }, 
+            },
             "onLanguageChanged": {
-                "internal": false, 
+                "internal": true,
                 "text": ""
-            }, 
+            },
             "onModeChanged": {
-                "internal": false, 
+                "internal": true,
                 "text": ""
-            }, 
+            },
             "switchCase": {
-                "internal": false, 
+                "internal": false,
                 "text": ""
-            }, 
+            },
             "switchLanguage": {
-                "internal": false, 
+                "internal": false,
                 "text": ""
-            }, 
+            },
             "updateLetters": {
-                "internal": false, 
+                "internal": false,
                 "text": ""
             }
         }
-    }, 
-    "name": "controls.pure.keyboard.KeyboardModel", 
+    },
+    "name": "controls.pure.keyboard.KeyboardModel",
     "text": ""
 }

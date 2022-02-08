@@ -2,33 +2,38 @@
     "content": {
         "Methods": {
             "_resetTouchEvent": {
-                "internal": false, 
+                "internal": false,
                 "text": ""
-            }, 
+            },
             "_setTouchEvent": {
-                "internal": false, 
+                "internal": false,
                 "text": ""
-            }, 
+            },
             "_trueUnlessTouchEvent": {
-                "internal": true, 
+                "internal": true,
+                "params": [],
                 "text": "@private pops touch event flag to skip mouse over later"
-            }, 
+            },
             "constructor": {
-                "internal": true, 
+                "internal": true,
+                "params": [],
                 "text": "@private"
-            }, 
+            },
             "onCursorChanged": {
-                "internal": false, 
+                "internal": true,
                 "text": ""
             }
-        }, 
+        },
         "Properties": {
             "cursor": {
-                "internal": false, 
-                "text": "mouse cursor"
+                "defaultValue": "",
+                "internal": false,
+                "ref": null,
+                "text": " mouse cursor",
+                "type": "string"
             }
         }
-    }, 
-    "name": "core.BaseMouseMixin", 
-    "text": "@private"
+    },
+    "name": "core.BaseMouseMixin",
+    "text": ""
 }

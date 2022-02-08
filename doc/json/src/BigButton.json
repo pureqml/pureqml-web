@@ -2,15 +2,21 @@
     "content": {
         "Properties": {
             "icon": {
-                "internal": false, 
-                "text": ""
-            }, 
+                "defaultValue": "",
+                "internal": false,
+                "ref": null,
+                "text": "",
+                "type": "string"
+            },
             "text": {
-                "internal": false, 
-                "text": ""
+                "defaultValue": "",
+                "internal": false,
+                "ref": null,
+                "text": "",
+                "type": "string"
             }
         }
-    }, 
-    "name": "src.BigButton", 
+    },
+    "name": "src.BigButton",
     "text": ""
 }

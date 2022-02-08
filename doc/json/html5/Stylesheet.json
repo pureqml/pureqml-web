@@ -2,27 +2,27 @@
     "content": {
         "Methods": {
             "addRule": {
-                "internal": false, 
+                "internal": false,
                 "text": ""
-            }, 
+            },
             "allocateClass": {
-                "internal": false, 
+                "internal": false,
                 "text": ""
-            }, 
+            },
             "constructor": {
-                "internal": false, 
+                "internal": true,
                 "text": ""
-            }, 
+            },
             "mangleRule": {
-                "internal": false, 
+                "internal": false,
                 "text": ""
-            }, 
+            },
             "mangleSelector": {
-                "internal": false, 
+                "internal": false,
                 "text": ""
             }
         }
-    }, 
-    "name": "html5.Stylesheet", 
+    },
+    "name": "html5.Stylesheet",
     "text": ""
 }

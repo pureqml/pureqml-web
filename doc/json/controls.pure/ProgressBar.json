@@ -2,11 +2,14 @@
     "content": {
         "Properties": {
             "progress": {
-                "internal": false, 
-                "text": ""
+                "defaultValue": ".",
+                "internal": false,
+                "ref": null,
+                "text": "",
+                "type": "real"
             }
         }
-    }, 
-    "name": "controls.pure.ProgressBar", 
+    },
+    "name": "controls.pure.ProgressBar",
     "text": ""
 }

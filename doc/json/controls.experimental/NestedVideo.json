@@ -2,21 +2,24 @@
     "content": {
         "Methods": {
             "hide": {
-                "internal": false, 
+                "internal": false,
                 "text": ""
-            }, 
+            },
             "showAndPlay": {
-                "internal": false, 
+                "internal": false,
                 "text": ""
             }
-        }, 
+        },
         "Properties": {
             "display": {
-                "internal": false, 
-                "text": ""
+                "defaultValue": "",
+                "internal": false,
+                "ref": null,
+                "text": "",
+                "type": "bool"
             }
         }
-    }, 
-    "name": "controls.experimental.NestedVideo", 
+    },
+    "name": "controls.experimental.NestedVideo",
     "text": ""
 }

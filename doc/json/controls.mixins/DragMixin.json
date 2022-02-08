@@ -2,49 +2,69 @@
     "content": {
         "Methods": {
             "_bindPressed": {
-                "internal": true, 
+                "internal": true,
+                "params": [],
                 "text": "@private"
-            }, 
+            },
             "_downHandler": {
-                "internal": true, 
+                "internal": true,
+                "params": [],
                 "text": "@private"
-            }, 
+            },
             "_moveHandler": {
-                "internal": true, 
+                "internal": true,
+                "params": [],
                 "text": "@private"
-            }, 
+            },
             "constructor": {
-                "internal": true, 
+                "internal": true,
+                "params": [],
                 "text": "@private"
-            }, 
+            },
             "onEnabledChanged": {
-                "internal": true, 
+                "internal": true,
+                "params": [],
                 "text": "@private"
             }
-        }, 
+        },
         "Properties": {
             "bottom": {
-                "internal": false, 
-                "text": "bottom border"
-            }, 
+                "defaultValue": "",
+                "internal": false,
+                "ref": null,
+                "text": " bottom border",
+                "type": "int"
+            },
             "left": {
-                "internal": false, 
-                "text": "left border"
-            }, 
+                "defaultValue": "",
+                "internal": false,
+                "ref": null,
+                "text": " left border",
+                "type": "int"
+            },
             "pressed": {
-                "internal": false, 
-                "text": "is mouse pressed flag"
-            }, 
+                "defaultValue": "",
+                "internal": false,
+                "ref": null,
+                "text": " is mouse pressed flag",
+                "type": "bool"
+            },
             "right": {
-                "internal": false, 
-                "text": "right border"
-            }, 
+                "defaultValue": "",
+                "internal": false,
+                "ref": null,
+                "text": " right border",
+                "type": "int"
+            },
             "top": {
-                "internal": false, 
-                "text": "top border"
+                "defaultValue": "",
+                "internal": false,
+                "ref": null,
+                "text": " top border",
+                "type": "int"
             }
         }
-    }, 
-    "name": "controls.mixins.DragMixin", 
-    "text": "makes parent item dragable"
+    },
+    "name": "controls.mixins.DragMixin",
+    "text": " makes parent item dragable"
 }

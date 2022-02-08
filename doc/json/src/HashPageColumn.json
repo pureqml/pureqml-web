@@ -2,17 +2,20 @@
     "content": {
         "Methods": {
             "onHashChanged": {
-                "internal": false, 
+                "internal": true,
                 "text": ""
             }
-        }, 
+        },
         "Properties": {
             "hash": {
-                "internal": false, 
-                "text": ""
+                "defaultValue": "",
+                "internal": false,
+                "ref": null,
+                "text": "",
+                "type": "string"
             }
         }
-    }, 
-    "name": "src.HashPageColumn", 
+    },
+    "name": "src.HashPageColumn",
     "text": ""
 }

@@ -2,27 +2,43 @@
     "content": {
         "Methods": {
             "_layout": {
-                "internal": true, 
+                "internal": true,
+                "params": [],
                 "text": "@private"
-            }, 
+            },
             "chooseCurrentPage": {
-                "internal": false, 
+                "internal": false,
+                "params": [],
                 "text": "set focus on current LazyPage content"
-            }, 
+            },
             "getPageIndexByName": {
-                "internal": false, 
-                "text": "@param name:string page name\n\tfind page index in pagestack by its name"
-            }, 
+                "internal": false,
+                "params": [
+                    {
+                        "name": "name",
+                        "text": "page name",
+                        "type": "string"
+                    }
+                ],
+                "text": "\tfind page index in pagestack by its name"
+            },
             "setState": {
-                "internal": false, 
+                "internal": false,
                 "text": ""
-            }, 
+            },
             "showPageByName": {
-                "internal": false, 
-                "text": "@param name:string page name\n\tshow page by its name"
+                "internal": false,
+                "params": [
+                    {
+                        "name": "name",
+                        "text": "page name",
+                        "type": "string"
+                    }
+                ],
+                "text": "\tshow page by its name"
             }
         }
-    }, 
-    "name": "controls.core.LazyPageStack", 
-    "text": "PageStack which pages will be initialized only after opening. Wrap your pages in LazyPage component."
+    },
+    "name": "controls.core.LazyPageStack",
+    "text": " PageStack which pages will be initialized only after opening. Wrap your pages in LazyPage component."
 }

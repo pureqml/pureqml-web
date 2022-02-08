@@ -2,15 +2,15 @@
     "content": {
         "Methods": {
             "constructor": {
-                "internal": false, 
+                "internal": true,
                 "text": ""
-            }, 
+            },
             "onColorChanged": {
-                "internal": false, 
+                "internal": true,
                 "text": ""
             }
         }
-    }, 
-    "name": "controls.input.ColorInput", 
+    },
+    "name": "controls.input.ColorInput",
     "text": "color selecting input"
 }

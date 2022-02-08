@@ -2,11 +2,14 @@
     "content": {
         "Properties": {
             "model": {
-                "internal": false, 
-                "text": ""
+                "defaultValue": "",
+                "internal": false,
+                "ref": null,
+                "text": "",
+                "type": "Model"
             }
         }
-    }, 
-    "name": "controls.input.ComboBoxInput", 
+    },
+    "name": "controls.input.ComboBoxInput",
     "text": ""
 }

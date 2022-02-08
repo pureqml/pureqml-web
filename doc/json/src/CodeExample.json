@@ -2,37 +2,52 @@
     "content": {
         "Methods": {
             "onRecursiveVisibleChanged": {
-                "internal": false, 
+                "internal": true,
                 "text": ""
-            }, 
+            },
             "onSampleChanged": {
-                "internal": false, 
+                "internal": true,
                 "text": ""
             }
-        }, 
+        },
         "Properties": {
             "codeHeight": {
-                "internal": false, 
-                "text": ""
-            }, 
+                "defaultValue": "0",
+                "internal": false,
+                "ref": null,
+                "text": "",
+                "type": "int"
+            },
             "codeWidth": {
-                "internal": false, 
-                "text": ""
-            }, 
+                "defaultValue": "0",
+                "internal": false,
+                "ref": null,
+                "text": "",
+                "type": "int"
+            },
             "exampleHeight": {
-                "internal": false, 
-                "text": ""
-            }, 
+                "defaultValue": "0",
+                "internal": false,
+                "ref": null,
+                "text": "",
+                "type": "int"
+            },
             "exampleWidth": {
-                "internal": false, 
-                "text": ""
-            }, 
+                "defaultValue": "0",
+                "internal": false,
+                "ref": null,
+                "text": "",
+                "type": "int"
+            },
             "sample": {
-                "internal": false, 
-                "text": ""
+                "defaultValue": "",
+                "internal": false,
+                "ref": null,
+                "text": "",
+                "type": "Item"
             }
         }
-    }, 
-    "name": "src.CodeExample", 
+    },
+    "name": "src.CodeExample",
     "text": ""
 }

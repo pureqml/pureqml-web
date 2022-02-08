@@ -2,311 +2,432 @@
     "content": {
         "Methods": {
             "_attachElement": {
-                "internal": false, 
+                "internal": false,
                 "text": ""
-            }, 
+            },
             "_createElement": {
-                "internal": false, 
+                "internal": false,
+                "params": [],
                 "text": "default implementation of element creation routine."
-            }, 
+            },
             "_enqueueNextChildInFocusChain": {
-                "internal": true, 
+                "internal": true,
+                "params": [],
                 "text": "@private"
-            }, 
+            },
             "_focusChild": {
-                "internal": true, 
+                "internal": true,
+                "params": [],
                 "text": "@private"
-            }, 
+            },
             "_focusTree": {
-                "internal": true, 
+                "internal": true,
+                "params": [],
                 "text": "@private focus subtree of current focused child"
-            }, 
+            },
             "_processKey": {
-                "internal": true, 
+                "internal": true,
+                "params": [],
                 "text": "@private"
-            }, 
+            },
             "_propagateFocusToParents": {
-                "internal": true, 
+                "internal": true,
+                "params": [],
                 "text": "@private propagates focus to parent, if not set there"
-            }, 
+            },
             "_setSizeAdjust": {
-                "internal": true, 
+                "internal": true,
+                "params": [],
                 "text": "@private"
-            }, 
+            },
             "_tryFocus": {
-                "internal": true, 
+                "internal": true,
+                "params": [],
                 "text": "@private tries to focus children or item itself"
-            }, 
+            },
             "_updateOverflow": {
-                "internal": true, 
+                "internal": true,
+                "params": [],
                 "text": "@private"
-            }, 
+            },
             "_updateStyle": {
-                "internal": true, 
+                "internal": true,
+                "params": [],
                 "text": "@private"
-            }, 
+            },
             "_updateVisibility": {
-                "internal": true, 
+                "internal": true,
+                "params": [],
                 "text": "@private"
-            }, 
+            },
             "_updateVisibilityForChild": {
-                "internal": true, 
+                "internal": true,
+                "params": [],
                 "text": "@private"
-            }, 
+            },
             "addChild": {
-                "internal": true, 
+                "internal": true,
+                "params": [],
                 "text": "@private adds child, focus it if child accepts focus"
-            }, 
+            },
             "constructor": {
-                "internal": false, 
+                "internal": true,
                 "text": ""
-            }, 
+            },
             "discard": {
-                "internal": true, 
+                "internal": true,
+                "params": [],
                 "text": "@private release any held resources, including connections, delegates, etc"
-            }, 
+            },
             "focusChild": {
-                "internal": true, 
+                "internal": true,
+                "params": [],
                 "text": "@private"
-            }, 
+            },
             "forceActiveFocus": {
-                "internal": true, 
+                "internal": true,
+                "params": [],
                 "text": "@private sets current global focus to component"
-            }, 
+            },
             "getClass": {
-                "internal": false, 
+                "internal": false,
+                "params": [],
                 "text": "returns tag for corresponding element"
-            }, 
+            },
             "getTag": {
-                "internal": false, 
+                "internal": false,
+                "params": [],
                 "text": "returns tag for corresponding element"
-            }, 
+            },
             "hasActiveFocus": {
-                "internal": true, 
+                "internal": true,
+                "params": [],
                 "text": "@private returns status of global focus"
-            }, 
+            },
             "invokeKeyHandlers": {
-                "internal": true, 
+                "internal": true,
+                "params": [],
                 "text": "@private"
-            }, 
+            },
             "onClipChanged": {
-                "internal": false, 
+                "internal": true,
                 "text": ""
-            }, 
+            },
             "onCssNullTranslate3DChanged": {
-                "internal": false, 
+                "internal": true,
                 "text": ""
-            }, 
+            },
             "onCssPointerTouchEventsChanged": {
-                "internal": false, 
+                "internal": true,
                 "text": ""
-            }, 
+            },
             "onFocusChanged": {
-                "internal": false, 
+                "internal": true,
                 "text": ""
-            }, 
+            },
             "onFullscreenChanged": {
-                "internal": false, 
+                "internal": true,
                 "text": ""
-            }, 
+            },
             "onHeightChanged": {
-                "internal": false, 
+                "internal": true,
                 "text": ""
-            }, 
+            },
             "onOpacityChanged": {
-                "internal": false, 
+                "internal": true,
                 "text": ""
-            }, 
+            },
             "onPressed": {
-                "internal": true, 
+                "internal": true,
+                "params": [],
                 "text": "@private registers key handler"
-            }, 
+            },
             "onRecursiveVisibleChanged": {
-                "internal": false, 
+                "internal": true,
                 "text": ""
-            }, 
+            },
             "onVisibleChanged": {
-                "internal": false, 
+                "internal": true,
                 "text": ""
-            }, 
+            },
             "onVisibleInViewChanged": {
-                "internal": false, 
+                "internal": true,
                 "text": ""
-            }, 
+            },
             "onWidthChanged": {
-                "internal": false, 
+                "internal": true,
                 "text": ""
-            }, 
+            },
             "onXChanged": {
-                "internal": false, 
+                "internal": true,
                 "text": ""
-            }, 
+            },
             "onYChanged": {
-                "internal": false, 
+                "internal": true,
                 "text": ""
-            }, 
+            },
             "onZChanged": {
-                "internal": false, 
+                "internal": true,
                 "text": ""
-            }, 
+            },
             "registerStyle": {
-                "internal": true, 
+                "internal": true,
+                "params": [],
                 "text": "@private"
-            }, 
+            },
             "setFocus": {
-                "internal": false, 
+                "internal": false,
+                "params": [],
                 "text": "focus this item"
-            }, 
+            },
             "style": {
-                "internal": true, 
+                "internal": true,
+                "params": [],
                 "text": "@private passes style (or styles { a:, b:, c: ... }) to underlying element"
-            }, 
+            },
             "toScreen": {
-                "internal": false, 
+                "internal": false,
+                "params": [],
                 "text": "map relative component coordinates to absolute screen ones"
             }
-        }, 
+        },
         "Properties": {
             "activeFocus": {
-                "internal": false, 
-                "text": "this item can receive events and really focused at this moment"
-            }, 
+                "defaultValue": "",
+                "internal": false,
+                "ref": null,
+                "text": " this item can receive events and really focused at this moment",
+                "type": "bool"
+            },
             "anchors": {
-                "internal": false, 
-                "text": ""
-            }, 
+                "defaultValue": "Anchors",
+                "internal": false,
+                "ref": null,
+                "text": "",
+                "type": "lazy"
+            },
             "bottom": {
-                "internal": false, 
-                "text": ""
-            }, 
+                "defaultValue": "{ return [this, 3]; ",
+                "internal": false,
+                "ref": null,
+                "text": "",
+                "type": "const"
+            },
             "clip": {
-                "internal": false, 
-                "text": "clip all children outside rectangular area defined by x, y, width, height"
-            }, 
+                "defaultValue": "",
+                "internal": false,
+                "ref": null,
+                "text": " clip all children outside rectangular area defined by x, y, width, height",
+                "type": "bool"
+            },
             "cssDelegateAlwaysVisibleOnAcceleratedSurfaces": {
-                "internal": false, 
-                "text": ""
-            }, 
+                "defaultValue": "ru",
+                "internal": false,
+                "ref": null,
+                "text": "",
+                "type": "bool"
+            },
             "cssNullTranslate3D": {
-                "internal": false, 
-                "text": ""
-            }, 
+                "defaultValue": "",
+                "internal": false,
+                "ref": null,
+                "text": "",
+                "type": "bool"
+            },
             "cssPointerTouchEvents": {
-                "internal": false, 
-                "text": ""
-            }, 
+                "defaultValue": "als",
+                "internal": false,
+                "ref": null,
+                "text": "",
+                "type": "bool"
+            },
             "cssTranslatePositioning": {
-                "internal": false, 
-                "text": ""
-            }, 
+                "defaultValue": "",
+                "internal": false,
+                "ref": null,
+                "text": "",
+                "type": "bool"
+            },
             "effects": {
-                "internal": false, 
-                "text": ""
-            }, 
+                "defaultValue": "Effects",
+                "internal": false,
+                "ref": null,
+                "text": "",
+                "type": "lazy"
+            },
             "focus": {
-                "internal": false, 
-                "text": "this item can be focused"
-            }, 
+                "defaultValue": "",
+                "internal": false,
+                "ref": null,
+                "text": " this item can be focused",
+                "type": "bool"
+            },
             "focused": {
-                "internal": false, 
-                "text": "this item is focused among its siblings"
-            }, 
+                "defaultValue": "",
+                "internal": false,
+                "ref": null,
+                "text": " this item is focused among its siblings",
+                "type": "bool"
+            },
             "focusedChild": {
-                "internal": false, 
-                "text": "current focused item (this item only)"
-            }, 
+                "defaultValue": "",
+                "internal": false,
+                "ref": null,
+                "text": " current focused item (this item only)",
+                "type": "Item"
+            },
             "fullscreen": {
-                "internal": false, 
-                "text": "fullscreen mode enabled / disabled"
-            }, 
+                "defaultValue": "",
+                "internal": false,
+                "ref": null,
+                "text": " fullscreen mode enabled / disabled",
+                "type": "bool"
+            },
             "height": {
-                "internal": false, 
-                "text": "height of visible area"
-            }, 
+                "defaultValue": "",
+                "internal": false,
+                "ref": null,
+                "text": " height of visible area",
+                "type": "int"
+            },
             "horizontalCenter": {
-                "internal": false, 
-                "text": ""
-            }, 
+                "defaultValue": "{ return [this, 4]; ",
+                "internal": false,
+                "ref": null,
+                "text": "",
+                "type": "const"
+            },
             "keyProcessDelay": {
-                "internal": false, 
-                "text": "delay time between key pressed events"
-            }, 
+                "defaultValue": "",
+                "internal": false,
+                "ref": null,
+                "text": " delay time between key pressed events",
+                "type": "int"
+            },
             "left": {
-                "internal": false, 
-                "text": ""
-            }, 
+                "defaultValue": "\t{ return [this, 0]; ",
+                "internal": false,
+                "ref": null,
+                "text": "",
+                "type": "const"
+            },
             "opacity": {
-                "internal": false, 
-                "text": "opacity of the item"
-            }, 
+                "defaultValue": "",
+                "internal": false,
+                "ref": null,
+                "text": " opacity of the item",
+                "type": "real"
+            },
             "radius": {
-                "internal": false, 
-                "text": "round corner radius(es), allow forwarding, e.g. item.radius: 5;"
-            }, 
+                "defaultValue": "Radius",
+                "internal": false,
+                "ref": null,
+                "text": " round corner radius(es), allow forwarding, e.g. item.radius: 5;",
+                "type": "lazy"
+            },
             "recursiveVisible": {
-                "internal": false, 
-                "text": "this item is actually visible on screen (all parents are visible as well)"
-            }, 
+                "defaultValue": "als",
+                "internal": false,
+                "ref": null,
+                "text": " this item is actually visible on screen (all parents are visible as well)",
+                "type": "bool"
+            },
             "right": {
-                "internal": false, 
-                "text": ""
-            }, 
+                "defaultValue": "{ return [this, 2]; ",
+                "internal": false,
+                "ref": null,
+                "text": "",
+                "type": "const"
+            },
             "top": {
-                "internal": false, 
-                "text": ""
-            }, 
+                "defaultValue": "\t{ return [this, 1]; ",
+                "internal": false,
+                "ref": null,
+                "text": "",
+                "type": "const"
+            },
             "transform": {
-                "internal": false, 
-                "text": ""
-            }, 
+                "defaultValue": "Transform",
+                "internal": false,
+                "ref": null,
+                "text": "",
+                "type": "lazy"
+            },
             "verticalCenter": {
-                "internal": false, 
-                "text": ""
-            }, 
+                "defaultValue": "\t{ return [this, 5]; ",
+                "internal": false,
+                "ref": null,
+                "text": "",
+                "type": "const"
+            },
             "viewX": {
-                "internal": false, 
-                "text": "x position in view (if any)"
-            }, 
+                "defaultValue": "",
+                "internal": false,
+                "ref": null,
+                "text": " x position in view (if any)",
+                "type": "int"
+            },
             "viewY": {
-                "internal": false, 
-                "text": "y position in view (if any)"
-            }, 
+                "defaultValue": "",
+                "internal": false,
+                "ref": null,
+                "text": " y position in view (if any)",
+                "type": "int"
+            },
             "visible": {
-                "internal": false, 
-                "text": "this item and its children are visible"
-            }, 
+                "defaultValue": "ru",
+                "internal": false,
+                "ref": null,
+                "text": " this item and its children are visible",
+                "type": "bool"
+            },
             "visibleInView": {
-                "internal": false, 
-                "text": "this item is visible inside view content area"
-            }, 
+                "defaultValue": "ru",
+                "internal": false,
+                "ref": null,
+                "text": " this item is visible inside view content area",
+                "type": "bool"
+            },
             "width": {
-                "internal": false, 
-                "text": "width of visible area"
-            }, 
+                "defaultValue": "",
+                "internal": false,
+                "ref": null,
+                "text": " width of visible area",
+                "type": "int"
+            },
             "x": {
-                "internal": false, 
-                "text": "x coordinate"
-            }, 
+                "defaultValue": "",
+                "internal": false,
+                "ref": null,
+                "text": " x coordinate",
+                "type": "int"
+            },
             "y": {
-                "internal": false, 
-                "text": "y coordinate"
-            }, 
+                "defaultValue": "",
+                "internal": false,
+                "ref": null,
+                "text": " y coordinate",
+                "type": "int"
+            },
             "z": {
-                "internal": false, 
-                "text": "z coordinate"
+                "defaultValue": "",
+                "internal": false,
+                "ref": null,
+                "text": " z coordinate",
+                "type": "int"
             }
-        }, 
+        },
         "Signals": {
             "anchorsMarginsUpdated": {
-                "internal": false, 
-                "text": "emitted when anchors margins have been changed"
-            }, 
+                "internal": false,
+                "text": " emitted when anchors margins have been changed"
+            },
             "newBoundingBox": {
-                "internal": false, 
-                "text": "emitted when position or size changed"
+                "internal": false,
+                "text": " emitted when position or size changed"
             }
         }
-    }, 
-    "name": "core.Item", 
-    "text": "base component for every visible objects."
+    },
+    "name": "core.Item",
+    "text": " base component for every visible objects."
 }

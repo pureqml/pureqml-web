@@ -2,61 +2,78 @@
     "content": {
         "Methods": {
             "_bindClick": {
-                "internal": true, 
+                "internal": true,
+                "params": [],
                 "text": "@private"
-            }, 
+            },
             "_bindHover": {
-                "internal": true, 
+                "internal": true,
+                "params": [],
                 "text": "@private"
-            }, 
+            },
             "_bindPressable": {
-                "internal": true, 
+                "internal": true,
+                "params": [],
                 "text": "@private"
-            }, 
+            },
             "_bindWheel": {
-                "internal": true, 
+                "internal": true,
+                "params": [],
                 "text": "@private"
-            }, 
+            },
             "constructor": {
-                "internal": true, 
+                "internal": true,
+                "params": [],
                 "text": "@private"
-            }, 
+            },
             "onClickableChanged": {
-                "internal": false, 
+                "internal": true,
                 "text": ""
-            }, 
+            },
             "onHoverableChanged": {
-                "internal": false, 
+                "internal": true,
                 "text": ""
-            }, 
+            },
             "onPressableChanged": {
-                "internal": false, 
+                "internal": true,
                 "text": ""
-            }, 
+            },
             "updatePosition": {
-                "internal": false, 
+                "internal": false,
                 "text": ""
             }
-        }, 
+        },
         "Properties": {
             "clickable": {
-                "internal": false, 
-                "text": "enable mouse click event handling flag"
-            }, 
+                "defaultValue": "ru",
+                "internal": false,
+                "ref": null,
+                "text": " enable mouse click event handling flag",
+                "type": "bool"
+            },
             "hoverable": {
-                "internal": false, 
-                "text": "hoverEnabled property alias"
-            }, 
+                "defaultValue": "ru",
+                "internal": false,
+                "ref": null,
+                "text": " hoverEnabled property alias",
+                "type": "bool"
+            },
             "pressable": {
-                "internal": false, 
-                "text": "enable mouse click event handling flag"
-            }, 
+                "defaultValue": "ru",
+                "internal": false,
+                "ref": null,
+                "text": " enable mouse click event handling flag",
+                "type": "bool"
+            },
             "wheelEnabled": {
-                "internal": false, 
-                "text": "enable mouse click event handling flag"
+                "defaultValue": "ru",
+                "internal": false,
+                "ref": null,
+                "text": " enable mouse click event handling flag",
+                "type": "bool"
             }
         }
-    }, 
-    "name": "controls.mixins.MouseMixin", 
-    "text": "Provide mouse signals: clicked, mouseMove, wheel. And properties: mouseX, mouseY, hover, pressed"
+    },
+    "name": "controls.mixins.MouseMixin",
+    "text": " Provide mouse signals: clicked, mouseMove, wheel. And properties: mouseX, mouseY, hover, pressed"
 }

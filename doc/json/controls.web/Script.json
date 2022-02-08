@@ -2,51 +2,56 @@
     "content": {
         "Methods": {
             "_delayedLoad": {
-                "internal": true, 
+                "internal": true,
+                "params": [],
                 "text": "@private"
-            }, 
+            },
             "constructor": {
-                "internal": false, 
+                "internal": true,
                 "text": ""
-            }, 
+            },
             "discard": {
-                "internal": true, 
+                "internal": true,
+                "params": [],
                 "text": "@private"
-            }, 
+            },
             "getTag": {
-                "internal": false, 
+                "internal": false,
                 "text": ""
-            }, 
+            },
             "load": {
-                "internal": false, 
+                "internal": false,
                 "text": ""
-            }, 
+            },
             "on": {
-                "internal": false, 
+                "internal": false,
                 "text": ""
-            }, 
+            },
             "onCompleted": {
-                "internal": false, 
+                "internal": true,
                 "text": ""
-            }, 
+            },
             "onSourceChanged": {
-                "internal": false, 
+                "internal": true,
                 "text": ""
             }
-        }, 
+        },
         "Properties": {
             "source": {
-                "internal": false, 
-                "text": "source to load script from"
+                "defaultValue": "",
+                "internal": false,
+                "ref": null,
+                "text": " source to load script from",
+                "type": "string"
             }
-        }, 
+        },
         "Signals": {
             "loaded": {
-                "internal": false, 
-                "text": "signal emitted when script loaded"
+                "internal": false,
+                "text": " signal emitted when script loaded"
             }
         }
-    }, 
-    "name": "controls.web.Script", 
-    "text": "@private"
+    },
+    "name": "controls.web.Script",
+    "text": ""
 }

@@ -2,57 +2,77 @@
     "content": {
         "Methods": {
             "_getValue": {
-                "internal": false, 
+                "internal": false,
+                "params": [],
                 "text": "gets element native value"
-            }, 
+            },
             "_setValue": {
-                "internal": false, 
+                "internal": false,
+                "params": [],
                 "text": "sets element native value"
-            }, 
+            },
             "constructor": {
-                "internal": true, 
+                "internal": true,
+                "params": [],
                 "text": "@private"
-            }, 
+            },
             "getTag": {
-                "internal": false, 
+                "internal": false,
+                "params": [],
                 "text": "returns tag for corresponding element"
-            }, 
+            },
             "onMaxChanged": {
-                "internal": true, 
+                "internal": true,
+                "params": [],
                 "text": "@private"
-            }, 
+            },
             "onMinChanged": {
-                "internal": true, 
+                "internal": true,
+                "params": [],
                 "text": "@private"
-            }, 
+            },
             "onOrientationChanged": {
-                "internal": true, 
+                "internal": true,
+                "params": [],
                 "text": "@private"
-            }, 
+            },
             "onStepChanged": {
-                "internal": true, 
+                "internal": true,
+                "params": [],
                 "text": "@private"
             }
-        }, 
+        },
         "Properties": {
             "max": {
-                "internal": false, 
-                "text": "maximum range value"
-            }, 
+                "defaultValue": "0",
+                "internal": false,
+                "ref": null,
+                "text": " maximum range value",
+                "type": "int"
+            },
             "min": {
-                "internal": false, 
-                "text": "minimal range value"
-            }, 
+                "defaultValue": "",
+                "internal": false,
+                "ref": null,
+                "text": " minimal range value",
+                "type": "int"
+            },
             "step": {
-                "internal": false, 
-                "text": "range step"
-            }, 
+                "defaultValue": "",
+                "internal": false,
+                "ref": null,
+                "text": " range step",
+                "type": "int"
+            },
             "value": {
-                "internal": false, 
-                "text": "current value"
+                "defaultValue": "",
+                "internal": false,
+                "ref": null,
+                "text": " current value",
+                "type": "int"
             }
         }
-    }, 
-    "name": "controls.input.RangeInput", 
+    },
+    "name": "controls.input.RangeInput",
     "text": "range input"
 }

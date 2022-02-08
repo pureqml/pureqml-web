@@ -2,31 +2,37 @@
     "content": {
         "Methods": {
             "fillModel": {
-                "internal": false, 
+                "internal": false,
                 "text": ""
-            }, 
+            },
             "onCompleted": {
-                "internal": false, 
+                "internal": true,
                 "text": ""
             }
-        }, 
+        },
         "Properties": {
             "hidable": {
-                "internal": false, 
-                "text": ""
-            }, 
+                "defaultValue": "${context.width} < 860",
+                "internal": false,
+                "ref": null,
+                "text": "",
+                "type": "bool"
+            },
             "open": {
-                "internal": false, 
-                "text": ""
+                "defaultValue": "",
+                "internal": false,
+                "ref": null,
+                "text": "",
+                "type": "bool"
             }
-        }, 
+        },
         "Signals": {
             "optionChosen": {
-                "internal": false, 
+                "internal": false,
                 "text": ""
             }
         }
-    }, 
-    "name": "src.LeftMenu", 
+    },
+    "name": "src.LeftMenu",
     "text": ""
 }

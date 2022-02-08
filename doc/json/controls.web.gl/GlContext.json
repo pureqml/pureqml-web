@@ -2,29 +2,31 @@
     "content": {
         "Methods": {
             "constructor": {
-                "internal": false, 
+                "internal": true,
                 "text": ""
-            }, 
+            },
             "onWidthChanged": {
-                "internal": false, 
+                "internal": true,
                 "text": ""
-            }, 
+            },
             "render": {
-                "internal": true, 
+                "internal": true,
+                "params": [],
                 "text": "@private"
-            }, 
+            },
             "startRender": {
-                "internal": true, 
+                "internal": true,
+                "params": [],
                 "text": "@private"
             }
-        }, 
+        },
         "Signals": {
             "drawScene": {
-                "internal": false, 
-                "text": "triggered on scene rendering with time delta argument"
+                "internal": false,
+                "text": " triggered on scene rendering with time delta argument"
             }
         }
-    }, 
-    "name": "controls.web.gl.GlContext", 
-    "text": "Canvas with initialized WebGl indeside"
+    },
+    "name": "controls.web.gl.GlContext",
+    "text": " Canvas with initialized WebGl indeside"
 }

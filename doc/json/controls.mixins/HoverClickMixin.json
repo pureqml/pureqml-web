@@ -2,53 +2,68 @@
     "content": {
         "Methods": {
             "_bindActiveHover": {
-                "internal": true, 
+                "internal": true,
+                "params": [],
                 "text": "@private"
-            }, 
+            },
             "_bindClick": {
-                "internal": true, 
+                "internal": true,
+                "params": [],
                 "text": "@private"
-            }, 
+            },
             "_bindHover": {
-                "internal": true, 
+                "internal": true,
+                "params": [],
                 "text": "@private"
-            }, 
+            },
             "constructor": {
-                "internal": false, 
+                "internal": true,
                 "text": ""
-            }, 
+            },
             "onActiveHoverEnabledChanged": {
-                "internal": false, 
+                "internal": true,
                 "text": ""
-            }, 
+            },
             "onClickableChanged": {
-                "internal": false, 
+                "internal": true,
                 "text": ""
-            }, 
+            },
             "onEnabledChanged": {
-                "internal": false, 
+                "internal": true,
                 "text": ""
             }
-        }, 
+        },
         "Properties": {
             "activeHover": {
-                "internal": false, 
-                "text": ""
-            }, 
+                "defaultValue": "als",
+                "internal": false,
+                "ref": null,
+                "text": "",
+                "type": "bool"
+            },
             "activeHoverEnabled": {
-                "internal": false, 
-                "text": ""
-            }, 
+                "defaultValue": "als",
+                "internal": false,
+                "ref": null,
+                "text": "",
+                "type": "bool"
+            },
             "clickable": {
-                "internal": false, 
-                "text": "this mixin provides mouse hover and click events handling"
-            }, 
+                "defaultValue": "ru",
+                "internal": false,
+                "ref": null,
+                "text": "",
+                "type": "bool"
+            },
             "value": {
-                "internal": false, 
-                "text": ""
+                "defaultValue": "",
+                "internal": false,
+                "ref": null,
+                "text": "",
+                "type": "bool"
             }
         }
-    }, 
-    "name": "controls.mixins.HoverClickMixin", 
-    "text": "this mixin provides mouse hover and click events handling"
+    },
+    "name": "controls.mixins.HoverClickMixin",
+    "text": " this mixin provides mouse hover and click events handling"
 }

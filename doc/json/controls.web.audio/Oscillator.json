@@ -2,65 +2,90 @@
     "content": {
         "Methods": {
             "constructor": {
-                "internal": true, 
+                "internal": true,
+                "params": [],
                 "text": "@private"
-            }, 
+            },
             "onCompleted": {
-                "internal": true, 
+                "internal": true,
+                "params": [],
                 "text": "@private"
-            }, 
+            },
             "onDetuneChanged": {
-                "internal": true, 
+                "internal": true,
+                "params": [],
                 "text": "@private"
-            }, 
+            },
             "onFrequencyChanged": {
-                "internal": true, 
+                "internal": true,
+                "params": [],
                 "text": "@private"
-            }, 
+            },
             "onPlayingChanged": {
-                "internal": true, 
+                "internal": true,
+                "params": [],
                 "text": "@private"
-            }, 
+            },
             "onTypeChanged": {
-                "internal": false, 
-                "text": "paly generated sound"
-            }, 
+                "internal": true,
+                "params": [],
+                "text": "@private  paly generated sound"
+            },
             "pause": {
-                "internal": false, 
+                "internal": false,
+                "params": [],
                 "text": "play/pause generated sound"
-            }, 
+            },
             "play": {
-                "internal": false, 
+                "internal": false,
+                "params": [],
                 "text": "pause generated sound"
-            }, 
+            },
             "playPause": {
-                "internal": false, 
+                "internal": false,
                 "text": ""
-            }, 
+            },
             "playWithTimeout": {
-                "internal": false, 
-                "text": "@param ms:int time interval in milliseconds\n\tplay generated sound 'ms' milliseconds"
-            }, 
+                "internal": false,
+                "params": [
+                    {
+                        "name": "ms",
+                        "text": "time interval in milliseconds",
+                        "type": "int"
+                    }
+                ],
+                "text": "\tplay generated sound 'ms' milliseconds"
+            },
             "reset": {
-                "internal": true, 
+                "internal": true,
+                "params": [],
                 "text": "@private"
             }
-        }, 
+        },
         "Properties": {
             "detune": {
-                "internal": false, 
-                "text": "representing detuning of oscillation in cents"
-            }, 
+                "defaultValue": "",
+                "internal": false,
+                "ref": null,
+                "text": " representing detuning of oscillation in cents",
+                "type": "int"
+            },
             "frequency": {
-                "internal": false, 
-                "text": "signal frequency value"
-            }, 
+                "defaultValue": "",
+                "internal": false,
+                "ref": null,
+                "text": " signal frequency value",
+                "type": "int"
+            },
             "playing": {
-                "internal": false, 
-                "text": "is oscillator playing right now"
+                "defaultValue": "",
+                "internal": false,
+                "ref": null,
+                "text": " is oscillator playing right now",
+                "type": "bool"
             }
         }
-    }, 
-    "name": "controls.web.audio.Oscillator", 
-    "text": "Object generates sound and play it via web audio API"
+    },
+    "name": "controls.web.audio.Oscillator",
+    "text": " Object generates sound and play it via web audio API"
 }

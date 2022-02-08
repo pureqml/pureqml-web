@@ -2,81 +2,126 @@
     "content": {
         "Methods": {
             "_updateSize": {
-                "internal": true, 
+                "internal": true,
+                "params": [],
                 "text": "@private"
-            }, 
+            },
             "append": {
-                "internal": false, 
-                "text": "* add option into select\n\t * @param {string} value - new option value\n\t * @param {string} text - new option text"
-            }, 
+                "internal": false,
+                "params": [
+                    {
+                        "name": "value",
+                        "text": "new option value",
+                        "type": "string"
+                    },
+                    {
+                        "name": "text",
+                        "text": "new option text",
+                        "type": "string"
+                    }
+                ],
+                "text": ""
+            },
             "clear": {
-                "internal": false, 
+                "internal": false,
+                "params": [],
                 "text": "remove all options from dropdown list"
-            }, 
+            },
             "constructor": {
-                "internal": false, 
+                "internal": true,
                 "text": ""
-            }, 
+            },
             "getTag": {
-                "internal": true, 
+                "internal": true,
+                "params": [],
                 "text": "@private"
-            }, 
+            },
             "onCountChanged": {
-                "internal": false, 
+                "internal": true,
                 "text": ""
-            }, 
+            },
             "onCurrentIndexChanged": {
-                "internal": false, 
+                "internal": true,
                 "text": ""
-            }, 
+            },
             "onDisabledChanged": {
-                "internal": false, 
+                "internal": true,
                 "text": ""
-            }, 
+            },
             "onWidthChanged": {
-                "internal": true, 
+                "internal": true,
+                "params": [],
                 "text": "@private"
-            }, 
+            },
             "registerStyle": {
-                "internal": true, 
+                "internal": true,
+                "params": [],
                 "text": "@private"
-            }, 
+            },
             "remove": {
-                "internal": false, 
-                "text": "* remove option from drop down list by index\n\t * @param {number} idx - new option value"
+                "internal": false,
+                "params": [
+                    {
+                        "name": "idx",
+                        "text": "new option value",
+                        "type": "number"
+                    }
+                ],
+                "text": ""
             }
-        }, 
+        },
         "Properties": {
             "color": {
-                "internal": false, 
-                "text": ""
-            }, 
+                "defaultValue": "#000",
+                "internal": false,
+                "ref": null,
+                "text": "",
+                "type": "Color"
+            },
             "count": {
-                "internal": false, 
-                "text": "drop down options count"
-            }, 
+                "defaultValue": "",
+                "internal": false,
+                "ref": null,
+                "text": " drop down options count",
+                "type": "int"
+            },
             "currentIndex": {
-                "internal": false, 
-                "text": "current option index"
-            }, 
+                "defaultValue": "",
+                "internal": false,
+                "ref": null,
+                "text": " current option index",
+                "type": "int"
+            },
             "disabled": {
-                "internal": false, 
-                "text": "set true to disable changing selection"
-            }, 
+                "defaultValue": "als",
+                "internal": false,
+                "ref": null,
+                "text": " set true to disable changing selection",
+                "type": "bool"
+            },
             "font": {
-                "internal": false, 
-                "text": ""
-            }, 
+                "defaultValue": "Font",
+                "internal": false,
+                "ref": "qmlcore.core/Font",
+                "text": "",
+                "type": "Font"
+            },
             "text": {
-                "internal": false, 
-                "text": "current option text"
-            }, 
+                "defaultValue": "",
+                "internal": false,
+                "ref": null,
+                "text": " current option text",
+                "type": "string"
+            },
             "value": {
-                "internal": false, 
-                "text": "current option value"
+                "defaultValue": "",
+                "internal": false,
+                "ref": null,
+                "text": " current option value",
+                "type": "string"
             }
         }
-    }, 
-    "name": "controls.web.DropDown", 
+    },
+    "name": "controls.web.DropDown",
     "text": "html drop down list chooser"
 }

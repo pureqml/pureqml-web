@@ -2,55 +2,63 @@
     "content": {
         "Methods": {
             "_createDelegate": {
-                "internal": true, 
+                "internal": true,
+                "params": [],
                 "text": "@private creates delegate in given item slot"
-            }, 
+            },
             "_getCurrentIndex": {
-                "internal": true, 
+                "internal": true,
+                "params": [],
                 "text": "@private"
-            }, 
+            },
             "_layout": {
-                "internal": true, 
+                "internal": true,
+                "params": [],
                 "text": "@private"
-            }, 
+            },
             "_scroll": {
-                "internal": true, 
+                "internal": true,
+                "params": [],
                 "text": "@private"
-            }, 
+            },
             "_setContentOffset": {
-                "internal": true, 
+                "internal": true,
+                "params": [],
                 "text": "@private"
-            }, 
+            },
             "constructor": {
-                "internal": false, 
+                "internal": true,
                 "text": ""
-            }, 
+            },
             "next": {
-                "internal": true, 
+                "internal": true,
+                "params": [],
                 "text": "@private"
-            }, 
+            },
             "onCurrentIndexChanged": {
-                "internal": false, 
+                "internal": true,
                 "text": ""
-            }, 
+            },
             "onKeyPressed": {
-                "internal": false, 
+                "internal": false,
                 "text": ""
-            }, 
+            },
             "onOrientationChanged": {
-                "internal": false, 
+                "internal": true,
                 "text": ""
-            }, 
+            },
             "positionViewAtIndex": {
-                "internal": true, 
+                "internal": true,
+                "params": [],
                 "text": "@private"
-            }, 
+            },
             "prev": {
-                "internal": true, 
+                "internal": true,
+                "params": [],
                 "text": "@private"
             }
         }
-    }, 
-    "name": "controls.core.RollerView", 
-    "text": "@private"
+    },
+    "name": "controls.core.RollerView",
+    "text": ""
 }

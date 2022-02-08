@@ -2,15 +2,21 @@
     "content": {
         "Properties": {
             "text": {
-                "internal": false, 
-                "text": ""
-            }, 
+                "defaultValue": "",
+                "internal": false,
+                "ref": null,
+                "text": "",
+                "type": "string"
+            },
             "title": {
-                "internal": false, 
-                "text": ""
+                "defaultValue": "",
+                "internal": false,
+                "ref": null,
+                "text": "",
+                "type": "string"
             }
         }
-    }, 
-    "name": "src.PageColumn", 
+    },
+    "name": "src.PageColumn",
     "text": ""
 }

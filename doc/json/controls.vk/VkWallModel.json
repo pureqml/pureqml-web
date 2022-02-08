@@ -2,39 +2,57 @@
     "content": {
         "Methods": {
             "_fillImpl": {
-                "internal": true, 
+                "internal": true,
+                "params": [],
                 "text": "@private"
-            }, 
+            },
             "fillCustom": {
-                "internal": false, 
-                "text": "@param settings:Object additional request parameters\n\t fill model with data from the wall with customized settings such as count, extended etc."
-            }, 
+                "internal": false,
+                "params": [
+                    {
+                        "name": "settings",
+                        "text": "additional request parameters",
+                        "type": "Object"
+                    }
+                ],
+                "text": "\t fill model with data from the wall with customized settings such as count, extended etc."
+            },
             "fillDefault": {
-                "internal": false, 
+                "internal": false,
+                "params": [],
                 "text": "fill model with data from 'ownerId' wall with default parameters"
             }
-        }, 
+        },
         "Properties": {
             "accessToken": {
-                "internal": false, 
-                "text": "VK API access token"
-            }, 
+                "defaultValue": "",
+                "internal": false,
+                "ref": null,
+                "text": " VK API access token",
+                "type": "string"
+            },
             "ownerId": {
-                "internal": false, 
-                "text": "user ID  of the owner of the wall"
-            }, 
+                "defaultValue": "",
+                "internal": false,
+                "ref": null,
+                "text": " user ID  of the owner of the wall",
+                "type": "int"
+            },
             "version": {
-                "internal": false, 
-                "text": "VK api version"
+                "defaultValue": ".0",
+                "internal": false,
+                "ref": null,
+                "text": " VK api version",
+                "type": "string"
             }
-        }, 
+        },
         "Signals": {
             "error": {
-                "internal": false, 
-                "text": "any error during requestoccured signal"
+                "internal": false,
+                "text": " any error during requestoccured signal"
             }
         }
-    }, 
-    "name": "controls.vk.VkWallModel", 
-    "text": "this model get data from the 'vkontakte' social network wall"
+    },
+    "name": "controls.vk.VkWallModel",
+    "text": " this model get data from the 'vkontakte' social network wall"
 }
