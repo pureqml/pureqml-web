@@ -3,32 +3,21 @@
         "Methods": {
             "_bindPress": {
                 "internal": true, 
-                "params": [], 
                 "text": "@private"
             }, 
             "constructor": {
                 "internal": true, 
-                "params": [], 
                 "text": "@private"
             }, 
             "onEnabledChanged": {
                 "internal": true, 
-                "params": [], 
                 "text": "@private"
             }
         }, 
         "Properties": {
-            "enabled": {
-                "defaultValue": "true", 
-                "internal": false, 
-                "text": "enable/disable mixin", 
-                "type": "bool"
-            }, 
             "pressed": {
-                "defaultValue": "", 
                 "internal": false, 
-                "text": "true if any buttons pressed", 
-                "type": "bool"
+                "text": "true if any buttons pressed"
             }
         }
     }, 

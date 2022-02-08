@@ -3,12 +3,10 @@
         "Methods": {
             "_layout": {
                 "internal": true, 
-                "params": [], 
                 "text": "@private"
             }, 
             "addChild": {
                 "internal": true, 
-                "params": [], 
                 "text": "@private"
             }, 
             "focusDown": {
@@ -25,47 +23,37 @@
             }, 
             "onFlowChanged": {
                 "internal": true, 
-                "params": [], 
                 "text": "@private"
             }, 
             "onHeightChanged": {
                 "internal": true, 
-                "params": [], 
                 "text": "@private"
             }, 
             "onHorizontalSpacingChanged": {
-                "internal": true, 
+                "internal": false, 
                 "text": ""
             }, 
             "onKeyPressed": {
                 "internal": true, 
-                "params": [], 
                 "text": "@private"
             }, 
             "onWidthChanged": {
                 "internal": true, 
-                "params": [], 
                 "text": "@private"
             }
         }, 
         "Properties": {
             "horizontalSpacing": {
-                "defaultValue": "", 
                 "internal": false, 
-                "text": "horizontal spacing between rows, overrides regular spacing, pixels", 
-                "type": "int"
+                "text": "horizontal spacing between rows, overrides regular spacing, pixels"
             }, 
             "rowsCount": {
-                "defaultValue": "", 
                 "internal": false, 
-                "text": "read-only property, represents number of row in a grid", 
-                "type": "int"
+                "text": "read-only property, represents number of row in a grid"
             }, 
             "verticalSpacing": {
-                "defaultValue": "", 
                 "internal": false, 
-                "text": "vertical spacing between columns, overrides regular spacing, pixels", 
-                "type": "int"
+                "text": "vertical spacing between columns, overrides regular spacing, pixels"
             }
         }
     }, 

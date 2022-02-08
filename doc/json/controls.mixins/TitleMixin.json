@@ -2,16 +2,14 @@
     "content": {
         "Methods": {
             "onValueChanged": {
-                "internal": true, 
+                "internal": false, 
                 "text": ""
             }
         }, 
         "Properties": {
             "value": {
-                "defaultValue": "", 
                 "internal": false, 
-                "text": "", 
-                "type": "string"
+                "text": ""
             }
         }
     }, 

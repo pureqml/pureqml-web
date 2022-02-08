@@ -3,25 +3,15 @@
         "Methods": {
             "_bindClicked": {
                 "internal": true, 
-                "params": [], 
                 "text": "@private"
             }, 
             "constructor": {
-                "internal": true, 
-                "text": ""
+                "internal": false, 
+                "text": "This mixin provides mouse double click event detecting"
             }, 
             "onEnabledChanged": {
                 "internal": true, 
-                "params": [], 
                 "text": "@private"
-            }
-        }, 
-        "Properties": {
-            "enabled": {
-                "defaultValue": "true", 
-                "internal": false, 
-                "text": "turn mixin on or off", 
-                "type": "bool"
             }
         }
     }, 

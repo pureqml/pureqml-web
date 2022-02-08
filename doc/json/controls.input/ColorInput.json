@@ -2,11 +2,11 @@
     "content": {
         "Methods": {
             "constructor": {
-                "internal": true, 
+                "internal": false, 
                 "text": ""
             }, 
             "onColorChanged": {
-                "internal": true, 
+                "internal": false, 
                 "text": ""
             }
         }

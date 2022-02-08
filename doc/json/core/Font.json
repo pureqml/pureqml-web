@@ -3,140 +3,113 @@
         "Methods": {
             "_updateTextDecoration": {
                 "internal": true, 
-                "params": [], 
                 "text": "@private"
             }, 
             "onBoldChanged": {
-                "internal": true, 
+                "internal": false, 
                 "text": ""
             }, 
             "onCapitalizationChanged": {
-                "internal": true, 
+                "internal": false, 
                 "text": ""
             }, 
             "onFamilyChanged": {
-                "internal": true, 
+                "internal": false, 
                 "text": ""
             }, 
             "onItalicChanged": {
-                "internal": true, 
+                "internal": false, 
                 "text": ""
             }, 
             "onLetterSpacingChanged": {
-                "internal": true, 
+                "internal": false, 
                 "text": ""
             }, 
             "onLineHeightChanged": {
-                "internal": true, 
+                "internal": false, 
                 "text": ""
             }, 
             "onOverlineChanged": {
-                "internal": true, 
+                "internal": false, 
                 "text": ""
             }, 
             "onPixelSizeChanged": {
-                "internal": true, 
+                "internal": false, 
                 "text": ""
             }, 
             "onPointSizeChanged": {
-                "internal": true, 
+                "internal": false, 
                 "text": ""
             }, 
             "onStrikeChanged": {
-                "internal": true, 
+                "internal": false, 
                 "text": ""
             }, 
             "onUnderlineChanged": {
-                "internal": true, 
+                "internal": false, 
                 "text": ""
             }, 
             "onWeightChanged": {
-                "internal": true, 
+                "internal": false, 
                 "text": ""
             }, 
             "onWordSpacingChanged": {
-                "internal": true, 
+                "internal": false, 
                 "text": ""
             }
         }, 
         "Properties": {
             "bold": {
-                "defaultValue": "", 
                 "internal": false, 
-                "text": "applies bold style", 
-                "type": "bool"
+                "text": "applies bold style"
             }, 
             "family": {
-                "defaultValue": "${manifest.style.font.family}", 
                 "internal": false, 
-                "text": "font family", 
-                "type": "string"
+                "text": "font family"
             }, 
             "italic": {
-                "defaultValue": "", 
                 "internal": false, 
-                "text": "applies italic style", 
-                "type": "bool"
+                "text": "applies italic style"
             }, 
             "letterSpacing": {
-                "defaultValue": "", 
                 "internal": false, 
-                "text": "spacing between letters", 
-                "type": "real"
+                "text": "spacing between letters"
             }, 
             "lineHeight": {
-                "defaultValue": "${manifest.style.font.lineHeight}", 
                 "internal": false, 
-                "text": "font line height in font heights", 
-                "type": "real"
+                "text": "font line height in font heights"
             }, 
             "overline": {
-                "defaultValue": "", 
                 "internal": false, 
-                "text": "applies overline style", 
-                "type": "bool"
+                "text": "applies overline style"
             }, 
             "pixelSize": {
-                "defaultValue": "${manifest.style.font.pixelSize}", 
                 "internal": false, 
-                "text": "font size in pixels", 
-                "type": "int"
+                "text": "font size in pixels"
             }, 
             "pointSize": {
-                "defaultValue": "", 
                 "internal": false, 
-                "text": "font size in points", 
-                "type": "int"
+                "text": "font size in points"
             }, 
             "strike": {
-                "defaultValue": "", 
                 "internal": false, 
-                "text": "line throw text flag", 
-                "type": "bool"
+                "text": "line throw text flag"
             }, 
             "strikeout": {
-                "defaultValue": "", 
                 "internal": false, 
-                "text": "line throw text flag for compatibility with QML", 
-                "type": "bool"
+                "text": "line throw text flag for compatibility with QML"
             }, 
             "underline": {
-                "defaultValue": "", 
                 "internal": false, 
-                "text": "applies underline style", 
-                "type": "bool"
+                "text": "applies underline style"
             }, 
             "weight": {
-                "defaultValue": "", 
                 "internal": false, 
-                "text": "font weight value", 
-                "type": "int"
+                "text": "font weight value"
             }, 
             "wordSpacing": {
-                "defaultValue": "", 
                 "internal": false, 
-                "text": "spacing between words", 
-                "type": "real"
+                "text": "spacing between words"
             }
         }
     }, 

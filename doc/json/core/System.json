@@ -3,139 +3,97 @@
         "Methods": {
             "_updateLayoutType": {
                 "internal": true, 
-                "params": [], 
                 "text": "@private"
             }, 
             "constructor": {
                 "internal": true, 
-                "params": [], 
                 "text": "@private"
             }, 
             "onContextHeightChanged": {
                 "internal": true, 
-                "params": [], 
                 "text": "@private"
             }, 
             "onContextWidthChanged": {
                 "internal": true, 
-                "params": [], 
                 "text": "@private"
             }
         }, 
         "Properties": {
             "browser": {
-                "defaultValue": "", 
                 "internal": false, 
-                "text": "browser name", 
-                "type": "string"
+                "text": "browser name"
             }, 
             "contextHeight": {
-                "defaultValue": "${context.height}", 
                 "internal": true, 
-                "text": "@private", 
-                "type": "int"
+                "text": "@private"
             }, 
             "contextWidth": {
-                "defaultValue": "${context.width}", 
                 "internal": true, 
-                "text": "@private", 
-                "type": "int"
+                "text": "@private"
             }, 
             "landscape": {
-                "defaultValue": "! ${portrait}", 
                 "internal": false, 
-                "text": "landscape oriented screen flag", 
-                "type": "bool"
+                "text": "landscape oriented screen flag"
             }, 
             "language": {
-                "defaultValue": "", 
                 "internal": false, 
-                "text": "platform language", 
-                "type": "string"
+                "text": "platform language"
             }, 
             "os": {
-                "defaultValue": "", 
                 "internal": false, 
-                "text": "operation system name", 
-                "type": "string"
+                "text": "operation system name"
             }, 
             "pageActive": {
-                "defaultValue": "true", 
                 "internal": false, 
-                "text": "page active flag", 
-                "type": "bool"
+                "text": "page active flag"
             }, 
             "portrait": {
-                "defaultValue": "${parent.width} < ${parent.height}", 
                 "internal": false, 
-                "text": "portrait oriented screen flag", 
-                "type": "bool"
+                "text": "portrait oriented screen flag"
             }, 
             "resolutionHeight": {
-                "defaultValue": "", 
                 "internal": false, 
-                "text": "app screen height from manifest", 
-                "type": "int"
+                "text": "app screen height from manifest"
             }, 
             "resolutionWidth": {
-                "defaultValue": "", 
                 "internal": false, 
-                "text": "app screen width from manifest", 
-                "type": "int"
+                "text": "app screen width from manifest"
             }, 
             "screenHeight": {
-                "defaultValue": "", 
                 "internal": false, 
-                "text": "device screen height value", 
-                "type": "int"
+                "text": "device screen height value"
             }, 
             "screenWidth": {
-                "defaultValue": "", 
                 "internal": false, 
-                "text": "device screen width value", 
-                "type": "int"
+                "text": "device screen width value"
             }, 
             "support3dTransforms": {
-                "defaultValue": "", 
                 "internal": false, 
-                "text": "CSS transforms3d supported flag", 
-                "type": "bool"
+                "text": "CSS transforms3d supported flag"
             }, 
             "supportTransforms": {
-                "defaultValue": "", 
                 "internal": false, 
-                "text": "CSS transforms supported flag", 
-                "type": "bool"
+                "text": "CSS transforms supported flag"
             }, 
             "supportTransitions": {
-                "defaultValue": "", 
                 "internal": false, 
-                "text": "CSS transitions supported flag", 
-                "type": "bool"
+                "text": "CSS transitions supported flag"
             }, 
             "userAgent": {
-                "defaultValue": "", 
                 "internal": false, 
-                "text": "browser userAgent value", 
-                "type": "string"
+                "text": "browser userAgent value"
             }, 
             "vendor": {
-                "defaultValue": "", 
                 "internal": false, 
-                "text": "current vendor name", 
-                "type": "string"
+                "text": "current vendor name"
             }, 
             "virtualKeyboard": {
-                "defaultValue": "${device} === System.Tv || ${device} === System.Mobile", 
                 "internal": false, 
-                "text": "used to tweak components which use on-screen keyboard", 
-                "type": "bool"
+                "text": "used to tweak components which use on-screen keyboard"
             }, 
             "webkit": {
-                "defaultValue": "", 
                 "internal": false, 
-                "text": "webkit supported flag", 
-                "type": "bool"
+                "text": "webkit supported flag"
             }
         }
     }, 

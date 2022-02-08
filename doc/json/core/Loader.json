@@ -3,49 +3,48 @@
         "Methods": {
             "_load": {
                 "internal": true, 
-                "params": [], 
                 "text": "@internal"
             }, 
             "discard": {
                 "internal": true, 
-                "params": [], 
                 "text": "@private"
             }, 
             "discardItem": {
                 "internal": true, 
-                "params": [], 
                 "text": "@private"
             }, 
             "onCompleted": {
                 "internal": true, 
-                "params": [], 
                 "text": "@internal"
             }, 
             "onRecursiveVisibleChanged": {
-                "internal": true, 
+                "internal": false, 
                 "text": ""
             }, 
             "onSourceChanged": {
                 "internal": true, 
-                "params": [], 
                 "text": "@internal"
             }
         }, 
         "Properties": {
             "item": {
-                "defaultValue": "", 
                 "internal": false, 
-                "text": "item for storing requested component", 
-                "type": "Object"
+                "text": "item for storing requested component"
             }, 
             "source": {
-                "defaultValue": "", 
                 "internal": false, 
-                "text": "component's URL", 
-                "type": "string"
+                "text": "component's URL"
+            }, 
+            "trace": {
+                "internal": false, 
+                "text": "log loading objects"
             }
         }, 
         "Signals": {
+            "itemCompleted": {
+                "internal": false, 
+                "text": "fires after item onCompleted has been fired and item is fully constructed"
+            }, 
             "loaded": {
                 "internal": false, 
                 "text": "when requested component it loaded event signal"

@@ -3,27 +3,21 @@
         "Methods": {
             "_getDeclaration": {
                 "internal": true, 
-                "params": [], 
                 "text": "@private"
             }, 
             "onPositionChanged": {
                 "internal": true, 
-                "params": [], 
                 "text": "@private"
             }
         }, 
         "Properties": {
             "color": {
-                "defaultValue": "", 
                 "internal": false, 
-                "text": "color of this stop", 
-                "type": "color"
+                "text": "color of this stop"
             }, 
             "position": {
-                "defaultValue": "", 
                 "internal": false, 
-                "text": "realative position ot the stop must be in range [0:1]", 
-                "type": "real"
+                "text": "realative position ot the stop must be in range [0:1]"
             }
         }
     }, 

@@ -2,10 +2,8 @@
     "content": {
         "Properties": {
             "progress": {
-                "defaultValue": "0.0", 
                 "internal": false, 
-                "text": "", 
-                "type": "real"
+                "text": ""
             }
         }
     }, 

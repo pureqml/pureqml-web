@@ -16,16 +16,12 @@
         }, 
         "Properties": {
             "hover": {
-                "defaultValue": "HoverClickMixin", 
                 "internal": false, 
-                "text": "", 
-                "type": "Mixin"
+                "text": ""
             }, 
             "searchFocused": {
-                "defaultValue": "${searchText.activeFocus} || ${searchResults.visible}", 
                 "internal": false, 
-                "text": "", 
-                "type": "bool"
+                "text": ""
             }
         }, 
         "Signals": {

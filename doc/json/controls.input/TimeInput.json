@@ -2,36 +2,30 @@
     "content": {
         "Methods": {
             "constructor": {
-                "internal": true, 
+                "internal": false, 
                 "text": ""
             }, 
             "onMaxChanged": {
-                "internal": true, 
+                "internal": false, 
                 "text": ""
             }, 
             "onMinChanged": {
-                "internal": true, 
+                "internal": false, 
                 "text": ""
             }
         }, 
         "Properties": {
             "max": {
-                "defaultValue": "", 
                 "internal": false, 
-                "text": "maximum time value", 
-                "type": "string"
+                "text": "maximum time value"
             }, 
             "min": {
-                "defaultValue": "", 
                 "internal": false, 
-                "text": "minimal time value", 
-                "type": "string"
+                "text": "minimal time value"
             }, 
             "value": {
-                "defaultValue": "", 
                 "internal": false, 
-                "text": "current value", 
-                "type": "string"
+                "text": "current value"
             }
         }
     }, 

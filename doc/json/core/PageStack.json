@@ -3,37 +3,29 @@
         "Methods": {
             "_layout": {
                 "internal": true, 
-                "params": [], 
                 "text": "@private"
             }, 
             "addChild": {
                 "internal": true, 
-                "params": [], 
                 "text": "@private"
             }, 
             "onActiveFocusChanged": {
                 "internal": true, 
-                "params": [], 
                 "text": "@private"
             }, 
             "onCurrentIndexChanged": {
                 "internal": true, 
-                "params": [], 
                 "text": "@private"
             }
         }, 
         "Properties": {
             "count": {
-                "defaultValue": "0", 
                 "internal": false, 
-                "text": "childrens count", 
-                "type": "int"
+                "text": "childrens count"
             }, 
             "currentIndex": {
-                "defaultValue": "0", 
                 "internal": false, 
-                "text": "index of displaying child", 
-                "type": "int"
+                "text": "index of displaying child"
             }
         }
     }, 

@@ -1,0 +1,82 @@
+{
+    "content": {
+        "Methods": {
+            "_createDelegate": {
+                "internal": false, 
+                "text": ""
+            }, 
+            "_getTablePosition": {
+                "internal": false, 
+                "text": ""
+            }, 
+            "_invalidateSize": {
+                "internal": false, 
+                "text": ""
+            }, 
+            "_layout": {
+                "internal": true, 
+                "text": "@private"
+            }, 
+            "_updateOverflow": {
+                "internal": true, 
+                "text": "@private"
+            }, 
+            "constructor": {
+                "internal": false, 
+                "text": ""
+            }, 
+            "getItemPosition": {
+                "internal": false, 
+                "text": ""
+            }, 
+            "indexAt": {
+                "internal": false, 
+                "text": ""
+            }, 
+            "onColumnsChanged": {
+                "internal": false, 
+                "text": ""
+            }, 
+            "onCompleted": {
+                "internal": false, 
+                "text": ""
+            }, 
+            "onKeyPressed": {
+                "internal": false, 
+                "text": ""
+            }, 
+            "onNativeScrollingChanged": {
+                "internal": false, 
+                "text": ""
+            }, 
+            "positionViewAtIndex": {
+                "internal": true, 
+                "text": "@private"
+            }
+        }, 
+        "Properties": {
+            "columnSpacing": {
+                "internal": false, 
+                "text": ""
+            }, 
+            "columns": {
+                "internal": false, 
+                "text": ""
+            }, 
+            "referenceHeight": {
+                "internal": true, 
+                "text": "@internal"
+            }, 
+            "referenceWidth": {
+                "internal": true, 
+                "text": "@internal"
+            }, 
+            "rowSpacing": {
+                "internal": false, 
+                "text": ""
+            }
+        }
+    }, 
+    "name": "core.TableView", 
+    "text": "@private"
+}

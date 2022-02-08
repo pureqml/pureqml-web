@@ -10,30 +10,22 @@
                 "text": ""
             }, 
             "onTextColorChanged": {
-                "internal": true, 
+                "internal": false, 
                 "text": ""
             }
         }, 
         "Properties": {
             "headerModel": {
-                "defaultValue": "ListModel", 
                 "internal": false, 
-                "ref": "qmlcore.core/Object", 
-                "text": "", 
-                "type": "Object"
+                "text": ""
             }, 
             "model": {
-                "defaultValue": "ListModel", 
                 "internal": false, 
-                "ref": "qmlcore.core/Object", 
-                "text": "", 
-                "type": "Object"
+                "text": ""
             }, 
             "textColor": {
-                "defaultValue": "", 
                 "internal": false, 
-                "text": "", 
-                "type": "Color"
+                "text": ""
             }
         }
     }, 

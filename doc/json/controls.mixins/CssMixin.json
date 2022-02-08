@@ -3,16 +3,13 @@
         "Methods": {
             "onCompleted": {
                 "internal": true, 
-                "params": [], 
                 "text": "@private"
             }
         }, 
         "Properties": {
             "rules": {
-                "defaultValue": "", 
                 "internal": false, 
-                "text": "", 
-                "type": "string"
+                "text": ""
             }
         }
     }, 

@@ -17,6 +17,7 @@
         "HowtoText": "src/HowtoText.json", 
         "KeyValueView": "src/KeyValueView.json", 
         "LeftMenu": "src/LeftMenu.json", 
+        "LessonCodeHighlighter": "src/LessonCodeHighlighter.json", 
         "Lessons": "src/Lessons.json", 
         "Main": "src/Main.json", 
         "MainH2": "src/MainH2.json", 

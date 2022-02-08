@@ -3,52 +3,41 @@
         "Methods": {
             "_checkNameValid": {
                 "internal": true, 
-                "params": [], 
                 "text": "@private"
             }, 
             "_read": {
                 "internal": true, 
-                "params": [], 
                 "text": "@private"
             }, 
             "_write": {
                 "internal": true, 
-                "params": [], 
                 "text": "@private"
             }, 
             "onCompleted": {
-                "internal": true, 
+                "internal": false, 
                 "text": ""
             }, 
             "onNameChanged": {
                 "internal": true, 
-                "params": [], 
                 "text": "@private"
             }, 
             "onValueChanged": {
                 "internal": true, 
-                "params": [], 
                 "text": "@private"
             }
         }, 
         "Properties": {
             "defaultValue": {
-                "defaultValue": "", 
                 "internal": false, 
-                "text": "default init value", 
-                "type": "string"
+                "text": "default init value"
             }, 
             "name": {
-                "defaultValue": "", 
                 "internal": false, 
-                "text": "stored property key name", 
-                "type": "string"
+                "text": "stored property key name"
             }, 
             "value": {
-                "defaultValue": "", 
                 "internal": false, 
-                "text": "stored property value", 
-                "type": "string"
+                "text": "stored property value"
             }
         }, 
         "Signals": {

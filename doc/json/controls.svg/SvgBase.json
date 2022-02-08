@@ -3,44 +3,37 @@
         "Methods": {
             "_createElement": {
                 "internal": true, 
-                "params": [], 
                 "text": "@private specialized implementation of element creation in a certain namespace."
             }, 
             "constructor": {
-                "internal": true, 
+                "internal": false, 
                 "text": ""
             }, 
             "externalTarget": {
                 "internal": true, 
-                "params": [], 
                 "text": "@private"
             }, 
             "getTag": {
                 "internal": true, 
-                "params": [], 
                 "text": "@private returns tag for corresponding element"
             }, 
             "onTargetChanged": {
-                "internal": true, 
+                "internal": false, 
                 "text": ""
             }, 
             "registerStyle": {
                 "internal": true, 
-                "params": [], 
                 "text": "@private"
             }, 
             "style": {
                 "internal": true, 
-                "params": [], 
                 "text": "@private"
             }
         }, 
         "Properties": {
             "target": {
-                "defaultValue": "", 
                 "internal": false, 
-                "text": "", 
-                "type": "Object"
+                "text": ""
             }
         }
     }, 

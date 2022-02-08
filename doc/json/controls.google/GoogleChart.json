@@ -3,23 +3,10 @@
         "Methods": {
             "fill": {
                 "internal": false, 
-                "params": [
-                    {
-                        "name": "data", 
-                        "text": "data for chart building", 
-                        "type": "Object"
-                    }, 
-                    {
-                        "name": "opt", 
-                        "text": "chart displaying properties", 
-                        "type": "Object"
-                    }
-                ], 
-                "text": "\tFill google chart function"
+                "text": "@param data:Object data for chart building\n\t@param opt:Object chart displaying properties\n\tFill google chart function"
             }, 
             "registerStyle": {
                 "internal": true, 
-                "params": [], 
                 "text": "@private"
             }
         }

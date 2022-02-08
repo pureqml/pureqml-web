@@ -3,60 +3,45 @@
         "Methods": {
             "gamepadConnectedHandler": {
                 "internal": true, 
-                "params": [], 
                 "text": "@private"
             }, 
             "gamepadDisconnectedHandler": {
                 "internal": true, 
-                "params": [], 
                 "text": "@private"
             }, 
             "gpButtonCheckLoop": {
                 "internal": true, 
-                "params": [], 
                 "text": "@private"
             }, 
             "onCompleted": {
                 "internal": true, 
-                "params": [], 
                 "text": "@private"
             }, 
             "pollGamepads": {
                 "internal": true, 
-                "params": [], 
                 "text": "@private"
             }
         }, 
         "Properties": {
             "_gamepads": {
-                "defaultValue": "", 
                 "internal": true, 
-                "text": "@private", 
-                "type": "variant"
+                "text": "@private"
             }, 
             "count": {
-                "defaultValue": "0", 
                 "internal": false, 
-                "text": "count of the all connected gamepad devices", 
-                "type": "int"
+                "text": "count of the all connected gamepad devices"
             }, 
             "eventPollingInterval": {
-                "defaultValue": "8", 
                 "internal": false, 
-                "text": "gamepad event polling timer interval default value is 8ms (for 120fps) because there is no gamepad events", 
-                "type": "int"
+                "text": "gamepad event polling timer interval default value is 8ms (for 120fps) because there is no gamepad events"
             }, 
             "gamepadChildrensCount": {
-                "defaultValue": "0", 
                 "internal": false, 
-                "text": "count of Gamepad instances inside scope", 
-                "type": "int"
+                "text": "count of Gamepad instances inside scope"
             }, 
             "gamepadPollingInterval": {
-                "defaultValue": "1000", 
                 "internal": false, 
-                "text": "startup delay before gamepads polling because there is no gamepad events", 
-                "type": "int"
+                "text": "startup delay before gamepads polling because there is no gamepad events"
             }
         }, 
         "Signals": {

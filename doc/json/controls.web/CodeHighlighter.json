@@ -3,71 +3,53 @@
         "Methods": {
             "_updateSize": {
                 "internal": true, 
-                "params": [], 
                 "text": "@private"
             }, 
             "constructor": {
                 "internal": true, 
-                "params": [], 
                 "text": "@private"
             }, 
             "getTag": {
                 "internal": true, 
-                "params": [], 
                 "text": "@private returns tag for corresponding element"
             }, 
             "onCodeChanged": {
                 "internal": true, 
-                "params": [], 
                 "text": "@private"
             }, 
             "onLanguageChanged": {
                 "internal": true, 
-                "params": [], 
                 "text": "@private"
             }, 
             "onWidthChanged": {
                 "internal": true, 
-                "params": [], 
                 "text": "@private"
             }, 
             "registerStyle": {
                 "internal": true, 
-                "params": [], 
                 "text": "@private"
             }
         }, 
         "Properties": {
             "code": {
-                "defaultValue": "", 
                 "internal": false, 
-                "text": "code string", 
-                "type": "string"
+                "text": "code string"
             }, 
             "contentHeight": {
-                "defaultValue": "", 
                 "internal": false, 
-                "text": "content height", 
-                "type": "int"
+                "text": "content height"
             }, 
             "contentWidth": {
-                "defaultValue": "", 
                 "internal": false, 
-                "text": "content width", 
-                "type": "int"
+                "text": "content width"
             }, 
             "font": {
-                "defaultValue": "Font", 
                 "internal": false, 
-                "ref": "qmlcore.core/Font", 
-                "text": "code text font", 
-                "type": "Font"
+                "text": "code text font"
             }, 
             "language": {
-                "defaultValue": "", 
                 "internal": false, 
-                "text": "programming language", 
-                "type": "string"
+                "text": "programming language"
             }
         }
     }, 

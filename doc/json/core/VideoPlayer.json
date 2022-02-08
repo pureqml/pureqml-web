@@ -3,77 +3,66 @@
         "Methods": {
             "_createPlayer": {
                 "internal": true, 
-                "params": [], 
                 "text": "@private"
             }, 
             "_doLayout": {
                 "internal": true, 
-                "params": [], 
                 "text": "@private"
             }, 
             "_getPlayer": {
                 "internal": true, 
-                "params": [], 
                 "text": "@private"
             }, 
             "_scheduleLayout": {
                 "internal": true, 
-                "params": [], 
                 "text": "@private"
             }, 
             "applyVolume": {
                 "internal": true, 
-                "params": [], 
                 "text": "@private"
             }, 
             "constructor": {
                 "internal": true, 
-                "params": [], 
                 "text": "@private"
             }, 
             "getAudioTracks": {
                 "internal": false, 
-                "params": [], 
-                "text": "Return array of available audio tracks"
+                "text": "* Return array of available audio tracks"
             }, 
             "getSubtitles": {
                 "internal": false, 
-                "params": [], 
-                "text": "Return array of available subtitles"
+                "text": "* Return array of available subtitles"
             }, 
             "getVideoTracks": {
                 "internal": false, 
-                "params": [], 
-                "text": "Return array of available video tracks"
+                "text": "* Return array of available video tracks"
             }, 
             "onAutoPlayChanged": {
-                "internal": true, 
+                "internal": false, 
                 "text": ""
             }, 
             "onBackendChanged": {
-                "internal": true, 
+                "internal": false, 
                 "text": ""
             }, 
             "onBackgroundColorChanged": {
-                "internal": true, 
+                "internal": false, 
                 "text": ""
             }, 
             "onBackgroundImageChanged": {
-                "internal": true, 
+                "internal": false, 
                 "text": ""
             }, 
             "onCompleted": {
                 "internal": true, 
-                "params": [], 
                 "text": "@private"
             }, 
             "onError": {
                 "internal": true, 
-                "params": [], 
                 "text": "@private"
             }, 
             "onLoopChanged": {
-                "internal": true, 
+                "internal": false, 
                 "text": ""
             }, 
             "onNewBoundingBox": {
@@ -82,253 +71,141 @@
             }, 
             "onReadyChanged": {
                 "internal": true, 
-                "params": [], 
                 "text": "@private"
             }, 
             "onRecursiveVisibleChanged": {
-                "internal": true, 
+                "internal": false, 
                 "text": ""
             }, 
             "onSourceChanged": {
                 "internal": true, 
-                "params": [], 
                 "text": "@private"
             }, 
             "onVolumeChanged": {
                 "internal": true, 
-                "params": [], 
                 "text": "@private"
             }, 
             "pause": {
                 "internal": false, 
-                "params": [], 
                 "text": "pause video"
             }, 
             "play": {
                 "internal": false, 
-                "params": [], 
                 "text": "play video"
             }, 
             "seek": {
                 "internal": false, 
-                "params": [
-                    {
-                        "name": "value", 
-                        "text": "seek time in seconds", 
-                        "type": "int"
-                    }
-                ], 
-                "text": "\tseek video on 'value' seconds respectivly current playback progress"
+                "text": "@param value:int seek time in seconds\n\tseek video on 'value' seconds respectivly current playback progress"
             }, 
             "seekTo": {
                 "internal": false, 
-                "params": [
-                    {
-                        "name": "value", 
-                        "text": "progress time in seconds", 
-                        "type": "int"
-                    }
-                ], 
-                "text": "\tset video progres to fixed second"
+                "text": "@param value:int progress time in seconds\n\tset video progres to fixed second"
             }, 
             "setAudioTrack": {
                 "internal": false, 
-                "params": [
-                    {
-                        "name": "trackId", 
-                        "text": "audio track ID", 
-                        "type": "string"
-                    }
-                ], 
-                "text": "Select audio track with 'trackId' id if it exists"
+                "text": "* Select audio track with 'trackId' id if it exists\n\t * @param {string} trackId - audio track ID"
             }, 
             "setOption": {
                 "internal": false, 
-                "params": [
-                    {
-                        "name": "name", 
-                        "text": "option name", 
-                        "type": "string"
-                    }, 
-                    {
-                        "name": "value", 
-                        "text": "option value", 
-                        "type": "any"
-                    }
-                ], 
-                "text": "Set custom option in video player"
+                "text": "* Set custom option in video player\n\t * @param {string} name - option name\n\t * @param {any} value - option value"
             }, 
             "setSubtitles": {
                 "internal": false, 
-                "params": [
-                    {
-                        "name": "trackId", 
-                        "text": "subtitles track ID", 
-                        "type": "string"
-                    }
-                ], 
-                "text": "Select subtitles with 'trackId' id if it exists"
+                "text": "* Select subtitles with 'trackId' id if it exists\n\t * @param {string} trackId - subtitles track ID"
             }, 
             "setVideoTrack": {
                 "internal": false, 
-                "params": [
-                    {
-                        "name": "trackId", 
-                        "text": "video track ID", 
-                        "type": "string"
-                    }
-                ], 
-                "text": "Select video track with 'trackId' id if it exists"
+                "text": "* Select video track with 'trackId' id if it exists\n\t * @param {string} trackId - video track ID"
             }, 
             "setupDrm": {
                 "internal": false, 
-                "params": [
-                    {
-                        "name": "type", 
-                        "text": "DRM type \"widevine\" or \"playready\"", 
-                        "type": "string"
-                    }, 
-                    {
-                        "name": "options", 
-                        "text": "options for corresponded DRM type", 
-                        "type": "Object"
-                    }, 
-                    {
-                        "name": "callback", 
-                        "text": "callback for async based implementation", 
-                        "type": "function"
-                    }, 
-                    {
-                        "name": "error", 
-                        "text": "callback to report fail during configuration", 
-                        "type": "function"
-                    }
-                ], 
-                "text": "Setup DRM configuration"
+                "text": "* Setup DRM configuration\n\t * @param {string} type - DRM type \"widevine\" or \"playready\"\n\t * @param {Object} options - options for corresponded DRM type\n\t * @param {function} callback - callback for async based implementation\n\t * @param {function} error - callback to report fail during configuration"
             }, 
             "stop": {
                 "internal": false, 
-                "params": [], 
                 "text": "stop video"
             }, 
             "toggleMute": {
                 "internal": false, 
-                "params": [], 
                 "text": "toggle volume mute on\\off"
             }, 
             "volumeDown": {
                 "internal": false, 
-                "params": [], 
                 "text": "decrease current volume"
             }, 
             "volumeUp": {
                 "internal": false, 
-                "params": [], 
                 "text": "increase current volume"
             }
         }, 
         "Properties": {
             "autoPlay": {
-                "defaultValue": "", 
                 "internal": false, 
-                "text": "play video immediately after source changed", 
-                "type": "bool"
+                "text": "play video immediately after source changed"
             }, 
             "backend": {
-                "defaultValue": "", 
                 "internal": false, 
-                "text": "backend to use", 
-                "type": "string"
+                "text": "backend to use"
             }, 
             "backgroundColor": {
-                "defaultValue": "#000", 
                 "internal": false, 
-                "text": "default background color", 
-                "type": "color"
+                "text": "default background color"
             }, 
             "backgroundImage": {
-                "defaultValue": "", 
                 "internal": false, 
-                "text": "background image (poster) source URL", 
-                "type": "string"
+                "text": "background image (poster) source URL"
             }, 
             "buffered": {
-                "defaultValue": "", 
                 "internal": false, 
-                "text": "how much content to buffer in seconds", 
-                "type": "real"
+                "text": "how much content to buffer in seconds"
             }, 
             "duration": {
-                "defaultValue": "", 
                 "internal": false, 
-                "text": "content duration in seconds (only for non-live videos)", 
-                "type": "real"
+                "text": "content duration in seconds (only for non-live videos)"
             }, 
             "loop": {
-                "defaultValue": "", 
                 "internal": false, 
-                "text": "video loop flag", 
-                "type": "bool"
+                "text": "video loop flag"
             }, 
             "muted": {
-                "defaultValue": "", 
                 "internal": false, 
-                "text": "volume mute flag", 
-                "type": "bool"
+                "text": "volume mute flag"
             }, 
             "paused": {
-                "defaultValue": "", 
                 "internal": false, 
-                "text": "video paused flag", 
-                "type": "bool"
+                "text": "video paused flag"
             }, 
             "progress": {
-                "defaultValue": "", 
                 "internal": false, 
-                "text": "current playback progress in seconds", 
-                "type": "real"
+                "text": "current playback progress in seconds"
             }, 
             "ready": {
-                "defaultValue": "", 
                 "internal": false, 
-                "text": "read only property becomes 'true' when video is ready to play, 'false' otherwise", 
-                "type": "bool"
+                "text": "read only property becomes 'true' when video is ready to play, 'false' otherwise"
             }, 
             "seeking": {
-                "defaultValue": "", 
                 "internal": false, 
-                "text": "seeking flag", 
-                "type": "bool"
+                "text": "seeking flag"
             }, 
             "source": {
-                "defaultValue": "", 
                 "internal": false, 
-                "text": "video source URL", 
-                "type": "string"
+                "text": "video source URL"
             }, 
             "stalled": {
-                "defaultValue": "", 
                 "internal": false, 
-                "text": "playback stalled", 
-                "type": "bool"
+                "text": "playback stalled"
             }, 
             "startPosition": {
-                "defaultValue": "", 
                 "internal": false, 
-                "text": "second at which the video should start playback", 
-                "type": "real"
+                "text": "second at which the video should start playback"
             }, 
             "volume": {
-                "defaultValue": "1.0", 
                 "internal": false, 
-                "text": "video volume value [0:1]", 
-                "type": "float"
+                "text": "video volume value [0:1]"
             }, 
             "waiting": {
-                "defaultValue": "", 
                 "internal": false, 
-                "text": "wating flag while video is seeking and not ready to continue playing", 
-                "type": "bool"
+                "text": "wating flag while video is seeking and not ready to continue playing"
             }
         }, 
         "Signals": {

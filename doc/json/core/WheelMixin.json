@@ -3,26 +3,15 @@
         "Methods": {
             "_bindWheel": {
                 "internal": true, 
-                "params": [], 
                 "text": "@private"
             }, 
             "constructor": {
                 "internal": true, 
-                "params": [], 
                 "text": "@private"
             }, 
             "onEnabledChanged": {
                 "internal": true, 
-                "params": [], 
                 "text": "@private"
-            }
-        }, 
-        "Properties": {
-            "enabled": {
-                "defaultValue": "true", 
-                "internal": false, 
-                "text": "enable mixin", 
-                "type": "bool"
             }
         }
     }, 

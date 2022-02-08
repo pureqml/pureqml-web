@@ -1,59 +1,51 @@
 {
     "content": {
         "Methods": {
+            "_update": {
+                "internal": false, 
+                "text": ""
+            }, 
             "onColorChanged": {
-                "internal": true, 
+                "internal": false, 
                 "text": ""
             }, 
             "onStyleChanged": {
-                "internal": true, 
+                "internal": false, 
                 "text": ""
             }, 
             "onTypeChanged": {
-                "internal": true, 
+                "internal": false, 
                 "text": ""
             }, 
             "onWidthChanged": {
-                "internal": true, 
+                "internal": false, 
                 "text": ""
             }
         }, 
         "Properties": {
             "bottom": {
-                "defaultValue": "BorderSide", 
                 "internal": false, 
-                "text": "bottom border side", 
-                "type": "lazy"
+                "text": "bottom border side"
             }, 
             "color": {
-                "defaultValue": "black", 
                 "internal": false, 
-                "text": "color of the border", 
-                "type": "color"
+                "text": "color of the border"
             }, 
             "left": {
-                "defaultValue": "BorderSide", 
                 "internal": false, 
-                "text": "left border side", 
-                "type": "lazy"
+                "text": "left border side"
             }, 
             "right": {
-                "defaultValue": "BorderSide", 
                 "internal": false, 
-                "text": "right border side", 
-                "type": "lazy"
+                "text": "right border side"
             }, 
             "top": {
-                "defaultValue": "BorderSide", 
                 "internal": false, 
-                "text": "top border side", 
-                "type": "lazy"
+                "text": "top border side"
             }, 
             "width": {
-                "defaultValue": "", 
                 "internal": false, 
-                "text": "width of the border", 
-                "type": "int"
+                "text": "width of the border"
             }
         }
     }, 

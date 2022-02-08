@@ -3,47 +3,38 @@
         "Methods": {
             "__onCompleted": {
                 "internal": true, 
-                "params": [], 
                 "text": "@private"
             }, 
             "_init": {
                 "internal": true, 
-                "params": [], 
                 "text": "@private"
             }, 
             "_processActions": {
                 "internal": false, 
-                "params": [], 
                 "text": "if you need to call it from native callback, use wrapNativeCallback method"
             }, 
             "_run": {
                 "internal": true, 
-                "params": [], 
                 "text": "@private"
             }, 
             "constructor": {
                 "internal": true, 
-                "params": [], 
                 "text": "@private"
             }, 
             "createElement": {
                 "internal": true, 
-                "params": [], 
                 "text": "@private"
             }, 
             "delayedAction": {
                 "internal": true, 
-                "params": [], 
                 "text": "@private"
             }, 
             "init": {
                 "internal": true, 
-                "params": [], 
                 "text": "@private"
             }, 
             "mangleClass": {
                 "internal": true, 
-                "params": [], 
                 "text": "@private"
             }, 
             "processKey": {
@@ -52,38 +43,26 @@
             }, 
             "qsTr": {
                 "internal": false, 
-                "params": [
-                    {
-                        "name": "text", 
-                        "text": "text that must be translated", 
-                        "type": "string"
-                    }
-                ], 
-                "text": "\tReturns input text translation"
+                "text": "@param text:string text that must be translated\n\tReturns input text translation"
             }, 
             "registerStyle": {
                 "internal": true, 
-                "params": [], 
                 "text": "@private"
             }, 
             "run": {
                 "internal": true, 
-                "params": [], 
                 "text": "@private"
             }, 
             "scheduleAction": {
                 "internal": true, 
-                "params": [], 
                 "text": "@private"
             }, 
             "scheduleComplete": {
                 "internal": true, 
-                "params": [], 
                 "text": "@internal"
             }, 
             "start": {
                 "internal": true, 
-                "params": [], 
                 "text": "@private"
             }, 
             "tr": {
@@ -101,67 +80,44 @@
         }, 
         "Properties": {
             "buildIdentifier": {
-                "defaultValue": "owered by PureQML No-Partnership Edition Engin", 
                 "internal": true, 
-                "text": "@private", 
-                "type": "string"
+                "text": "@private"
             }, 
             "keyProcessDelay": {
-                "defaultValue": "", 
                 "internal": false, 
-                "text": "key pressed handling delay timeout in millisecnods", 
-                "type": "int"
+                "text": "key pressed handling delay timeout in millisecnods"
             }, 
             "language": {
-                "defaultValue": "", 
                 "internal": false, 
-                "text": "localisation language", 
-                "type": "string"
+                "text": "localisation language"
             }, 
             "location": {
-                "defaultValue": "Location", 
                 "internal": false, 
-                "ref": "qmlcore.core/Location", 
-                "text": "web-page location object", 
-                "type": "Location"
+                "text": "web-page location object"
             }, 
             "scrollY": {
-                "defaultValue": "", 
                 "internal": false, 
-                "text": "scrolled page vertical offset value", 
-                "type": "int"
+                "text": "scrolled page vertical offset value"
             }, 
             "stylesheet": {
-                "defaultValue": "Stylesheet", 
                 "internal": true, 
-                "ref": "qmlcore.platform.html5/Stylesheet", 
-                "text": "@private", 
-                "type": "Stylesheet"
+                "text": "@private"
             }, 
             "system": {
-                "defaultValue": "System", 
                 "internal": false, 
-                "ref": "qmlcore.core/System", 
-                "text": "system info object", 
-                "type": "System"
+                "text": "system info object"
             }, 
             "virtualHeight": {
-                "defaultValue": "${manifest.virtual.height}", 
                 "internal": false, 
-                "text": "virtual viewport height", 
-                "type": "int"
+                "text": "virtual viewport height"
             }, 
             "virtualScale": {
-                "defaultValue": "Math.min(((${system.resolutionWidth} || ${width}) / ${virtualWidth}),((${system.resolutionHeight} || ${height}) / ${virtualHeight}))", 
                 "internal": true, 
-                "text": "@private", 
-                "type": "real"
+                "text": "@private"
             }, 
             "virtualWidth": {
-                "defaultValue": "${manifest.virtual.width}", 
                 "internal": false, 
-                "text": "virtual viewport width", 
-                "type": "int"
+                "text": "virtual viewport width"
             }
         }, 
         "Signals": {

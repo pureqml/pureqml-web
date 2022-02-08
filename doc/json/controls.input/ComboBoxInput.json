@@ -1,0 +1,12 @@
+{
+    "content": {
+        "Properties": {
+            "model": {
+                "internal": false, 
+                "text": ""
+            }
+        }
+    }, 
+    "name": "controls.input.ComboBoxInput", 
+    "text": ""
+}

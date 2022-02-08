@@ -2,28 +2,20 @@
     "content": {
         "Properties": {
             "bottom": {
-                "defaultValue": "", 
                 "internal": false, 
-                "text": "", 
-                "type": "int"
+                "text": ""
             }, 
             "left": {
-                "defaultValue": "", 
                 "internal": false, 
-                "text": "", 
-                "type": "int"
+                "text": ""
             }, 
             "right": {
-                "defaultValue": "", 
                 "internal": false, 
-                "text": "", 
-                "type": "int"
+                "text": ""
             }, 
             "top": {
-                "defaultValue": "", 
                 "internal": false, 
-                "text": "", 
-                "type": "int"
+                "text": ""
             }
         }
     }, 

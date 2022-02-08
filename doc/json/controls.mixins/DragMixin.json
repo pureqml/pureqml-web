@@ -3,72 +3,45 @@
         "Methods": {
             "_bindPressed": {
                 "internal": true, 
-                "params": [], 
                 "text": "@private"
             }, 
             "_downHandler": {
                 "internal": true, 
-                "params": [], 
                 "text": "@private"
             }, 
             "_moveHandler": {
                 "internal": true, 
-                "params": [], 
                 "text": "@private"
             }, 
             "constructor": {
                 "internal": true, 
-                "params": [], 
                 "text": "@private"
             }, 
             "onEnabledChanged": {
                 "internal": true, 
-                "params": [], 
                 "text": "@private"
             }
         }, 
         "Properties": {
             "bottom": {
-                "defaultValue": "", 
                 "internal": false, 
-                "text": "bottom border", 
-                "type": "int"
-            }, 
-            "enabled": {
-                "defaultValue": "true", 
-                "internal": false, 
-                "text": "enable/disable mixin", 
-                "type": "bool"
+                "text": "bottom border"
             }, 
             "left": {
-                "defaultValue": "", 
                 "internal": false, 
-                "text": "left border", 
-                "type": "int"
-            }, 
-            "moved": {
-                "defaultValue": "", 
-                "internal": false, 
-                "text": "is moved flag", 
-                "type": "bool"
+                "text": "left border"
             }, 
             "pressed": {
-                "defaultValue": "", 
                 "internal": false, 
-                "text": "is mouse pressed flag", 
-                "type": "bool"
+                "text": "is mouse pressed flag"
             }, 
             "right": {
-                "defaultValue": "", 
                 "internal": false, 
-                "text": "right border", 
-                "type": "int"
+                "text": "right border"
             }, 
             "top": {
-                "defaultValue": "", 
                 "internal": false, 
-                "text": "top border", 
-                "type": "int"
+                "text": "top border"
             }
         }
     }, 

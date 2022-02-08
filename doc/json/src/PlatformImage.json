@@ -2,10 +2,8 @@
     "content": {
         "Properties": {
             "icon": {
-                "defaultValue": "", 
                 "internal": false, 
-                "text": "", 
-                "type": "string"
+                "text": ""
             }
         }
     }, 

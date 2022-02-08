@@ -3,20 +3,18 @@
         "Methods": {
             "_updateScrollPositions": {
                 "internal": true, 
-                "params": [], 
                 "text": "@private silently updates scroll positions, because browser animates scroll"
             }, 
             "constructor": {
-                "internal": true, 
+                "internal": false, 
                 "text": ""
             }, 
             "onXChanged": {
                 "internal": true, 
-                "params": [], 
                 "text": "@private content for base view scrolling area"
             }, 
             "onYChanged": {
-                "internal": true, 
+                "internal": false, 
                 "text": ""
             }
         }

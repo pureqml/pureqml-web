@@ -3,71 +3,57 @@
         "Methods": {
             "_restart": {
                 "internal": true, 
-                "params": [], 
                 "text": "@private"
             }, 
             "constructor": {
-                "internal": true, 
+                "internal": false, 
                 "text": ""
             }, 
             "onCompleted": {
                 "internal": true, 
-                "params": [], 
                 "text": "@private"
             }, 
             "onIntervalChanged": {
-                "internal": true, 
+                "internal": false, 
                 "text": ""
             }, 
             "onRunningChanged": {
-                "internal": true, 
+                "internal": false, 
                 "text": ""
             }, 
             "onTriggered": {
                 "internal": true, 
-                "params": [], 
                 "text": "@private"
             }, 
             "restart": {
                 "internal": false, 
-                "params": [], 
                 "text": "restart timer, activate if stopped"
             }, 
             "start": {
                 "internal": false, 
-                "params": [], 
                 "text": "starts timer"
             }, 
             "stop": {
                 "internal": false, 
-                "params": [], 
                 "text": "stops timer"
             }
         }, 
         "Properties": {
             "interval": {
-                "defaultValue": "1000", 
                 "internal": false, 
-                "text": "interval, ms", 
-                "type": "int"
+                "text": "interval, ms"
             }, 
             "repeat": {
-                "defaultValue": "", 
                 "internal": false, 
-                "text": "makes this timer periodic", 
-                "type": "bool"
+                "text": "makes this timer periodic"
             }, 
             "running": {
-                "defaultValue": "", 
                 "internal": false, 
-                "text": "current timer status, true - running, false - paused", 
-                "type": "bool"
+                "text": "current timer status, true - running, false - paused"
             }, 
             "triggeredOnStart": {
-                "defaultValue": "", 
                 "internal": false, 
-                "text": "fire timer's signal on start or activation", 
-                "type": "bool"
+                "text": "fire timer's signal on start or activation"
             }
         }, 
         "Signals": {

@@ -3,26 +3,21 @@
         "Methods": {
             "_updatePos": {
                 "internal": true, 
-                "params": [], 
                 "text": "@private"
             }, 
             "onCompleted": {
-                "internal": true, 
+                "internal": false, 
                 "text": ""
             }
         }, 
         "Properties": {
             "target": {
-                "defaultValue": "", 
                 "internal": false, 
-                "text": "target view for highlighter", 
-                "type": "Object"
+                "text": "target view for highlighter"
             }, 
             "updatePositionProperty": {
-                "defaultValue": "currentIndex", 
                 "internal": false, 
-                "text": "which property must changed to update highlighter position", 
-                "type": "string"
+                "text": "which property must changed to update highlighter position"
             }
         }
     }, 

@@ -2,7 +2,7 @@
     "content": {
         "Methods": {
             "onCompleted": {
-                "internal": true, 
+                "internal": false, 
                 "text": ""
             }, 
             "send": {
@@ -20,28 +20,20 @@
         }, 
         "Properties": {
             "autostart": {
-                "defaultValue": "", 
                 "internal": false, 
-                "text": "", 
-                "type": "bool"
+                "text": ""
             }, 
             "ip": {
-                "defaultValue": "", 
                 "internal": false, 
-                "text": "", 
-                "type": "string"
+                "text": ""
             }, 
             "port": {
-                "defaultValue": "", 
                 "internal": false, 
-                "text": "", 
-                "type": "string"
+                "text": ""
             }, 
             "started": {
-                "defaultValue": "", 
                 "internal": false, 
-                "text": "", 
-                "type": "bool"
+                "text": ""
             }
         }, 
         "Signals": {

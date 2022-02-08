@@ -2,7 +2,7 @@
     "content": {
         "Methods": {
             "onRunningChanged": {
-                "internal": true, 
+                "internal": false, 
                 "text": ""
             }, 
             "resetPosition": {
@@ -16,28 +16,20 @@
         }, 
         "Properties": {
             "color": {
-                "defaultValue": "#fff", 
                 "internal": false, 
-                "text": "", 
-                "type": "Color"
+                "text": ""
             }, 
             "pixelSize": {
-                "defaultValue": "21", 
                 "internal": false, 
-                "text": "", 
-                "type": "int"
+                "text": ""
             }, 
             "running": {
-                "defaultValue": "", 
                 "internal": false, 
-                "text": "", 
-                "type": "bool"
+                "text": ""
             }, 
             "text": {
-                "defaultValue": "", 
                 "internal": false, 
-                "text": "", 
-                "type": "string"
+                "text": ""
             }
         }
     }, 

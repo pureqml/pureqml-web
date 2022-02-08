@@ -7,74 +7,57 @@
             }, 
             "constructor": {
                 "internal": true, 
-                "params": [], 
                 "text": "@private"
             }, 
             "pushState": {
+                "internal": false, 
+                "text": ""
+            }, 
+            "reload": {
                 "internal": false, 
                 "text": ""
             }
         }, 
         "Properties": {
             "hash": {
-                "defaultValue": "", 
                 "internal": false, 
-                "text": "contains current hash value (after '#' charachter)", 
-                "type": "string"
+                "text": "contains current hash value (after '#' charachter)"
             }, 
             "host": {
-                "defaultValue": "", 
                 "internal": false, 
-                "text": "current host with port number", 
-                "type": "string"
+                "text": "current host with port number"
             }, 
             "hostname": {
-                "defaultValue": "", 
                 "internal": false, 
-                "text": "current host name", 
-                "type": "string"
+                "text": "current host name"
             }, 
             "href": {
-                "defaultValue": "", 
                 "internal": false, 
-                "text": "whole current URL", 
-                "type": "string"
+                "text": "whole current URL"
             }, 
             "origin": {
-                "defaultValue": "", 
                 "internal": false, 
-                "text": "current protocol, hostname and port number of a URL", 
-                "type": "string"
+                "text": "current protocol, hostname and port number of a URL"
             }, 
             "pathname": {
-                "defaultValue": "", 
                 "internal": false, 
-                "text": "path name of the current URL", 
-                "type": "string"
+                "text": "path name of the current URL"
             }, 
             "port": {
-                "defaultValue": "", 
                 "internal": false, 
-                "text": "current port number", 
-                "type": "string"
+                "text": "current port number"
             }, 
             "protocol": {
-                "defaultValue": "", 
                 "internal": false, 
-                "text": "current protocol", 
-                "type": "string"
+                "text": "current protocol"
             }, 
             "search": {
-                "defaultValue": "", 
                 "internal": false, 
-                "text": "query string of the URL", 
-                "type": "string"
+                "text": "query string of the URL"
             }, 
             "state": {
-                "defaultValue": "", 
                 "internal": false, 
-                "text": "current history state", 
-                "type": "Object"
+                "text": "current history state"
             }
         }
     }, 

@@ -3,15 +3,14 @@
         "Methods": {
             "_updateValue": {
                 "internal": true, 
-                "params": [], 
                 "text": "@private"
             }, 
             "constructor": {
-                "internal": true, 
+                "internal": false, 
                 "text": ""
             }, 
             "onValueChanged": {
-                "internal": true, 
+                "internal": false, 
                 "text": ""
             }
         }

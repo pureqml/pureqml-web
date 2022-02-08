@@ -3,58 +3,45 @@
         "Methods": {
             "_bindMove": {
                 "internal": true, 
-                "params": [], 
                 "text": "@private"
             }, 
             "_setHover": {
                 "internal": true, 
-                "params": [], 
                 "text": "@private"
             }, 
             "_updatePosition": {
                 "internal": true, 
-                "params": [], 
                 "text": "@private"
             }, 
             "constructor": {
                 "internal": true, 
-                "params": [], 
                 "text": "@private"
             }, 
             "onEnabledChanged": {
                 "internal": true, 
-                "params": [], 
                 "text": "@private"
             }, 
             "onMouseMove": {
                 "internal": true, 
-                "params": [], 
                 "text": "@private"
             }, 
             "onValueChanged": {
                 "internal": true, 
-                "params": [], 
                 "text": "@private"
             }
         }, 
         "Properties": {
             "mouseX": {
-                "defaultValue": "", 
                 "internal": false, 
-                "text": "", 
-                "type": "int"
+                "text": ""
             }, 
             "mouseY": {
-                "defaultValue": "", 
                 "internal": false, 
-                "text": "", 
-                "type": "int"
+                "text": ""
             }, 
             "timeout": {
-                "defaultValue": "5000", 
                 "internal": false, 
-                "text": "timeout delay", 
-                "type": "int"
+                "text": "timeout delay"
             }
         }, 
         "Signals": {

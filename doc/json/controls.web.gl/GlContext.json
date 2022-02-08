@@ -2,21 +2,19 @@
     "content": {
         "Methods": {
             "constructor": {
-                "internal": true, 
+                "internal": false, 
                 "text": ""
             }, 
             "onWidthChanged": {
-                "internal": true, 
+                "internal": false, 
                 "text": ""
             }, 
             "render": {
                 "internal": true, 
-                "params": [], 
                 "text": "@private"
             }, 
             "startRender": {
                 "internal": true, 
-                "params": [], 
                 "text": "@private"
             }
         }, 

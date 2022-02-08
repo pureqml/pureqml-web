@@ -3,47 +3,37 @@
         "Methods": {
             "args": {
                 "internal": false, 
-                "params": [], 
                 "text": "additional arguments provided for method"
             }, 
             "call": {
                 "internal": true, 
-                "params": [], 
                 "text": "@private call implementation"
             }, 
             "headers": {
                 "internal": false, 
-                "params": [], 
                 "text": "headers override"
             }, 
             "onNameChanged": {
-                "internal": true, 
+                "internal": false, 
                 "text": ""
             }, 
             "pathArgs": {
                 "internal": true, 
-                "params": [], 
                 "text": "@internal replace path arguments ({} by default)"
             }
         }, 
         "Properties": {
             "name": {
-                "defaultValue": "", 
                 "internal": false, 
-                "text": "method name", 
-                "type": "string"
+                "text": "method name"
             }, 
             "path": {
-                "defaultValue": "", 
                 "internal": false, 
-                "text": "", 
-                "type": "string"
+                "text": ""
             }, 
             "type": {
-                "defaultValue": "GET", 
                 "internal": false, 
-                "text": "method type, could be any of supported HTTP request types", 
-                "type": "string"
+                "text": "method type, could be any of supported HTTP request types"
             }
         }
     }, 

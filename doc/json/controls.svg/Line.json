@@ -3,67 +3,53 @@
         "Methods": {
             "getTag": {
                 "internal": false, 
-                "params": [], 
                 "text": "returns tag for corresponding element"
             }, 
             "onColorChanged": {
                 "internal": true, 
-                "params": [], 
                 "text": "@internal"
             }, 
             "onX1Changed": {
-                "internal": true, 
+                "internal": false, 
                 "text": ""
             }, 
             "onX2Changed": {
-                "internal": true, 
+                "internal": false, 
                 "text": ""
             }, 
             "onY1Changed": {
-                "internal": true, 
+                "internal": false, 
                 "text": ""
             }, 
             "onY2Changed": {
-                "internal": true, 
+                "internal": false, 
                 "text": ""
             }
         }, 
         "Properties": {
             "color": {
-                "defaultValue": "red", 
                 "internal": false, 
-                "text": "", 
-                "type": "Color"
+                "text": ""
             }, 
             "width": {
-                "defaultValue": "2", 
                 "internal": false, 
-                "text": "", 
-                "type": "int"
+                "text": ""
             }, 
             "x1": {
-                "defaultValue": "", 
                 "internal": false, 
-                "text": "", 
-                "type": "int"
+                "text": ""
             }, 
             "x2": {
-                "defaultValue": "", 
                 "internal": false, 
-                "text": "", 
-                "type": "int"
+                "text": ""
             }, 
             "y1": {
-                "defaultValue": "", 
                 "internal": false, 
-                "text": "", 
-                "type": "int"
+                "text": ""
             }, 
             "y2": {
-                "defaultValue": "", 
                 "internal": false, 
-                "text": "", 
-                "type": "int"
+                "text": ""
             }
         }
     }, 

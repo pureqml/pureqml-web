@@ -2,28 +2,22 @@
     "content": {
         "Methods": {
             "onCompleted": {
-                "internal": true, 
+                "internal": false, 
                 "text": ""
             }
         }, 
         "Properties": {
             "begin": {
-                "defaultValue": "", 
                 "internal": false, 
-                "text": "", 
-                "type": "int"
+                "text": ""
             }, 
             "end": {
-                "defaultValue": "", 
                 "internal": false, 
-                "text": "", 
-                "type": "int"
+                "text": ""
             }, 
             "parentModel": {
-                "defaultValue": "", 
                 "internal": false, 
-                "text": "", 
-                "type": "Object"
+                "text": ""
             }
         }
     }, 

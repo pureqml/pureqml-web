@@ -3,16 +3,14 @@
         "Methods": {
             "focusNextChild": {
                 "internal": false, 
-                "params": [], 
                 "text": "move focus to the next child"
             }, 
             "focusPrevChild": {
                 "internal": false, 
-                "params": [], 
                 "text": "move focus to the previous child"
             }, 
             "onCurrentIndexChanged": {
-                "internal": true, 
+                "internal": false, 
                 "text": ""
             }
         }

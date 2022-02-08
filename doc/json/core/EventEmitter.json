@@ -7,7 +7,6 @@
             }, 
             "constructor": {
                 "internal": true, 
-                "params": [], 
                 "text": "@private"
             }, 
             "discard": {
@@ -32,7 +31,6 @@
             }, 
             "removeAllOn": {
                 "internal": true, 
-                "params": [], 
                 "text": "@private removes all on(signal) connections"
             }, 
             "removeListener": {

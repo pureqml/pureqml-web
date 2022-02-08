@@ -1,0 +1,62 @@
+{
+    "content": {
+        "Methods": {
+            "_bindClick": {
+                "internal": true, 
+                "text": "@private"
+            }, 
+            "_bindHover": {
+                "internal": true, 
+                "text": "@private"
+            }, 
+            "_bindPressable": {
+                "internal": true, 
+                "text": "@private"
+            }, 
+            "_bindWheel": {
+                "internal": true, 
+                "text": "@private"
+            }, 
+            "constructor": {
+                "internal": true, 
+                "text": "@private"
+            }, 
+            "onClickableChanged": {
+                "internal": false, 
+                "text": ""
+            }, 
+            "onHoverableChanged": {
+                "internal": false, 
+                "text": ""
+            }, 
+            "onPressableChanged": {
+                "internal": false, 
+                "text": ""
+            }, 
+            "updatePosition": {
+                "internal": false, 
+                "text": ""
+            }
+        }, 
+        "Properties": {
+            "clickable": {
+                "internal": false, 
+                "text": "enable mouse click event handling flag"
+            }, 
+            "hoverable": {
+                "internal": false, 
+                "text": "hoverEnabled property alias"
+            }, 
+            "pressable": {
+                "internal": false, 
+                "text": "enable mouse click event handling flag"
+            }, 
+            "wheelEnabled": {
+                "internal": false, 
+                "text": "enable mouse click event handling flag"
+            }
+        }
+    }, 
+    "name": "controls.mixins.MouseMixin", 
+    "text": "Provide mouse signals: clicked, mouseMove, wheel. And properties: mouseX, mouseY, hover, pressed"
+}

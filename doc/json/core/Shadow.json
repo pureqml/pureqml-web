@@ -3,49 +3,37 @@
         "Methods": {
             "_empty": {
                 "internal": true, 
-                "params": [], 
                 "text": "@private"
             }, 
             "_getFilterStyle": {
                 "internal": true, 
-                "params": [], 
                 "text": "@private"
             }, 
             "onXChanged": {
-                "internal": true, 
+                "internal": false, 
                 "text": ""
             }
         }, 
         "Properties": {
             "blur": {
-                "defaultValue": "", 
                 "internal": false, 
-                "text": "applies a blur effect on the shadow", 
-                "type": "real"
+                "text": "applies a blur effect on the shadow"
             }, 
             "color": {
-                "defaultValue": "black", 
                 "internal": false, 
-                "text": "color of the shadow", 
-                "type": "color"
+                "text": "color of the shadow"
             }, 
             "spread": {
-                "defaultValue": "", 
                 "internal": false, 
-                "text": "adjusts a spread distance of the shadow", 
-                "type": "real"
+                "text": "adjusts a spread distance of the shadow"
             }, 
             "x": {
-                "defaultValue": "", 
                 "internal": false, 
-                "text": "x coordinate", 
-                "type": "real"
+                "text": "x coordinate"
             }, 
             "y": {
-                "defaultValue": "", 
                 "internal": false, 
-                "text": "y coordinate", 
-                "type": "real"
+                "text": "y coordinate"
             }
         }
     }, 

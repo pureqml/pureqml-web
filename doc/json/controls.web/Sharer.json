@@ -2,26 +2,22 @@
     "content": {
         "Methods": {
             "onSocailNetworkChanged": {
-                "internal": true, 
+                "internal": false, 
                 "text": ""
             }, 
             "open": {
                 "internal": false, 
-                "params": [], 
                 "text": "load URL"
             }, 
             "redirect": {
                 "internal": false, 
-                "params": [], 
                 "text": "set location to corresponded URL"
             }
         }, 
         "Properties": {
             "url": {
-                "defaultValue": "", 
                 "internal": false, 
-                "text": "URL you want to share", 
-                "type": "string"
+                "text": "URL you want to share"
             }
         }
     }, 

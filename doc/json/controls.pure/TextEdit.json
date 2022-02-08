@@ -24,7 +24,7 @@
         }, 
         "Methods": {
             "onPlaceholderChanged": {
-                "internal": true, 
+                "internal": false, 
                 "text": ""
             }, 
             "removeChar": {
@@ -34,22 +34,16 @@
         }, 
         "Properties": {
             "cursorVisible": {
-                "defaultValue": "true", 
                 "internal": false, 
-                "text": "", 
-                "type": "bool"
+                "text": ""
             }, 
             "paddings": {
-                "defaultValue": "Paddings", 
                 "internal": false, 
-                "text": "", 
-                "type": "lazy"
+                "text": ""
             }, 
             "placeholder": {
-                "defaultValue": "", 
                 "internal": false, 
-                "text": "", 
-                "type": "string"
+                "text": ""
             }
         }
     }, 

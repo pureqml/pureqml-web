@@ -3,24 +3,15 @@
         "Methods": {
             "_layout": {
                 "internal": true, 
-                "params": [], 
                 "text": "@private"
             }, 
             "chooseCurrentPage": {
                 "internal": false, 
-                "params": [], 
                 "text": "set focus on current LazyPage content"
             }, 
             "getPageIndexByName": {
                 "internal": false, 
-                "params": [
-                    {
-                        "name": "name", 
-                        "text": "page name", 
-                        "type": "string"
-                    }
-                ], 
-                "text": "\tfind page index in pagestack by its name"
+                "text": "@param name:string page name\n\tfind page index in pagestack by its name"
             }, 
             "setState": {
                 "internal": false, 
@@ -28,14 +19,7 @@
             }, 
             "showPageByName": {
                 "internal": false, 
-                "params": [
-                    {
-                        "name": "name", 
-                        "text": "page name", 
-                        "type": "string"
-                    }
-                ], 
-                "text": "\tshow page by its name"
+                "text": "@param name:string page name\n\tshow page by its name"
             }
         }
     }, 

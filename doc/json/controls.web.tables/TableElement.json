@@ -2,11 +2,11 @@
     "content": {
         "Methods": {
             "onCompleted": {
-                "internal": true, 
+                "internal": false, 
                 "text": ""
             }, 
             "onTextChanged": {
-                "internal": true, 
+                "internal": false, 
                 "text": ""
             }, 
             "registerStyle": {
@@ -16,10 +16,8 @@
         }, 
         "Properties": {
             "text": {
-                "defaultValue": "", 
                 "internal": false, 
-                "text": "", 
-                "type": "string"
+                "text": ""
             }
         }
     }, 

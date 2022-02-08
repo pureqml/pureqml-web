@@ -3,31 +3,25 @@
         "Methods": {
             "bufferedAmount": {
                 "internal": false, 
-                "params": [], 
                 "text": "Returns the number of bytes of data that have been queued using calls to send() but not yet transmitted to the network."
             }, 
             "close": {
                 "internal": false, 
-                "params": [], 
                 "text": "Closes the WebSocket connection or connection attempt, if any."
             }, 
             "connect": {
                 "internal": false, 
-                "params": [], 
                 "text": "Initiate connect to the provided url"
             }, 
             "send": {
                 "internal": false, 
-                "params": [], 
                 "text": "Method enqueues the specified data to be transmitted to the server over the WebSocket connection."
             }
         }, 
         "Properties": {
             "url": {
-                "defaultValue": "", 
                 "internal": false, 
-                "text": "The url needs to start with either 'ws://' or 'wss://'", 
-                "type": "string"
+                "text": "The url needs to start with either 'ws://' or 'wss://'"
             }
         }, 
         "Signals": {

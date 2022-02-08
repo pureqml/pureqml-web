@@ -3,78 +3,57 @@
         "Methods": {
             "_addStyle": {
                 "internal": true, 
-                "params": [], 
                 "text": "@private"
             }, 
             "_getFilterStyle": {
                 "internal": true, 
-                "params": [], 
                 "text": "@private"
             }, 
             "_updateStyle": {
                 "internal": true, 
-                "params": [], 
                 "text": "@private"
             }, 
             "onBlurChanged": {
-                "internal": true, 
+                "internal": false, 
                 "text": ""
             }
         }, 
         "Properties": {
             "blur": {
-                "defaultValue": "", 
                 "internal": false, 
-                "text": "applies a blur effect to the image", 
-                "type": "real"
+                "text": "applies a blur effect to the image"
             }, 
             "brightness": {
-                "defaultValue": "", 
                 "internal": false, 
-                "text": "adjusts the brightness of the image", 
-                "type": "real"
+                "text": "adjusts the brightness of the image"
             }, 
             "contrast": {
-                "defaultValue": "", 
                 "internal": false, 
-                "text": "adjusts the contrast of the image", 
-                "type": "real"
+                "text": "adjusts the contrast of the image"
             }, 
             "grayscale": {
-                "defaultValue": "", 
                 "internal": false, 
-                "text": "converts the image to grayscale", 
-                "type": "real"
+                "text": "converts the image to grayscale"
             }, 
             "hueRotate": {
-                "defaultValue": "", 
                 "internal": false, 
-                "text": "applies a hue rotation on the image. The value defines the number of degrees around the color circle the image samples will be adjusted", 
-                "type": "real"
+                "text": "applies a hue rotation on the image. The value defines the number of degrees around the color circle the image samples will be adjusted"
             }, 
             "invert": {
-                "defaultValue": "", 
                 "internal": false, 
-                "text": "inverts the samples in the image", 
-                "type": "real"
+                "text": "inverts the samples in the image"
             }, 
             "saturate": {
-                "defaultValue": "", 
                 "internal": false, 
-                "text": "saturates the image", 
-                "type": "real"
+                "text": "saturates the image"
             }, 
             "sepia": {
-                "defaultValue": "", 
                 "internal": false, 
-                "text": "converts the image to sepia", 
-                "type": "real"
+                "text": "converts the image to sepia"
             }, 
             "shadow": {
-                "defaultValue": "Shadow", 
                 "internal": false, 
-                "text": "object property for the shadow adjusting", 
-                "type": "lazy"
+                "text": "object property for the shadow adjusting"
             }
         }
     }, 

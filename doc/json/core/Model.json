@@ -1,11 +1,19 @@
 {
     "content": {
+        "Methods": {
+            "attachTo": {
+                "internal": true, 
+                "text": "@private"
+            }, 
+            "detachFrom": {
+                "internal": true, 
+                "text": "@private"
+            }
+        }, 
         "Properties": {
             "count": {
-                "defaultValue": "", 
                 "internal": false, 
-                "text": "model rows count. Please note that you can't directly/indirectly modify model from onChanged handler. Use view.onCountChanged instead", 
-                "type": "int"
+                "text": "model rows count. Please note that you can't directly/indirectly modify model from onChanged handler. Use view.onCountChanged instead"
             }
         }, 
         "Signals": {
@@ -28,5 +36,5 @@
         }
     }, 
     "name": "core.Model", 
-    "text": ""
+    "text": "@private"
 }

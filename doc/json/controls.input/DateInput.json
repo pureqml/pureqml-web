@@ -2,36 +2,30 @@
     "content": {
         "Methods": {
             "constructor": {
-                "internal": true, 
+                "internal": false, 
                 "text": ""
             }, 
             "onMaxChanged": {
-                "internal": true, 
+                "internal": false, 
                 "text": ""
             }, 
             "onMinChanged": {
-                "internal": true, 
+                "internal": false, 
                 "text": ""
             }
         }, 
         "Properties": {
             "max": {
-                "defaultValue": "", 
                 "internal": false, 
-                "text": "maximum date value", 
-                "type": "string"
+                "text": "maximum date value"
             }, 
             "min": {
-                "defaultValue": "", 
                 "internal": false, 
-                "text": "minimal date value", 
-                "type": "string"
+                "text": "minimal date value"
             }, 
             "value": {
-                "defaultValue": "", 
                 "internal": false, 
-                "text": "current date value", 
-                "type": "string"
+                "text": "current date value"
             }
         }
     }, 

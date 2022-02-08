@@ -2,11 +2,11 @@
     "content": {
         "Methods": {
             "constructor": {
-                "internal": true, 
+                "internal": false, 
                 "text": ""
             }, 
             "onColorChanged": {
-                "internal": true, 
+                "internal": false, 
                 "text": ""
             }, 
             "prototypeConstructor": {
@@ -16,22 +16,16 @@
         }, 
         "Properties": {
             "border": {
-                "defaultValue": "Border", 
                 "internal": false, 
-                "text": "object holding properties of the border", 
-                "type": "lazy"
+                "text": "object holding properties of the border"
             }, 
             "color": {
-                "defaultValue": "#0000", 
                 "internal": false, 
-                "text": "rectangle background color", 
-                "type": "color"
+                "text": "rectangle background color"
             }, 
             "gradient": {
-                "defaultValue": "", 
                 "internal": false, 
-                "text": "if gradient object was set, it displays gradient instead of solid color", 
-                "type": "Gradient"
+                "text": "if gradient object was set, it displays gradient instead of solid color"
             }
         }
     }, 

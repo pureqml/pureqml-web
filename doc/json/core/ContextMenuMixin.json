@@ -1,0 +1,20 @@
+{
+    "content": {
+        "Methods": {
+            "_bindClick": {
+                "internal": true, 
+                "text": "@private"
+            }, 
+            "constructor": {
+                "internal": true, 
+                "text": "@private"
+            }, 
+            "onEnabledChanged": {
+                "internal": true, 
+                "text": "@private"
+            }
+        }
+    }, 
+    "name": "core.ContextMenuMixin", 
+    "text": "This mixin provides mouse click event detecting"
+}

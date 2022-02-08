@@ -3,22 +3,13 @@
         "Methods": {
             "ajax": {
                 "internal": false, 
-                "params": [
-                    {
-                        "name": "request", 
-                        "text": "request object", 
-                        "type": "Object"
-                    }
-                ], 
-                "text": "\tsend request using 'XMLHttpRequest' object"
+                "text": "@param request:Object request object\n\tsend request using 'XMLHttpRequest' object"
             }
         }, 
         "Properties": {
             "loading": {
-                "defaultValue": "false", 
                 "internal": false, 
-                "text": "loading flag, is true when request was send and false when answer was recieved or error occured", 
-                "type": "bool"
+                "text": "loading flag, is true when request was send and false when answer was recieved or error occured"
             }
         }
     }, 

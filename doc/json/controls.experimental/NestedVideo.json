@@ -12,10 +12,8 @@
         }, 
         "Properties": {
             "display": {
-                "defaultValue": "", 
                 "internal": false, 
-                "text": "", 
-                "type": "bool"
+                "text": ""
             }
         }
     }, 

@@ -2,22 +2,18 @@
     "content": {
         "Methods": {
             "onOffsetYChanged": {
-                "internal": true, 
+                "internal": false, 
                 "text": ""
             }
         }, 
         "Properties": {
             "offsetX": {
-                "defaultValue": "", 
                 "internal": false, 
-                "text": "sprite horizontal offset", 
-                "type": "int"
+                "text": "sprite horizontal offset"
             }, 
             "offsetY": {
-                "defaultValue": "", 
                 "internal": false, 
-                "text": "sprite vertical offset", 
-                "type": "int"
+                "text": "sprite vertical offset"
             }
         }
     }, 

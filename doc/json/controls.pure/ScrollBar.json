@@ -2,7 +2,7 @@
     "content": {
         "Methods": {
             "onHeightChanged": {
-                "internal": true, 
+                "internal": false, 
                 "text": ""
             }, 
             "show": {
@@ -12,76 +12,52 @@
         }, 
         "Properties": {
             "animationDuration": {
-                "defaultValue": "300", 
                 "internal": false, 
-                "text": "", 
-                "type": "int"
+                "text": ""
             }, 
             "barColor": {
-                "defaultValue": "#fff", 
                 "internal": false, 
-                "text": "", 
-                "type": "Color"
+                "text": ""
             }, 
             "contentHeight": {
-                "defaultValue": "1", 
                 "internal": false, 
-                "text": "", 
-                "type": "int"
+                "text": ""
             }, 
             "contentY": {
-                "defaultValue": "", 
                 "internal": false, 
-                "text": "", 
-                "type": "int"
+                "text": ""
             }, 
             "display": {
-                "defaultValue": "false", 
                 "internal": false, 
-                "text": "", 
-                "type": "bool"
+                "text": ""
             }, 
             "displayHeight": {
-                "defaultValue": "1", 
                 "internal": false, 
-                "text": "", 
-                "type": "int"
+                "text": ""
             }, 
             "displaySeconds": {
-                "defaultValue": "1000", 
                 "internal": false, 
-                "text": "", 
-                "type": "int"
+                "text": ""
             }, 
             "maxContentY": {
-                "defaultValue": "${displayHeight} - ${movingBar.height}", 
                 "internal": false, 
-                "text": "", 
-                "type": "int"
+                "text": ""
             }, 
             "minHeight": {
-                "defaultValue": "10", 
                 "internal": false, 
-                "text": "", 
-                "type": "int"
+                "text": ""
             }, 
             "realContentY": {
-                "defaultValue": "${contentHeight} ? - ${contentY} * 1.0 / ${contentHeight} * ${displayHeight} : 0", 
                 "internal": false, 
-                "text": "", 
-                "type": "int"
+                "text": ""
             }, 
             "realHeight": {
-                "defaultValue": "${contentHeight} ? ${displayHeight} * 1.0 / ${contentHeight} * ${displayHeight} : 0", 
                 "internal": false, 
-                "text": "", 
-                "type": "int"
+                "text": ""
             }, 
             "shift": {
-                "defaultValue": "${realContentY} > ${maxContentY} ? ${maxContentY} : ${realContentY}", 
                 "internal": false, 
-                "text": "", 
-                "type": "int"
+                "text": ""
             }
         }
     }, 

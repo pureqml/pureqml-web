@@ -3,31 +3,26 @@
         "Methods": {
             "_call": {
                 "internal": true, 
-                "params": [], 
                 "text": "@private calls invokes args, headers and ajax, then processes result"
             }, 
             "_registerMethod": {
                 "internal": true, 
-                "params": [], 
                 "text": "@private method registration"
             }, 
             "args": {
                 "internal": false, 
-                "params": [], 
                 "text": "args function allows to override arguments for all methods, e.g. adding session token"
             }, 
             "call": {
                 "internal": true, 
-                "params": [], 
                 "text": "@internal top-level call implementation"
             }, 
             "constructor": {
-                "internal": true, 
+                "internal": false, 
                 "text": ""
             }, 
             "headers": {
                 "internal": false, 
-                "params": [], 
                 "text": "headers function allows to override headers for all methods, e.g. adding session token"
             }, 
             "onError": {
@@ -37,10 +32,8 @@
         }, 
         "Properties": {
             "baseUrl": {
-                "defaultValue": "", 
                 "internal": false, 
-                "text": "base url for all requests", 
-                "type": "string"
+                "text": "base url for all requests"
             }
         }, 
         "Signals": {

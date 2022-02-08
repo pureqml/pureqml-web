@@ -15,133 +15,105 @@
             }, 
             "_subscribe": {
                 "internal": true, 
-                "params": [], 
                 "text": "@private"
             }, 
             "_updateAll": {
                 "internal": true, 
-                "params": [], 
                 "text": "@private"
             }, 
             "constructor": {
-                "internal": true, 
+                "internal": false, 
                 "text": ""
             }, 
             "onBottomChanged": {
-                "internal": true, 
+                "internal": false, 
                 "text": ""
             }, 
             "onCenterInChanged": {
-                "internal": true, 
+                "internal": false, 
                 "text": ""
             }, 
             "onFillChanged": {
-                "internal": true, 
+                "internal": false, 
                 "text": ""
             }, 
             "onHorizontalCenterChanged": {
-                "internal": true, 
+                "internal": false, 
                 "text": ""
             }, 
             "onLeftChanged": {
-                "internal": true, 
+                "internal": false, 
                 "text": ""
             }, 
             "onLeftMarginChanged": {
-                "internal": true, 
+                "internal": false, 
                 "text": ""
             }, 
             "onRightChanged": {
-                "internal": true, 
+                "internal": false, 
                 "text": ""
             }, 
             "onTopChanged": {
-                "internal": true, 
+                "internal": false, 
                 "text": ""
             }, 
             "onVerticalCenterChanged": {
-                "internal": true, 
+                "internal": false, 
                 "text": ""
             }
         }, 
         "Properties": {
             "bottom": {
-                "defaultValue": "", 
                 "internal": false, 
-                "text": "bottom anchor line", 
-                "type": "AnchorLine"
+                "text": "bottom anchor line"
             }, 
             "bottomMargin": {
-                "defaultValue": "", 
                 "internal": false, 
-                "text": "bottom margin value", 
-                "type": "int"
+                "text": "bottom margin value"
             }, 
             "centerIn": {
-                "defaultValue": "", 
                 "internal": false, 
-                "text": "target to place in center of it", 
-                "type": "Item"
+                "text": "target to place in center of it"
             }, 
             "fill": {
-                "defaultValue": "", 
                 "internal": false, 
-                "text": "target to fill", 
-                "type": "Item"
+                "text": "target to fill"
             }, 
             "horizontalCenter": {
-                "defaultValue": "", 
                 "internal": false, 
-                "text": "target for horizontal center", 
-                "type": "AnchorLine"
+                "text": "target for horizontal center"
             }, 
             "left": {
-                "defaultValue": "", 
                 "internal": false, 
-                "text": "left anchor line", 
-                "type": "AnchorLine"
+                "text": "left anchor line"
             }, 
             "leftMargin": {
-                "defaultValue": "", 
                 "internal": false, 
-                "text": "left margin value", 
-                "type": "int"
+                "text": "left margin value"
             }, 
             "margins": {
-                "defaultValue": "", 
                 "internal": false, 
-                "text": "set all margins to same value", 
-                "type": "int"
+                "text": "set all margins to same value"
             }, 
             "right": {
-                "defaultValue": "", 
                 "internal": false, 
-                "text": "right anchor line", 
-                "type": "AnchorLine"
+                "text": "right anchor line"
             }, 
             "rightMargin": {
-                "defaultValue": "", 
                 "internal": false, 
-                "text": "right margin value", 
-                "type": "int"
+                "text": "right margin value"
             }, 
             "top": {
-                "defaultValue": "", 
                 "internal": false, 
-                "text": "top anchor line", 
-                "type": "AnchorLine"
+                "text": "top anchor line"
             }, 
             "topMargin": {
-                "defaultValue": "", 
                 "internal": false, 
-                "text": "top margin value", 
-                "type": "int"
+                "text": "top margin value"
             }, 
             "verticalCenter": {
-                "defaultValue": "", 
                 "internal": false, 
-                "text": "target for vertical center", 
-                "type": "AnchorLine"
+                "text": "target for vertical center"
             }
         }
     }, 

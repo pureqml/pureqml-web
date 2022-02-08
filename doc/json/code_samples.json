@@ -57,6 +57,7 @@
         "TimeInputExample": "code_samples/TimeInputExample.json", 
         "TransformScaleExample": "code_samples/TransformScaleExample.json", 
         "TransformTranslateExample": "code_samples/TransformTranslateExample.json", 
+        "TranslationApp": "code_samples/TranslationApp.json", 
         "TranslationTextExample": "code_samples/TranslationTextExample.json", 
         "VideoPlayerSample": "code_samples/VideoPlayerSample.json"
     }

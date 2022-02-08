@@ -29,22 +29,17 @@
         "Methods": {
             "onPositionChanged": {
                 "internal": true, 
-                "params": [], 
                 "text": "@private"
             }
         }, 
         "Properties": {
             "hoverMixin": {
-                "defaultValue": "HoverClickMixin", 
                 "internal": false, 
-                "text": "hover mixin object proveds common API for mouse properties", 
-                "type": "Mixin"
+                "text": "hover mixin object proveds common API for mouse properties"
             }, 
             "position": {
-                "defaultValue": "", 
                 "internal": false, 
-                "text": "position mode property", 
-                "type": "string"
+                "text": "position mode property"
             }
         }
     }, 

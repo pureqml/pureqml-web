@@ -3,17 +3,14 @@
         "Methods": {
             "getActivity": {
                 "internal": false, 
-                "params": [], 
                 "text": "get activity item"
             }, 
             "start": {
                 "internal": false, 
-                "params": [], 
                 "text": "start activity"
             }, 
             "stop": {
                 "internal": false, 
-                "params": [], 
                 "text": "stop activity"
             }
         }

@@ -3,7 +3,6 @@
         "Methods": {
             "getTag": {
                 "internal": false, 
-                "params": [], 
                 "text": "returns tag for corresponding element"
             }, 
             "registerStyle": {

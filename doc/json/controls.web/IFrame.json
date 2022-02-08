@@ -2,7 +2,7 @@
     "content": {
         "Methods": {
             "constructor": {
-                "internal": true, 
+                "internal": false, 
                 "text": ""
             }, 
             "context.onMessage": {
@@ -11,31 +11,25 @@
             }, 
             "getTag": {
                 "internal": true, 
-                "params": [], 
                 "text": "@private"
             }, 
             "onSourceChanged": {
-                "internal": true, 
+                "internal": false, 
                 "text": ""
             }, 
             "postMessage": {
                 "internal": false, 
-                "params": [], 
                 "text": "Sends message to window"
             }
         }, 
         "Properties": {
             "origin": {
-                "defaultValue": "", 
                 "internal": false, 
-                "text": "readonly property of source's origin for message matching", 
-                "type": "string"
+                "text": "readonly property of source's origin for message matching"
             }, 
             "source": {
-                "defaultValue": "", 
                 "internal": false, 
-                "text": "another page source URL", 
-                "type": "string"
+                "text": "another page source URL"
             }
         }, 
         "Signals": {

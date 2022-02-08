@@ -1,0 +1,18 @@
+{
+    "content": {
+        "Methods": {
+            "constructor": {
+                "internal": false, 
+                "text": ""
+            }
+        }, 
+        "Properties": {
+            "enabled": {
+                "internal": false, 
+                "text": "enable/disable mixin"
+            }
+        }
+    }, 
+    "name": "core.BaseMixin", 
+    "text": ""
+}

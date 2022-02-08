@@ -2,40 +2,34 @@
     "content": {
         "Methods": {
             "constructor": {
-                "internal": true, 
+                "internal": false, 
                 "text": ""
             }, 
             "getTimeDuration": {
                 "internal": true, 
-                "params": [], 
                 "text": "@private"
             }, 
             "onDataChanged": {
-                "internal": true, 
+                "internal": false, 
                 "text": ""
             }, 
             "onProgressChanged": {
-                "internal": true, 
+                "internal": false, 
                 "text": ""
             }, 
             "turnOff": {
                 "internal": false, 
-                "params": [], 
                 "text": "turn subtitles off"
             }
         }, 
         "Properties": {
             "progress": {
-                "defaultValue": "", 
                 "internal": false, 
-                "text": "bind player progress with this property", 
-                "type": "real"
+                "text": "bind player progress with this property"
             }, 
             "text": {
-                "defaultValue": "", 
                 "internal": false, 
-                "text": "current subttile text will be changed on corresponded time", 
-                "type": "string"
+                "text": "current subttile text will be changed on corresponded time"
             }
         }
     }, 

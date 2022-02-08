@@ -3,48 +3,37 @@
         "Methods": {
             "_calculate": {
                 "internal": true, 
-                "params": [], 
                 "text": "/@private"
             }, 
             "onCompleted": {
-                "internal": true, 
+                "internal": false, 
                 "text": ""
             }, 
             "onGlobalWidthChanged": {
-                "internal": true, 
+                "internal": false, 
                 "text": ""
             }
         }, 
         "Properties": {
             "globalWidth": {
-                "defaultValue": "${context.width}", 
                 "internal": true, 
-                "text": "@private", 
-                "type": "int"
+                "text": "@private"
             }, 
             "lg": {
-                "defaultValue": "0", 
                 "internal": false, 
-                "text": "large devices, desktops (>=1200px)", 
-                "type": "real"
+                "text": "large devices, desktops (>=1200px)"
             }, 
             "md": {
-                "defaultValue": "0", 
                 "internal": false, 
-                "text": "medium devices, desktops (>=992px)", 
-                "type": "real"
+                "text": "medium devices, desktops (>=992px)"
             }, 
             "sm": {
-                "defaultValue": "0", 
                 "internal": false, 
-                "text": "small devices, tablets (>=768px)", 
-                "type": "real"
+                "text": "small devices, tablets (>=768px)"
             }, 
             "xs": {
-                "defaultValue": "100", 
                 "internal": false, 
-                "text": "extra small devices, phones (<768px)", 
-                "type": "real"
+                "text": "extra small devices, phones (<768px)"
             }
         }
     }, 

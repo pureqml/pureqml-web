@@ -6,7 +6,7 @@
                 "text": ""
             }, 
             "onShowChanged": {
-                "internal": true, 
+                "internal": false, 
                 "text": ""
             }, 
             "toggleShow": {
@@ -16,47 +16,32 @@
         }, 
         "Properties": {
             "content": {
-                "defaultValue": "", 
                 "internal": false, 
-                "text": "", 
-                "type": "Item"
+                "text": ""
             }, 
             "contentX": {
-                "defaultValue": "", 
                 "internal": false, 
-                "text": "", 
-                "type": "int"
+                "text": ""
             }, 
             "contentY": {
-                "defaultValue": "", 
                 "internal": false, 
-                "text": "", 
-                "type": "int"
+                "text": ""
             }, 
             "icon": {
-                "defaultValue": "", 
                 "internal": false, 
-                "text": "", 
-                "type": "string"
+                "text": ""
             }, 
             "panel": {
-                "defaultValue": "Rectangle", 
                 "internal": false, 
-                "ref": "qmlcore.core/Rectangle", 
-                "text": "", 
-                "type": "Rectangle"
+                "text": ""
             }, 
             "scrollable": {
-                "defaultValue": "false", 
                 "internal": false, 
-                "text": "", 
-                "type": "bool"
+                "text": ""
             }, 
             "show": {
-                "defaultValue": "false", 
                 "internal": false, 
-                "text": "", 
-                "type": "bool"
+                "text": ""
             }
         }
     }, 

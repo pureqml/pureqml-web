@@ -3,19 +3,18 @@
         "Methods": {
             "_setStyle": {
                 "internal": true, 
-                "params": [], 
                 "text": "@private"
             }, 
             "constructor": {
-                "internal": true, 
+                "internal": false, 
                 "text": ""
             }, 
             "onHorizontalScrollBarPolicyChanged": {
-                "internal": true, 
+                "internal": false, 
                 "text": ""
             }, 
             "onVerticalScrollBarPolicyChanged": {
-                "internal": true, 
+                "internal": false, 
                 "text": ""
             }
         }

@@ -3,116 +3,85 @@
         "Methods": {
             "_attach": {
                 "internal": true, 
-                "params": [], 
                 "text": "@private"
             }, 
             "_doLayout": {
                 "internal": true, 
-                "params": [], 
                 "text": "@private"
             }, 
             "_doLayoutNP": {
                 "internal": true, 
-                "params": [], 
                 "text": "@private"
             }, 
             "_processUpdates": {
                 "internal": true, 
-                "params": [], 
                 "text": "@private"
             }, 
             "_scheduleLayout": {
                 "internal": true, 
-                "params": [], 
                 "text": "@private"
             }, 
             "constructor": {
                 "internal": true, 
-                "params": [], 
                 "text": "@private"
             }, 
             "onCompleted": {
                 "internal": true, 
-                "params": [], 
                 "text": "@private"
             }, 
             "onSpacingChanged": {
-                "internal": true, 
+                "internal": false, 
                 "text": ""
             }
         }, 
         "Properties": {
             "contentHeight": {
-                "defaultValue": "", 
                 "internal": false, 
-                "text": "content height", 
-                "type": "int"
+                "text": "content height"
             }, 
             "contentWidth": {
-                "defaultValue": "", 
                 "internal": false, 
-                "text": "content width", 
-                "type": "int"
+                "text": "content width"
             }, 
             "count": {
-                "defaultValue": "", 
                 "internal": false, 
-                "text": "number of children elements", 
-                "type": "int"
+                "text": "number of children elements"
             }, 
             "currentIndex": {
-                "defaultValue": "", 
                 "internal": false, 
-                "text": "index of current focused item", 
-                "type": "int"
+                "text": "index of current focused item"
             }, 
             "handleNavigationKeys": {
-                "defaultValue": "", 
                 "internal": false, 
-                "text": "handle navigation keys, move focus", 
-                "type": "bool"
+                "text": "handle navigation keys, move focus"
             }, 
             "keyNavigationWraps": {
-                "defaultValue": "", 
                 "internal": false, 
-                "text": "key navigation wraps from first to last and vise versa", 
-                "type": "bool"
+                "text": "key navigation wraps from first to last and vise versa"
             }, 
             "layoutDelay": {
-                "defaultValue": "- 1", 
                 "internal": false, 
-                "text": "<0 - end of the tick (default), 0 - request animation frame, >0 - delay in ms", 
-                "type": "int"
+                "text": "<0 - end of the tick (default), 0 - request animation frame, >0 - delay in ms"
             }, 
             "offlineLayout": {
-                "defaultValue": "", 
                 "internal": false, 
-                "text": "layout delegates even if view's invisible", 
-                "type": "bool"
+                "text": "layout delegates even if view's invisible"
             }, 
             "padding": {
-                "defaultValue": "BaseLayoutContentPadding", 
                 "internal": false, 
-                "text": "", 
-                "type": "lazy"
+                "text": ""
             }, 
             "prerenderDelay": {
-                "defaultValue": "- 1", 
                 "internal": false, 
-                "text": "<0 - end of the tick (default), 0 - request animation frame, >0 - delay in ms", 
-                "type": "int"
+                "text": "<0 - end of the tick (default), 0 - request animation frame, >0 - delay in ms"
             }, 
             "spacing": {
-                "defaultValue": "", 
                 "internal": false, 
-                "text": "spacing between adjanced items, pixels", 
-                "type": "int"
+                "text": "spacing between adjanced items, pixels"
             }, 
             "trace": {
-                "defaultValue": "", 
                 "internal": false, 
-                "text": "output debug info in logs: layouts, item positioning", 
-                "type": "bool"
+                "text": "output debug info in logs: layouts, item positioning"
             }
         }
     }, 

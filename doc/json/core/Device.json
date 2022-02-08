@@ -2,86 +2,70 @@
     "content": {
         "Methods": {
             "constructor": {
-                "internal": true, 
+                "internal": false, 
                 "text": ""
             }, 
             "onSdkChanged": {
-                "internal": true, 
+                "internal": false, 
+                "text": ""
+            }, 
+            "onStandByModeChanged": {
+                "internal": false, 
                 "text": ""
             }
         }, 
         "Properties": {
             "country": {
-                "defaultValue": "", 
                 "internal": false, 
-                "text": "device country code", 
-                "type": "string"
+                "text": "device country code"
             }, 
             "deviceId": {
-                "defaultValue": "", 
                 "internal": false, 
-                "text": "unique device id or random generated id if its not supported", 
-                "type": "string"
+                "text": "unique device id or random generated id if its not supported"
             }, 
             "firmware": {
-                "defaultValue": "", 
                 "internal": false, 
-                "text": "firmware version", 
-                "type": "string"
+                "text": "firmware version"
             }, 
             "ip": {
-                "defaultValue": "", 
                 "internal": false, 
-                "text": "device IP address if its available", 
-                "type": "string"
+                "text": "device IP address if its available"
             }, 
             "language": {
-                "defaultValue": "", 
                 "internal": false, 
-                "text": "device langgcode", 
-                "type": "string"
+                "text": "device langgcode"
             }, 
             "macAddress": {
-                "defaultValue": "", 
                 "internal": false, 
-                "text": "device MAC address if its available for current platform", 
-                "type": "string"
+                "text": "device MAC address if its available for current platform"
             }, 
             "modelName": {
-                "defaultValue": "", 
                 "internal": false, 
-                "text": "device model name", 
-                "type": "string"
+                "text": "device model name"
             }, 
             "runtime": {
-                "defaultValue": "", 
                 "internal": false, 
-                "text": "pureqml specific runtime provider, cordova/native", 
-                "type": "string"
+                "text": "pureqml specific runtime provider, cordova/native"
             }, 
             "sdk": {
-                "defaultValue": "", 
                 "internal": false, 
-                "text": "SDK version", 
-                "type": "string"
+                "text": "SDK version"
+            }, 
+            "standByMode": {
+                "internal": false, 
+                "text": "Stand by mode flag (if its supported)"
             }, 
             "supporting3d": {
-                "defaultValue": "", 
                 "internal": false, 
-                "text": "3D Video supporting flag", 
-                "type": "bool"
+                "text": "3D Video supporting flag"
             }, 
             "supportingHdr": {
-                "defaultValue": "", 
                 "internal": false, 
-                "text": "HDR supporting flag", 
-                "type": "bool"
+                "text": "HDR supporting flag"
             }, 
             "supportingUhd": {
-                "defaultValue": "", 
                 "internal": false, 
-                "text": "UHD (4K) supporting flag", 
-                "type": "bool"
+                "text": "UHD (4K) supporting flag"
             }
         }, 
         "Signals": {

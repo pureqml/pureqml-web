@@ -2,52 +2,42 @@
     "content": {
         "Methods": {
             "onBottomChanged": {
-                "internal": true, 
+                "internal": false, 
                 "text": ""
             }, 
             "onLeftChanged": {
-                "internal": true, 
+                "internal": false, 
                 "text": ""
             }, 
             "onRightChanged": {
-                "internal": true, 
+                "internal": false, 
                 "text": ""
             }, 
             "onTopChanged": {
-                "internal": true, 
+                "internal": false, 
                 "text": ""
             }
         }, 
         "Properties": {
             "bottom": {
-                "defaultValue": "", 
                 "internal": false, 
-                "text": "", 
-                "type": "string"
+                "text": ""
             }, 
             "left": {
-                "defaultValue": "", 
                 "internal": false, 
-                "text": "", 
-                "type": "string"
+                "text": ""
             }, 
             "prefix": {
-                "defaultValue": "", 
                 "internal": false, 
-                "text": "", 
-                "type": "string"
+                "text": ""
             }, 
             "right": {
-                "defaultValue": "", 
                 "internal": false, 
-                "text": "", 
-                "type": "string"
+                "text": ""
             }, 
             "top": {
-                "defaultValue": "", 
                 "internal": false, 
-                "text": "", 
-                "type": "string"
+                "text": ""
             }
         }
     }, 

@@ -3,55 +3,41 @@
         "Methods": {
             "onBottomChanged": {
                 "internal": true, 
-                "params": [], 
                 "text": "@private"
             }, 
             "onLeftChanged": {
                 "internal": true, 
-                "params": [], 
                 "text": "@private"
             }, 
             "onRightChanged": {
                 "internal": true, 
-                "params": [], 
                 "text": "@private"
             }, 
             "onTopChanged": {
                 "internal": true, 
-                "params": [], 
                 "text": "@private"
             }
         }, 
         "Properties": {
             "all": {
-                "defaultValue": "", 
                 "internal": false, 
-                "text": "a value for all sides", 
-                "type": "int"
+                "text": "a value for all sides"
             }, 
             "bottom": {
-                "defaultValue": "${all}", 
                 "internal": false, 
-                "text": "bottom padding", 
-                "type": "int"
+                "text": "bottom padding"
             }, 
             "left": {
-                "defaultValue": "${all}", 
                 "internal": false, 
-                "text": "left padding", 
-                "type": "int"
+                "text": "left padding"
             }, 
             "right": {
-                "defaultValue": "${all}", 
                 "internal": false, 
-                "text": "right padding", 
-                "type": "int"
+                "text": "right padding"
             }, 
             "top": {
-                "defaultValue": "${all}", 
                 "internal": false, 
-                "text": "top padding", 
-                "type": "int"
+                "text": "top padding"
             }
         }
     }, 

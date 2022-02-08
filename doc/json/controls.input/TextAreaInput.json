@@ -2,16 +2,15 @@
     "content": {
         "Methods": {
             "constructor": {
-                "internal": true, 
+                "internal": false, 
                 "text": ""
             }, 
             "getTag": {
                 "internal": false, 
-                "params": [], 
                 "text": "returns tag for corresponding element"
             }, 
             "onTextChanged": {
-                "internal": true, 
+                "internal": false, 
                 "text": ""
             }, 
             "registerStyle": {
@@ -21,10 +20,8 @@
         }, 
         "Properties": {
             "text": {
-                "defaultValue": "", 
                 "internal": false, 
-                "text": "", 
-                "type": "string"
+                "text": ""
             }
         }
     }, 

@@ -2,28 +2,22 @@
     "content": {
         "Methods": {
             "onCompleted": {
-                "internal": true, 
+                "internal": false, 
                 "text": ""
             }
         }, 
         "Properties": {
             "mobileMode": {
-                "defaultValue": "${menu.rowsCount} > 1", 
                 "internal": false, 
-                "text": "", 
-                "type": "bool"
+                "text": ""
             }, 
             "newWindow": {
-                "defaultValue": "", 
                 "internal": false, 
-                "text": "", 
-                "type": "bool"
+                "text": ""
             }, 
             "open": {
-                "defaultValue": "", 
                 "internal": false, 
-                "text": "", 
-                "type": "bool"
+                "text": ""
             }
         }
     }, 

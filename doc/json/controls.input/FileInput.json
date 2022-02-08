@@ -2,26 +2,22 @@
     "content": {
         "Methods": {
             "constructor": {
-                "internal": true, 
+                "internal": false, 
                 "text": ""
             }, 
             "onFilterChanged": {
-                "internal": true, 
+                "internal": false, 
                 "text": ""
             }
         }, 
         "Properties": {
             "filter": {
-                "defaultValue": "", 
                 "internal": false, 
-                "text": "filter for file selecting", 
-                "type": "string"
+                "text": "filter for file selecting"
             }, 
             "value": {
-                "defaultValue": "", 
                 "internal": false, 
-                "text": "selected filename", 
-                "type": "string"
+                "text": "selected filename"
             }
         }
     }, 

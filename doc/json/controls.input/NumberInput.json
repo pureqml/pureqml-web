@@ -3,54 +3,49 @@
         "Methods": {
             "_setValueWithLimits": {
                 "internal": true, 
-                "params": [], 
                 "text": "@private - sets element native value while applying min/max limits. if called externally, onValueChanged will not fire"
             }, 
             "constructor": {
-                "internal": true, 
+                "internal": false, 
                 "text": ""
             }, 
             "onMaxChanged": {
-                "internal": true, 
+                "internal": false, 
                 "text": ""
             }, 
             "onMinChanged": {
-                "internal": true, 
+                "internal": false, 
                 "text": ""
             }, 
             "onStepChanged": {
-                "internal": true, 
+                "internal": false, 
                 "text": ""
             }, 
             "onValueChanged": {
-                "internal": true, 
+                "internal": false, 
                 "text": ""
             }
         }, 
         "Properties": {
-            "max": {
-                "defaultValue": "", 
+            "debounceTimeout": {
                 "internal": false, 
-                "text": "maximum number value", 
-                "type": "float"
+                "text": "set to non zero to debounce input allowing user time to type characters (suggest 500)"
+            }, 
+            "max": {
+                "internal": false, 
+                "text": "maximum number value"
             }, 
             "min": {
-                "defaultValue": "", 
                 "internal": false, 
-                "text": "minimum number value", 
-                "type": "float"
+                "text": "minimum number value"
             }, 
             "step": {
-                "defaultValue": "", 
                 "internal": false, 
-                "text": "number step value", 
-                "type": "float"
+                "text": "number step value"
             }, 
             "value": {
-                "defaultValue": "", 
                 "internal": false, 
-                "text": "number value", 
-                "type": "float"
+                "text": "number value - suggested to use onValueChanged not onChange signal in instantiated component"
             }
         }
     }, 

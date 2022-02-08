@@ -1,0 +1,58 @@
+{
+    "content": {
+        "Methods": {
+            "_createValue": {
+                "internal": true, 
+                "text": "@private"
+            }, 
+            "_onReset": {
+                "internal": true, 
+                "text": "@private"
+            }, 
+            "_onRowsChanged": {
+                "internal": true, 
+                "text": "@private"
+            }, 
+            "_onRowsInserted": {
+                "internal": true, 
+                "text": "@private"
+            }, 
+            "_onRowsRemoved": {
+                "internal": true, 
+                "text": "@private"
+            }, 
+            "addChild": {
+                "internal": true, 
+                "text": "@private"
+            }, 
+            "constructor": {
+                "internal": false, 
+                "text": ""
+            }, 
+            "getTag": {
+                "internal": false, 
+                "text": ""
+            }, 
+            "onModelChanged": {
+                "internal": false, 
+                "text": ""
+            }
+        }, 
+        "Properties": {
+            "domId": {
+                "internal": false, 
+                "text": ""
+            }, 
+            "model": {
+                "internal": false, 
+                "text": ""
+            }, 
+            "trace": {
+                "internal": false, 
+                "text": ""
+            }
+        }
+    }, 
+    "name": "controls.web.DataList", 
+    "text": "@private"
+}

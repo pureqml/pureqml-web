@@ -3,16 +3,14 @@
         "Methods": {
             "_delayedLoad": {
                 "internal": true, 
-                "params": [], 
                 "text": "@private"
             }, 
             "constructor": {
-                "internal": true, 
+                "internal": false, 
                 "text": ""
             }, 
             "discard": {
                 "internal": true, 
-                "params": [], 
                 "text": "@private"
             }, 
             "getTag": {
@@ -28,20 +26,18 @@
                 "text": ""
             }, 
             "onCompleted": {
-                "internal": true, 
+                "internal": false, 
                 "text": ""
             }, 
             "onSourceChanged": {
-                "internal": true, 
+                "internal": false, 
                 "text": ""
             }
         }, 
         "Properties": {
             "source": {
-                "defaultValue": "", 
                 "internal": false, 
-                "text": "source to load script from", 
-                "type": "string"
+                "text": "source to load script from"
             }
         }, 
         "Signals": {

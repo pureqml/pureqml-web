@@ -10,36 +10,30 @@
                 "text": ""
             }, 
             "onPositionChanged": {
-                "internal": true, 
+                "internal": false, 
                 "text": ""
             }, 
             "onSpacingChanged": {
-                "internal": true, 
+                "internal": false, 
                 "text": ""
             }, 
             "onVerticalChanged": {
-                "internal": true, 
+                "internal": false, 
                 "text": ""
             }
         }, 
         "Properties": {
             "collapsed": {
-                "defaultValue": "true", 
                 "internal": false, 
-                "text": "", 
-                "type": "bool"
+                "text": ""
             }, 
             "position": {
-                "defaultValue": "", 
                 "internal": false, 
-                "text": "", 
-                "type": "string"
+                "text": ""
             }, 
             "vertical": {
-                "defaultValue": "${width} < 600", 
                 "internal": false, 
-                "text": "", 
-                "type": "bool"
+                "text": ""
             }
         }
     }, 

@@ -3,77 +3,57 @@
         "Methods": {
             "_set": {
                 "internal": true, 
-                "params": [], 
                 "text": "@private"
             }, 
             "constructor": {
                 "internal": true, 
-                "params": [], 
                 "text": "@private"
             }, 
             "get": {
                 "internal": true, 
-                "params": [], 
                 "text": "@private"
             }, 
             "onStandartMappingChanged": {
-                "internal": true, 
+                "internal": false, 
                 "text": ""
             }, 
             "poll": {
                 "internal": true, 
-                "params": [], 
                 "text": "@private"
             }
         }, 
         "Properties": {
             "axesCount": {
-                "defaultValue": "", 
                 "internal": false, 
-                "text": "supported axes count", 
-                "type": "int"
+                "text": "supported axes count"
             }, 
             "buttonsCount": {
-                "defaultValue": "", 
                 "internal": false, 
-                "text": "supported buttons count", 
-                "type": "int"
+                "text": "supported buttons count"
             }, 
             "connected": {
-                "defaultValue": "", 
                 "internal": false, 
-                "text": "is gamepad connected or not", 
-                "type": "bool"
+                "text": "is gamepad connected or not"
             }, 
             "deviceInfo": {
-                "defaultValue": "", 
                 "internal": false, 
-                "text": "gamepad device info string", 
-                "type": "string"
+                "text": "gamepad device info string"
             }, 
             "index": {
-                "defaultValue": "", 
                 "internal": false, 
-                "text": "gamepad index in order of appearance", 
-                "type": "int"
+                "text": "gamepad index in order of appearance"
             }, 
             "productId": {
-                "defaultValue": "", 
                 "internal": false, 
-                "text": "product ID", 
-                "type": "int"
+                "text": "product ID"
             }, 
             "standartMapping": {
-                "defaultValue": "true", 
                 "internal": false, 
-                "text": "gamepad use standart buttons and axes mapping", 
-                "type": "bool"
+                "text": "gamepad use standart buttons and axes mapping"
             }, 
             "vendorId": {
-                "defaultValue": "", 
                 "internal": false, 
-                "text": "vendor ID", 
-                "type": "int"
+                "text": "vendor ID"
             }
         }, 
         "Signals": {

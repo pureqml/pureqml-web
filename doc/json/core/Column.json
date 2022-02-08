@@ -3,17 +3,14 @@
         "Methods": {
             "_layout": {
                 "internal": true, 
-                "params": [], 
                 "text": "@private"
             }, 
             "addChild": {
                 "internal": true, 
-                "params": [], 
                 "text": "@private"
             }, 
             "onKeyPressed": {
                 "internal": true, 
-                "params": [], 
                 "text": "@private"
             }
         }

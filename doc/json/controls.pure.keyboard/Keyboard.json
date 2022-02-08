@@ -12,10 +12,8 @@
         }, 
         "Properties": {
             "currentRow": {
-                "defaultValue": "", 
                 "internal": false, 
-                "text": "", 
-                "type": "int"
+                "text": ""
             }
         }, 
         "Signals": {

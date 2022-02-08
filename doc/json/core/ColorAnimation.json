@@ -3,7 +3,6 @@
         "Methods": {
             "interpolate": {
                 "internal": true, 
-                "params": [], 
                 "text": "@private"
             }
         }

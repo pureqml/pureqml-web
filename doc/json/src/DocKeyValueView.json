@@ -8,16 +8,12 @@
         }, 
         "Properties": {
             "shift": {
-                "defaultValue": "400", 
                 "internal": false, 
-                "text": "", 
-                "type": "int"
+                "text": ""
             }, 
             "wide": {
-                "defaultValue": "${context.width} > 800", 
                 "internal": false, 
-                "text": "", 
-                "type": "bool"
+                "text": ""
             }
         }
     }, 

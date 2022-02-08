@@ -3,34 +3,23 @@
         "Methods": {
             "_bindTouch": {
                 "internal": true, 
-                "params": [], 
                 "text": "@private"
             }, 
             "constructor": {
-                "internal": true, 
+                "internal": false, 
                 "text": ""
             }, 
             "onEnabledChanged": {
-                "internal": true, 
+                "internal": false, 
                 "text": ""
             }, 
             "onTouchMove": {
                 "internal": true, 
-                "params": [], 
                 "text": "@private"
             }, 
             "onTouchStart": {
                 "internal": true, 
-                "params": [], 
                 "text": "@private"
-            }
-        }, 
-        "Properties": {
-            "enabled": {
-                "defaultValue": "true", 
-                "internal": false, 
-                "text": "enable mixin flag", 
-                "type": "bool"
             }
         }, 
         "Signals": {

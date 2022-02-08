@@ -3,7 +3,6 @@
         "Methods": {
             "_animateAll": {
                 "internal": false, 
-                "params": [], 
                 "text": "see backend.js in platform/pure.femto for details"
             }, 
             "_updateTransform": {
@@ -12,135 +11,109 @@
             }, 
             "constructor": {
                 "internal": true, 
-                "params": [], 
                 "text": "@private"
             }, 
             "getAnimation": {
                 "internal": true, 
-                "params": [], 
                 "text": "@private"
             }, 
             "onPerspectiveChanged": {
-                "internal": true, 
+                "internal": false, 
                 "text": ""
             }, 
             "onRotateChanged": {
-                "internal": true, 
+                "internal": false, 
                 "text": ""
             }, 
             "onRotateXChanged": {
-                "internal": true, 
+                "internal": false, 
                 "text": ""
             }, 
             "onRotateYChanged": {
-                "internal": true, 
+                "internal": false, 
                 "text": ""
             }, 
             "onRotateZChanged": {
-                "internal": true, 
+                "internal": false, 
                 "text": ""
             }, 
             "onScaleXChanged": {
-                "internal": true, 
+                "internal": false, 
                 "text": ""
             }, 
             "onScaleYChanged": {
-                "internal": true, 
+                "internal": false, 
                 "text": ""
             }, 
             "onSkewXChanged": {
-                "internal": true, 
+                "internal": false, 
                 "text": ""
             }, 
             "onSkewYChanged": {
-                "internal": true, 
+                "internal": false, 
                 "text": ""
             }, 
             "onTranslateXChanged": {
-                "internal": true, 
+                "internal": false, 
                 "text": ""
             }, 
             "onTranslateYChanged": {
-                "internal": true, 
+                "internal": false, 
                 "text": ""
             }, 
             "onTranslateZChanged": {
-                "internal": true, 
+                "internal": false, 
                 "text": ""
             }
         }, 
         "Properties": {
             "perspective": {
-                "defaultValue": "", 
                 "internal": false, 
-                "text": "perspective transformation", 
-                "type": "int"
+                "text": "perspective transformation"
             }, 
             "rotate": {
-                "defaultValue": "", 
                 "internal": false, 
-                "text": "rotate relative transform point", 
-                "type": "real"
+                "text": "rotate relative transform point"
             }, 
             "rotateX": {
-                "defaultValue": "", 
                 "internal": false, 
-                "text": "x-axis rotation", 
-                "type": "real"
+                "text": "x-axis rotation"
             }, 
             "rotateY": {
-                "defaultValue": "", 
                 "internal": false, 
-                "text": "y-axis rotation", 
-                "type": "real"
+                "text": "y-axis rotation"
             }, 
             "rotateZ": {
-                "defaultValue": "", 
                 "internal": false, 
-                "text": "z-axis rotation", 
-                "type": "real"
+                "text": "z-axis rotation"
             }, 
             "scaleX": {
-                "defaultValue": "", 
                 "internal": false, 
-                "text": "horizontal scale", 
-                "type": "real"
+                "text": "horizontal scale"
             }, 
             "scaleY": {
-                "defaultValue": "", 
                 "internal": false, 
-                "text": "vertical scale", 
-                "type": "real"
+                "text": "vertical scale"
             }, 
             "skewX": {
-                "defaultValue": "", 
                 "internal": false, 
-                "text": "horizontal skew", 
-                "type": "real"
+                "text": "horizontal skew"
             }, 
             "skewY": {
-                "defaultValue": "", 
                 "internal": false, 
-                "text": "vertical skew", 
-                "type": "real"
+                "text": "vertical skew"
             }, 
             "translateX": {
-                "defaultValue": "", 
                 "internal": false, 
-                "text": "x-translate", 
-                "type": "int"
+                "text": "x-translate"
             }, 
             "translateY": {
-                "defaultValue": "", 
                 "internal": false, 
-                "text": "y-translate", 
-                "type": "int"
+                "text": "y-translate"
             }, 
             "translateZ": {
-                "defaultValue": "", 
                 "internal": false, 
-                "text": "z-translate", 
-                "type": "int"
+                "text": "z-translate"
             }
         }
     }, 

@@ -1,0 +1,82 @@
+{
+    "content": {
+        "Methods": {
+            "_initTopIntent": {
+                "internal": true, 
+                "text": "@private"
+            }, 
+            "clear": {
+                "internal": false, 
+                "text": "clear activities stack"
+            }, 
+            "closeAllExcept": {
+                "internal": false, 
+                "text": "@param name:string activity name that must stay\n\tclose all activities in stack except 'name' activity"
+            }, 
+            "constructor": {
+                "internal": false, 
+                "text": ""
+            }, 
+            "createActivity": {
+                "internal": true, 
+                "text": "@private"
+            }, 
+            "findActivity": {
+                "internal": false, 
+                "text": "@param name:string activity name to find\n\tfind 'name' activity in stack"
+            }, 
+            "initTopIntent": {
+                "internal": true, 
+                "text": "@private"
+            }, 
+            "isActivityInStack": {
+                "internal": false, 
+                "text": "@param name:string activity that state will be changed\n\tcheck is 'name' activity in stack or not"
+            }, 
+            "pop": {
+                "internal": false, 
+                "text": "@param count:int activities count to pop from stack\n\tpop top 'count' activities from the stack top"
+            }, 
+            "popWithState": {
+                "internal": false, 
+                "text": "@param state:Object activity initial state object\n\tpop top activity and send 'state' to the next activity"
+            }, 
+            "push": {
+                "internal": false, 
+                "text": "@param name:string activity name to push\n\t@param intent:Object activity initial data object\n\t@param state:Object activity initial state object\n\tpush new activity to the top"
+            }, 
+            "removeActivity": {
+                "internal": false, 
+                "text": "@param name:string activity name to be removed from stack\n\tremove 'name' activity from stack"
+            }, 
+            "replaceTopActivity": {
+                "internal": false, 
+                "text": "@param name:string activity name to replace\n\t@param intent:Object activity initial data object\n\t@param state:Object activity initial state object\n\treplace current top activity with new one"
+            }, 
+            "setIntent": {
+                "internal": false, 
+                "text": "@param intent:Object new intent for corresponded activity\n\t@param name:string activity that state will be changed\n\tset intent of 'name' activity"
+            }, 
+            "setState": {
+                "internal": false, 
+                "text": "@param state:Object new state for corresponded activity\n\t@param name:string activity that state will be changed\n\tset state of 'name' activity"
+            }
+        }, 
+        "Properties": {
+            "count": {
+                "internal": false, 
+                "text": "activities count"
+            }, 
+            "currentActivity": {
+                "internal": false, 
+                "text": "current active activity name"
+            }, 
+            "keepLastActivity": {
+                "internal": false, 
+                "text": "allow to keep last activity on screen or not"
+            }
+        }
+    }, 
+    "name": "controls.core.ActivityManager", 
+    "text": "@param name:string activity name to replace\n\t@param intent:Object activity initial data object\n\t@param state:Object activity initial state object\n\treplace current top activity with new one"
+}

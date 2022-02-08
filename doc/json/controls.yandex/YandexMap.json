@@ -6,7 +6,7 @@
                 "text": ""
             }, 
             "constructor": {
-                "internal": true, 
+                "internal": false, 
                 "text": ""
             }, 
             "getUserLocation": {
@@ -14,28 +14,22 @@
                 "text": ""
             }, 
             "onCenterLongitudeChanged": {
-                "internal": true, 
+                "internal": false, 
                 "text": ""
             }
         }, 
         "Properties": {
             "centerLatitude": {
-                "defaultValue": "", 
                 "internal": false, 
-                "text": "", 
-                "type": "real"
+                "text": ""
             }, 
             "centerLongitude": {
-                "defaultValue": "", 
                 "internal": false, 
-                "text": "", 
-                "type": "real"
+                "text": ""
             }, 
             "zoom": {
-                "defaultValue": "", 
                 "internal": false, 
-                "text": "", 
-                "type": "int"
+                "text": ""
             }
         }
     }, 

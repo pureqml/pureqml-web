@@ -3,106 +3,77 @@
         "Methods": {
             "_updateSize": {
                 "internal": true, 
-                "params": [], 
                 "text": "@private"
             }, 
             "append": {
                 "internal": false, 
-                "params": [
-                    {
-                        "name": "value", 
-                        "text": "new option value", 
-                        "type": "string"
-                    }, 
-                    {
-                        "name": "text", 
-                        "text": "new option text", 
-                        "type": "string"
-                    }
-                ], 
-                "text": "add option into select"
+                "text": "* add option into select\n\t * @param {string} value - new option value\n\t * @param {string} text - new option text"
             }, 
             "clear": {
                 "internal": false, 
-                "params": [], 
                 "text": "remove all options from dropdown list"
             }, 
             "constructor": {
-                "internal": true, 
+                "internal": false, 
                 "text": ""
             }, 
             "getTag": {
                 "internal": true, 
-                "params": [], 
                 "text": "@private"
             }, 
             "onCountChanged": {
-                "internal": true, 
+                "internal": false, 
                 "text": ""
             }, 
             "onCurrentIndexChanged": {
-                "internal": true, 
+                "internal": false, 
+                "text": ""
+            }, 
+            "onDisabledChanged": {
+                "internal": false, 
                 "text": ""
             }, 
             "onWidthChanged": {
                 "internal": true, 
-                "params": [], 
                 "text": "@private"
             }, 
             "registerStyle": {
                 "internal": true, 
-                "params": [], 
                 "text": "@private"
             }, 
             "remove": {
                 "internal": false, 
-                "params": [
-                    {
-                        "name": "idx", 
-                        "text": "new option value", 
-                        "type": "number"
-                    }
-                ], 
-                "text": "remove option from drop down list by index"
+                "text": "* remove option from drop down list by index\n\t * @param {number} idx - new option value"
             }
         }, 
         "Properties": {
             "color": {
-                "defaultValue": "#000", 
                 "internal": false, 
-                "text": "", 
-                "type": "Color"
+                "text": ""
             }, 
             "count": {
-                "defaultValue": "", 
                 "internal": false, 
-                "text": "drop down options count", 
-                "type": "int"
+                "text": "drop down options count"
             }, 
             "currentIndex": {
-                "defaultValue": "", 
                 "internal": false, 
-                "text": "current option index", 
-                "type": "int"
+                "text": "current option index"
+            }, 
+            "disabled": {
+                "internal": false, 
+                "text": "set true to disable changing selection"
             }, 
             "font": {
-                "defaultValue": "Font", 
                 "internal": false, 
-                "ref": "qmlcore.core/Font", 
-                "text": "", 
-                "type": "Font"
+                "text": ""
             }, 
             "text": {
-                "defaultValue": "", 
                 "internal": false, 
-                "text": "current option text", 
-                "type": "string"
+                "text": "current option text"
             }, 
             "value": {
-                "defaultValue": "", 
                 "internal": false, 
-                "text": "current option value", 
-                "type": "string"
+                "text": "current option value"
             }
         }
     }, 

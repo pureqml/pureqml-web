@@ -3,37 +3,34 @@
         "Methods": {
             "_createElement": {
                 "internal": false, 
-                "params": [], 
                 "text": "specialized implementation of element creation in a certain namespace."
             }, 
             "getTag": {
                 "internal": false, 
-                "params": [], 
                 "text": "returns tag for corresponding element"
             }, 
             "onClipChanged": {
-                "internal": true, 
+                "internal": false, 
                 "text": ""
             }, 
             "onHeightChanged": {
-                "internal": true, 
+                "internal": false, 
                 "text": ""
             }, 
             "onWidthChanged": {
-                "internal": true, 
+                "internal": false, 
                 "text": ""
             }, 
             "onXChanged": {
-                "internal": true, 
+                "internal": false, 
                 "text": ""
             }, 
             "onYChanged": {
-                "internal": true, 
+                "internal": false, 
                 "text": ""
             }, 
             "registerStyle": {
                 "internal": true, 
-                "params": [], 
                 "text": "@private"
             }
         }

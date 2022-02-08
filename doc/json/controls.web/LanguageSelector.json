@@ -12,22 +12,16 @@
         }, 
         "Properties": {
             "currentLangCode": {
-                "defaultValue": "", 
                 "internal": false, 
-                "text": "", 
-                "type": "string"
+                "text": ""
             }, 
             "delegateColor": {
-                "defaultValue": "", 
                 "internal": false, 
-                "text": "", 
-                "type": "color"
+                "text": ""
             }, 
             "delegateTextColor": {
-                "defaultValue": "", 
                 "internal": false, 
-                "text": "", 
-                "type": "color"
+                "text": ""
             }
         }
     }, 

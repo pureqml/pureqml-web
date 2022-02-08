@@ -3,42 +3,34 @@
         "Methods": {
             "constructor": {
                 "internal": true, 
-                "params": [], 
                 "text": "@private"
             }, 
             "onCompleted": {
                 "internal": true, 
-                "params": [], 
                 "text": "@private"
             }, 
             "onDetuneChanged": {
                 "internal": true, 
-                "params": [], 
                 "text": "@private"
             }, 
             "onFrequencyChanged": {
                 "internal": true, 
-                "params": [], 
                 "text": "@private"
             }, 
             "onPlayingChanged": {
                 "internal": true, 
-                "params": [], 
                 "text": "@private"
             }, 
             "onTypeChanged": {
-                "internal": true, 
-                "params": [], 
+                "internal": false, 
                 "text": "paly generated sound"
             }, 
             "pause": {
                 "internal": false, 
-                "params": [], 
                 "text": "play/pause generated sound"
             }, 
             "play": {
                 "internal": false, 
-                "params": [], 
                 "text": "pause generated sound"
             }, 
             "playPause": {
@@ -47,39 +39,25 @@
             }, 
             "playWithTimeout": {
                 "internal": false, 
-                "params": [
-                    {
-                        "name": "ms", 
-                        "text": "time interval in milliseconds", 
-                        "type": "int"
-                    }
-                ], 
-                "text": "\tplay generated sound 'ms' milliseconds"
+                "text": "@param ms:int time interval in milliseconds\n\tplay generated sound 'ms' milliseconds"
             }, 
             "reset": {
                 "internal": true, 
-                "params": [], 
                 "text": "@private"
             }
         }, 
         "Properties": {
             "detune": {
-                "defaultValue": "", 
                 "internal": false, 
-                "text": "representing detuning of oscillation in cents", 
-                "type": "int"
+                "text": "representing detuning of oscillation in cents"
             }, 
             "frequency": {
-                "defaultValue": "", 
                 "internal": false, 
-                "text": "signal frequency value", 
-                "type": "int"
+                "text": "signal frequency value"
             }, 
             "playing": {
-                "defaultValue": "", 
                 "internal": false, 
-                "text": "is oscillator playing right now", 
-                "type": "bool"
+                "text": "is oscillator playing right now"
             }
         }
     }, 

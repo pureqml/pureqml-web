@@ -2,6 +2,7 @@
     "lessons": {
         "ActivityLesson": "lessons/ActivityLesson.json", 
         "AnchorsLesson": "lessons/AnchorsLesson.json", 
+        "AnimationLesson": "lessons/AnimationLesson.json", 
         "BasicLesson": "lessons/BasicLesson.json", 
         "DrmLesson": "lessons/DrmLesson.json", 
         "EffectsLesson": "lessons/EffectsLesson.json", 
@@ -18,6 +19,7 @@
         "RestLesson": "lessons/RestLesson.json", 
         "SignalLesson": "lessons/SignalLesson.json", 
         "SpriteLesson": "lessons/SpriteLesson.json", 
+        "ThirdPartyLesson": "lessons/ThirdPartyLesson.json", 
         "TransformLesson": "lessons/TransformLesson.json", 
         "VideoPlayerLesson": "lessons/VideoPlayerLesson.json", 
         "ViewAndModelsLesson": "lessons/ViewAndModelsLesson.json"

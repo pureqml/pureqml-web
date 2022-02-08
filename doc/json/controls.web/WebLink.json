@@ -6,11 +6,11 @@
                 "text": ""
             }, 
             "onHrefChanged": {
-                "internal": true, 
+                "internal": false, 
                 "text": ""
             }, 
             "onTargetChanged": {
-                "internal": true, 
+                "internal": false, 
                 "text": ""
             }, 
             "registerStyle": {
@@ -20,16 +20,12 @@
         }, 
         "Properties": {
             "href": {
-                "defaultValue": "", 
                 "internal": false, 
-                "text": "", 
-                "type": "string"
+                "text": ""
             }, 
             "target": {
-                "defaultValue": "", 
                 "internal": false, 
-                "text": "", 
-                "type": "string"
+                "text": ""
             }
         }
     }, 

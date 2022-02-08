@@ -2,11 +2,11 @@
     "content": {
         "Methods": {
             "onActiveChanged": {
-                "internal": true, 
+                "internal": false, 
                 "text": ""
             }, 
             "onCompleted": {
-                "internal": true, 
+                "internal": false, 
                 "text": ""
             }, 
             "updateStyle": {
@@ -16,10 +16,8 @@
         }, 
         "Properties": {
             "active": {
-                "defaultValue": "true", 
                 "internal": false, 
-                "text": "", 
-                "type": "bool"
+                "text": ""
             }
         }
     }, 

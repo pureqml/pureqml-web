@@ -3,64 +3,49 @@
         "Methods": {
             "closeAll": {
                 "internal": false, 
-                "params": [], 
                 "text": "close all child activities"
             }, 
             "closeParentActivities": {
                 "internal": false, 
-                "params": [], 
                 "text": "stop all activities from one common parent"
             }, 
             "isAnyActiveInContext": {
                 "internal": false, 
-                "params": [], 
                 "text": "checking child activities if there is at least one"
             }, 
             "isFragmentActivity": {
                 "internal": true, 
-                "params": [], 
                 "text": "@private"
             }, 
             "onBackPressed": {
                 "internal": true, 
-                "params": [], 
                 "text": "@private"
             }, 
             "start": {
                 "internal": false, 
-                "params": [], 
                 "text": "start activity"
             }, 
             "stop": {
                 "internal": false, 
-                "params": [], 
                 "text": "stop activity"
             }
         }, 
         "Properties": {
             "active": {
-                "defaultValue": "", 
                 "internal": false, 
-                "text": "is current FragmentActivity active or not", 
-                "type": "bool"
+                "text": "is current FragmentActivity active or not"
             }, 
             "currentActivity": {
-                "defaultValue": "", 
                 "internal": false, 
-                "text": "displays current active activity name", 
-                "type": "string"
+                "text": "displays current active activity name"
             }, 
             "hasAnyActiveChild": {
-                "defaultValue": "false", 
                 "internal": false, 
-                "text": "is 'true' when corresponded activity has active child", 
-                "type": "bool"
+                "text": "is 'true' when corresponded activity has active child"
             }, 
             "name": {
-                "defaultValue": "", 
                 "internal": false, 
-                "text": "activity name", 
-                "type": "string"
+                "text": "activity name"
             }
         }, 
         "Signals": {

@@ -3,14 +3,7 @@
         "Methods": {
             "create": {
                 "internal": false, 
-                "params": [
-                    {
-                        "name": "sourceCode", 
-                        "text": "shader source code", 
-                        "type": "string"
-                    }
-                ], 
-                "text": "@param {string} sourceCode - shader source code"
+                "text": "@param {string} sourceCode - shader source code\n\tvertex shader creation function"
             }
         }
     }, 

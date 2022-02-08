@@ -2,20 +2,18 @@
     "content": {
         "Methods": {
             "constructor": {
-                "internal": true, 
+                "internal": false, 
                 "text": ""
             }, 
             "onCheckedChanged": {
-                "internal": true, 
+                "internal": false, 
                 "text": ""
             }
         }, 
         "Properties": {
             "checked": {
-                "defaultValue": "false", 
                 "internal": false, 
-                "text": "checked flag value", 
-                "type": "bool"
+                "text": "checked flag value"
             }
         }
     }, 

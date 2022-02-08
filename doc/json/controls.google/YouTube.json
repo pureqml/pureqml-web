@@ -3,42 +3,33 @@
         "Methods": {
             "_updateSize": {
                 "internal": true, 
-                "params": [], 
                 "text": "@private"
             }, 
             "getTag": {
                 "internal": true, 
-                "params": [], 
                 "text": "@private"
             }, 
             "onAllowFullScreenChanged": {
                 "internal": true, 
-                "params": [], 
                 "text": "@private"
             }, 
             "onSourceChanged": {
                 "internal": true, 
-                "params": [], 
                 "text": "@private"
             }, 
             "onWidthChanged": {
                 "internal": true, 
-                "params": [], 
                 "text": "@private"
             }
         }, 
         "Properties": {
             "allowFullScreen": {
-                "defaultValue": "", 
                 "internal": false, 
-                "text": "allow fullscreen flag", 
-                "type": "bool"
+                "text": "allow fullscreen flag"
             }, 
             "source": {
-                "defaultValue": "", 
                 "internal": false, 
-                "text": "video source URL", 
-                "type": "string"
+                "text": "video source URL"
             }
         }
     }, 

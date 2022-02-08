@@ -2,10 +2,8 @@
     "content": {
         "Properties": {
             "source": {
-                "defaultValue": "", 
                 "internal": false, 
-                "text": "", 
-                "type": "string"
+                "text": ""
             }
         }
     }, 

@@ -2,7 +2,7 @@
     "content": {
         "Methods": {
             "onRunningChanged": {
-                "internal": true, 
+                "internal": false, 
                 "text": ""
             }, 
             "start": {
@@ -16,16 +16,20 @@
         }, 
         "Properties": {
             "running": {
-                "defaultValue": "", 
                 "internal": false, 
-                "text": "", 
-                "type": "bool"
+                "text": ""
             }, 
-            "squize": {
-                "defaultValue": "0", 
+            "squeeze": {
                 "internal": false, 
-                "text": "", 
-                "type": "int"
+                "text": ""
+            }, 
+            "squeezeX": {
+                "internal": false, 
+                "text": ""
+            }, 
+            "squeezeY": {
+                "internal": false, 
+                "text": ""
             }
         }
     }, 

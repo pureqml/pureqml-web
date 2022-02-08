@@ -2,88 +2,60 @@
     "content": {
         "Properties": {
             "accentColor": {
-                "defaultValue": "#673AB7", 
                 "internal": false, 
-                "text": "", 
-                "type": "color"
+                "text": ""
             }, 
             "backgroundColor": {
-                "defaultValue": "#FAFAFA", 
                 "internal": false, 
-                "text": "", 
-                "type": "color"
+                "text": ""
             }, 
             "codeSampleColor": {
-                "defaultValue": "#eeeeee", 
                 "internal": false, 
-                "text": "", 
-                "type": "color"
+                "text": ""
             }, 
             "darkerPrimaryColor": {
-                "defaultValue": "#F5F5F5", 
                 "internal": false, 
-                "text": "", 
-                "type": "color"
+                "text": ""
             }, 
             "hTextColor": {
-                "defaultValue": "#ffffff", 
                 "internal": false, 
-                "text": "", 
-                "type": "color"
+                "text": ""
             }, 
             "iconColor": {
-                "defaultValue": "#828282", 
                 "internal": false, 
-                "text": "", 
-                "type": "color"
+                "text": ""
             }, 
             "leftMenuColor": {
-                "defaultValue": "#FAFAFA", 
                 "internal": false, 
-                "text": "", 
-                "type": "color"
+                "text": ""
             }, 
             "lighterPrimaryColor": {
-                "defaultValue": "#388E3C", 
                 "internal": false, 
-                "text": "", 
-                "type": "color"
+                "text": ""
             }, 
             "panelColor": {
-                "defaultValue": "#FFFFFF", 
                 "internal": false, 
-                "text": "", 
-                "type": "color"
+                "text": ""
             }, 
             "primaryColor": {
-                "defaultValue": "#8bc34a", 
                 "internal": false, 
-                "text": "", 
-                "type": "color"
+                "text": ""
             }, 
             "primaryTextColor": {
-                "defaultValue": "#618468", 
                 "internal": false, 
-                "text": "", 
-                "type": "color"
+                "text": ""
             }, 
             "resPath": {
-                "defaultValue": "https://pureqml.com/res", 
                 "internal": false, 
-                "text": "", 
-                "type": "string"
+                "text": ""
             }, 
             "shadowColor": {
-                "defaultValue": "#828282", 
                 "internal": false, 
-                "text": "", 
-                "type": "color"
+                "text": ""
             }, 
             "textColor": {
-                "defaultValue": "#424242", 
                 "internal": false, 
-                "text": "", 
-                "type": "color"
+                "text": ""
             }
         }
     }, 

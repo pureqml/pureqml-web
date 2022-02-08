@@ -3,69 +3,53 @@
         "Methods": {
             "_getValue": {
                 "internal": false, 
-                "params": [], 
                 "text": "gets element native value"
             }, 
             "_setValue": {
                 "internal": false, 
-                "params": [], 
                 "text": "sets element native value"
             }, 
             "constructor": {
                 "internal": true, 
-                "params": [], 
                 "text": "@private"
             }, 
             "getTag": {
                 "internal": false, 
-                "params": [], 
                 "text": "returns tag for corresponding element"
             }, 
             "onMaxChanged": {
                 "internal": true, 
-                "params": [], 
                 "text": "@private"
             }, 
             "onMinChanged": {
                 "internal": true, 
-                "params": [], 
                 "text": "@private"
             }, 
             "onOrientationChanged": {
                 "internal": true, 
-                "params": [], 
                 "text": "@private"
             }, 
             "onStepChanged": {
                 "internal": true, 
-                "params": [], 
                 "text": "@private"
             }
         }, 
         "Properties": {
             "max": {
-                "defaultValue": "100", 
                 "internal": false, 
-                "text": "maximum range value", 
-                "type": "int"
+                "text": "maximum range value"
             }, 
             "min": {
-                "defaultValue": "0", 
                 "internal": false, 
-                "text": "minimal range value", 
-                "type": "int"
+                "text": "minimal range value"
             }, 
             "step": {
-                "defaultValue": "1", 
                 "internal": false, 
-                "text": "range step", 
-                "type": "int"
+                "text": "range step"
             }, 
             "value": {
-                "defaultValue": "", 
                 "internal": false, 
-                "text": "current value", 
-                "type": "int"
+                "text": "current value"
             }
         }
     }, 

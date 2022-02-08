@@ -3,39 +3,29 @@
         "Methods": {
             "onHorizontalSwiped": {
                 "internal": true, 
-                "params": [], 
                 "text": "@private"
             }, 
             "onMouseMove": {
                 "internal": true, 
-                "params": [], 
                 "text": "@private"
             }
         }, 
         "Properties": {
             "checked": {
-                "defaultValue": "", 
                 "internal": false, 
-                "text": "is checkbox checked or not", 
-                "type": "bool"
+                "text": "is checkbox checked or not"
             }, 
             "checkedColor": {
-                "defaultValue": "#8BC34A", 
                 "internal": false, 
-                "text": "button color if checked", 
-                "type": "color"
+                "text": "button color if checked"
             }, 
             "panelColor": {
-                "defaultValue": "#ccc", 
                 "internal": false, 
-                "text": "panel color", 
-                "type": "color"
+                "text": "panel color"
             }, 
             "uncheckedColor": {
-                "defaultValue": "#F44336", 
                 "internal": false, 
-                "text": "button color if not checked", 
-                "type": "color"
+                "text": "button color if not checked"
             }
         }
     }, 

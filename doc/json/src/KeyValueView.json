@@ -2,10 +2,8 @@
     "content": {
         "Properties": {
             "shift": {
-                "defaultValue": "150", 
                 "internal": false, 
-                "text": "", 
-                "type": "int"
+                "text": ""
             }
         }
     }, 

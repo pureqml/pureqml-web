@@ -8,7 +8,7 @@
         }, 
         "Methods": {
             "onActiveChanged": {
-                "internal": true, 
+                "internal": false, 
                 "text": ""
             }, 
             "onClicked": {
@@ -26,28 +26,20 @@
         }, 
         "Properties": {
             "active": {
-                "defaultValue": "${activeFocus}", 
                 "internal": false, 
-                "text": "", 
-                "type": "bool"
+                "text": ""
             }, 
             "allowOpacity": {
-                "defaultValue": "", 
                 "internal": false, 
-                "text": "", 
-                "type": "bool"
+                "text": ""
             }, 
             "hoverMixin": {
-                "defaultValue": "HoverClickMixin", 
                 "internal": false, 
-                "text": "", 
-                "type": "Mixin"
+                "text": ""
             }, 
             "playing": {
-                "defaultValue": "", 
                 "internal": false, 
-                "text": "", 
-                "type": "bool"
+                "text": ""
             }
         }, 
         "Signals": {

@@ -3,7 +3,6 @@
         "Methods": {
             "constructor": {
                 "internal": true, 
-                "params": [], 
                 "text": "@private"
             }
         }, 

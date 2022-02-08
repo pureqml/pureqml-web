@@ -3,32 +3,30 @@
         "Methods": {
             "_imageLoaded": {
                 "internal": true, 
-                "params": [], 
                 "text": "@private"
             }, 
             "_load": {
                 "internal": true, 
-                "params": [], 
                 "text": "@private"
             }, 
             "_onError": {
                 "internal": true, 
-                "params": [], 
                 "text": "@private"
             }, 
             "_resetImage": {
                 "internal": true, 
-                "params": [], 
                 "text": "@private"
             }, 
             "_scheduleLoad": {
                 "internal": true, 
-                "params": [], 
                 "text": "@private"
+            }, 
+            "_updatePaintedSize": {
+                "internal": false, 
+                "text": ""
             }, 
             "constructor": {
                 "internal": true, 
-                "params": [], 
                 "text": "@private"
             }, 
             "getClass": {
@@ -36,56 +34,42 @@
                 "text": ""
             }, 
             "onPreloadChanged": {
-                "internal": true, 
+                "internal": false, 
                 "text": ""
             }, 
             "onSourceChanged": {
-                "internal": true, 
+                "internal": false, 
                 "text": ""
             }
         }, 
         "Properties": {
             "paintedHeight": {
-                "defaultValue": "", 
                 "internal": false, 
-                "text": "actually painted image height", 
-                "type": "int"
+                "text": "actually painted image height"
             }, 
             "paintedWidth": {
-                "defaultValue": "", 
                 "internal": false, 
-                "text": "actually painted image width", 
-                "type": "int"
+                "text": "actually painted image width"
             }, 
             "preload": {
-                "defaultValue": "false", 
                 "internal": false, 
-                "text": "image will be loaded even if it's not visible", 
-                "type": "bool"
+                "text": "image will be loaded even if it's not visible"
             }, 
             "smooth": {
-                "defaultValue": "true", 
                 "internal": false, 
-                "text": "if false, image will be pixelated", 
-                "type": "bool"
+                "text": "if false, image will be pixelated"
             }, 
             "source": {
-                "defaultValue": "", 
                 "internal": false, 
-                "text": "image URL", 
-                "type": "string"
+                "text": "image URL"
             }, 
             "sourceHeight": {
-                "defaultValue": "", 
                 "internal": false, 
-                "text": "actual height of loaded image", 
-                "type": "int"
+                "text": "actual height of loaded image"
             }, 
             "sourceWidth": {
-                "defaultValue": "", 
                 "internal": false, 
-                "text": "actual width of loaded image", 
-                "type": "int"
+                "text": "actual width of loaded image"
             }
         }
     }, 

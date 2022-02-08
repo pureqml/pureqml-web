@@ -3,39 +3,33 @@
         "Methods": {
             "_reconnect": {
                 "internal": true, 
-                "params": [], 
                 "text": "@private"
             }, 
             "_scheduleReconnect": {
                 "internal": true, 
-                "params": [], 
                 "text": "@private"
             }, 
             "constructor": {
-                "internal": true, 
+                "internal": false, 
                 "text": ""
             }, 
             "on": {
                 "internal": true, 
-                "params": [], 
                 "text": "@private"
             }, 
             "onChanged": {
                 "internal": true, 
-                "params": [], 
                 "text": "@private"
             }, 
             "onTargetChanged": {
-                "internal": true, 
+                "internal": false, 
                 "text": ""
             }
         }, 
         "Properties": {
             "target": {
-                "defaultValue": "", 
                 "internal": false, 
-                "text": "target object to connect to", 
-                "type": "Object"
+                "text": "target object to connect to"
             }
         }
     }, 

@@ -3,6 +3,7 @@
         "BaseInput": "controls.input/BaseInput.json", 
         "CheckboxInput": "controls.input/CheckboxInput.json", 
         "ColorInput": "controls.input/ColorInput.json", 
+        "ComboBoxInput": "controls.input/ComboBoxInput.json", 
         "DateInput": "controls.input/DateInput.json", 
         "EmailInput": "controls.input/EmailInput.json", 
         "FileInput": "controls.input/FileInput.json", 

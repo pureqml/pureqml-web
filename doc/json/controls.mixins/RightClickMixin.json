@@ -3,31 +3,19 @@
         "Methods": {
             "_bindClicked": {
                 "internal": true, 
-                "params": [], 
+                "text": "@private"
+            }, 
+            "_emit": {
+                "internal": true, 
                 "text": "@private"
             }, 
             "constructor": {
-                "internal": true, 
+                "internal": false, 
                 "text": ""
             }, 
             "onEnabledChanged": {
                 "internal": true, 
-                "params": [], 
                 "text": "@private"
-            }
-        }, 
-        "Properties": {
-            "enabled": {
-                "defaultValue": "true", 
-                "internal": false, 
-                "text": "", 
-                "type": "bool"
-            }
-        }, 
-        "Signals": {
-            "clicked": {
-                "internal": false, 
-                "text": ""
             }
         }
     }, 

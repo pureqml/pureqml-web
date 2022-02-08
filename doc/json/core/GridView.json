@@ -3,27 +3,22 @@
         "Methods": {
             "_layout": {
                 "internal": true, 
-                "params": [], 
                 "text": "@private"
             }, 
             "_updateOverflow": {
                 "internal": true, 
-                "params": [], 
                 "text": "@private"
             }, 
             "getItemPosition": {
                 "internal": true, 
-                "params": [], 
                 "text": "@private"
             }, 
             "indexAt": {
                 "internal": true, 
-                "params": [], 
                 "text": "@private"
             }, 
             "move": {
                 "internal": true, 
-                "params": [], 
                 "text": "@private"
             }, 
             "moveDown": {
@@ -43,56 +38,50 @@
                 "text": ""
             }, 
             "onCellWidthChanged": {
-                "internal": true, 
+                "internal": false, 
                 "text": ""
             }, 
             "onCompleted": {
-                "internal": true, 
+                "internal": false, 
                 "text": ""
             }, 
             "onCountChanged": {
-                "internal": true, 
+                "internal": false, 
                 "text": ""
             }, 
             "onFlowChanged": {
-                "internal": true, 
+                "internal": false, 
                 "text": ""
             }, 
             "onKeyPressed": {
                 "internal": true, 
-                "params": [], 
                 "text": "@private"
+            }, 
+            "onNativeScrollingChanged": {
+                "internal": false, 
+                "text": ""
             }, 
             "positionViewAtIndex": {
                 "internal": true, 
-                "params": [], 
                 "text": "@private"
             }
         }, 
         "Properties": {
             "cellHeight": {
-                "defaultValue": "100", 
                 "internal": false, 
-                "text": "grid cell height", 
-                "type": "int"
+                "text": "grid cell height"
             }, 
             "cellWidth": {
-                "defaultValue": "100", 
                 "internal": false, 
-                "text": "grid cell width", 
-                "type": "int"
+                "text": "grid cell width"
             }, 
             "columns": {
-                "defaultValue": "", 
                 "internal": false, 
-                "text": "grid columns count (read only)", 
-                "type": "int"
+                "text": "grid columns count (read only)"
             }, 
             "rows": {
-                "defaultValue": "", 
                 "internal": false, 
-                "text": "grids row count (read only)", 
-                "type": "int"
+                "text": "grids row count (read only)"
             }
         }
     }, 

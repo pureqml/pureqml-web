@@ -1,0 +1,54 @@
+{
+    "content": {
+        "Methods": {
+            "_bindActiveHover": {
+                "internal": true, 
+                "text": "@private"
+            }, 
+            "_bindClick": {
+                "internal": true, 
+                "text": "@private"
+            }, 
+            "_bindHover": {
+                "internal": true, 
+                "text": "@private"
+            }, 
+            "constructor": {
+                "internal": false, 
+                "text": ""
+            }, 
+            "onActiveHoverEnabledChanged": {
+                "internal": false, 
+                "text": ""
+            }, 
+            "onClickableChanged": {
+                "internal": false, 
+                "text": ""
+            }, 
+            "onEnabledChanged": {
+                "internal": false, 
+                "text": ""
+            }
+        }, 
+        "Properties": {
+            "activeHover": {
+                "internal": false, 
+                "text": ""
+            }, 
+            "activeHoverEnabled": {
+                "internal": false, 
+                "text": ""
+            }, 
+            "clickable": {
+                "internal": false, 
+                "text": "this mixin provides mouse hover and click events handling"
+            }, 
+            "value": {
+                "internal": false, 
+                "text": ""
+            }
+        }
+    }, 
+    "name": "controls.mixins.HoverClickMixin", 
+    "text": "this mixin provides mouse hover and click events handling"
+}

@@ -10,11 +10,11 @@
                 "text": ""
             }, 
             "onHeightChanged": {
-                "internal": true, 
+                "internal": false, 
                 "text": ""
             }, 
             "onWidthChanged": {
-                "internal": true, 
+                "internal": false, 
                 "text": ""
             }, 
             "registerStyle": {

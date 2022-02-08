@@ -3,49 +3,37 @@
         "Methods": {
             "constructor": {
                 "internal": true, 
-                "params": [], 
                 "text": "@private"
             }, 
             "getClass": {
                 "internal": true, 
-                "params": [], 
                 "text": "@private"
             }, 
             "onColorChanged": {
                 "internal": true, 
-                "params": [], 
                 "text": "@private"
             }, 
             "onTextChanged": {
                 "internal": true, 
-                "params": [], 
                 "text": "@private"
             }, 
             "setPlaceholderColor": {
                 "internal": true, 
-                "params": [], 
                 "text": "@private"
             }
         }, 
         "Properties": {
             "color": {
-                "defaultValue": "", 
                 "internal": false, 
-                "text": "placeholder color", 
-                "type": "Color"
+                "text": "placeholder color"
             }, 
             "font": {
-                "defaultValue": "PlaceholderFont", 
                 "internal": false, 
-                "ref": "qmlcore.core/Font", 
-                "text": "placeholder font", 
-                "type": "Font"
+                "text": "placeholder font"
             }, 
             "text": {
-                "defaultValue": "", 
                 "internal": false, 
-                "text": "inner text placeholder", 
-                "type": "string"
+                "text": "inner text placeholder"
             }
         }
     }, 

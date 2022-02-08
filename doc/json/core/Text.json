@@ -3,32 +3,26 @@
         "Methods": {
             "_enableSizeUpdate": {
                 "internal": true, 
-                "params": [], 
                 "text": "@private"
             }, 
             "_scheduleUpdateSize": {
                 "internal": true, 
-                "params": [], 
                 "text": "@private"
             }, 
             "_setText": {
                 "internal": true, 
-                "params": [], 
                 "text": "@private"
             }, 
             "_updateSize": {
                 "internal": true, 
-                "params": [], 
                 "text": "@private"
             }, 
             "_updateSizeImpl": {
                 "internal": true, 
-                "params": [], 
                 "text": "@private"
             }, 
             "_updateStyle": {
                 "internal": true, 
-                "params": [], 
                 "text": "@private"
             }, 
             "_updateWSHandling": {
@@ -37,7 +31,6 @@
             }, 
             "constructor": {
                 "internal": true, 
-                "params": [], 
                 "text": "@private"
             }, 
             "getClass": {
@@ -46,48 +39,46 @@
             }, 
             "on": {
                 "internal": true, 
-                "params": [], 
                 "text": "@private"
             }, 
             "onChanged": {
                 "internal": true, 
-                "params": [], 
                 "text": "@private"
             }, 
             "onColorChanged": {
-                "internal": true, 
+                "internal": false, 
                 "text": ""
             }, 
             "onHeightChanged": {
-                "internal": true, 
+                "internal": false, 
                 "text": ""
             }, 
             "onHorizontalAlignmentChanged": {
-                "internal": true, 
+                "internal": false, 
                 "text": ""
             }, 
             "onRecursiveVisibleChanged": {
-                "internal": true, 
+                "internal": false, 
                 "text": ""
             }, 
             "onTextChanged": {
-                "internal": true, 
+                "internal": false, 
                 "text": ""
             }, 
             "onTextFormatChanged": {
-                "internal": true, 
+                "internal": false, 
                 "text": ""
             }, 
             "onVerticalAlignmentChanged": {
-                "internal": true, 
+                "internal": false, 
                 "text": ""
             }, 
             "onWidthChanged": {
-                "internal": true, 
+                "internal": false, 
                 "text": ""
             }, 
             "onWrapModeChanged": {
-                "internal": true, 
+                "internal": false, 
                 "text": ""
             }, 
             "registerStyle": {
@@ -97,40 +88,28 @@
         }, 
         "Properties": {
             "color": {
-                "defaultValue": "", 
                 "internal": false, 
-                "text": "color of the text", 
-                "type": "color"
+                "text": "color of the text"
             }, 
             "font": {
-                "defaultValue": "Font", 
                 "internal": false, 
-                "text": "text font object", 
-                "type": "lazy"
+                "text": "text font object"
             }, 
             "paintedHeight": {
-                "defaultValue": "", 
                 "internal": false, 
-                "text": "real height of this text without any layout applied", 
-                "type": "int"
+                "text": "real height of this text without any layout applied"
             }, 
             "paintedWidth": {
-                "defaultValue": "", 
                 "internal": false, 
-                "text": "real width of the text without any layout applied", 
-                "type": "int"
+                "text": "real width of the text without any layout applied"
             }, 
             "shadow": {
-                "defaultValue": "Shadow", 
                 "internal": false, 
-                "text": "text shadow object", 
-                "type": "lazy"
+                "text": "text shadow object"
             }, 
             "text": {
-                "defaultValue": "", 
                 "internal": false, 
-                "text": "text to be displayed", 
-                "type": "string"
+                "text": "text to be displayed"
             }
         }
     }, 

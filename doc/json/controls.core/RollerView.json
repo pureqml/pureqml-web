@@ -3,40 +3,34 @@
         "Methods": {
             "_createDelegate": {
                 "internal": true, 
-                "params": [], 
                 "text": "@private creates delegate in given item slot"
             }, 
             "_getCurrentIndex": {
                 "internal": true, 
-                "params": [], 
                 "text": "@private"
             }, 
             "_layout": {
                 "internal": true, 
-                "params": [], 
                 "text": "@private"
             }, 
             "_scroll": {
                 "internal": true, 
-                "params": [], 
                 "text": "@private"
             }, 
             "_setContentOffset": {
                 "internal": true, 
-                "params": [], 
                 "text": "@private"
             }, 
             "constructor": {
-                "internal": true, 
+                "internal": false, 
                 "text": ""
             }, 
             "next": {
                 "internal": true, 
-                "params": [], 
                 "text": "@private"
             }, 
             "onCurrentIndexChanged": {
-                "internal": true, 
+                "internal": false, 
                 "text": ""
             }, 
             "onKeyPressed": {
@@ -44,17 +38,15 @@
                 "text": ""
             }, 
             "onOrientationChanged": {
-                "internal": true, 
+                "internal": false, 
                 "text": ""
             }, 
             "positionViewAtIndex": {
                 "internal": true, 
-                "params": [], 
                 "text": "@private"
             }, 
             "prev": {
                 "internal": true, 
-                "params": [], 
                 "text": "@private"
             }
         }

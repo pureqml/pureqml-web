@@ -2,36 +2,30 @@
     "content": {
         "Methods": {
             "constructor": {
-                "internal": true, 
+                "internal": false, 
                 "text": ""
             }, 
             "onCursorColorChanged": {
-                "internal": true, 
+                "internal": false, 
                 "text": ""
             }, 
             "onTextChanged": {
-                "internal": true, 
+                "internal": false, 
                 "text": ""
             }
         }, 
         "Properties": {
             "cursorColor": {
-                "defaultValue": "#fff", 
                 "internal": false, 
-                "text": "cursor color", 
-                "type": "Color"
+                "text": "cursor color"
             }, 
             "passwordMode": {
-                "defaultValue": "false", 
                 "internal": false, 
-                "text": "show password chars instead of input text flag property", 
-                "type": "bool"
+                "text": "show password chars instead of input text flag property"
             }, 
             "text": {
-                "defaultValue": "", 
                 "internal": false, 
-                "text": "input text string property", 
-                "type": "string"
+                "text": "input text string property"
             }
         }
     }, 

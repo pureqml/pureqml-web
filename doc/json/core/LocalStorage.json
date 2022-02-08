@@ -3,102 +3,35 @@
         "Methods": {
             "_checkNameValid": {
                 "internal": true, 
-                "params": [], 
                 "text": "@private"
             }, 
             "_ensureCallback": {
                 "internal": true, 
-                "params": [], 
                 "text": "@private"
             }, 
             "_ensureErrCallback": {
                 "internal": true, 
-                "params": [], 
                 "text": "@private"
             }, 
             "constructor": {
-                "internal": true, 
-                "params": [], 
+                "internal": false, 
                 "text": "simple proxy to underlying storage"
             }, 
             "erase": {
                 "internal": false, 
-                "params": [
-                    {
-                        "name": "name", 
-                        "text": "item name", 
-                        "type": "string"
-                    }, 
-                    {
-                        "name": "error", 
-                        "text": "callback to report error", 
-                        "type": "function"
-                    }
-                ], 
-                "text": "Remove item"
+                "text": "* Remove item\n\t * @param {string} name - item name\n\t * @param {function} error - callback to report error"
             }, 
             "get": {
                 "internal": false, 
-                "params": [
-                    {
-                        "name": "name", 
-                        "text": "stored item name", 
-                        "type": "string"
-                    }, 
-                    {
-                        "name": "callback", 
-                        "text": "callback to return value", 
-                        "type": "function"
-                    }, 
-                    {
-                        "name": "error", 
-                        "text": "callback to report non-existing value or some kind of error", 
-                        "type": "function"
-                    }
-                ], 
-                "text": "Return stored item by name"
+                "text": "* Return stored item by name\n\t * @param {string} name - stored item name\n\t * @param {function} callback - callback to return value\n\t * @param {function} error - callback to report non-existing value or some kind of error"
             }, 
             "getOrDefault": {
                 "internal": false, 
-                "params": [
-                    {
-                        "name": "name", 
-                        "text": "stored item name", 
-                        "type": "string"
-                    }, 
-                    {
-                        "name": "callback", 
-                        "text": "callback to return value", 
-                        "type": "function"
-                    }, 
-                    {
-                        "name": "defaultValue", 
-                        "text": "default value", 
-                        "type": "Object"
-                    }
-                ], 
-                "text": "Return stored item by name or default value if not exists"
+                "text": "* Return stored item by name or default value if not exists\n\t * @param {string} name - stored item name\n\t * @param {function} callback - callback to return value\n\t * @param {Object} defaultValue - default value"
             }, 
             "set": {
                 "internal": false, 
-                "params": [
-                    {
-                        "name": "name", 
-                        "text": "item name", 
-                        "type": "string"
-                    }, 
-                    {
-                        "name": "value", 
-                        "text": "item value", 
-                        "type": "string"
-                    }, 
-                    {
-                        "name": "error", 
-                        "text": "callback to report error", 
-                        "type": "function"
-                    }
-                ], 
-                "text": "Save named item"
+                "text": "* Save named item\n\t * @param {string} name - item name\n\t * @param {string} value - item value\n\t * @param {function} error - callback to report error"
             }
         }
     }, 

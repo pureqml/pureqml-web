@@ -3,36 +3,29 @@
         "Methods": {
             "_getDeclaration": {
                 "internal": true, 
-                "params": [], 
                 "text": "@private"
             }, 
             "_updateStyle": {
                 "internal": true, 
-                "params": [], 
                 "text": "@private"
             }, 
             "addChild": {
                 "internal": true, 
-                "params": [], 
                 "text": "@private"
             }, 
             "constructor": {
                 "internal": true, 
-                "params": [], 
                 "text": "@private"
             }, 
             "onCompleted": {
                 "internal": true, 
-                "params": [], 
                 "text": "@private"
             }
         }, 
         "Properties": {
             "angle": {
-                "defaultValue": "", 
                 "internal": false, 
-                "text": "angle for custom orientated gradient", 
-                "type": "real"
+                "text": "angle for custom orientated gradient"
             }
         }
     }, 

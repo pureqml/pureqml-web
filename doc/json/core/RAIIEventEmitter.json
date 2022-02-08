@@ -3,22 +3,18 @@
         "Methods": {
             "constructor": {
                 "internal": true, 
-                "params": [], 
                 "text": "@private"
             }, 
             "on": {
                 "internal": true, 
-                "params": [], 
                 "text": "@private"
             }, 
             "onListener": {
                 "internal": true, 
-                "params": [], 
                 "text": "@private"
             }, 
             "removeAllListeners": {
                 "internal": true, 
-                "params": [], 
                 "text": "@private"
             }
         }

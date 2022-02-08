@@ -10,36 +10,30 @@
                 "text": ""
             }, 
             "onCompleted": {
-                "internal": true, 
+                "internal": false, 
                 "text": ""
             }, 
             "onCountChanged": {
-                "internal": true, 
+                "internal": false, 
                 "text": ""
             }, 
             "onCurrentIndexChanged": {
-                "internal": true, 
+                "internal": false, 
                 "text": ""
             }
         }, 
         "Properties": {
             "count": {
-                "defaultValue": "", 
                 "internal": false, 
-                "text": "", 
-                "type": "int"
+                "text": ""
             }, 
             "currentIndex": {
-                "defaultValue": "", 
                 "internal": false, 
-                "text": "", 
-                "type": "int"
+                "text": ""
             }, 
             "languges": {
-                "defaultValue": "", 
                 "internal": false, 
-                "text": "", 
-                "type": "variant"
+                "text": ""
             }
         }, 
         "Signals": {

@@ -1,0 +1,34 @@
+{
+    "content": {
+        "Methods": {
+            "_resetTouchEvent": {
+                "internal": false, 
+                "text": ""
+            }, 
+            "_setTouchEvent": {
+                "internal": false, 
+                "text": ""
+            }, 
+            "_trueUnlessTouchEvent": {
+                "internal": true, 
+                "text": "@private pops touch event flag to skip mouse over later"
+            }, 
+            "constructor": {
+                "internal": true, 
+                "text": "@private"
+            }, 
+            "onCursorChanged": {
+                "internal": false, 
+                "text": ""
+            }
+        }, 
+        "Properties": {
+            "cursor": {
+                "internal": false, 
+                "text": "mouse cursor"
+            }
+        }
+    }, 
+    "name": "core.BaseMouseMixin", 
+    "text": "@private"
+}

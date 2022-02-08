@@ -3,42 +3,45 @@
         "Methods": {
             "_bindMove": {
                 "internal": true, 
-                "params": [], 
                 "text": "@private"
             }, 
             "_updatePosition": {
                 "internal": true, 
-                "params": [], 
                 "text": "@private"
             }, 
             "constructor": {
                 "internal": true, 
-                "params": [], 
                 "text": "@private"
             }, 
             "onEnabledChanged": {
-                "internal": true, 
+                "internal": false, 
                 "text": ""
             }
         }, 
         "Properties": {
-            "enabled": {
-                "defaultValue": "true", 
+            "clientX": {
                 "internal": false, 
-                "text": "enable/disable mixin", 
-                "type": "bool"
+                "text": ""
+            }, 
+            "clientY": {
+                "internal": false, 
+                "text": ""
             }, 
             "mouseX": {
-                "defaultValue": "", 
                 "internal": false, 
-                "text": "", 
-                "type": "int"
+                "text": "this mixin provides mouse press events handling"
             }, 
             "mouseY": {
-                "defaultValue": "", 
                 "internal": false, 
-                "text": "", 
-                "type": "int"
+                "text": ""
+            }, 
+            "screenX": {
+                "internal": false, 
+                "text": ""
+            }, 
+            "screenY": {
+                "internal": false, 
+                "text": ""
             }
         }, 
         "Signals": {

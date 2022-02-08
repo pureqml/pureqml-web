@@ -12,10 +12,8 @@
         }, 
         "Properties": {
             "swapDuration": {
-                "defaultValue": "500", 
                 "internal": false, 
-                "text": "", 
-                "type": "int"
+                "text": ""
             }
         }
     }, 

@@ -10,40 +10,30 @@
                 "text": ""
             }, 
             "onTargetChanged": {
-                "internal": true, 
+                "internal": false, 
                 "text": ""
             }
         }, 
         "Properties": {
             "delayed": {
-                "defaultValue": "", 
                 "internal": false, 
-                "text": "delays update to the next tick", 
-                "type": "bool"
+                "text": "delays update to the next tick"
             }, 
             "property": {
-                "defaultValue": "", 
                 "internal": false, 
-                "text": "target property", 
-                "type": "string"
+                "text": "target property"
             }, 
             "target": {
-                "defaultValue": "", 
                 "internal": false, 
-                "text": "target object", 
-                "type": "Object"
+                "text": "target object"
             }, 
             "value": {
-                "defaultValue": "", 
                 "internal": false, 
-                "text": "any value", 
-                "type": "var"
+                "text": "any value"
             }, 
             "when": {
-                "defaultValue": "true", 
                 "internal": false, 
-                "text": "assign value to target when this condition met", 
-                "type": "bool"
+                "text": "assign value to target when this condition met"
             }
         }
     }, 

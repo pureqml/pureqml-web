@@ -11,93 +11,69 @@
             }, 
             "complete": {
                 "internal": true, 
-                "params": [], 
                 "text": "@private"
             }, 
             "constructor": {
-                "internal": true, 
+                "internal": false, 
                 "text": ""
             }, 
             "disable": {
                 "internal": false, 
-                "params": [], 
                 "text": "disable animation."
             }, 
             "enable": {
                 "internal": false, 
-                "params": [], 
                 "text": "enable animation."
             }, 
             "enabled": {
                 "internal": false, 
-                "params": [], 
                 "text": "returns true if animation is enabled"
             }, 
             "interpolate": {
                 "internal": true, 
-                "params": [], 
                 "text": "@private"
             }, 
             "onDelayChanged": {
                 "internal": true, 
-                "params": [], 
                 "text": "@private"
             }
         }, 
         "Properties": {
             "cssTransition": {
-                "defaultValue": "true", 
                 "internal": false, 
-                "text": "use css transition if possible", 
-                "type": "bool"
+                "text": "use css transition if possible"
             }, 
             "delay": {
-                "defaultValue": "0", 
                 "internal": false, 
-                "text": "delay in ms", 
-                "type": "int"
+                "text": "delay in ms"
             }, 
             "duration": {
-                "defaultValue": "200", 
                 "internal": false, 
-                "text": "duration in ms", 
-                "type": "int"
+                "text": "duration in ms"
             }, 
             "easing": {
-                "defaultValue": "ease", 
                 "internal": false, 
-                "text": "easing function", 
-                "type": "string"
+                "text": "easing function"
             }, 
             "from": {
-                "defaultValue": "", 
                 "internal": false, 
-                "text": "used in declarative animation inside SequentialAnimation, starting value", 
-                "type": "variant"
+                "text": "used in declarative animation inside SequentialAnimation, starting value"
             }, 
             "property": {
-                "defaultValue": "", 
                 "internal": false, 
-                "text": "target object property", 
-                "type": "string"
+                "text": "target object property"
             }, 
             "running": {
-                "defaultValue": "false", 
                 "internal": false, 
-                "text": "currently running", 
-                "type": "bool"
+                "text": "currently running"
             }, 
             "target": {
-                "defaultValue": "", 
                 "internal": false, 
-                "text": "target object", 
-                "type": "Object"
+                "text": "target object"
             }, 
             "to": {
-                "defaultValue": "", 
                 "internal": false, 
-                "text": "used in declarative animation inside SequentialAnimation, destination value", 
-                "type": "variant"
+                "text": "used in declarative animation inside SequentialAnimation, destination value"
             }
         }
     }, 

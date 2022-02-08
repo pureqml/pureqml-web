@@ -3,43 +3,25 @@
         "Methods": {
             "_bindHover": {
                 "internal": true, 
-                "params": [], 
                 "text": "@private"
             }, 
             "constructor": {
                 "internal": true, 
-                "params": [], 
-                "text": "@private"
-            }, 
-            "onCursorChanged": {
-                "internal": true, 
-                "params": [], 
                 "text": "@private"
             }, 
             "onEnabledChanged": {
-                "internal": true, 
-                "params": [], 
-                "text": "@private"
+                "internal": false, 
+                "text": ""
+            }, 
+            "onValueChanged": {
+                "internal": false, 
+                "text": ""
             }
         }, 
         "Properties": {
-            "cursor": {
-                "defaultValue": "", 
-                "internal": false, 
-                "text": "mouse cursor", 
-                "type": "string"
-            }, 
-            "enabled": {
-                "defaultValue": "true", 
-                "internal": false, 
-                "text": "enable/disable mixin", 
-                "type": "bool"
-            }, 
             "value": {
-                "defaultValue": "", 
                 "internal": false, 
-                "text": "is 'true' if item if hovered, 'false' otherwise", 
-                "type": "bool"
+                "text": "is 'true' if item if hovered, 'false' otherwise"
             }
         }
     }, 

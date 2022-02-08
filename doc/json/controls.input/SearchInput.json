@@ -2,20 +2,18 @@
     "content": {
         "Methods": {
             "constructor": {
-                "internal": true, 
+                "internal": false, 
                 "text": ""
             }, 
             "onTextChanged": {
-                "internal": true, 
+                "internal": false, 
                 "text": ""
             }
         }, 
         "Properties": {
             "text": {
-                "defaultValue": "", 
                 "internal": false, 
-                "text": "input text string property", 
-                "type": "string"
+                "text": "input text string property"
             }
         }
     }, 

@@ -3,44 +3,29 @@
         "Methods": {
             "_fillImpl": {
                 "internal": true, 
-                "params": [], 
                 "text": "@private"
             }, 
             "fillCustom": {
                 "internal": false, 
-                "params": [
-                    {
-                        "name": "settings", 
-                        "text": "additional request parameters", 
-                        "type": "Object"
-                    }
-                ], 
-                "text": "\t fill model with data from the wall with customized settings such as count, extended etc."
+                "text": "@param settings:Object additional request parameters\n\t fill model with data from the wall with customized settings such as count, extended etc."
             }, 
             "fillDefault": {
                 "internal": false, 
-                "params": [], 
                 "text": "fill model with data from 'ownerId' wall with default parameters"
             }
         }, 
         "Properties": {
             "accessToken": {
-                "defaultValue": "", 
                 "internal": false, 
-                "text": "VK API access token", 
-                "type": "string"
+                "text": "VK API access token"
             }, 
             "ownerId": {
-                "defaultValue": "", 
                 "internal": false, 
-                "text": "user ID  of the owner of the wall", 
-                "type": "int"
+                "text": "user ID  of the owner of the wall"
             }, 
             "version": {
-                "defaultValue": "5.0", 
                 "internal": false, 
-                "text": "VK api version", 
-                "type": "string"
+                "text": "VK api version"
             }
         }, 
         "Signals": {

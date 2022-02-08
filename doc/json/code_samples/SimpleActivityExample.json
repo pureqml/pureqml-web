@@ -2,7 +2,7 @@
     "content": {
         "Methods": {
             "onCompleted": {
-                "internal": true, 
+                "internal": false, 
                 "text": ""
             }
         }

@@ -3,166 +3,125 @@
         "Methods": {
             "_getValue": {
                 "internal": false, 
-                "params": [], 
                 "text": "gets element native value"
             }, 
             "_setValue": {
                 "internal": false, 
-                "params": [], 
                 "text": "sets element native value"
             }, 
             "_updateSize": {
                 "internal": true, 
-                "params": [], 
                 "text": "@private"
             }, 
             "_updateValue": {
                 "internal": true, 
-                "params": [], 
                 "text": "@private"
             }, 
             "blurBrowser": {
                 "internal": false, 
-                "params": [], 
                 "text": "blur browser"
             }, 
             "constructor": {
                 "internal": true, 
-                "params": [], 
                 "text": "@private"
             }, 
             "focusBrowser": {
                 "internal": false, 
-                "params": [], 
                 "text": "focus browser"
             }, 
             "getTag": {
                 "internal": false, 
-                "params": [], 
                 "text": "returns tag for corresponding element"
             }, 
             "onActiveFocusChanged": {
                 "internal": true, 
-                "params": [], 
                 "text": "@private"
             }, 
             "onAutocompleteChanged": {
-                "internal": true, 
+                "internal": false, 
                 "text": ""
             }, 
             "onBackgroundColorChanged": {
                 "internal": true, 
-                "params": [], 
                 "text": "@private"
             }, 
             "onColorChanged": {
                 "internal": true, 
-                "params": [], 
                 "text": "@private"
             }, 
             "onEnabledChanged": {
-                "internal": true, 
+                "internal": false, 
                 "text": ""
             }, 
             "onHorizontalAlignmentChanged": {
                 "internal": true, 
-                "params": [], 
                 "text": "@private"
             }, 
             "onInputModeChanged": {
-                "internal": true, 
+                "internal": false, 
                 "text": ""
             }, 
             "onRecursiveVisibleChanged": {
                 "internal": true, 
-                "params": [], 
                 "text": "@private"
             }, 
             "onTypeChanged": {
                 "internal": true, 
-                "params": [], 
                 "text": "@private"
             }, 
             "onWidthChanged": {
                 "internal": true, 
-                "params": [], 
                 "text": "@private"
             }, 
             "registerStyle": {
                 "internal": true, 
-                "params": [], 
                 "text": "@private"
             }
         }, 
         "Properties": {
             "autocomplete": {
-                "defaultValue": "", 
                 "internal": false, 
-                "text": "autocomplete variants (username, current-password, etc)", 
-                "type": "string"
+                "text": "autocomplete variants (username, current-password, etc)"
             }, 
             "backgroundColor": {
-                "defaultValue": "#fff", 
                 "internal": false, 
-                "text": "background color", 
-                "type": "Color"
+                "text": "background color"
             }, 
             "border": {
-                "defaultValue": "Border", 
                 "internal": false, 
-                "ref": "qmlcore.core/Border", 
-                "text": "object holding properties of the border", 
-                "type": "Border"
+                "text": "object holding properties of the border"
             }, 
             "color": {
-                "defaultValue": "#000", 
                 "internal": false, 
-                "text": "text color", 
-                "type": "Color"
+                "text": "text color"
             }, 
             "enabled": {
-                "defaultValue": "true", 
                 "internal": false, 
-                "text": "input enabled", 
-                "type": "bool"
+                "text": "input enabled"
             }, 
             "font": {
-                "defaultValue": "Font", 
                 "internal": false, 
-                "ref": "qmlcore.core/Font", 
-                "text": "object holding properties of text font", 
-                "type": "Font"
+                "text": "object holding properties of text font"
             }, 
             "inputMode": {
-                "defaultValue": "", 
                 "internal": false, 
-                "text": "inputmode attribute, numeric keyboard, etc", 
-                "type": "string"
+                "text": "inputmode attribute, numeric keyboard, etc"
             }, 
             "nativeFocus": {
-                "defaultValue": "${manifest.useNativeFocusForInput}", 
                 "internal": false, 
-                "text": "use native focus for input (may trigger IME)", 
-                "type": "bool"
+                "text": "use native focus for input (may trigger IME)"
             }, 
             "paddings": {
-                "defaultValue": "Paddings", 
                 "internal": false, 
-                "text": "inner text paddings", 
-                "type": "lazy"
+                "text": "inner text paddings"
             }, 
             "placeholder": {
-                "defaultValue": "PlaceHolder", 
                 "internal": false, 
-                "ref": "controls.core/PlaceHolder", 
-                "text": "input placeholder object", 
-                "type": "PlaceHolder"
+                "text": "input placeholder object"
             }, 
             "type": {
-                "defaultValue": "text", 
                 "internal": false, 
-                "text": "input type value, must override in inheriting component", 
-                "type": "string"
+                "text": "input type value, must override in inheriting component"
             }
         }, 
         "Signals": {

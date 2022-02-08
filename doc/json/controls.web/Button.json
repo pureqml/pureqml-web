@@ -3,89 +3,65 @@
         "Methods": {
             "_updateSize": {
                 "internal": true, 
-                "params": [], 
                 "text": "@private"
             }, 
             "constructor": {
                 "internal": true, 
-                "params": [], 
                 "text": "@private"
             }, 
             "getTag": {
                 "internal": true, 
-                "params": [], 
                 "text": "@private returns tag for corresponding element"
             }, 
             "onHeightChanged": {
                 "internal": true, 
-                "params": [], 
                 "text": "@private"
             }, 
             "onTextChanged": {
                 "internal": true, 
-                "params": [], 
                 "text": "@private"
             }, 
             "onTextColorChanged": {
                 "internal": true, 
-                "params": [], 
                 "text": "@private"
             }, 
             "onWidthChanged": {
                 "internal": true, 
-                "params": [], 
                 "text": "@private"
             }, 
             "registerStyle": {
                 "internal": true, 
-                "params": [], 
                 "text": "@private"
             }
         }, 
         "Properties": {
             "font": {
-                "defaultValue": "Font", 
                 "internal": false, 
-                "ref": "qmlcore.core/Font", 
-                "text": "button texts font", 
-                "type": "Font"
+                "text": "button texts font"
             }, 
             "hover": {
-                "defaultValue": "HoverMixin", 
                 "internal": false, 
-                "ref": "qmlcore.core/HoverMixin", 
-                "text": "", 
-                "type": "HoverMixin"
+                "text": ""
             }, 
             "paddings": {
-                "defaultValue": "Paddings", 
                 "internal": false, 
-                "text": "inner text paddings", 
-                "type": "lazy"
+                "text": "inner text paddings"
             }, 
             "paintedHeight": {
-                "defaultValue": "", 
                 "internal": false, 
-                "text": "", 
-                "type": "int"
+                "text": ""
             }, 
             "paintedWidth": {
-                "defaultValue": "", 
                 "internal": false, 
-                "text": "", 
-                "type": "int"
+                "text": ""
             }, 
             "text": {
-                "defaultValue": "", 
                 "internal": false, 
-                "text": "button inner text", 
-                "type": "string"
+                "text": "button inner text"
             }, 
             "textColor": {
-                "defaultValue": "", 
                 "internal": false, 
-                "text": "", 
-                "type": "color"
+                "text": ""
             }
         }, 
         "Signals": {

@@ -13,158 +13,121 @@
         "Methods": {
             "_bindClick": {
                 "internal": true, 
-                "params": [], 
                 "text": "@private"
             }, 
             "_bindHover": {
                 "internal": true, 
-                "params": [], 
                 "text": "@private"
             }, 
             "_bindPressable": {
                 "internal": true, 
-                "params": [], 
                 "text": "@private"
             }, 
             "_bindTouch": {
                 "internal": true, 
-                "params": [], 
                 "text": "@private"
             }, 
             "_bindWheel": {
                 "internal": true, 
-                "params": [], 
                 "text": "@private"
             }, 
             "constructor": {
                 "internal": true, 
-                "params": [], 
                 "text": "@private"
             }, 
             "onClickableChanged": {
                 "internal": true, 
-                "params": [], 
                 "text": "@private"
             }, 
             "onContainsMouseChanged": {
                 "internal": true, 
-                "params": [], 
                 "text": "@private"
             }, 
             "onCursorChanged": {
                 "internal": true, 
-                "params": [], 
                 "text": "@private"
             }, 
             "onHoverEnabledChanged": {
                 "internal": true, 
-                "params": [], 
                 "text": "@private"
             }, 
             "onMouseXChanged": {
-                "internal": true, 
+                "internal": false, 
                 "text": ""
             }, 
             "onMouseYChanged": {
-                "internal": true, 
+                "internal": false, 
                 "text": ""
             }, 
             "onPressableChanged": {
                 "internal": true, 
-                "params": [], 
                 "text": "@private"
             }, 
             "onRecursiveVisibleChanged": {
                 "internal": true, 
-                "params": [], 
                 "text": "@private"
             }, 
             "onTouchEnabledChanged": {
                 "internal": true, 
-                "params": [], 
                 "text": "@private"
             }, 
             "onTouchMove": {
                 "internal": true, 
-                "params": [], 
                 "text": "@private"
             }, 
             "onTouchStart": {
                 "internal": true, 
-                "params": [], 
                 "text": "@private"
             }, 
             "onWheelEnabledChanged": {
                 "internal": true, 
-                "params": [], 
                 "text": "@private"
             }, 
             "updatePosition": {
                 "internal": true, 
-                "params": [], 
                 "text": "@private"
             }
         }, 
         "Properties": {
             "clickable": {
-                "defaultValue": "true", 
                 "internal": false, 
-                "text": "enable mouse click event handling flag", 
-                "type": "bool"
+                "text": "enable mouse click event handling flag"
             }, 
             "containsMouse": {
-                "defaultValue": "", 
                 "internal": false, 
-                "text": "mouse inside item's area flag", 
-                "type": "bool"
+                "text": "mouse inside item's area flag"
             }, 
             "cursor": {
-                "defaultValue": "", 
                 "internal": false, 
-                "text": "mouse cursor inside the item's area", 
-                "type": "string"
+                "text": "mouse cursor inside the item's area"
             }, 
             "hoverEnabled": {
-                "defaultValue": "true", 
                 "internal": false, 
-                "text": "enable mouse hover event handling flag", 
-                "type": "bool"
+                "text": "enable mouse hover event handling flag"
             }, 
             "mouseX": {
-                "defaultValue": "", 
                 "internal": false, 
-                "text": "mouse x coordinate", 
-                "type": "real"
+                "text": "mouse x coordinate"
             }, 
             "mouseY": {
-                "defaultValue": "", 
                 "internal": false, 
-                "text": "mouse y coordinate", 
-                "type": "real"
+                "text": "mouse y coordinate"
             }, 
             "pressable": {
-                "defaultValue": "true", 
                 "internal": false, 
-                "text": "enable mouse click event handling flag", 
-                "type": "bool"
+                "text": "enable mouse click event handling flag"
             }, 
             "pressed": {
-                "defaultValue": "", 
                 "internal": false, 
-                "text": "mouse pressed flag", 
-                "type": "bool"
+                "text": "mouse pressed flag"
             }, 
             "touchEnabled": {
-                "defaultValue": "true", 
                 "internal": false, 
-                "text": "enable touch events handling flag", 
-                "type": "bool"
+                "text": "enable touch events handling flag"
             }, 
             "wheelEnabled": {
-                "defaultValue": "true", 
                 "internal": false, 
-                "text": "enable mouse click event handling flag", 
-                "type": "bool"
+                "text": "enable mouse click event handling flag"
             }
         }, 
         "Signals": {

@@ -10,15 +10,15 @@
                 "text": ""
             }, 
             "onCompleted": {
-                "internal": true, 
+                "internal": false, 
                 "text": ""
             }, 
             "onLanguageChanged": {
-                "internal": true, 
+                "internal": false, 
                 "text": ""
             }, 
             "onModeChanged": {
-                "internal": true, 
+                "internal": false, 
                 "text": ""
             }, 
             "switchCase": {

@@ -3,30 +3,25 @@
         "Methods": {
             "load": {
                 "internal": true, 
-                "params": [], 
                 "text": "@private"
             }, 
             "onCompleted": {
-                "internal": true, 
+                "internal": false, 
                 "text": ""
             }, 
             "onUrlChanged": {
-                "internal": true, 
+                "internal": false, 
                 "text": ""
             }
         }, 
         "Properties": {
             "data": {
-                "defaultValue": "", 
                 "internal": false, 
-                "text": "uploaded from URL data", 
-                "type": "string"
+                "text": "uploaded from URL data"
             }, 
             "url": {
-                "defaultValue": "", 
                 "internal": false, 
-                "text": "resource URL", 
-                "type": "string"
+                "text": "resource URL"
             }
         }, 
         "Signals": {
