@@ -57,6 +57,7 @@ https://pureqml.com/docs/controls.google/YouTube.html
 https://pureqml.com/docs/controls.input/BaseInput.html
 https://pureqml.com/docs/controls.input/CheckboxInput.html
 https://pureqml.com/docs/controls.input/ColorInput.html
+https://pureqml.com/docs/controls.input/ComboBoxInput.html
 https://pureqml.com/docs/controls.input/DateInput.html
 https://pureqml.com/docs/controls.input/EmailInput.html
 https://pureqml.com/docs/controls.input/FileInput.html
@@ -67,15 +68,16 @@ https://pureqml.com/docs/controls.input/SearchInput.html
 https://pureqml.com/docs/controls.input/TextAreaInput.html
 https://pureqml.com/docs/controls.input/TextInput.html
 https://pureqml.com/docs/controls.input/TimeInput.html
-https://pureqml.com/docs/controls.mixins/BaseMixin.html
 https://pureqml.com/docs/controls.mixins/CssMixin.html
 https://pureqml.com/docs/controls.mixins/DisableHoverByTimeoutMixin.html
 https://pureqml.com/docs/controls.mixins/DoubleClickMixin.html
 https://pureqml.com/docs/controls.mixins/DragMixin.html
 https://pureqml.com/docs/controls.mixins/DropZoneMixin.html
 https://pureqml.com/docs/controls.mixins/FocusOnHoverMixin.html
+https://pureqml.com/docs/controls.mixins/HoverClickMixin.html
 https://pureqml.com/docs/controls.mixins.html
 https://pureqml.com/docs/controls.mixins/ImageMixin.html
+https://pureqml.com/docs/controls.mixins/MouseMixin.html
 https://pureqml.com/docs/controls.mixins/OrientationMixin.html
 https://pureqml.com/docs/controls.mixins/OverflowMixin.html
 https://pureqml.com/docs/controls.mixins/PositionMixin.html
@@ -115,6 +117,7 @@ https://pureqml.com/docs/controls.web/Box.html
 https://pureqml.com/docs/controls.web/Button.html
 https://pureqml.com/docs/controls.web/Canvas.html
 https://pureqml.com/docs/controls.web/CodeHighlighter.html
+https://pureqml.com/docs/controls.web/DataList.html
 https://pureqml.com/docs/controls.web/DropDown.html
 https://pureqml.com/docs/controls.web/EllipsisText.html
 https://pureqml.com/docs/controls.web/GifSpinner.html
@@ -130,13 +133,11 @@ https://pureqml.com/docs/controls.web/H3.html
 https://pureqml.com/docs/controls.web/H4.html
 https://pureqml.com/docs/controls.web/H5.html
 https://pureqml.com/docs/controls.web/H6.html
-https://pureqml.com/docs/controls.web/HoverClickMixin.html
 https://pureqml.com/docs/controls.web.html
 https://pureqml.com/docs/controls.web/IFrame.html
 https://pureqml.com/docs/controls.web/LanguageSelector.html
 https://pureqml.com/docs/controls.web/LanguageSwitcher.html
 https://pureqml.com/docs/controls.web/MaterialIcon.html
-https://pureqml.com/docs/controls.web/MobileMenuButton.html
 https://pureqml.com/docs/controls.web/Navbar.html
 https://pureqml.com/docs/controls.web/NavbarItem.html
 https://pureqml.com/docs/controls.web/NavigationMenuButton.html
@@ -144,7 +145,6 @@ https://pureqml.com/docs/controls.web/ResizableBox.html
 https://pureqml.com/docs/controls.web/Script.html
 https://pureqml.com/docs/controls.web/Sharer.html
 https://pureqml.com/docs/controls.web/Spinner.html
-https://pureqml.com/docs/controls.web/SwipeMenu.html
 https://pureqml.com/docs/controls.web.tables.html
 https://pureqml.com/docs/controls.web.tables/TableBody.html
 https://pureqml.com/docs/controls.web.tables/TableCell.html
@@ -154,7 +154,6 @@ https://pureqml.com/docs/controls.web.tables/TableHeaderCell.html
 https://pureqml.com/docs/controls.web.tables/TableHeader.html
 https://pureqml.com/docs/controls.web.tables/Table.html
 https://pureqml.com/docs/controls.web.tables/TableRow.html
-https://pureqml.com/docs/controls.web/TopMenu.html
 https://pureqml.com/docs/controls.web/WebItem.html
 https://pureqml.com/docs/controls.web/WebLink.html
 https://pureqml.com/docs/controls.web.websocket.html
@@ -166,6 +165,8 @@ https://pureqml.com/docs/core/Anchors.html
 https://pureqml.com/docs/core/Animation.html
 https://pureqml.com/docs/core/BaseLayoutContentPadding.html
 https://pureqml.com/docs/core/BaseLayout.html
+https://pureqml.com/docs/core/BaseMixin.html
+https://pureqml.com/docs/core/BaseMouseMixin.html
 https://pureqml.com/docs/core/BaseViewContent.html
 https://pureqml.com/docs/core/BaseView.html
 https://pureqml.com/docs/core/Binding.html
@@ -177,6 +178,7 @@ https://pureqml.com/docs/core/Column.html
 https://pureqml.com/docs/core/Connection.html
 https://pureqml.com/docs/core/ContentMargin.html
 https://pureqml.com/docs/core/Context.html
+https://pureqml.com/docs/core/ContextMenuMixin.html
 https://pureqml.com/docs/core/Device.html
 https://pureqml.com/docs/core/Effects.html
 https://pureqml.com/docs/core/EventEmitter.html
@@ -215,6 +217,7 @@ https://pureqml.com/docs/core/ScrollView.html
 https://pureqml.com/docs/core/SequentialAnimation.html
 https://pureqml.com/docs/core/Shadow.html
 https://pureqml.com/docs/core/System.html
+https://pureqml.com/docs/core/TableView.html
 https://pureqml.com/docs/core/Text.html
 https://pureqml.com/docs/core/Timer.html
 https://pureqml.com/docs/core/Transform.html
