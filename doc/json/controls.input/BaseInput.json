@@ -98,63 +98,56 @@
             "autocomplete": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": " autocomplete variants (username, current-password, etc)",
                 "type": "string"
             },
             "backgroundColor": {
                 "defaultValue": "#fff",
                 "internal": false,
-                "ref": null,
                 "text": " background color",
                 "type": "Color"
             },
             "border": {
                 "defaultValue": "Border",
                 "internal": false,
-                "ref": "qmlcore.core/Border",
+                "ref": "core/Border",
                 "text": " object holding properties of the border",
                 "type": "Border"
             },
             "color": {
                 "defaultValue": "#000",
                 "internal": false,
-                "ref": null,
                 "text": " text color",
                 "type": "Color"
             },
             "enabled": {
                 "defaultValue": "ru",
                 "internal": false,
-                "ref": null,
                 "text": " input enabled",
                 "type": "bool"
             },
             "font": {
                 "defaultValue": "Font",
                 "internal": false,
-                "ref": "qmlcore.core/Font",
+                "ref": "core/Font",
                 "text": " object holding properties of text font",
                 "type": "Font"
             },
             "inputMode": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": " inputmode attribute, numeric keyboard, etc",
                 "type": "string"
             },
             "nativeFocus": {
                 "defaultValue": "{manifest.useNativeFocusForInput",
                 "internal": false,
-                "ref": null,
                 "text": " use native focus for input (may trigger IME)",
                 "type": "bool"
             },
             "paddings": {
                 "defaultValue": "Paddings",
                 "internal": false,
-                "ref": null,
                 "text": " inner text paddings",
                 "type": "lazy"
             },
@@ -168,7 +161,6 @@
             "type": {
                 "defaultValue": "text",
                 "internal": false,
-                "ref": null,
                 "text": " input type value, must override in inheriting component",
                 "type": "string"
             }

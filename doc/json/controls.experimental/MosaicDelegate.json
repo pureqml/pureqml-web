@@ -28,28 +28,24 @@
             "active": {
                 "defaultValue": "{activeFocus",
                 "internal": false,
-                "ref": null,
                 "text": "",
                 "type": "bool"
             },
             "allowOpacity": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": "",
                 "type": "bool"
             },
             "hoverMixin": {
                 "defaultValue": "HoverClickMixin",
                 "internal": false,
-                "ref": null,
                 "text": "",
                 "type": "Mixin"
             },
             "playing": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": "",
                 "type": "bool"
             }

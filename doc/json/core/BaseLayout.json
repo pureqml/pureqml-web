@@ -45,84 +45,72 @@
             "contentHeight": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": " content height",
                 "type": "int"
             },
             "contentWidth": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": " content width",
                 "type": "int"
             },
             "count": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": " number of children elements",
                 "type": "int"
             },
             "currentIndex": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": " index of current focused item",
                 "type": "int"
             },
             "handleNavigationKeys": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": " handle navigation keys, move focus",
                 "type": "bool"
             },
             "keyNavigationWraps": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": " key navigation wraps from first to last and vise versa",
                 "type": "bool"
             },
             "layoutDelay": {
                 "defaultValue": "- 1",
                 "internal": false,
-                "ref": null,
                 "text": " <0 - end of the tick (default), 0 - request animation frame, >0 - delay in ms",
                 "type": "int"
             },
             "offlineLayout": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": " layout delegates even if view's invisible",
                 "type": "bool"
             },
             "padding": {
                 "defaultValue": "BaseLayoutContentPadding",
                 "internal": false,
-                "ref": null,
                 "text": "",
                 "type": "lazy"
             },
             "prerenderDelay": {
                 "defaultValue": "- 1",
                 "internal": false,
-                "ref": null,
                 "text": " <0 - end of the tick (default), 0 - request animation frame, >0 - delay in ms",
                 "type": "int"
             },
             "spacing": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": " spacing between adjanced items, pixels",
                 "type": "int"
             },
             "trace": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": " output debug info in logs: layouts, item positioning",
                 "type": "bool"
             }

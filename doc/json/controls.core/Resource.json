@@ -19,14 +19,12 @@
             "data": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": "uploaded from URL data",
                 "type": "string"
             },
             "url": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": "resource URL",
                 "type": "string"
             }

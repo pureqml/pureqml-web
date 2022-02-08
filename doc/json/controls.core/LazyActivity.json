@@ -31,7 +31,6 @@
             "component": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": " path to activity source",
                 "type": "string"
             }

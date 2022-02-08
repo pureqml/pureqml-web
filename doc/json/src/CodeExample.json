@@ -14,35 +14,30 @@
             "codeHeight": {
                 "defaultValue": "0",
                 "internal": false,
-                "ref": null,
                 "text": "",
                 "type": "int"
             },
             "codeWidth": {
                 "defaultValue": "0",
                 "internal": false,
-                "ref": null,
                 "text": "",
                 "type": "int"
             },
             "exampleHeight": {
                 "defaultValue": "0",
                 "internal": false,
-                "ref": null,
                 "text": "",
                 "type": "int"
             },
             "exampleWidth": {
                 "defaultValue": "0",
                 "internal": false,
-                "ref": null,
                 "text": "",
                 "type": "int"
             },
             "sample": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": "",
                 "type": "Item"
             }

@@ -4,7 +4,6 @@
             "shift": {
                 "defaultValue": "5",
                 "internal": false,
-                "ref": null,
                 "text": "",
                 "type": "int"
             }

@@ -26,35 +26,30 @@
             "all": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": " a value for all sides",
                 "type": "int"
             },
             "bottom": {
                 "defaultValue": "{all",
                 "internal": false,
-                "ref": null,
                 "text": " bottom padding",
                 "type": "int"
             },
             "left": {
                 "defaultValue": "{all",
                 "internal": false,
-                "ref": null,
                 "text": " left padding",
                 "type": "int"
             },
             "right": {
                 "defaultValue": "{all",
                 "internal": false,
-                "ref": null,
                 "text": " right padding",
                 "type": "int"
             },
             "top": {
                 "defaultValue": "{all",
                 "internal": false,
-                "ref": null,
                 "text": " top padding",
                 "type": "int"
             }

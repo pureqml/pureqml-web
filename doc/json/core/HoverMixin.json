@@ -24,7 +24,6 @@
             "value": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": " is 'true' if item if hovered, 'false' otherwise",
                 "type": "bool"
             }

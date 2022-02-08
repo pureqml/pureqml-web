@@ -195,224 +195,192 @@
             "activeFocus": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": " this item can receive events and really focused at this moment",
                 "type": "bool"
             },
             "anchors": {
                 "defaultValue": "Anchors",
                 "internal": false,
-                "ref": null,
                 "text": "",
                 "type": "lazy"
             },
             "bottom": {
                 "defaultValue": "{ return [this, 3]; ",
                 "internal": false,
-                "ref": null,
                 "text": "",
                 "type": "const"
             },
             "clip": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": " clip all children outside rectangular area defined by x, y, width, height",
                 "type": "bool"
             },
             "cssDelegateAlwaysVisibleOnAcceleratedSurfaces": {
                 "defaultValue": "ru",
                 "internal": false,
-                "ref": null,
                 "text": "",
                 "type": "bool"
             },
             "cssNullTranslate3D": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": "",
                 "type": "bool"
             },
             "cssPointerTouchEvents": {
                 "defaultValue": "als",
                 "internal": false,
-                "ref": null,
                 "text": "",
                 "type": "bool"
             },
             "cssTranslatePositioning": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": "",
                 "type": "bool"
             },
             "effects": {
                 "defaultValue": "Effects",
                 "internal": false,
-                "ref": null,
                 "text": "",
                 "type": "lazy"
             },
             "focus": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": " this item can be focused",
                 "type": "bool"
             },
             "focused": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": " this item is focused among its siblings",
                 "type": "bool"
             },
             "focusedChild": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": " current focused item (this item only)",
                 "type": "Item"
             },
             "fullscreen": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": " fullscreen mode enabled / disabled",
                 "type": "bool"
             },
             "height": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": " height of visible area",
                 "type": "int"
             },
             "horizontalCenter": {
                 "defaultValue": "{ return [this, 4]; ",
                 "internal": false,
-                "ref": null,
                 "text": "",
                 "type": "const"
             },
             "keyProcessDelay": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": " delay time between key pressed events",
                 "type": "int"
             },
             "left": {
                 "defaultValue": "\t{ return [this, 0]; ",
                 "internal": false,
-                "ref": null,
                 "text": "",
                 "type": "const"
             },
             "opacity": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": " opacity of the item",
                 "type": "real"
             },
             "radius": {
                 "defaultValue": "Radius",
                 "internal": false,
-                "ref": null,
                 "text": " round corner radius(es), allow forwarding, e.g. item.radius: 5;",
                 "type": "lazy"
             },
             "recursiveVisible": {
                 "defaultValue": "als",
                 "internal": false,
-                "ref": null,
                 "text": " this item is actually visible on screen (all parents are visible as well)",
                 "type": "bool"
             },
             "right": {
                 "defaultValue": "{ return [this, 2]; ",
                 "internal": false,
-                "ref": null,
                 "text": "",
                 "type": "const"
             },
             "top": {
                 "defaultValue": "\t{ return [this, 1]; ",
                 "internal": false,
-                "ref": null,
                 "text": "",
                 "type": "const"
             },
             "transform": {
                 "defaultValue": "Transform",
                 "internal": false,
-                "ref": null,
                 "text": "",
                 "type": "lazy"
             },
             "verticalCenter": {
                 "defaultValue": "\t{ return [this, 5]; ",
                 "internal": false,
-                "ref": null,
                 "text": "",
                 "type": "const"
             },
             "viewX": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": " x position in view (if any)",
                 "type": "int"
             },
             "viewY": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": " y position in view (if any)",
                 "type": "int"
             },
             "visible": {
                 "defaultValue": "ru",
                 "internal": false,
-                "ref": null,
                 "text": " this item and its children are visible",
                 "type": "bool"
             },
             "visibleInView": {
                 "defaultValue": "ru",
                 "internal": false,
-                "ref": null,
                 "text": " this item is visible inside view content area",
                 "type": "bool"
             },
             "width": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": " width of visible area",
                 "type": "int"
             },
             "x": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": " x coordinate",
                 "type": "int"
             },
             "y": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": " y coordinate",
                 "type": "int"
             },
             "z": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": " z coordinate",
                 "type": "int"
             }

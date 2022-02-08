@@ -4,28 +4,24 @@
             "maxHeight": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": "",
                 "type": "int"
             },
             "maxWidth": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": "",
                 "type": "int"
             },
             "minHeight": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": "",
                 "type": "int"
             },
             "minWidth": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": "",
                 "type": "int"
             }

@@ -18,35 +18,30 @@
             "bottomLeft": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": " bottom left corner radius",
                 "type": "real"
             },
             "bottomRight": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": " bottom right corner radius",
                 "type": "real"
             },
             "radius": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": " radius for all corners",
                 "type": "real"
             },
             "topLeft": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": " top left corner radius",
                 "type": "real"
             },
             "topRight": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": " top right corner radius",
                 "type": "real"
             }

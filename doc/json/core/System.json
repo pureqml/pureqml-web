@@ -26,133 +26,114 @@
             "browser": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": " browser name",
                 "type": "string"
             },
             "contextHeight": {
                 "defaultValue": "{context.height",
                 "internal": true,
-                "ref": null,
                 "text": " @private",
                 "type": "int"
             },
             "contextWidth": {
                 "defaultValue": "{context.width",
                 "internal": true,
-                "ref": null,
                 "text": " @private",
                 "type": "int"
             },
             "landscape": {
                 "defaultValue": "! ${portrait}",
                 "internal": false,
-                "ref": null,
                 "text": " landscape oriented screen flag",
                 "type": "bool"
             },
             "language": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": " platform language",
                 "type": "string"
             },
             "os": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": " operation system name",
                 "type": "string"
             },
             "pageActive": {
                 "defaultValue": "ru",
                 "internal": false,
-                "ref": null,
                 "text": " page active flag",
                 "type": "bool"
             },
             "portrait": {
                 "defaultValue": "${parent.width} < ${parent.height}",
                 "internal": false,
-                "ref": null,
                 "text": " portrait oriented screen flag",
                 "type": "bool"
             },
             "resolutionHeight": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": " app screen height from manifest",
                 "type": "int"
             },
             "resolutionWidth": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": " app screen width from manifest",
                 "type": "int"
             },
             "screenHeight": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": " device screen height value",
                 "type": "int"
             },
             "screenWidth": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": " device screen width value",
                 "type": "int"
             },
             "support3dTransforms": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": " CSS transforms3d supported flag",
                 "type": "bool"
             },
             "supportTransforms": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": " CSS transforms supported flag",
                 "type": "bool"
             },
             "supportTransitions": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": " CSS transitions supported flag",
                 "type": "bool"
             },
             "userAgent": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": " browser userAgent value",
                 "type": "string"
             },
             "vendor": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": " current vendor name",
                 "type": "string"
             },
             "virtualKeyboard": {
                 "defaultValue": "(${device} === System.Tv) || (${device} === System.Mobile)",
                 "internal": false,
-                "ref": null,
                 "text": " used to tweak components which use on-screen keyboard",
                 "type": "bool"
             },
             "webkit": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": " webkit supported flag",
                 "type": "bool"
             }

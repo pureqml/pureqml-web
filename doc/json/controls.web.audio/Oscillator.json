@@ -66,21 +66,18 @@
             "detune": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": " representing detuning of oscillation in cents",
                 "type": "int"
             },
             "frequency": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": " signal frequency value",
                 "type": "int"
             },
             "playing": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": " is oscillator playing right now",
                 "type": "bool"
             }

@@ -61,35 +61,30 @@
             "columnSpacing": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": "",
                 "type": "int"
             },
             "columns": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": "",
                 "type": "int"
             },
             "referenceHeight": {
                 "defaultValue": "",
                 "internal": true,
-                "ref": null,
                 "text": " @internal",
                 "type": "int"
             },
             "referenceWidth": {
                 "defaultValue": "",
                 "internal": true,
-                "ref": null,
                 "text": " @internal",
                 "type": "int"
             },
             "rowSpacing": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": "",
                 "type": "int"
             }

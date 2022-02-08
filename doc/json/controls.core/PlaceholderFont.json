@@ -61,63 +61,54 @@
             "bold": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": " applies bold style",
                 "type": "bool"
             },
             "family": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": " font family",
                 "type": "string"
             },
             "italic": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": " applies italic style",
                 "type": "bool"
             },
             "lineHeight": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": " font line height in pixels",
                 "type": "int"
             },
             "pixelSize": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": " font size in pixels",
                 "type": "int"
             },
             "pointSize": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": " font size in points",
                 "type": "int"
             },
             "strike": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": " line throw text flag",
                 "type": "bool"
             },
             "underline": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": " applies underline style",
                 "type": "bool"
             },
             "weight": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": " font weight value",
                 "type": "int"
             }

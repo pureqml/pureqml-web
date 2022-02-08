@@ -18,35 +18,30 @@
             "delayed": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": " delays update to the next tick",
                 "type": "bool"
             },
             "property": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": " target property",
                 "type": "string"
             },
             "target": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": " target object",
                 "type": "Object"
             },
             "value": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": " any value",
                 "type": "var"
             },
             "when": {
                 "defaultValue": "ru",
                 "internal": false,
-                "ref": null,
                 "text": " assign value to target when this condition met",
                 "type": "bool"
             }

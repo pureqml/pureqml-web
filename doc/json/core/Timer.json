@@ -48,28 +48,24 @@
             "interval": {
                 "defaultValue": "00",
                 "internal": false,
-                "ref": null,
                 "text": " interval, ms",
                 "type": "int"
             },
             "repeat": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": " makes this timer periodic",
                 "type": "bool"
             },
             "running": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": " current timer status, true - running, false - paused",
                 "type": "bool"
             },
             "triggeredOnStart": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": " fire timer's signal on start or activation",
                 "type": "bool"
             }

@@ -41,35 +41,31 @@
             "code": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": " code string",
                 "type": "string"
             },
             "contentHeight": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": " content height",
                 "type": "int"
             },
             "contentWidth": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": " content width",
                 "type": "int"
             },
             "font": {
                 "defaultValue": "Font",
                 "internal": false,
-                "ref": "qmlcore.core/Font",
+                "ref": "core/Font",
                 "text": " code text font",
                 "type": "Font"
             },
             "language": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": " programming language",
                 "type": "string"
             }

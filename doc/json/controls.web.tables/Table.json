@@ -18,21 +18,20 @@
             "headerModel": {
                 "defaultValue": "ListModel",
                 "internal": false,
-                "ref": "qmlcore.core/Object",
+                "ref": "core/Object",
                 "text": "",
                 "type": "Object"
             },
             "model": {
                 "defaultValue": "ListModel",
                 "internal": false,
-                "ref": "qmlcore.core/Object",
+                "ref": "core/Object",
                 "text": "",
                 "type": "Object"
             },
             "textColor": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": "",
                 "type": "Color"
             }

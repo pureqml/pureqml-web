@@ -18,7 +18,6 @@
             "active": {
                 "defaultValue": "ru",
                 "internal": false,
-                "ref": null,
                 "text": "",
                 "type": "bool"
             }

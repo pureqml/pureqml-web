@@ -109,70 +109,60 @@
             "clickable": {
                 "defaultValue": "ru",
                 "internal": false,
-                "ref": null,
                 "text": " enable mouse click event handling flag",
                 "type": "bool"
             },
             "containsMouse": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": " mouse inside item's area flag",
                 "type": "bool"
             },
             "cursor": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": " mouse cursor inside the item's area",
                 "type": "string"
             },
             "hoverEnabled": {
                 "defaultValue": "ru",
                 "internal": false,
-                "ref": null,
                 "text": " enable mouse hover event handling flag",
                 "type": "bool"
             },
             "mouseX": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": " mouse x coordinate",
                 "type": "real"
             },
             "mouseY": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": " mouse y coordinate",
                 "type": "real"
             },
             "pressable": {
                 "defaultValue": "ru",
                 "internal": false,
-                "ref": null,
                 "text": " enable mouse click event handling flag",
                 "type": "bool"
             },
             "pressed": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": " mouse pressed flag",
                 "type": "bool"
             },
             "touchEnabled": {
                 "defaultValue": "ru",
                 "internal": false,
-                "ref": null,
                 "text": " enable touch events handling flag",
                 "type": "bool"
             },
             "wheelEnabled": {
                 "defaultValue": "ru",
                 "internal": false,
-                "ref": null,
                 "text": " enable mouse click event handling flag",
                 "type": "bool"
             }

@@ -16,7 +16,6 @@
             "count": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": " model rows count. Please note that you can't directly/indirectly modify model from onChanged handler. Use view.onCountChanged instead",
                 "type": "int"
             }

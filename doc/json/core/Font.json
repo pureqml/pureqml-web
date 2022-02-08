@@ -63,91 +63,78 @@
             "bold": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": " applies bold style",
                 "type": "bool"
             },
             "family": {
                 "defaultValue": "{manifest.style.font.family",
                 "internal": false,
-                "ref": null,
                 "text": " font family",
                 "type": "string"
             },
             "italic": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": " applies italic style",
                 "type": "bool"
             },
             "letterSpacing": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": " spacing between letters",
                 "type": "real"
             },
             "lineHeight": {
                 "defaultValue": "{manifest.style.font.lineHeight",
                 "internal": false,
-                "ref": null,
                 "text": " font line height in font heights",
                 "type": "real"
             },
             "overline": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": " applies overline style",
                 "type": "bool"
             },
             "pixelSize": {
                 "defaultValue": "{manifest.style.font.pixelSize",
                 "internal": false,
-                "ref": null,
                 "text": " font size in pixels",
                 "type": "int"
             },
             "pointSize": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": " font size in points",
                 "type": "int"
             },
             "strike": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": " line throw text flag",
                 "type": "bool"
             },
             "strikeout": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": " line throw text flag for compatibility with QML",
                 "type": "bool"
             },
             "underline": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": " applies underline style",
                 "type": "bool"
             },
             "weight": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": " font weight value",
                 "type": "int"
             },
             "wordSpacing": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": " spacing between words",
                 "type": "real"
             }

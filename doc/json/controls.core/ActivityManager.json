@@ -170,21 +170,18 @@
             "count": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": " activities count",
                 "type": "int"
             },
             "currentActivity": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": " current active activity name",
                 "type": "string"
             },
             "keepLastActivity": {
                 "defaultValue": "ru",
                 "internal": false,
-                "ref": null,
                 "text": " allow to keep last activity on screen or not",
                 "type": "bool"
             }

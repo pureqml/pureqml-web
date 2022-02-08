@@ -26,42 +26,36 @@
             "bottom": {
                 "defaultValue": "BorderSide",
                 "internal": false,
-                "ref": null,
                 "text": " bottom border side",
                 "type": "lazy"
             },
             "color": {
                 "defaultValue": "black",
                 "internal": false,
-                "ref": null,
                 "text": " color of the border",
                 "type": "color"
             },
             "left": {
                 "defaultValue": "BorderSide",
                 "internal": false,
-                "ref": null,
                 "text": " left border side",
                 "type": "lazy"
             },
             "right": {
                 "defaultValue": "BorderSide",
                 "internal": false,
-                "ref": null,
                 "text": " right border side",
                 "type": "lazy"
             },
             "top": {
                 "defaultValue": "BorderSide",
                 "internal": false,
-                "ref": null,
                 "text": " top border side",
                 "type": "lazy"
             },
             "width": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": " width of the border",
                 "type": "int"
             }

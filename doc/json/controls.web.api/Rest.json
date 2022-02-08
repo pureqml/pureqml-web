@@ -39,7 +39,6 @@
             "baseUrl": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": " base url for all requests",
                 "type": "string"
             }

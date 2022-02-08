@@ -177,98 +177,86 @@
             "animationDuration": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": "",
                 "type": "int"
             },
             "animationEasing": {
                 "defaultValue": "ease",
                 "internal": false,
-                "ref": null,
                 "text": "",
                 "type": "string"
             },
             "content": {
                 "defaultValue": "BaseViewContent",
                 "internal": true,
-                "ref": "qmlcore.core/BaseViewContent",
+                "ref": "core/BaseViewContent",
                 "text": " @internal",
                 "type": "BaseViewContent"
             },
             "contentFollowsCurrentItem": {
                 "defaultValue": "! ${nativeScrolling}",
                 "internal": false,
-                "ref": null,
                 "text": " auto-scroll content to current focused item",
                 "type": "bool"
             },
             "contentMargin": {
                 "defaultValue": "ContentMargin",
                 "internal": false,
-                "ref": "qmlcore.core/ContentMargin",
+                "ref": "core/ContentMargin",
                 "text": "",
                 "type": "ContentMargin"
             },
             "contentX": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": " x offset to visible part of the content surface",
                 "type": "int"
             },
             "contentY": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": " y offset to visible part of the content surface",
                 "type": "int"
             },
             "delegate": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": " delegate - template object, filled with model row",
                 "type": "Item"
             },
             "highlight": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": " an object that follows currentIndex and placed below other elements",
                 "type": "Item"
             },
             "model": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": " model object to attach to",
                 "type": "Object"
             },
             "nativeScrolling": {
                 "defaultValue": "${context.system.device} === ${context.system.Mobile}",
                 "internal": false,
-                "ref": null,
                 "text": " allows native scrolling on mobile targets and shows native scrollbars",
                 "type": "bool"
             },
             "prerender": {
                 "defaultValue": ".",
                 "internal": false,
-                "ref": null,
                 "text": " allocate additional delegates by viewport (prerender * horizontal/vertical view size) px",
                 "type": "real"
             },
             "scrollingStep": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": " scrolling step",
                 "type": "int"
             },
             "visibilityProperty": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": " if this property is false, delegate is not created at all",
                 "type": "string"
             }

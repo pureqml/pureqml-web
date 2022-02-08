@@ -35,21 +35,18 @@
             "item": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": " item for storing requested component",
                 "type": "Object"
             },
             "source": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": " component's URL",
                 "type": "string"
             },
             "trace": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": " log loading objects",
                 "type": "bool"
             }

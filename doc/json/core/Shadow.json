@@ -20,35 +20,30 @@
             "blur": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": " applies a blur effect on the shadow",
                 "type": "real"
             },
             "color": {
                 "defaultValue": "black",
                 "internal": false,
-                "ref": null,
                 "text": " color of the shadow",
                 "type": "color"
             },
             "spread": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": " adjusts a spread distance of the shadow",
                 "type": "real"
             },
             "x": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": " x coordinate",
                 "type": "real"
             },
             "y": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": " y coordinate",
                 "type": "real"
             }

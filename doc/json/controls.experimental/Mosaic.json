@@ -14,35 +14,30 @@
             "delegateRadius": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": "",
                 "type": "int"
             },
             "hoverMode": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": "",
                 "type": "bool"
             },
             "mobile": {
                 "defaultValue": "${context.system.device} === ${context.system.Mobile}",
                 "internal": false,
-                "ref": null,
                 "text": "",
                 "type": "bool"
             },
             "offset": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": "",
                 "type": "int"
             },
             "playing": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": "",
                 "type": "bool"
             }

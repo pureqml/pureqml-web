@@ -34,7 +34,6 @@
             "target": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": " target object to connect to",
                 "type": "Object"
             }

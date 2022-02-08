@@ -31,35 +31,30 @@
             "debounceTimeout": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": " set to non zero to debounce input allowing user time to type characters (suggest 500)",
                 "type": "float"
             },
             "max": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": " maximum number value",
                 "type": "float"
             },
             "min": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": " minimum number value",
                 "type": "float"
             },
             "step": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": " number step value",
                 "type": "float"
             },
             "value": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": " number value - suggested to use onValueChanged not onChange signal in instantiated component",
                 "type": "float"
             }

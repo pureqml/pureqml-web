@@ -10,7 +10,6 @@
             "valid": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": " is typed email valid or not flag",
                 "type": "bool"
             }

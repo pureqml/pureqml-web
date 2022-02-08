@@ -18,28 +18,24 @@
             "color": {
                 "defaultValue": "#fff",
                 "internal": false,
-                "ref": null,
                 "text": "",
                 "type": "Color"
             },
             "pixelSize": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": "",
                 "type": "int"
             },
             "running": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": "",
                 "type": "bool"
             },
             "text": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": "",
                 "type": "string"
             }

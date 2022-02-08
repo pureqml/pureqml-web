@@ -36,21 +36,18 @@
             "cursorVisible": {
                 "defaultValue": "ru",
                 "internal": false,
-                "ref": null,
                 "text": "",
                 "type": "bool"
             },
             "paddings": {
                 "defaultValue": "Paddings",
                 "internal": false,
-                "ref": null,
                 "text": "",
                 "type": "lazy"
             },
             "placeholder": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": "",
                 "type": "string"
             }

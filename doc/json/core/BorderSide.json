@@ -16,28 +16,24 @@
             "color": {
                 "defaultValue": "{parent.color",
                 "internal": false,
-                "ref": null,
                 "text": "",
                 "type": "color"
             },
             "name": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": "",
                 "type": "string"
             },
             "style": {
                 "defaultValue": "{parent.style",
                 "internal": false,
-                "ref": null,
                 "text": "",
                 "type": "int"
             },
             "width": {
                 "defaultValue": "{parent.width",
                 "internal": false,
-                "ref": null,
                 "text": "",
                 "type": "int"
             }

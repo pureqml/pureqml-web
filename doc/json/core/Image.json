@@ -52,49 +52,42 @@
             "paintedHeight": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": " actually painted image height",
                 "type": "int"
             },
             "paintedWidth": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": " actually painted image width",
                 "type": "int"
             },
             "preload": {
                 "defaultValue": "als",
                 "internal": false,
-                "ref": null,
                 "text": " image will be loaded even if it's not visible",
                 "type": "bool"
             },
             "smooth": {
                 "defaultValue": "ru",
                 "internal": false,
-                "ref": null,
                 "text": " if false, image will be pixelated",
                 "type": "bool"
             },
             "source": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": " image URL",
                 "type": "string"
             },
             "sourceHeight": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": " actual height of loaded image",
                 "type": "int"
             },
             "sourceWidth": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": " actual width of loaded image",
                 "type": "int"
             }

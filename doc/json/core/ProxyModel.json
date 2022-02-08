@@ -95,7 +95,6 @@
             "target": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": " target model object",
                 "type": "Object"
             }

@@ -20,21 +20,18 @@
             "component": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": " page component path",
                 "type": "string"
             },
             "manager": {
                 "defaultValue": "{parent",
                 "internal": false,
-                "ref": null,
                 "text": " reference to PageStack item",
                 "type": "Item"
             },
             "name": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": " page name",
                 "type": "string"
             }

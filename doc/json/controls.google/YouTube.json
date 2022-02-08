@@ -31,14 +31,12 @@
             "allowFullScreen": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": " allow fullscreen flag",
                 "type": "bool"
             },
             "source": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": " video source URL",
                 "type": "string"
             }

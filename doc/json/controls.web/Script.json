@@ -40,7 +40,6 @@
             "source": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": " source to load script from",
                 "type": "string"
             }

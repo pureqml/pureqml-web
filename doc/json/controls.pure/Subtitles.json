@@ -28,14 +28,12 @@
             "progress": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": " bind player progress with this property",
                 "type": "real"
             },
             "text": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": " current subttile text will be changed on corresponded time",
                 "type": "string"
             }

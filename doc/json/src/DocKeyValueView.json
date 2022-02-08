@@ -10,14 +10,12 @@
             "shift": {
                 "defaultValue": "0",
                 "internal": false,
-                "ref": null,
                 "text": "",
                 "type": "int"
             },
             "wide": {
                 "defaultValue": "${context.width} > 800",
                 "internal": false,
-                "ref": null,
                 "text": "",
                 "type": "bool"
             }

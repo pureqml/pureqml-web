@@ -18,91 +18,78 @@
             "country": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": " device country code",
                 "type": "string"
             },
             "deviceId": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": " unique device id or random generated id if its not supported",
                 "type": "string"
             },
             "firmware": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": " firmware version",
                 "type": "string"
             },
             "ip": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": " device IP address if its available",
                 "type": "string"
             },
             "language": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": " device langgcode",
                 "type": "string"
             },
             "macAddress": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": " device MAC address if its available for current platform",
                 "type": "string"
             },
             "modelName": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": " device model name",
                 "type": "string"
             },
             "runtime": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": " pureqml specific runtime provider, cordova/native",
                 "type": "string"
             },
             "sdk": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": " SDK version",
                 "type": "string"
             },
             "standByMode": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": " Stand by mode flag (if its supported)",
                 "type": "bool"
             },
             "supporting3d": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": " 3D Video supporting flag",
                 "type": "bool"
             },
             "supportingHdr": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": " HDR supporting flag",
                 "type": "bool"
             },
             "supportingUhd": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": " UHD (4K) supporting flag",
                 "type": "bool"
             }

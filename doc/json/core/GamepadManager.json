@@ -31,35 +31,30 @@
             "_gamepads": {
                 "defaultValue": "",
                 "internal": true,
-                "ref": null,
                 "text": " @private",
                 "type": "variant"
             },
             "count": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": " count of the all connected gamepad devices",
                 "type": "int"
             },
             "eventPollingInterval": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": " gamepad event polling timer interval default value is 8ms (for 120fps) because there is no gamepad events",
                 "type": "int"
             },
             "gamepadChildrensCount": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": " count of Gamepad instances inside scope",
                 "type": "int"
             },
             "gamepadPollingInterval": {
                 "defaultValue": "00",
                 "internal": false,
-                "ref": null,
                 "text": " startup delay before gamepads polling because there is no gamepad events",
                 "type": "int"
             }

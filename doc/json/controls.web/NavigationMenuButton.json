@@ -18,49 +18,43 @@
             "content": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": "",
                 "type": "Item"
             },
             "contentX": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": "",
                 "type": "int"
             },
             "contentY": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": "",
                 "type": "int"
             },
             "icon": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": "",
                 "type": "string"
             },
             "panel": {
                 "defaultValue": "Rectangle",
                 "internal": false,
-                "ref": "qmlcore.core/Rectangle",
+                "ref": "core/Rectangle",
                 "text": "",
                 "type": "Rectangle"
             },
             "scrollable": {
                 "defaultValue": "als",
                 "internal": false,
-                "ref": null,
                 "text": "",
                 "type": "bool"
             },
             "show": {
                 "defaultValue": "als",
                 "internal": false,
-                "ref": null,
                 "text": "",
                 "type": "bool"
             }

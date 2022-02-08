@@ -31,7 +31,6 @@
             "angle": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": " angle for custom orientated gradient",
                 "type": "real"
             }

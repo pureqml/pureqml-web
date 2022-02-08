@@ -16,14 +16,12 @@
             "color": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": " color of this stop",
                 "type": "color"
             },
             "position": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": " realative position ot the stop must be in range [0:1]",
                 "type": "real"
             }

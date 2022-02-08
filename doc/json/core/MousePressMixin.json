@@ -21,7 +21,6 @@
             "pressed": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": " true if any buttons pressed",
                 "type": "bool"
             }

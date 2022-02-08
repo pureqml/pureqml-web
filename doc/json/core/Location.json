@@ -23,70 +23,60 @@
             "hash": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": " contains current hash value (after '#' charachter)",
                 "type": "string"
             },
             "host": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": " current host with port number",
                 "type": "string"
             },
             "hostname": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": " current host name",
                 "type": "string"
             },
             "href": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": " whole current URL",
                 "type": "string"
             },
             "origin": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": " current protocol, hostname and port number of a URL",
                 "type": "string"
             },
             "pathname": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": " path name of the current URL",
                 "type": "string"
             },
             "port": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": " current port number",
                 "type": "string"
             },
             "protocol": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": " current protocol",
                 "type": "string"
             },
             "search": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": " query string of the URL",
                 "type": "string"
             },
             "state": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": " current history state",
                 "type": "Object"
             }

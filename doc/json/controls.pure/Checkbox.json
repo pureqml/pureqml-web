@@ -16,28 +16,24 @@
             "checked": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": " is checkbox checked or not",
                 "type": "bool"
             },
             "checkedColor": {
                 "defaultValue": "#8BC34A",
                 "internal": false,
-                "ref": null,
                 "text": " button color if checked",
                 "type": "color"
             },
             "panelColor": {
                 "defaultValue": "#ccc",
                 "internal": false,
-                "ref": null,
                 "text": " panel color",
                 "type": "color"
             },
             "uncheckedColor": {
                 "defaultValue": "#F44336",
                 "internal": false,
-                "ref": null,
                 "text": " button color if not checked",
                 "type": "color"
             }

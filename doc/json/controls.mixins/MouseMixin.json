@@ -47,28 +47,24 @@
             "clickable": {
                 "defaultValue": "ru",
                 "internal": false,
-                "ref": null,
                 "text": " enable mouse click event handling flag",
                 "type": "bool"
             },
             "hoverable": {
                 "defaultValue": "ru",
                 "internal": false,
-                "ref": null,
                 "text": " hoverEnabled property alias",
                 "type": "bool"
             },
             "pressable": {
                 "defaultValue": "ru",
                 "internal": false,
-                "ref": null,
                 "text": " enable mouse click event handling flag",
                 "type": "bool"
             },
             "wheelEnabled": {
                 "defaultValue": "ru",
                 "internal": false,
-                "ref": null,
                 "text": " enable mouse click event handling flag",
                 "type": "bool"
             }

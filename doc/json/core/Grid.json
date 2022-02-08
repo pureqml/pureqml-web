@@ -52,21 +52,18 @@
             "horizontalSpacing": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": " horizontal spacing between rows, overrides regular spacing, pixels",
                 "type": "int"
             },
             "rowsCount": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": " read-only property, represents number of row in a grid",
                 "type": "int"
             },
             "verticalSpacing": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": " vertical spacing between columns, overrides regular spacing, pixels",
                 "type": "int"
             }

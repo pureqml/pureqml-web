@@ -99,42 +99,36 @@
             "color": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": " color of the text",
                 "type": "color"
             },
             "font": {
                 "defaultValue": "Font",
                 "internal": false,
-                "ref": null,
                 "text": " text font object",
                 "type": "lazy"
             },
             "paintedHeight": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": " real height of this text without any layout applied",
                 "type": "int"
             },
             "paintedWidth": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": " real width of the text without any layout applied",
                 "type": "int"
             },
             "shadow": {
                 "defaultValue": "Shadow",
                 "internal": false,
-                "ref": null,
                 "text": " text shadow object",
                 "type": "lazy"
             },
             "text": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": " text to be displayed",
                 "type": "string"
             }

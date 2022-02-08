@@ -28,7 +28,6 @@
             "cursor": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": " mouse cursor",
                 "type": "string"
             }

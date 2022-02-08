@@ -68,91 +68,78 @@
             "bottom": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": " bottom anchor line",
                 "type": "AnchorLine"
             },
             "bottomMargin": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": " bottom margin value",
                 "type": "int"
             },
             "centerIn": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": " target to place in center of it",
                 "type": "Item"
             },
             "fill": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": " target to fill",
                 "type": "Item"
             },
             "horizontalCenter": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": " target for horizontal center",
                 "type": "AnchorLine"
             },
             "left": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": " left anchor line",
                 "type": "AnchorLine"
             },
             "leftMargin": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": " left margin value",
                 "type": "int"
             },
             "margins": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": " set all margins to same value",
                 "type": "int"
             },
             "right": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": " right anchor line",
                 "type": "AnchorLine"
             },
             "rightMargin": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": " right margin value",
                 "type": "int"
             },
             "top": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": " top anchor line",
                 "type": "AnchorLine"
             },
             "topMargin": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": " top margin value",
                 "type": "int"
             },
             "verticalCenter": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": " target for vertical center",
                 "type": "AnchorLine"
             }

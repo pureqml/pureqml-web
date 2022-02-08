@@ -10,7 +10,6 @@
             "enabled": {
                 "defaultValue": "ru",
                 "internal": false,
-                "ref": null,
                 "text": " enable/disable mixin",
                 "type": "bool"
             }

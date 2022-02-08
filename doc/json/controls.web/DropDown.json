@@ -74,49 +74,43 @@
             "color": {
                 "defaultValue": "#000",
                 "internal": false,
-                "ref": null,
                 "text": "",
                 "type": "Color"
             },
             "count": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": " drop down options count",
                 "type": "int"
             },
             "currentIndex": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": " current option index",
                 "type": "int"
             },
             "disabled": {
                 "defaultValue": "als",
                 "internal": false,
-                "ref": null,
                 "text": " set true to disable changing selection",
                 "type": "bool"
             },
             "font": {
                 "defaultValue": "Font",
                 "internal": false,
-                "ref": "qmlcore.core/Font",
+                "ref": "core/Font",
                 "text": "",
                 "type": "Font"
             },
             "text": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": " current option text",
                 "type": "string"
             },
             "value": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": " current option value",
                 "type": "string"
             }

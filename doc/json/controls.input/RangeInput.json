@@ -46,28 +46,24 @@
             "max": {
                 "defaultValue": "0",
                 "internal": false,
-                "ref": null,
                 "text": " maximum range value",
                 "type": "int"
             },
             "min": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": " minimal range value",
                 "type": "int"
             },
             "step": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": " range step",
                 "type": "int"
             },
             "value": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": " current value",
                 "type": "int"
             }

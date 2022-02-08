@@ -39,7 +39,6 @@
             "target": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": "",
                 "type": "Object"
             }

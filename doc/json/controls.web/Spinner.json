@@ -18,28 +18,24 @@
             "running": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": "",
                 "type": "bool"
             },
             "squeeze": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": "",
                 "type": "int"
             },
             "squeezeX": {
                 "defaultValue": "((${squeeze} * ${width}) * 5) / 80",
                 "internal": false,
-                "ref": null,
                 "text": "",
                 "type": "int"
             },
             "squeezeY": {
                 "defaultValue": "((${squeeze} * ${height}) * 5) / 80",
                 "internal": false,
-                "ref": null,
                 "text": "",
                 "type": "int"
             }

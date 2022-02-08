@@ -37,14 +37,12 @@
             "hoverMixin": {
                 "defaultValue": "HoverClickMixin",
                 "internal": false,
-                "ref": null,
                 "text": " hover mixin object proveds common API for mouse properties",
                 "type": "Mixin"
             },
             "position": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": " position mode property",
                 "type": "string"
             }

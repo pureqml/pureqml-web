@@ -31,14 +31,12 @@
             "autoPlay": {
                 "defaultValue": "ru",
                 "internal": false,
-                "ref": null,
                 "text": "autoplay flag, audio start to play immediately after source was changed",
                 "type": "bool"
             },
             "source": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": "audio source URL",
                 "type": "string"
             }

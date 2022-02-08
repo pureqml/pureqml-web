@@ -77,28 +77,24 @@
             "cellHeight": {
                 "defaultValue": "0",
                 "internal": false,
-                "ref": null,
                 "text": " grid cell height",
                 "type": "int"
             },
             "cellWidth": {
                 "defaultValue": "0",
                 "internal": false,
-                "ref": null,
                 "text": " grid cell width",
                 "type": "int"
             },
             "columns": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": " grid columns count (read only)",
                 "type": "int"
             },
             "rows": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": " grids row count (read only)",
                 "type": "int"
             }

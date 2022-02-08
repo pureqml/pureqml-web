@@ -14,7 +14,6 @@
             "checked": {
                 "defaultValue": "als",
                 "internal": false,
-                "ref": null,
                 "text": " checked flag value",
                 "type": "bool"
             }

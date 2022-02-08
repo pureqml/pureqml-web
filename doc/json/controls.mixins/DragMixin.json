@@ -31,35 +31,30 @@
             "bottom": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": " bottom border",
                 "type": "int"
             },
             "left": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": " left border",
                 "type": "int"
             },
             "pressed": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": " is mouse pressed flag",
                 "type": "bool"
             },
             "right": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": " right border",
                 "type": "int"
             },
             "top": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": " top border",
                 "type": "int"
             }

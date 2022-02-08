@@ -26,14 +26,12 @@
             "running": {
                 "defaultValue": "als",
                 "internal": false,
-                "ref": null,
                 "text": "",
                 "type": "bool"
             },
             "trace": {
                 "defaultValue": "als",
                 "internal": false,
-                "ref": null,
                 "text": "",
                 "type": "bool"
             }

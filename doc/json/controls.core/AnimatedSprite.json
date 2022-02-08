@@ -46,42 +46,36 @@
             "currentFrame": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": " displayed frame index",
                 "type": "int"
             },
             "duration": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": " animation time interval in milliseconds",
                 "type": "int"
             },
             "frameCount": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": " frames in duration value",
                 "type": "int"
             },
             "interval": {
                 "defaultValue": "${duration} / ${frameCount}",
                 "internal": false,
-                "ref": null,
                 "text": " read only property, time interval between each frames",
                 "type": "int"
             },
             "repeat": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": " repeat animation flag",
                 "type": "bool"
             },
             "running": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": " animation is running flag",
                 "type": "bool"
             }

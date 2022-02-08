@@ -18,21 +18,18 @@
             "max": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": " maximum date value",
                 "type": "string"
             },
             "min": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": " minimal date value",
                 "type": "string"
             },
             "value": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": " current date value",
                 "type": "string"
             }

@@ -18,21 +18,18 @@
             "border": {
                 "defaultValue": "Border",
                 "internal": false,
-                "ref": null,
                 "text": " object holding properties of the border",
                 "type": "lazy"
             },
             "color": {
                 "defaultValue": "#0000",
                 "internal": false,
-                "ref": null,
                 "text": " rectangle background color",
                 "type": "color"
             },
             "gradient": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": " if gradient object was set, it displays gradient instead of solid color",
                 "type": "Gradient"
             }

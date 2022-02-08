@@ -25,63 +25,54 @@
             "blur": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": " applies a blur effect to the image",
                 "type": "real"
             },
             "brightness": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": " adjusts the brightness of the image",
                 "type": "real"
             },
             "contrast": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": " adjusts the contrast of the image",
                 "type": "real"
             },
             "grayscale": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": " converts the image to grayscale",
                 "type": "real"
             },
             "hueRotate": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": " applies a hue rotation on the image. The value defines the number of degrees around the color circle the image samples will be adjusted",
                 "type": "real"
             },
             "invert": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": " inverts the samples in the image",
                 "type": "real"
             },
             "saturate": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": " saturates the image",
                 "type": "real"
             },
             "sepia": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": " converts the image to sepia",
                 "type": "real"
             },
             "shadow": {
                 "defaultValue": "Shadow",
                 "internal": false,
-                "ref": null,
                 "text": " object property for the shadow adjusting",
                 "type": "lazy"
             }

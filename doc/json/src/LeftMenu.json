@@ -14,14 +14,12 @@
             "hidable": {
                 "defaultValue": "${context.width} < 860",
                 "internal": false,
-                "ref": null,
                 "text": "",
                 "type": "bool"
             },
             "open": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": "",
                 "type": "bool"
             }

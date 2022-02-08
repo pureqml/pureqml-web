@@ -103,70 +103,63 @@
             "buildIdentifier": {
                 "defaultValue": "owered by PureQML No-Partnership Edition Engin",
                 "internal": true,
-                "ref": null,
                 "text": " @private",
                 "type": "string"
             },
             "keyProcessDelay": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": " key pressed handling delay timeout in millisecnods",
                 "type": "int"
             },
             "language": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": " localisation language",
                 "type": "string"
             },
             "location": {
                 "defaultValue": "Location",
                 "internal": false,
-                "ref": "qmlcore.core/Location",
+                "ref": "core/Location",
                 "text": " web-page location object",
                 "type": "Location"
             },
             "scrollY": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": " scrolled page vertical offset value",
                 "type": "int"
             },
             "stylesheet": {
                 "defaultValue": "Stylesheet",
                 "internal": true,
-                "ref": "qmlcore.platform.html5/Stylesheet",
+                "ref": "platform.html5/Stylesheet",
                 "text": " @private",
                 "type": "Stylesheet"
             },
             "system": {
                 "defaultValue": "System",
                 "internal": false,
-                "ref": "qmlcore.core/System",
+                "ref": "core/System",
                 "text": " system info object",
                 "type": "System"
             },
             "virtualHeight": {
                 "defaultValue": "{manifest.virtual.height",
                 "internal": false,
-                "ref": null,
                 "text": " virtual viewport height",
                 "type": "int"
             },
             "virtualScale": {
                 "defaultValue": "ath.min(((${system.resolutionWidth} || ${width}) / ${virtualWidth}),((${system.resolutionHeight} || ${height}) / ${virtualHeight})",
                 "internal": true,
-                "ref": null,
                 "text": " @private",
                 "type": "real"
             },
             "virtualWidth": {
                 "defaultValue": "{manifest.virtual.width",
                 "internal": false,
-                "ref": null,
                 "text": " virtual viewport width",
                 "type": "int"
             }

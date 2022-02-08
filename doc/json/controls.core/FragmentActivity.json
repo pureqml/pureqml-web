@@ -41,28 +41,24 @@
             "active": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": " is current FragmentActivity active or not",
                 "type": "bool"
             },
             "currentActivity": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": " displays current active activity name",
                 "type": "string"
             },
             "hasAnyActiveChild": {
                 "defaultValue": "als",
                 "internal": false,
-                "ref": null,
                 "text": " is 'true' when corresponded activity has active child",
                 "type": "bool"
             },
             "name": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": " activity name",
                 "type": "string"
             }

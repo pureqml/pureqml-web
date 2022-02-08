@@ -31,21 +31,19 @@
             "color": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": " placeholder color",
                 "type": "Color"
             },
             "font": {
                 "defaultValue": "PlaceholderFont",
                 "internal": false,
-                "ref": "qmlcore.core/Font",
+                "ref": "core/Font",
                 "text": " placeholder font",
                 "type": "Font"
             },
             "text": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": " inner text placeholder",
                 "type": "string"
             }

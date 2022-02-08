@@ -10,14 +10,12 @@
             "offsetX": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": " sprite horizontal offset",
                 "type": "int"
             },
             "offsetY": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": " sprite vertical offset",
                 "type": "int"
             }

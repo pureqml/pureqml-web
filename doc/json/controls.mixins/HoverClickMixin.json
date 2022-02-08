@@ -37,28 +37,24 @@
             "activeHover": {
                 "defaultValue": "als",
                 "internal": false,
-                "ref": null,
                 "text": "",
                 "type": "bool"
             },
             "activeHoverEnabled": {
                 "defaultValue": "als",
                 "internal": false,
-                "ref": null,
                 "text": "",
                 "type": "bool"
             },
             "clickable": {
                 "defaultValue": "ru",
                 "internal": false,
-                "ref": null,
                 "text": "",
                 "type": "bool"
             },
             "value": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": "",
                 "type": "bool"
             }

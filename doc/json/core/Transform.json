@@ -73,84 +73,72 @@
             "perspective": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": " perspective transformation",
                 "type": "int"
             },
             "rotate": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": " rotate relative transform point",
                 "type": "real"
             },
             "rotateX": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": " x-axis rotation",
                 "type": "real"
             },
             "rotateY": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": " y-axis rotation",
                 "type": "real"
             },
             "rotateZ": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": " z-axis rotation",
                 "type": "real"
             },
             "scaleX": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": " horizontal scale",
                 "type": "real"
             },
             "scaleY": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": " vertical scale",
                 "type": "real"
             },
             "skewX": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": " horizontal skew",
                 "type": "real"
             },
             "skewY": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": " vertical skew",
                 "type": "real"
             },
             "translateX": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": " x-translate",
                 "type": "int"
             },
             "translateY": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": " y-translate",
                 "type": "int"
             },
             "translateZ": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": " z-translate",
                 "type": "int"
             }

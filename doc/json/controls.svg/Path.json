@@ -31,49 +31,42 @@
             "color": {
                 "defaultValue": "red",
                 "internal": false,
-                "ref": null,
                 "text": "",
                 "type": "Color"
             },
             "fill": {
                 "defaultValue": "none",
                 "internal": false,
-                "ref": null,
                 "text": "",
                 "type": "string"
             },
             "width": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": "",
                 "type": "int"
             },
             "x1": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": "",
                 "type": "int"
             },
             "x2": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": "",
                 "type": "int"
             },
             "y1": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": "",
                 "type": "int"
             },
             "y2": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": "",
                 "type": "int"
             }

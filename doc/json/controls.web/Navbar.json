@@ -26,21 +26,18 @@
             "collapsed": {
                 "defaultValue": "ru",
                 "internal": false,
-                "ref": null,
                 "text": "",
                 "type": "bool"
             },
             "position": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": "",
                 "type": "string"
             },
             "vertical": {
                 "defaultValue": "${width} < 600",
                 "internal": false,
-                "ref": null,
                 "text": "",
                 "type": "bool"
             }

@@ -10,21 +10,18 @@
             "mobileMode": {
                 "defaultValue": "${menu.rowsCount} > 1",
                 "internal": false,
-                "ref": null,
                 "text": "",
                 "type": "bool"
             },
             "newWindow": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": "",
                 "type": "bool"
             },
             "open": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": "",
                 "type": "bool"
             }

@@ -28,14 +28,12 @@
             "origin": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": " readonly property of source's origin for message matching",
                 "type": "string"
             },
             "source": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": " another page source URL",
                 "type": "string"
             }

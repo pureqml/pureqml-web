@@ -30,21 +30,18 @@
             "name": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": " method name",
                 "type": "string"
             },
             "path": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": "",
                 "type": "string"
             },
             "type": {
                 "defaultValue": "GET",
                 "internal": false,
-                "ref": null,
                 "text": " method type, could be any of supported HTTP request types",
                 "type": "string"
             }

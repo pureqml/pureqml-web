@@ -138,21 +138,18 @@
             "active": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": " active at the moment",
                 "type": "bool"
             },
             "manager": {
                 "defaultValue": "{parent",
                 "internal": false,
-                "ref": null,
                 "text": " activities manager",
                 "type": "Item"
             },
             "name": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": " activity name",
                 "type": "string"
             }

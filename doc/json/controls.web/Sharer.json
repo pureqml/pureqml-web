@@ -20,7 +20,6 @@
             "url": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": " URL you want to share",
                 "type": "string"
             }

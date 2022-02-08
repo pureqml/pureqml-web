@@ -41,21 +41,18 @@
             "mouseX": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": "",
                 "type": "int"
             },
             "mouseY": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": "",
                 "type": "int"
             },
             "timeout": {
                 "defaultValue": "00",
                 "internal": false,
-                "ref": null,
                 "text": " timeout delay",
                 "type": "int"
             }

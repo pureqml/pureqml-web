@@ -18,21 +18,18 @@
             "cursorColor": {
                 "defaultValue": "#fff",
                 "internal": false,
-                "ref": null,
                 "text": " cursor color",
                 "type": "Color"
             },
             "passwordMode": {
                 "defaultValue": "als",
                 "internal": false,
-                "ref": null,
                 "text": " show password chars instead of input text flag property",
                 "type": "bool"
             },
             "text": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": " input text string property",
                 "type": "string"
             }

@@ -26,14 +26,12 @@
             "count": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": " childrens count",
                 "type": "int"
             },
             "currentIndex": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": " index of displaying child",
                 "type": "int"
             }

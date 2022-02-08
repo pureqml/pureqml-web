@@ -231,119 +231,102 @@
             "autoPlay": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": " play video immediately after source changed",
                 "type": "bool"
             },
             "backend": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": " backend to use",
                 "type": "string"
             },
             "backgroundColor": {
                 "defaultValue": "#000",
                 "internal": false,
-                "ref": null,
                 "text": " default background color",
                 "type": "color"
             },
             "backgroundImage": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": " background image (poster) source URL",
                 "type": "string"
             },
             "buffered": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": " how much content to buffer in seconds",
                 "type": "real"
             },
             "duration": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": " content duration in seconds (only for non-live videos)",
                 "type": "real"
             },
             "loop": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": " video loop flag",
                 "type": "bool"
             },
             "muted": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": " volume mute flag",
                 "type": "bool"
             },
             "paused": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": " video paused flag",
                 "type": "bool"
             },
             "progress": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": " current playback progress in seconds",
                 "type": "real"
             },
             "ready": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": " read only property becomes 'true' when video is ready to play, 'false' otherwise",
                 "type": "bool"
             },
             "seeking": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": " seeking flag",
                 "type": "bool"
             },
             "source": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": " video source URL",
                 "type": "string"
             },
             "stalled": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": " playback stalled",
                 "type": "bool"
             },
             "startPosition": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": " second at which the video should start playback",
                 "type": "real"
             },
             "volume": {
                 "defaultValue": ".",
                 "internal": false,
-                "ref": null,
                 "text": " video volume value [0:1]",
                 "type": "float"
             },
             "waiting": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": " wating flag while video is seeking and not ready to continue playing",
                 "type": "bool"
             }

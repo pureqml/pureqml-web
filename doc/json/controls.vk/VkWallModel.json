@@ -27,21 +27,18 @@
             "accessToken": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": " VK API access token",
                 "type": "string"
             },
             "ownerId": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": " user ID  of the owner of the wall",
                 "type": "int"
             },
             "version": {
                 "defaultValue": ".0",
                 "internal": false,
-                "ref": null,
                 "text": " VK api version",
                 "type": "string"
             }

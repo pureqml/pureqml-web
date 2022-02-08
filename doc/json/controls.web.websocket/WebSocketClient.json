@@ -26,7 +26,6 @@
             "url": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": " The URL to which to connect; this should be the URL to which the WebSocket server will respond.  The url needs to start with either 'ws://' or 'wss://'",
                 "type": "string"
             }

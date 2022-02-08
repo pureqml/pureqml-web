@@ -14,84 +14,72 @@
             "animationDuration": {
                 "defaultValue": "0",
                 "internal": false,
-                "ref": null,
                 "text": "",
                 "type": "int"
             },
             "barColor": {
                 "defaultValue": "#fff",
                 "internal": false,
-                "ref": null,
                 "text": "",
                 "type": "Color"
             },
             "contentHeight": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": "",
                 "type": "int"
             },
             "contentY": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": "",
                 "type": "int"
             },
             "display": {
                 "defaultValue": "als",
                 "internal": false,
-                "ref": null,
                 "text": "",
                 "type": "bool"
             },
             "displayHeight": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": "",
                 "type": "int"
             },
             "displaySeconds": {
                 "defaultValue": "00",
                 "internal": false,
-                "ref": null,
                 "text": "",
                 "type": "int"
             },
             "maxContentY": {
                 "defaultValue": "${displayHeight} - ${movingBar.height}",
                 "internal": false,
-                "ref": null,
                 "text": "",
                 "type": "int"
             },
             "minHeight": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": "",
                 "type": "int"
             },
             "realContentY": {
                 "defaultValue": "${contentHeight} ? ((((- ${contentY}) * 1.0) / ${contentHeight}) * ${displayHeight}) : 0",
                 "internal": false,
-                "ref": null,
                 "text": "",
                 "type": "int"
             },
             "realHeight": {
                 "defaultValue": "${contentHeight} ? (((${displayHeight} * 1.0) / ${contentHeight}) * ${displayHeight}) : 0",
                 "internal": false,
-                "ref": null,
                 "text": "",
                 "type": "int"
             },
             "shift": {
                 "defaultValue": "(${realContentY} > ${maxContentY}) ? ${maxContentY} : ${realContentY}",
                 "internal": false,
-                "ref": null,
                 "text": "",
                 "type": "int"
             }

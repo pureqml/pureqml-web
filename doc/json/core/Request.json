@@ -17,7 +17,6 @@
             "loading": {
                 "defaultValue": "als",
                 "internal": false,
-                "ref": null,
                 "text": " loading flag, is true when request was send and false when answer was recieved or error occured",
                 "type": "bool"
             }

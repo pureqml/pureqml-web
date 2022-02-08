@@ -35,21 +35,18 @@
             "defaultValue": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": " default init value",
                 "type": "string"
             },
             "name": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": " stored property key name",
                 "type": "string"
             },
             "value": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": " stored property value",
                 "type": "string"
             }

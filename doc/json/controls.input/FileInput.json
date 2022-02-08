@@ -14,14 +14,12 @@
             "filter": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": " filter for file selecting",
                 "type": "string"
             },
             "value": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": " selected filename",
                 "type": "string"
             }

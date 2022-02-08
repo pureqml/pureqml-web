@@ -48,63 +48,54 @@
             "cssTransition": {
                 "defaultValue": "ru",
                 "internal": false,
-                "ref": null,
                 "text": " use css transition if possible",
                 "type": "bool"
             },
             "delay": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": " delay in ms",
                 "type": "int"
             },
             "duration": {
                 "defaultValue": "0",
                 "internal": false,
-                "ref": null,
                 "text": " duration in ms",
                 "type": "int"
             },
             "easing": {
                 "defaultValue": "ease",
                 "internal": false,
-                "ref": null,
                 "text": " easing function",
                 "type": "string"
             },
             "from": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": " used in declarative animation inside SequentialAnimation, starting value",
                 "type": "variant"
             },
             "property": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": " target object property",
                 "type": "string"
             },
             "running": {
                 "defaultValue": "als",
                 "internal": false,
-                "ref": null,
                 "text": " currently running",
                 "type": "bool"
             },
             "target": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": " target object",
                 "type": "Object"
             },
             "to": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": " used in declarative animation inside SequentialAnimation, destination value",
                 "type": "variant"
             }

@@ -157,7 +157,6 @@
             "data": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": " declarative way of assigning data",
                 "type": "array"
             }

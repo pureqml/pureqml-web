@@ -19,35 +19,30 @@
             "globalWidth": {
                 "defaultValue": "{context.width",
                 "internal": true,
-                "ref": null,
                 "text": "@private",
                 "type": "int"
             },
             "lg": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": " large devices, desktops (>=1200px)",
                 "type": "real"
             },
             "md": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": " medium devices, desktops (>=992px)",
                 "type": "real"
             },
             "sm": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": " small devices, tablets (>=768px)",
                 "type": "real"
             },
             "xs": {
                 "defaultValue": "0",
                 "internal": false,
-                "ref": null,
                 "text": " extra small devices, phones (<768px)",
                 "type": "real"
             }

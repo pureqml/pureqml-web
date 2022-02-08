@@ -46,49 +46,44 @@
             "font": {
                 "defaultValue": "Font",
                 "internal": false,
-                "ref": "qmlcore.core/Font",
+                "ref": "core/Font",
                 "text": " button texts font",
                 "type": "Font"
             },
             "hover": {
                 "defaultValue": "HoverMixin",
                 "internal": false,
-                "ref": "qmlcore.core/HoverMixin",
+                "ref": "core/HoverMixin",
                 "text": "",
                 "type": "HoverMixin"
             },
             "paddings": {
                 "defaultValue": "Paddings",
                 "internal": false,
-                "ref": null,
                 "text": " inner text paddings",
                 "type": "lazy"
             },
             "paintedHeight": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": "",
                 "type": "int"
             },
             "paintedWidth": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": "",
                 "type": "int"
             },
             "text": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": " button inner text",
                 "type": "string"
             },
             "textColor": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": "",
                 "type": "color"
             }

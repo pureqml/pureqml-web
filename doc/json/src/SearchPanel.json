@@ -18,14 +18,12 @@
             "hover": {
                 "defaultValue": "HoverClickMixin",
                 "internal": false,
-                "ref": null,
                 "text": "",
                 "type": "Mixin"
             },
             "searchFocused": {
                 "defaultValue": "${searchText.activeFocus} || ${searchResults.visible}",
                 "internal": false,
-                "ref": null,
                 "text": "",
                 "type": "bool"
             }

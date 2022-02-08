@@ -30,56 +30,48 @@
             "axesCount": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": " supported axes count",
                 "type": "int"
             },
             "buttonsCount": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": " supported buttons count",
                 "type": "int"
             },
             "connected": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": " is gamepad connected or not",
                 "type": "bool"
             },
             "deviceInfo": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": " gamepad device info string",
                 "type": "string"
             },
             "index": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": " gamepad index in order of appearance",
                 "type": "int"
             },
             "productId": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": " product ID",
                 "type": "int"
             },
             "standartMapping": {
                 "defaultValue": "ru",
                 "internal": false,
-                "ref": null,
                 "text": " gamepad use standart buttons and axes mapping",
                 "type": "bool"
             },
             "vendorId": {
                 "defaultValue": "",
                 "internal": false,
-                "ref": null,
                 "text": " vendor ID",
                 "type": "int"
             }
