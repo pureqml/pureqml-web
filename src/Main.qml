@@ -9,10 +9,11 @@ SiteActivity {
 			height: mainHeader.height + 120;
 			property Gradient gradient: Gradient {
 				orientation: Gradient.Custom;
-				angle: 120;
 
-				GradientStop { position: 0; color: "#8BC34A"; }
-				GradientStop { position: 1; color: "#00BCD4"; }
+				GradientStop { position: 0; color: "#ffd700"; }
+				GradientStop { position: 0.45; color: "#ffd700"; }
+				GradientStop { position: 0.55; color: "#0057b8"; }
+				GradientStop { position: 1; color: "#0057b8"; }
 			}
 
 			Image {
@@ -29,7 +30,7 @@ SiteActivity {
 				width: Math.min(100%, 1200) - 40;
 				anchors.horizontalCenter: parent.horizontalCenter;
 				horizontalAlignment: Text.AlignHCenter;
-				color: colorTheme.hTextColor;
+				color: "#0057b8";
 				font.pixelSize: Math.min(parent.width / 12, 36);
 				font.weight: 100;
 				text: "QML-inspired declarative JS-framework for web (and other platforms).";
