@@ -35,7 +35,7 @@ SiteActivity {
 					spacing: 5;
 
 					HowtoText { text: "Create project directory"; code: "cd &lt;project-dir&gt;"; }
-					HowtoText { text: "Clone qmlcore to it"; code: "git clone git@github.com:pureqml/qmlcore.git"; }
+					HowtoText { text: "Clone qmlcore to it"; code: "git clone https://github.com/pureqml/qmlcore.git"; }
 					HowtoText { text: "Run"; code: "./qmlcore/build --boilerplate"; }
 					HowtoText { text: "Look into"; code: "src/app.qml"; }
 					HowtoText { text: "Run"; code: "./qmlcore/build"; }
@@ -98,7 +98,7 @@ SiteActivity {
 			HashPageColumn {
 				hash: "controls";
 				title: "Controls library";
-				text: "QmlCore contains bare minimum platform controls: images, texts, rectangles and model-view-delegate classes. Various controls that might be useful are in separate repository. Just clone it <code><b>git clone git@github.com:pureqml/controls.git</code></b> in your project, and that's it!";
+				text: "QmlCore contains bare minimum platform controls: images, texts, rectangles and model-view-delegate classes. Various controls that might be useful are in separate repository. Just clone it <code><b>git clone https://github.com/pureqml/controls.git</code></b> in your project, and that's it!";
 			}
 
 			HashPageColumn {
