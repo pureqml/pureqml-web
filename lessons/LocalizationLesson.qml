@@ -5,7 +5,7 @@ Lesson {
 
 	PageColumn {
 		title: "Localization";
-		text: "One of the features of QML it's easy way to support many languages. For example we will try to implement text with 2 supported languages.\nLets look on simple example with text:";
+		text: "Localisation is easy. Let's try to implement text with 2 supported languages.\nSimple example with text:";
 
 		CodeHighlighter {
 			width: parent.width - 30;
@@ -31,7 +31,7 @@ Lesson {
 
 		MainP {
 			anchors.topMargin: 20;
-			text: "To make this text multilanguage we shuold add 'qsTr()' method";
+			text: "To make this text multilanguage we should add 'tr()' call";
 			horizontalAlignment: Text.AlignLeft;
 		}
 
@@ -46,7 +46,7 @@ Lesson {
 				"\t\tanchors.centerIn: parent;\n" +
 				"\t\tcolor: \"black\";\n" +
 				"\t\tfont.pixelSize: 25\n" +
-				"\t\ttext: qsTr(\"Hello world\");\n" +
+				"\t\ttext: tr(\"Hello world\");\n" +
 				"\t}\n" +
 			"}";
 		}
