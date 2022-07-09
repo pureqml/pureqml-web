@@ -9,7 +9,7 @@ FILES=$(tail --lines='+2' < dist/sitemap.txt | sed -r "s/^https:\/\/pureqml.com\
 
 #building and minifying
 rm -rf build.web
-./qmlcore/build -m -E
+./qmlcore/build -m
 
 #updating gh-pages
 git checkout gh-pages
