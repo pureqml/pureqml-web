@@ -5,7 +5,7 @@ Lesson {
 
 	PageColumn {
 		title: "Localization";
-		text: "Localisation is easy. Let's try to implement text with 2 supported languages.\nSimple example with text:";
+		text: "Localisation is pretty easy and straightforward. Let's try to implement text with 2 supported languages.\nSimple example with text:";
 
 		CodeHighlighter {
 			width: parent.width - 30;
@@ -25,13 +25,13 @@ Lesson {
 
 		MainP {
 			anchors.topMargin: 20;
-			text: "Attention! To use 'WebItem' you have to add <a href='https://github.com/pureqml/controls'>controls</a> into your project";
+			text: "(To use 'WebItem' you have to add <a href='https://github.com/pureqml/controls'>controls</a> into your project)";
 			horizontalAlignment: Text.AlignLeft;
 		}
 
 		MainP {
 			anchors.topMargin: 20;
-			text: "To make this text multilanguage we should add 'tr()' call";
+			text: "To make this text multilanguage we can add 'tr()' call";
 			horizontalAlignment: Text.AlignLeft;
 		}
 
@@ -48,6 +48,27 @@ Lesson {
 				"\t\tfont.pixelSize: 25\n" +
 				"\t\ttext: tr(\"Hello world\");\n" +
 				"\t}\n" +
+			"}";
+		}
+
+		MainP {
+			anchors.topMargin: 20;
+			text: "It is also possible to include tr() functions as a part of ListElement { } declaration. " +
+				"Those values won't be automatically translated, it's just a mark saying this string has to be localised. " +
+				"However it's possible for ListModel to call tr() function for you. " +
+				"localizedFields property holds field names the model will call tr function for." + 
+				"Also ListModel will reinitialise its values in case of language change event.";
+			horizontalAlignment: Text.AlignLeft;
+		}
+
+		CodeHighlighter {
+			width: parent.width - 30;
+			font.pixelSize: 18;
+			language: "qml";
+			code: "ListModel {\n" +
+				"\tlocalizedFields: ['text'];\n" +
+				"\tListElement { id: id1; text: tr('Rectangle'); }\n" +
+				"\tListElement { id: id2; text: tr('Triangle'); }\n" +
 			"}";
 		}
 
