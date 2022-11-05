@@ -3,7 +3,7 @@ Lesson {
 
 	PageColumn {
 		title: "Resource files";
-		text: "To add any files in your project (images, scripts etc) create directory named <i>\"dist\"</i> in your project root and put any file you wanted. All files from <i>\"dist\"</i> directory will be copied to the result build directory after running <i>\"./qmlcore/build\"</i> command.<br>For example if you want to add a local image to your app you can move it to location like that: <i>\"./dist/lessons/image.png\" after build you will see the <i>./lessons/image.png</i> file in the build directory and now you can use it by the path relative to the dist directory:<i>";
+		text: "To add any files in your project (images, scripts etc) create directory named <i>\"dist\"</i> in your project root and put any file you wanted. All files from <i>\"dist\"</i> directory will be copied to the result build directory after running <i>\"./qmlcore/build\"</i> command.<br>For example if you want to add a local image to your app you can move it to location like that: <i>\"./dist/lessons/image.png\" after build you will see the <i>./lessons/image.png</i> file in the build directory. Now you can use it by the path relative to the dist directory:<i>";
 
 		CodeHighlighter {
 			width: contentWidth + 20;
@@ -28,8 +28,8 @@ Lesson {
 	}
 
 	PageColumn {
-		title: "Add js files without index.html modifying";
-		text: "There is an easy way to add js source code without modifying <i>index.html</i> file. You can just place any js file into the <i>./src</i> directory and its code will be added to the compiled qml js file as is.";
+		title: "Add js files without changing index.html";
+		text: "There is an easy way to add js source code without changing <i>index.html</i> file. You can just place any js file into the <i>./src</i> directory and its code will be added to the compiled qml js file as is.";
 	}
 
 	PageColumn {
