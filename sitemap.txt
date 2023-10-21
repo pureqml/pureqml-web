@@ -17,6 +17,7 @@ https://pureqml.com/lessons/keyboard.html
 https://pureqml.com/lessons/layouts.html
 https://pureqml.com/lessons/loader.html
 https://pureqml.com/lessons/localization.html
+https://pureqml.com/lessons/localization.html
 https://pureqml.com/lessons/mixins.html
 https://pureqml.com/lessons/restapi.html
 https://pureqml.com/lessons/signals.html
