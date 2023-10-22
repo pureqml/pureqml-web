@@ -30,7 +30,7 @@ SiteActivity {
 				width: Math.min(100%, 1200) - 40;
 				anchors.horizontalCenter: parent.horizontalCenter;
 				horizontalAlignment: Text.AlignHCenter;
-				color: "#ffffff";
+				color: "#64B5F6";
 				font.pixelSize: Math.min(parent.width / 12, 36);
 				font.weight: 100;
 				text: "QML-inspired declarative JS-framework for web (and other platforms).";
