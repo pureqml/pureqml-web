@@ -66,7 +66,7 @@ SiteActivity {
 				color: hover ? "#5682a3" : "transparent";
 				border.color: "#5682a3";
 				text: "Telegram support channel";
-				icon: "res/icons/telegram.svg";
+				icon: colorTheme.resPath + "/icons/telegram.svg";
 				onClicked: {}
 			}
 
