@@ -27,7 +27,7 @@ WebItem {
 				rect.y += 10
 				break
 			default:
-				event.accepted = false
+				return false
 			}
 		}
 	}
