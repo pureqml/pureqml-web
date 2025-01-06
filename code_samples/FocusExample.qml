@@ -20,7 +20,8 @@ Row {
 			visible: !parent.activeFocus;
 		}
 
-		onClicked: { this.setFocus() }
+		onClicked: { this.setFocus(); }
+		onActiveFocusChanged: { log("Left rectangle is focused"); }
 	}
 
 	WebItem {
@@ -40,6 +41,7 @@ Row {
 			visible: !parent.activeFocus;
 		}
 
-		onClicked: { this.setFocus() }
+		onClicked: { this.setFocus(); }
+		onActiveFocusChanged: { log("Right rectangle is focused"); }
 	}
 }
