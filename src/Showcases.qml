@@ -30,5 +30,11 @@ SiteActivity {
 			text: "Tvigle is one of the old-timers of ad sponsored video streaming services, recently revamped their technological stack with PureQML.";
 		}
 		ShowcaseImage { source: colorTheme.resPath + "/showcases/tvigle.jpg"; }
+
+		MainH2 { text: "Cgates TV"; }
+		MainP {
+			text: "Lithuania VOD and IPTV service.";
+		}
+		ShowcaseImage { source: colorTheme.resPath + "/showcases/cgates.jpg"; }
 	}
 }
