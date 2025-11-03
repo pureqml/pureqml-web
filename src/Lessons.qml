@@ -212,7 +212,8 @@ SiteActivity {
 					videoplayer: "lessons.VideoPlayerLesson",
 					thirdparty: "lessons.ThirdPartyLesson",
 					drm: "lessons.DrmLesson",
-					rest: "lessons.RestLesson"
+					rest: "lessons.RestLesson",
+					androidnative: "lessons.AndroidNativeLesson"
 				}
 			}
 
