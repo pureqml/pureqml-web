@@ -20,3 +20,4 @@
 /*** @using { lessons.DrmLesson } **/
 /*** @using { lessons.RestLesson } **/
 /*** @using { lessons.ThirdPartyLesson } **/
+/*** @using { lessons.AndroidNativeLesson } **/

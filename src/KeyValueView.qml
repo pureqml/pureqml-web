@@ -3,7 +3,7 @@ ListView {
 	height: contentHeight;
 	anchors.left: parent.left;
 	anchors.right: parent.right;
-	spacing: 5;
+	spacing: 5s;
 	delegate: Item {
 		property bool wide: context.width > 500;
 		width: parent.width;

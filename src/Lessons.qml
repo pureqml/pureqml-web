@@ -156,6 +156,12 @@ SiteActivity {
 					text: "How to implement REST API (or other XML HTTP) reqeusts";
 				}
 
+				PathPageColumn {
+					path: "lessons/androidnative";
+					title: "Android";
+					text: "Aspects of application porting to Android devices";
+				}
+
 				onFillMenu(data): { leftMenu.fillModel(data) }
 
 				onCompleted: { log("main completed") }
